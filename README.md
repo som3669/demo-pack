@@ -16,7 +16,7 @@ every file as it is.
 
 | Pack | Theme | What it adds |
 |---|---|---|
-| `twentytwentyfive` | Twenty Twenty-Five | A small electronics store: a homepage with featured and sale products, 8 products, 3 categories, 2 brands, pages and a short journal |
+| `twentytwentyfive` | Twenty Twenty-Five | A small electronics store: a homepage with a trust strip, category tiles, sale and featured products, 8 products, 3 categories, 2 brands, pages and a journal |
 | `unishop` | Unishop | An electronics store: 20 products, brands, reviews, buying guides and store pages |
 
 ## Layout
@@ -145,9 +145,12 @@ Page, post and widget content is a list of items, each `[ type, value ]`:
 | `details` | `[ "details", "Question", "Answer" ]` | A details (FAQ) block. |
 | `img` | image ref | An image. |
 | `cover` | `{ "image", "heading", "text", "buttons" }` | A full-width banner: the image under a dark overlay, with a heading, text and buttons. |
-| `buttons` | list of links | A row of buttons; the first is filled, the rest outlined. Links are written like menu items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product_cat" }` or `{ "label", "url" }`. |
+| `buttons` | list of links, and optionally `"center"` as a third element | A row of buttons; the first is filled, the rest outlined. Links are written like menu items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product_cat" }` or `{ "label", "url" }`. `"center"` centres the row, as under a product grid. |
 | `products` | `{ "show", "count" }` | A product grid (WooCommerce's Product Collection block). `show`: `featured`, `on-sale`, `newest` or `best-selling`. Skipped without WooCommerce. |
 | `posts` | `{ "count" }` | The latest posts, with their featured images. |
+| `section` | `{ "items", "background" }` | A full-width section holding other items, with space above and below. `background` is an optional hex colour such as `#f4f4f1`. Sections sit flush against each other, so alternating backgrounds form bands. |
+| `features` | list of `{ "title", "text" }` | A row of short features, such as delivery, returns and warranty promises. |
+| `tiles` | list of `{ "label", "image", <link> }` | A row of photo tiles with a linked title, such as one per category. The link is written like a menu item: `"product_cat": "audio"`, `"page"`, `"woocommerce"` or `"url"`. |
 
 ## settings.json
 

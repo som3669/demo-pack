@@ -17,8 +17,8 @@
 			"id": "twentytwentyfive",
 			"theme": "twentytwentyfive",
 			"title": "Bytewell store for Twenty Twenty-Five",
-			"description": "A small electronics store: a homepage with featured and sale products, 8 products in 3 categories, a product in two colours, brands, reviews, store pages and a short journal.",
-			"version": "1.1.0",
+			"description": "A small electronics store: a homepage with a trust strip, category tiles, sale and featured products, 8 products, 3 categories, 2 brands, reviews, store pages and a journal.",
+			"version": "1.2.0",
 			"path": "twentytwentyfive/pack.json",
 			"requires": {
 				"wordpress": "6.7",
