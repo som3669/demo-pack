@@ -54,7 +54,6 @@
 			"sales": 96,
 			"regular": "249",
 			"sale": "199",
-			"featured": true,
 			"specs": {
 				"Battery": "40 hours",
 				"Noise cancelling": "Hybrid ANC",
@@ -134,7 +133,6 @@
 			"sales": 120,
 			"regular": "679",
 			"sale": "599",
-			"featured": true,
 			"specs": {
 				"Storage": "128 GB",
 				"Display": "6.1-inch OLED",
@@ -209,7 +207,8 @@
 			"short": "A slim 10,000 mAh power bank that charges a phone about twice.",
 			"description": [
 				"Fast 20 W charging over USB-C takes most phones to half charge in about 30 minutes."
-			]
+			],
+			"featured": true
 		},
 		{
 			"slug": "bytewell-usb-c-charger",
@@ -227,7 +226,8 @@
 			"short": "A compact 30 W wall charger that fast-charges phones and powers small laptops.",
 			"description": [
 				"The folding pins keep it flat in a bag, and 30 W over USB-C is enough to fast-charge a phone or run a small laptop."
-			]
+			],
+			"featured": true
 		}
 	],
 	"reviews": {
@@ -288,38 +288,124 @@
 					}
 				],
 				[
-					"h2",
-					"Featured",
-					"wide"
-				],
-				[
-					"products",
+					"section",
 					{
-						"show": "featured",
-						"count": 4
+						"background": "#f4f4f1",
+						"items": [
+							[
+								"features",
+								[
+									{
+										"title": "Free delivery over $75",
+										"text": "Standard delivery is $4.95, and free on orders over $75."
+									},
+									{
+										"title": "30-day returns",
+										"text": "Changed your mind? Send it back within 30 days for a full refund."
+									},
+									{
+										"title": "Two-year warranty",
+										"text": "Every product is covered for two years, handled by us."
+									},
+									{
+										"title": "Tested before we list it",
+										"text": "We use everything we sell, so the details on each page are real."
+									}
+								]
+							]
+						]
 					}
 				],
 				[
-					"h2",
-					"On sale",
-					"wide"
-				],
-				[
-					"products",
+					"section",
 					{
-						"show": "on-sale",
-						"count": 4
+						"items": [
+							[
+								"h2",
+								"Shop by category",
+								"wide"
+							],
+							[
+								"tiles",
+								[
+									{
+										"label": "Audio",
+										"product_cat": "audio",
+										"image": "images/products/headphones.jpg"
+									},
+									{
+										"label": "Devices",
+										"product_cat": "devices",
+										"image": "images/products/watch.jpg"
+									},
+									{
+										"label": "Accessories",
+										"product_cat": "accessories",
+										"image": "images/products/power-bank.jpg"
+									}
+								]
+							],
+							[
+								"h2",
+								"On sale now",
+								"wide"
+							],
+							[
+								"products",
+								{
+									"show": "on-sale",
+									"count": 4
+								}
+							]
+						]
 					}
 				],
 				[
-					"h2",
-					"From the journal",
-					"wide"
+					"section",
+					{
+						"background": "#f4f4f1",
+						"items": [
+							[
+								"h2",
+								"Featured",
+								"wide"
+							],
+							[
+								"products",
+								{
+									"show": "featured",
+									"count": 4
+								}
+							],
+							[
+								"buttons",
+								[
+									{
+										"label": "View all products",
+										"woocommerce": "shop"
+									}
+								],
+								"center"
+							]
+						]
+					}
 				],
 				[
-					"posts",
+					"section",
 					{
-						"count": 2
+						"items": [
+							[
+								"h2",
+								"From the journal",
+								"wide"
+							],
+							[
+								"posts",
+								{
+									"count": 3
+								}
+							]
+						]
 					}
 				]
 			]
@@ -440,6 +526,35 @@
 				[
 					"p",
 					"For fast charging, check that both the power bank and your cable support at least 20 W over USB-C."
+				]
+			]
+		},
+		"picking-a-laptop-for-work-and-travel": {
+			"title": "Picking a laptop for work and travel",
+			"excerpt": "Weight, battery life and ports: what matters when your laptop goes everywhere with you.",
+			"image": "images/products/laptop.jpg",
+			"days": 18,
+			"category": "journal",
+			"content": [
+				[
+					"p",
+					"A laptop you carry every day should weigh well under 1.5 kg. Every 100 g matters by the end of a long journey."
+				],
+				[
+					"h2",
+					"Battery life"
+				],
+				[
+					"p",
+					"Look for a real-world figure of at least 10 hours of web browsing, not the best case on the box."
+				],
+				[
+					"h2",
+					"Ports"
+				],
+				[
+					"p",
+					"Two USB-C ports that charge the laptop and drive a display will cover most desks and hotel rooms."
 				]
 			]
 		}
