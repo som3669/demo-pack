@@ -1,6 +1,6 @@
 # demo-pack
 
-Demo content for Rcube and Som Shrestha WordPress themes, imported with the
+Demo content for WordPress themes, imported with the
 [Storefill – Demo Content Importer](https://wordpress.org/plugins/storefill/) plugin.
 
 Themes ship no demo content of their own. A store owner installs the theme, WooCommerce and
@@ -11,6 +11,13 @@ This repository must stay **public**, with **GitHub Pages** turned on (Settings 
 from a branch → `main`, folder `/ (root)`). Storefill downloads packs from
 `https://som3669.github.io/demo-pack/` without signing in. The `.nojekyll` file makes Pages serve
 every file as it is.
+
+## Packs
+
+| Pack | Theme | What it adds |
+|---|---|---|
+| `twentytwentyfive` | Twenty Twenty-Five | A small electronics store: 8 products, 3 categories, 2 brands, pages and a short journal |
+| `unishop` | Unishop | An electronics store: 20 products, brands, reviews, buying guides and store pages |
 
 ## Layout
 

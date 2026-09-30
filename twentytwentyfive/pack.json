@@ -1,0 +1,447 @@
+{
+	"schema": 1,
+	"images": {
+		"images/products/headphones.jpg": "",
+		"images/products/earbuds.jpg": "",
+		"images/products/speaker.jpg": "",
+		"images/products/adapter.jpg": "",
+		"images/products/watch.jpg": "",
+		"images/products/phone.jpg": "",
+		"images/products/laptop.jpg": "",
+		"images/products/power-bank.jpg": ""
+	},
+	"product_categories": {
+		"audio": {
+			"name": "Audio",
+			"description": "Headphones, earbuds and speakers.",
+			"image": "images/products/headphones.jpg"
+		},
+		"devices": {
+			"name": "Devices",
+			"description": "Phones, laptops and watches.",
+			"image": "images/products/laptop.jpg"
+		},
+		"accessories": {
+			"name": "Accessories",
+			"description": "The small things that keep everything running.",
+			"image": "images/products/power-bank.jpg"
+		}
+	},
+	"product_brands": {
+		"aster": {
+			"name": "Aster",
+			"description": "Phones and watches designed for everyday use."
+		},
+		"fathom": {
+			"name": "Fathom",
+			"description": "Headphones, earbuds and speakers with a focus on sound."
+		}
+	},
+	"attributes": {
+		"Colour": "colour"
+	},
+	"products": [
+		{
+			"slug": "fathom-stillwater",
+			"name": "Fathom Stillwater Headphones",
+			"category": "audio",
+			"brand": "fathom",
+			"image": "images/products/headphones.jpg",
+			"sku": "BW-STILL",
+			"sales": 96,
+			"regular": "249",
+			"sale": "199",
+			"featured": true,
+			"specs": {
+				"Battery": "40 hours",
+				"Noise cancelling": "Hybrid ANC",
+				"Bluetooth": "5.3",
+				"Weight": "250 g"
+			},
+			"short": "Over-ear headphones with hybrid noise cancelling and a battery that lasts 40 hours.",
+			"description": [
+				"Stillwater headphones use four microphones to cancel the low hum of trains, planes and office air conditioning, so you can listen at a lower volume.",
+				"The cushions are soft protein leather, and the headband adjusts in small steps for a secure fit. Folded flat, they slip into the included case."
+			],
+			"cross_sells": [
+				"bytewell-power-bank"
+			]
+		},
+		{
+			"slug": "fathom-drift-earbuds",
+			"name": "Fathom Drift Earbuds",
+			"category": "audio",
+			"brand": "fathom",
+			"image": "images/products/earbuds.jpg",
+			"sku": "BW-DRIFT",
+			"sales": 140,
+			"regular": "129",
+			"specs": {
+				"Colour": [
+					"Black",
+					"White"
+				],
+				"Battery": "7 + 21 hours",
+				"Water resistance": "IPX4"
+			},
+			"variations": {
+				"Black": {
+					"sku": "BW-DRIFT-BLK",
+					"regular": "129"
+				},
+				"White": {
+					"sku": "BW-DRIFT-WHT",
+					"regular": "129",
+					"sale": "109"
+				}
+			},
+			"short": "Light wireless earbuds with a pocket-sized charging case. Choose black or white.",
+			"description": [
+				"Drift earbuds weigh five grams each and sit securely during a run. Tap either earbud to pause, skip or answer a call.",
+				"The case adds three full charges, and ten minutes of charging gives an hour of listening."
+			]
+		},
+		{
+			"slug": "fathom-pebble-speaker",
+			"name": "Fathom Pebble Speaker",
+			"category": "audio",
+			"brand": "fathom",
+			"image": "images/products/speaker.jpg",
+			"sku": "BW-PEBBLE",
+			"sales": 58,
+			"regular": "79",
+			"specs": {
+				"Battery": "12 hours",
+				"Water resistance": "IP67",
+				"Bluetooth": "5.3"
+			},
+			"short": "A small waterproof speaker with a loud, clear sound and a 12-hour battery.",
+			"description": [
+				"Pebble fits in a jacket pocket and survives a drop in the pool. Pair two for stereo sound in a larger room."
+			]
+		},
+		{
+			"slug": "aster-vela-phone",
+			"name": "Aster Vela Phone",
+			"category": "devices",
+			"brand": "aster",
+			"image": "images/products/phone.jpg",
+			"sku": "BW-VELA",
+			"sales": 120,
+			"regular": "679",
+			"sale": "599",
+			"featured": true,
+			"specs": {
+				"Storage": "128 GB",
+				"Display": "6.1-inch OLED",
+				"Battery": "4,500 mAh"
+			},
+			"short": "A compact 5G phone with a bright 6.1-inch OLED screen and all-day battery.",
+			"description": [
+				"Vela is sized for one-handed use, and its screen is bright enough to read outdoors.",
+				"It charges over USB-C and on any wireless charging pad."
+			],
+			"upsells": [
+				"fathom-drift-earbuds"
+			]
+		},
+		{
+			"slug": "bytewell-notebook-14",
+			"name": "Bytewell Notebook 14",
+			"category": "devices",
+			"image": "images/products/laptop.jpg",
+			"sku": "BW-NB14",
+			"sales": 44,
+			"regular": "1099",
+			"specs": {
+				"Display": "14-inch",
+				"Memory": "16 GB",
+				"Storage": "512 GB SSD",
+				"Weight": "1.3 kg"
+			},
+			"short": "A light 14-inch laptop with 16 GB of memory for work and travel.",
+			"description": [
+				"At 1.3 kg the Notebook 14 is easy to carry all day, and the battery lasts through a long flight.",
+				"Two USB-C ports charge the laptop and drive an external display."
+			],
+			"cross_sells": [
+				"bytewell-usb-c-charger"
+			]
+		},
+		{
+			"slug": "aster-orbit-watch",
+			"name": "Aster Orbit Watch",
+			"category": "devices",
+			"brand": "aster",
+			"image": "images/products/watch.jpg",
+			"sku": "BW-ORBIT",
+			"sales": 67,
+			"regular": "299",
+			"sale": "249",
+			"specs": {
+				"Display": "1.4-inch AMOLED",
+				"Battery": "7 days",
+				"Water resistance": "5 ATM"
+			},
+			"short": "A smartwatch with a week of battery, heart-rate tracking and a swim-proof design.",
+			"description": [
+				"Orbit tracks steps, sleep and heart rate, and shows notifications from your phone.",
+				"It is water resistant to 50 metres, so you can wear it in the pool."
+			]
+		},
+		{
+			"slug": "bytewell-power-bank",
+			"name": "Bytewell 10K Power Bank",
+			"category": "accessories",
+			"image": "images/products/power-bank.jpg",
+			"sku": "BW-PB10",
+			"sales": 150,
+			"regular": "39",
+			"specs": {
+				"Capacity": "10,000 mAh",
+				"Output": "20 W USB-C"
+			},
+			"short": "A slim 10,000 mAh power bank that charges a phone about twice.",
+			"description": [
+				"Fast 20 W charging over USB-C takes most phones to half charge in about 30 minutes."
+			]
+		},
+		{
+			"slug": "bytewell-usb-c-charger",
+			"name": "Bytewell 30W USB-C Charger",
+			"category": "accessories",
+			"image": "images/products/adapter.jpg",
+			"sku": "BW-CHG30",
+			"sales": 88,
+			"regular": "29",
+			"stock": 12,
+			"specs": {
+				"Output": "30 W USB-C",
+				"Plug": "Folding pins"
+			},
+			"short": "A compact 30 W wall charger that fast-charges phones and powers small laptops.",
+			"description": [
+				"The folding pins keep it flat in a bag, and 30 W over USB-C is enough to fast-charge a phone or run a small laptop."
+			]
+		}
+	],
+	"reviews": {
+		"fathom-stillwater": [
+			[
+				"Priya S.",
+				5,
+				"The noise cancelling is excellent on the train. Comfortable for hours."
+			],
+			[
+				"Tom W.",
+				4,
+				"Great sound. The case is a little bulky, but it protects them well."
+			]
+		],
+		"aster-vela-phone": [
+			[
+				"Maya R.",
+				5,
+				"Small enough for my pocket, and the battery easily lasts a day."
+			]
+		],
+		"bytewell-power-bank": [
+			[
+				"Luis G.",
+				5,
+				"Thin, light, and charges my phone fast."
+			]
+		]
+	},
+	"post_categories": {
+		"journal": {
+			"name": "Journal",
+			"description": "Notes and guides from the Bytewell team."
+		}
+	},
+	"pages": {
+		"about": {
+			"title": "About",
+			"content": [
+				[
+					"p",
+					"Bytewell is a small online shop for everyday electronics: headphones, phones, laptops and the accessories that keep them running."
+				],
+				[
+					"img",
+					"images/products/laptop.jpg"
+				],
+				[
+					"h2",
+					"How we choose what we sell"
+				],
+				[
+					"ul",
+					[
+						"We test every product before we list it.",
+						"We keep the range small, so every item is one we would recommend.",
+						"We explain the specifications in plain language."
+					]
+				]
+			]
+		},
+		"contact": {
+			"title": "Contact",
+			"content": [
+				[
+					"p",
+					"Questions about an order or a product? We answer every message within one working day."
+				],
+				[
+					"lines",
+					[
+						"Email: hello@example.com",
+						"Monday to Friday, 9:00 to 17:00"
+					]
+				]
+			]
+		},
+		"shipping-returns": {
+			"title": "Shipping & returns",
+			"content": [
+				[
+					"h2",
+					"Shipping"
+				],
+				[
+					"p",
+					"Orders placed before 14:00 ship the same working day. Delivery usually takes two to four days."
+				],
+				[
+					"h2",
+					"Returns"
+				],
+				[
+					"p",
+					"Changed your mind? Return any unused product within 30 days for a full refund."
+				],
+				[
+					"details",
+					"How do I start a return?",
+					"Email us with your order number and we will send a return label."
+				]
+			]
+		}
+	},
+	"posts": {
+		"choosing-wireless-earbuds": {
+			"title": "Choosing wireless earbuds",
+			"excerpt": "Fit, battery and water resistance: the three things that matter most.",
+			"image": "images/products/earbuds.jpg",
+			"days": 4,
+			"category": "journal",
+			"content": [
+				[
+					"p",
+					"The best earbuds are the ones that stay in your ears. Try the included tips in each size before deciding they do not fit."
+				],
+				[
+					"h2",
+					"Battery"
+				],
+				[
+					"p",
+					"Look at the battery life of the earbuds and of the case separately. Seven hours in the earbuds covers most days."
+				],
+				[
+					"h2",
+					"Water resistance"
+				],
+				[
+					"p",
+					"IPX4 means the earbuds handle sweat and rain, which is enough for running."
+				]
+			]
+		},
+		"power-bank-basics": {
+			"title": "Power bank basics",
+			"excerpt": "What the mAh number means, and how many charges to expect.",
+			"image": "images/products/power-bank.jpg",
+			"days": 11,
+			"category": "journal",
+			"content": [
+				[
+					"p",
+					"A 10,000 mAh power bank does not charge a 5,000 mAh phone twice in full. Some energy is lost as heat, so expect about 1.8 charges."
+				],
+				[
+					"p",
+					"For fast charging, check that both the power bank and your cable support at least 20 W over USB-C."
+				]
+			]
+		}
+	},
+	"menu": {
+		"title": "Shop menu",
+		"slug": "shop-menu",
+		"location": "primary",
+		"items": [
+			{
+				"label": "Shop",
+				"woocommerce": "shop"
+			},
+			{
+				"label": "Audio",
+				"product_cat": "audio"
+			},
+			{
+				"label": "Devices",
+				"product_cat": "devices"
+			},
+			{
+				"label": "Accessories",
+				"product_cat": "accessories"
+			},
+			{
+				"label": "About",
+				"page": "about"
+			},
+			{
+				"label": "Contact",
+				"page": "contact"
+			}
+		]
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Bytewell",
+			"blogdescription": "Everyday electronics",
+			"woocommerce_coming_soon": "no",
+			"woocommerce_store_pages_only": "no",
+			"woocommerce_currency": "USD",
+			"woocommerce_store_address": "12 Harbor Street",
+			"woocommerce_store_city": "Portland",
+			"woocommerce_store_postcode": "97201",
+			"woocommerce_default_country": "US:OR",
+			"woocommerce_enable_reviews": "yes",
+			"woocommerce_enable_review_rating": "yes",
+			"woocommerce_manage_stock": "yes"
+		},
+		"returns_page": "shipping-returns",
+		"checkout": {
+			"payment_title": "Demo payment (no charge)",
+			"payment_description": "This is a demo store. Orders are not charged, packed or shipped.",
+			"payment_instructions": "This was a demo order: nothing was charged and nothing will be shipped.",
+			"shipping": [
+				{
+					"method": "flat_rate",
+					"title": "Standard delivery",
+					"tax_status": "taxable",
+					"cost": "4.95"
+				},
+				{
+					"method": "free_shipping",
+					"title": "Free delivery",
+					"requires": "min_amount",
+					"min_amount": "75"
+				}
+			]
+		},
+		"hide_sample_content": true
+	}
+}
