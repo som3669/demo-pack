@@ -16,33 +16,46 @@ every file as it is.
 
 | Pack | Theme | What it adds |
 |---|---|---|
-| `twentytwentyfive` | Twenty Twenty-Five | A small electronics store: 8 products, 3 categories, 2 brands, pages and a short journal |
+| `twentytwentyfive` | Twenty Twenty-Five | A small electronics store: a homepage with featured and sale products, 8 products, 3 categories, 2 brands, pages and a short journal |
 | `unishop` | Unishop | An electronics store: 20 products, brands, reviews, buying guides and store pages |
 
 ## Layout
 
+Each kind of data has its own file, so a pack reads the way the dashboard is organised:
+
 ```
-index.json            Every pack: which theme it is for, where its pack.json is, what it needs
-<pack>/pack.json      The demo content
-<pack>/images/…       Photos the pack imports (product photos and so on)
-<pack>/CREDITS.md     Licence and source of every photo
+index.json                Every pack: which theme it is for, where its pack.json is, what it needs
+<pack>/pack.json          Content: products, categories, pages, posts, the menu
+<pack>/settings.json      Dashboard settings: site and store settings, homepage, demo-site extras
+<pack>/customizer.json    Customizer settings (theme mods)
+<pack>/widgets.json       Widgets, by widget area
+<pack>/images/…           Photos the pack imports (product photos and so on)
+<pack>/CREDITS.md         Licence and source of every photo
 ```
+
+`pack.json` is required. The other three are optional: list the ones a pack has in `pack.json`
+under `"files"`, and Storefill reads only those.
 
 ## Adding a theme
 
 1. Create a folder named after the pack, usually the theme slug.
-2. Write `pack.json` (format below) and put its photos under `images/`. Photos the theme already
-   ships can be referenced from the theme instead: `theme:assets/images/hero.jpg`.
+2. Write `pack.json` and any of `settings.json`, `customizer.json` and `widgets.json` it needs
+   (formats below), and put its photos under `images/`. Photos the theme already ships can be
+   referenced from the theme instead: `theme:assets/images/hero.jpg`.
 3. Add an entry to `index.json`. `theme` is the theme's folder name (its stylesheet slug); a child
    theme also sees its parent's packs.
 4. Record every photo's licence in the pack's `CREDITS.md`. Use only photos you may redistribute
-   (CC0 or your own), and invented brand and product names.
+   (CC0 or your own), with no visible brand logos, and invented brand and product names.
 5. Test on a clean site with a local checkout:
    `define( 'STOREFILL_LOCAL_PACKS', '/path/to/demo-pack' );` in `wp-config.php`, then
    `wp storefill import <pack>`, check the site, `wp storefill remove <pack> --yes`.
 
-Bump the pack's `version` in `index.json` whenever `pack.json` changes: Storefill caches packs by
-ID and version for six hours.
+Bump the pack's `version` in `index.json` whenever any of its files changes: Storefill caches packs
+by ID and version for six hours.
+
+After pushing, check that GitHub Pages published it
+(`gh api repos/som3669/demo-pack/pages/builds`); a push does not always start a Pages build, and
+`gh api -X POST repos/som3669/demo-pack/pages/builds` starts one.
 
 ## index.json
 
@@ -55,7 +68,7 @@ ID and version for six hours.
       "theme": "unishop",
       "title": "Unishop electronics store",
       "description": "Shown on the import screen.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "unishop/pack.json",
       "requires": { "wordpress": "7.0", "woocommerce": "11.0" }
     }
@@ -63,43 +76,26 @@ ID and version for six hours.
 }
 ```
 
-## Settings a pack may change
-
-`store_settings` and `demo_site.options` can only set these, to plain text values. Storefill skips
-anything else and says so in the import log, so a pack can never change accounts, roles, URLs or
-security settings.
-
-`blogname`, `blogdescription`, `woocommerce_coming_soon`, `woocommerce_store_pages_only`,
-`woocommerce_currency`, `woocommerce_currency_pos`, `woocommerce_price_thousand_sep`,
-`woocommerce_price_decimal_sep`, `woocommerce_price_num_decimals`, `woocommerce_store_address`,
-`woocommerce_store_address_2`, `woocommerce_store_city`, `woocommerce_store_postcode`,
-`woocommerce_default_country`, `woocommerce_weight_unit`, `woocommerce_dimension_unit`,
-`woocommerce_enable_reviews`, `woocommerce_enable_review_rating`,
-`woocommerce_review_rating_required`, `woocommerce_manage_stock`,
-`woocommerce_hide_out_of_stock_items`.
-
 All text in a pack is plain text: Storefill strips any HTML from it.
 
 ## pack.json, schema 1
 
-Every section is optional.
+Every section except `schema` is optional.
 
 | Key | Shape | Notes |
 |---|---|---|
 | `schema` | `1` | Required. |
-| `images` | `{ "<ref>": "<alt text>" }` | Every image the pack uses. A ref is a path in the pack folder (`images/products/phone.jpg`) or a theme file (`theme:assets/images/hero.jpg`). Leave alt empty for product photos: WooCommerce then uses the product name. |
+| `files` | `[ "settings.json", "customizer.json", "widgets.json" ]` | The optional files this pack has. |
+| `images` | `{ "<ref>": "<alt text>" }` | Every image the pack uses, including any named in `customizer.json`. A ref is a path in the pack folder (`images/products/phone.jpg`) or a theme file (`theme:assets/images/hero.jpg`). Leave alt empty for product photos: WooCommerce then uses the product name. |
 | `product_categories` | `{ "<slug>": { "name", "description", "image" } }` | In menu order. `image` is an image ref. |
 | `product_brands` | `{ "<slug>": { "name", "description" } }` | WooCommerce Brands (WooCommerce 9.6+). |
 | `attributes` | `{ "<Name>": "<slug>" }` | Global, filterable attributes. Any other spec becomes a product-level attribute. |
 | `products` | list | See below. |
 | `reviews` | `{ "<product slug>": [ [ "Reviewer", 5, "Text" ] ] }` | Ratings 1–5. |
 | `post_categories` | `{ "<slug>": { "name", "description" } }` | |
-| `pages` | `{ "<slug>": { "title", "content" } }` | See Content. |
+| `pages` | `{ "<slug>": { "title", "content", "template" } }` | See Content. `template` is a page template of the theme, such as `page-no-title`; it is used only when the theme has it. |
 | `posts` | `{ "<slug>": { "title", "excerpt", "image", "days", "category", "content" } }` | `days`: how many days ago it was published. |
-| `front_page`, `posts_page` | page slug | Used when the owner ticks "Use the demo homepage". |
 | `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`. Block themes get a navigation menu; classic themes get a menu assigned to `location`. |
-| `store_settings` | `{ "<option>": "<value>" }` | Applied on every import. Keep it to settings the demo cannot work without. Only the settings listed under [Settings a pack may change](#settings-a-pack-may-change) are applied. |
-| `demo_site` | object | Applied only with "This is a public demo site" or `--demo-site`: `options` (site title, address, currency, store visibility…), `returns_page` (a page slug), `checkout` (a no-charge payment method and delivery methods), `hide_sample_content`. |
 
 ### Products
 
@@ -138,6 +134,111 @@ Every section is optional.
 
 ### Content
 
-Page and post content is a list of blocks, each `[ type, text ]`:
-`p`, `h2`, `h3`, `ul` and `ol` (text is a list of items), `lines` (a list, joined with line
-breaks), `details` (`[ "details", "Question", "Answer" ]`) and `img` (an image ref).
+Page, post and widget content is a list of items, each `[ type, value ]`:
+
+| Item | Value | Becomes |
+|---|---|---|
+| `p` | text | A paragraph. |
+| `h2`, `h3` | text, and optionally `"wide"` as a third element | A heading. `[ "h2", "Featured", "wide" ]` spans the wide column, to line up with product grids and post lists. |
+| `ul`, `ol` | list of texts | A list. |
+| `lines` | list of texts | One paragraph with line breaks. |
+| `details` | `[ "details", "Question", "Answer" ]` | A details (FAQ) block. |
+| `img` | image ref | An image. |
+| `cover` | `{ "image", "heading", "text", "buttons" }` | A full-width banner: the image under a dark overlay, with a heading, text and buttons. |
+| `buttons` | list of links | A row of buttons; the first is filled, the rest outlined. Links are written like menu items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product_cat" }` or `{ "label", "url" }`. |
+| `products` | `{ "show", "count" }` | A product grid (WooCommerce's Product Collection block). `show`: `featured`, `on-sale`, `newest` or `best-selling`. Skipped without WooCommerce. |
+| `posts` | `{ "count" }` | The latest posts, with their featured images. |
+
+## settings.json
+
+Dashboard settings. Every section is optional.
+
+```json
+{
+  "schema": 1,
+  "options": { "woocommerce_currency": "USD" },
+  "homepage": { "front_page": "home", "posts_page": "journal" },
+  "demo_site": {
+    "options": { "blogname": "Bytewell", "woocommerce_coming_soon": "no" },
+    "returns_page": "shipping-returns",
+    "checkout": {
+      "payment_title": "Demo payment (no charge)",
+      "payment_description": "…",
+      "payment_instructions": "…",
+      "shipping": [ { "method": "flat_rate", "title": "Standard delivery", "cost": "4.95" } ]
+    },
+    "hide_sample_content": true
+  }
+}
+```
+
+| Key | Applied | Notes |
+|---|---|---|
+| `options` | On every import | Keep it to settings the demo cannot work without. |
+| `homepage` | When the owner ticks "Use the demo homepage and blog page" | Page slugs from `pack.json`. |
+| `demo_site` | Only with "This is a public demo site" or `--demo-site` | `options` (site title, address, currency, store visibility…), `returns_page` (a page slug), `checkout` (a payment method that takes no money, and delivery methods), `hide_sample_content` (unpublishes WordPress's sample post and page). |
+
+Removing the demo puts every setting back the way it was.
+
+### Settings a pack may change
+
+`options` and `demo_site.options` can only set these, to plain text values. Storefill skips
+anything else and says so in the import log, so a pack can never change accounts, roles, URLs or
+security settings.
+
+`blogname`, `blogdescription`, `woocommerce_coming_soon`, `woocommerce_store_pages_only`,
+`woocommerce_currency`, `woocommerce_currency_pos`, `woocommerce_price_thousand_sep`,
+`woocommerce_price_decimal_sep`, `woocommerce_price_num_decimals`, `woocommerce_store_address`,
+`woocommerce_store_address_2`, `woocommerce_store_city`, `woocommerce_store_postcode`,
+`woocommerce_default_country`, `woocommerce_weight_unit`, `woocommerce_dimension_unit`,
+`woocommerce_enable_reviews`, `woocommerce_enable_review_rating`,
+`woocommerce_review_rating_required`, `woocommerce_manage_stock`,
+`woocommerce_hide_out_of_stock_items`.
+
+## customizer.json
+
+Customizer settings (theme mods) for the pack's theme, applied on every import. Mostly for classic
+themes; block themes keep their design in the Site Editor instead.
+
+```json
+{
+  "schema": 1,
+  "theme_mods": {
+    "background_color": "f5efe0",
+    "custom_logo": { "image": "images/logo.png" },
+    "header_image": { "image_url": "images/header.jpg" },
+    "colormag_primary_color": "#207daf"
+  }
+}
+```
+
+- Values are text, numbers, `true` or `false`, or lists and objects of those.
+- `{ "image": "<ref>" }` becomes the ID of that pack image (a logo); `{ "image_url": "<ref>" }`
+  becomes its address (a header or background image). The image must be listed in `pack.json`
+  `images`.
+- `nav_menu_locations` and `sidebars_widgets` are ignored here: the menu's `location` and
+  `widgets.json` set those.
+- Removing the demo puts every setting back the way it was.
+
+## widgets.json
+
+Widgets for the theme's widget areas (classic themes), imported as block widgets.
+
+```json
+{
+  "schema": 1,
+  "sidebars": {
+    "sidebar-1": [
+      { "title": "About the shop", "content": [ [ "p", "Everyday electronics, chosen with care." ] ] },
+      { "content": [ [ "posts", { "count": 3 } ] ] }
+    ]
+  }
+}
+```
+
+- Keys are widget area IDs, as the theme registers them. Areas the theme does not have are skipped
+  and named in the import log.
+- Each widget has optional `title` (shown as a heading) and `content` in the Content format above.
+- On a real store the demo's widgets are added after the ones already there. On a public demo site
+  they take the area over, and the site's own widgets wait in **Inactive widgets**.
+- Removing the demo deletes the demo's widgets and puts the site's own back where they were.

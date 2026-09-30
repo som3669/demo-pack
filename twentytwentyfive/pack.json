@@ -1,5 +1,8 @@
 {
 	"schema": 1,
+	"files": [
+		"settings.json"
+	],
 	"images": {
 		"images/products/headphones.jpg": "",
 		"images/products/earbuds.jpg": "",
@@ -110,6 +113,7 @@
 			"sku": "BW-PEBBLE",
 			"sales": 58,
 			"regular": "79",
+			"featured": true,
 			"specs": {
 				"Battery": "12 hours",
 				"Water resistance": "IP67",
@@ -153,6 +157,7 @@
 			"sku": "BW-NB14",
 			"sales": 44,
 			"regular": "1099",
+			"featured": true,
 			"specs": {
 				"Display": "14-inch",
 				"Memory": "16 GB",
@@ -260,6 +265,69 @@
 		}
 	},
 	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "page-no-title",
+			"content": [
+				[
+					"cover",
+					{
+						"image": "images/products/laptop.jpg",
+						"heading": "Everyday electronics, chosen with care",
+						"text": "Headphones, phones, laptops and the accessories that keep them running. We test everything before we list it.",
+						"buttons": [
+							{
+								"label": "Shop all products",
+								"woocommerce": "shop"
+							},
+							{
+								"label": "Browse audio",
+								"product_cat": "audio"
+							}
+						]
+					}
+				],
+				[
+					"h2",
+					"Featured",
+					"wide"
+				],
+				[
+					"products",
+					{
+						"show": "featured",
+						"count": 4
+					}
+				],
+				[
+					"h2",
+					"On sale",
+					"wide"
+				],
+				[
+					"products",
+					{
+						"show": "on-sale",
+						"count": 4
+					}
+				],
+				[
+					"h2",
+					"From the journal",
+					"wide"
+				],
+				[
+					"posts",
+					{
+						"count": 2
+					}
+				]
+			]
+		},
+		"journal": {
+			"title": "Journal",
+			"content": []
+		},
 		"about": {
 			"title": "About",
 			"content": [
@@ -398,6 +466,10 @@
 				"product_cat": "accessories"
 			},
 			{
+				"label": "Journal",
+				"page": "journal"
+			},
+			{
 				"label": "About",
 				"page": "about"
 			},
@@ -406,42 +478,5 @@
 				"page": "contact"
 			}
 		]
-	},
-	"demo_site": {
-		"options": {
-			"blogname": "Bytewell",
-			"blogdescription": "Everyday electronics",
-			"woocommerce_coming_soon": "no",
-			"woocommerce_store_pages_only": "no",
-			"woocommerce_currency": "USD",
-			"woocommerce_store_address": "12 Harbor Street",
-			"woocommerce_store_city": "Portland",
-			"woocommerce_store_postcode": "97201",
-			"woocommerce_default_country": "US:OR",
-			"woocommerce_enable_reviews": "yes",
-			"woocommerce_enable_review_rating": "yes",
-			"woocommerce_manage_stock": "yes"
-		},
-		"returns_page": "shipping-returns",
-		"checkout": {
-			"payment_title": "Demo payment (no charge)",
-			"payment_description": "This is a demo store. Orders are not charged, packed or shipped.",
-			"payment_instructions": "This was a demo order: nothing was charged and nothing will be shipped.",
-			"shipping": [
-				{
-					"method": "flat_rate",
-					"title": "Standard delivery",
-					"tax_status": "taxable",
-					"cost": "4.95"
-				},
-				{
-					"method": "free_shipping",
-					"title": "Free delivery",
-					"requires": "min_amount",
-					"min_amount": "75"
-				}
-			]
-		},
-		"hide_sample_content": true
 	}
 }

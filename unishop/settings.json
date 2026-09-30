@@ -1,0 +1,45 @@
+{
+    "schema": 1,
+    "homepage": {
+        "front_page": "home",
+        "posts_page": "buying-guides"
+    },
+    "demo_site": {
+        "options": {
+            "blogname": "Unishop",
+            "blogdescription": "Electronics, priced to compare",
+            "woocommerce_coming_soon": "no",
+            "woocommerce_store_pages_only": "no",
+            "woocommerce_currency": "USD",
+            "woocommerce_store_address": "240 Market Lane",
+            "woocommerce_store_address_2": "Suite 5",
+            "woocommerce_store_city": "San Mateo",
+            "woocommerce_store_postcode": "94401",
+            "woocommerce_default_country": "US:CA",
+            "woocommerce_enable_reviews": "yes",
+            "woocommerce_enable_review_rating": "yes",
+            "woocommerce_manage_stock": "yes"
+        },
+        "returns_page": "shipping-returns",
+        "checkout": {
+            "payment_title": "Demo payment (no charge)",
+            "payment_description": "This is a demo store. Orders are not charged, packed or shipped.",
+            "payment_instructions": "This was a demo order: nothing was charged and nothing will be shipped.",
+            "shipping": [
+                {
+                    "method": "flat_rate",
+                    "title": "Standard delivery",
+                    "tax_status": "taxable",
+                    "cost": "4.95"
+                },
+                {
+                    "method": "free_shipping",
+                    "title": "Free delivery",
+                    "requires": "min_amount",
+                    "min_amount": "99"
+                }
+            ]
+        },
+        "hide_sample_content": true
+    }
+}
