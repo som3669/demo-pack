@@ -1,0 +1,1515 @@
+{
+    "schema": 1,
+    "images": {
+        "images/products/phone.jpg": "",
+        "images/products/headphones.jpg": "",
+        "images/products/earbuds.jpg": "",
+        "images/products/watch.jpg": "",
+        "images/products/power-bank.jpg": "",
+        "images/products/adapter.jpg": "",
+        "images/products/laptop.jpg": "",
+        "images/products/speaker.jpg": "",
+        "images/products/mouse.jpg": "",
+        "images/products/action-camera.png": "",
+        "theme:assets/images/hero-audio.jpg": "A woman listening to music on over-ear headphones against a white brick wall",
+        "theme:assets/images/hero-desk.jpg": "A laptop, a phone, a tablet and a camera lens on a light wooden desk",
+        "theme:assets/images/promo-laptop.jpg": "An open laptop beside a notebook, earphones and a film camera on a wooden desk",
+        "theme:assets/images/promo-power.jpg": "A power bank charging a phone on a wooden table"
+    },
+    "product_categories": {
+        "phones": {
+            "name": "Phones",
+            "description": "Unlocked 5G phones, compared on storage, screen and battery.",
+            "image": "images/products/phone.jpg"
+        },
+        "headphones": {
+            "name": "Headphones",
+            "description": "Over-ear headphones and wireless earbuds, with battery life and noise cancelling listed up front.",
+            "image": "images/products/headphones.jpg"
+        },
+        "watches": {
+            "name": "Watches",
+            "description": "Smartwatches and hybrid watches for fitness, sleep and notifications.",
+            "image": "images/products/watch.jpg"
+        },
+        "laptops": {
+            "name": "Laptops",
+            "description": "Light laptops for work and travel, and larger machines for creative work and games.",
+            "image": "images/products/laptop.jpg"
+        },
+        "power-banks": {
+            "name": "Power banks",
+            "description": "Portable batteries from pocket size to laptop-ready, rated in mAh and watts.",
+            "image": "images/products/power-bank.jpg"
+        },
+        "chargers": {
+            "name": "Chargers",
+            "description": "USB-C wall and desk chargers for phones, tablets and laptops.",
+            "image": "images/products/adapter.jpg"
+        },
+        "speakers": {
+            "name": "Speakers",
+            "description": "Portable Bluetooth speakers for the kitchen, the garden and the beach.",
+            "image": "images/products/speaker.jpg"
+        },
+        "cameras": {
+            "name": "Cameras",
+            "description": "Compact action cameras for sport, travel and days out.",
+            "image": "images/products/action-camera.png"
+        },
+        "accessories": {
+            "name": "Accessories",
+            "description": "Mice and other everyday add-ons for your desk.",
+            "image": "images/products/mouse.jpg"
+        }
+    },
+    "product_brands": {
+        "aster": {
+            "name": "Aster",
+            "description": "Phones and smartwatches designed around long battery life."
+        },
+        "nordwave": {
+            "name": "Nordwave",
+            "description": "Phones and audio gear with a simple, clean design."
+        },
+        "fathom": {
+            "name": "Fathom",
+            "description": "Headphones and speakers tuned for clear, balanced sound."
+        },
+        "mirella": {
+            "name": "Mirella",
+            "description": "Small earbuds and hybrid watches made for all-day comfort."
+        },
+        "kestrel": {
+            "name": "Kestrel",
+            "description": "Straightforward phones and power banks built to last."
+        },
+        "tessera": {
+            "name": "Tessera",
+            "description": "Phones and laptops with sensible specs at fair prices."
+        },
+        "lumen": {
+            "name": "Lumen",
+            "description": "Chargers and desk accessories that keep everything topped up."
+        },
+        "onyx": {
+            "name": "Onyx",
+            "description": "Laptops, cameras and power banks for people who work on the move."
+        }
+    },
+    "attributes": {
+        "Storage": "storage",
+        "Display": "display",
+        "Battery": "battery",
+        "Connectivity": "connectivity",
+        "Power output": "power-output",
+        "Water resistance": "water-resistance",
+        "Colour": "colour"
+    },
+    "products": [
+        {
+            "slug": "aster-vela-6",
+            "name": "Aster Vela 6",
+            "category": "phones",
+            "brand": "aster",
+            "image": "images/products/phone.jpg",
+            "sku": "AST-VELA6",
+            "sales": 184,
+            "regular": "679",
+            "sale": "599",
+            "featured": true,
+            "weight": 0.17,
+            "size": [
+                14.7,
+                7.1,
+                0.8
+            ],
+            "specs": {
+                "Storage": "128 GB",
+                "Display": "6.1\" OLED",
+                "Battery": "4,500 mAh",
+                "Connectivity": "5G, Wi-Fi 6E"
+            },
+            "short": "A compact 5G phone with a 6.1-inch OLED screen, 128 GB of storage and a 4,500 mAh battery that lasts a full day.",
+            "description": [
+                "The Vela 6 is sized for one-handed use. Its 6.1-inch OLED screen refreshes at 120 Hz, so scrolling looks smooth, and it is bright enough to read outdoors on a sunny day.",
+                "Inside there is 128 GB of storage and a 4,500 mAh battery. Most people will finish a day of maps, messages, music and photos with charge to spare. It charges over USB-C and on any wireless charging pad.",
+                "It connects over 5G and Wi-Fi 6E. A USB-C cable is in the box; the charger is sold separately."
+            ],
+            "upsells": [
+                "nordwave-arc-5"
+            ],
+            "cross_sells": [
+                "lumen-twin-65w",
+                "mirella-posy",
+                "kestrel-reserve-10k"
+            ]
+        },
+        {
+            "slug": "fathom-stillwater",
+            "name": "Fathom Stillwater",
+            "category": "headphones",
+            "brand": "fathom",
+            "image": "images/products/headphones.jpg",
+            "sku": "FTH-STILLWATER",
+            "sales": 132,
+            "featured": true,
+            "weight": 0.25,
+            "size": [
+                19,
+                16,
+                8
+            ],
+            "specs": {
+                "Battery": "40 h",
+                "Noise cancelling": "Hybrid ANC",
+                "Connectivity": "Bluetooth 5.3",
+                "Colour": [
+                    "Black",
+                    "Sand",
+                    "Navy"
+                ]
+            },
+            "variations": {
+                "Black": {
+                    "sku": "FTH-STILLWATER-BLK",
+                    "regular": "299",
+                    "sale": "249"
+                },
+                "Sand": {
+                    "sku": "FTH-STILLWATER-SND",
+                    "regular": "299",
+                    "sale": "249"
+                },
+                "Navy": {
+                    "sku": "FTH-STILLWATER-NVY",
+                    "regular": "299",
+                    "sale": "249"
+                }
+            },
+            "short": "Over-ear wireless headphones with hybrid noise cancelling, soft memory-foam cushions and up to 40 hours of playback.",
+            "description": [
+                "Stillwater uses microphones inside and outside each ear cup to reduce steady background noise such as engine hum and air conditioning. A transparency mode lets voices and announcements through when you need them, without taking the headphones off.",
+                "Battery life is up to 40 hours with noise cancelling on, and a 10-minute charge over USB-C adds about five hours. The headphones can stay connected to two devices at once, so moving from a laptop call to music on your phone needs no re-pairing.",
+                "The ear cups fold flat into the hard case that comes in the box. Choose black, sand or navy."
+            ],
+            "cross_sells": [
+                "kestrel-reserve-10k",
+                "lumen-twin-65w"
+            ]
+        },
+        {
+            "slug": "tessera-lattice-14",
+            "name": "Tessera Lattice 14",
+            "category": "laptops",
+            "brand": "tessera",
+            "image": "images/products/laptop.jpg",
+            "sku": "TSR-LATTICE14",
+            "sales": 58,
+            "regular": "1249",
+            "sale": "1049",
+            "featured": true,
+            "weight": 1.24,
+            "size": [
+                31.2,
+                22.1,
+                1.5
+            ],
+            "specs": {
+                "Display": "14\" OLED",
+                "Memory": "16 GB RAM",
+                "Storage": "512 GB SSD",
+                "Battery": "18 h",
+                "Connectivity": "Wi-Fi 6E",
+                "Colour": "Silver"
+            },
+            "short": "A 1.24 kg laptop with a 14-inch OLED screen, 16 GB of memory and a 512 GB SSD, made for work days away from the desk.",
+            "description": [
+                "The Lattice 14 has an aluminium body that is 15 mm thin and weighs 1.24 kg, so it fits a small backpack. The 14-inch OLED screen has a 16:10 shape, which gives more room for documents and spreadsheets than a wider screen of the same size.",
+                "16 GB of memory and a 512 GB solid-state drive keep everyday work, video calls and light photo editing responsive. Battery life is rated at up to 18 hours of video playback; expect less with a bright screen and heavy browsing.",
+                "There are two USB-C ports that both charge the laptop, one USB-A port, a headphone jack and a 1080p webcam with a privacy shutter. The 65 W USB-C charger in the box can also charge your phone."
+            ],
+            "upsells": [
+                "onyx-forge-16"
+            ],
+            "cross_sells": [
+                "onyx-bastion-25k",
+                "lumen-trio-100w",
+                "lumen-keel-mouse"
+            ]
+        },
+        {
+            "slug": "aster-orrin-2",
+            "name": "Aster Orrin 2",
+            "category": "watches",
+            "brand": "aster",
+            "image": "images/products/watch.jpg",
+            "sku": "AST-ORRIN2",
+            "sales": 76,
+            "regular": "289",
+            "sale": "249",
+            "sale_days": 5,
+            "weight": 0.04,
+            "size": [
+                4.4,
+                3.8,
+                1.1
+            ],
+            "specs": {
+                "Display": "1.4\" AMOLED",
+                "Battery": "7 days",
+                "Water resistance": "5 ATM",
+                "Connectivity": "Bluetooth 5.3",
+                "Colour": "Graphite"
+            },
+            "short": "A light smartwatch with a 1.4-inch AMOLED screen, built-in GPS and up to seven days between charges.",
+            "description": [
+                "Orrin 2 tracks steps, heart rate and sleep, and records runs, rides and swims with built-in GPS, so you can leave your phone at home. Workouts sync to the companion app when the watch is back in range.",
+                "The 1.4-inch AMOLED screen is easy to read outdoors. With typical use the battery lasts up to seven days, or around two days with the always-on display and daily GPS workouts.",
+                "It is water resistant to 5 ATM, which covers swimming in a pool but not diving. The strap uses standard 20 mm pins, so it is easy to swap."
+            ],
+            "cross_sells": [
+                "aster-vela-6",
+                "lumen-twin-65w"
+            ]
+        },
+        {
+            "slug": "nordwave-arc-5",
+            "name": "Nordwave Arc 5",
+            "category": "phones",
+            "brand": "nordwave",
+            "image": "images/products/phone.jpg",
+            "sku": "NDW-ARC5",
+            "sales": 121,
+            "regular": "749",
+            "weight": 0.19,
+            "size": [
+                15.6,
+                7.4,
+                0.8
+            ],
+            "specs": {
+                "Storage": "256 GB",
+                "Display": "6.4\" OLED",
+                "Battery": "5,000 mAh",
+                "Connectivity": "5G, Wi-Fi 6"
+            },
+            "short": "A 5G phone with a 6.4-inch OLED screen, 256 GB of storage and a 5,000 mAh battery for long days away from a charger.",
+            "description": [
+                "The Arc 5 pairs a 6.4-inch OLED screen at 120 Hz with a 5,000 mAh battery, a combination that gets most people through a full day and into the next morning.",
+                "256 GB of storage leaves plenty of room for photos, offline maps and downloaded shows. The main camera has optical image stabilisation, which helps keep evening photos and video sharp.",
+                "It supports 5G and Wi-Fi 6, and charges at up to 45 W over USB-C, reaching about 60 percent in half an hour with a compatible charger."
+            ],
+            "upsells": [
+                "aster-vela-6"
+            ],
+            "cross_sells": [
+                "nordwave-eddy",
+                "lumen-twin-65w",
+                "kestrel-reserve-10k"
+            ]
+        },
+        {
+            "slug": "mirella-posy",
+            "name": "Mirella Posy",
+            "category": "headphones",
+            "brand": "mirella",
+            "image": "images/products/earbuds.jpg",
+            "sku": "MRL-POSY",
+            "sales": 203,
+            "regular": "149",
+            "sale": "119",
+            "featured": true,
+            "weight": 0.05,
+            "size": [
+                6,
+                5,
+                2.6
+            ],
+            "specs": {
+                "Battery": "30 h",
+                "Noise cancelling": "ANC",
+                "Connectivity": "Bluetooth 5.3",
+                "Water resistance": "IPX4",
+                "Colour": "Sand"
+            },
+            "short": "Small true wireless earbuds with active noise cancelling, a pocket-size case and up to 30 hours of listening with the case.",
+            "description": [
+                "Posy earbuds weigh 5 g each and come with four sizes of silicone ear tips, so most people can find a comfortable seal. A good seal also helps the noise cancelling work properly.",
+                "Each charge gives about seven hours of playback, and the case holds three more full charges for up to 30 hours in total. The case charges over USB-C or on a wireless charging pad.",
+                "An IPX4 rating means the earbuds cope with sweat and light rain. Touch controls handle play, pause, volume and calls, and you can change what each tap does in the app."
+            ],
+            "upsells": [
+                "fathom-stillwater"
+            ],
+            "cross_sells": [
+                "aster-vela-6",
+                "kestrel-reserve-10k"
+            ]
+        },
+        {
+            "slug": "onyx-summit-4k",
+            "name": "Onyx Summit 4K",
+            "category": "cameras",
+            "brand": "onyx",
+            "image": "images/products/action-camera.png",
+            "sku": "ONX-SUMMIT4K",
+            "sales": 47,
+            "regular": "329",
+            "sale": "269",
+            "featured": true,
+            "weight": 0.15,
+            "size": [
+                7,
+                5,
+                3.3
+            ],
+            "specs": {
+                "Video": "4K 60 fps",
+                "Battery": "1,720 mAh",
+                "Screen": "2.3\" touch",
+                "Water resistance": "10 m",
+                "Connectivity": "Wi-Fi 5",
+                "Colour": "Black"
+            },
+            "short": "A compact action camera that records 4K video at 60 fps, with electronic stabilisation and a body that is waterproof to 10 metres.",
+            "description": [
+                "Summit 4K records 4K video at 60 frames per second, and 1080p at up to 240 frames per second for slow motion. Electronic stabilisation smooths out the bumps of cycling, running and skiing without a separate gimbal.",
+                "The camera is waterproof to 10 metres without a case, so it can come snorkelling or into the pool. A 2.3-inch touch screen on the back shows what you are recording and makes settings quick to change.",
+                "The removable 1,720 mAh battery records for about 90 minutes at 4K. A helmet mount and a USB-C cable are included, and clips transfer to your phone over Wi-Fi."
+            ],
+            "cross_sells": [
+                "kestrel-reserve-20k",
+                "fathom-shoal"
+            ]
+        },
+        {
+            "slug": "kestrel-reserve-20k",
+            "name": "Kestrel Reserve 20K",
+            "category": "power-banks",
+            "brand": "kestrel",
+            "image": "images/products/power-bank.jpg",
+            "sku": "KST-RESERVE20K",
+            "sales": 97,
+            "regular": "69",
+            "weight": 0.42,
+            "size": [
+                15.8,
+                7.4,
+                2.6
+            ],
+            "specs": {
+                "Capacity": "20,000 mAh",
+                "Power output": "45 W",
+                "Ports": "2× USB-C",
+                "Energy": "74 Wh"
+            },
+            "short": "A 20,000 mAh power bank with two USB-C ports and 45 W output, enough to charge a phone about three times or top up a small laptop.",
+            "description": [
+                "Reserve 20K stores enough energy to charge a typical phone about three times. Its two USB-C ports share up to 45 W, so it can charge a phone and a tablet at the same time, or a small laptop on its own.",
+                "It refills from a 45 W USB-C charger in about two and a half hours, and four lights show how much charge is left. The textured shell is easy to grip.",
+                "At 74 Wh it is under the 100 Wh limit that most airlines set for cabin baggage. Check with your airline before you fly."
+            ],
+            "upsells": [
+                "onyx-bastion-25k"
+            ],
+            "cross_sells": [
+                "lumen-twin-65w",
+                "kestrel-one"
+            ]
+        },
+        {
+            "slug": "kestrel-one",
+            "name": "Kestrel One",
+            "category": "phones",
+            "brand": "kestrel",
+            "image": "images/products/phone.jpg",
+            "sku": "KST-ONE",
+            "sales": 88,
+            "regular": "449",
+            "sale": "399",
+            "weight": 0.18,
+            "size": [
+                14.6,
+                7,
+                0.9
+            ],
+            "specs": {
+                "Storage": "128 GB",
+                "Display": "6.0\" LCD",
+                "Battery": "4,000 mAh",
+                "Connectivity": "5G, Wi-Fi 5"
+            },
+            "short": "A straightforward 5G phone with a 6.0-inch screen, 128 GB of storage, a 4,000 mAh battery and a headphone jack.",
+            "description": [
+                "Kestrel One covers the basics well: a 6.0-inch LCD screen at 90 Hz, 128 GB of storage and a 4,000 mAh battery that lasts a normal day.",
+                "It supports 5G and Wi-Fi 5, has a fingerprint sensor in the power button and keeps a headphone jack. A memory card slot adds up to 1 TB of room for photos and music.",
+                "Kestrel promises four years of security updates for the One, which makes it a sensible first phone or a reliable spare."
+            ],
+            "upsells": [
+                "nordwave-arc-5",
+                "aster-vela-6"
+            ],
+            "cross_sells": [
+                "kestrel-reserve-10k",
+                "lumen-twin-65w"
+            ]
+        },
+        {
+            "slug": "lumen-twin-65w",
+            "name": "Lumen Twin 65 W",
+            "category": "chargers",
+            "brand": "lumen",
+            "image": "images/products/adapter.jpg",
+            "sku": "LMN-TWIN65",
+            "sales": 156,
+            "regular": "45",
+            "weight": 0.11,
+            "size": [
+                5.2,
+                5.2,
+                3.1
+            ],
+            "specs": {
+                "Power output": "65 W",
+                "Ports": "2× USB-C",
+                "Standard": "USB PD 3.0",
+                "Plug": "Folding"
+            },
+            "short": "A small two-port USB-C charger with up to 65 W, enough for a laptop, or a phone and a tablet at the same time.",
+            "description": [
+                "Twin 65 W uses gallium nitride parts, which keep it about the size of a standard phone charger. One port on its own delivers up to 65 W over USB Power Delivery, enough to charge most 13- and 14-inch laptops at full speed.",
+                "With both ports in use the power is shared, 45 W and 20 W, so a laptop and a phone can charge together. The plug folds away for travel.",
+                "It is protected against overheating, over-voltage and short circuits. Use it with any USB-C cable rated for the power you need."
+            ],
+            "upsells": [
+                "lumen-trio-100w"
+            ],
+            "cross_sells": [
+                "aster-vela-6",
+                "kestrel-reserve-20k"
+            ]
+        },
+        {
+            "slug": "fathom-shoal",
+            "name": "Fathom Shoal",
+            "category": "speakers",
+            "brand": "fathom",
+            "image": "images/products/speaker.jpg",
+            "sku": "FTH-SHOAL",
+            "sales": 112,
+            "regular": "79",
+            "sale": "55",
+            "weight": 0.39,
+            "size": [
+                12,
+                7,
+                7
+            ],
+            "specs": {
+                "Battery": "12 h",
+                "Water resistance": "IP67",
+                "Power output": "10 W",
+                "Connectivity": "Bluetooth 5.3",
+                "Colour": "Navy"
+            },
+            "short": "A pocket-size Bluetooth speaker that is dustproof and waterproof to IP67, with 12 hours of playback and a carry strap.",
+            "description": [
+                "Shoal is about the size of a drinks can. Its 10 W driver and passive radiator give clear voices and fuller bass than its size suggests.",
+                "The IP67 rating means it is sealed against dust and can survive being dropped in water up to 1 metre deep for 30 minutes. It floats, so it is easy to fish out of the pool.",
+                "Battery life is up to 12 hours at medium volume. Pair two Shoal speakers for stereo sound."
+            ],
+            "upsells": [
+                "nordwave-skerry"
+            ],
+            "cross_sells": [
+                "kestrel-reserve-10k"
+            ]
+        },
+        {
+            "slug": "tessera-sola-3",
+            "name": "Tessera Sola 3",
+            "category": "phones",
+            "brand": "tessera",
+            "image": "images/products/phone.jpg",
+            "sku": "TSR-SOLA3",
+            "sales": 64,
+            "weight": 0.2,
+            "size": [
+                16.4,
+                7.6,
+                0.9
+            ],
+            "specs": {
+                "Display": "6.5\" LCD",
+                "Battery": "5,000 mAh",
+                "Connectivity": "5G, Wi-Fi 5",
+                "Storage": [
+                    "128 GB",
+                    "256 GB",
+                    "512 GB"
+                ]
+            },
+            "variations": {
+                "128 GB": {
+                    "sku": "TSR-SOLA3-128",
+                    "regular": "199"
+                },
+                "256 GB": {
+                    "sku": "TSR-SOLA3-256",
+                    "regular": "249",
+                    "sale": "219"
+                },
+                "512 GB": {
+                    "sku": "TSR-SOLA3-512",
+                    "regular": "299"
+                }
+            },
+            "short": "A 5G phone with a 6.5-inch screen and a 5,000 mAh battery, available with 128 GB, 256 GB or 512 GB of storage.",
+            "description": [
+                "Sola 3 gives you a large 6.5-inch LCD screen at 90 Hz and a 5,000 mAh battery, which lasts most people well into a second day.",
+                "Choose the storage that suits you: 128 GB is enough for apps and a few thousand photos, while 256 GB and 512 GB suit people who record a lot of video or keep music and films offline.",
+                "It supports 5G and Wi-Fi 5, charges at up to 25 W over USB-C and has a 50 MP main camera with a night mode for low light."
+            ],
+            "upsells": [
+                "kestrel-one"
+            ],
+            "cross_sells": [
+                "lumen-twin-65w",
+                "nordwave-eddy"
+            ]
+        },
+        {
+            "slug": "onyx-forge-16",
+            "name": "Onyx Forge 16",
+            "category": "laptops",
+            "brand": "onyx",
+            "image": "images/products/laptop.jpg",
+            "sku": "ONX-FORGE16",
+            "sales": 23,
+            "regular": "1899",
+            "stock": 2,
+            "weight": 2.3,
+            "size": [
+                35.7,
+                26.4,
+                2.3
+            ],
+            "specs": {
+                "Display": "16\" IPS 165 Hz",
+                "Memory": "32 GB RAM",
+                "Storage": "1 TB SSD",
+                "Graphics": "8 GB GPU",
+                "Battery": "10 h",
+                "Connectivity": "Wi-Fi 7",
+                "Colour": "Black"
+            },
+            "short": "A 16-inch laptop for creative work and games, with a 165 Hz screen, 32 GB of memory, a 1 TB SSD and dedicated graphics.",
+            "description": [
+                "Forge 16 has a 16-inch IPS screen with a resolution of 2560 by 1600 pixels and a 165 Hz refresh rate. It covers the full sRGB colour range, so photos look the same on screen as they will online.",
+                "32 GB of memory, a 1 TB SSD and a graphics processor with 8 GB of its own memory handle video exports, 3D work and modern games. Two fans keep it cool under load, and a quiet mode lowers fan noise for office work.",
+                "Ports include two USB-C, two USB-A, HDMI, an SD card reader and Ethernet. Battery life is up to 10 hours for office work; plan on two to three hours for games."
+            ],
+            "cross_sells": [
+                "onyx-bastion-25k",
+                "lumen-trio-100w",
+                "lumen-keel-mouse"
+            ]
+        },
+        {
+            "slug": "nordwave-eddy",
+            "name": "Nordwave Eddy",
+            "category": "headphones",
+            "brand": "nordwave",
+            "image": "images/products/earbuds.jpg",
+            "sku": "NDW-EDDY",
+            "sales": 91,
+            "regular": "59",
+            "sale": "49",
+            "stock": 3,
+            "weight": 0.06,
+            "size": [
+                7.5,
+                6,
+                3
+            ],
+            "specs": {
+                "Battery": "24 h",
+                "Water resistance": "IP55",
+                "Connectivity": "Bluetooth 5.3",
+                "Fit": "Ear hooks"
+            },
+            "short": "Sport earbuds with soft ear hooks, an IP55 rating against sweat and rain, and up to 24 hours of playback with the case.",
+            "description": [
+                "Eddy earbuds stay put during runs and workouts thanks to soft, bendable ear hooks. The open fit lets you hear traffic and people around you.",
+                "Each charge lasts about six hours, and the case adds three more charges for up to 24 hours in total. Ten minutes in the case gives about an hour of playback.",
+                "The IP55 rating covers sweat, dust and rain. Physical buttons on each earbud are easier to use with gloves than touch controls."
+            ],
+            "upsells": [
+                "mirella-posy"
+            ],
+            "cross_sells": [
+                "nordwave-arc-5",
+                "aster-orrin-2"
+            ]
+        },
+        {
+            "slug": "mirella-linea",
+            "name": "Mirella Linea",
+            "category": "watches",
+            "brand": "mirella",
+            "image": "images/products/watch.jpg",
+            "sku": "MRL-LINEA",
+            "sales": 39,
+            "regular": "129",
+            "weight": 0.05,
+            "size": [
+                3.8,
+                3.8,
+                1.1
+            ],
+            "specs": {
+                "Battery": "30 days",
+                "Water resistance": "5 ATM",
+                "Case": "38 mm steel",
+                "Connectivity": "Bluetooth 5.2",
+                "Colour": "Sand"
+            },
+            "short": "A hybrid watch with real hands, a small display for notifications and up to 30 days between charges.",
+            "description": [
+                "Linea looks like a classic analogue watch, with a 38 mm stainless steel case and a leather strap. A small display in the dial shows messages, calendar alerts and your step count, then fades away.",
+                "It tracks steps, sleep and heart rate, and syncs with the companion app on your phone once a day or whenever you open it.",
+                "Battery life is up to 30 days, and a full charge takes about an hour on the magnetic charger. It is water resistant to 5 ATM, which is fine for handwashing, rain and swimming."
+            ],
+            "upsells": [
+                "aster-orrin-2"
+            ],
+            "cross_sells": [
+                "mirella-posy"
+            ]
+        },
+        {
+            "slug": "onyx-bastion-25k",
+            "name": "Onyx Bastion 25K",
+            "category": "power-banks",
+            "brand": "onyx",
+            "image": "images/products/power-bank.jpg",
+            "sku": "ONX-BASTION25K",
+            "sales": 44,
+            "regular": "129",
+            "sale": "99",
+            "weight": 0.56,
+            "size": [
+                15.9,
+                7.9,
+                3.2
+            ],
+            "specs": {
+                "Capacity": "25,000 mAh",
+                "Power output": "100 W",
+                "Ports": "3× USB-C",
+                "Energy": "92.5 Wh"
+            },
+            "short": "A 25,000 mAh power bank with three USB-C ports and up to 100 W, built to charge a laptop on the go.",
+            "description": [
+                "Bastion 25K delivers up to 100 W from a single port, enough to charge most laptops at full speed. With all three ports in use it can charge a laptop, a tablet and a phone at the same time.",
+                "A small screen shows the remaining charge as a percentage and the power going in and out of each port. It refills in about two hours from a 100 W USB-C charger.",
+                "At 92.5 Wh it is under the 100 Wh limit that most airlines allow in cabin baggage. Check with your airline before you fly."
+            ],
+            "cross_sells": [
+                "tessera-lattice-14",
+                "onyx-forge-16",
+                "lumen-trio-100w"
+            ]
+        },
+        {
+            "slug": "lumen-keel-mouse",
+            "name": "Lumen Keel mouse",
+            "category": "accessories",
+            "brand": "lumen",
+            "image": "images/products/mouse.jpg",
+            "sku": "LMN-KEEL",
+            "sales": 71,
+            "regular": "49",
+            "sale": "32",
+            "weight": 0.09,
+            "size": [
+                11.8,
+                7.2,
+                4.2
+            ],
+            "specs": {
+                "Sensor": "4,000 DPI",
+                "Battery": "70 days",
+                "Connectivity": "Bluetooth 5.1",
+                "Buttons": "6",
+                "Colour": "Graphite"
+            },
+            "short": "A quiet wireless mouse with a sculpted shape, six buttons and up to 70 days of use on one charge.",
+            "description": [
+                "Keel is shaped to rest your hand in a relaxed position, and its main buttons make a soft click that is easy on shared offices and late evenings at home.",
+                "It connects over Bluetooth to up to three devices and switches between them with a button underneath. The 4,000 DPI sensor tracks on most surfaces, including glossy desks.",
+                "A full charge over USB-C lasts up to 70 days, and one minute of charging gives about a day of use. The side buttons can be set to back and forward or to your own shortcuts in the app."
+            ],
+            "cross_sells": [
+                "tessera-lattice-14"
+            ]
+        },
+        {
+            "slug": "kestrel-reserve-10k",
+            "name": "Kestrel Reserve 10K",
+            "category": "power-banks",
+            "brand": "kestrel",
+            "image": "images/products/power-bank.jpg",
+            "sku": "KST-RESERVE10K",
+            "sales": 168,
+            "regular": "39",
+            "weight": 0.22,
+            "size": [
+                14.8,
+                7,
+                1.5
+            ],
+            "specs": {
+                "Capacity": "10,000 mAh",
+                "Power output": "20 W",
+                "Ports": "USB-C, USB-A",
+                "Energy": "37 Wh"
+            },
+            "short": "A slim 10,000 mAh power bank with USB-C and USB-A ports and 20 W fast charging, sized for a jacket pocket.",
+            "description": [
+                "Reserve 10K is about the size of a phone and 15 mm thick, so it slips into a pocket or a small bag. It holds enough energy to charge a typical phone about one and a half times.",
+                "The USB-C port charges phones at up to 20 W and also refills the power bank. The USB-A port works with older cables and with accessories such as earbuds and watches.",
+                "Four lights show how much charge is left. A short USB-C cable is in the box."
+            ],
+            "upsells": [
+                "kestrel-reserve-20k"
+            ],
+            "cross_sells": [
+                "kestrel-one",
+                "lumen-twin-65w"
+            ]
+        },
+        {
+            "slug": "lumen-trio-100w",
+            "name": "Lumen Trio 100 W",
+            "category": "chargers",
+            "brand": "lumen",
+            "image": "images/products/adapter.jpg",
+            "sku": "LMN-TRIO100",
+            "sales": 52,
+            "regular": "89",
+            "weight": 0.29,
+            "size": [
+                9,
+                9,
+                3.2
+            ],
+            "specs": {
+                "Power output": "100 W",
+                "Ports": "3× USB-C",
+                "Standard": "USB PD 3.0",
+                "Cable": "1.5 m"
+            },
+            "short": "A desk charger with three USB-C ports and up to 100 W, so a laptop, a tablet and a phone can charge from one socket.",
+            "description": [
+                "Trio 100 W sits on your desk and connects to the wall with a 1.5 m cable, which keeps the ports within reach instead of behind the furniture.",
+                "One port on its own delivers up to 100 W over USB Power Delivery. With several devices connected it shares the power automatically and gives the laptop priority.",
+                "Rubber feet stop it sliding around, and a small light shows when it is on. Charging cables are not included."
+            ],
+            "cross_sells": [
+                "tessera-lattice-14",
+                "onyx-bastion-25k"
+            ]
+        },
+        {
+            "slug": "nordwave-skerry",
+            "name": "Nordwave Skerry",
+            "category": "speakers",
+            "brand": "nordwave",
+            "image": "images/products/speaker.jpg",
+            "sku": "NDW-SKERRY",
+            "sales": 35,
+            "regular": "219",
+            "stock": "outofstock",
+            "weight": 1.9,
+            "size": [
+                28,
+                12,
+                12
+            ],
+            "specs": {
+                "Power output": "40 W",
+                "Battery": "20 h",
+                "Water resistance": "IP54",
+                "Connectivity": "Bluetooth 5.3",
+                "Colour": "Sand"
+            },
+            "short": "A portable speaker with 40 W of sound, up to 20 hours of battery and a handle for carrying it from room to room.",
+            "description": [
+                "Skerry fills a living room or a garden with sound from two woofers and two tweeters driven by 40 W of power. It has a built-in handle and weighs 1.9 kg.",
+                "The battery lasts up to 20 hours at moderate volume, and a USB-C output lets it top up your phone. The IP54 rating protects it from splashes and dust, though it should not go under water.",
+                "You can adjust bass and treble in the app and connect two phones at once, so friends can take turns choosing the music."
+            ],
+            "cross_sells": [
+                "kestrel-reserve-10k"
+            ]
+        }
+    ],
+    "reviews": {
+        "aster-vela-6": [
+            [
+                "Maya R.",
+                5,
+                "Fits in my hand and my jeans pocket, which was the main reason I bought it. The screen is sharp and bright enough outside."
+            ],
+            [
+                "Daniel K.",
+                4,
+                "Battery gets me through a work day with about a quarter left. I wish a charger came in the box, but the phone itself has been reliable."
+            ],
+            [
+                "Ines T.",
+                5,
+                "Switched from a much bigger phone and do not miss it. Daylight photos look natural rather than oversharpened."
+            ],
+            [
+                "Tomas P.",
+                4,
+                "Smooth and quick. Night photos are fine but not amazing. Setup took ten minutes, including moving my old messages across."
+            ]
+        ],
+        "fathom-stillwater": [
+            [
+                "Grace L.",
+                5,
+                "Wore them on a six-hour flight and the engine noise was mostly gone. Comfortable the whole way, even with glasses."
+            ],
+            [
+                "Omar S.",
+                5,
+                "Switching between my laptop and phone just works. Colleagues say my voice is clear on calls."
+            ],
+            [
+                "Hana W.",
+                4,
+                "Very good noise cancelling for the price. The sand colour marks a little, so I would pick black next time."
+            ]
+        ],
+        "tessera-lattice-14": [
+            [
+                "Lucas B.",
+                5,
+                "Light enough that I take it everywhere. The screen is lovely for reading and the keyboard is quiet."
+            ],
+            [
+                "Priya N.",
+                4,
+                "Lasts a full working day of documents and video calls. It gets warm under heavy load but stays quiet."
+            ],
+            [
+                "Felix M.",
+                4,
+                "A good travel laptop. I would have liked a second USB-A port, but I carry a small hub anyway."
+            ]
+        ],
+        "aster-orrin-2": [
+            [
+                "Zoe A.",
+                4,
+                "GPS locks on quickly and my runs match the route. Battery is closer to five days for me with daily workouts."
+            ],
+            [
+                "Arjun D.",
+                3,
+                "Step and heart rate tracking seem accurate. The app is a bit basic compared with others I have used."
+            ]
+        ],
+        "nordwave-arc-5": [
+            [
+                "Nora C.",
+                5,
+                "Two days of battery for me, which I did not expect. Plenty of storage for all my photos."
+            ],
+            [
+                "Sam O.",
+                4,
+                "Great screen and battery. It is on the large side, so a case with a good grip helps."
+            ],
+            [
+                "Elena V.",
+                5,
+                "Charges very quickly with the Lumen charger. The stabilisation makes a real difference when filming my kids."
+            ]
+        ],
+        "mirella-posy": [
+            [
+                "Ben H.",
+                4,
+                "Small and comfortable, even in my small ears with the extra-small tips. Noise cancelling is decent on the bus."
+            ],
+            [
+                "Chloe F.",
+                5,
+                "Seven hours per charge is accurate. The case is tiny and charges on my wireless pad."
+            ],
+            [
+                "Marcus J.",
+                3,
+                "Sound is good, but the touch controls react when I adjust the fit. Changing the controls in the app helped a bit."
+            ]
+        ],
+        "onyx-summit-4k": [
+            [
+                "Isla G.",
+                5,
+                "Took it snorkelling on holiday and the footage is clear and steady. The screen on the back makes framing easy."
+            ],
+            [
+                "Noah E.",
+                4,
+                "Stabilisation works well on the bike. The battery lasts about 80 minutes at 4K for me, so a spare battery is worth having."
+            ]
+        ],
+        "kestrel-one": [
+            [
+                "Leah M.",
+                4,
+                "Bought it for my son as his first phone. Easy to set up, and the headphone jack was a must."
+            ],
+            [
+                "Victor R.",
+                4,
+                "Does everything I need. The screen is not as vivid as OLED, but it is perfectly clear."
+            ],
+            [
+                "Amara O.",
+                5,
+                "Good value. The battery lasts all day and the memory card slot means I never worry about space."
+            ]
+        ],
+        "kestrel-reserve-20k": [
+            [
+                "Jonas K.",
+                5,
+                "Charged my phone three times on a camping weekend with some left over."
+            ],
+            [
+                "Mei L.",
+                4,
+                "Charges my small laptop fine. It is on the heavy side at about 400 g, but that is expected for the capacity."
+            ]
+        ],
+        "fathom-shoal": [
+            [
+                "Oscar T.",
+                4,
+                "Survived a drop in the pool and kept playing. Loud enough for a small garden."
+            ],
+            [
+                "Ruby S.",
+                5,
+                "Clips onto my backpack for hikes, and the battery easily lasts a long day."
+            ]
+        ],
+        "lumen-keel-mouse": [
+            [
+                "Hugo P.",
+                5,
+                "It really is quiet. My partner no longer hears me clicking late in the evening."
+            ],
+            [
+                "Anya K.",
+                4,
+                "Comfortable for long work days. Switching between my laptop and tablet takes a second."
+            ]
+        ]
+    },
+    "post_categories": {
+        "buying-guides": {
+            "name": "Buying guides",
+            "description": "Plain-English guides to choosing phones, audio, power and laptops."
+        }
+    },
+    "pages": {
+        "home": {
+            "title": "Home",
+            "content": []
+        },
+        "buying-guides": {
+            "title": "Buying guides",
+            "content": []
+        },
+        "about": {
+            "title": "About",
+            "content": [
+                [
+                    "p",
+                    "Unishop is a small online electronics store in San Mateo, California. We sell phones, headphones, watches and laptops, and the chargers and power banks that keep them running."
+                ],
+                [
+                    "img",
+                    "theme:assets/images/hero-desk.jpg"
+                ],
+                [
+                    "h2",
+                    "What we do differently"
+                ],
+                [
+                    "p",
+                    "Every product page lists the specifications that matter up front, so you can compare models without opening ten tabs. Prices show what you pay today and the price it replaced, and we only mark something as on sale when it really costs less than before."
+                ],
+                [
+                    "h2",
+                    "How we choose what to sell"
+                ],
+                [
+                    "ul",
+                    [
+                        "We use every product ourselves before it goes on sale.",
+                        "We keep the range short: a few good options in each category rather than hundreds.",
+                        "We quote battery life and charging times for normal use, not just the best case."
+                    ]
+                ],
+                [
+                    "h2",
+                    "Talk to us"
+                ],
+                [
+                    "p",
+                    "Questions about a product or an order? Our team answers email and phone calls on weekdays, and the contact page has the details."
+                ]
+            ]
+        },
+        "contact": {
+            "title": "Contact",
+            "content": [
+                [
+                    "p",
+                    "We are happy to help with product questions, orders and returns. Most emails get an answer within one working day."
+                ],
+                [
+                    "h2",
+                    "Email"
+                ],
+                [
+                    "p",
+                    "hello@example.com"
+                ],
+                [
+                    "h2",
+                    "Phone"
+                ],
+                [
+                    "p",
+                    "(650) 555-0142"
+                ],
+                [
+                    "h2",
+                    "Address"
+                ],
+                [
+                    "lines",
+                    [
+                        "Unishop",
+                        "240 Market Lane, Suite 5",
+                        "San Mateo, CA 94401",
+                        "United States"
+                    ]
+                ],
+                [
+                    "h2",
+                    "Opening hours"
+                ],
+                [
+                    "ul",
+                    [
+                        "Monday to Friday: 9am to 6pm",
+                        "Saturday: 10am to 4pm",
+                        "Sunday and public holidays: closed"
+                    ]
+                ],
+                [
+                    "p",
+                    "All times are Pacific time."
+                ]
+            ]
+        },
+        "shipping-returns": {
+            "title": "Shipping & returns",
+            "content": [
+                [
+                    "h2",
+                    "Delivery"
+                ],
+                [
+                    "p",
+                    "We dispatch every order within one working day, and delivery is free on orders over $99 within the United States."
+                ],
+                [
+                    "ul",
+                    [
+                        "Standard delivery: 3 to 5 working days, free on orders over $99.",
+                        "Next-day delivery: available at checkout for most addresses when you order before 2pm Pacific time.",
+                        "Tracking: we email you a tracking link as soon as your parcel leaves us."
+                    ]
+                ],
+                [
+                    "h2",
+                    "Returns"
+                ],
+                [
+                    "p",
+                    "You can return any item within 30 days of delivery, and returns are free. Items should be complete, with their accessories and packaging."
+                ],
+                [
+                    "h3",
+                    "How to return an item"
+                ],
+                [
+                    "ol",
+                    [
+                        "Email hello@example.com with your order number and the item you are returning.",
+                        "We send you a prepaid returns label within one working day.",
+                        "Pack the item with its accessories and drop the parcel at any post office.",
+                        "We refund you within five working days of receiving it."
+                    ]
+                ],
+                [
+                    "h2",
+                    "Refunds"
+                ],
+                [
+                    "p",
+                    "Refunds go back to the original payment method. Depending on your bank, they can take a few more days to appear on your statement."
+                ]
+            ]
+        },
+        "warranty": {
+            "title": "Warranty",
+            "content": [
+                [
+                    "p",
+                    "Everything we sell comes with a two-year warranty, handled by us rather than the maker. If something stops working because of a fault, we repair it, replace it or refund you."
+                ],
+                [
+                    "h2",
+                    "What is covered"
+                ],
+                [
+                    "ul",
+                    [
+                        "Faults in materials and workmanship for two years from delivery.",
+                        "Batteries that hold less than 80 percent of their original charge within the first year.",
+                        "Screen faults, such as dead pixels, that are there when the item arrives."
+                    ]
+                ],
+                [
+                    "h2",
+                    "What is not covered"
+                ],
+                [
+                    "ul",
+                    [
+                        "Accidental damage, such as drops, cracked screens and liquid damage.",
+                        "Normal wear, such as scratches and worn ear cushions.",
+                        "Repairs or changes made by anyone other than us or the maker."
+                    ]
+                ],
+                [
+                    "h2",
+                    "How to make a claim"
+                ],
+                [
+                    "p",
+                    "Email hello@example.com with your order number, a short description of the problem and, if you can, a photo or a short video. We reply within one working day and arrange a free collection if the item needs to come back to us."
+                ],
+                [
+                    "p",
+                    "This warranty is in addition to your rights under consumer law."
+                ]
+            ]
+        },
+        "faq": {
+            "title": "FAQ",
+            "content": [
+                [
+                    "p",
+                    "Answers to the questions we hear most often. If yours is not here, get in touch and we will help."
+                ],
+                [
+                    "details",
+                    "When will my order arrive?",
+                    "We dispatch orders within one working day. Standard delivery takes 3 to 5 working days, and next-day delivery is available at checkout for most addresses."
+                ],
+                [
+                    "details",
+                    "Is delivery free?",
+                    "Yes, on orders over $99 within the United States. For smaller orders the delivery cost is shown at checkout before you pay."
+                ],
+                [
+                    "details",
+                    "Can I return something if I change my mind?",
+                    "Yes. You have 30 days from delivery to return an item, and returns are free. The shipping and returns page explains the steps."
+                ],
+                [
+                    "details",
+                    "How does the two-year warranty work?",
+                    "If a product develops a fault within two years, contact us rather than the maker. We repair it, replace it or refund you. The warranty page lists what is covered."
+                ],
+                [
+                    "details",
+                    "Are the phones unlocked?",
+                    "Yes. Every phone we sell is unlocked and works with any carrier that supports its network bands."
+                ],
+                [
+                    "details",
+                    "Do phones come with a charger?",
+                    "Most phones come with a USB-C cable but no charger. Any of our USB-C chargers will charge a phone, a tablet or a laptop."
+                ],
+                [
+                    "details",
+                    "Which power bank do I need?",
+                    "A 10,000 mAh power bank charges a typical phone about one and a half times, and laptops need 45 W of output or more. Our buying guide on power banks explains the numbers."
+                ]
+            ]
+        }
+    },
+    "posts": {
+        "how-to-choose-noise-cancelling-headphones": {
+            "title": "How to choose noise-cancelling headphones",
+            "excerpt": "What active noise cancelling can and cannot do, and the four things to check before you buy.",
+            "image": "theme:assets/images/hero-audio.jpg",
+            "days": 5,
+            "category": "buying-guides",
+            "content": [
+                [
+                    "p",
+                    "Active noise cancelling, or ANC, uses small microphones to listen to the sound around you and plays an opposite signal to cancel it out. It works best on steady, low sounds such as engine hum, train rumble and air conditioning, and less well on voices, clattering dishes and other sudden or high-pitched sounds."
+                ],
+                [
+                    "h2",
+                    "Over-ear or earbuds?"
+                ],
+                [
+                    "p",
+                    "Over-ear headphones usually cancel more noise, because the ear cups also block sound physically. They are comfortable on long flights and through long working days, but they take up more room in a bag. Earbuds are easier to carry and better for exercise, and good ones come close to over-ear models as long as the ear tips seal properly."
+                ],
+                [
+                    "h2",
+                    "What to check before you buy"
+                ],
+                [
+                    "ul",
+                    [
+                        "Fit and comfort: try the different ear tip sizes, and look for soft cushions and a light clamp on over-ear models.",
+                        "Battery life with noise cancelling on, since the headline figure is often measured with it switched off.",
+                        "A transparency mode, which lets outside sound in so you can hear announcements without taking the headphones off.",
+                        "Multipoint connection, so the headphones stay paired to your phone and your laptop at the same time."
+                    ]
+                ],
+                [
+                    "h2",
+                    "Calls and controls"
+                ],
+                [
+                    "p",
+                    "If you take calls on the move, look for several microphones on each side, which helps separate your voice from wind and traffic. Physical buttons are easier to use than touch controls in cold weather or with gloves on."
+                ],
+                [
+                    "h2",
+                    "Our picks"
+                ],
+                [
+                    "p",
+                    "For long journeys, Fathom Stillwater gives up to 40 hours of playback with noise cancelling on, and folds flat into its case. If you would rather carry something pocket-size, Mirella Posy earbuds cancel noise well and come with four sizes of ear tips."
+                ],
+                [
+                    "p",
+                    "Whichever you choose, give yourself a few days to get used to the feeling of noise cancelling. Most people stop noticing it within a week."
+                ]
+            ]
+        },
+        "power-banks-what-the-mah-number-really-means": {
+            "title": "Power banks: what the mAh number really means",
+            "excerpt": "Why a 10,000 mAh power bank does not charge a 5,000 mAh phone twice, and how to pick the right size.",
+            "image": "theme:assets/images/promo-power.jpg",
+            "days": 12,
+            "category": "buying-guides",
+            "content": [
+                [
+                    "p",
+                    "The mAh (milliamp-hour) figure on a power bank tells you how much charge its battery cells hold. It is a useful way to compare power banks with each other, but it does not tell you directly how many times one will charge your phone."
+                ],
+                [
+                    "h2",
+                    "Why you get less than the label suggests"
+                ],
+                [
+                    "p",
+                    "Capacity is measured at the voltage of the cells inside, about 3.7 V. To charge a phone, the power bank raises that to 5 V or more, and some energy turns into heat along the way, both in the power bank and in your phone. In practice, expect about two thirds of the rated capacity to reach your device."
+                ],
+                [
+                    "p",
+                    "So a 10,000 mAh power bank charges a phone with a 4,500 mAh battery about one and a half times, not twice."
+                ],
+                [
+                    "h2",
+                    "Watt-hours and flying"
+                ],
+                [
+                    "p",
+                    "Airlines set their limits in watt-hours (Wh) rather than mAh. To convert, multiply the mAh figure by 3.7 and divide by 1,000: a 20,000 mAh power bank holds about 74 Wh. Most airlines allow power banks up to 100 Wh in cabin baggage and none in checked bags, but check with your airline before you travel."
+                ],
+                [
+                    "h2",
+                    "Output matters too"
+                ],
+                [
+                    "p",
+                    "Capacity is how much energy is stored; output, in watts, is how fast it comes out. A phone charges well from 20 W and a tablet from 30 W, while most laptops need at least 45 W, and ideally 65 W or more."
+                ],
+                [
+                    "ul",
+                    [
+                        "10,000 mAh and 20 W: a phone top-up that fits in a pocket.",
+                        "20,000 mAh and 45 W: several phone charges, or a tablet and a phone for a weekend away.",
+                        "25,000 mAh and 100 W: about one full laptop charge, for long journeys and working away from a socket."
+                    ]
+                ],
+                [
+                    "p",
+                    "Whichever size you choose, recharge it every few months when you are not using it. Lithium batteries last longer when they are not left completely empty."
+                ]
+            ]
+        },
+        "picking-a-laptop-for-work-and-travel": {
+            "title": "Picking a laptop for work and travel",
+            "excerpt": "Weight, battery life, screen size and ports: how to find a laptop that works as well on a train as it does on your desk.",
+            "image": "theme:assets/images/promo-laptop.jpg",
+            "days": 19,
+            "category": "buying-guides",
+            "content": [
+                [
+                    "p",
+                    "A laptop for work and travel has two jobs: it has to be easy to carry, and still comfortable for a full day of work. The right balance depends on how often you move and what you do when you get there."
+                ],
+                [
+                    "h2",
+                    "Weight and size"
+                ],
+                [
+                    "p",
+                    "For regular commuting, aim for 1.4 kg or less. A 13- or 14-inch screen suits most people: big enough to work on two documents side by side, small enough for a backpack. Screens with a taller 16:10 shape show more of a page than the older 16:9 shape."
+                ],
+                [
+                    "h2",
+                    "Battery life you can trust"
+                ],
+                [
+                    "p",
+                    "Battery claims are usually measured playing video at low brightness. Real work with a browser full of tabs, video calls and a brighter screen uses more power, so expect roughly half to two thirds of the headline figure."
+                ],
+                [
+                    "p",
+                    "A laptop that charges over USB-C can share a charger with your phone, which means one less thing to pack."
+                ],
+                [
+                    "h2",
+                    "Memory, storage and ports"
+                ],
+                [
+                    "ul",
+                    [
+                        "16 GB of memory keeps plenty of browser tabs and apps open without slowing down.",
+                        "512 GB of storage leaves room for work files, photos and offline documents.",
+                        "At least two USB-C ports, so you can charge and connect a display at the same time.",
+                        "A 1080p webcam and good microphones make a noticeable difference on video calls."
+                    ]
+                ],
+                [
+                    "h2",
+                    "When a bigger laptop makes sense"
+                ],
+                [
+                    "p",
+                    "If you edit video, work in 3D or play games, a 15- or 16-inch laptop with dedicated graphics is worth the extra weight. Pair it with a 100 W power bank and you can keep working away from a socket for a few hours."
+                ]
+            ]
+        }
+    },
+    "front_page": "home",
+    "posts_page": "buying-guides",
+    "menu": {
+        "title": "Store menu",
+        "slug": "store-menu",
+        "items": [
+            {
+                "label": "Shop",
+                "woocommerce": "shop"
+            },
+            {
+                "label": "Phones",
+                "product_cat": "phones"
+            },
+            {
+                "label": "Audio",
+                "product_cat": "headphones"
+            },
+            {
+                "label": "Wearables",
+                "product_cat": "watches"
+            },
+            {
+                "label": "Power",
+                "product_cat": "power-banks"
+            },
+            {
+                "label": "Laptops",
+                "product_cat": "laptops"
+            },
+            {
+                "label": "Buying guides",
+                "page": "buying-guides"
+            }
+        ]
+    },
+    "demo_site": {
+        "options": {
+            "blogname": "Unishop",
+            "blogdescription": "Electronics, priced to compare",
+            "woocommerce_coming_soon": "no",
+            "woocommerce_store_pages_only": "no",
+            "woocommerce_currency": "USD",
+            "woocommerce_store_address": "240 Market Lane",
+            "woocommerce_store_address_2": "Suite 5",
+            "woocommerce_store_city": "San Mateo",
+            "woocommerce_store_postcode": "94401",
+            "woocommerce_default_country": "US:CA",
+            "woocommerce_enable_reviews": "yes",
+            "woocommerce_enable_review_rating": "yes",
+            "woocommerce_manage_stock": "yes"
+        },
+        "returns_page": "shipping-returns",
+        "checkout": {
+            "payment_title": "Demo payment (no charge)",
+            "payment_description": "This is a demo store. Orders are not charged, packed or shipped.",
+            "payment_instructions": "This was a demo order: nothing was charged and nothing will be shipped.",
+            "shipping": [
+                {
+                    "method": "flat_rate",
+                    "title": "Standard delivery",
+                    "tax_status": "taxable",
+                    "cost": "4.95"
+                },
+                {
+                    "method": "free_shipping",
+                    "title": "Free delivery",
+                    "requires": "min_amount",
+                    "min_amount": "99"
+                }
+            ]
+        },
+        "hide_sample_content": true
+    }
+}

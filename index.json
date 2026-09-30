@@ -1,0 +1,17 @@
+{
+	"schema": 1,
+	"packs": [
+		{
+			"id": "unishop",
+			"theme": "unishop",
+			"title": "Unishop electronics store",
+			"description": "An electronics store with 20 products across phones, audio, watches, laptops, power and accessories: specs on every product, sale prices, variable products, brands, reviews, buying guides and store pages.",
+			"version": "1.0.0",
+			"path": "unishop/pack.json",
+			"requires": {
+				"wordpress": "7.0",
+				"woocommerce": "11.0"
+			}
+		}
+	]
+}
