@@ -56,6 +56,23 @@ ID and version for six hours.
 }
 ```
 
+## Settings a pack may change
+
+`store_settings` and `demo_site.options` can only set these, to plain text values. Storefill skips
+anything else and says so in the import log, so a pack can never change accounts, roles, URLs or
+security settings.
+
+`blogname`, `blogdescription`, `woocommerce_coming_soon`, `woocommerce_store_pages_only`,
+`woocommerce_currency`, `woocommerce_currency_pos`, `woocommerce_price_thousand_sep`,
+`woocommerce_price_decimal_sep`, `woocommerce_price_num_decimals`, `woocommerce_store_address`,
+`woocommerce_store_address_2`, `woocommerce_store_city`, `woocommerce_store_postcode`,
+`woocommerce_default_country`, `woocommerce_weight_unit`, `woocommerce_dimension_unit`,
+`woocommerce_enable_reviews`, `woocommerce_enable_review_rating`,
+`woocommerce_review_rating_required`, `woocommerce_manage_stock`,
+`woocommerce_hide_out_of_stock_items`.
+
+All text in a pack is plain text: Storefill strips any HTML from it.
+
 ## pack.json, schema 1
 
 Every section is optional.
@@ -74,7 +91,7 @@ Every section is optional.
 | `posts` | `{ "<slug>": { "title", "excerpt", "image", "days", "category", "content" } }` | `days`: how many days ago it was published. |
 | `front_page`, `posts_page` | page slug | Used when the owner ticks "Use the demo homepage". |
 | `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`. Block themes get a navigation menu; classic themes get a menu assigned to `location`. |
-| `store_settings` | `{ "<option>": "<value>" }` | Applied on every import. Keep it to settings the demo cannot work without. |
+| `store_settings` | `{ "<option>": "<value>" }` | Applied on every import. Keep it to settings the demo cannot work without. Only the settings listed under [Settings a pack may change](#settings-a-pack-may-change) are applied. |
 | `demo_site` | object | Applied only with "This is a public demo site" or `--demo-site`: `options` (site title, address, currency, store visibility…), `returns_page` (a page slug), `checkout` (a no-charge payment method and delivery methods), `hide_sample_content`. |
 
 ### Products
