@@ -12,6 +12,18 @@
 				"wordpress": "7.0",
 				"woocommerce": "11.0"
 			}
+		},
+		{
+			"id": "twentytwentyfive",
+			"theme": "twentytwentyfive",
+			"title": "Bytewell store for Twenty Twenty-Five",
+			"description": "A small electronics store: 8 products in 3 categories, sale prices, a product in two colours, brands, reviews, store pages and a short journal.",
+			"version": "1.0.0",
+			"path": "twentytwentyfive/pack.json",
+			"requires": {
+				"wordpress": "6.7",
+				"woocommerce": "9.6"
+			}
 		}
 	]
 }
