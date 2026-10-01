@@ -24,6 +24,18 @@
 				"wordpress": "6.7",
 				"woocommerce": "9.6"
 			}
+		},
+		{
+			"id": "ebasket",
+			"theme": "ebasket",
+			"title": "eBasket grocery store",
+			"description": "A neighbourhood grocer with 37 products in 8 aisles: pack sizes and nutrition panels on every food, diet tags, offers with end dates, a variable coffee, reviews, recipes, store pages and a demo checkout with free delivery over £40.",
+			"version": "1.0.0",
+			"path": "ebasket/pack.json",
+			"requires": {
+				"wordpress": "7.0",
+				"woocommerce": "11.0"
+			}
 		}
 	]
 }
