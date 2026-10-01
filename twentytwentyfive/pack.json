@@ -1,7 +1,8 @@
 {
 	"schema": 1,
 	"files": [
-		"settings.json"
+		"settings.json",
+		"customizer.json"
 	],
 	"images": {
 		"images/products/headphones.jpg": "",
@@ -290,7 +291,7 @@
 				[
 					"section",
 					{
-						"background": "#f4f4f1",
+						"background": "accent-5",
 						"items": [
 							[
 								"features",
@@ -363,7 +364,28 @@
 				[
 					"section",
 					{
-						"background": "#f4f4f1",
+						"background": "accent-5",
+						"items": [
+							[
+								"media",
+								{
+									"image": "images/products/headphones.jpg",
+									"heading": "Silence the commute",
+									"text": "Fathom Stillwater headphones cancel the low hum of trains, planes and office air conditioning, and run for 40 hours on a charge.",
+									"buttons": [
+										{
+											"label": "View the Stillwater",
+											"product": "fathom-stillwater"
+										}
+									]
+								}
+							]
+						]
+					}
+				],
+				[
+					"section",
+					{
 						"items": [
 							[
 								"h2",
@@ -393,6 +415,40 @@
 				[
 					"section",
 					{
+						"background": "contrast",
+						"text": "base",
+						"items": [
+							[
+								"h2",
+								"What customers say",
+								"wide"
+							],
+							[
+								"quotes",
+								[
+									{
+										"text": "The noise cancelling is excellent on the train. Comfortable for hours.",
+										"name": "Priya S., Fathom Stillwater",
+										"rating": 5
+									},
+									{
+										"text": "Small enough for my pocket, and the battery easily lasts a day.",
+										"name": "Maya R., Aster Vela",
+										"rating": 5
+									},
+									{
+										"text": "Thin, light, and charges my phone fast.",
+										"name": "Luis G., Bytewell 10K Power Bank",
+										"rating": 5
+									}
+								]
+							]
+						]
+					}
+				],
+				[
+					"section",
+					{
 						"items": [
 							[
 								"h2",
@@ -402,9 +458,26 @@
 							[
 								"posts",
 								{
-									"count": 3
+									"count": 3,
+									"category": "journal"
 								}
 							]
+						]
+					}
+				],
+				[
+					"cover",
+					{
+						"image": "images/products/phone.jpg",
+						"height": 380,
+						"level": 2,
+						"heading": "Questions before you buy?",
+						"text": "Ask us anything about a product. We answer every message within one working day.",
+						"buttons": [
+							{
+								"label": "Contact us",
+								"page": "contact"
+							}
 						]
 					}
 				]
