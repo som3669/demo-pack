@@ -1,0 +1,2034 @@
+{
+	"schema": 1,
+	"files": [
+		"settings.json"
+	],
+	"images": {
+		"images/products/bananas-photo.jpg": "",
+		"images/products/apples-photo.jpg": "",
+		"images/products/strawberries-photo.jpg": "",
+		"images/products/lemons-photo.jpg": "",
+		"images/products/avocados-photo.jpg": "",
+		"images/products/vine-tomatoes-photo.jpg": "",
+		"images/products/carrots-photo.jpg": "",
+		"images/products/broccoli-photo.jpg": "",
+		"images/products/peppers-photo.jpg": "",
+		"images/products/mushrooms-photo.jpg": "",
+		"images/products/sourdough-photo.jpg": "",
+		"images/products/croissants-photo.jpg": "",
+		"images/products/baguette-photo.jpg": "",
+		"images/products/cinnamon-buns-photo.jpg": "",
+		"images/products/eggs-photo.jpg": "",
+		"images/products/milk-photo.jpg": "",
+		"images/products/yogurt-photo.jpg": "",
+		"images/products/cheddar-photo.jpg": "",
+		"images/products/butter-photo.jpg": "",
+		"images/products/basmati-rice-photo.jpg": "",
+		"images/products/penne-photo.jpg": "",
+		"images/products/red-lentils-photo.jpg": "",
+		"images/products/olive-oil-photo.jpg": "",
+		"images/products/honey-photo.jpg": "",
+		"images/products/oats-photo.jpg": "",
+		"images/products/coffee-beans-photo.jpg": "",
+		"images/products/tea-photo.jpg": "",
+		"images/products/orange-juice-photo.jpg": "",
+		"images/products/lemonade-photo.jpg": "",
+		"images/products/dark-chocolate-photo.jpg": "",
+		"images/products/mixed-nuts-photo.jpg": "",
+		"images/products/cookies-photo.jpg": "",
+		"images/products/dried-apricots-photo.jpg": "",
+		"images/products/tulips-photo.jpg": "",
+		"images/products/beeswax-candles-photo.jpg": "",
+		"images/products/soap-photo.jpg": "",
+		"images/products/dish-brush-photo.jpg": "",
+		"images/scenes/hero-basket-photo.jpg": "A crate of fresh fruit and vegetables",
+		"images/scenes/market-produce-photo.jpg": "Sweet peppers and strawberries on a market stall",
+		"images/scenes/recipe-pasta-photo.jpg": "Penne in tomato sauce with a basil leaf",
+		"images/scenes/recipe-oats-photo.jpg": "A bowl of oats topped with figs and raspberries",
+		"images/scenes/recipe-salad-photo.jpg": "A bowl of tomato, corn and herb salad",
+		"images/scenes/grower-photo.jpg": "A hand holding a radish just pulled from the ground",
+		"images/scenes/delivery-photo.jpg": "A basket of carrots and onions on a wooden table",
+		"images/scenes/bakery-shelf-photo.jpg": "Crusty loaves of bread in a basket"
+	},
+	"product_categories": {
+		"fruit": {
+			"name": "Fruit",
+			"description": "Bananas to berries, bought ripe from growers we know.",
+			"image": "images/products/strawberries-photo.jpg"
+		},
+		"vegetables": {
+			"name": "Vegetables",
+			"description": "Picked the day before it reaches you, from farms near the store.",
+			"image": "images/products/vine-tomatoes-photo.jpg"
+		},
+		"bakery": {
+			"name": "Bakery",
+			"description": "Sourdough, baguettes and pastries, baked every morning by our partner bakery.",
+			"image": "images/products/sourdough-photo.jpg"
+		},
+		"dairy-eggs": {
+			"name": "Dairy and eggs",
+			"description": "Milk from one family farm, free-range eggs and proper butter and cheese.",
+			"image": "images/products/eggs-photo.jpg"
+		},
+		"pantry": {
+			"name": "Pantry",
+			"description": "Rice, pasta, oats, oil and honey: the shelf you cook from every day.",
+			"image": "images/products/olive-oil-photo.jpg"
+		},
+		"drinks": {
+			"name": "Drinks",
+			"description": "Coffee roasted this week, strong tea and pressed juice.",
+			"image": "images/products/coffee-beans-photo.jpg"
+		},
+		"snacks": {
+			"name": "Snacks and treats",
+			"description": "Chocolate, nuts, cookies and dried fruit for the cupboard.",
+			"image": "images/products/dark-chocolate-photo.jpg"
+		},
+		"home": {
+			"name": "Home and flowers",
+			"description": "Cut flowers, beeswax candles and plastic-free things for the kitchen.",
+			"image": "images/products/tulips-photo.jpg"
+		}
+	},
+	"attributes": {
+		"Pack size": "pack-size",
+		"Origin": "origin"
+	},
+	"products": [
+		{
+			"slug": "bananas",
+			"name": "Bananas, bunch of 5",
+			"category": "fruit",
+			"image": "images/products/bananas-photo.jpg",
+			"sku": "EB-FRU-001",
+			"sales": 412,
+			"regular": "0.95",
+			"featured": true,
+			"weight": 0.9,
+			"specs": {
+				"Pack size": "5 pack",
+				"Origin": "Colombia",
+				"Storage": "Keep at room temperature, away from other fruit",
+				"Typical values": "Per 100 g",
+				"Energy": "376 kJ / 89 kcal",
+				"Fat": "0.3 g",
+				"of which saturates": "0.1 g",
+				"Carbohydrate": "20.3 g",
+				"of which sugars": "16.2 g",
+				"Fibre": "1.4 g",
+				"Protein": "1.2 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "Five bananas picked green and ripened in our store, so they arrive yellow and keep for the week.",
+			"description": [
+				"We buy our bananas green and ripen them ourselves, in small batches, so a bunch reaches you just turned yellow rather than already spotted. Leave them in the fruit bowl and they will see you through to the weekend.",
+				"Keep them away from apples and avocados if you want them to last: those give off the gas that ripens bananas faster."
+			],
+			"upsells": [
+				"rolled-oats",
+				"greek-style-yogurt"
+			]
+		},
+		{
+			"slug": "pink-lady-apples",
+			"name": "Pink Lady apples, 6 pack",
+			"category": "fruit",
+			"image": "images/products/apples-photo.jpg",
+			"sku": "EB-FRU-002",
+			"sales": 238,
+			"regular": "2.40",
+			"sale": "1.90",
+			"sale_days": 6,
+			"weight": 1.0,
+			"specs": {
+				"Pack size": "6 pack",
+				"Origin": "United Kingdom",
+				"Storage": "Keep in the fridge for the longest crunch",
+				"Typical values": "Per 100 g",
+				"Energy": "218 kJ / 52 kcal",
+				"Fat": "0.2 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "11.8 g",
+				"of which sugars": "10.4 g",
+				"Fibre": "2.4 g",
+				"Protein": "0.3 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Local"
+			],
+			"short": "Crisp, sweet-sharp apples, six to a bag, picked this autumn.",
+			"description": [
+				"A crisp, juicy apple with a sweet-sharp bite. These come from an orchard two hours from the store and are picked when the blush has spread across the skin.",
+				"They keep for two weeks in the fridge, and slice into lunchboxes without browning too quickly."
+			]
+		},
+		{
+			"slug": "strawberries",
+			"name": "Strawberries, 400 g",
+			"category": "fruit",
+			"image": "images/products/strawberries-photo.jpg",
+			"sku": "EB-FRU-003",
+			"sales": 305,
+			"regular": "2.50",
+			"sale": "2.00",
+			"featured": true,
+			"weight": 0.45,
+			"specs": {
+				"Pack size": "400 g",
+				"Origin": "United Kingdom",
+				"Storage": "Keep refrigerated; eat within 2 days",
+				"Typical values": "Per 100 g",
+				"Energy": "136 kJ / 32 kcal",
+				"Fat": "0.3 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "7.7 g",
+				"of which sugars": "4.9 g",
+				"Fibre": "2.0 g",
+				"Protein": "0.7 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Local"
+			],
+			"short": "Sweet British strawberries in a 400 g punnet, picked the day before delivery.",
+			"description": [
+				"Picked in the morning, chilled straight away and with us the next day. That short trip is why they still taste of strawberries rather than of the fridge.",
+				"Take them out of the fridge half an hour before you eat them: they taste sweeter at room temperature."
+			],
+			"upsells": [
+				"greek-style-yogurt",
+				"wildflower-honey"
+			]
+		},
+		{
+			"slug": "unwaxed-lemons",
+			"name": "Unwaxed lemons, 4 pack",
+			"category": "fruit",
+			"image": "images/products/lemons-photo.jpg",
+			"sku": "EB-FRU-004",
+			"sales": 144,
+			"regular": "1.10",
+			"weight": 0.5,
+			"specs": {
+				"Pack size": "4 pack",
+				"Origin": "Spain",
+				"Storage": "Keep in the fridge",
+				"Typical values": "Per 100 g",
+				"Energy": "121 kJ / 29 kcal",
+				"Fat": "0.3 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "9.3 g",
+				"of which sugars": "2.5 g",
+				"Fibre": "2.8 g",
+				"Protein": "1.1 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "Four unwaxed lemons, so the zest is ready to grate straight into cooking.",
+			"description": [
+				"Unwaxed lemons are left as they come off the tree, which means you can zest them straight into a dressing, a cake or a pan of risotto without scrubbing first.",
+				"They keep for a fortnight in the fridge. Roll one on the worktop before squeezing to get more juice out of it."
+			]
+		},
+		{
+			"slug": "ripe-avocados",
+			"name": "Ripe and ready avocados, 2 pack",
+			"category": "fruit",
+			"image": "images/products/avocados-photo.jpg",
+			"sku": "EB-FRU-005",
+			"sales": 198,
+			"regular": "1.80",
+			"stock": 4,
+			"weight": 0.4,
+			"specs": {
+				"Pack size": "2 pack",
+				"Origin": "Peru",
+				"Storage": "Eat within 2 days, or keep in the fridge to slow ripening",
+				"Typical values": "Per 100 g",
+				"Energy": "669 kJ / 160 kcal",
+				"Fat": "14.7 g",
+				"of which saturates": "2.1 g",
+				"Carbohydrate": "1.9 g",
+				"of which sugars": "0.7 g",
+				"Fibre": "6.7 g",
+				"Protein": "2.0 g",
+				"Salt": "0.02 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "Two avocados checked by hand for ripeness, ready to eat today or tomorrow.",
+			"description": [
+				"Each avocado is pressed by hand before it is packed, so these are soft enough for toast the day they arrive.",
+				"Not eating them yet? Put them in the fridge, which slows ripening by a few days."
+			]
+		},
+		{
+			"slug": "vine-tomatoes",
+			"name": "Vine tomatoes, 500 g",
+			"category": "vegetables",
+			"image": "images/products/vine-tomatoes-photo.jpg",
+			"sku": "EB-VEG-001",
+			"sales": 356,
+			"regular": "1.60",
+			"sale": "1.25",
+			"sale_days": 4,
+			"featured": true,
+			"weight": 0.55,
+			"specs": {
+				"Pack size": "500 g",
+				"Origin": "United Kingdom",
+				"Storage": "Keep at room temperature for the best flavour",
+				"Typical values": "Per 100 g",
+				"Energy": "75 kJ / 18 kcal",
+				"Fat": "0.2 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "3.1 g",
+				"of which sugars": "2.6 g",
+				"Fibre": "1.2 g",
+				"Protein": "0.9 g",
+				"Salt": "0.01 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free",
+				"Local"
+			],
+			"short": "Glasshouse tomatoes ripened on the vine, sold on the stalk for flavour.",
+			"description": [
+				"Grown in a glasshouse heated by its own solar panels and left on the vine until they are fully red. The stalk keeps feeding the fruit, which is why vine tomatoes taste sweeter.",
+				"Keep them out of the fridge: cold dulls the flavour. Slice them with a little salt and good olive oil and they hardly need anything else."
+			],
+			"upsells": [
+				"extra-virgin-olive-oil",
+				"baguette",
+				"mature-cheddar"
+			]
+		},
+		{
+			"slug": "carrots",
+			"name": "Carrots, 1 kg",
+			"category": "vegetables",
+			"image": "images/products/carrots-photo.jpg",
+			"sku": "EB-VEG-002",
+			"sales": 300,
+			"regular": "0.70",
+			"weight": 1.0,
+			"specs": {
+				"Pack size": "1 kg",
+				"Origin": "United Kingdom",
+				"Storage": "Keep in the fridge, out of the bag",
+				"Typical values": "Per 100 g",
+				"Energy": "172 kJ / 41 kcal",
+				"Fat": "0.2 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "7.9 g",
+				"of which sugars": "4.7 g",
+				"Fibre": "2.8 g",
+				"Protein": "0.9 g",
+				"Salt": "0.17 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free",
+				"Local"
+			],
+			"short": "A kilo of sweet, crunchy carrots from a farm near the store.",
+			"description": [
+				"Washed but not peeled, so they keep their sweetness. Grated raw into a salad, roasted with honey or simmered into soup, a kilo bag goes a long way.",
+				"Take them out of the plastic and keep them in the fridge drawer: they stay crisp for up to two weeks."
+			]
+		},
+		{
+			"slug": "broccoli",
+			"name": "Broccoli, 350 g",
+			"category": "vegetables",
+			"image": "images/products/broccoli-photo.jpg",
+			"sku": "EB-VEG-003",
+			"sales": 176,
+			"regular": "0.79",
+			"weight": 0.35,
+			"specs": {
+				"Pack size": "350 g",
+				"Origin": "United Kingdom",
+				"Storage": "Keep refrigerated",
+				"Typical values": "Per 100 g",
+				"Energy": "141 kJ / 34 kcal",
+				"Fat": "0.4 g",
+				"of which saturates": "0.1 g",
+				"Carbohydrate": "2.7 g",
+				"of which sugars": "1.7 g",
+				"Fibre": "2.6 g",
+				"Protein": "2.8 g",
+				"Salt": "0.08 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free",
+				"Local"
+			],
+			"short": "A tight green head of broccoli, cut the day before it reaches you.",
+			"description": [
+				"Look for a tight, dark green head: that is how ours arrive. Steam it for four minutes, or roast it hot with garlic and chilli until the edges crisp.",
+				"Do not throw the stalk away. Peeled and sliced, it is sweeter than the florets."
+			]
+		},
+		{
+			"slug": "mixed-peppers",
+			"name": "Mixed peppers, 3 pack",
+			"category": "vegetables",
+			"image": "images/products/peppers-photo.jpg",
+			"sku": "EB-VEG-004",
+			"sales": 162,
+			"regular": "1.45",
+			"weight": 0.5,
+			"specs": {
+				"Pack size": "3 pack",
+				"Origin": "Spain",
+				"Storage": "Keep in the fridge",
+				"Typical values": "Per 100 g",
+				"Energy": "109 kJ / 26 kcal",
+				"Fat": "0.3 g",
+				"of which saturates": "0.1 g",
+				"Carbohydrate": "4.6 g",
+				"of which sugars": "4.2 g",
+				"Fibre": "2.1 g",
+				"Protein": "1.0 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "One red, one yellow and one green pepper for stir-fries, salads and traybakes.",
+			"description": [
+				"Three colours, three slightly different flavours: green is grassy, yellow is mild and red is the sweetest of the three.",
+				"They keep for a week in the fridge. Roast them whole until black, peel, and keep them in olive oil for sandwiches."
+			]
+		},
+		{
+			"slug": "chestnut-mushrooms",
+			"name": "Chestnut mushrooms, 250 g",
+			"category": "vegetables",
+			"image": "images/products/mushrooms-photo.jpg",
+			"sku": "EB-VEG-005",
+			"sales": 150,
+			"regular": "1.15",
+			"weight": 0.25,
+			"specs": {
+				"Pack size": "250 g",
+				"Origin": "United Kingdom",
+				"Storage": "Keep refrigerated in a paper bag",
+				"Typical values": "Per 100 g",
+				"Energy": "92 kJ / 22 kcal",
+				"Fat": "0.3 g",
+				"of which saturates": "0.1 g",
+				"Carbohydrate": "0.4 g",
+				"of which sugars": "0.2 g",
+				"Fibre": "1.1 g",
+				"Protein": "3.1 g",
+				"Salt": "0.01 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free",
+				"Local"
+			],
+			"short": "Firm brown mushrooms with more flavour than white ones, grown nearby.",
+			"description": [
+				"Chestnut mushrooms are firmer and nuttier than white mushrooms and hold their shape in the pan. Fry them hot and do not crowd them, and they turn golden instead of watery.",
+				"Keep them in a paper bag in the fridge; plastic makes them sweat."
+			]
+		},
+		{
+			"slug": "sourdough-loaf",
+			"name": "White sourdough loaf, 800 g",
+			"category": "bakery",
+			"image": "images/products/sourdough-photo.jpg",
+			"sku": "EB-BAK-001",
+			"sales": 280,
+			"regular": "3.20",
+			"featured": true,
+			"weight": 0.8,
+			"specs": {
+				"Pack size": "800 g",
+				"Baked": "Every morning",
+				"Storage": "Keep in a bread bag; freezes well sliced",
+				"Typical values": "Per 100 g",
+				"Energy": "1003 kJ / 237 kcal",
+				"Fat": "1.2 g",
+				"of which saturates": "0.2 g",
+				"Carbohydrate": "47.0 g",
+				"of which sugars": "1.8 g",
+				"Fibre": "2.9 g",
+				"Protein": "8.9 g",
+				"Salt": "1.1 g"
+			},
+			"tags": [
+				"Vegan",
+				"Local"
+			],
+			"short": "A slow-proved sourdough with a dark crust, baked each morning by our partner bakery.",
+			"description": [
+				"Made with flour, water, salt and a starter that is older than the bakery, then left to prove overnight. The long, slow rise gives the open crumb and the gentle sourness.",
+				"It keeps for four days in a bread bag. Slice what you will not eat and freeze it: it toasts straight from frozen."
+			],
+			"upsells": [
+				"salted-butter",
+				"wildflower-honey",
+				"free-range-eggs"
+			]
+		},
+		{
+			"slug": "all-butter-croissants",
+			"name": "All-butter croissants, 4 pack",
+			"category": "bakery",
+			"image": "images/products/croissants-photo.jpg",
+			"sku": "EB-BAK-002",
+			"sales": 221,
+			"regular": "2.00",
+			"sale": "1.50",
+			"stock": 6,
+			"weight": 0.24,
+			"specs": {
+				"Pack size": "4 pack",
+				"Baked": "Every morning",
+				"Storage": "Best eaten on the day; warm for 3 minutes in the oven",
+				"Typical values": "Per 100 g",
+				"Energy": "1726 kJ / 413 kcal",
+				"Fat": "21.8 g",
+				"of which saturates": "13.4 g",
+				"Carbohydrate": "44.6 g",
+				"of which sugars": "8.3 g",
+				"Fibre": "2.3 g",
+				"Protein": "8.5 g",
+				"Salt": "0.9 g"
+			},
+			"tags": [
+				"Vegetarian"
+			],
+			"short": "Flaky croissants made with butter and nothing else, four to a bag.",
+			"description": [
+				"Laminated by hand with proper butter and baked in the early hours. Warm them in a hot oven for three minutes and the layers crisp up again.",
+				"Day-old croissants make the best almond croissants or bread and butter pudding."
+			]
+		},
+		{
+			"slug": "baguette",
+			"name": "Stone-baked baguette, 250 g",
+			"category": "bakery",
+			"image": "images/products/baguette-photo.jpg",
+			"sku": "EB-BAK-003",
+			"sales": 190,
+			"regular": "0.95",
+			"weight": 0.25,
+			"specs": {
+				"Pack size": "250 g",
+				"Baked": "Every morning",
+				"Storage": "Best eaten on the day",
+				"Typical values": "Per 100 g",
+				"Energy": "1139 kJ / 269 kcal",
+				"Fat": "1.4 g",
+				"of which saturates": "0.3 g",
+				"Carbohydrate": "54.0 g",
+				"of which sugars": "2.4 g",
+				"Fibre": "2.7 g",
+				"Protein": "9.1 g",
+				"Salt": "1.3 g"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A crackling stone-baked baguette with an airy crumb.",
+			"description": [
+				"Baked on the oven floor for a crust that crackles when you squeeze it. Tear it while it is fresh; that is half the point of a baguette.",
+				"Left over? Slice it thinly, brush with olive oil and bake for crostini."
+			]
+		},
+		{
+			"slug": "cinnamon-buns",
+			"name": "Cinnamon buns, 4 pack",
+			"category": "bakery",
+			"image": "images/products/cinnamon-buns-photo.jpg",
+			"sku": "EB-BAK-004",
+			"sales": 133,
+			"regular": "2.40",
+			"stock": "outofstock",
+			"weight": 0.36,
+			"specs": {
+				"Pack size": "4 pack",
+				"Baked": "Fridays and Saturdays",
+				"Storage": "Best eaten within 2 days",
+				"Typical values": "Per 100 g",
+				"Energy": "1490 kJ / 355 kcal",
+				"Fat": "14.8 g",
+				"of which saturates": "6.9 g",
+				"Carbohydrate": "48.0 g",
+				"of which sugars": "19.6 g",
+				"Fibre": "1.9 g",
+				"Protein": "6.2 g",
+				"Salt": "0.6 g"
+			},
+			"tags": [
+				"Vegetarian"
+			],
+			"short": "Soft, cardamom-scented cinnamon buns, baked on Fridays and Saturdays.",
+			"description": [
+				"A soft enriched dough rolled with cinnamon butter and a little cardamom, then glazed with syrup as it comes out of the oven.",
+				"Baked on Fridays and Saturdays only, so they sell out. Check back at the weekend."
+			]
+		},
+		{
+			"slug": "free-range-eggs",
+			"name": "Free-range eggs, 12 pack",
+			"category": "dairy-eggs",
+			"image": "images/products/eggs-photo.jpg",
+			"sku": "EB-DAI-001",
+			"sales": 390,
+			"regular": "3.10",
+			"featured": true,
+			"weight": 0.75,
+			"specs": {
+				"Pack size": "12 pack",
+				"Size": "Mixed weight",
+				"Origin": "United Kingdom",
+				"Storage": "Keep refrigerated",
+				"Typical values": "Per 100 g",
+				"Energy": "551 kJ / 131 kcal",
+				"Fat": "9.0 g",
+				"of which saturates": "2.5 g",
+				"Carbohydrate": "0 g",
+				"of which sugars": "0 g",
+				"Fibre": "0 g",
+				"Protein": "12.6 g",
+				"Salt": "0.38 g"
+			},
+			"tags": [
+				"Vegetarian",
+				"Gluten free",
+				"Local"
+			],
+			"short": "A dozen free-range eggs from hens that roam an orchard twenty miles away.",
+			"description": [
+				"From a small flock that spends its days outside in an old orchard. The eggs are mixed in size, which is how hens lay them, and collected the morning before they are packed.",
+				"Store them pointed end down in the fridge, and bring them to room temperature before baking."
+			],
+			"upsells": [
+				"sourdough-loaf",
+				"salted-butter",
+				"chestnut-mushrooms"
+			]
+		},
+		{
+			"slug": "whole-milk",
+			"name": "Whole milk, 2 litres",
+			"category": "dairy-eggs",
+			"image": "images/products/milk-photo.jpg",
+			"sku": "EB-DAI-002",
+			"sales": 450,
+			"regular": "1.55",
+			"weight": 2.1,
+			"specs": {
+				"Pack size": "2 litres",
+				"Origin": "United Kingdom",
+				"Storage": "Keep refrigerated; use within 3 days of opening",
+				"Typical values": "Per 100 ml",
+				"Energy": "268 kJ / 64 kcal",
+				"Fat": "3.6 g",
+				"of which saturates": "2.3 g",
+				"Carbohydrate": "4.7 g",
+				"of which sugars": "4.7 g",
+				"Fibre": "0 g",
+				"Protein": "3.4 g",
+				"Salt": "0.11 g"
+			},
+			"tags": [
+				"Vegetarian",
+				"Gluten free",
+				"Local"
+			],
+			"short": "Creamy whole milk from one dairy farm, bottled within a day of milking.",
+			"description": [
+				"All of our milk comes from one family farm, so it tastes the same from one week to the next. It is pasteurised but not homogenised, so a little cream rises to the top: give it a shake.",
+				"Two litres covers most households for three or four days of tea, coffee and cereal."
+			]
+		},
+		{
+			"slug": "greek-style-yogurt",
+			"name": "Greek-style yogurt, 500 g",
+			"category": "dairy-eggs",
+			"image": "images/products/yogurt-photo.jpg",
+			"sku": "EB-DAI-003",
+			"sales": 210,
+			"regular": "1.85",
+			"sale": "1.40",
+			"weight": 0.5,
+			"specs": {
+				"Pack size": "500 g",
+				"Storage": "Keep refrigerated; eat within 5 days of opening",
+				"Typical values": "Per 100 g",
+				"Energy": "553 kJ / 133 kcal",
+				"Fat": "10.2 g",
+				"of which saturates": "6.8 g",
+				"Carbohydrate": "4.4 g",
+				"of which sugars": "4.4 g",
+				"Fibre": "0 g",
+				"Protein": "5.7 g",
+				"Salt": "0.15 g"
+			},
+			"tags": [
+				"Vegetarian",
+				"Gluten free"
+			],
+			"short": "Thick, strained yogurt with a gentle tang, for breakfast bowls and marinades.",
+			"description": [
+				"Strained until it is thick enough to stand a spoon in. Spoon it over fruit and oats, stir it into curries at the end of cooking, or use it to marinate chicken.",
+				"Five hundred grams is a week of breakfasts for one, or a generous bowl of tzatziki."
+			]
+		},
+		{
+			"slug": "mature-cheddar",
+			"name": "Mature cheddar, 400 g",
+			"category": "dairy-eggs",
+			"image": "images/products/cheddar-photo.jpg",
+			"sku": "EB-DAI-004",
+			"sales": 242,
+			"regular": "3.75",
+			"sale": "3.00",
+			"sale_days": 12,
+			"weight": 0.4,
+			"specs": {
+				"Pack size": "400 g",
+				"Strength": "4 of 5",
+				"Aged": "12 months",
+				"Storage": "Keep refrigerated, wrapped",
+				"Typical values": "Per 100 g",
+				"Energy": "1725 kJ / 416 kcal",
+				"Fat": "34.9 g",
+				"of which saturates": "21.7 g",
+				"Carbohydrate": "0.1 g",
+				"of which sugars": "0.1 g",
+				"Fibre": "0 g",
+				"Protein": "25.4 g",
+				"Salt": "1.8 g"
+			},
+			"tags": [
+				"Vegetarian",
+				"Gluten free"
+			],
+			"short": "A sharp, crumbly cheddar aged for twelve months.",
+			"description": [
+				"Aged for a year, which gives it the savoury crunch of little crystals and a sharp finish. Good on its own with an apple, and better still grated over pasta.",
+				"Wrap it in wax paper rather than cling film, and take it out of the fridge an hour before serving."
+			],
+			"upsells": [
+				"baguette",
+				"vine-tomatoes"
+			]
+		},
+		{
+			"slug": "salted-butter",
+			"name": "Salted butter, 250 g",
+			"category": "dairy-eggs",
+			"image": "images/products/butter-photo.jpg",
+			"sku": "EB-DAI-005",
+			"sales": 170,
+			"regular": "2.25",
+			"weight": 0.25,
+			"specs": {
+				"Pack size": "250 g",
+				"Origin": "United Kingdom",
+				"Storage": "Keep refrigerated",
+				"Typical values": "Per 100 g",
+				"Energy": "3051 kJ / 742 kcal",
+				"Fat": "82.2 g",
+				"of which saturates": "52.1 g",
+				"Carbohydrate": "0.6 g",
+				"of which sugars": "0.6 g",
+				"Fibre": "0 g",
+				"Protein": "0.6 g",
+				"Salt": "1.6 g"
+			},
+			"tags": [
+				"Vegetarian",
+				"Gluten free",
+				"Local"
+			],
+			"short": "Rich, lightly salted butter churned from grass-fed cream.",
+			"description": [
+				"Churned from the cream of grass-fed cows, which is what gives it the deep yellow colour. Lightly salted, for toast, baking and finishing sauces.",
+				"Keep a little out of the fridge in a butter dish so it spreads."
+			]
+		},
+		{
+			"slug": "basmati-rice",
+			"name": "Basmati rice, 1 kg",
+			"category": "pantry",
+			"image": "images/products/basmati-rice-photo.jpg",
+			"sku": "EB-PAN-001",
+			"sales": 210,
+			"regular": "2.20",
+			"weight": 1.0,
+			"specs": {
+				"Pack size": "1 kg",
+				"Origin": "India",
+				"Storage": "Keep in a cool, dry place",
+				"Typical values": "Per 100 g",
+				"Energy": "1508 kJ / 355 kcal",
+				"Fat": "0.8 g",
+				"of which saturates": "0.2 g",
+				"Carbohydrate": "78.0 g",
+				"of which sugars": "0.3 g",
+				"Fibre": "1.4 g",
+				"Protein": "8.5 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "Aged long-grain basmati that cooks up fluffy and fragrant.",
+			"description": [
+				"Aged for a year before milling, which makes the grains longer and less sticky once cooked. Rinse it until the water runs clear, then cook one cup of rice to one and a half of water.",
+				"A kilo bag makes about twelve generous portions."
+			]
+		},
+		{
+			"slug": "penne-pasta",
+			"name": "Penne pasta, 500 g",
+			"category": "pantry",
+			"image": "images/products/penne-photo.jpg",
+			"sku": "EB-PAN-002",
+			"sales": 265,
+			"regular": "0.85",
+			"weight": 0.5,
+			"specs": {
+				"Pack size": "500 g",
+				"Origin": "Italy",
+				"Cooking time": "11 minutes",
+				"Storage": "Keep in a cool, dry place",
+				"Typical values": "Per 100 g",
+				"Energy": "1520 kJ / 359 kcal",
+				"Fat": "1.5 g",
+				"of which saturates": "0.3 g",
+				"Carbohydrate": "71.2 g",
+				"of which sugars": "3.5 g",
+				"Fibre": "3.0 g",
+				"Protein": "12.5 g",
+				"Salt": "0.01 g"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "Bronze-cut penne with a rough surface that holds on to sauce.",
+			"description": [
+				"Pushed through bronze dies and dried slowly, which leaves a rough surface that sauce clings to. Cook it in plenty of well-salted water for eleven minutes.",
+				"Save a mug of the cooking water before you drain it: a splash loosens any sauce."
+			],
+			"upsells": [
+				"vine-tomatoes",
+				"extra-virgin-olive-oil",
+				"mature-cheddar"
+			]
+		},
+		{
+			"slug": "red-lentils",
+			"name": "Red split lentils, 1 kg",
+			"category": "pantry",
+			"image": "images/products/red-lentils-photo.jpg",
+			"sku": "EB-PAN-003",
+			"sales": 128,
+			"regular": "1.90",
+			"weight": 1.0,
+			"specs": {
+				"Pack size": "1 kg",
+				"Origin": "Canada",
+				"Cooking time": "15 minutes",
+				"Storage": "Keep in a cool, dry place",
+				"Typical values": "Per 100 g",
+				"Energy": "1360 kJ / 323 kcal",
+				"Fat": "1.3 g",
+				"of which saturates": "0.2 g",
+				"Carbohydrate": "48.4 g",
+				"of which sugars": "2.4 g",
+				"Fibre": "10.8 g",
+				"Protein": "24.4 g",
+				"Salt": "0.02 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free",
+				"Organic"
+			],
+			"short": "Organic red lentils that cook down in fifteen minutes, no soaking.",
+			"description": [
+				"Split red lentils need no soaking and collapse into a creamy dal or soup in about fifteen minutes. They are one of the cheapest sources of protein in the store.",
+				"Rinse them first, and cook with three times their volume of water or stock."
+			]
+		},
+		{
+			"slug": "extra-virgin-olive-oil",
+			"name": "Extra virgin olive oil, 500 ml",
+			"category": "pantry",
+			"image": "images/products/olive-oil-photo.jpg",
+			"sku": "EB-PAN-004",
+			"sales": 233,
+			"regular": "5.50",
+			"sale": "4.40",
+			"featured": true,
+			"weight": 0.9,
+			"specs": {
+				"Pack size": "500 ml",
+				"Origin": "Greece",
+				"Harvest": "This season",
+				"Storage": "Keep in a cool, dark cupboard",
+				"Typical values": "Per 100 ml",
+				"Energy": "3389 kJ / 824 kcal",
+				"Fat": "91.6 g",
+				"of which saturates": "13.5 g",
+				"Carbohydrate": "0 g",
+				"of which sugars": "0 g",
+				"Fibre": "0 g",
+				"Protein": "0 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "A green, peppery extra virgin olive oil from a single Greek estate.",
+			"description": [
+				"Pressed within hours of picking, from olives grown on one estate. It is grassy and peppery, with the little catch at the back of the throat that good fresh oil has.",
+				"Use it for finishing: over tomatoes, soups and bread. Keep it away from the hob, as heat and light dull the flavour."
+			],
+			"upsells": [
+				"vine-tomatoes",
+				"baguette",
+				"penne-pasta"
+			]
+		},
+		{
+			"slug": "wildflower-honey",
+			"name": "Wildflower honey, 340 g",
+			"category": "pantry",
+			"image": "images/products/honey-photo.jpg",
+			"sku": "EB-PAN-005",
+			"sales": 118,
+			"regular": "4.25",
+			"weight": 0.45,
+			"specs": {
+				"Pack size": "340 g",
+				"Origin": "United Kingdom",
+				"Storage": "Keep at room temperature",
+				"Typical values": "Per 100 g",
+				"Energy": "1395 kJ / 329 kcal",
+				"Fat": "0 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "81.5 g",
+				"of which sugars": "81.5 g",
+				"Fibre": "0 g",
+				"Protein": "0.4 g",
+				"Salt": "0.01 g"
+			},
+			"tags": [
+				"Vegetarian",
+				"Gluten free",
+				"Local"
+			],
+			"short": "Runny honey from hives kept on meadows near the store.",
+			"description": [
+				"From a beekeeper who keeps her hives on wildflower meadows, so the flavour changes a little with each harvest. It is gently warmed to jar it, never heated.",
+				"If it sets, stand the jar in warm water for ten minutes."
+			]
+		},
+		{
+			"slug": "rolled-oats",
+			"name": "Rolled oats, 1 kg",
+			"category": "pantry",
+			"image": "images/products/oats-photo.jpg",
+			"sku": "EB-PAN-006",
+			"sales": 246,
+			"regular": "1.40",
+			"weight": 1.0,
+			"specs": {
+				"Pack size": "1 kg",
+				"Origin": "United Kingdom",
+				"Storage": "Keep in a cool, dry place",
+				"Typical values": "Per 100 g",
+				"Energy": "1571 kJ / 374 kcal",
+				"Fat": "8.0 g",
+				"of which saturates": "1.5 g",
+				"Carbohydrate": "60.0 g",
+				"of which sugars": "1.1 g",
+				"Fibre": "9.0 g",
+				"Protein": "11.0 g",
+				"Salt": "0.01 g"
+			},
+			"tags": [
+				"Vegan",
+				"Organic"
+			],
+			"short": "Organic jumbo oats for porridge, overnight oats and flapjacks.",
+			"description": [
+				"Big, whole rolled oats that keep some bite in porridge and soak up milk overnight without turning to mush.",
+				"A kilo bag makes about twenty bowls of porridge. Toast a handful in a dry pan to sprinkle over yogurt."
+			],
+			"upsells": [
+				"whole-milk",
+				"wildflower-honey",
+				"strawberries",
+				"greek-style-yogurt"
+			]
+		},
+		{
+			"slug": "coffee-beans",
+			"name": "Medium roast coffee beans",
+			"category": "drinks",
+			"image": "images/products/coffee-beans-photo.jpg",
+			"sku": "EB-DRI-001",
+			"sales": 264,
+			"variations": {
+				"250 g": {
+					"sku": "EB-DRI-001-250",
+					"regular": "3.90"
+				},
+				"500 g": {
+					"sku": "EB-DRI-001-500",
+					"regular": "6.90",
+					"sale": "5.90"
+				},
+				"1 kg": {
+					"sku": "EB-DRI-001-1000",
+					"regular": "12.50"
+				}
+			},
+			"featured": true,
+			"weight": 0.5,
+			"specs": {
+				"Size": [
+					"250 g",
+					"500 g",
+					"1 kg"
+				],
+				"Roast": "Medium",
+				"Tasting notes": "Cocoa, toasted hazelnut, red apple",
+				"Origin": "Colombia and Brazil",
+				"Storage": "Keep sealed, away from light"
+			},
+			"tags": [
+				"Vegan",
+				"Organic"
+			],
+			"short": "A smooth, chocolatey everyday roast, roasted in small batches every week.",
+			"description": [
+				"Roasted every Tuesday by a small roaster across town, and dated on the bag. It is a medium roast with notes of cocoa and toasted hazelnut, and it works in a cafetiere, a filter or an espresso machine.",
+				"Buy the bag you will finish in three weeks: that is how long beans stay at their best once opened. The kilo bag has the lowest price per kilo."
+			],
+			"upsells": [
+				"whole-milk",
+				"all-butter-croissants"
+			]
+		},
+		{
+			"slug": "breakfast-tea",
+			"name": "English breakfast tea, 80 bags",
+			"category": "drinks",
+			"image": "images/products/tea-photo.jpg",
+			"sku": "EB-DRI-002",
+			"sales": 185,
+			"regular": "2.60",
+			"weight": 0.25,
+			"specs": {
+				"Pack size": "80 bags",
+				"Strength": "4 of 5",
+				"Origin": "Assam and Kenya",
+				"Storage": "Keep dry, away from strong smells"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "A strong, malty breakfast blend in plastic-free bags.",
+			"description": [
+				"A blend of Assam and Kenyan teas that stands up to milk. Brew for four minutes for a proper cup.",
+				"The bags are made from plant fibre with no plastic, so they can go in the food waste."
+			]
+		},
+		{
+			"slug": "orange-juice",
+			"name": "Orange juice, not from concentrate, 1 litre",
+			"category": "drinks",
+			"image": "images/products/orange-juice-photo.jpg",
+			"sku": "EB-DRI-003",
+			"sales": 170,
+			"regular": "2.10",
+			"sale": "1.65",
+			"weight": 1.1,
+			"specs": {
+				"Pack size": "1 litre",
+				"Origin": "Spain",
+				"Storage": "Keep refrigerated; use within 4 days of opening",
+				"Typical values": "Per 100 ml",
+				"Energy": "188 kJ / 44 kcal",
+				"Fat": "0 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "9.6 g",
+				"of which sugars": "9.6 g",
+				"Fibre": "0.2 g",
+				"Protein": "0.6 g",
+				"Salt": "0 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "Pressed oranges and nothing else, with plenty of bits.",
+			"description": [
+				"Squeezed from Spanish oranges and gently pasteurised, never made from concentrate. It has plenty of bits, the way fresh juice does.",
+				"Shake before pouring: the pulp settles."
+			]
+		},
+		{
+			"slug": "cloudy-lemonade",
+			"name": "Cloudy lemonade, 1 litre",
+			"category": "drinks",
+			"image": "images/products/lemonade-photo.jpg",
+			"sku": "EB-DRI-004",
+			"sales": 96,
+			"regular": "1.35",
+			"weight": 1.1,
+			"specs": {
+				"Pack size": "1 litre",
+				"Storage": "Keep refrigerated after opening",
+				"Typical values": "Per 100 ml",
+				"Energy": "172 kJ / 41 kcal",
+				"Fat": "0 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "10.0 g",
+				"of which sugars": "9.8 g",
+				"Fibre": "0 g",
+				"Protein": "0 g",
+				"Salt": "0.01 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "A sharp, still cloudy lemonade made with pressed lemons.",
+			"description": [
+				"Made with pressed lemon juice, cane sugar and water, so it is properly sharp. Serve it over ice with a sprig of mint.",
+				"Mix half and half with sparkling water for a lighter drink."
+			]
+		},
+		{
+			"slug": "dark-chocolate",
+			"name": "Dark chocolate 70%, 100 g",
+			"category": "snacks",
+			"image": "images/products/dark-chocolate-photo.jpg",
+			"sku": "EB-SNA-001",
+			"sales": 260,
+			"regular": "1.80",
+			"weight": 0.1,
+			"specs": {
+				"Pack size": "100 g",
+				"Cocoa solids": "70%",
+				"Storage": "Keep cool and dry",
+				"Typical values": "Per 100 g",
+				"Energy": "2380 kJ / 572 kcal",
+				"Fat": "42.0 g",
+				"of which saturates": "25.0 g",
+				"Carbohydrate": "33.0 g",
+				"of which sugars": "28.0 g",
+				"Fibre": "11.0 g",
+				"Protein": "8.0 g",
+				"Salt": "0.02 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "A smooth 70% dark chocolate with notes of red fruit.",
+			"description": [
+				"Made from a single origin cocoa with red fruit notes and a smooth finish, sweet enough to eat by the square and dark enough to bake with.",
+				"Keep it somewhere cool but not in the fridge, where it can bloom."
+			]
+		},
+		{
+			"slug": "mixed-nuts",
+			"name": "Mixed nuts, 200 g",
+			"category": "snacks",
+			"image": "images/products/mixed-nuts-photo.jpg",
+			"sku": "EB-SNA-002",
+			"sales": 154,
+			"regular": "2.75",
+			"sale": "2.20",
+			"weight": 0.2,
+			"specs": {
+				"Pack size": "200 g",
+				"Contains": "Almonds, cashews, hazelnuts, walnuts",
+				"Storage": "Keep sealed after opening",
+				"Typical values": "Per 100 g",
+				"Energy": "2610 kJ / 630 kcal",
+				"Fat": "56.0 g",
+				"of which saturates": "6.0 g",
+				"Carbohydrate": "9.5 g",
+				"of which sugars": "4.0 g",
+				"Fibre": "7.0 g",
+				"Protein": "20.0 g",
+				"Salt": "0.03 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "Unsalted almonds, cashews, hazelnuts and walnuts.",
+			"description": [
+				"A plain mix of four nuts with nothing added: no salt, no oil. Toast them in a dry pan for a couple of minutes to bring out the flavour.",
+				"Allergy advice: contains nuts, and is packed where peanuts are handled."
+			]
+		},
+		{
+			"slug": "oat-cookies",
+			"name": "Oat and raisin cookies, 200 g",
+			"category": "snacks",
+			"image": "images/products/cookies-photo.jpg",
+			"sku": "EB-SNA-003",
+			"sales": 139,
+			"regular": "1.50",
+			"weight": 0.2,
+			"specs": {
+				"Pack size": "200 g",
+				"Storage": "Keep in an airtight tin",
+				"Typical values": "Per 100 g",
+				"Energy": "1950 kJ / 465 kcal",
+				"Fat": "20.0 g",
+				"of which saturates": "9.5 g",
+				"Carbohydrate": "62.0 g",
+				"of which sugars": "28.0 g",
+				"Fibre": "4.5 g",
+				"Protein": "6.4 g",
+				"Salt": "0.6 g"
+			},
+			"tags": [
+				"Vegetarian"
+			],
+			"short": "Chewy oat and raisin cookies, baked with butter.",
+			"description": [
+				"Chewy in the middle and crisp at the edges, with plump raisins and a pinch of cinnamon. Made by the same bakery as our bread.",
+				"Keep them in a tin and they stay chewy for a week."
+			]
+		},
+		{
+			"slug": "dried-apricots",
+			"name": "Dried apricots, 250 g",
+			"category": "snacks",
+			"image": "images/products/dried-apricots-photo.jpg",
+			"sku": "EB-SNA-004",
+			"sales": 88,
+			"regular": "2.20",
+			"weight": 0.25,
+			"specs": {
+				"Pack size": "250 g",
+				"Origin": "Turkey",
+				"Storage": "Keep sealed in a cool, dry place",
+				"Typical values": "Per 100 g",
+				"Energy": "1031 kJ / 244 kcal",
+				"Fat": "0.4 g",
+				"of which saturates": "0 g",
+				"Carbohydrate": "54.0 g",
+				"of which sugars": "46.0 g",
+				"Fibre": "6.3 g",
+				"Protein": "3.4 g",
+				"Salt": "0.04 g"
+			},
+			"tags": [
+				"Vegan",
+				"Gluten free"
+			],
+			"short": "Soft, sweet dried apricots with no added sugar.",
+			"description": [
+				"Sun-dried and left soft, with no added sugar. Chop them into porridge, tagines and flapjacks, or eat them straight from the bag.",
+				"They are unsulphured, so they are brown rather than bright orange. That is how apricots look when they dry naturally."
+			]
+		},
+		{
+			"slug": "tulips",
+			"name": "Tulips, bunch of 10",
+			"category": "home",
+			"image": "images/products/tulips-photo.jpg",
+			"sku": "EB-HOM-001",
+			"sales": 120,
+			"regular": "4.00",
+			"featured": true,
+			"weight": 0.4,
+			"specs": {
+				"Pack size": "10 stems",
+				"Vase life": "Up to 7 days",
+				"Origin": "Netherlands",
+				"Care": "Trim the stems and change the water every two days"
+			},
+			"tags": [
+				"Local"
+			],
+			"short": "Ten tulips in bud, so they open in your vase rather than in the van.",
+			"description": [
+				"Cut in tight bud, so they open over a few days at home. Tulips keep growing in the vase, so give them a tall one and expect them to bend towards the light.",
+				"Trim the stems at an angle and change the water every couple of days."
+			]
+		},
+		{
+			"slug": "beeswax-candles",
+			"name": "Hand-dipped beeswax candles, 2 pack",
+			"category": "home",
+			"image": "images/products/beeswax-candles-photo.jpg",
+			"sku": "EB-HOM-002",
+			"sales": 74,
+			"regular": "9.00",
+			"sale": "7.50",
+			"weight": 0.3,
+			"specs": {
+				"Pack size": "2 pack",
+				"Burn time": "About 8 hours each",
+				"Material": "Pure beeswax, cotton wick",
+				"Care": "Trim the wick to 5 mm before lighting"
+			},
+			"tags": [
+				"Local"
+			],
+			"short": "Two hand-dipped beeswax candles that burn slowly with a faint smell of honey.",
+			"description": [
+				"Dipped by hand, one layer at a time, from the wax of the same hives that make our honey. Beeswax burns slower and cleaner than paraffin and smells faintly of honey as it does.",
+				"Trim the wick before lighting and keep them out of draughts, and each one lasts about eight hours."
+			]
+		},
+		{
+			"slug": "olive-oil-soap",
+			"name": "Olive oil soap, 4 x 100 g",
+			"category": "home",
+			"image": "images/products/soap-photo.jpg",
+			"sku": "EB-HOM-003",
+			"sales": 66,
+			"regular": "3.60",
+			"weight": 0.4,
+			"specs": {
+				"Pack size": "4 x 100 g",
+				"Ingredients": "Olive oil, water, sodium hydroxide",
+				"Fragrance": "Unscented"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "Four bars of plain, unscented olive oil soap, gentle enough for hands and face.",
+			"description": [
+				"Made the traditional way, with olive oil and nothing to scent or colour it. It lathers gently and suits sensitive skin.",
+				"Let it dry between uses on a draining soap dish and each bar lasts for weeks."
+			]
+		},
+		{
+			"slug": "wooden-dish-brush",
+			"name": "Wooden dish brush",
+			"category": "home",
+			"image": "images/products/dish-brush-photo.jpg",
+			"sku": "EB-HOM-004",
+			"sales": 58,
+			"regular": "4.50",
+			"weight": 0.1,
+			"specs": {
+				"Handle": "Beech wood",
+				"Bristles": "Plant fibre",
+				"Care": "Rinse and leave to dry head down"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A beech dish brush with stiff plant-fibre bristles. No plastic.",
+			"description": [
+				"A solid beech handle and stiff plant-fibre bristles that get into the corners of pans. When the bristles wear out, the handle can go on the compost.",
+				"Leave it to dry head down so the wood does not stay wet."
+			]
+		}
+	],
+	"reviews": {
+		"bananas": [
+			[
+				"Hannah R.",
+				5,
+				"Ripe on arrival and they lasted the whole week. Exactly what I want from bananas."
+			],
+			[
+				"Tom W.",
+				4,
+				"Good bunch. One was a little greener than the rest, which suited me fine."
+			]
+		],
+		"free-range-eggs": [
+			[
+				"Priya S.",
+				5,
+				"Big eggs with deep orange yolks, and not one cracked in the box."
+			],
+			[
+				"Daniel K.",
+				5,
+				"The best eggs we have had from any delivery. We order a dozen every week now."
+			]
+		],
+		"sourdough-loaf": [
+			[
+				"Megan L.",
+				5,
+				"A proper crust and a chewy crumb. It still toasts beautifully on day four."
+			],
+			[
+				"Sam O.",
+				4,
+				"Lovely bread. I would buy a smaller loaf too if you made one."
+			],
+			[
+				"Aisha B.",
+				5,
+				"It arrived still smelling of the oven."
+			]
+		],
+		"vine-tomatoes": [
+			[
+				"Chris P.",
+				5,
+				"They actually taste of tomato. Great sliced with salt and olive oil."
+			]
+		],
+		"extra-virgin-olive-oil": [
+			[
+				"Laura M.",
+				5,
+				"Peppery and fresh. The price per litre on the label made it easy to see it beats the supermarket."
+			],
+			[
+				"Joe F.",
+				4,
+				"Very good oil. I just wish there was a bigger bottle."
+			]
+		],
+		"coffee-beans": [
+			[
+				"Nina T.",
+				5,
+				"Smooth and chocolatey, no bitterness at all. The kilo bag works out cheapest."
+			],
+			[
+				"Marcus D.",
+				5,
+				"Fresh beans with the roast date on the bag. I order every two weeks."
+			]
+		],
+		"strawberries": [
+			[
+				"Grace H.",
+				4,
+				"Sweet and well packed. A couple were soft by day three, so eat them quickly."
+			],
+			[
+				"Owen C.",
+				5,
+				"They taste like summer."
+			]
+		],
+		"whole-milk": [
+			[
+				"Ellie J.",
+				5,
+				"Creamy and it arrives properly cold. The cream on top is a nice surprise."
+			]
+		],
+		"mature-cheddar": [
+			[
+				"Ben A.",
+				5,
+				"Sharp and crumbly with those little crystals. Just how cheddar should be."
+			]
+		],
+		"dark-chocolate": [
+			[
+				"Ruth G.",
+				5,
+				"Rich without being bitter. One square after dinner is enough."
+			]
+		],
+		"greek-style-yogurt": [
+			[
+				"Leo N.",
+				4,
+				"Thick and creamy. Perfect with honey and oats."
+			]
+		],
+		"rolled-oats": [
+			[
+				"Fatima Z.",
+				5,
+				"They make the best porridge, and a kilo bag is very good value."
+			]
+		],
+		"all-butter-croissants": [
+			[
+				"Isabel V.",
+				5,
+				"Flaky and buttery. Three minutes in the oven and they are as good as a bakery."
+			]
+		]
+	},
+	"post_categories": {
+		"recipes": {
+			"name": "Recipes",
+			"description": "Quick recipes built from the shelves."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"content": []
+		},
+		"recipes": {
+			"title": "Recipes",
+			"content": []
+		},
+		"offers": {
+			"title": "This week’s offers",
+			"content": [
+				[
+					"p",
+					"Every offer shows what you save and, where it has one, the day it ends. Prices on the tickets already include the discount: there is nothing to apply at checkout."
+				],
+				[
+					"products",
+					{
+						"show": "on-sale",
+						"count": 12
+					}
+				],
+				[
+					"buttons",
+					[
+						{
+							"label": "Browse every aisle",
+							"woocommerce": "shop"
+						}
+					],
+					"center"
+				]
+			]
+		},
+		"about": {
+			"title": "About us",
+			"template": "page-full-width",
+			"content": [
+				[
+					"cover",
+					{
+						"image": "images/scenes/market-produce-photo.jpg",
+						"heading": "A corner shop that happens to deliver",
+						"text": "Good food, fairly priced, and honest about both.",
+						"height": 460,
+						"buttons": [
+							{
+								"label": "Start shopping",
+								"woocommerce": "shop"
+							}
+						]
+					}
+				],
+				[
+					"section",
+					{
+						"items": [
+							[
+								"h2",
+								"How it started",
+								"wide"
+							],
+							[
+								"p",
+								"eBasket started with one van, a handful of growers and a list of what our neighbours bought every week. The list grew into a store and the van into a small fleet, but the idea stayed the same: buy close to home, price it fairly, and tell people exactly what they are paying for."
+							],
+							[
+								"p",
+								"That is why every shelf ticket shows the price per kilo, per litre or per item, and why every offer says when it ends. We would rather you compared us properly than took our word for it."
+							]
+						]
+					}
+				],
+				[
+					"section",
+					{
+						"background": "primary-wash",
+						"items": [
+							[
+								"features",
+								[
+									{
+										"title": "38 local suppliers",
+										"text": "Farms, a dairy, a bakery and a coffee roaster, most within an hour of the store."
+									},
+									{
+										"title": "Packed the same morning",
+										"text": "Fresh food is picked to order from 6:00 and goes out the same day."
+									},
+									{
+										"title": "Fresh or refunded",
+										"text": "If anything is not as fresh as it should be, tell us within 24 hours."
+									}
+								]
+							]
+						]
+					}
+				],
+				[
+					"section",
+					{
+						"items": [
+							[
+								"media",
+								{
+									"image": "images/scenes/grower-photo.jpg",
+									"heading": "Grown nearby, on the shelf by morning",
+									"text": "Buying from farms close to the store means produce spends a night in a van instead of a week in a warehouse. It tastes better, and it wastes less.",
+									"buttons": [
+										{
+											"label": "Shop vegetables",
+											"product_cat": "vegetables"
+										}
+									]
+								}
+							]
+						]
+					}
+				],
+				[
+					"section",
+					{
+						"background": "surface-alt",
+						"items": [
+							[
+								"h2",
+								"What shoppers say",
+								"wide"
+							],
+							[
+								"quotes",
+								[
+									{
+										"text": "The unit prices on every product make the weekly shop so much quicker to compare.",
+										"name": "Laura M.",
+										"rating": 5
+									},
+									{
+										"text": "Delivered in the slot I chose, and the bread still smelled of the oven.",
+										"name": "Aisha B.",
+										"rating": 5
+									},
+									{
+										"text": "A strawberry punnet was squashed. They refunded it the same day, no questions.",
+										"name": "Grace H.",
+										"rating": 5
+									}
+								]
+							]
+						]
+					}
+				]
+			]
+		},
+		"delivery": {
+			"title": "Delivery and collection",
+			"content": [
+				[
+					"p",
+					"Choose delivery or collection at checkout. Chilled and frozen food travels in insulated boxes, and you can change your order until we start packing it."
+				],
+				[
+					"h2",
+					"Delivery"
+				],
+				[
+					"ul",
+					[
+						"Delivery to your door: £3.50.",
+						"Free delivery on orders over £40.",
+						"Click and collect from the store: free."
+					]
+				],
+				[
+					"h2",
+					"Slots"
+				],
+				[
+					"p",
+					"We deliver every day between 7:00 and 22:00. Pick a one-hour window after you order and we will send a text when the van is on its way."
+				],
+				[
+					"h2",
+					"Delivery questions"
+				],
+				[
+					"details",
+					"Can I change my order after checkout?",
+					"Yes. Add or remove items from your account until we start packing, usually two hours before your slot."
+				],
+				[
+					"details",
+					"What happens if something is out of stock?",
+					"We suggest the closest match and only send it if you allowed swaps for that item. Otherwise it comes off the bill."
+				],
+				[
+					"details",
+					"Do I need to be home?",
+					"For chilled and frozen food, yes. Leave a note at checkout if a neighbour can take it in for you."
+				]
+			]
+		},
+		"faq": {
+			"title": "Help and FAQs",
+			"content": [
+				[
+					"p",
+					"The questions we are asked most, with straight answers. Anything else, get in touch and a person will reply."
+				],
+				[
+					"h2",
+					"Ordering"
+				],
+				[
+					"details",
+					"Is there a minimum order?",
+					"No. Small baskets pay the delivery fee; baskets over £40 are delivered free."
+				],
+				[
+					"details",
+					"How do unit prices work?",
+					"Every shelf ticket shows the pack size and the price per kilo, per litre or per item, so a big pack and a small one are easy to compare."
+				],
+				[
+					"h2",
+					"Payment"
+				],
+				[
+					"details",
+					"When am I charged?",
+					"When you place the order. If anything is missing or swapped, the difference is refunded to your card."
+				],
+				[
+					"h2",
+					"Freshness and refunds"
+				],
+				[
+					"details",
+					"Something was not fresh. What now?",
+					"Tell us within 24 hours of delivery from your orders page and the item is refunded. There is no need to send it back."
+				],
+				[
+					"buttons",
+					[
+						{
+							"label": "Delivery and collection",
+							"page": "delivery"
+						},
+						{
+							"label": "Contact us",
+							"page": "contact"
+						}
+					]
+				]
+			]
+		},
+		"contact": {
+			"title": "Contact us",
+			"content": [
+				[
+					"p",
+					"The quickest way to sort out an order is from your orders page, where every order has a Help button. For anything else, write to us or come and see us."
+				],
+				[
+					"h2",
+					"The shop"
+				],
+				[
+					"lines",
+					[
+						"eBasket",
+						"18 Market Row",
+						"Bristol BS1 4DJ"
+					]
+				],
+				[
+					"h2",
+					"Opening hours"
+				],
+				[
+					"lines",
+					[
+						"Monday to Friday: 7:00 to 22:00",
+						"Saturday: 8:00 to 22:00",
+						"Sunday: 9:00 to 18:00"
+					]
+				],
+				[
+					"h2",
+					"Email"
+				],
+				[
+					"p",
+					"hello@ebasket.example"
+				]
+			]
+		},
+		"freshness-promise": {
+			"title": "Freshness promise and refunds",
+			"content": [
+				[
+					"p",
+					"If anything you buy from us is not as fresh as it should be, we refund it. That is the whole promise."
+				],
+				[
+					"h2",
+					"How to claim"
+				],
+				[
+					"ol",
+					[
+						"Open your orders page within 24 hours of delivery.",
+						"Choose the order and press Help next to the item.",
+						"Tell us what was wrong. The refund goes back to your card within three working days."
+					]
+				],
+				[
+					"h2",
+					"Returns"
+				],
+				[
+					"p",
+					"Food cannot be resold, so there is no need to send it back. Unopened household items can be returned within 30 days for a full refund."
+				]
+			]
+		}
+	},
+	"posts": {
+		"tomato-and-basil-penne": {
+			"title": "Tomato and basil penne in twenty minutes",
+			"excerpt": "Ripe vine tomatoes melted into good olive oil: a weeknight pasta that tastes of more than its five ingredients.",
+			"image": "images/scenes/recipe-pasta-photo.jpg",
+			"days": 3,
+			"category": "recipes",
+			"content": [
+				[
+					"p",
+					"The trick with a quick tomato sauce is ripe tomatoes and more olive oil than feels reasonable. Cook the tomatoes until they collapse, and the oil and juice turn into a glossy sauce in the time the pasta takes to boil."
+				],
+				[
+					"h2",
+					"Ingredients"
+				],
+				[
+					"p",
+					"Serves 2. Ready in 20 minutes."
+				],
+				[
+					"ul",
+					[
+						"200 g penne pasta",
+						"500 g vine tomatoes, roughly chopped",
+						"4 tablespoons extra virgin olive oil",
+						"2 cloves of garlic, sliced",
+						"A handful of basil leaves",
+						"40 g mature cheddar, finely grated",
+						"Salt and black pepper"
+					]
+				],
+				[
+					"h2",
+					"Method"
+				],
+				[
+					"ol",
+					[
+						"Bring a large pan of well-salted water to the boil and cook the penne for 11 minutes.",
+						"Meanwhile warm the olive oil in a frying pan over a medium heat and add the garlic. Cook for a minute without letting it brown.",
+						"Add the tomatoes and a good pinch of salt. Cook for 8 to 10 minutes, pressing them with a spoon, until they collapse into a sauce.",
+						"Scoop a mug of the pasta water, then drain the penne and tip it into the sauce with a splash of the water. Toss for a minute until glossy.",
+						"Tear in the basil, season with pepper and serve with the cheddar on top."
+					]
+				],
+				[
+					"p",
+					"Everything except the basil and garlic is in the Pantry, Vegetables and Dairy aisles."
+				],
+				[
+					"buttons",
+					[
+						{
+							"label": "Shop the pantry",
+							"product_cat": "pantry"
+						},
+						{
+							"label": "Shop vegetables",
+							"product_cat": "vegetables"
+						}
+					]
+				]
+			]
+		},
+		"overnight-oats-three-ways": {
+			"title": "Overnight oats, three ways",
+			"excerpt": "Five minutes the night before, and breakfast is waiting in the fridge. One base, three toppings for the week.",
+			"image": "images/scenes/recipe-oats-photo.jpg",
+			"days": 8,
+			"category": "recipes",
+			"content": [
+				[
+					"p",
+					"Overnight oats are the breakfast for people who do not have time for breakfast. Stir oats into milk and yogurt before bed, and by morning they have soaked into something thick and creamy."
+				],
+				[
+					"h2",
+					"The base"
+				],
+				[
+					"p",
+					"For one jar: 50 g rolled oats, 100 ml whole milk, 2 tablespoons Greek-style yogurt and a teaspoon of honey. Stir, cover and leave in the fridge overnight."
+				],
+				[
+					"h2",
+					"Three toppings"
+				],
+				[
+					"ul",
+					[
+						"Strawberries and honey: sliced strawberries and an extra drizzle of honey.",
+						"Banana and chocolate: sliced banana and a square of dark chocolate, grated.",
+						"Apricot and nut: chopped dried apricots and a handful of toasted mixed nuts."
+					]
+				],
+				[
+					"p",
+					"The jars keep for three days in the fridge, so make a few at once."
+				],
+				[
+					"buttons",
+					[
+						{
+							"label": "Shop the oats",
+							"product": "rolled-oats"
+						},
+						{
+							"label": "Shop fruit",
+							"product_cat": "fruit"
+						}
+					]
+				]
+			]
+		},
+		"a-proper-weekday-salad": {
+			"title": "A weekday salad that is actually filling",
+			"excerpt": "Lentils, roasted peppers and a sharp lemon dressing: a salad that keeps you going until dinner.",
+			"image": "images/scenes/recipe-salad-photo.jpg",
+			"days": 14,
+			"category": "recipes",
+			"content": [
+				[
+					"p",
+					"A salad that keeps you full needs something substantial in it. Red lentils cook in fifteen minutes and soak up a dressing beautifully."
+				],
+				[
+					"h2",
+					"Ingredients"
+				],
+				[
+					"ul",
+					[
+						"150 g red split lentils",
+						"2 mixed peppers, sliced",
+						"1 tablespoon olive oil, plus 3 for the dressing",
+						"Juice and zest of 1 unwaxed lemon",
+						"A handful of salad leaves",
+						"Salt and pepper"
+					]
+				],
+				[
+					"h2",
+					"Method"
+				],
+				[
+					"ol",
+					[
+						"Roast the peppers with a tablespoon of oil at 200 °C for 20 minutes.",
+						"Simmer the lentils in plenty of water for 12 to 15 minutes, until just tender, then drain.",
+						"Whisk the lemon juice and zest with the rest of the oil and season well.",
+						"Toss the warm lentils with the dressing, then fold in the peppers and leaves."
+					]
+				],
+				[
+					"p",
+					"It keeps in the fridge for two days, so it travels well as a packed lunch."
+				]
+			]
+		}
+	},
+	"menu": {
+		"title": "Aisles",
+		"slug": "aisles",
+		"location": "primary",
+		"items": [
+			{
+				"label": "Fruit",
+				"product_cat": "fruit"
+			},
+			{
+				"label": "Vegetables",
+				"product_cat": "vegetables"
+			},
+			{
+				"label": "Bakery",
+				"product_cat": "bakery"
+			},
+			{
+				"label": "Dairy and eggs",
+				"product_cat": "dairy-eggs"
+			},
+			{
+				"label": "Pantry",
+				"product_cat": "pantry"
+			},
+			{
+				"label": "Drinks",
+				"product_cat": "drinks"
+			},
+			{
+				"label": "Snacks",
+				"product_cat": "snacks"
+			},
+			{
+				"label": "Home and flowers",
+				"product_cat": "home"
+			},
+			{
+				"label": "Offers",
+				"page": "offers"
+			},
+			{
+				"label": "Recipes",
+				"page": "recipes"
+			}
+		]
+	}
+}

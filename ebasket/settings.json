@@ -1,0 +1,57 @@
+{
+	"schema": 1,
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "recipes"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "eBasket",
+			"blogdescription": "Fresh food, sorted by aisle",
+			"woocommerce_coming_soon": "no",
+			"woocommerce_store_pages_only": "no",
+			"woocommerce_currency": "GBP",
+			"woocommerce_currency_pos": "left",
+			"woocommerce_price_thousand_sep": ",",
+			"woocommerce_price_decimal_sep": ".",
+			"woocommerce_price_num_decimals": "2",
+			"woocommerce_store_address": "18 Market Row",
+			"woocommerce_store_city": "Bristol",
+			"woocommerce_store_postcode": "BS1 4DJ",
+			"woocommerce_default_country": "GB",
+			"woocommerce_weight_unit": "kg",
+			"woocommerce_dimension_unit": "cm",
+			"woocommerce_enable_reviews": "yes",
+			"woocommerce_enable_review_rating": "yes",
+			"woocommerce_manage_stock": "yes"
+		},
+		"returns_page": "freshness-promise",
+		"checkout": {
+			"payment_title": "Demo payment (no charge)",
+			"payment_description": "This is a demo store. Orders are not charged, packed or delivered.",
+			"payment_instructions": "This was a demo order: nothing was charged and nothing will be delivered.",
+			"shipping": [
+				{
+					"method": "flat_rate",
+					"title": "Delivery to your door",
+					"tax_status": "none",
+					"cost": "3.50"
+				},
+				{
+					"method": "free_shipping",
+					"title": "Free delivery",
+					"requires": "min_amount",
+					"min_amount": "40",
+					"ignore_discounts": "no"
+				},
+				{
+					"method": "local_pickup",
+					"title": "Click and collect from the store",
+					"tax_status": "none",
+					"cost": "0"
+				}
+			]
+		},
+		"hide_sample_content": true
+	}
+}

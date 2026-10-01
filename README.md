@@ -18,6 +18,7 @@ every file as it is.
 |---|---|---|
 | `twentytwentyfive` | Twenty Twenty-Five | A small electronics store in the theme's Noon style: a homepage with a banner, trust strip, category tiles, sale and featured products, a product spotlight, customer quotes, the journal and a closing banner; 8 products, 3 categories, 2 brands, store pages and a journal |
 | `unishop` | Unishop | An electronics store: 20 products, brands, reviews, buying guides and store pages |
+| `ebasket` | eBasket | A neighbourhood grocer: 37 products in 8 aisles with pack sizes, nutrition panels and diet tags, offers with end dates, a variable coffee, reviews, recipes, store pages and a demo checkout with free delivery over £40 |
 
 ## Layout
 
@@ -44,9 +45,12 @@ under `"files"`, and Storefill reads only those.
    referenced from the theme instead: `theme:assets/images/hero.jpg`.
 3. Add an entry to `index.json`. `theme` is the theme's folder name (its stylesheet slug); a child
    theme also sees its parent's packs.
-4. Record every photo's licence in the pack's `CREDITS.md`. Use only photos you may redistribute
+4. Name photo files so no file name equals a product, page or post slug: `bananas-photo.jpg`, not
+   `bananas.jpg`. WordPress names an attachment after its file, and Storefill 1.0.0 would take an
+   attachment called `bananas` for an existing product of that slug and skip the product.
+5. Record every photo's licence in the pack's `CREDITS.md`. Use only photos you may redistribute
    (CC0 or your own), with no visible brand logos, and invented brand and product names.
-5. Test on a clean site with a local checkout:
+6. Test on a clean site with a local checkout:
    `define( 'STOREFILL_LOCAL_PACKS', '/path/to/demo-pack' );` in `wp-config.php`, then
    `wp storefill import <pack>`, check the site, `wp storefill remove <pack> --yes`.
 
@@ -105,6 +109,7 @@ Every section except `schema` is optional.
   "name": "Aster Vela 6",
   "category": "phones",
   "brand": "aster",
+  "tags": [ "Vegan", "Gluten free" ],
   "image": "images/products/phone.jpg",
   "gallery": [],
   "sku": "AST-VELA6",
@@ -125,6 +130,8 @@ Every section except `schema` is optional.
 ```
 
 - `category` is a slug or a list of slugs.
+- `tags` are product tag names, created when missing (eBasket shows them as diet badges and a shop
+  filter). Storefill 1.0.0 skips this key; tags import from the next version.
 - `stock`: `null` (in stock), a number (stock is managed), or `"outofstock"`.
 - `sale_days`: a sale that ends that many days after the import.
 - `weight` is in kg and `size` (length, width, height) in cm; Storefill converts to the store's units.
