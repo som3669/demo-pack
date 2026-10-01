@@ -1,7 +1,7 @@
 # demo-pack
 
 Demo content for WordPress themes, imported with the
-[Storefill – Demo Content Importer](https://wordpress.org/plugins/storefill/) plugin.
+[Storefill – Demo Content Importer](https://wordpress.org/plugins/storefill-demo-content-importer/) plugin.
 
 Themes ship no demo content of their own. A store owner installs the theme, WooCommerce and
 Storefill, opens **Appearance → Import demo**, and Storefill downloads the pack for the active theme
