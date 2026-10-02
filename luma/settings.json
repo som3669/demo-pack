@@ -1,0 +1,57 @@
+{
+	"schema": 1,
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "journal"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Luma",
+			"blogdescription": "Skincare, written like a formula",
+			"woocommerce_coming_soon": "no",
+			"woocommerce_store_pages_only": "no",
+			"woocommerce_currency": "GBP",
+			"woocommerce_currency_pos": "left",
+			"woocommerce_price_thousand_sep": ",",
+			"woocommerce_price_decimal_sep": ".",
+			"woocommerce_price_num_decimals": "2",
+			"woocommerce_store_address": "14 Linden Row",
+			"woocommerce_store_city": "Edinburgh",
+			"woocommerce_store_postcode": "EH3 6LT",
+			"woocommerce_default_country": "GB",
+			"woocommerce_weight_unit": "kg",
+			"woocommerce_dimension_unit": "cm",
+			"woocommerce_enable_reviews": "yes",
+			"woocommerce_enable_review_rating": "yes",
+			"woocommerce_manage_stock": "yes"
+		},
+		"returns_page": "delivery-returns",
+		"checkout": {
+			"payment_title": "Demo payment (no charge)",
+			"payment_description": "This is a demo store. Orders are not charged, packed or delivered.",
+			"payment_instructions": "This was a demo order: nothing was charged and nothing will be delivered.",
+			"shipping": [
+				{
+					"method": "free_shipping",
+					"title": "Free tracked delivery",
+					"requires": "min_amount",
+					"min_amount": "35",
+					"ignore_discounts": "no"
+				},
+				{
+					"method": "flat_rate",
+					"title": "Tracked delivery",
+					"tax_status": "none",
+					"cost": "3.95"
+				},
+				{
+					"method": "local_pickup",
+					"title": "Collect from the studio",
+					"tax_status": "none",
+					"cost": "0"
+				}
+			]
+		},
+		"hide_sample_content": true
+	}
+}

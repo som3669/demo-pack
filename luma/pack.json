@@ -1,0 +1,2026 @@
+{
+	"schema": 1,
+	"files": [
+		"settings.json"
+	],
+	"images": {
+		"images/products/oat-milk-cleanser-photo.jpg": "",
+		"images/products/gel-cleanser-photo.jpg": "",
+		"images/products/cleansing-balm-photo.jpg": "",
+		"images/products/clay-mask-photo.jpg": "",
+		"images/products/rose-toner-photo.jpg": "",
+		"images/products/glow-tonic-photo.jpg": "",
+		"images/products/calming-essence-photo.jpg": "",
+		"images/products/hyaluronic-serum-photo.jpg": "",
+		"images/products/niacinamide-serum-photo.jpg": "",
+		"images/products/vitamin-c-serum-photo.jpg": "",
+		"images/products/retinal-serum-photo.jpg": "",
+		"images/products/face-oil-photo.jpg": "",
+		"images/products/eye-cream-photo.jpg": "",
+		"images/products/ceramide-cream-photo.jpg": "",
+		"images/products/gel-cream-photo.jpg": "",
+		"images/products/overnight-mask-photo.jpg": "",
+		"images/products/mineral-sunscreen-photo.jpg": "",
+		"images/products/daily-spf-photo.jpg": "",
+		"images/products/after-sun-photo.jpg": "",
+		"images/products/satin-lipstick-photo.jpg": "",
+		"images/products/tinted-lip-balm-photo.jpg": "",
+		"images/products/lip-oil-photo.jpg": "",
+		"images/products/skin-tint-photo.jpg": "",
+		"images/products/cream-blush-photo.jpg": "",
+		"images/products/mascara-photo.jpg": "",
+		"images/products/setting-powder-photo.jpg": "",
+		"images/products/eyeshadow-palette-photo.jpg": "",
+		"images/products/nail-colour-photo.jpg": "",
+		"images/products/bath-soak-photo.jpg": "",
+		"images/products/body-oil-photo.jpg": "",
+		"images/products/body-butter-photo.jpg": "",
+		"images/products/hand-balm-photo.jpg": "",
+		"images/products/soap-bar-photo.jpg": "",
+		"images/products/body-scrub-photo.jpg": "",
+		"images/products/brush-set-photo.jpg": "",
+		"images/products/powder-brush-photo.jpg": "",
+		"images/products/body-brush-photo.jpg": "",
+		"images/products/face-cloths-photo.jpg": "",
+		"images/products/cotton-rounds-photo.jpg": "",
+		"images/scenes/routine-flatlay-photo.jpg": "Hands measuring a formula beside a mortar, jars and fresh herbs",
+		"images/scenes/botanicals-photo.jpg": "A dropper bottle, rose petals, a beaker of water and dried herbs on a table",
+		"images/scenes/lab-glassware-photo.jpg": "Test tubes holding a pink liquid",
+		"images/scenes/night-routine-photo.jpg": "A candle burning in a glass jar on a wooden table by the window",
+		"images/scenes/sun-care-photo.jpg": "A straw hat and pink sunglasses",
+		"images/scenes/studio-shelves-photo.jpg": "Clear, green and amber glass bottles on a table"
+	},
+	"product_categories": {
+		"cleansers": {
+			"name": "Cleansers",
+			"description": "Gels, milks and balms that lift off the day without stripping the skin.",
+			"image": "images/products/cleansing-balm-photo.jpg"
+		},
+		"toners": {
+			"name": "Toners and essences",
+			"description": "Watery layers that rebalance, exfoliate gently and prep skin for what follows.",
+			"image": "images/products/rose-toner-photo.jpg"
+		},
+		"serums": {
+			"name": "Serums",
+			"description": "Where the actives live: hydration, brightness, texture and calm.",
+			"image": "images/products/hyaluronic-serum-photo.jpg"
+		},
+		"moisturisers": {
+			"name": "Moisturisers",
+			"description": "Creams and gels that seal everything in, from featherlight to rich.",
+			"image": "images/products/ceramide-cream-photo.jpg"
+		},
+		"sun-care": {
+			"name": "Sun care",
+			"description": "Broad-spectrum protection for every morning, and care for after the sun.",
+			"image": "images/products/mineral-sunscreen-photo.jpg"
+		},
+		"makeup": {
+			"name": "Makeup",
+			"description": "Colour with skincare manners: tints, lips, cheeks and eyes.",
+			"image": "images/products/cream-blush-photo.jpg"
+		},
+		"body": {
+			"name": "Body and bath",
+			"description": "Oils, butters, scrubs and soaks for the rest of you.",
+			"image": "images/products/bath-soak-photo.jpg"
+		},
+		"tools": {
+			"name": "Tools",
+			"description": "Brushes, cloths and rounds that last.",
+			"image": "images/products/brush-set-photo.jpg"
+		}
+	},
+	"attributes": {
+		"Concern": "concern",
+		"Routine step": "routine-step"
+	},
+	"products": [
+		{
+			"slug": "oat-milk-cleanser",
+			"name": "Oat Milk Cream Cleanser",
+			"category": "cleansers",
+			"image": "images/products/oat-milk-cleanser-photo.jpg",
+			"sku": "LM-CLE-001",
+			"sales": 312,
+			"regular": "18",
+			"featured": true,
+			"weight": 0.22,
+			"specs": {
+				"Key actives": "Colloidal oat 1% | Glycerin 5%",
+				"pH": "5.5",
+				"Texture": "Milky cream",
+				"Skin type": "Dry, sensitive",
+				"Concern": "Dryness",
+				"Routine step": "1 Cleanse",
+				"Size": "150 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Glycerin, Caprylic/Capric Triglyceride, Avena Sativa Kernel Flour, Cetearyl Alcohol, Glyceryl Stearate, Coco-Glucoside, Panthenol, Sodium Benzoate, Citric Acid"
+			},
+			"tags": [
+				"Fragrance free",
+				"Vegan"
+			],
+			"short": "A soft cream cleanser with colloidal oat that leaves dry skin comfortable, never tight.",
+			"description": [
+				"Massage a fingertip of cream over dry skin, then add a little water and it turns milky and lifts away sunscreen, make-up and the day. It rinses clean without the squeak that tells you a cleanser has taken too much.",
+				"Colloidal oat calms and glycerin holds water in the skin, so it suits dry and sensitive skin morning and night. Follow with toner, or go straight to your serum."
+			],
+			"upsells": [
+				"rosewater-toner",
+				"hyaluronic-water-serum"
+			]
+		},
+		{
+			"slug": "green-tea-gel-cleanser",
+			"name": "Green Tea Gel Cleanser",
+			"category": "cleansers",
+			"image": "images/products/gel-cleanser-photo.jpg",
+			"sku": "LM-CLE-002",
+			"sales": 268,
+			"regular": "16",
+			"sale": "13.50",
+			"sale_days": 5,
+			"weight": 0.26,
+			"specs": {
+				"Key actives": "Green tea extract 2% | Salicylic acid 0.5%",
+				"pH": "5.0",
+				"Texture": "Clear gel",
+				"Skin type": "Oily, combination",
+				"Concern": "Breakouts",
+				"Routine step": "1 Cleanse",
+				"Size": "200 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Sodium Cocoyl Glutamate, Glycerin, Camellia Sinensis Leaf Extract, Coco-Betaine, Salicylic Acid, Panthenol, Xanthan Gum, Sodium Benzoate, Citric Acid"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A low-foam gel with green tea and a touch of salicylic acid for oily, breakout-prone skin.",
+			"description": [
+				"A clear gel that works into a light lather and clears oil and sunscreen without stripping. Half a percent of salicylic acid works inside the pore while green tea calms the look of redness.",
+				"Use it morning and night on oily or combination skin, or in the evening only if your skin is drier in winter."
+			],
+			"upsells": [
+				"niacinamide-zinc-serum",
+				"daily-gel-cream"
+			]
+		},
+		{
+			"slug": "melting-cleansing-balm",
+			"name": "Melting Cleansing Balm",
+			"category": "cleansers",
+			"image": "images/products/cleansing-balm-photo.jpg",
+			"sku": "LM-CLE-003",
+			"sales": 354,
+			"regular": "24",
+			"sale": "19",
+			"weight": 0.16,
+			"specs": {
+				"Key actives": "Camellia oil 20% | Oat lipids 2%",
+				"Texture": "Balm to oil",
+				"Skin type": "All skin types",
+				"Concern": "Dullness",
+				"Routine step": "1 Cleanse",
+				"Size": "100 g",
+				"Period after opening": "12M",
+				"Ingredients": "Caprylic/Capric Triglyceride, Camellia Oleifera Seed Oil, Polyglyceryl-4 Oleate, Helianthus Annuus Seed Wax, Avena Sativa Kernel Oil, Tocopherol"
+			},
+			"tags": [
+				"Vegan",
+				"Refillable"
+			],
+			"short": "A solid balm that melts into oil on contact and dissolves make-up, then rinses off milky.",
+			"description": [
+				"Scoop a little with the spatula and warm it between your fingers: it melts into a silky oil that dissolves long-wear make-up and sunscreen. Add water and it turns milky and rinses away clean.",
+				"The first step of an evening double cleanse. Follow with the gel or cream cleanser."
+			],
+			"upsells": [
+				"oat-milk-cleanser"
+			]
+		},
+		{
+			"slug": "kaolin-clay-mask",
+			"name": "Kaolin Clay Mask",
+			"category": "cleansers",
+			"image": "images/products/clay-mask-photo.jpg",
+			"sku": "LM-CLE-004",
+			"sales": 141,
+			"regular": "20",
+			"weight": 0.12,
+			"specs": {
+				"Key actives": "Kaolin 20% | Niacinamide 2%",
+				"pH": "6.0",
+				"Texture": "Creamy clay",
+				"Skin type": "Oily, combination",
+				"Concern": "Breakouts",
+				"Size": "75 ml",
+				"Period after opening": "6M",
+				"Ingredients": "Aqua, Kaolin, Glycerin, Niacinamide, Bentonite, Cetearyl Alcohol, Aloe Barbadensis Leaf Juice, Xanthan Gum, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A weekly clay mask that lifts oil from the pores and leaves skin matte, not dry.",
+			"description": [
+				"Spread a thin, even layer over clean skin, avoiding the eyes, and rinse after ten minutes, before it cracks. Kaolin absorbs excess oil while niacinamide keeps the skin barrier comfortable.",
+				"Once or twice a week, after cleansing and before your serum."
+			]
+		},
+		{
+			"slug": "rosewater-toner",
+			"name": "Rosewater Hydrating Toner",
+			"category": "toners",
+			"image": "images/products/rose-toner-photo.jpg",
+			"sku": "LM-TON-001",
+			"sales": 233,
+			"regular": "17",
+			"weight": 0.25,
+			"specs": {
+				"Key actives": "Rose water 60% | Panthenol 1%",
+				"pH": "5.5",
+				"Texture": "Watery",
+				"Skin type": "Dry, sensitive",
+				"Concern": "Sensitivity",
+				"Routine step": "2 Tone",
+				"Size": "200 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Rosa Damascena Flower Water, Aqua, Glycerin, Panthenol, Betaine, Allantoin, Sodium Benzoate, Citric Acid"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A rose water toner with panthenol that soothes and preps skin for serum.",
+			"description": [
+				"Pour a little into your palms and press it into clean skin. Distilled rose water and panthenol leave skin soft and slightly damp, which is exactly how hyaluronic acid likes to find it.",
+				"Gentle enough for twice a day, morning and night."
+			],
+			"upsells": [
+				"hyaluronic-water-serum"
+			]
+		},
+		{
+			"slug": "aha-glow-tonic",
+			"name": "AHA 7% Glow Tonic",
+			"category": "toners",
+			"image": "images/products/glow-tonic-photo.jpg",
+			"sku": "LM-TON-002",
+			"sales": 389,
+			"regular": "21",
+			"sale": "17",
+			"sale_days": 9,
+			"featured": true,
+			"weight": 0.26,
+			"specs": {
+				"Key actives": "Glycolic acid 5% | Lactic acid 2% | Kiwi fruit extract",
+				"pH": "3.6",
+				"Texture": "Clear liquid",
+				"Skin type": "Normal, oily",
+				"Concern": "Dullness",
+				"Routine step": "2 Tone",
+				"Size": "200 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Glycolic Acid, Lactic Acid, Aloe Barbadensis Leaf Juice, Actinidia Chinensis Fruit Extract, Sodium Hydroxide, Glycerin, Panthenol, Tocopherol, Sodium Benzoate"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "Seven per cent of fruit and sugar acids at pH 3.6, with kiwi, for smoother, brighter-looking skin.",
+			"description": [
+				"Sweep over clean, dry skin with a cotton round in the evening, avoiding the eye area. Glycolic and lactic acid loosen the dull surface layer so it sheds sooner; kiwi extract and aloe keep the skin calm while they work.",
+				"Start two or three evenings a week and use sunscreen every morning. Keep it apart from retinal: alternate the nights."
+			],
+			"upsells": [
+				"mineral-sun-fluid-spf50",
+				"reusable-cotton-rounds"
+			]
+		},
+		{
+			"slug": "centella-calming-essence",
+			"name": "Centella Calming Essence",
+			"category": "toners",
+			"image": "images/products/calming-essence-photo.jpg",
+			"sku": "LM-TON-003",
+			"sales": 176,
+			"regular": "26",
+			"weight": 0.2,
+			"specs": {
+				"Key actives": "Centella asiatica water 70% | Panthenol 2%",
+				"pH": "5.5",
+				"Texture": "Silky water",
+				"Skin type": "Sensitive, all skin types",
+				"Concern": "Sensitivity",
+				"Routine step": "2 Tone",
+				"Size": "150 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Centella Asiatica Leaf Water, Aqua, Glycerin, Panthenol, Butylene Glycol, Madecassoside, Sodium Hyaluronate, Ethylhexylglycerin"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "A silky essence of centella water that calms the look of redness and leaves skin plump.",
+			"description": [
+				"Pour a few drops into your palms and press into skin after cleansing. Centella water and panthenol are light as water but leave a soft, bouncy finish under serum and cream.",
+				"Layer it twice on days your skin feels hot or tight."
+			]
+		},
+		{
+			"slug": "hyaluronic-water-serum",
+			"name": "Hyaluronic Water Serum",
+			"category": "serums",
+			"image": "images/products/hyaluronic-serum-photo.jpg",
+			"sku": "LM-SER-001",
+			"sales": 520,
+			"regular": "28",
+			"sale": "22",
+			"featured": true,
+			"weight": 0.09,
+			"specs": {
+				"Key actives": "Hyaluronic acid 2% | Panthenol 5%",
+				"pH": "6.0",
+				"Texture": "Water-light gel",
+				"Skin type": "All skin types",
+				"Concern": "Dryness",
+				"Routine step": "3 Treat",
+				"Size": "30 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Panthenol, Glycerin, Pentylene Glycol, Ethylhexylglycerin, Citric Acid"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "Hyaluronic acid at two molecular weights with 5% panthenol. Layers under everything.",
+			"description": [
+				"Two sizes of hyaluronic acid draw water into the surface of the skin and just below it, while panthenol soothes. Apply three or four drops to damp skin, then seal it in with moisturiser.",
+				"It plays well with every other active, morning and night."
+			],
+			"upsells": [
+				"ceramide-barrier-cream",
+				"niacinamide-zinc-serum"
+			]
+		},
+		{
+			"slug": "niacinamide-zinc-serum",
+			"name": "Niacinamide 10% + Zinc Serum",
+			"category": "serums",
+			"image": "images/products/niacinamide-serum-photo.jpg",
+			"sku": "LM-SER-002",
+			"sales": 640,
+			"regular": "19",
+			"featured": true,
+			"weight": 0.09,
+			"specs": {
+				"Key actives": "Niacinamide 10% | Zinc PCA 1%",
+				"pH": "5.8",
+				"Texture": "Light serum",
+				"Skin type": "Oily, combination",
+				"Concern": "Breakouts",
+				"Routine step": "3 Treat",
+				"Size": "30 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Niacinamide, Pentylene Glycol, Zinc PCA, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan Gum, Ethoxydiglycol, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "Ten per cent niacinamide with zinc for oily skin, visible pores and an uneven tone.",
+			"description": [
+				"A light, fast-absorbing serum for skin that shines by lunchtime. Niacinamide supports the barrier and evens the look of tone; zinc helps balance oil.",
+				"Use a few drops morning and night after toner. If your skin is sensitive, start once a day."
+			],
+			"upsells": [
+				"daily-gel-cream",
+				"mineral-sun-fluid-spf50"
+			]
+		},
+		{
+			"slug": "vitamin-c-serum",
+			"name": "Vitamin C 15% Brightening Serum",
+			"category": "serums",
+			"image": "images/products/vitamin-c-serum-photo.jpg",
+			"sku": "LM-SER-003",
+			"sales": 410,
+			"regular": "34",
+			"featured": true,
+			"weight": 0.1,
+			"specs": {
+				"Key actives": "Ascorbic acid 15% | Vitamin E 1% | Ferulic acid 0.5%",
+				"pH": "3.2",
+				"Texture": "Light serum",
+				"Skin type": "Normal, dull",
+				"Concern": "Dullness",
+				"Routine step": "3 Treat",
+				"Size": "30 ml",
+				"Period after opening": "6M",
+				"Ingredients": "Aqua, Ascorbic Acid, Ethoxydiglycol, Propylene Glycol, Tocopherol, Ferulic Acid, Triethanolamine, Sodium Hyaluronate, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "Pure vitamin C at 15% with vitamins E and ferulic acid, for brighter-looking skin by day.",
+			"description": [
+				"Ascorbic acid works best at a low pH, so this one sits at 3.2. Vitamin E and ferulic acid keep it stable and help it defend skin through the day.",
+				"Apply in the morning under sunscreen. A slight tingle is normal. The amber bottle keeps out light; use it within six months of opening."
+			],
+			"upsells": [
+				"mineral-sun-fluid-spf50"
+			]
+		},
+		{
+			"slug": "retinal-night-serum",
+			"name": "Retinal 0.1% Night Serum",
+			"category": "serums",
+			"image": "images/products/retinal-serum-photo.jpg",
+			"sku": "LM-SER-004",
+			"sales": 298,
+			"regular": "42",
+			"weight": 0.1,
+			"specs": {
+				"Key actives": "Retinal 0.1% | Squalane 10%",
+				"pH": "5.5",
+				"Texture": "Silky oil-serum",
+				"Skin type": "Normal, dry",
+				"Concern": "Fine lines",
+				"Routine step": "3 Treat",
+				"Size": "30 ml",
+				"Period after opening": "6M",
+				"Ingredients": "Squalane, Caprylic/Capric Triglyceride, Retinal, Tocopherol, Bisabolol, Simmondsia Chinensis Seed Oil, Helianthus Annuus Seed Oil"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "Retinal, one step from retinoic acid, in a squalane base for smoother texture. Night only.",
+			"description": [
+				"Retinal converts to retinoic acid in a single step, so 0.1% does the work of a much stronger retinol. Squalane and bisabolol keep the skin comfortable while it adjusts.",
+				"Start two nights a week on dry skin, then build up. Never on the same night as acids, and always sunscreen the next morning. Not for use during pregnancy."
+			],
+			"upsells": [
+				"ceramide-barrier-cream",
+				"mineral-sun-fluid-spf50"
+			]
+		},
+		{
+			"slug": "calendula-face-oil",
+			"name": "Calendula Face Oil",
+			"category": "serums",
+			"image": "images/products/face-oil-photo.jpg",
+			"sku": "LM-SER-005",
+			"sales": 205,
+			"regular": "22",
+			"weight": 0.09,
+			"specs": {
+				"Key actives": "Plant squalane 90% | Calendula extract 5%",
+				"Texture": "Dry oil",
+				"Skin type": "Dry, all skin types",
+				"Concern": "Dryness",
+				"Routine step": "4 Moisturise",
+				"Size": "30 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Squalane, Caprylic/Capric Triglyceride, Calendula Officinalis Flower Extract, Helianthus Annuus Seed Oil, Tocopherol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free",
+				"Refillable"
+			],
+			"short": "Plant squalane with calendula: a featherlight oil that softens and calms without shine.",
+			"description": [
+				"Squalane is close to the oil skin makes itself, so it sinks in quickly and leaves no greasy film; calendula soothes dry, tight patches. Press two drops over moisturiser at night, or mix one into your foundation.",
+				"Squalane is stable, so the oil will not turn rancid, and it suits even oily skin."
+			]
+		},
+		{
+			"slug": "peptide-eye-cream",
+			"name": "Peptide Eye Cream",
+			"category": "serums",
+			"image": "images/products/eye-cream-photo.jpg",
+			"sku": "LM-SER-006",
+			"sales": 167,
+			"regular": "29",
+			"weight": 0.06,
+			"specs": {
+				"Key actives": "Peptide complex 4% | Caffeine 3%",
+				"pH": "6.0",
+				"Texture": "Light cream",
+				"Skin type": "All skin types",
+				"Concern": "Fine lines",
+				"Routine step": "3 Treat",
+				"Size": "15 ml",
+				"Period after opening": "6M",
+				"Ingredients": "Aqua, Glycerin, Caffeine, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Squalane, Cetearyl Alcohol, Sodium Hyaluronate, Phenoxyethanol"
+			},
+			"tags": [
+				"Fragrance free"
+			],
+			"short": "Peptides and caffeine in a light cream for the look of puffiness and fine lines around the eyes.",
+			"description": [
+				"Tap a rice-grain amount around the orbital bone with your ring finger, morning and night. Caffeine helps the look of morning puffiness; peptides support firmer-looking skin over time.",
+				"Light enough to wear under concealer."
+			]
+		},
+		{
+			"slug": "ceramide-barrier-cream",
+			"name": "Ceramide Barrier Cream",
+			"category": "moisturisers",
+			"image": "images/products/ceramide-cream-photo.jpg",
+			"sku": "LM-MOI-001",
+			"sales": 480,
+			"variations": {
+				"50 ml": {
+					"sku": "LM-MOI-001-50",
+					"regular": "32"
+				},
+				"100 ml": {
+					"sku": "LM-MOI-001-100",
+					"regular": "54",
+					"sale": "46"
+				}
+			},
+			"featured": true,
+			"weight": 0.12,
+			"specs": {
+				"Key actives": "Ceramides 3% | Cholesterol 1% | Fatty acids 1%",
+				"pH": "5.5",
+				"Texture": "Rich cream",
+				"Skin type": "Dry, sensitive",
+				"Concern": "Dryness",
+				"Routine step": "4 Moisturise",
+				"Size": [
+					"50 ml",
+					"100 ml"
+				],
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Glycerin, Caprylic/Capric Triglyceride, Ceramide NP, Ceramide AP, Ceramide EOP, Cholesterol, Phytosphingosine, Butyrospermum Parkii Butter, Cetearyl Alcohol, Sodium Hyaluronate, Phenoxyethanol"
+			},
+			"tags": [
+				"Fragrance free",
+				"Vegan"
+			],
+			"short": "Three ceramides with cholesterol and fatty acids, in the ratio skin uses, for a stressed barrier.",
+			"description": [
+				"A rich, cushiony cream that holds the skin barrier together while strong actives do their work. Ceramides, cholesterol and fatty acids are the lipids skin is made of; together they help it keep water in.",
+				"Use it morning and night as the last step before sunscreen. The 100 ml jar has the lower price per 100 ml."
+			],
+			"upsells": [
+				"retinal-night-serum",
+				"hyaluronic-water-serum"
+			]
+		},
+		{
+			"slug": "daily-gel-cream",
+			"name": "Daily Gel Cream",
+			"category": "moisturisers",
+			"image": "images/products/gel-cream-photo.jpg",
+			"sku": "LM-MOI-002",
+			"sales": 322,
+			"regular": "24",
+			"weight": 0.1,
+			"specs": {
+				"Key actives": "Niacinamide 4% | Hyaluronic acid 1%",
+				"pH": "5.8",
+				"Texture": "Cooling gel",
+				"Skin type": "Oily, combination",
+				"Concern": "Breakouts",
+				"Routine step": "4 Moisturise",
+				"Size": "50 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Glycerin, Niacinamide, Squalane, Sodium Hyaluronate, Carbomer, Allantoin, Tromethamine, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "A weightless gel cream that hydrates oily skin without shine.",
+			"description": [
+				"A cooling, water-light gel that disappears in seconds and leaves a soft matte finish. Niacinamide balances, hyaluronic acid hydrates.",
+				"Morning and night, before sunscreen in the day."
+			]
+		},
+		{
+			"slug": "overnight-recovery-mask",
+			"name": "Overnight Recovery Mask",
+			"category": "moisturisers",
+			"image": "images/products/overnight-mask-photo.jpg",
+			"sku": "LM-MOI-003",
+			"sales": 188,
+			"regular": "30",
+			"sale": "25",
+			"sale_days": 12,
+			"weight": 0.12,
+			"specs": {
+				"Key actives": "Peptides 2% | Shea butter 5%",
+				"pH": "5.5",
+				"Texture": "Sleeping cream",
+				"Skin type": "Dry, normal",
+				"Concern": "Fine lines",
+				"Routine step": "4 Moisturise",
+				"Size": "75 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Butyrospermum Parkii Butter, Glycerin, Squalane, Palmitoyl Tripeptide-5, Lavandula Angustifolia Flower Water, Cetearyl Alcohol, Tocopherol, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A rich sleeping cream with peptides and shea that works while you sleep.",
+			"description": [
+				"Smooth a generous layer over your evening routine as the last step. By morning, skin is soft, plump and rested-looking.",
+				"Two or three nights a week, or every night in winter."
+			]
+		},
+		{
+			"slug": "mineral-sun-fluid-spf50",
+			"name": "Mineral Sun Fluid SPF 50",
+			"category": "sun-care",
+			"image": "images/products/mineral-sunscreen-photo.jpg",
+			"sku": "LM-SUN-001",
+			"sales": 560,
+			"regular": "26",
+			"featured": true,
+			"weight": 0.09,
+			"specs": {
+				"Key actives": "Zinc oxide 20% | Niacinamide 2%",
+				"pH": "7.0",
+				"Texture": "Sheer fluid",
+				"Skin type": "All skin types",
+				"Concern": "Sun protection",
+				"Routine step": "5 Protect",
+				"Size": "50 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Zinc Oxide, Caprylic/Capric Triglyceride, Niacinamide, Polyglyceryl-3 Polyricinoleate, Glycerin, Tocopherol, Magnesium Sulfate, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "Broad-spectrum mineral protection in a sheer fluid that leaves no white cast.",
+			"description": [
+				"Twenty per cent non-nano zinc oxide filters UVA and UVB light, in a fluid that blends clear on most skin tones. Niacinamide keeps sensitive skin calm under it.",
+				"Apply generously as the last step every morning, about half a teaspoon for the face and neck, and reapply through the day outdoors."
+			],
+			"upsells": [
+				"vitamin-c-serum"
+			]
+		},
+		{
+			"slug": "daily-sun-cream-spf30",
+			"name": "Daily Sun Cream SPF 30",
+			"category": "sun-care",
+			"image": "images/products/daily-spf-photo.jpg",
+			"sku": "LM-SUN-002",
+			"sales": 274,
+			"regular": "18",
+			"sale": "15",
+			"weight": 0.14,
+			"specs": {
+				"Key actives": "UVA and UVB filters | Vitamin E 0.5%",
+				"pH": "6.5",
+				"Texture": "Light lotion",
+				"Skin type": "Normal, dry",
+				"Concern": "Sun protection",
+				"Routine step": "5 Protect",
+				"Size": "100 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Homosalate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Glycerin, Tocopherol, Cetearyl Alcohol, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "An everyday SPF 30 lotion for face and body that sinks in fast.",
+			"description": [
+				"A light lotion for days in town: it absorbs quickly, sits well under make-up and comes in a size that also covers arms and neck.",
+				"For long days outdoors, choose SPF 50."
+			]
+		},
+		{
+			"slug": "aloe-after-sun-gel",
+			"name": "Aloe After-Sun Gel",
+			"category": "sun-care",
+			"image": "images/products/after-sun-photo.jpg",
+			"sku": "LM-SUN-003",
+			"sales": 133,
+			"regular": "14",
+			"weight": 0.24,
+			"specs": {
+				"Key actives": "Aloe vera 90% | Panthenol 2%",
+				"pH": "5.5",
+				"Texture": "Cooling gel",
+				"Skin type": "All skin types",
+				"Concern": "Sensitivity",
+				"Size": "200 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aloe Barbadensis Leaf Juice, Aqua, Glycerin, Panthenol, Allantoin, Carbomer, Sodium Hydroxide, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "Ninety per cent aloe vera with panthenol to cool and comfort skin after the sun.",
+			"description": [
+				"Keep it in the fridge for the coolest relief. Smooth over face and body after a day outside; it sinks in without stickiness."
+			]
+		},
+		{
+			"slug": "satin-lipstick",
+			"name": "Satin Lipstick",
+			"category": "makeup",
+			"image": "images/products/satin-lipstick-photo.jpg",
+			"sku": "LM-MAK-001",
+			"sales": 346,
+			"variations": {
+				"Rosewood": {
+					"sku": "LM-MAK-001-RW",
+					"regular": "22"
+				},
+				"Brick": {
+					"sku": "LM-MAK-001-BR",
+					"regular": "22"
+				},
+				"Plum Noir": {
+					"sku": "LM-MAK-001-PN",
+					"regular": "22"
+				},
+				"Coral": {
+					"sku": "LM-MAK-001-CO",
+					"regular": "22",
+					"sale": "17"
+				}
+			},
+			"featured": true,
+			"weight": 0.04,
+			"specs": {
+				"Key actives": "Shea butter | Vitamin E",
+				"Finish": "Satin",
+				"Size": "3.5 g",
+				"Period after opening": "24M",
+				"Shade": [
+					"Rosewood",
+					"Brick",
+					"Plum Noir",
+					"Coral"
+				],
+				"Ingredients": "Ricinus Communis Seed Oil, Euphorbia Cerifera Cera, Butyrospermum Parkii Butter, Tocopherol, Mica, CI 77491, CI 15850"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A creamy satin lipstick in four wearable shades that stays comfortable all day.",
+			"description": [
+				"Pigment-dense colour in one swipe, with shea butter and vitamin E so lips never feel dry. The satin finish has a soft sheen, not a gloss.",
+				"Rosewood is a muted pink, Brick a warm terracotta, Plum Noir a deep berry and Coral a bright peach."
+			]
+		},
+		{
+			"slug": "tinted-lip-balm",
+			"name": "Tinted Lip Balm SPF 15",
+			"category": "makeup",
+			"image": "images/products/tinted-lip-balm-photo.jpg",
+			"sku": "LM-MAK-002",
+			"sales": 228,
+			"regular": "12",
+			"weight": 0.02,
+			"specs": {
+				"Key actives": "Shea butter 10% | Candelilla wax",
+				"Finish": "Sheer",
+				"Size": "4.5 g",
+				"Period after opening": "12M",
+				"Ingredients": "Ricinus Communis Seed Oil, Euphorbia Cerifera Cera, Butyrospermum Parkii Butter, Zinc Oxide, Tocopherol, CI 77491"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A sheer wash of colour over shea butter, with SPF 15 for everyday lips.",
+			"description": [
+				"Somewhere between a balm and a lipstick: a hint of rosy colour, a soft shine and protection for the lips on sunny days. Reapply as often as you like."
+			]
+		},
+		{
+			"slug": "nourishing-lip-oil",
+			"name": "Nourishing Lip Oil",
+			"category": "makeup",
+			"image": "images/products/lip-oil-photo.jpg",
+			"sku": "LM-MAK-003",
+			"sales": 154,
+			"regular": "16",
+			"weight": 0.03,
+			"specs": {
+				"Key actives": "Jojoba oil 30% | Rosehip oil 5%",
+				"Finish": "Glossy",
+				"Size": "6 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Simmondsia Chinensis Seed Oil, Polyisobutene, Rosa Canina Fruit Oil, Tocopherol, Mica"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A glossy lip oil that cushions and conditions without stickiness.",
+			"description": [
+				"A clear, glossy oil with jojoba and rosehip. Wear it alone for shine or over lipstick to soften the finish."
+			]
+		},
+		{
+			"slug": "skin-tint-stick-spf20",
+			"name": "Skin Tint Stick SPF 20",
+			"category": "makeup",
+			"image": "images/products/skin-tint-photo.jpg",
+			"sku": "LM-MAK-004",
+			"sales": 301,
+			"variations": {
+				"01 Fair": {
+					"sku": "LM-MAK-004-01",
+					"regular": "28"
+				},
+				"02 Light": {
+					"sku": "LM-MAK-004-02",
+					"regular": "28"
+				},
+				"03 Medium": {
+					"sku": "LM-MAK-004-03",
+					"regular": "28"
+				},
+				"04 Tan": {
+					"sku": "LM-MAK-004-04",
+					"regular": "28"
+				},
+				"05 Deep": {
+					"sku": "LM-MAK-004-05",
+					"regular": "28"
+				}
+			},
+			"weight": 0.04,
+			"specs": {
+				"Key actives": "Niacinamide 3% | Zinc oxide 8%",
+				"Texture": "Creamy stick",
+				"Finish": "Natural, dewy",
+				"Skin type": "All skin types",
+				"Size": "9 g",
+				"Period after opening": "12M",
+				"Shade": [
+					"01 Fair",
+					"02 Light",
+					"03 Medium",
+					"04 Tan",
+					"05 Deep"
+				],
+				"Ingredients": "Caprylic/Capric Triglyceride, Zinc Oxide, Euphorbia Cerifera Cera, Squalane, Niacinamide, Silica, Tocopherol, Iron Oxides"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "A sheer, skin-evening tint stick with niacinamide and SPF 20, in five shades.",
+			"description": [
+				"More coverage than a moisturiser, less than a foundation. It evens the look of skin and lets freckles show through.",
+				"Swipe over the cheeks, forehead and chin, then blend with your fingers. For full sun protection, wear your sunscreen underneath."
+			]
+		},
+		{
+			"slug": "cream-blush",
+			"name": "Cream Blush, Petal",
+			"category": "makeup",
+			"image": "images/products/cream-blush-photo.jpg",
+			"sku": "LM-MAK-005",
+			"sales": 187,
+			"regular": "21",
+			"weight": 0.05,
+			"specs": {
+				"Key actives": "Squalane | Vitamin E",
+				"Finish": "Soft dewy",
+				"Size": "7 g",
+				"Period after opening": "12M",
+				"Ingredients": "Caprylic/Capric Triglyceride, Squalane, Silica, Euphorbia Cerifera Cera, Tocopherol, CI 15850, CI 77491"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A petal-pink cream blush in a mirrored compact that melts in with a fingertip.",
+			"description": [
+				"Tap onto the cheeks and blend upwards. Build it from a flush to a bold cheek; it sets to a soft, dewy finish that lasts. A dab doubles as lip colour."
+			]
+		},
+		{
+			"slug": "volume-mascara",
+			"name": "Volume Defining Mascara",
+			"category": "makeup",
+			"image": "images/products/mascara-photo.jpg",
+			"sku": "LM-MAK-006",
+			"sales": 265,
+			"regular": "18",
+			"sale": "14",
+			"sale_days": 4,
+			"weight": 0.03,
+			"specs": {
+				"Key actives": "Panthenol 1% | Carnauba wax",
+				"Finish": "Defined black",
+				"Size": "9 ml",
+				"Period after opening": "6M",
+				"Ingredients": "Aqua, Copernicia Cerifera Cera, Stearic Acid, Panthenol, Glycerin, Iron Oxides, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A tapered brush that separates as it coats, for volume without clumps.",
+			"description": [
+				"Wiggle from the roots upwards, then sweep. It holds a curl, resists smudging through the day and comes off with warm water.",
+				"Replace it six months after opening."
+			]
+		},
+		{
+			"slug": "translucent-setting-powder",
+			"name": "Translucent Setting Powder",
+			"category": "makeup",
+			"image": "images/products/setting-powder-photo.jpg",
+			"sku": "LM-MAK-007",
+			"sales": 142,
+			"regular": "24",
+			"weight": 0.05,
+			"specs": {
+				"Key actives": "Silica | Rice powder",
+				"Finish": "Soft matte",
+				"Size": "10 g",
+				"Period after opening": "24M",
+				"Ingredients": "Silica, Oryza Sativa Starch, Mica, Tocopherol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "A finely milled translucent powder that blurs shine without flattening the skin.",
+			"description": [
+				"Press a little over the centre of the face with the puff to set make-up, or dust on bare skin to take down shine."
+			]
+		},
+		{
+			"slug": "eyeshadow-palette",
+			"name": "Eyeshadow Palette, Dusk",
+			"category": "makeup",
+			"image": "images/products/eyeshadow-palette-photo.jpg",
+			"sku": "LM-MAK-008",
+			"sales": 119,
+			"regular": "32",
+			"weight": 0.08,
+			"specs": {
+				"Key actives": "Jojoba esters | Vitamin E",
+				"Finish": "Matte and shimmer",
+				"Size": "8 x 1.2 g",
+				"Period after opening": "24M",
+				"Ingredients": "Mica, Talc, Zinc Stearate, Jojoba Esters, Tocopherol, Iron Oxides"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "Eight soft taupes and roses, matte and shimmer, that build from day to smoky.",
+			"description": [
+				"Sweep a light matte over the lid, a deeper one into the crease and press a shimmer onto the centre of the lid. The darkest shade lines the lashes, damp or dry."
+			]
+		},
+		{
+			"slug": "nail-colour",
+			"name": "Nail Colour, Fig",
+			"category": "makeup",
+			"image": "images/products/nail-colour-photo.jpg",
+			"sku": "LM-MAK-009",
+			"sales": 98,
+			"regular": "11",
+			"weight": 0.04,
+			"specs": {
+				"Finish": "Gloss",
+				"Size": "10 ml",
+				"Period after opening": "24M",
+				"Ingredients": "Butyl Acetate, Ethyl Acetate, Nitrocellulose, Acetyl Tributyl Citrate, Isopropyl Alcohol, Iron Oxides"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A glossy, chip-resistant nail colour in a deep fig.",
+			"description": [
+				"Two thin coats over a base coat give full colour. Dry in about ten minutes."
+			]
+		},
+		{
+			"slug": "magnesium-bath-soak",
+			"name": "Magnesium Bath Soak",
+			"category": "body",
+			"image": "images/products/bath-soak-photo.jpg",
+			"sku": "LM-BOD-001",
+			"sales": 211,
+			"regular": "24",
+			"featured": true,
+			"weight": 0.55,
+			"specs": {
+				"Key actives": "Magnesium flakes 70% | Lavender oil 1%",
+				"Texture": "Flakes",
+				"Skin type": "All skin types",
+				"Size": "500 g",
+				"Period after opening": "24M",
+				"Ingredients": "Magnesium Chloride, Sodium Chloride, Lavandula Angustifolia Oil, Cedrus Atlantica Bark Oil, Linalool"
+			},
+			"tags": [
+				"Vegan",
+				"Plastic free"
+			],
+			"short": "Magnesium flakes with lavender and cedar for a long, quiet soak.",
+			"description": [
+				"Dissolve two handfuls in a warm bath and soak for twenty minutes. Nothing else required."
+			]
+		},
+		{
+			"slug": "dry-body-oil",
+			"name": "Dry Body Oil",
+			"category": "body",
+			"image": "images/products/body-oil-photo.jpg",
+			"sku": "LM-BOD-002",
+			"sales": 176,
+			"regular": "28",
+			"weight": 0.18,
+			"specs": {
+				"Key actives": "Jojoba oil 40% | Squalane 20%",
+				"Texture": "Dry oil",
+				"Skin type": "All skin types",
+				"Concern": "Dryness",
+				"Size": "100 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Simmondsia Chinensis Seed Oil, Squalane, Caprylic/Capric Triglyceride, Prunus Amygdalus Dulcis Oil, Tocopherol, Parfum"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A fast-absorbing body oil that leaves skin soft and glowing, never greasy.",
+			"description": [
+				"Smooth over damp skin after a shower. It sinks in within a minute, so you can dress straight away."
+			]
+		},
+		{
+			"slug": "shea-body-butter",
+			"name": "Shea Body Butter",
+			"category": "body",
+			"image": "images/products/body-butter-photo.jpg",
+			"sku": "LM-BOD-003",
+			"sales": 233,
+			"regular": "22",
+			"sale": "18",
+			"weight": 0.26,
+			"specs": {
+				"Key actives": "Shea butter 25% | Urea 5%",
+				"pH": "6.0",
+				"Texture": "Whipped butter",
+				"Skin type": "Dry, very dry",
+				"Concern": "Dryness",
+				"Size": "200 ml",
+				"Period after opening": "12M",
+				"Ingredients": "Aqua, Butyrospermum Parkii Butter, Glycerin, Urea, Cetearyl Alcohol, Squalane, Tocopherol, Phenoxyethanol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free"
+			],
+			"short": "A rich whipped butter with 5% urea for very dry skin on elbows, knees and heels.",
+			"description": [
+				"Urea holds water in the skin and softens rough patches; shea butter seals it in. Massage in after a bath or shower."
+			]
+		},
+		{
+			"slug": "barrier-hand-balm",
+			"name": "Barrier Hand Balm",
+			"category": "body",
+			"image": "images/products/hand-balm-photo.jpg",
+			"sku": "LM-BOD-004",
+			"sales": 192,
+			"regular": "12",
+			"weight": 0.07,
+			"specs": {
+				"Key actives": "Shea butter 40% | Ceramides 1%",
+				"Texture": "Solid balm",
+				"Skin type": "All skin types",
+				"Concern": "Dryness",
+				"Size": "30 g",
+				"Period after opening": "24M",
+				"Ingredients": "Butyrospermum Parkii Butter, Helianthus Annuus Seed Oil, Euphorbia Cerifera Cera, Caprylic/Capric Triglyceride, Ceramide NP, Tocopherol"
+			},
+			"tags": [
+				"Vegan",
+				"Fragrance free",
+				"Plastic free"
+			],
+			"short": "A solid shea and ceramide balm in a pocket tin, for hands that wash often.",
+			"description": [
+				"Warm a little between your fingers and work it into the backs of the hands and the cuticles. It melts on contact and sinks in within a minute, so you can type or cook straight after.",
+				"The tin fits a coat pocket, and nothing in it can spill."
+			]
+		},
+		{
+			"slug": "oat-honey-soap-bar",
+			"name": "Oat and Honey Soap Bar",
+			"category": "body",
+			"image": "images/products/soap-bar-photo.jpg",
+			"sku": "LM-BOD-005",
+			"sales": 164,
+			"regular": "8",
+			"weight": 0.12,
+			"specs": {
+				"Key actives": "Colloidal oat | Honey",
+				"Texture": "Bar",
+				"Skin type": "All skin types",
+				"Size": "110 g",
+				"Ingredients": "Sodium Olivate, Sodium Cocoate, Aqua, Avena Sativa Kernel Flour, Mel, Glycerin"
+			},
+			"tags": [
+				"Plastic free"
+			],
+			"short": "A gentle cold-process soap bar with oat and honey, wrapped in paper.",
+			"description": [
+				"A creamy lather that cleans without tightness. Keep it on a draining dish between uses and it will last for weeks."
+			]
+		},
+		{
+			"slug": "sugar-body-scrub",
+			"name": "Sugar Body Scrub",
+			"category": "body",
+			"image": "images/products/body-scrub-photo.jpg",
+			"sku": "LM-BOD-006",
+			"sales": 139,
+			"regular": "20",
+			"weight": 0.32,
+			"specs": {
+				"Key actives": "Cane sugar 50% | Sweet almond oil 20%",
+				"Texture": "Scrub",
+				"Skin type": "All skin types",
+				"Concern": "Dullness",
+				"Size": "250 g",
+				"Period after opening": "12M",
+				"Ingredients": "Sucrose, Prunus Amygdalus Dulcis Oil, Butyrospermum Parkii Butter, Tocopherol, Citrus Aurantium Dulcis Peel Oil"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A sugar scrub in almond oil that polishes and softens in one step.",
+			"description": [
+				"Massage over damp skin in circles, then rinse. The oil stays behind, so you may not need a lotion."
+			]
+		},
+		{
+			"slug": "brush-roll-collection",
+			"name": "Brush Roll Collection",
+			"category": "tools",
+			"image": "images/products/brush-set-photo.jpg",
+			"sku": "LM-TOO-001",
+			"sales": 126,
+			"regular": "58",
+			"sale": "48",
+			"weight": 0.3,
+			"specs": {
+				"Material": "Synthetic fibre, aluminium ferrules, birch handles, a cotton roll",
+				"Includes": "Powder, blush, foundation, contour and concealer brushes, four eye and three detail brushes",
+				"Care": "Wash weekly with mild soap; dry flat"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "Twelve soft synthetic brushes for face and eyes, rolled in a cotton case.",
+			"description": [
+				"Every brush you need for a full face, and nothing you will not use. The synthetic fibres are soft, wash easily and work with creams and powders alike.",
+				"Each brush has its own pocket, so the heads keep their shape on the road."
+			]
+		},
+		{
+			"slug": "powder-brush",
+			"name": "Powder Brush",
+			"category": "tools",
+			"image": "images/products/powder-brush-photo.jpg",
+			"sku": "LM-TOO-002",
+			"sales": 158,
+			"regular": "18",
+			"weight": 0.04,
+			"specs": {
+				"Material": "Soft synthetic fibre, black lacquered birch handle",
+				"How to use": "Dip, tap off the excess and sweep over the face in circles",
+				"Care": "Wash weekly with mild soap; dry flat"
+			},
+			"tags": [
+				"Vegan"
+			],
+			"short": "A large, domed powder brush that diffuses powder and bronzer without streaks.",
+			"description": [
+				"The dense, domed head picks up just enough powder and lays it down evenly. Sweep it over the centre of the face to set make-up, or lightly over the cheekbones with bronzer."
+			],
+			"upsells": [
+				"translucent-setting-powder"
+			]
+		},
+		{
+			"slug": "body-brush-pumice",
+			"name": "Body Brush with Pumice",
+			"category": "tools",
+			"image": "images/products/body-brush-photo.jpg",
+			"sku": "LM-TOO-003",
+			"sales": 147,
+			"regular": "16",
+			"weight": 0.18,
+			"specs": {
+				"Material": "Beech wood, sisal bristles, natural pumice",
+				"How to use": "Brush dry skin towards the heart before a shower; use the pumice on damp heels",
+				"Care": "Rinse and dry upright"
+			},
+			"tags": [
+				"Vegan",
+				"Plastic free"
+			],
+			"short": "A beech body brush with sisal bristles on one side and pumice on the other.",
+			"description": [
+				"Brush dry skin in long strokes towards the heart before a shower, then turn it over and smooth rough heels with the pumice in the bath."
+			],
+			"upsells": [
+				"sugar-body-scrub"
+			]
+		},
+		{
+			"slug": "cotton-face-cloths",
+			"name": "Cotton Face Cloths, 3 Pack",
+			"category": "tools",
+			"image": "images/products/face-cloths-photo.jpg",
+			"sku": "LM-TOO-004",
+			"sales": 171,
+			"regular": "12",
+			"weight": 0.15,
+			"specs": {
+				"Size": "3 pack, 30 x 30 cm",
+				"Material": "Organic cotton terry",
+				"Care": "Machine wash at 60°C"
+			},
+			"tags": [
+				"Plastic free"
+			],
+			"short": "Three soft organic cotton face cloths for lifting off balms and masks.",
+			"description": [
+				"Wring one out in warm water and press it over the face to lift away cleansing balm or a clay mask. Use a fresh one each day and wash them with your towels."
+			],
+			"upsells": [
+				"melting-cleansing-balm"
+			]
+		},
+		{
+			"slug": "reusable-cotton-rounds",
+			"name": "Reusable Cotton Rounds, 10 Pack",
+			"category": "tools",
+			"image": "images/products/cotton-rounds-photo.jpg",
+			"sku": "LM-TOO-005",
+			"sales": 203,
+			"regular": "10",
+			"weight": 0.05,
+			"specs": {
+				"Size": "10 pack",
+				"Material": "Organic cotton",
+				"Care": "Machine wash at 40°C in the wash bag provided"
+			},
+			"tags": [
+				"Plastic free"
+			],
+			"short": "Ten soft organic cotton rounds and a wash bag, to replace disposables.",
+			"description": [
+				"For toner, micellar water and make-up removal. Wash them with your towels and they last for hundreds of uses."
+			]
+		}
+	],
+	"reviews": {
+		"niacinamide-zinc-serum": [
+			[
+				"Priya N.",
+				5,
+				"My T-zone used to shine by eleven. Three weeks in, it holds until the evening and the pores on my nose look smaller."
+			],
+			[
+				"Jules R.",
+				4,
+				"Does what it says. It can pill under a heavy cream, so I let it dry for a minute first."
+			],
+			[
+				"Hana S.",
+				5,
+				"The ten per cent is printed on the label, which is exactly why I bought it. No tingle at all on my skin."
+			]
+		],
+		"hyaluronic-water-serum": [
+			[
+				"Amara O.",
+				5,
+				"Absorbs in seconds and sits under make-up without pilling. On my third bottle."
+			],
+			[
+				"Leila M.",
+				5,
+				"Applied to damp skin it makes my skin feel bouncy all day. Great value on offer."
+			]
+		],
+		"vitamin-c-serum": [
+			[
+				"Grace T.",
+				4,
+				"A slight tingle for the first week, then nothing. My skin looks brighter in photos. The amber bottle is a nice touch."
+			],
+			[
+				"Mei L.",
+				5,
+				"The best vitamin C I have tried at this strength. The pH is on the label, which I appreciate."
+			]
+		],
+		"retinal-night-serum": [
+			[
+				"Ruth A.",
+				5,
+				"Started twice a week as suggested. Two months later my skin is noticeably smoother and I had no peeling."
+			],
+			[
+				"Sofia P.",
+				4,
+				"Effective, but take the advice to start slowly seriously. Pairs well with the ceramide cream."
+			]
+		],
+		"ceramide-barrier-cream": [
+			[
+				"Chloe D.",
+				5,
+				"Rescued my skin after I overdid the acids. Rich but not greasy."
+			],
+			[
+				"Ayesha K.",
+				5,
+				"Fragrance free and actually soothing. The big jar is the better buy per 100 ml."
+			],
+			[
+				"Olivia F.",
+				4,
+				"Lovely in winter. A bit rich for summer mornings on my combination skin."
+			]
+		],
+		"mineral-sun-fluid-spf50": [
+			[
+				"Zara H.",
+				5,
+				"Finally a mineral sunscreen with no white cast on my brown skin."
+			],
+			[
+				"Kiran B.",
+				5,
+				"Light enough to wear every day under make-up. Does not sting my eyes."
+			],
+			[
+				"Emma J.",
+				4,
+				"Very good. It needs a minute to settle before foundation."
+			]
+		],
+		"oat-milk-cleanser": [
+			[
+				"Maya R.",
+				5,
+				"My skin feels comfortable after washing, not tight. Perfect for my dry, sensitive skin."
+			],
+			[
+				"Nora K.",
+				5,
+				"Gentle enough for mornings and still removes sunscreen in the evening."
+			]
+		],
+		"melting-cleansing-balm": [
+			[
+				"Fatima Q.",
+				5,
+				"Takes off waterproof mascara with no rubbing. Smells of nothing, which I love."
+			],
+			[
+				"Lucy G.",
+				4,
+				"Brilliant first cleanse. The jar lasts ages."
+			]
+		],
+		"aha-glow-tonic": [
+			[
+				"Ana C.",
+				5,
+				"Three evenings a week and my skin texture is so much smoother."
+			],
+			[
+				"Bea V.",
+				4,
+				"Strong but in a good way. I use it on the nights I do not use retinal."
+			]
+		],
+		"rosewater-toner": [
+			[
+				"Yuki T.",
+				5,
+				"A lovely calm step. I press it in before my serum, morning and night."
+			]
+		],
+		"green-tea-gel-cleanser": [
+			[
+				"Rosa E.",
+				4,
+				"Keeps my oily skin clear without drying it out."
+			]
+		],
+		"daily-gel-cream": [
+			[
+				"Ngozi A.",
+				5,
+				"The only moisturiser that does not make my oily skin shiny by noon."
+			]
+		],
+		"satin-lipstick": [
+			[
+				"Isla W.",
+				5,
+				"Rosewood is the perfect everyday shade, and it really is comfortable."
+			],
+			[
+				"Dani L.",
+				4,
+				"Plum Noir is gorgeous. It needs a lip liner for a crisp edge."
+			]
+		],
+		"skin-tint-stick-spf20": [
+			[
+				"Tess W.",
+				5,
+				"Evens out my skin and still looks like skin. 03 Medium matched me perfectly."
+			]
+		],
+		"volume-mascara": [
+			[
+				"Ines B.",
+				4,
+				"Good volume and no smudging, even on a long day."
+			]
+		],
+		"magnesium-bath-soak": [
+			[
+				"Hannah P.",
+				5,
+				"My Sunday evening ritual. Sleep like a log afterwards."
+			]
+		],
+		"shea-body-butter": [
+			[
+				"Clara M.",
+				5,
+				"Fixed my cracked heels in a week. Urea makes all the difference."
+			]
+		],
+		"powder-brush": [
+			[
+				"Mira S.",
+				4,
+				"Soft, dense and big enough to set my whole face in a few sweeps."
+			]
+		],
+		"reusable-cotton-rounds": [
+			[
+				"Jo K.",
+				5,
+				"Soft, they wash well and I have not bought a bag of disposable pads since."
+			]
+		],
+		"calendula-face-oil": [
+			[
+				"Ellie R.",
+				5,
+				"Light, sinks in within a minute and my dry patches are gone."
+			]
+		]
+	},
+	"post_categories": {
+		"routines": {
+			"name": "Routines",
+			"description": "How to put a routine together, step by step."
+		},
+		"ingredients": {
+			"name": "Ingredients",
+			"description": "What the names on the label do."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"content": []
+		},
+		"journal": {
+			"title": "Journal",
+			"content": []
+		},
+		"offers": {
+			"title": "Offers",
+			"content": [
+				[
+					"p",
+					"Every offer shows exactly what you save, and scheduled offers say the day they end. Prices already include the saving: there is nothing to apply at checkout."
+				],
+				[
+					"products",
+					{
+						"show": "on-sale",
+						"count": 12
+					}
+				],
+				[
+					"buttons",
+					[
+						{
+							"label": "Shop everything",
+							"woocommerce": "shop"
+						}
+					],
+					"center"
+				]
+			]
+		},
+		"about": {
+			"title": "About us",
+			"template": "page-full-width",
+			"content": [
+				[
+					"cover",
+					{
+						"image": "images/scenes/studio-shelves-photo.jpg",
+						"heading": "We read the label, so you can too",
+						"text": "A skincare shop that lists every formula in full.",
+						"height": 520,
+						"buttons": [
+							{
+								"label": "Shop the formulary",
+								"woocommerce": "shop"
+							}
+						]
+					}
+				],
+				[
+					"section",
+					{
+						"items": [
+							[
+								"h2",
+								"Why we started",
+								"wide"
+							],
+							[
+								"p",
+								"Buying skincare had become a guessing game: beautiful bottles, vague promises and ingredient lists in print too small to read. So we do it the other way round."
+							],
+							[
+								"p",
+								"Every product we stock is listed by what is in it: the key actives and their strength, the pH, the texture and the full ingredient list. Then it is numbered by where it goes in a routine, and priced per 100 ml so a small bottle and a big one compare fairly."
+							]
+						]
+					}
+				],
+				[
+					"section",
+					{
+						"background": "surface-alt",
+						"items": [
+							[
+								"features",
+								[
+									{
+										"title": "Every active, with its strength",
+										"text": "A name without a number tells you very little, so every label shows both."
+									},
+									{
+										"title": "The pH, where it matters",
+										"text": "Acids and vitamin C work in a narrow range, so we print it."
+									},
+									{
+										"title": "A fair price per 100 ml",
+										"text": "Sizes differ. The price per 100 ml lets you compare like with like."
+									},
+									{
+										"title": "Numbered by routine step",
+										"text": "Cleanse, tone, treat, moisturise and protect: every product knows its place."
+									}
+								]
+							]
+						]
+					}
+				],
+				[
+					"section",
+					{
+						"items": [
+							[
+								"media",
+								{
+									"image": "images/scenes/lab-glassware-photo.jpg",
+									"heading": "Small batches, short lists",
+									"text": "Our formulas are made in small batches by an independent laboratory, with as few ingredients as each one needs. Every bottle carries a batch number and the date it was filled.",
+									"buttons": [
+										{
+											"label": "Read the ingredient glossary",
+											"page": "ingredients"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			]
+		},
+		"ingredients": {
+			"title": "Ingredient glossary",
+			"content": [
+				[
+					"p",
+					"The actives you will meet most often in our formulas, in plain words: what each one is for, when to use it and what it gets along with."
+				],
+				[
+					"h2",
+					"Hyaluronic acid"
+				],
+				[
+					"p",
+					"A sugar the skin makes itself. Applied to damp skin it draws in water and holds it, so skin looks plumper and feels less tight. Morning and night; pairs with everything."
+				],
+				[
+					"h2",
+					"Niacinamide"
+				],
+				[
+					"p",
+					"Vitamin B3. Supports the skin barrier and helps even the look of tone and pores. 5% suits most skin; 10% suits oilier skin. Morning and night."
+				],
+				[
+					"h2",
+					"Vitamin C"
+				],
+				[
+					"p",
+					"Ascorbic acid helps defend skin through the day and brightens its look over time. It works best at a low pH, so use it in the morning under sunscreen."
+				],
+				[
+					"h2",
+					"Retinal"
+				],
+				[
+					"p",
+					"A form of vitamin A one step from retinoic acid, so it works at lower strengths. Smooths the look of texture and fine lines. Night only; start twice a week."
+				],
+				[
+					"h2",
+					"Glycolic acid"
+				],
+				[
+					"p",
+					"An AHA that loosens the dull surface layer so it sheds sooner. Strength and pH decide how much it does. Evenings, two or three times a week, not on retinal nights."
+				],
+				[
+					"h2",
+					"Ceramides"
+				],
+				[
+					"p",
+					"The lipids that hold skin cells together. Creams with ceramides, cholesterol and fatty acids help a stressed barrier recover. The safe partner for strong actives."
+				],
+				[
+					"h2",
+					"Zinc oxide"
+				],
+				[
+					"p",
+					"A mineral filter that reflects and absorbs UVA and UVB light. Modern non-nano grades leave little or no white cast."
+				],
+				[
+					"buttons",
+					[
+						{
+							"label": "Search the shop by ingredient",
+							"woocommerce": "shop"
+						}
+					]
+				]
+			]
+		},
+		"faq": {
+			"title": "Questions",
+			"content": [
+				[
+					"p",
+					"How to read our labels, how to use the formulas together, and how orders work."
+				],
+				[
+					"h2",
+					"Reading a label"
+				],
+				[
+					"details",
+					"What does the open jar with a number mean?",
+					"It is the period after opening: 12M means the formula stays at its best for twelve months once opened."
+				],
+				[
+					"details",
+					"Why is there a price per 100 ml?",
+					"Bottles come in many sizes. The price per 100 ml, or per 100 g for balms and powders, lets you compare fairly. Packs of 10 ml or less show their size only."
+				],
+				[
+					"details",
+					"What do the step numbers mean?",
+					"Each skincare product is numbered by where it goes in a routine: 01 cleanse, 02 tone, 03 treat, 04 moisturise and 05 protect."
+				],
+				[
+					"h2",
+					"Using the formulas"
+				],
+				[
+					"details",
+					"Can I use vitamin C and retinal together?",
+					"Use them apart: vitamin C in the morning under sunscreen, retinal at night."
+				],
+				[
+					"details",
+					"How do I patch test?",
+					"Apply a little behind the ear or on the inner arm once a day for three days. If there is no redness or itching, start using it on your face."
+				],
+				[
+					"h2",
+					"Orders"
+				],
+				[
+					"details",
+					"How much is delivery?",
+					"Tracked delivery is £3.95, and free on orders over £35. You can also collect from the studio for free."
+				],
+				[
+					"details",
+					"Can I return something?",
+					"Unopened products can be returned within 30 days. See Delivery and returns for the details."
+				],
+				[
+					"buttons",
+					[
+						{
+							"label": "Delivery and returns",
+							"page": "delivery-returns"
+						},
+						{
+							"label": "Contact us",
+							"page": "contact"
+						}
+					]
+				]
+			]
+		},
+		"contact": {
+			"title": "Contact",
+			"content": [
+				[
+					"p",
+					"Which serum suits oily skin, whether two actives get along, where your parcel is: we answer every message ourselves."
+				],
+				[
+					"h2",
+					"The studio"
+				],
+				[
+					"lines",
+					[
+						"Luma",
+						"14 Linden Row",
+						"Edinburgh EH3 6LT"
+					]
+				],
+				[
+					"h2",
+					"Advice hours"
+				],
+				[
+					"lines",
+					[
+						"Monday to Friday: 9:00 to 18:00",
+						"Saturday: 10:00 to 16:00",
+						"Sunday: closed"
+					]
+				],
+				[
+					"h2",
+					"Email"
+				],
+				[
+					"p",
+					"hello@luma.example"
+				]
+			]
+		},
+		"delivery-returns": {
+			"title": "Delivery and returns",
+			"content": [
+				[
+					"p",
+					"How your order reaches you, and what to do if something is not right."
+				],
+				[
+					"h2",
+					"Delivery"
+				],
+				[
+					"ul",
+					[
+						"Tracked delivery: £3.95, two to three working days.",
+						"Free tracked delivery on orders over £35.",
+						"Collect from the studio in Edinburgh: free."
+					]
+				],
+				[
+					"p",
+					"Orders placed before 2 pm on a working day leave the studio the same day."
+				],
+				[
+					"h2",
+					"Returns"
+				],
+				[
+					"ol",
+					[
+						"Tell us within 30 days, with your order number.",
+						"Send the product back unopened and sealed.",
+						"We refund your original payment within five working days of receiving it."
+					]
+				]
+			]
+		}
+	},
+	"posts": {
+		"how-to-layer-serums": {
+			"title": "How to layer serums without wasting them",
+			"excerpt": "Thinnest to thickest, one active at a time: the order that lets every serum do its job.",
+			"image": "images/scenes/routine-flatlay-photo.jpg",
+			"days": 4,
+			"category": "routines",
+			"content": [
+				[
+					"p",
+					"A serum can only work if it reaches the skin. Put a thick cream on first and the watery serum on top, and most of it sits on the surface. The rule that fixes this is simple: thinnest to thickest."
+				],
+				[
+					"h2",
+					"The order"
+				],
+				[
+					"ol",
+					[
+						"Cleanse, then pat the skin almost dry.",
+						"Toner or essence, pressed in with your palms.",
+						"Watery serums first: hyaluronic acid, niacinamide.",
+						"Oil-based serums and treatments next: retinal, squalane.",
+						"Moisturiser to seal it all in, and sunscreen last in the morning."
+					]
+				],
+				[
+					"h2",
+					"One active at a time"
+				],
+				[
+					"p",
+					"Two strong actives on the same night, such as an acid and retinal, add irritation, not results. Alternate them instead, and keep hyaluronic acid and ceramides as the calm in between."
+				]
+			]
+		},
+		"sunscreen-every-morning": {
+			"title": "Why sunscreen is the step that counts",
+			"excerpt": "Every other step works better when you protect it. Here is how much to use, and when.",
+			"image": "images/scenes/sun-care-photo.jpg",
+			"days": 9,
+			"category": "routines",
+			"content": [
+				[
+					"p",
+					"Vitamin C, retinal and acids all make more of a difference when the skin is protected from the light that undoes their work. Sunscreen is the last step of every morning routine, whatever the weather."
+				],
+				[
+					"h2",
+					"How much"
+				],
+				[
+					"p",
+					"About half a teaspoon for the face and neck: more than most people use. Two finger lengths is a good guide."
+				],
+				[
+					"h2",
+					"Mineral or not"
+				],
+				[
+					"p",
+					"Mineral filters such as zinc oxide reflect and absorb light; other filters absorb it. Both work. Choose the texture you will wear every day."
+				]
+			]
+		},
+		"reading-an-ingredient-list": {
+			"title": "How to read an ingredient list in five minutes",
+			"excerpt": "The order means something, Latin names hide familiar plants, and the first five tell you most of the story.",
+			"image": "images/scenes/botanicals-photo.jpg",
+			"days": 15,
+			"category": "ingredients",
+			"content": [
+				[
+					"p",
+					"Ingredient lists use the INCI system, the same names in every country. They look forbidding, but three rules make them readable."
+				],
+				[
+					"h2",
+					"Three rules"
+				],
+				[
+					"ul",
+					[
+						"Ingredients are listed from most to least, down to 1%. Below that they can come in any order.",
+						"Plants go by their Latin names: Avena Sativa is oat, Rosa Damascena is rose.",
+						"The first five ingredients usually make up most of the formula."
+					]
+				],
+				[
+					"p",
+					"That is why our labels also show the key actives with their strength: the list tells you what is in it, the strength tells you how much."
+				]
+			]
+		},
+		"starting-retinal": {
+			"title": "Starting retinal: a slow, steady plan",
+			"excerpt": "Twice a week, then every other night, then most nights: how to get the results without the flaking.",
+			"image": "images/scenes/night-routine-photo.jpg",
+			"days": 22,
+			"category": "ingredients",
+			"content": [
+				[
+					"p",
+					"Retinal is one of the most effective ingredients for smoother-looking skin, and one of the easiest to overdo. The answer is patience."
+				],
+				[
+					"h2",
+					"The plan"
+				],
+				[
+					"ol",
+					[
+						"Weeks one and two: two nights a week, on dry skin, after moisturiser if you are sensitive.",
+						"Weeks three and four: every other night.",
+						"After that: most nights, if your skin is comfortable."
+					]
+				],
+				[
+					"p",
+					"Wear sunscreen every morning, keep acids for other nights, and give it twelve weeks before you judge it."
+				]
+			]
+		}
+	},
+	"menu": {
+		"title": "Formulary",
+		"slug": "formulary",
+		"location": "primary",
+		"items": [
+			{
+				"label": "Cleansers",
+				"product_cat": "cleansers"
+			},
+			{
+				"label": "Toners",
+				"product_cat": "toners"
+			},
+			{
+				"label": "Serums",
+				"product_cat": "serums"
+			},
+			{
+				"label": "Moisturisers",
+				"product_cat": "moisturisers"
+			},
+			{
+				"label": "Sun care",
+				"product_cat": "sun-care"
+			},
+			{
+				"label": "Makeup",
+				"product_cat": "makeup"
+			},
+			{
+				"label": "Body and bath",
+				"product_cat": "body"
+			},
+			{
+				"label": "Tools",
+				"product_cat": "tools"
+			},
+			{
+				"label": "Offers",
+				"page": "offers"
+			},
+			{
+				"label": "Journal",
+				"page": "journal"
+			}
+		]
+	}
+}

@@ -19,6 +19,7 @@ every file as it is.
 | `twentytwentyfive` | Twenty Twenty-Five | A small electronics store in the theme's Noon style: a homepage with a banner, trust strip, category tiles, sale and featured products, a product spotlight, customer quotes, the journal and a closing banner; 8 products, 3 categories, 2 brands, store pages and a journal |
 | `unishop` | Unishop | An electronics store: 20 products, brands, reviews, buying guides and store pages |
 | `ebasket` | eBasket | A neighbourhood grocer: 37 products in 8 aisles with pack sizes, nutrition panels and diet tags, offers with end dates, a variable coffee, reviews, recipes, store pages and a demo checkout with free delivery over £40 |
+| `luma` | Luma | A skincare formulary: 39 products in 8 categories, each with key actives and their strength, pH, texture, skin type, a Concern and a Routine step (global attributes), size, period after opening and the full ingredient list; products sold by shade and by size, offers with end dates, reviews, a journal, store pages and a demo checkout with free delivery over £35 |
 
 ## Layout
 
