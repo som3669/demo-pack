@@ -1,0 +1,40 @@
+# Vitrena pack: credits
+
+Every photograph in this pack is **CC0 1.0 Universal** (public domain dedication): free for commercial
+use, modification and redistribution, with no attribution requirement. Credits are recorded anyway.
+Each was checked by eye for brand names, logos and readable text; marks on controls such as
+"33 < OFF > 45" are functional labels, not brands. Photos were cropped and given one gentle shared
+grade (a touch less colour, a touch more light and contrast). Brand and product names in the pack are
+invented.
+
+Licence: <https://creativecommons.org/publicdomain/zero/1.0/>
+
+| File | Shows | Title | Creator | Source |
+|---|---|---|---|---|
+| `images/products/action-camera-photo.jpg` | A black action camera in a clear waterproof housing on a white desk. | black action camera white laptop | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/3303210/free-photo-image-video-camera-macbook-gopro) |
+| `images/products/black-chronograph-watch-photo.jpg` | A black watch with a black dial on a black strap, lying on dark grained wood. | Close up view of a black watch placed in a black surface | PRABIN M | [WordPress Photo Directory](https://wordpress.org/photos/photo/2636a294ea/) |
+| `images/products/black-digital-camera-photo.jpg` | A black camera with its lens cap on, resting on a stone ledge by the sea. | Dslr Camera | Travel Adventures | [StockSnap](https://stocksnap.io/photo/dslr-camera-W99LZXLCE2) |
+| `images/products/black-in-ear-earphones-photo.jpg` | A pair of black wired in-ear earphones with silicone tips and polished chrome trim, the black cable curving away across a pale grey-white studio surface. | Music Earphones | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5969105/music-earphones) |
+| `images/products/black-wireless-earbuds-photo.jpg` | A pair of black true-wireless earbuds with silicone tips on a pale grey surface, the open black charging case softly out of focus behind them. | Beautiful earbuds | Kamran Ahmed | [WordPress Photo Directory](https://wordpress.org/photos/photo/57062c6b44/) |
+| `images/products/black-wireless-headphones-photo.jpg` | Matte black folding over-ear wireless headphones standing upright, seen straight on, on a white seamless background. | Wireless Headphones | Burst | [StockSnap](https://stocksnap.io/photo/wireless-headphones-EXCBJA3FFQ) |
+| `images/products/ceramic-desktop-speaker-photo.jpg` | A glossy white ceramic desktop speaker with a black-rimmed full-range driver and bullet phase plug, tilted on a birch-plywood stand on a dark wood desk against a pale wall. | Speaker Sound | Jeff Sheldon | [StockSnap](https://stocksnap.io/photo/speaker-sound-C088941D0B) |
+| `images/products/field-watch-photo.jpg` | A hand holding up a steel watch with a white dial against an evening sky. | Watch Time | Wil Stewart | [StockSnap](https://stocksnap.io/photo/watch-time-L9R4MMVFVJ) |
+| `images/products/mechanical-keyboard-photo.jpg` | The keys of a black computer keyboard, close up. | Black computer keyboard | ChrisEdwardsCE | [WordPress Photo Directory](https://wordpress.org/photos/photo/9262fb0a63/) |
+| `images/products/medium-format-film-camera-photo.jpg` | A chrome and black medium format film camera with a waist-level finder open, its lens on top, against blurred foliage. | Vintage Film | Retro 56 | [StockSnap](https://stocksnap.io/photo/vintage-film-BGDQ5H2IBE) |
+| `images/products/mint-on-ear-headphones-photo.jpg` | Pastel mint on-ear headphones with a matching cable laid flat, seen from above on a split pink and mint paper background. | Headphones Music | Icons8 team | [StockSnap](https://stocksnap.io/photo/headphones-music-1IXTRXOWOE) |
+| `images/products/over-ear-headphones-stand-photo.jpg` | Dark over-ear headphones with leather pads and slotted metal yokes resting on a brushed-steel bottle on a dark wood sill, softly backlit by a pale window. | Water bottle with headphones | Sharankrishna VP | [WordPress Photo Directory](https://wordpress.org/photos/photo/42765c12eb/) |
+| `images/products/phone-charging-stand-photo.jpg` | A smartphone with a blank screen standing on a round black wireless charging stand. | Untitled | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5953187/free-public-domain-cc0-photo) |
+| `images/products/power-bank-photo.jpg` | A black power bank charging two phones on a wooden table. | Free phone charging power bank | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5910321/image-background-phone-public-domain) |
+| `images/products/round-wireless-speaker-photo.jpg` | A round white wireless speaker with a fine metal-mesh grille leaning on a slim brushed-steel leg, raked by soft window light against a deep teal wall. | Minimal White | Tom Swinnen | [StockSnap](https://stocksnap.io/photo/minimal-white-BR6P37ANZL) |
+| `images/products/silver-studio-headphones-photo.jpg` | Silver-grey closed studio headphones with black velour ear pads and a padded black headband, seen front-on and isolated on white. | Free public domain CC0 photo (Rawpixel 5963028) | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5963028/free-public-domain-cc0-photo) |
+| `images/products/smartphone-in-hand-photo.jpg` | A hand holding a black smartphone with a blank screen against a pale background. | Free hand holding smart phone | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5916125/image-background-phone-public-domain) |
+| `images/products/smartwatch-on-wrist-photo.jpg` | A round black smartwatch with a green and black strap on a wrist, sand and sea behind. | A close-up of a wrist wearing a black smartwatch with a green and black strap | Faisal Ahammad | [WordPress Photo Directory](https://wordpress.org/photos/photo/10069cfaf8/) |
+| `images/products/terracotta-turntable-photo.jpg` | A slim terracotta-red belt-drive turntable with a black felt mat and black tonearm on a white sideboard, an amber glass candle holder beside it and a slatted oak wall behind. | TONE Turnable brown | WeKn0What! | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:TONE_Turnable_brown.jpg) |
+| `images/products/white-turntable-photo.jpg` | A minimalist white belt-drive turntable with a silver platter, spinning black record and black tonearm, shot close and soft in muted black-and-white tones. | Vinyl Music | Lee Campbell | [StockSnap](https://stocksnap.io/photo/vinyl-music-JR3YRE4G2N) |
+| `images/products/wireless-mouse-photo.jpg` | A black and grey wireless mouse on a pale desk. | Untitled | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/6066473/free-public-domain-cc0-photo) |
+| `images/products/wood-watches-photo.jpg` | Two wooden watches with cream dials on tan leather straps, on grey stone. | Wood and Leather Watches | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5967643/wood-and-leather-watches) |
+| `images/products/woofer-speaker-detail-photo.jpg` | Close-up of a black speaker cabinet with a yellow woven-fibre woofer, black rubber surround and dust cap, lit low-key against black. | Speaker Music | Krzysztof Puszczyński | [StockSnap](https://stocksnap.io/photo/speaker-music-WKV40ATLIY) |
+| `images/scenes/scene-hero-photo.jpg` | An open pocket watch with an enamel dial, held in two hands. | Vintage Pocket Watch | James Frid | [StockSnap](https://stocksnap.io/photo/vintage-pcketwatch-KSVNE2NWQP) |
+| `images/scenes/scene-listening-room-photo.jpg` | An audio mixing desk with cables plugged in, in a dim studio. | Close-up view of an audio mixing console with various cables and connectors plugged in | Nilo Velez | [WordPress Photo Directory](https://wordpress.org/photos/photo/5586660b70/) |
+| `images/scenes/scene-vinyl-photo.jpg` | The spindle and platter of a turntable, close up. | Vinyl Record | Jens Mahnke | [StockSnap](https://stocksnap.io/photo/vinyl-record-JM3M2EULN5) |
+| `images/scenes/scene-workbench-photo.jpg` | A medium format film camera with its lens set, against blurred foliage. | Vintage Film | Retro 56 | [StockSnap](https://stocksnap.io/photo/vintage-film-BGDQ5H2IBE) |

@@ -48,6 +48,18 @@
 				"wordpress": "7.0",
 				"woocommerce": "11.0"
 			}
+		},
+		{
+			"id": "vitrena",
+			"theme": "vitrena",
+			"title": "Vitrena showroom",
+			"description": "An authorised dealer for considered electronics: 23 products from nine makers across hi-fi, headphones, watches, cameras, and desk and mobile, each with key figures, warranty and box contents; ex-display and certified pre-owned pieces, a variable phone, reviews, store pages, a journal and a demo checkout with free insured delivery over $500.",
+			"version": "1.0.0",
+			"path": "vitrena/pack.json",
+			"requires": {
+				"wordpress": "7.0",
+				"woocommerce": "11.0"
+			}
 		}
 	]
 }

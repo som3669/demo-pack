@@ -20,6 +20,7 @@ every file as it is.
 | `unishop` | Unishop | An electronics store: 20 products, brands, reviews, buying guides and store pages |
 | `ebasket` | eBasket | A neighbourhood grocer: 37 products in 8 aisles with pack sizes, nutrition panels and diet tags, offers with end dates, a variable coffee, reviews, recipes, store pages and a demo checkout with free delivery over £40 |
 | `luma` | Luma | A skincare formulary: 39 products in 8 categories, each with key actives and their strength, pH, texture, skin type, a Concern and a Routine step (global attributes), size, period after opening and the full ingredient list; products sold by shade and by size, offers with end dates, reviews, a journal, store pages and a demo checkout with free delivery over £35 |
+| `vitrena` | Vitrena | A showroom for considered electronics: 23 products from nine makers in five departments, with warranty, box contents and condition (ex-display, certified pre-owned) as attributes, brands, reviews, Visit, Services and Makers pages on the theme's page templates, a journal and a demo checkout |
 
 ## Layout
 
