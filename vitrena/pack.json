@@ -1,0 +1,1211 @@
+{
+	"schema": 1,
+	"files": [
+		"settings.json"
+	],
+	"images": {
+		"images/products/terracotta-turntable-photo.jpg": "",
+		"images/products/white-turntable-photo.jpg": "",
+		"images/products/woofer-speaker-detail-photo.jpg": "",
+		"images/products/ceramic-desktop-speaker-photo.jpg": "",
+		"images/products/round-wireless-speaker-photo.jpg": "",
+		"images/products/black-wireless-headphones-photo.jpg": "",
+		"images/products/over-ear-headphones-stand-photo.jpg": "",
+		"images/products/silver-studio-headphones-photo.jpg": "",
+		"images/products/mint-on-ear-headphones-photo.jpg": "",
+		"images/products/black-wireless-earbuds-photo.jpg": "",
+		"images/products/black-in-ear-earphones-photo.jpg": "",
+		"images/products/wood-watches-photo.jpg": "",
+		"images/products/black-chronograph-watch-photo.jpg": "",
+		"images/products/field-watch-photo.jpg": "",
+		"images/products/smartwatch-on-wrist-photo.jpg": "",
+		"images/products/black-digital-camera-photo.jpg": "",
+		"images/products/medium-format-film-camera-photo.jpg": "",
+		"images/products/action-camera-photo.jpg": "",
+		"images/products/mechanical-keyboard-photo.jpg": "",
+		"images/products/wireless-mouse-photo.jpg": "",
+		"images/products/smartphone-in-hand-photo.jpg": "",
+		"images/products/phone-charging-stand-photo.jpg": "",
+		"images/products/power-bank-photo.jpg": "",
+		"images/scenes/scene-hero-photo.jpg": "An open pocket watch with an enamel dial, held in two hands",
+		"images/scenes/scene-workbench-photo.jpg": "A medium format film camera with its lens set, on the bench",
+		"images/scenes/scene-vinyl-photo.jpg": "The platter of a turntable, close up",
+		"images/scenes/scene-listening-room-photo.jpg": "A mixing desk in a quiet studio"
+	},
+	"product_categories": {
+		"hi-fi": {
+			"name": "Hi-fi and turntables",
+			"description": "Turntables and loudspeakers, set up and heard in the listening room before they go home with you.",
+			"image": "images/products/terracotta-turntable-photo.jpg"
+		},
+		"headphones": {
+			"name": "Headphones",
+			"description": "Over-ear, on-ear and in-ear, wired and wireless, every pair on a stand you can try.",
+			"image": "images/products/black-wireless-headphones-photo.jpg"
+		},
+		"watches": {
+			"name": "Watches",
+			"description": "Wood, steel and smart, sized and fitted at the counter.",
+			"image": "images/products/wood-watches-photo.jpg"
+		},
+		"cameras": {
+			"name": "Cameras",
+			"description": "Digital and film cameras, with certified pre-owned bodies checked on our bench.",
+			"image": "images/products/medium-format-film-camera-photo.jpg"
+		},
+		"desk-mobile": {
+			"name": "Desk and mobile",
+			"description": "Keyboards, phones and the chargers that keep them going, set up before they leave the showroom.",
+			"image": "images/products/mechanical-keyboard-photo.jpg"
+		}
+	},
+	"product_brands": {
+		"orvane": {
+			"name": "Orvane",
+			"description": "Turntables and portable speakers from a small workshop by the sea, built to be serviced rather than replaced."
+		},
+		"aldmere": {
+			"name": "Aldmere",
+			"description": "Loudspeakers voiced by ear in a converted chapel, in ash, oak and glazed ceramic."
+		},
+		"lindqvist": {
+			"name": "Lindqvist",
+			"description": "Headphones from Gothenburg: quiet design, replaceable pads and cables, and a sound tuned for long listening."
+		},
+		"veil-audio": {
+			"name": "Veil Audio",
+			"description": "Earbuds and in-ear monitors tuned with recording engineers, for people who listen closely on the move."
+		},
+		"halden": {
+			"name": "Halden",
+			"description": "Watches in wood, steel and enamel, assembled by hand in small series."
+		},
+		"marlowe-finch": {
+			"name": "Marlowe & Finch",
+			"description": "Field and chronograph watches built for weather, with dials you can read in the dark."
+		},
+		"tessaro": {
+			"name": "Tessaro",
+			"description": "Cameras for photographers who would rather look through a window than at a screen, new and certified pre-owned."
+		},
+		"sable-works": {
+			"name": "Sable Works",
+			"description": "Keyboards and desk tools in machined aluminium, made to be repaired with ordinary screwdrivers."
+		},
+		"corvane": {
+			"name": "Corvane",
+			"description": "Phones, watches, cameras and chargers designed to be used a little less and enjoyed a little more."
+		}
+	},
+	"attributes": {
+		"Condition": "condition",
+		"Finish": "finish"
+	},
+	"products": [
+		{
+			"slug": "calder-turntable",
+			"name": "Calder Turntable",
+			"category": "hi-fi",
+			"brand": "orvane",
+			"image": "images/products/terracotta-turntable-photo.jpg",
+			"regular": "1290",
+			"sales": 96,
+			"sku": "ORV-CAL-TT",
+			"stock": 6,
+			"weight": 7.2,
+			"size": [
+				44,
+				36,
+				13
+			],
+			"specs": {
+				"Drive": "Belt, twin motor",
+				"Speeds": "33 and 45 rpm",
+				"Cartridge": "Moving magnet, fitted",
+				"Platter": "Felt-topped aluminium",
+				"Finish": "Terracotta lacquer",
+				"Condition": "New",
+				"Warranty": "3 years from Orvane",
+				"In the box": "Turntable, platter, felt mat, dust cover, power supply, RCA cable, alignment gauge"
+			},
+			"short": "A quiet belt-drive turntable in terracotta lacquer, set up with its cartridge fitted and aligned before it leaves the showroom.",
+			"description": [
+				"The Calder is Orvane's answer to the turntable that lives in a living room rather than a rack. Twin motors turn the platter through a flat belt, so the speed holds and the motor noise stays out of the music.",
+				"We fit and align the moving magnet cartridge on our bench, set the tracking force, and check the speed with a strobe before it is boxed. Bring it back after the first hundred hours and we will check it again."
+			],
+			"upsells": [
+				"fen-monitor-speakers",
+				"kiln-desktop-speakers"
+			],
+			"cross_sells": [
+				"fen-monitor-speakers"
+			]
+		},
+		{
+			"slug": "lumen-turntable-white",
+			"name": "Lumen Turntable, White",
+			"category": "hi-fi",
+			"brand": "orvane",
+			"image": "images/products/white-turntable-photo.jpg",
+			"regular": "890",
+			"sale": "740",
+			"sales": 58,
+			"sku": "ORV-LUM-WH",
+			"stock": 1,
+			"weight": 5.8,
+			"size": [
+				42,
+				34,
+				12
+			],
+			"specs": {
+				"Drive": "Belt",
+				"Speeds": "33 and 45 rpm",
+				"Cartridge": "Moving magnet, fitted",
+				"Platter": "Brushed aluminium",
+				"Finish": "White lacquer",
+				"Condition": "Ex-display",
+				"Warranty": "3 years from Orvane",
+				"In the box": "Turntable, platter, dust cover, power supply, RCA cable"
+			},
+			"short": "Orvane's simplest turntable in white lacquer, the one from our window, reduced as ex-display with the full warranty.",
+			"description": [
+				"The Lumen keeps to the essentials: a belt-driven aluminium platter, a straight tonearm and a cartridge fitted at the factory. It plays records beautifully and asks for nothing in return.",
+				"This is our window turntable. It has been checked on the bench, given a new belt, and keeps the full three-year warranty."
+			]
+		},
+		{
+			"slug": "fen-monitor-speakers",
+			"name": "Fen Monitor Speakers",
+			"category": "hi-fi",
+			"brand": "aldmere",
+			"image": "images/products/woofer-speaker-detail-photo.jpg",
+			"regular": "1850",
+			"sales": 64,
+			"sku": "ALD-FEN-PR",
+			"stock": 4,
+			"weight": 15.2,
+			"size": [
+				34,
+				21,
+				28
+			],
+			"specs": {
+				"Type": "Two-way, passive, pair",
+				"Drivers": "25 mm soft dome, 165 mm woven-fibre cone",
+				"Sensitivity": "88 dB",
+				"Finish": "Black ash",
+				"Condition": "New",
+				"Warranty": "5 years from Aldmere",
+				"In the box": "Two speakers, magnetic grilles, isolation pads, owner's guide"
+			},
+			"short": "A pair of stand-mount monitors with a woven-fibre bass driver, voiced for rooms rather than measurements.",
+			"description": [
+				"The woven-fibre cone is stiff and light, which keeps bass quick and clean, and the soft dome tweeter keeps long listening easy. The cabinets are braced inside and finished in black ash.",
+				"They are happiest on stands, a little away from the wall. We will lend you a pair of stands for the demonstration so you can hear the difference."
+			]
+		},
+		{
+			"slug": "kiln-desktop-speakers",
+			"name": "Kiln Desktop Speakers",
+			"category": "hi-fi",
+			"brand": "aldmere",
+			"image": "images/products/ceramic-desktop-speaker-photo.jpg",
+			"regular": "1190",
+			"sales": 37,
+			"sku": "ALD-KLN-DT",
+			"stock": 3,
+			"weight": 6.4,
+			"specs": {
+				"Type": "Active, full-range, pair",
+				"Driver": "75 mm full-range with phase plug",
+				"Inputs": "Bluetooth, optical, line",
+				"Finish": "White glazed ceramic",
+				"Condition": "New",
+				"Warranty": "5 years from Aldmere",
+				"In the box": "Two speakers, power supply, speaker cable, optical cable, remote"
+			},
+			"short": "Small active speakers in glazed ceramic, one full-range driver each, for the desk, the shelf or the kitchen.",
+			"description": [
+				"Ceramic is dense and dead, so the cabinet adds nothing of its own to the sound. Each Kiln has a single full-range driver with a phase plug, which keeps voices and acoustic instruments wonderfully coherent.",
+				"They take a turntable, a television or a phone, and need nothing else."
+			]
+		},
+		{
+			"slug": "field-portable-speaker",
+			"name": "Field Portable Speaker",
+			"category": "hi-fi",
+			"brand": "orvane",
+			"image": "images/products/round-wireless-speaker-photo.jpg",
+			"regular": "349",
+			"sale": "299",
+			"sale_days": 9,
+			"sales": 143,
+			"sku": "ORV-FLD-PS",
+			"stock": 14,
+			"weight": 1.1,
+			"specs": {
+				"Battery": "20 hours",
+				"Water resistance": "IP67",
+				"Drivers": "Two full-range, one passive radiator",
+				"Finish": "White, metal mesh grille",
+				"Condition": "New",
+				"Warranty": "2 years from Orvane",
+				"In the box": "Speaker, stand, USB-C cable"
+			},
+			"short": "A twenty-hour wireless speaker behind a fine metal grille, sealed against rain, sand and the bath.",
+			"description": [
+				"The Field is the one Orvane speaker designed to leave the house. It is sealed to IP67, so sand and rain do it no harm, and two can be paired for stereo."
+			]
+		},
+		{
+			"slug": "studio-reference-headphones",
+			"name": "Studio Reference",
+			"category": "headphones",
+			"brand": "lindqvist",
+			"image": "images/products/black-wireless-headphones-photo.jpg",
+			"regular": "549",
+			"sales": 188,
+			"sku": "LIN-STU-REF",
+			"stock": 9,
+			"weight": 0.29,
+			"specs": {
+				"Design": "Over-ear, closed back, folding",
+				"Driver": "40 mm dynamic",
+				"Battery": "40 hours",
+				"Noise cancelling": "Adaptive",
+				"Finish": "Matte black",
+				"Condition": "New",
+				"Warranty": "2 years from Lindqvist",
+				"In the box": "Headphones, travel case, USB-C cable, 3.5 mm cable, flight adapter"
+			},
+			"short": "Folding wireless headphones with adaptive noise cancelling and a forty-hour battery, tuned to sound like good studio monitors.",
+			"description": [
+				"Lindqvist tuned the Studio Reference against the speakers in their own mastering room, so music sounds the way it was mixed rather than the way a sales demo wants it to.",
+				"The pads and the cable are replaceable, and the battery can be changed at our counter when it eventually tires."
+			],
+			"cross_sells": [
+				"drift-wireless-earbuds"
+			]
+		},
+		{
+			"slug": "atelier-over-ear-headphones",
+			"name": "Atelier Over-Ear",
+			"category": "headphones",
+			"brand": "lindqvist",
+			"image": "images/products/over-ear-headphones-stand-photo.jpg",
+			"regular": "899",
+			"sales": 47,
+			"sku": "LIN-ATL-OE",
+			"stock": 2,
+			"weight": 0.38,
+			"specs": {
+				"Design": "Over-ear, open back, wired",
+				"Driver": "50 mm planar magnetic",
+				"Impedance": "32 ohms",
+				"Finish": "Lambskin and blackened steel",
+				"Condition": "New",
+				"Warranty": "2 years from Lindqvist",
+				"In the box": "Headphones, 3 m cable, 1.2 m cable, 6.3 mm adapter, leather pouch"
+			},
+			"short": "Open-back planar headphones in lambskin and blackened steel, for evenings at home with the music turned up.",
+			"description": [
+				"Planar drivers move a whisper-thin diaphragm evenly across its whole surface, which is why the Atelier sounds so effortless with orchestral music and so precise with jazz.",
+				"Being open-backed, they are for quiet rooms rather than trains."
+			]
+		},
+		{
+			"slug": "monitor-closed-back-headphones",
+			"name": "Monitor Closed-Back, Silver",
+			"category": "headphones",
+			"brand": "lindqvist",
+			"image": "images/products/silver-studio-headphones-photo.jpg",
+			"regular": "329",
+			"sales": 71,
+			"sku": "LIN-MON-SLV",
+			"stock": 7,
+			"weight": 0.31,
+			"specs": {
+				"Design": "Over-ear, closed back, wired",
+				"Driver": "45 mm dynamic",
+				"Cable": "3 m coiled, detachable",
+				"Finish": "Silver grey, velour pads",
+				"Condition": "New",
+				"Warranty": "2 years from Lindqvist",
+				"In the box": "Headphones, coiled cable, straight cable, 6.3 mm adapter, pouch"
+			},
+			"short": "Closed studio headphones in silver grey with soft velour pads, for recording, mixing and long sessions at the desk.",
+			"description": [
+				"Closed backs keep the sound in and the room out, which is what you want when recording. The velour pads stay cool through a long session, and both cables detach."
+			]
+		},
+		{
+			"slug": "petite-on-ear-headphones",
+			"name": "Petite On-Ear, Mint",
+			"category": "headphones",
+			"brand": "lindqvist",
+			"image": "images/products/mint-on-ear-headphones-photo.jpg",
+			"regular": "129",
+			"sales": 212,
+			"sku": "LIN-PET-MNT",
+			"stock": 18,
+			"weight": 0.14,
+			"specs": {
+				"Design": "On-ear, wired",
+				"Driver": "32 mm dynamic",
+				"Cable": "1.2 m with remote and microphone",
+				"Finish": "Mint",
+				"Condition": "New",
+				"Warranty": "2 years from Lindqvist",
+				"In the box": "Headphones, cotton pouch"
+			},
+			"short": "Light on-ear headphones in mint, with a cable remote and microphone, for the commute and the desk.",
+			"description": [
+				"At 140 grams the Petite is easy to forget you are wearing. The cable carries a three-button remote and a microphone for calls."
+			]
+		},
+		{
+			"slug": "drift-wireless-earbuds",
+			"name": "Drift Wireless Earbuds",
+			"category": "headphones",
+			"brand": "veil-audio",
+			"image": "images/products/black-wireless-earbuds-photo.jpg",
+			"regular": "229",
+			"sale": "189",
+			"sales": 264,
+			"sku": "VEI-DRF-EB",
+			"stock": 22,
+			"weight": 0.05,
+			"specs": {
+				"Design": "True wireless, in-ear",
+				"Battery": "8 hours, 32 with the case",
+				"Noise cancelling": "Hybrid",
+				"Water resistance": "IPX4",
+				"Finish": "Black",
+				"Condition": "New",
+				"Warranty": "2 years from Veil Audio",
+				"In the box": "Earbuds, charging case, four sizes of tips, USB-C cable"
+			},
+			"short": "Small true-wireless earbuds with hybrid noise cancelling, eight hours a charge and four sizes of tips.",
+			"description": [
+				"Veil Audio tuned the Drift with the engineers who tune its studio monitors. Try two or three tip sizes at the counter: a good seal is half the sound."
+			]
+		},
+		{
+			"slug": "onyx-in-ear-earphones",
+			"name": "Onyx In-Ear Earphones",
+			"category": "headphones",
+			"brand": "veil-audio",
+			"image": "images/products/black-in-ear-earphones-photo.jpg",
+			"regular": "149",
+			"sales": 96,
+			"sku": "VEI-ONX-IE",
+			"stock": 11,
+			"weight": 0.02,
+			"specs": {
+				"Design": "In-ear, wired",
+				"Driver": "10 mm dynamic",
+				"Cable": "1.2 m with remote and microphone",
+				"Finish": "Black and polished chrome",
+				"Condition": "New",
+				"Warranty": "2 years from Veil Audio",
+				"In the box": "Earphones, five pairs of tips, carry case"
+			},
+			"short": "Wired in-ear earphones in black and polished chrome, with a cable remote, five sizes of tips and nothing to charge.",
+			"description": [
+				"A single dynamic driver, tuned warm and clear, in a housing machined from metal so it never feels cheap in the hand. Wired means no battery to wear out and no pairing to fail."
+			]
+		},
+		{
+			"slug": "grove-wood-watch",
+			"name": "Grove Wood Watch",
+			"category": "watches",
+			"brand": "halden",
+			"image": "images/products/wood-watches-photo.jpg",
+			"regular": "240",
+			"sales": 118,
+			"sku": "HAL-GRV-40",
+			"stock": 8,
+			"weight": 0.05,
+			"specs": {
+				"Case": "40 mm maple wood",
+				"Movement": "Japanese quartz",
+				"Water resistance": "30 m",
+				"Crystal": "Mineral",
+				"Strap": "Tan leather",
+				"Condition": "New",
+				"Warranty": "2 years from Halden",
+				"In the box": "Watch, wooden presentation box, warranty card"
+			},
+			"short": "A forty millimetre watch with a maple wood case and a cream dial on tan leather: light, warm and quietly unusual.",
+			"description": [
+				"Halden turns each Grove case from a single piece of maple, so no two grains are quite the same. It weighs almost nothing on the wrist, and the leather strap softens with wear.",
+				"We size the strap at the counter while you wait."
+			]
+		},
+		{
+			"slug": "nightfall-chronograph",
+			"name": "Nightfall Chronograph",
+			"category": "watches",
+			"brand": "marlowe-finch",
+			"image": "images/products/black-chronograph-watch-photo.jpg",
+			"regular": "1450",
+			"sale": "1190",
+			"sales": 39,
+			"sku": "MAF-NGT-44",
+			"stock": 1,
+			"weight": 0.12,
+			"specs": {
+				"Case": "44 mm black steel",
+				"Movement": "Quartz chronograph",
+				"Water resistance": "100 m",
+				"Crystal": "Sapphire",
+				"Strap": "Black rubber",
+				"Condition": "Ex-display",
+				"Warranty": "3 years from Marlowe & Finch",
+				"In the box": "Watch, travel case, warranty card"
+			},
+			"short": "A black steel chronograph with a sapphire crystal and a rubber strap, reduced as ex-display with the full warranty.",
+			"description": [
+				"The Nightfall times to a tenth of a second and reads clearly in the dark. Ours has spent a season in the showroom window and has been checked and regulated on the bench."
+			]
+		},
+		{
+			"slug": "trail-field-watch",
+			"name": "Trail Field Watch",
+			"category": "watches",
+			"brand": "marlowe-finch",
+			"image": "images/products/field-watch-photo.jpg",
+			"regular": "690",
+			"sales": 81,
+			"sku": "MAF-TRL-38",
+			"stock": 6,
+			"weight": 0.06,
+			"specs": {
+				"Case": "38 mm steel",
+				"Movement": "Automatic, 42 hour reserve",
+				"Water resistance": "100 m",
+				"Crystal": "Sapphire",
+				"Strap": "Black leather",
+				"Condition": "New",
+				"Warranty": "3 years from Marlowe & Finch",
+				"In the box": "Watch, spare canvas strap, warranty card"
+			},
+			"short": "A thirty-eight millimetre automatic field watch with a clear white dial, built to be worn every day.",
+			"description": [
+				"Big numerals, a matte dial and a case that does not catch the light: the Trail does one job and does it well. It comes with a second strap in olive canvas."
+			]
+		},
+		{
+			"slug": "orbit-smartwatch",
+			"name": "Orbit Smartwatch",
+			"category": "watches",
+			"brand": "corvane",
+			"image": "images/products/smartwatch-on-wrist-photo.jpg",
+			"regular": "449",
+			"sales": 122,
+			"sku": "COR-ORB-46",
+			"stock": 11,
+			"weight": 0.05,
+			"specs": {
+				"Case": "46 mm aluminium",
+				"Display": "Round AMOLED, always on",
+				"Battery": "4 days",
+				"Water resistance": "50 m",
+				"Strap": "Green and black sport band",
+				"Condition": "New",
+				"Warranty": "2 years from Corvane",
+				"In the box": "Watch, magnetic charger, two strap sizes"
+			},
+			"short": "A round smartwatch with an always-on display and four days between charges, that still looks like a watch.",
+			"description": [
+				"Corvane kept the Orbit round on purpose. It tracks sleep, workouts and heart rate, shows the messages you choose, and lasts four days because it does not try to be a phone."
+			]
+		},
+		{
+			"slug": "d7-camera",
+			"name": "D7 Camera",
+			"category": "cameras",
+			"brand": "tessaro",
+			"image": "images/products/black-digital-camera-photo.jpg",
+			"regular": "1290",
+			"featured": true,
+			"sales": 44,
+			"sku": "TES-D7-BDY",
+			"stock": 3,
+			"weight": 0.69,
+			"specs": {
+				"Sensor": "24 MP, APS-C",
+				"Viewfinder": "Optical, pentaprism",
+				"Mount": "T-mount",
+				"Weather sealing": "Yes",
+				"Finish": "Black",
+				"Condition": "New",
+				"Warranty": "2 years from Tessaro",
+				"In the box": "Camera body, battery, charger, strap, body cap"
+			},
+			"short": "A weather-sealed camera with an optical viewfinder and twin control dials, for photographers who like to see the real thing.",
+			"description": [
+				"The D7 asks you to look through the lens rather than at a screen. Twin dials put shutter and aperture under your fingers, and the body is sealed against rain and dust.",
+				"We will happily lend you one for an afternoon. Most people come back with it already in their bag."
+			],
+			"upsells": [
+				"six-by-six-film-camera"
+			]
+		},
+		{
+			"slug": "six-by-six-film-camera",
+			"name": "6x6 Film Camera",
+			"category": "cameras",
+			"brand": "tessaro",
+			"image": "images/products/medium-format-film-camera-photo.jpg",
+			"regular": "1890",
+			"sales": 12,
+			"sku": "TES-66-CPO",
+			"stock": 1,
+			"weight": 1.4,
+			"specs": {
+				"Format": "120 film, 6x6 cm",
+				"Lens": "80 mm f/2.8, included",
+				"Viewfinder": "Waist-level",
+				"Shutter": "Leaf, 1 s to 1/500 s",
+				"Finish": "Chrome and black",
+				"Condition": "Certified pre-owned",
+				"Warranty": "1 year from the showroom",
+				"In the box": "Camera, 80 mm lens, film back, waist-level finder, caps, service report"
+			},
+			"short": "A certified pre-owned medium format camera with its 80 mm lens, serviced on our bench and guaranteed for a year.",
+			"description": [
+				"Every pre-owned camera we sell is stripped, cleaned and tested: the shutter speeds measured, the light seals replaced, the film back checked for flatness. This one comes with its service report.",
+				"Looking down into a waist-level finder changes how you see. Square negatives do the rest."
+			]
+		},
+		{
+			"slug": "trek-action-camera",
+			"name": "Trek Action Camera",
+			"category": "cameras",
+			"brand": "corvane",
+			"image": "images/products/action-camera-photo.jpg",
+			"regular": "399",
+			"sales": 74,
+			"sku": "COR-TRK-ACT",
+			"stock": 8,
+			"weight": 0.15,
+			"specs": {
+				"Video": "4K at 60 frames a second",
+				"Stabilisation": "Electronic, horizon levelling",
+				"Water resistance": "10 m without the housing",
+				"Battery": "2 hours of recording",
+				"Condition": "New",
+				"Warranty": "2 years from Corvane",
+				"In the box": "Camera, waterproof housing, two mounts, USB-C cable"
+			},
+			"short": "A small 4K action camera with horizon levelling, waterproof to ten metres without its housing.",
+			"description": [
+				"Mount it on a helmet, a handlebar or a dog. The Trek keeps the horizon level however much you move, and the clear housing takes it to forty metres."
+			]
+		},
+		{
+			"slug": "k75-mechanical-keyboard",
+			"name": "K75 Mechanical Keyboard",
+			"category": "desk-mobile",
+			"brand": "sable-works",
+			"image": "images/products/mechanical-keyboard-photo.jpg",
+			"regular": "249",
+			"sale": "219",
+			"sales": 133,
+			"sku": "SAB-K75",
+			"stock": 12,
+			"weight": 0.98,
+			"specs": {
+				"Layout": "75 percent, US or UK",
+				"Switches": "Linear, hot-swappable",
+				"Connection": "Bluetooth, 2.4 GHz and USB-C",
+				"Case": "Machined aluminium",
+				"Condition": "New",
+				"Warranty": "2 years from Sable Works",
+				"In the box": "Keyboard, braided USB-C cable, wireless receiver, keycap puller"
+			},
+			"short": "A compact mechanical keyboard in machined aluminium, wireless or wired, with switches you can change yourself.",
+			"description": [
+				"The K75 keeps the function row and the arrows and drops the rest, so the mouse sits closer. Its gasket-mounted plate makes every key feel and sound the same."
+			]
+		},
+		{
+			"slug": "glide-wireless-mouse",
+			"name": "Glide Wireless Mouse",
+			"category": "desk-mobile",
+			"brand": "sable-works",
+			"image": "images/products/wireless-mouse-photo.jpg",
+			"regular": "99",
+			"sales": 176,
+			"sku": "SAB-GLD-M",
+			"stock": 20,
+			"weight": 0.09,
+			"specs": {
+				"Sensor": "Optical, 8000 dpi",
+				"Connection": "Bluetooth and 2.4 GHz",
+				"Battery": "70 days",
+				"Buttons": "Six, programmable",
+				"Condition": "New",
+				"Warranty": "2 years from Sable Works",
+				"In the box": "Mouse, wireless receiver, USB-C cable"
+			},
+			"short": "A quiet wireless mouse shaped for a relaxed hand, with silent clicks and seventy days to a charge.",
+			"description": [
+				"The Glide's clicks are damped, so it is welcome in a shared office. Two side buttons go back and forward in a browser by default, and all six can be set to anything."
+			]
+		},
+		{
+			"slug": "corvane-one-phone",
+			"name": "Corvane One",
+			"category": "desk-mobile",
+			"brand": "corvane",
+			"image": "images/products/smartphone-in-hand-photo.jpg",
+			"regular": "899",
+			"sales": 154,
+			"sku": "COR-ONE",
+			"specs": {
+				"Display": "6.3-inch OLED, 120 Hz",
+				"Storage": [
+					"128 GB",
+					"256 GB"
+				],
+				"Camera": "50 MP main, 12 MP ultra-wide",
+				"Battery": "2 days",
+				"Finish": "Graphite",
+				"Condition": "New",
+				"Warranty": "2 years from Corvane",
+				"In the box": "Phone, USB-C cable, SIM tool"
+			},
+			"variations": {
+				"128 GB": {
+					"sku": "COR-ONE-128",
+					"regular": "899"
+				},
+				"256 GB": {
+					"sku": "COR-ONE-256",
+					"regular": "999"
+				}
+			},
+			"short": "A calm, well-made phone with a two-day battery and a camera that does not need a menu to take a good picture.",
+			"description": [
+				"Corvane designed the One around a focus mode that holds every notification until you are ready for them. The rest of the time it is simply a fast phone with a very good camera.",
+				"We move your contacts, photos and messages across before you leave the showroom."
+			]
+		},
+		{
+			"slug": "dock-wireless-charger",
+			"name": "Dock Wireless Charger",
+			"category": "desk-mobile",
+			"brand": "corvane",
+			"image": "images/products/phone-charging-stand-photo.jpg",
+			"regular": "89",
+			"sales": 141,
+			"sku": "COR-DCK-15W",
+			"stock": 16,
+			"weight": 0.24,
+			"specs": {
+				"Output": "15 W wireless",
+				"Compatibility": "Any Qi phone",
+				"Material": "Weighted aluminium base",
+				"Condition": "New",
+				"Warranty": "2 years from Corvane",
+				"In the box": "Charger, 30 W USB-C power adapter, cable"
+			},
+			"short": "A weighted wireless charging stand for the desk or the bedside, angled so the screen stays readable while it charges.",
+			"description": [
+				"Heavy enough to stay put when you pick the phone up, and angled so a call or a recipe stays in view while the battery fills."
+			]
+		},
+		{
+			"slug": "pocket-20k-power-bank",
+			"name": "Pocket 20K Power Bank",
+			"category": "desk-mobile",
+			"brand": "corvane",
+			"image": "images/products/power-bank-photo.jpg",
+			"regular": "79",
+			"sales": 199,
+			"sku": "COR-PB-20K",
+			"stock": 24,
+			"weight": 0.36,
+			"specs": {
+				"Capacity": "20,000 mAh",
+				"Output": "65 W USB-C, 18 W USB-A",
+				"Recharge": "2 hours",
+				"Condition": "New",
+				"Warranty": "2 years from Corvane",
+				"In the box": "Power bank, braided USB-C cable, pouch"
+			},
+			"short": "A twenty-thousand mAh power bank that charges a laptop, a phone and a watch, and refills itself in two hours.",
+			"description": [
+				"Sixty-five watts from the USB-C port is enough to keep a laptop going on a long train. The display shows exactly how much charge is left."
+			]
+		}
+	],
+	"reviews": {
+		"calder-turntable": [
+			[
+				"Hannah W.",
+				5,
+				"They set it up on the counter while I watched, and it has run perfectly since. Quieter than the deck it replaced and lovely to look at."
+			],
+			[
+				"Tomasz K.",
+				5,
+				"The terracotta is even better in person. Speed is spot on, and the alignment gauge in the box is a nice touch."
+			]
+		],
+		"fen-monitor-speakers": [
+			[
+				"Priya S.",
+				5,
+				"I heard these against two other pairs in the listening room and there was no contest. Warm, clear and not tiring at all."
+			],
+			[
+				"Jonas B.",
+				4,
+				"Beautiful cabinets. They need a bit of space from the wall, exactly as the showroom said."
+			]
+		],
+		"kiln-desktop-speakers": [
+			[
+				"Mei L.",
+				5,
+				"Voices sound real in a way my old speakers never managed, and they look lovely on the shelf."
+			]
+		],
+		"studio-reference-headphones": [
+			[
+				"Maya R.",
+				5,
+				"The noise cancelling is calm rather than pressurised, and the battery lasted a whole week of commuting."
+			],
+			[
+				"Daniel O.",
+				5,
+				"Neutral in the best way. My mixes translate to speakers better since I switched."
+			],
+			[
+				"Lucia F.",
+				4,
+				"Very comfortable. The case is a little large, but it protects them well."
+			]
+		],
+		"atelier-over-ear-headphones": [
+			[
+				"Gabriel N.",
+				5,
+				"Planar sound at its best. The most effortless headphones I have owned."
+			]
+		],
+		"monitor-closed-back-headphones": [
+			[
+				"Sam T.",
+				4,
+				"Comfortable for whole sessions and they isolate well. The coiled cable is long, in a good way."
+			]
+		],
+		"drift-wireless-earbuds": [
+			[
+				"Sofia M.",
+				5,
+				"Tried three tip sizes in the shop before buying. They stay in on runs and the case lasts all week."
+			],
+			[
+				"Ravi P.",
+				4,
+				"Great sound for the size. Noise cancelling is good, not miraculous."
+			]
+		],
+		"grove-wood-watch": [
+			[
+				"Amara J.",
+				5,
+				"Light, warm and everyone asks about it. They sized the strap while I waited."
+			],
+			[
+				"Oliver T.",
+				5,
+				"The grain on mine is beautiful. Feels like nothing on the wrist."
+			]
+		],
+		"trail-field-watch": [
+			[
+				"Isabel C.",
+				5,
+				"Readable at a glance and light enough to forget. The spare canvas strap makes it two watches."
+			]
+		],
+		"nightfall-chronograph": [
+			[
+				"Kenji H.",
+				4,
+				"Sharp looking and very legible. Good value as ex-display, with the full warranty."
+			]
+		],
+		"d7-camera": [
+			[
+				"Thea G.",
+				5,
+				"They lent me one for the weekend. I came back on Monday and bought it."
+			]
+		],
+		"six-by-six-film-camera": [
+			[
+				"Leo D.",
+				5,
+				"Arrived with its service report and every speed is accurate. Better than any market find."
+			]
+		],
+		"k75-mechanical-keyboard": [
+			[
+				"Chen Y.",
+				5,
+				"Feels expensive in the best way. Every key sounds the same."
+			]
+		],
+		"corvane-one-phone": [
+			[
+				"Ruth K.",
+				5,
+				"The focus mode alone was worth it. Two days of battery is real."
+			],
+			[
+				"Peter A.",
+				4,
+				"Fast and calm. They moved everything across from my old phone before I left."
+			]
+		],
+		"pocket-20k-power-bank": [
+			[
+				"Arjun S.",
+				4,
+				"Charges my laptop on trains. Heavier than it looks, but that is the capacity."
+			]
+		]
+	},
+	"post_categories": {
+		"buying-guides": {
+			"name": "Buying guides",
+			"description": "How to choose, from people who sell it every day."
+		},
+		"care-and-servicing": {
+			"name": "Care and servicing",
+			"description": "Looking after what you own."
+		},
+		"from-the-showroom": {
+			"name": "From the showroom",
+			"description": "News and notes from the showroom floor."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"content": [
+				[
+					"p",
+					"The showroom homepage is built by the Vitrena theme from live store data."
+				]
+			]
+		},
+		"about": {
+			"title": "About the showroom",
+			"content": [
+				[
+					"cover",
+					{
+						"image": "images/scenes/scene-hero-photo.jpg",
+						"heading": "A showroom, not a warehouse",
+						"text": "One room in the old town where every piece is unpacked, set up and explained before it goes home with you.",
+						"height": 520,
+						"level": 1
+					}
+				],
+				[
+					"h2",
+					"How we choose what we carry"
+				],
+				[
+					"p",
+					"We carry a maker only when we can stand behind it: official stock from the maker or its distributor, the full warranty registered in your name, and someone on the showroom floor who knows the range well enough to tell you when something is not right for you."
+				],
+				[
+					"p",
+					"That means fewer brands than a department store, and no grey imports. It also means that when something goes wrong, you bring it back to us and we deal with the maker."
+				],
+				[
+					"features",
+					[
+						{
+							"title": "One showroom",
+							"text": "Everything we sell is on display and can be heard, held or worn before you decide."
+						},
+						{
+							"title": "Nine makers",
+							"text": "Chosen for how their pieces are made, serviced and supported, not for their advertising."
+						},
+						{
+							"title": "A bench of our own",
+							"text": "Set-up, servicing and repairs happen here, by the people who sold it to you."
+						}
+					]
+				],
+				[
+					"media",
+					{
+						"image": "images/scenes/scene-workbench-photo.jpg",
+						"heading": "Looked after here",
+						"text": "Cameras serviced, turntables aligned and watches regulated on our own bench. Bring anything back for a check, whenever you like.",
+						"buttons": [
+							{
+								"label": "Warranty and repairs",
+								"page": "warranty"
+							}
+						],
+						"side": "right"
+					}
+				],
+				[
+					"quotes",
+					[
+						{
+							"text": "They spent an hour with me and talked me out of the more expensive speakers. That is why I keep coming back.",
+							"name": "Priya S.",
+							"rating": 5
+						},
+						{
+							"text": "My film camera came with a service report, and they explained every line of it.",
+							"name": "Leo D.",
+							"rating": 5
+						},
+						{
+							"text": "The phone was set up and ready when I collected it, with everything moved across.",
+							"name": "Peter A.",
+							"rating": 5
+						}
+					]
+				]
+			]
+		},
+		"visit": {
+			"title": "Visit the showroom",
+			"template": "page-visit",
+			"content": [
+				[
+					"p",
+					"Visits do not need an appointment. Demonstrations in the listening room do, so the room is yours: book one below or call the showroom."
+				],
+				[
+					"lines",
+					[
+						"Vitrena Showroom",
+						"14 Arcade Row, Old Town",
+						"hello@vitrena-showroom.example",
+						"+1 555 0142"
+					]
+				]
+			]
+		},
+		"services": {
+			"title": "Services",
+			"template": "page-services",
+			"content": [
+				[
+					"p",
+					"Buying from a dealer should mean more than a box in the post. Every service below is arranged by the showroom and carried out by people we know."
+				]
+			]
+		},
+		"makers": {
+			"title": "The makers",
+			"template": "page-makers",
+			"content": [
+				[
+					"p",
+					"Nine makers, each chosen for how its pieces are made, serviced and supported. Every one sells to us directly or through its official distributor, and every warranty is registered in your name."
+				]
+			]
+		},
+		"warranty": {
+			"title": "Warranty and repairs",
+			"content": [
+				[
+					"p",
+					"Every new piece carries its maker's full warranty, registered in your name when you buy it. Certified pre-owned pieces carry our own one-year warranty."
+				],
+				[
+					"h2",
+					"If something goes wrong"
+				],
+				[
+					"ol",
+					[
+						"Bring it to the showroom or arrange a collection with us.",
+						"We check it on our bench and tell you what we find, usually the same day.",
+						"Repairs under warranty are free; we deal with the maker so you do not have to."
+					]
+				],
+				[
+					"h2",
+					"Servicing"
+				],
+				[
+					"p",
+					"Mechanical watches want a service every five to seven years, turntables a check of the belt and cartridge every few years, film cameras a clean and a shutter test. We will remind you when the time comes, if you would like us to."
+				],
+				[
+					"details",
+					"Do you service pieces you did not sell?",
+					"Yes, for the makers we carry. Ask at the counter for a quote before we start."
+				],
+				[
+					"details",
+					"How long does a service take?",
+					"A turntable or a camera usually a week; a mechanical watch three to four weeks, including the time to regulate and test it."
+				]
+			]
+		},
+		"delivery-returns": {
+			"title": "Delivery and returns",
+			"content": [
+				[
+					"h2",
+					"Delivery"
+				],
+				[
+					"p",
+					"Orders leave the showroom insured and signed for. Loudspeakers can be delivered and set up in your room by our own team."
+				],
+				[
+					"h2",
+					"Returns"
+				],
+				[
+					"p",
+					"Changed your mind? Return a new piece within thirty days in its original condition and packaging for a full refund. Set-up and demonstration are free, so try anything you are unsure about first."
+				]
+			]
+		},
+		"journal": {
+			"title": "Journal",
+			"content": []
+		}
+	},
+	"posts": {
+		"choosing-a-turntable": {
+			"title": "How to choose a turntable that will outlast you",
+			"category": "buying-guides",
+			"days": 6,
+			"image": "images/scenes/scene-vinyl-photo.jpg",
+			"excerpt": "Belt or direct drive, fitted cartridge or not, and the one adjustment that matters more than the price.",
+			"content": [
+				[
+					"p",
+					"A good turntable can play records for forty years. The trick is to pay for the parts that matter and none of the parts that do not."
+				],
+				[
+					"h2",
+					"Belt or direct drive"
+				],
+				[
+					"p",
+					"Belt drive keeps the motor's vibration away from the platter, which is why most hi-fi turntables use it. Direct drive starts faster and holds speed with no belt to replace, which is why DJs love it."
+				],
+				[
+					"h2",
+					"The cartridge comes first"
+				],
+				[
+					"p",
+					"Most of what you hear comes from the cartridge and how well it is aligned. Ask for it to be fitted and set up before the turntable leaves the shop, and bring it back after the first hundred hours."
+				]
+			]
+		},
+		"winding-a-pocket-watch": {
+			"title": "What a hand-wound watch asks of you, and gives back",
+			"category": "care-and-servicing",
+			"days": 13,
+			"image": "images/scenes/scene-hero-photo.jpg",
+			"excerpt": "A minute every morning, a service every few years, and a watch that will outlive everything else you own.",
+			"content": [
+				[
+					"p",
+					"A hand-wound watch has no battery and no rotor: you wind it each morning, and it runs for a day and a half."
+				],
+				[
+					"h2",
+					"How to wind it"
+				],
+				[
+					"p",
+					"Turn the crown gently until you feel resistance, then stop. Never force it, and wind at the same time each day."
+				],
+				[
+					"h2",
+					"When to service it"
+				],
+				[
+					"p",
+					"Every five to seven years the oils need replacing. We regulate and test every watch we service before it goes back to you."
+				]
+			]
+		},
+		"why-we-demonstrate": {
+			"title": "Why we demonstrate in a quiet room",
+			"category": "from-the-showroom",
+			"days": 21,
+			"image": "images/scenes/scene-listening-room-photo.jpg",
+			"excerpt": "Speakers sound different in every room. An hour in ours, with your own music, saves a lot of guessing.",
+			"content": [
+				[
+					"p",
+					"Every pair of speakers sounds good in an advert. In a real room, with the music you know, the differences are easy to hear."
+				],
+				[
+					"p",
+					"That is why the listening room is booked one appointment at a time. Bring three records you know by heart, and we will set up the pieces you shortlisted side by side."
+				]
+			]
+		}
+	},
+	"menu": {
+		"title": "Showroom",
+		"slug": "showroom",
+		"location": "primary",
+		"items": [
+			{
+				"label": "The collection",
+				"woocommerce": "shop"
+			},
+			{
+				"label": "Hi-fi",
+				"product_cat": "hi-fi"
+			},
+			{
+				"label": "Headphones",
+				"product_cat": "headphones"
+			},
+			{
+				"label": "Watches",
+				"product_cat": "watches"
+			},
+			{
+				"label": "Cameras",
+				"product_cat": "cameras"
+			},
+			{
+				"label": "Desk and mobile",
+				"product_cat": "desk-mobile"
+			},
+			{
+				"label": "The makers",
+				"page": "makers"
+			},
+			{
+				"label": "Visit",
+				"page": "visit"
+			}
+		]
+	}
+}
