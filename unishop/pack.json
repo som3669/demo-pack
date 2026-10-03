@@ -1,5 +1,13 @@
 {
     "schema": 1,
+    "required_plugins": [
+        {
+            "slug": "woocommerce",
+            "name": "WooCommerce",
+            "file": "woocommerce/woocommerce.php",
+            "minimum_version": "11.0"
+        }
+    ],
     "files": [
         "settings.json"
     ],
