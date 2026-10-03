@@ -3,9 +3,15 @@
 Demo content for WordPress themes, imported with the
 [Storefill – Demo Content Importer](https://wordpress.org/plugins/storefill-demo-content-importer/) plugin.
 
-Themes ship no demo content of their own. A store owner installs the theme, WooCommerce and
-Storefill, opens **Appearance → Import demo**, and Storefill downloads the pack for the active theme
-from this repository. Only data is downloaded — JSON and images. Nothing here is executed.
+Themes ship no demo content of their own. A store owner installs the theme and Storefill, opens
+**Appearance → Import demo**, and Storefill downloads the pack for the active theme from this
+repository. Only data is downloaded — JSON and images. Nothing here is executed.
+
+The Vitrena, eBasket, Luma and Unishop packs declare WooCommerce as a required plugin. Storefill's
+admin import button installs or updates and activates these requirements before importing demo
+content, keeping the import screen open through WooCommerce activation. Packs without automatic
+plugin declarations, older Storefill versions and WP-CLI imports need their plugins prepared
+manually first.
 
 This repository must stay **public**, with **GitHub Pages** turned on (Settings → Pages → Deploy
 from a branch → `main`, folder `/ (root)`). Storefill downloads packs from
@@ -74,8 +80,16 @@ After pushing, check that GitHub Pages published it
       "theme": "unishop",
       "title": "Unishop electronics store",
       "description": "Shown on the import screen.",
-      "version": "1.1.0",
+      "version": "1.1.2",
       "path": "unishop/pack.json",
+      "required_plugins": [
+        {
+          "slug": "woocommerce",
+          "name": "WooCommerce",
+          "file": "woocommerce/woocommerce.php",
+          "minimum_version": "11.0"
+        }
+      ],
       "requires": { "wordpress": "7.0", "woocommerce": "11.0" }
     }
   ]
@@ -91,6 +105,7 @@ Every section except `schema` is optional.
 | Key | Shape | Notes |
 |---|---|---|
 | `schema` | `1` | Required. |
+| `required_plugins` | `[ { "slug", "name", "file", "minimum_version" } ]` | WordPress.org plugins prepared before the admin content import starts. Repeat the declaration in the pack's index entry. See Required plugins. |
 | `files` | `[ "settings.json", "customizer.json", "widgets.json" ]` | The optional files this pack has. |
 | `images` | `{ "<ref>": "<alt text>" }` | Every image the pack uses, including any named in `customizer.json`. A ref is a path in the pack folder (`images/products/phone.jpg`) or a theme file (`theme:assets/images/hero.jpg`). Leave alt empty for product photos: WooCommerce then uses the product name. |
 | `product_categories` | `{ "<slug>": { "name", "description", "image" } }` | In menu order. `image` is an image ref. |
@@ -102,6 +117,34 @@ Every section except `schema` is optional.
 | `pages` | `{ "<slug>": { "title", "content", "template" } }` | See Content. `template` is a page template of the theme, such as `page-no-title`; it is used only when the theme has it. |
 | `posts` | `{ "<slug>": { "title", "excerpt", "image", "days", "category", "content" } }` | `days`: how many days ago it was published. |
 | `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`. Block themes get a navigation menu; classic themes get a menu assigned to `location`. |
+
+### Required plugins
+
+Declare dependencies in `pack.json`; this is the importer's authoritative list. Repeat the same
+metadata in the corresponding `index.json` entry so library tools can inspect it.
+
+```json
+"required_plugins": [
+  {
+    "slug": "woocommerce",
+    "name": "WooCommerce",
+    "file": "woocommerce/woocommerce.php",
+    "minimum_version": "11.0"
+  }
+]
+```
+
+`slug` identifies the plugin in the WordPress.org directory. `name` appears in import progress.
+`file` is the plugin's main PHP file relative to `wp-content/plugins`; it must belong to the
+directory named by its slug. `minimum_version` is the oldest compatible version. Keep it
+consistent with `requires.woocommerce` for WooCommerce store packs.
+
+After **Import demo content** is clicked, Storefill prepares declared requirements before
+importing images, products, pages or settings. Requirements that are already active at a
+compatible version need no changes. Installation, update or activation failures stop before
+content import; the administrator can correct the problem and retry. The operation uses normal
+WordPress plugin permissions and only downloads packages from WordPress.org. Installed plugins
+remain installed when demo content is removed.
 
 ### Products
 
