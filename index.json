@@ -92,6 +92,26 @@
 				"wordpress": "7.0",
 				"woocommerce": "11.0"
 			}
+		},
+		{
+			"id": "gadgetix",
+			"theme": "gadgetix",
+			"title": "Gadgetix gadget store",
+			"description": "A gadget store with 25 products in 6 gadget categories: what each works with (a filterable attribute), battery life, charging speed, capacity, water ratings, ports and real dimensions for the actual size drawing; drops with end dates, low and sold-out stock, a variable cable, reviews, buying guides, store pages and a demo checkout with free delivery over $50.",
+			"version": "1.0.0",
+			"path": "gadgetix/pack.json",
+			"required_plugins": [
+				{
+					"slug": "woocommerce",
+					"name": "WooCommerce",
+					"file": "woocommerce/woocommerce.php",
+					"minimum_version": "11.0"
+				}
+			],
+			"requires": {
+				"wordpress": "7.0",
+				"woocommerce": "11.0"
+			}
 		}
 	]
 }
