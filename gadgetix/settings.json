@@ -1,0 +1,51 @@
+{
+	"schema": 1,
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "guides"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Gadgetix",
+			"blogdescription": "Gadgets that fit what you already own",
+			"woocommerce_coming_soon": "no",
+			"woocommerce_store_pages_only": "no",
+			"woocommerce_currency": "USD",
+			"woocommerce_currency_pos": "left",
+			"woocommerce_price_thousand_sep": ",",
+			"woocommerce_price_decimal_sep": ".",
+			"woocommerce_price_num_decimals": "2",
+			"woocommerce_store_address": "88 Bench Street",
+			"woocommerce_store_city": "Oakland",
+			"woocommerce_store_postcode": "94607",
+			"woocommerce_default_country": "US:CA",
+			"woocommerce_weight_unit": "kg",
+			"woocommerce_dimension_unit": "cm",
+			"woocommerce_enable_reviews": "yes",
+			"woocommerce_enable_review_rating": "yes",
+			"woocommerce_manage_stock": "yes"
+		},
+		"returns_page": "help",
+		"checkout": {
+			"payment_title": "Demo payment (no charge)",
+			"payment_description": "This is a demo store. Orders are not charged, packed or delivered.",
+			"payment_instructions": "This was a demo order: nothing was charged and nothing will be delivered.",
+			"shipping": [
+				{
+					"method": "free_shipping",
+					"title": "Free delivery",
+					"requires": "min_amount",
+					"min_amount": "50",
+					"ignore_discounts": "no"
+				},
+				{
+					"method": "flat_rate",
+					"title": "Standard delivery",
+					"tax_status": "none",
+					"cost": "5.95"
+				}
+			]
+		},
+		"hide_sample_content": true
+	}
+}

@@ -1,0 +1,56 @@
+# Gadgetix pack: credits
+
+Every photograph in this pack is **CC0 1.0 Universal** (public domain dedication): free for
+commercial use, modification and redistribution, with no attribution requirement. Credits are
+recorded anyway. Each was checked by eye for brand names, logos and readable text. Three were
+retouched: a maker's name taken out of a small badge on two, and the printed symbols off a
+keyboard's accent keys. Photos were cropped to a square and resized; studio shots on white keep
+their white so the theme's bench mat shows through. Brand and product names in the pack are
+invented.
+
+Licence: <https://creativecommons.org/publicdomain/zero/1.0/>
+
+| File | Shows | Title | Creator | Source |
+|---|---|---|---|---|
+| `images/products/arc-desk-lamp-photo.jpg` | A black adjustable desk lamp beside a small potted plant on a wooden table. | Black Lamp | Eneida Nieves | [StockSnap](https://stocksnap.io/photo/black-lamp-G8H5ZG3PAN) |
+| `images/products/band-3-lilac-photo.jpg` | The fitness band with a lilac strap, on white. | Purple Fitbit fitness tracker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524185/purple-fitbit-fitness-tracker) |
+| `images/products/band-3-lime-photo.jpg` | The fitness band with a lime green strap, on white. | Lime green Fitbit fitness tracker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11515775/photo-image-white-background-public-domain-green) |
+| `images/products/band-3-midnight-photo.jpg` | A black fitness band with its display lit, seen from the front, on white. | Front view display black fitness | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524352/front-view-display-black-fitness-tracker) |
+| `images/products/band-3-navy-photo.jpg` | The fitness band with a navy strap, on white. | Navy blue Fitbit fitness tracker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524170/navy-blue-fitbit-fitness-tracker) |
+| `images/products/band-3-rose-photo.jpg` | The fitness band with a light pink strap, on white. | Light pink Fitbit fitness tracker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524188/light-pink-fitbit-fitness-tracker) |
+| `images/products/band-3-sky-photo.jpg` | The fitness band with a sky blue strap, on white. | Blue fitbit fitness tracker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524192/blue-fitbit-fitness-tracker) |
+| `images/products/braid-cable-champagne-photo.jpg` | A coiled champagne gold braided charging cable with metal plugs, on white. | Gold braided iPhone charging cable | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524398/gold-braided-iphone-charging-cable-product-photo) |
+| `images/products/braid-cable-graphite-photo.jpg` | A coiled black braided charging cable with a USB-A plug, on white. | Black iPhone charging cable | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11515807/black-iphone-charging-cable) |
+| `images/products/brick-speaker-angle-photo.jpg` | The black Bluetooth speaker turned at an angle, buttons on top, on white. | Mini black bluetooth speaker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524244/mini-black-bluetooth-speaker) |
+| `images/products/brick-speaker-desk-photo.jpg` | The black speaker on a white desk beside a laptop, hands typing behind it. | Black Bluetooth speaker, home office | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11515760/black-bluetooth-speaker-home-office) |
+| `images/products/brick-speaker-photo.jpg` | A black rectangular Bluetooth speaker with a dotted rubber grille, front view, on white. | Front view black portable bluetooth | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524403/front-view-black-portable-bluetooth-speaker) |
+| `images/products/brick-speaker-ports-photo.jpg` | The back of the black speaker with its USB, card and charging ports, on white. | Back view black bluetooth speaker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524258/back-view-black-bluetooth-speaker) |
+| `images/products/clamp-phone-mount-photo.jpg` | A phone held in a black clamp mount on a tripod, filming a pier at dusk. | Untitled | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/6056103/free-public-domain-cc0-photo) |
+| `images/products/cube-desk-speakers-photo.jpg` | A pair of white cube desk speakers on angled stands, on white. | Audio Speakers | Nordwood Themes | [StockSnap](https://stocksnap.io/photo/audio-speakers-KOZLNZPIFM) |
+| `images/products/duo-flash-drive-photo.jpg` | A white 32 GB USB flash drive beside a mini drive and memory cards on dark grey. | Untitled | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5948153/free-public-domain-cc0-photo) |
+| `images/products/everyday-cable-photo.jpg` | A coiled white charging cable with a USB-A plug, on white. | White iPhone charging cable | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11515810/white-iphone-charging-cable) |
+| `images/products/fold-anc-headphones-angle-photo.jpg` | The same black over-ear headphones from the side, ear cups turned, on white. | Close speakers black headphones red | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524237/photo-image-headphones-public-domain-technology) |
+| `images/products/fold-anc-headphones-controls-photo.jpg` | Close-up of the control buttons on the ear cup of the black headphones. | Close controls noise canceling headphones | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524230/photo-image-headphones-public-domain-technology) |
+| `images/products/fold-anc-headphones-photo.jpg` | Black folding over-ear headphones seen straight on, with a red cable, on white. | Black noise canceling headphones red | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524342/photo-image-headphones-public-domain-technology) |
+| `images/products/fold-anc-headphones-side-photo.jpg` | The black headphones lying on their side with the cable plugged in, on white. | Black headphones with red cord | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11515811/black-headphones-with-red-cord) |
+| `images/products/glide-mouse-photo.jpg` | A silver and graphite wireless mouse, on white. | Isolated mouse | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/6035209/isolated-mouse-free-public-domain-cc0-photo) |
+| `images/products/halo-smart-band-photo.jpg` | A white smart band with a large curved colour display, on white. | Untitled | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5971253/free-public-domain-cc0-photo) |
+| `images/products/halo-webcam-photo.jpg` | A round black webcam clipped to the top of a monitor, against a warm wall. | Free webcam image | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5907091/photo-image-public-domain-technology-computer) |
+| `images/products/nano-drone-photo.jpg` | A tiny orange and white quadcopter drone resting in an open palm, on white. | Mini white orange drone helicopter | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524459/photo-image-hand-person-palm) |
+| `images/products/pebble-mini-speaker-photo.jpg` | A small round green speaker with a carry loop and an audio jack icon, on white. | Back view one green speaker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524259/photo-image-football-public-domain-green) |
+| `images/products/petal-on-ear-headphones-photo.jpg` | White on-ear headphones with a white cable, from above on a pastel pink background. | Free headphone image | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5924455/photo-image-public-domain-shadow-pink) |
+| `images/products/pocket-tripod-photo.jpg` | A small silver tabletop tripod with a ball head, legs open, on white. | Tripod. Free public domain CC0 | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/6030570/tripod-free-public-domain-cc0-photo) |
+| `images/products/portable-drive-kit-photo.jpg` | A black portable drive with a mini USB drive and SD and microSD cards, on white. | Untitled | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5948745/free-public-domain-cc0-photo) |
+| `images/products/pro-sd-card-photo.jpg` | A black SD memory card with gold contacts, close up on a warm grey surface. | Memory Card | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5967864/memory-card) |
+| `images/products/reach-selfie-stick-photo.jpg` | A black extendable selfie stick with a wrist strap, lying on blue painted planks. | Selfie Stick | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5969834/selfie-stick) |
+| `images/products/slim-power-bank-photo.jpg` | A slim white power bank with four blue charge lights and a USB-A port, on a beech desk. | Powerbank Battery | Krzysztof Puszczyński | [StockSnap](https://stocksnap.io/photo/powerbank-battery-LPUWSQBPGV) |
+| `images/products/splash-shower-speaker-glass-photo.jpg` | The pink speaker stuck to a wet shower screen, water drops all around. | Pink waterproof speaker shower glass | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524457/pink-waterproof-speaker-shower-glass) |
+| `images/products/splash-shower-speaker-photo.jpg` | A pink round waterproof speaker on a clear suction cup, on white. | Pink waterproof iPhone speaker | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524395/pink-waterproof-iphone-speaker) |
+| `images/products/sprint-sport-earphones-hooks-photo.jpg` | The red sport earphones hanging from their cable, ear hooks curled, on white. | Red blue tooth ear buds | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524236/red-blue-tooth-ear-buds) |
+| `images/products/sprint-sport-earphones-photo.jpg` | Red ear-hook sport earphones on a flat red cable, on white. | Red sport ear buds | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524298/red-sport-ear-buds) |
+| `images/products/sprint-sport-earphones-remote-photo.jpg` | The red sport earphones laid out with the in-line remote on the cable, on white. | View controls cord ear buds | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/11524314/view-controls-cord-ear-buds) |
+| `images/products/tk87-mechanical-keyboard-photo.jpg` | A black tenkeyless mechanical keyboard with red accent keys, from above on a beech desk; the accent keys were retouched to remove their printed symbols. | Small gaming keyboard on a wooden table | Nilo Velez | [WordPress Photo Directory](https://wordpress.org/photos/photo/365663b592/) |
+| `images/products/travel-mouse-photo.jpg` | A black wireless mouse with a slate blue trim on a wooden desk. | Untitled | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/6066473/free-public-domain-cc0-photo) |
+| `images/products/usb-c-charger-photo.jpg` | A white USB-C wall charger with folding prongs and a white USB-C cable. | Free phone charger image | Public domain upload | [Rawpixel](https://www.rawpixel.com/image/5923136/photo-image-phone-public-domain-white) |
+
+`images/` holds 40 photographs. `images/sources.json` keeps the same records with each original's size.

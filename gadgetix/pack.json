@@ -1,0 +1,1436 @@
+{
+	"schema": 1,
+	"required_plugins": [
+		{
+			"slug": "woocommerce",
+			"name": "WooCommerce",
+			"file": "woocommerce/woocommerce.php",
+			"minimum_version": "11.0"
+		}
+	],
+	"files": [
+		"settings.json"
+	],
+	"images": {
+		"images/products/arc-desk-lamp-photo.jpg": "",
+		"images/products/band-3-lilac-photo.jpg": "",
+		"images/products/band-3-lime-photo.jpg": "",
+		"images/products/band-3-midnight-photo.jpg": "",
+		"images/products/band-3-navy-photo.jpg": "",
+		"images/products/band-3-rose-photo.jpg": "",
+		"images/products/band-3-sky-photo.jpg": "",
+		"images/products/braid-cable-champagne-photo.jpg": "A coiled champagne gold braided charging cable",
+		"images/products/braid-cable-graphite-photo.jpg": "",
+		"images/products/brick-speaker-angle-photo.jpg": "",
+		"images/products/brick-speaker-desk-photo.jpg": "",
+		"images/products/brick-speaker-photo.jpg": "",
+		"images/products/brick-speaker-ports-photo.jpg": "",
+		"images/products/clamp-phone-mount-photo.jpg": "",
+		"images/products/cube-desk-speakers-photo.jpg": "",
+		"images/products/duo-flash-drive-photo.jpg": "",
+		"images/products/everyday-cable-photo.jpg": "",
+		"images/products/fold-anc-headphones-angle-photo.jpg": "",
+		"images/products/fold-anc-headphones-controls-photo.jpg": "",
+		"images/products/fold-anc-headphones-photo.jpg": "",
+		"images/products/fold-anc-headphones-side-photo.jpg": "",
+		"images/products/glide-mouse-photo.jpg": "",
+		"images/products/halo-smart-band-photo.jpg": "",
+		"images/products/halo-webcam-photo.jpg": "",
+		"images/products/nano-drone-photo.jpg": "",
+		"images/products/pebble-mini-speaker-photo.jpg": "",
+		"images/products/petal-on-ear-headphones-photo.jpg": "",
+		"images/products/pocket-tripod-photo.jpg": "",
+		"images/products/portable-drive-kit-photo.jpg": "",
+		"images/products/pro-sd-card-photo.jpg": "",
+		"images/products/reach-selfie-stick-photo.jpg": "",
+		"images/products/slim-power-bank-photo.jpg": "A slim white power bank with four blue charge lights on a beech desk",
+		"images/products/splash-shower-speaker-glass-photo.jpg": "A pink waterproof speaker stuck to a wet shower screen",
+		"images/products/splash-shower-speaker-photo.jpg": "",
+		"images/products/sprint-sport-earphones-hooks-photo.jpg": "",
+		"images/products/sprint-sport-earphones-photo.jpg": "",
+		"images/products/sprint-sport-earphones-remote-photo.jpg": "",
+		"images/products/tk87-mechanical-keyboard-photo.jpg": "",
+		"images/products/travel-mouse-photo.jpg": "",
+		"images/products/usb-c-charger-photo.jpg": ""
+	},
+	"product_categories": {
+		"audio": {
+			"name": "Audio",
+			"description": "Headphones, earphones and speakers, each with its battery life and water rating.",
+			"image": "images/products/fold-anc-headphones-photo.jpg"
+		},
+		"wearables": {
+			"name": "Wearables",
+			"description": "Fitness and smart bands that pair with the phone you already have.",
+			"image": "images/products/band-3-sky-photo.jpg"
+		},
+		"power-cables": {
+			"name": "Power and cables",
+			"description": "Chargers, power banks and cables, labelled with what they charge and how fast.",
+			"image": "images/products/usb-c-charger-photo.jpg"
+		},
+		"camera-creator": {
+			"name": "Camera and creator",
+			"description": "Tripods, mounts, a webcam and a palm-sized drone for filming, calls and streams.",
+			"image": "images/products/pocket-tripod-photo.jpg"
+		},
+		"desk-gadgets": {
+			"name": "Desk gadgets",
+			"description": "Keyboards, mice and a lamp for the desk you work at.",
+			"image": "images/products/tk87-mechanical-keyboard-photo.jpg"
+		},
+		"storage": {
+			"name": "Storage",
+			"description": "Drives and memory cards, with their capacity and the ports they plug into.",
+			"image": "images/products/portable-drive-kit-photo.jpg"
+		}
+	},
+	"product_brands": {
+		"sonaro": {
+			"name": "Sonaro",
+			"description": "Headphones and speakers tuned for everyday listening, made to pair with any phone."
+		},
+		"orbiq": {
+			"name": "Orbiq",
+			"description": "Fitness and smart bands with long battery life and companion apps for iPhone and Android."
+		},
+		"ampora": {
+			"name": "Ampora",
+			"description": "Chargers, power banks and cables, each rated for what it charges and how fast."
+		},
+		"lumet": {
+			"name": "Lumet",
+			"description": "Small creator gear: tripods, mounts, webcams and a drone that fits in a palm."
+		},
+		"tactra": {
+			"name": "Tactra",
+			"description": "Keyboards, mice, lamps and storage for the desk."
+		}
+	},
+	"attributes": {
+		"Works with": "works-with"
+	},
+	"products": [
+		{
+			"slug": "lumet-nano-drone",
+			"name": "Lumet Nano Drone",
+			"category": "camera-creator",
+			"brand": "lumet",
+			"image": "images/products/nano-drone-photo.jpg",
+			"sku": "LUM-NANO",
+			"sales": 20,
+			"featured": true,
+			"regular": "39",
+			"stock": 7,
+			"weight": 0.012,
+			"size": [
+				4.2,
+				4.2,
+				2.2
+			],
+			"specs": {
+				"Battery life": "7 minutes of flight",
+				"Charging": "USB, 30 minutes to full",
+				"Range": "Up to 30 m",
+				"Flight modes": "Three speeds and one-key flips",
+				"In the box": "Drone, remote, four spare propellers, USB charging lead",
+				"Warranty": "1 year"
+			},
+			"short": "A quadcopter smaller than a bank card, with guarded propellers for flying indoors and three speeds to learn on.",
+			"description": [
+				"The Nano weighs twelve grams and sits in the palm of your hand. Guards around the propellers mean it bounces off a wall instead of stopping, which makes the living room a fair place to learn.",
+				"Start on the slowest of the three speeds, then try the one-key flip. A full charge from any USB port takes half an hour and gives about seven minutes in the air, so most people keep a second battery handy."
+			],
+			"upsells": [
+				"ampora-slim-power-bank"
+			]
+		},
+		{
+			"slug": "sonaro-fold-anc-headphones",
+			"name": "Sonaro Fold ANC Headphones",
+			"category": "audio",
+			"brand": "sonaro",
+			"image": "images/products/fold-anc-headphones-photo.jpg",
+			"gallery": [
+				"images/products/fold-anc-headphones-angle-photo.jpg",
+				"images/products/fold-anc-headphones-side-photo.jpg",
+				"images/products/fold-anc-headphones-controls-photo.jpg"
+			],
+			"sku": "SON-FOLD-ANC",
+			"sales": 300,
+			"featured": true,
+			"regular": "149",
+			"sale": "119",
+			"sale_days": 6,
+			"stock": 14,
+			"weight": 0.26,
+			"size": [
+				19,
+				16.5,
+				8
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android",
+					"Mac",
+					"Windows"
+				],
+				"Battery life": "40 hours, or 30 hours with noise cancelling on",
+				"Charging": "USB-C, 10 minutes for 4 hours of play",
+				"Connectivity": "Bluetooth 5.3, plus a 3.5 mm cable for flights",
+				"Noise cancelling": "Hybrid, three levels",
+				"Ports": "USB-C, 3.5 mm audio",
+				"Warranty": "2 years"
+			},
+			"short": "Folding over-ear headphones with hybrid noise cancelling and forty hours on a charge. The cable is in the box for the plane.",
+			"description": [
+				"Two microphones on each cup listen to the room and cancel the hum of buses, trains and air conditioning. Three levels let you keep some of the world in when you need to hear your stop.",
+				"The ear cups fold flat into the case, the buttons sit under your thumb, and ten minutes on USB-C gives four hours of play. When the battery does run out, plug in the 3.5 mm cable and keep listening."
+			],
+			"upsells": [
+				"ampora-20w-usb-c-charger",
+				"ampora-braid-cable"
+			],
+			"cross_sells": [
+				"ampora-slim-power-bank"
+			]
+		},
+		{
+			"slug": "orbiq-band-3",
+			"name": "Orbiq Band 3 Fitness Tracker",
+			"category": "wearables",
+			"brand": "orbiq",
+			"image": "images/products/band-3-midnight-photo.jpg",
+			"gallery": [
+				"images/products/band-3-lime-photo.jpg",
+				"images/products/band-3-lilac-photo.jpg",
+				"images/products/band-3-rose-photo.jpg",
+				"images/products/band-3-sky-photo.jpg",
+				"images/products/band-3-navy-photo.jpg"
+			],
+			"sku": "ORB-BAND3",
+			"sales": 210,
+			"featured": true,
+			"regular": "45",
+			"stock": null,
+			"weight": 0.023,
+			"size": [
+				4.7,
+				1.8,
+				1.2
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Battery life": "14 days",
+				"Water resistance": "5 ATM, fine for swimming",
+				"Display": "0.96-inch OLED",
+				"Connectivity": "Bluetooth 5.0",
+				"Strap colours": "Midnight, lime, lilac, rose, sky and navy",
+				"Warranty": "1 year"
+			},
+			"short": "Steps, sleep and heart rate on a band you forget you are wearing, with two weeks between charges and six strap colours.",
+			"description": [
+				"The Band 3 counts steps, tracks sleep and reads your heart rate through the day, then sends it all to the free app on iPhone or Android. Notifications buzz on your wrist so the phone can stay in your bag.",
+				"It is rated to 5 ATM, so it can stay on in the pool and the shower. The pod clicks out of the strap to charge, and a charge lasts around two weeks."
+			],
+			"upsells": [
+				"orbiq-halo-smart-band"
+			]
+		},
+		{
+			"slug": "sonaro-brick-speaker",
+			"name": "Sonaro Brick Bluetooth Speaker",
+			"category": "audio",
+			"brand": "sonaro",
+			"image": "images/products/brick-speaker-photo.jpg",
+			"gallery": [
+				"images/products/brick-speaker-angle-photo.jpg",
+				"images/products/brick-speaker-ports-photo.jpg",
+				"images/products/brick-speaker-desk-photo.jpg"
+			],
+			"sku": "SON-BRICK",
+			"sales": 150,
+			"featured": true,
+			"regular": "59",
+			"stock": 4,
+			"weight": 0.33,
+			"size": [
+				15.5,
+				6.5,
+				6
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android",
+					"Mac",
+					"Windows"
+				],
+				"Battery life": "12 hours",
+				"Charging": "Micro-USB, 5 W",
+				"Ports": "Micro-USB, 3.5 mm AUX in, microSD",
+				"Connectivity": "Bluetooth 5.0",
+				"Warranty": "2 years"
+			},
+			"short": "A rubber-armoured speaker that fills a room for twelve hours, plays from a microSD card and takes a cable when friends have no Bluetooth.",
+			"description": [
+				"The grille is moulded rubber, so the Brick survives being knocked off a shelf. Inside, a single full-range driver and a passive radiator give it more bass than its size suggests.",
+				"Round the back sit a micro-USB charging port, a 3.5 mm input for anything with a headphone socket and a microSD slot that plays music files on its own, no phone needed."
+			],
+			"upsells": [
+				"sonaro-pebble-mini-speaker"
+			]
+		},
+		{
+			"slug": "ampora-20w-usb-c-charger",
+			"name": "Ampora 20 W USB-C Charger",
+			"category": "power-cables",
+			"brand": "ampora",
+			"image": "images/products/usb-c-charger-photo.jpg",
+			"sku": "AMP-20W",
+			"sales": 260,
+			"regular": "19",
+			"stock": null,
+			"weight": 0.06,
+			"size": [
+				4.5,
+				4.5,
+				2.8
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android",
+					"iPad"
+				],
+				"Charging": "20 W USB-C Power Delivery",
+				"Ports": "1 × USB-C",
+				"Plug": "US two-pin, folding",
+				"Warranty": "2 years"
+			},
+			"short": "A small 20 W USB-C charger that fast-charges current phones and tablets, with prongs that fold away for the bag.",
+			"description": [
+				"Twenty watts over USB-C Power Delivery takes a recent phone from flat to half full in about thirty minutes. The charger agrees the fastest safe rate with the device, so it is just as happy with earbuds.",
+				"The prongs fold into the body, and the casing stays cool to the touch during a full charge."
+			],
+			"upsells": [
+				"ampora-braid-cable"
+			]
+		},
+		{
+			"slug": "sonaro-pebble-mini-speaker",
+			"name": "Sonaro Pebble Mini Speaker",
+			"category": "audio",
+			"brand": "sonaro",
+			"image": "images/products/pebble-mini-speaker-photo.jpg",
+			"sku": "SON-PEBBLE",
+			"sales": 120,
+			"featured": true,
+			"regular": "25",
+			"stock": 40,
+			"weight": 0.11,
+			"size": [
+				6,
+				6,
+				5.5
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Battery life": "6 hours",
+				"Water resistance": "IPX4, splash resistant",
+				"Connectivity": "Bluetooth 5.0, 3.5 mm in",
+				"Warranty": "1 year"
+			},
+			"short": "A round speaker the size of a fist, with a loop to clip it to a bag and six hours of music on a charge.",
+			"description": [
+				"The Pebble clips onto a backpack strap and shrugs off splashes, so it goes to the park, the beach and the bathroom. Six hours of play is enough for an afternoon out.",
+				"Pair two by Bluetooth for stereo, or plug in the 3.5 mm cable for a device without Bluetooth."
+			]
+		},
+		{
+			"slug": "sonaro-sprint-sport-earphones",
+			"name": "Sonaro Sprint Sport Earphones",
+			"category": "audio",
+			"brand": "sonaro",
+			"image": "images/products/sprint-sport-earphones-photo.jpg",
+			"gallery": [
+				"images/products/sprint-sport-earphones-hooks-photo.jpg",
+				"images/products/sprint-sport-earphones-remote-photo.jpg"
+			],
+			"sku": "SON-SPRINT",
+			"sales": 140,
+			"regular": "49",
+			"stock": 22,
+			"weight": 0.022,
+			"size": [
+				12,
+				7,
+				2.5
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Battery life": "9 hours",
+				"Charging": "Micro-USB, 1.5 hours to full",
+				"Water resistance": "IPX5, sweat and rain resistant",
+				"Connectivity": "Bluetooth 5.0",
+				"Warranty": "1 year"
+			},
+			"short": "Ear-hook earphones that stay put on a run, shrug off sweat and rain, and last nine hours between charges.",
+			"description": [
+				"Flexible hooks hold each earphone in place, so they stay in through sprints and burpees. The flat cable resists tangles and sits behind your neck.",
+				"The in-line remote changes tracks, sets the volume and takes calls. IPX5 means sweat and rain are fine; a swim is not."
+			]
+		},
+		{
+			"slug": "sonaro-splash-shower-speaker",
+			"name": "Sonaro Splash Shower Speaker",
+			"category": "audio",
+			"brand": "sonaro",
+			"image": "images/products/splash-shower-speaker-photo.jpg",
+			"gallery": [
+				"images/products/splash-shower-speaker-glass-photo.jpg"
+			],
+			"sku": "SON-SPLASH",
+			"sales": 95,
+			"regular": "29",
+			"sale": "22",
+			"sale_days": 3,
+			"stock": 18,
+			"weight": 0.15,
+			"size": [
+				9,
+				9,
+				5
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Battery life": "8 hours",
+				"Water resistance": "IPX7, survives 1 m of water for 30 minutes",
+				"Connectivity": "Bluetooth 5.0",
+				"Mount": "Suction cup for tiles and glass",
+				"Warranty": "1 year"
+			},
+			"short": "A waterproof speaker that sticks to the shower screen, with big buttons you can press with wet hands.",
+			"description": [
+				"Press the suction cup against tiles or glass and the Splash stays there. It is rated IPX7, so it survives being submerged, never mind the spray.",
+				"The buttons on top skip tracks, change the volume and answer calls through the built-in microphone."
+			]
+		},
+		{
+			"slug": "sonaro-petal-on-ear-headphones",
+			"name": "Sonaro Petal On-Ear Headphones",
+			"category": "audio",
+			"brand": "sonaro",
+			"image": "images/products/petal-on-ear-headphones-photo.jpg",
+			"sku": "SON-PETAL",
+			"sales": 70,
+			"regular": "35",
+			"sale": "28",
+			"stock": 30,
+			"weight": 0.12,
+			"size": [
+				17,
+				15,
+				6
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android",
+					"iPad",
+					"Chromebook"
+				],
+				"Connectivity": "3.5 mm cable, 1.2 m",
+				"Volume": "Limited to 85 dB for younger ears",
+				"Warranty": "1 year"
+			},
+			"short": "Light wired headphones with a volume limit for younger listeners, and nothing to charge.",
+			"description": [
+				"The Petal weighs 120 grams and folds flat into a school bag. A built-in limiter keeps the volume at or below 85 dB.",
+				"There is no battery to run down: plug the 3.5 mm cable into a tablet or laptop and they play. Use a USB-C adapter for phones without a headphone socket."
+			]
+		},
+		{
+			"slug": "sonaro-cube-desk-speakers",
+			"name": "Sonaro Cube Desk Speakers",
+			"category": "audio",
+			"brand": "sonaro",
+			"image": "images/products/cube-desk-speakers-photo.jpg",
+			"sku": "SON-CUBE",
+			"sales": 60,
+			"regular": "69",
+			"stock": null,
+			"weight": 0.9,
+			"size": [
+				12,
+				8,
+				8
+			],
+			"specs": {
+				"Works with": [
+					"Mac",
+					"Windows",
+					"Chromebook"
+				],
+				"Connectivity": "3.5 mm input, USB powered",
+				"Speaker power": "2 × 5 W",
+				"Warranty": "2 years"
+			},
+			"short": "A pair of tilted cube speakers that point the sound at you, powered from the laptop’s USB port.",
+			"description": [
+				"Each cube sits on a wedge stand that angles its driver up towards your ears, so the sound reaches you instead of the desk.",
+				"One USB cable powers both, and a 3.5 mm lead carries the sound. There is no power brick and nothing to pair."
+			]
+		},
+		{
+			"slug": "orbiq-halo-smart-band",
+			"name": "Orbiq Halo Smart Band",
+			"category": "wearables",
+			"brand": "orbiq",
+			"image": "images/products/halo-smart-band-photo.jpg",
+			"sku": "ORB-HALO",
+			"sales": 85,
+			"regular": "89",
+			"sale": "74",
+			"sale_days": 9,
+			"stock": 9,
+			"weight": 0.032,
+			"size": [
+				4.6,
+				2.3,
+				1.3
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Battery life": "4 days",
+				"Water resistance": "5 ATM",
+				"Display": "Curved colour touchscreen",
+				"Charging": "Magnetic clip, 2 hours",
+				"Warranty": "2 years"
+			},
+			"short": "A smart band with a curved colour touchscreen for messages, workouts and the time at a glance.",
+			"description": [
+				"The Halo shows messages, calls and calendar alerts on a bright curved screen, and tracks workouts, sleep and heart rate in the background.",
+				"It is rated 5 ATM for swimming. A magnetic clip charges it in about two hours, and a charge lasts around four days."
+			]
+		},
+		{
+			"slug": "ampora-braid-cable",
+			"name": "Ampora Braid Charging Cable",
+			"category": "power-cables",
+			"brand": "ampora",
+			"image": "images/products/braid-cable-graphite-photo.jpg",
+			"gallery": [
+				"images/products/braid-cable-champagne-photo.jpg"
+			],
+			"sku": "AMP-BRAID",
+			"sales": 230,
+			"weight": 0.045,
+			"size": [
+				11,
+				9,
+				2.2
+			],
+			"specs": {
+				"Colour": [
+					"Graphite",
+					"Champagne"
+				],
+				"Works with": "iPhone",
+				"Connectors": "USB-A to Lightning",
+				"Length": "1.5 m",
+				"Charging": "Up to 12 W",
+				"Warranty": "Lifetime"
+			},
+			"variations": {
+				"Graphite": {
+					"sku": "AMP-BRAID-GR",
+					"regular": "19"
+				},
+				"Champagne": {
+					"sku": "AMP-BRAID-CH",
+					"regular": "19",
+					"sale": "15"
+				}
+			},
+			"short": "A braided charging cable with metal plugs, in graphite or champagne, that outlasts the plastic one in the box.",
+			"description": [
+				"A nylon braid over the cable and strain relief at both plugs stop it fraying where it bends. It is one and a half metres long, enough to reach the bed from the socket.",
+				"It charges at up to 12 W and syncs at USB 2.0 speed, and it carries a lifetime warranty."
+			],
+			"upsells": [
+				"ampora-20w-usb-c-charger"
+			]
+		},
+		{
+			"slug": "ampora-everyday-cable",
+			"name": "Ampora Everyday Cable",
+			"category": "power-cables",
+			"brand": "ampora",
+			"image": "images/products/everyday-cable-photo.jpg",
+			"sku": "AMP-EVERY",
+			"sales": 110,
+			"regular": "9",
+			"stock": null,
+			"weight": 0.03,
+			"size": [
+				10,
+				9,
+				1.6
+			],
+			"specs": {
+				"Works with": [
+					"iPhone"
+				],
+				"Connectors": "USB-A to Lightning",
+				"Length": "1 m",
+				"Charging": "Up to 12 W",
+				"Warranty": "1 year"
+			},
+			"short": "A plain white charging cable, one metre long, for the second socket, the car and the desk drawer.",
+			"description": [
+				"The spare cable everyone needs: one metre, white, and rated for 12 W charging and data sync."
+			]
+		},
+		{
+			"slug": "ampora-slim-power-bank",
+			"name": "Ampora Slim 5200 Power Bank",
+			"category": "power-cables",
+			"brand": "ampora",
+			"image": "images/products/slim-power-bank-photo.jpg",
+			"sku": "AMP-SLIM52",
+			"sales": 175,
+			"regular": "29",
+			"sale": "24",
+			"sale_days": 5,
+			"stock": 12,
+			"weight": 0.13,
+			"size": [
+				9.6,
+				4.2,
+				2.2
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Capacity": "5,200 mAh",
+				"Charging": "10 W out, 5 W in",
+				"Ports": "1 × USB-A out, micro-USB in",
+				"Charge lights": "Four blue LEDs",
+				"Warranty": "1 year"
+			},
+			"short": "A pocket power bank with about one full phone charge inside and four lights that show what is left.",
+			"description": [
+				"5,200 mAh is about one full charge for most phones once conversion losses are counted, in a block the size of a lipstick case.",
+				"Press the side button and the four lights show how much is left. It charges from any micro-USB lead overnight."
+			],
+			"upsells": [
+				"ampora-everyday-cable"
+			]
+		},
+		{
+			"slug": "lumet-pocket-tripod",
+			"name": "Lumet Pocket Tripod",
+			"category": "camera-creator",
+			"brand": "lumet",
+			"image": "images/products/pocket-tripod-photo.jpg",
+			"sku": "LUM-TRIPOD",
+			"sales": 90,
+			"regular": "19",
+			"stock": null,
+			"weight": 0.09,
+			"size": [
+				14,
+				3,
+				3
+			],
+			"specs": {
+				"Works with": [
+					"Cameras",
+					"iPhone",
+					"Android"
+				],
+				"Maximum height": "24 cm",
+				"Load": "Up to 1 kg",
+				"Mount": "1/4-inch screw with a ball head",
+				"Warranty": "1 year"
+			},
+			"short": "A tabletop tripod with a ball head, for compact cameras and, with a clamp, phones.",
+			"description": [
+				"The legs fold into a 14 cm stick that slips into a jacket pocket and open to stand on a table, a wall or a rock.",
+				"The ball head tilts and turns and locks with one knob. It holds up to a kilogram: a compact camera, or a phone in a clamp mount."
+			],
+			"cross_sells": [
+				"lumet-clamp-phone-mount"
+			]
+		},
+		{
+			"slug": "lumet-reach-selfie-stick",
+			"name": "Lumet Reach Selfie Stick",
+			"category": "camera-creator",
+			"brand": "lumet",
+			"image": "images/products/reach-selfie-stick-photo.jpg",
+			"sku": "LUM-REACH",
+			"sales": 65,
+			"regular": "24",
+			"stock": null,
+			"weight": 0.15,
+			"size": [
+				21,
+				4.5,
+				3
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Length": "21 cm folded, 80 cm open",
+				"Connectivity": "Bluetooth shutter button",
+				"Warranty": "1 year"
+			},
+			"short": "A selfie stick that folds to the length of a hand and reaches 80 cm, with a Bluetooth shutter in the grip.",
+			"description": [
+				"Five sections slide out to 80 cm and lock. The phone clamp opens wide enough for phones in their cases.",
+				"Pair the shutter button by Bluetooth once and it fires the camera from the grip, no timer needed."
+			]
+		},
+		{
+			"slug": "lumet-halo-webcam",
+			"name": "Lumet Halo Webcam",
+			"category": "camera-creator",
+			"brand": "lumet",
+			"image": "images/products/halo-webcam-photo.jpg",
+			"sku": "LUM-HALOCAM",
+			"sales": 80,
+			"regular": "59",
+			"sale": "49",
+			"sale_days": 2,
+			"stock": 11,
+			"weight": 0.09,
+			"size": [
+				7.5,
+				5.5,
+				5
+			],
+			"specs": {
+				"Works with": [
+					"Mac",
+					"Windows",
+					"Chromebook"
+				],
+				"Video": "1080p at 30 fps",
+				"Ports": "USB-A, 1.5 m cable",
+				"Microphone": "Built in, noise reducing",
+				"Warranty": "2 years"
+			},
+			"short": "A 1080p webcam that clips to any monitor or laptop lid, with a microphone that tunes out the room.",
+			"description": [
+				"The clip grips anything from a thin laptop lid to a thick monitor. Plug the USB-A cable in and it works with video calling apps on Mac, Windows and Chromebook, no driver needed.",
+				"The built-in microphone filters out keyboard clatter and fan noise, so the person on the other end hears you, not the room."
+			]
+		},
+		{
+			"slug": "lumet-clamp-phone-mount",
+			"name": "Lumet Clamp Phone Mount",
+			"category": "camera-creator",
+			"brand": "lumet",
+			"image": "images/products/clamp-phone-mount-photo.jpg",
+			"sku": "LUM-CLAMP",
+			"sales": 55,
+			"regular": "22",
+			"stock": "outofstock",
+			"weight": 0.07,
+			"size": [
+				11,
+				6,
+				3
+			],
+			"specs": {
+				"Works with": [
+					"iPhone",
+					"Android"
+				],
+				"Fits": "Phones 56 to 90 mm wide",
+				"Mount": "1/4-inch thread for any tripod",
+				"Warranty": "1 year"
+			},
+			"short": "A spring clamp that holds a phone on any tripod, upright or sideways.",
+			"description": [
+				"The clamp opens from 56 to 90 mm, enough for most phones in a slim case, and rotates between portrait and landscape.",
+				"A standard 1/4-inch thread underneath fits every camera tripod, including the Lumet Pocket Tripod."
+			]
+		},
+		{
+			"slug": "tactra-tk87-keyboard",
+			"name": "Tactra TK87 Mechanical Keyboard",
+			"category": "desk-gadgets",
+			"brand": "tactra",
+			"image": "images/products/tk87-mechanical-keyboard-photo.jpg",
+			"sku": "TAC-TK87",
+			"sales": 75,
+			"regular": "119",
+			"stock": 6,
+			"weight": 0.85,
+			"size": [
+				36,
+				13.5,
+				4
+			],
+			"specs": {
+				"Works with": [
+					"Mac",
+					"Windows"
+				],
+				"Switches": "Linear, hot-swappable",
+				"Layout": "Tenkeyless, 87 keys",
+				"Connectivity": "Detachable USB-C cable",
+				"Lighting": "Side underglow",
+				"Warranty": "2 years"
+			},
+			"short": "A tenkeyless mechanical keyboard with hot-swappable switches and a soft glow along its sides.",
+			"description": [
+				"Dropping the number pad brings the mouse closer to the keys, which is kinder to your shoulder. The full set of function and arrow keys stays.",
+				"Every switch pulls out and swaps without soldering, and the USB-C cable detaches for the bag. Keycaps for Mac and Windows are both in the box."
+			],
+			"upsells": [
+				"tactra-glide-mouse"
+			]
+		},
+		{
+			"slug": "tactra-glide-mouse",
+			"name": "Tactra Glide Wireless Mouse",
+			"category": "desk-gadgets",
+			"brand": "tactra",
+			"image": "images/products/glide-mouse-photo.jpg",
+			"sku": "TAC-GLIDE",
+			"sales": 100,
+			"featured": true,
+			"regular": "29",
+			"stock": null,
+			"weight": 0.075,
+			"size": [
+				10.5,
+				6.2,
+				3.8
+			],
+			"specs": {
+				"Works with": [
+					"Mac",
+					"Windows",
+					"Chromebook"
+				],
+				"Connectivity": "2.4 GHz USB receiver",
+				"Battery life": "Up to 12 months on one AA",
+				"Warranty": "2 years"
+			},
+			"short": "A quiet wireless mouse that runs for a year on one AA battery.",
+			"description": [
+				"The receiver stores inside the mouse for travel. Plug it in and the mouse works straight away, no pairing.",
+				"Quiet buttons make it a good choice for shared offices and late nights."
+			]
+		},
+		{
+			"slug": "tactra-travel-mouse",
+			"name": "Tactra Travel Mouse",
+			"category": "desk-gadgets",
+			"brand": "tactra",
+			"image": "images/products/travel-mouse-photo.jpg",
+			"sku": "TAC-TRAVEL",
+			"sales": 45,
+			"regular": "24",
+			"sale": "19",
+			"sale_days": 4,
+			"stock": 16,
+			"weight": 0.07,
+			"size": [
+				9.9,
+				6,
+				3.9
+			],
+			"specs": {
+				"Works with": [
+					"Mac",
+					"Windows"
+				],
+				"Connectivity": "Bluetooth 5.0 and a USB receiver",
+				"Battery life": "Up to 18 months on two AAA",
+				"Warranty": "1 year"
+			},
+			"short": "A compact mouse that pairs by Bluetooth or its tiny receiver, for laptops on the move.",
+			"description": [
+				"Use Bluetooth for a laptop with no spare ports, or the receiver for a desktop. A switch underneath flips between the two."
+			]
+		},
+		{
+			"slug": "tactra-arc-desk-lamp",
+			"name": "Tactra Arc Desk Lamp",
+			"category": "desk-gadgets",
+			"brand": "tactra",
+			"image": "images/products/arc-desk-lamp-photo.jpg",
+			"sku": "TAC-ARC",
+			"sales": 40,
+			"regular": "49",
+			"stock": null,
+			"weight": 1.4,
+			"size": [
+				42,
+				16,
+				16
+			],
+			"specs": {
+				"Light": "Warm to daylight in five steps",
+				"Ports": "USB-A charging port in the base",
+				"Reach": "Arm swings 180 degrees",
+				"Warranty": "2 years"
+			},
+			"short": "A balanced-arm LED desk lamp with five shades of white and a USB port in its base for your phone.",
+			"description": [
+				"The arm swings and tilts to put light where you work, and stays where you leave it. Five steps run from warm evening light to cool daylight for detailed work.",
+				"A USB-A port in the heavy base charges a phone overnight."
+			]
+		},
+		{
+			"slug": "tactra-portable-drive-kit",
+			"name": "Tactra Portable Drive Kit 1 TB",
+			"category": "storage",
+			"brand": "tactra",
+			"image": "images/products/portable-drive-kit-photo.jpg",
+			"sku": "TAC-DRIVE1TB",
+			"sales": 70,
+			"regular": "89",
+			"stock": 10,
+			"weight": 0.16,
+			"size": [
+				11.5,
+				7.8,
+				1.2
+			],
+			"specs": {
+				"Works with": [
+					"Mac",
+					"Windows",
+					"Chromebook"
+				],
+				"Capacity": "1 TB",
+				"Ports": "USB 3.0 micro-B",
+				"In the box": "Drive, mini USB card reader, SD adapter",
+				"Warranty": "3 years"
+			},
+			"short": "A 1 TB portable drive with a mini card reader in the box, for backing up photos straight off the card.",
+			"description": [
+				"Plug the drive into any USB port and drag files across: it comes formatted to work with Mac, Windows and Chromebook.",
+				"The mini card reader in the box reads microSD and SD cards, so photos go from camera to backup without a laptop slot."
+			],
+			"cross_sells": [
+				"tactra-pro-sd-card"
+			]
+		},
+		{
+			"slug": "tactra-duo-flash-drive",
+			"name": "Tactra Duo Flash Drive 32 GB",
+			"category": "storage",
+			"brand": "tactra",
+			"image": "images/products/duo-flash-drive-photo.jpg",
+			"sku": "TAC-DUO32",
+			"sales": 50,
+			"regular": "12",
+			"stock": null,
+			"weight": 0.008,
+			"size": [
+				5.2,
+				1.9,
+				0.9
+			],
+			"specs": {
+				"Works with": [
+					"Mac",
+					"Windows",
+					"Chromebook"
+				],
+				"Capacity": "32 GB",
+				"Ports": "USB 3.0 Type-A",
+				"Warranty": "5 years"
+			},
+			"short": "A 32 GB USB 3.0 flash drive with a cap that clips to the back, so it never gets lost.",
+			"description": [
+				"Enough room for a few thousand photos or a term of documents, at USB 3.0 speed."
+			]
+		},
+		{
+			"slug": "tactra-pro-sd-card",
+			"name": "Tactra Pro SD Card 128 GB",
+			"category": "storage",
+			"brand": "tactra",
+			"image": "images/products/pro-sd-card-photo.jpg",
+			"sku": "TAC-SD128",
+			"sales": 65,
+			"regular": "19",
+			"stock": null,
+			"weight": 0.002,
+			"size": [
+				3.2,
+				2.4,
+				0.21
+			],
+			"specs": {
+				"Works with": [
+					"Cameras",
+					"Mac",
+					"Windows"
+				],
+				"Capacity": "128 GB",
+				"Speed": "Up to 100 MB/s read",
+				"Warranty": "Lifetime"
+			},
+			"short": "A 128 GB SD card fast enough for 4K video, for cameras, drones and laptops with an SD slot.",
+			"description": [
+				"Write speeds keep up with 4K video and bursts of photos, and 100 MB/s reads make offloading quick."
+			]
+		}
+	],
+	"reviews": {
+		"lumet-nano-drone": [
+			[
+				"Theo M.",
+				5,
+				"Bought it to learn on before a bigger drone. The guards saved it from the bookcase twice in the first evening."
+			],
+			[
+				"Ines K.",
+				4,
+				"Tiny and great fun. Seven minutes goes fast, so I bought a second battery straight away."
+			]
+		],
+		"sonaro-fold-anc-headphones": [
+			[
+				"Priya N.",
+				5,
+				"The middle noise cancelling level is perfect for the train: the rumble goes, but I still hear announcements."
+			],
+			[
+				"Marcus L.",
+				5,
+				"Folded flat into my laptop bag. The size drawing on the page matched exactly what arrived."
+			],
+			[
+				"Sam O.",
+				4,
+				"Comfortable for hours. I wish the case were a little smaller, but it protects them well."
+			]
+		],
+		"orbiq-band-3": [
+			[
+				"Hana S.",
+				5,
+				"Two weeks between charges is real. I swim twice a week with it and it reads the laps fine."
+			],
+			[
+				"Jules R.",
+				4,
+				"The lilac strap is lovely. The screen is small, so I mostly use the app on my Android phone."
+			]
+		],
+		"sonaro-brick-speaker": [
+			[
+				"Leo D.",
+				5,
+				"Louder than it looks, and the microSD slot means it plays in the garage without my phone."
+			],
+			[
+				"Aiko T.",
+				4,
+				"Solid little speaker. Battery lasted a full Saturday barbecue."
+			]
+		],
+		"ampora-20w-usb-c-charger": [
+			[
+				"Nadia F.",
+				5,
+				"Charges my phone noticeably faster than the old cube, and the prongs fold away."
+			],
+			[
+				"Owen B.",
+				5,
+				"Small enough to leave in the travel bag permanently."
+			]
+		],
+		"sonaro-pebble-mini-speaker": [
+			[
+				"Maya R.",
+				4,
+				"Clipped to my bag at the park all afternoon. Not much bass, as you would expect at this size."
+			]
+		],
+		"sonaro-sprint-sport-earphones": [
+			[
+				"Diego A.",
+				5,
+				"They finally stay in on a run. The hooks are soft and the remote is easy to find."
+			]
+		],
+		"sonaro-splash-shower-speaker": [
+			[
+				"Clara V.",
+				5,
+				"Has stuck to the shower screen for a month without dropping once."
+			]
+		],
+		"orbiq-halo-smart-band": [
+			[
+				"Raj P.",
+				4,
+				"Bright screen and reliable notifications from my iPhone. Four days of battery is about right."
+			]
+		],
+		"ampora-braid-cable": [
+			[
+				"Elif Y.",
+				5,
+				"The champagne colour matches my phone, and the braid has not frayed after months in a bag."
+			]
+		],
+		"ampora-slim-power-bank": [
+			[
+				"Tom H.",
+				4,
+				"Gets my phone from nearly empty to full once, as the page says. The lights are handy."
+			]
+		],
+		"lumet-halo-webcam": [
+			[
+				"Grace W.",
+				5,
+				"Clipped onto my thick monitor without trouble, and colleagues say I sound clearer."
+			]
+		],
+		"tactra-tk87-keyboard": [
+			[
+				"Kenji I.",
+				5,
+				"Swapped the switches in ten minutes. The underglow is subtle, which I prefer."
+			],
+			[
+				"Ana G.",
+				4,
+				"Great typing feel. Check the actual size drawing: it is longer than my old compact one."
+			]
+		],
+		"tactra-portable-drive-kit": [
+			[
+				"Paul E.",
+				5,
+				"The little card reader in the box is the best part. Photo backups straight from the SD card."
+			]
+		],
+		"lumet-pocket-tripod": [
+			[
+				"Sofia C.",
+				4,
+				"Light and steady for my compact camera. Paired it with the phone clamp for video calls."
+			]
+		]
+	},
+	"post_categories": {
+		"guides": {
+			"name": "Guides",
+			"description": "Plain explanations of batteries, ratings and connectors, before you buy."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"content": []
+		},
+		"guides": {
+			"title": "Bench guides",
+			"content": []
+		},
+		"drops": {
+			"title": "Today’s drops",
+			"template": "page-drops",
+			"content": [
+				[
+					"p",
+					"Every offer here has an end date set on the product itself. The countdown is real: when it reaches zero, the price goes back."
+				]
+			]
+		},
+		"compatibility": {
+			"title": "Will it work with my device?",
+			"template": "page-compatibility",
+			"content": [
+				[
+					"h2",
+					"How we label compatibility"
+				],
+				[
+					"p",
+					"Every gadget lists the devices it works with, under Works with on its page. Pick your device above and the shop shows only what fits it."
+				],
+				[
+					"h2",
+					"Connectors at a glance"
+				],
+				[
+					"ul",
+					[
+						"USB-C: the oval plug on recent phones, tablets and laptops.",
+						"Lightning: the flat plug on older iPhones.",
+						"USB-A: the rectangular plug on chargers and computers.",
+						"3.5 mm: the round headphone socket."
+					]
+				],
+				[
+					"h2",
+					"Still not sure?"
+				],
+				[
+					"p",
+					"Send us the model of your phone, tablet or laptop and we will tell you what fits before you buy. And if a gadget does not work with the device it lists, it comes back free."
+				]
+			]
+		},
+		"help": {
+			"title": "Help, delivery and returns",
+			"content": [
+				[
+					"h2",
+					"Delivery"
+				],
+				[
+					"p",
+					"Orders placed by 2 pm on a working day leave the same day. Standard delivery takes two to four working days, and it is free over $50."
+				],
+				[
+					"h2",
+					"Returns"
+				],
+				[
+					"p",
+					"Changed your mind? Return any unused gadget in its box within 30 days of delivery for a full refund. If it does not work with the device listed on its page, we pay the return postage."
+				],
+				[
+					"h2",
+					"Questions"
+				],
+				[
+					"details",
+					"Does the actual size drawing include the box?",
+					"No. It is drawn from the gadget’s own dimensions, without packaging."
+				],
+				[
+					"details",
+					"What does the countdown on a drop mean?",
+					"It runs to the end date set on that offer. When it reaches zero, the price returns to normal."
+				],
+				[
+					"details",
+					"How is battery life measured?",
+					"It is the maker’s figure at a moderate volume or brightness. Heavy use, cold weather and noise cancelling shorten it."
+				],
+				[
+					"details",
+					"Do you ship outside the United States?",
+					"Not yet. We deliver to addresses in the United States only."
+				]
+			]
+		},
+		"about": {
+			"title": "About the bench",
+			"content": [
+				[
+					"p",
+					"Gadgetix started on a workbench, with a box of gadgets that did not fit the phones they were bought for. Every product we stock now says what it works with, how big it really is and how long it runs, before it reaches your basket."
+				],
+				[
+					"h2",
+					"What we check"
+				],
+				[
+					"ul",
+					[
+						"That it pairs with or plugs into the devices it lists.",
+						"That its size and weight match the page.",
+						"That the battery life on the page is the maker’s figure, not a guess."
+					]
+				],
+				[
+					"p",
+					"If something on a page is wrong, tell us and we will fix it."
+				]
+			]
+		}
+	},
+	"posts": {
+		"how-much-is-5200-mah": {
+			"title": "How much battery is 5,200 mAh, really?",
+			"excerpt": "Power bank capacity is printed at the battery’s own voltage. Here is how many phone charges it turns into.",
+			"image": "images/products/slim-power-bank-photo.jpg",
+			"days": 3,
+			"category": "guides",
+			"content": [
+				[
+					"p",
+					"The number on a power bank is the capacity of the cells inside it, measured at their own voltage of about 3.7 volts. Your phone charges at 5 volts or more, and some energy is lost as heat on the way, so not all of it reaches the phone."
+				],
+				[
+					"h2",
+					"A quick rule of thumb"
+				],
+				[
+					"p",
+					"Expect roughly two thirds of the printed capacity to reach the phone. A 5,200 mAh bank delivers around 3,400 mAh, which is about one full charge for most current phones."
+				],
+				[
+					"ul",
+					[
+						"5,200 mAh: about one phone charge.",
+						"10,000 mAh: about two.",
+						"20,000 mAh: four, or a laptop top-up if it has USB-C Power Delivery."
+					]
+				],
+				[
+					"h2",
+					"Speed matters as much as size"
+				],
+				[
+					"p",
+					"A large bank with a slow 5 W output can take hours to refill a phone. Look at the charging figure on the product page as well as the capacity."
+				]
+			]
+		},
+		"water-ratings-explained": {
+			"title": "IPX4, IPX7, 5 ATM: water ratings, explained",
+			"excerpt": "What the numbers on earphones, speakers and bands promise, and what they do not.",
+			"image": "images/products/splash-shower-speaker-glass-photo.jpg",
+			"days": 9,
+			"category": "guides",
+			"content": [
+				[
+					"p",
+					"An IP rating has two digits. The first is protection against dust, the second against water. An X means that part was not tested."
+				],
+				[
+					"h2",
+					"The water digit"
+				],
+				[
+					"ul",
+					[
+						"IPX4: splashes from any direction. Fine for sweat and light rain.",
+						"IPX5: jets of water. Running in the rain, rinsing under a tap.",
+						"IPX7: submerged to 1 m for 30 minutes. A drop in the bath.",
+						"IPX8: deeper and longer, as the maker states."
+					]
+				],
+				[
+					"h2",
+					"Watches and bands use ATM"
+				],
+				[
+					"p",
+					"Wearables are rated in atmospheres of pressure. 5 ATM survives swimming in a pool; it is not meant for diving."
+				],
+				[
+					"p",
+					"Every Gadgetix product page shows its rating on a scale, so you can compare them side by side."
+				]
+			]
+		},
+		"will-it-charge-my-phone": {
+			"title": "Lightning, USB-C or wireless: will it charge my phone?",
+			"excerpt": "Three questions that tell you which cable and charger fit the phone in your pocket.",
+			"image": "images/products/braid-cable-champagne-photo.jpg",
+			"days": 15,
+			"category": "guides",
+			"content": [
+				[
+					"p",
+					"Most charging mistakes come down to the plug at the phone end. Check that first, then the charger."
+				],
+				[
+					"h2",
+					"1. What is the socket on your phone?"
+				],
+				[
+					"p",
+					"Recent phones use USB-C. Some older iPhones use Lightning. The Works with line on every product page tells you which phones a cable or charger is for."
+				],
+				[
+					"h2",
+					"2. How fast can your phone charge?"
+				],
+				[
+					"p",
+					"A charger only delivers what the phone accepts. A 20 W USB-C charger fast-charges most current phones; a bigger one will not make them faster."
+				],
+				[
+					"h2",
+					"3. Do you need a wire at all?"
+				],
+				[
+					"p",
+					"Wireless pads are convenient on a desk or bedside table, but slower than a cable, and they need a phone that supports wireless charging."
+				]
+			]
+		}
+	},
+	"menu": {
+		"title": "Gadget categories",
+		"slug": "gadget-categories",
+		"location": "primary",
+		"items": [
+			{
+				"label": "Audio",
+				"product_cat": "audio"
+			},
+			{
+				"label": "Wearables",
+				"product_cat": "wearables"
+			},
+			{
+				"label": "Power and cables",
+				"product_cat": "power-cables"
+			},
+			{
+				"label": "Camera and creator",
+				"product_cat": "camera-creator"
+			},
+			{
+				"label": "Desk gadgets",
+				"product_cat": "desk-gadgets"
+			},
+			{
+				"label": "Storage",
+				"product_cat": "storage"
+			},
+			{
+				"label": "Compatibility",
+				"page": "compatibility"
+			},
+			{
+				"label": "Guides",
+				"page": "guides"
+			}
+		]
+	}
+}

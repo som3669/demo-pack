@@ -7,11 +7,11 @@ Themes ship no demo content of their own. A store owner installs the theme and S
 **Appearance → Import demo**, and Storefill downloads the pack for the active theme from this
 repository. Only data is downloaded — JSON and images. Nothing here is executed.
 
-The Vitrena, eBasket, Luma and Unishop packs declare WooCommerce as a required plugin. Storefill's
-admin import button installs or updates and activates these requirements before importing demo
-content, keeping the import screen open through WooCommerce activation. Packs without automatic
-plugin declarations, older Storefill versions and WP-CLI imports need their plugins prepared
-manually first.
+The Vitrena, eBasket, Luma, Unishop and Gadgetix packs declare WooCommerce as a required plugin.
+Storefill's admin import button installs or updates and activates these requirements before
+importing demo content, keeping the import screen open through WooCommerce activation. Packs without
+automatic plugin declarations, older Storefill versions and WP-CLI imports need their plugins
+prepared manually first.
 
 This repository must stay **public**, with **GitHub Pages** turned on (Settings → Pages → Deploy
 from a branch → `main`, folder `/ (root)`). Storefill downloads packs from
@@ -27,6 +27,7 @@ every file as it is.
 | `ebasket` | eBasket | A neighbourhood grocer: 37 products in 8 aisles with pack sizes, nutrition panels and diet tags, offers with end dates, a variable coffee, reviews, recipes, store pages and a demo checkout with free delivery over £40 |
 | `luma` | Luma | A skincare formulary: 39 products in 8 categories, each with key actives and their strength, pH, texture, skin type, a Concern and a Routine step (global attributes), size, period after opening and the full ingredient list; products sold by shade and by size, offers with end dates, reviews, a journal, store pages and a demo checkout with free delivery over £35 |
 | `vitrena` | Vitrena | A showroom for considered electronics: 23 products from nine makers in five departments, with warranty, box contents and condition (ex-display, certified pre-owned) as attributes, brands, reviews, Visit, Services and Makers pages on the theme's page templates, a journal and a demo checkout |
+| `gadgetix` | Gadgetix | A gadget store: 25 products in six gadget categories, each with the devices it works with (a filterable global attribute), battery life, charging, capacity, water rating, ports and real dimensions for the actual size drawing; offers with end dates, low and sold-out stock, a cable sold in two colours, five makers as brands, reviews, buying guides, store pages and a demo checkout with free delivery over $50 |
 
 ## Layout
 
