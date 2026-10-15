@@ -28,6 +28,7 @@ every file as it is.
 | `luma` | Luma | A skincare formulary: 39 products in 8 categories, each with key actives and their strength, pH, texture, skin type, a Concern and a Routine step (global attributes), size, period after opening and the full ingredient list; products sold by shade and by size, offers with end dates, reviews, a journal, store pages and a demo checkout with free delivery over £35 |
 | `vitrena` | Vitrena | A showroom for considered electronics: 23 products from nine makers in five departments, with warranty, box contents and condition (ex-display, certified pre-owned) as attributes, brands, reviews, Visit, Services and Makers pages on the theme's page templates, a journal and a demo checkout |
 | `gadgetix` | Gadgetix | A gadget store: 25 products in six gadget categories, each with the devices it works with (a filterable global attribute), battery life, charging, capacity, water rating, ports and real dimensions for the actual size drawing; offers with end dates, low and sold-out stock, a cable sold in two colours, five makers as brands, reviews, buying guides, store pages and a demo checkout with free delivery over $50 |
+| `yantra` | Yantra, Yantra Pro | A business site with no store: Home, About, Pricing and Contact built from the theme's own block patterns, six posts in four categories, a main and a footer menu, four footer widgets, an announcement bar, a sticky header and a logo. Schema 2: needs the Storefill version that reads it. Listed twice in `index.json`, as `yantra` and `yantra-pro`, because Yantra Pro is a theme of its own, not a child theme |
 
 ## Layout
 
@@ -99,13 +100,17 @@ After pushing, check that GitHub Pages published it
 
 All text in a pack is plain text: Storefill strips any HTML from it.
 
-## pack.json, schema 1
+## pack.json, schemas 1 and 2
 
 Every section except `schema` is optional.
 
+A pack that uses anything marked **schema 2** below says `"schema": 2`. Storefill versions that
+predate it then decline the pack with a clear message, rather than importing pages with their
+patterns left out. Everything else works in both.
+
 | Key | Shape | Notes |
 |---|---|---|
-| `schema` | `1` | Required. |
+| `schema` | `1` or `2` | Required. |
 | `required_plugins` | `[ { "slug", "name", "file", "minimum_version" } ]` | WordPress.org plugins prepared before the admin content import starts. Repeat the declaration in the pack's index entry. See Required plugins. |
 | `files` | `[ "settings.json", "customizer.json", "widgets.json" ]` | The optional files this pack has. |
 | `images` | `{ "<ref>": "<alt text>" }` | Every image the pack uses, including any named in `customizer.json`. A ref is a path in the pack folder (`images/products/phone.jpg`) or a theme file (`theme:assets/images/hero.jpg`). Leave alt empty for product photos: WooCommerce then uses the product name. |
@@ -115,9 +120,10 @@ Every section except `schema` is optional.
 | `products` | list | See below. |
 | `reviews` | `{ "<product slug>": [ [ "Reviewer", 5, "Text" ] ] }` | Ratings 1–5. |
 | `post_categories` | `{ "<slug>": { "name", "description" } }` | |
-| `pages` | `{ "<slug>": { "title", "content", "template" } }` | See Content. `template` is a page template of the theme, such as `page-no-title`; it is used only when the theme has it. |
+| `pages` | `{ "<slug>": { "title", "content", "template" } }` | See Content. `template` is a page template of the theme, by its file (`page-templates/full-width.php`) or, schema 2, by its file name alone (`full-width`); it is used only when the theme has it. |
 | `posts` | `{ "<slug>": { "title", "excerpt", "image", "days", "category", "content" } }` | `days`: how many days ago it was published. |
-| `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`. Block themes get a navigation menu; classic themes get a menu assigned to `location`. |
+| `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`; schema 2 adds `{ "label", "post" }` and an `"anchor"` on any of them (`{ "label": "Features", "page": "home", "anchor": "features" }`). Block themes get a navigation menu; classic themes get a menu assigned to `location`, which in schema 2 may be a list (`[ "primary", "mobile" ]`). Locations the theme does not register are skipped. |
+| `menus` | list of menus shaped like `menu` | Schema 2. More menus, such as a footer menu, each with its own location. |
 
 ### Required plugins
 
@@ -200,7 +206,9 @@ Page, post and widget content is a list of items, each `[ type, value ]`:
 | `cover` | `{ "image", "heading", "text", "buttons", "height", "level" }` | A full-width banner: the image under a dark overlay, with a heading, text and buttons. `height` is in pixels (240–800, 520 by default). `level` is `1` for the banner that opens a page (the default: its heading is the page's main heading) or `2` for a later one, such as a closing call to action. |
 | `buttons` | list of links, and optionally `"center"` as a third element | A row of buttons; the first is filled, the rest outlined. Links are written like menu items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }` (a product slug), `{ "label", "product_cat" }` or `{ "label", "url" }`. A link to a page works from any page of the pack, whatever their order. `"center"` centres the row, as under a product grid. |
 | `products` | `{ "show", "count" }` | A product grid (WooCommerce's Product Collection block). `show`: `featured`, `on-sale`, `newest` or `best-selling`. Skipped without WooCommerce. |
-| `posts` | `{ "count", "category" }` | The latest posts, with their featured images. `category` is a slug from `post_categories`: only its posts are listed, so posts the site already had, such as WordPress's "Hello world!", stay out of the demo's list. |
+| `posts` | `{ "count", "category", "layout" }` | The latest posts, with their featured images. `category` is a slug from `post_categories` (in schema 2 also a list of slugs): only their posts are listed, so posts the site already had, such as WordPress's "Hello world!", stay out of the demo's list. Schema 2: `"layout": "list"` lists titles and dates only, as in a footer column. |
+| `pattern` | `{ "slug", "links", "categories" }` | Schema 2. A block pattern the active theme registers, such as `yantra/hero`, written into the page as ordinary blocks (patterns inside it too), so it can be edited like any other. The theme's own words and look come with it, and its words are translated with the theme. `links` points the pattern's placeholder links (`href="#"`) at the pack's pages by the text they show: `[ { "text": "Get started", "page": "pricing" } ]`, written like menu items; text that does not match, as in another language, keeps its placeholder. `categories` (slugs from `post_categories`) limits the pattern's post lists (Query Loops) to the demo's posts. A pattern the theme does not have is left out and named in the import log. |
+| `links` | list of links, written like menu items | Schema 2. A list of links, such as a column of pages in a footer widget. |
 | `section` | `{ "items", "background", "text" }` | A full-width section holding other items, with space above and below. `background` and `text` are optional colours: a slug from the theme's palette, such as `accent-5` or `contrast`, or a hex colour such as `#f4f4f1`. Palette colours follow the theme's style variation, so prefer them in block themes; an unknown slug is skipped. Sections sit flush against each other, so alternating backgrounds form bands. |
 | `media` | `{ "image", "heading", "text", "buttons", "side" }` | A photo beside a heading, text and buttons, to spotlight one product or idea. `"side": "right"` puts the photo on the right. Stacks on phones. |
 | `quotes` | list of `{ "text", "name", "rating" }` | A row of customer quotes; `rating` (1–5) shows as stars above the quote. |
@@ -275,6 +283,8 @@ for classic themes, and for block themes one of the theme's own style variations
 - `{ "image": "<ref>" }` becomes the ID of that pack image (a logo); `{ "image_url": "<ref>" }`
   becomes its address (a header or background image). The image must be listed in `pack.json`
   `images`.
+- Schema 2: `{ "page_url": "<slug>" }` and `{ "post_url": "<slug>" }` become the address of one of
+  the pack's pages or posts, such as where a header button or an announcement leads.
 - `nav_menu_locations` and `sidebars_widgets` are ignored here: the menu's `location` and
   `widgets.json` set those.
 - `global_styles.variation` (block themes only) is a style variation the theme ships, by the title
