@@ -1,0 +1,44 @@
+{
+	"schema": 1,
+	"sidebars": {
+		"footer-1": [
+			{
+				"title": "Daybook",
+				"content": [
+					[ "p", "A weekly notebook of small good things: recipes we cook, a garden that mostly works, things made by hand and evenings off." ]
+				]
+			}
+		],
+		"footer-2": [
+			{
+				"title": "Explore",
+				"content": [
+					[ "links", [
+						{ "label": "Cook", "category": "cook" },
+						{ "label": "Grow", "category": "grow" },
+						{ "label": "Make", "category": "make" },
+						{ "label": "Rest", "category": "rest" },
+						{ "label": "About", "page": "about" }
+					] ]
+				]
+			}
+		],
+		"footer-3": [
+			{
+				"title": "Latest stories",
+				"content": [
+					[ "posts", { "count": 4, "layout": "list", "category": [ "cook", "grow", "make", "rest" ] } ]
+				]
+			}
+		],
+		"footer-4": [
+			{
+				"title": "Say hello",
+				"content": [
+					[ "lines", [ "hello@daybook.example", "New stories every Sunday morning" ] ],
+					[ "links", [ { "label": "Contact us", "page": "contact" } ] ]
+				]
+			}
+		]
+	}
+}

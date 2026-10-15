@@ -1,0 +1,284 @@
+{
+	"images/posts/veg-box-photo.jpg": {
+		"openverse_id": "053c96d9-f115-43f2-b3a9-fdf48ed5c8ae",
+		"title": "Fruit Vegetables",
+		"creator": "Jamie Hamel-Smith",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/F8B73CPSBK.jpg",
+		"landing_url": "https://stocksnap.io/photo/fruit-vegetables-F8B73CPSBK",
+		"original_download": "StockSnap Free Download form on landing_url (photoId F8B73CPSBK), original 4502x3240",
+		"reused_from": "demo-pack ebasket/images/scenes/hero-basket-photo.jpg",
+		"output": "1600x900, cropped and recompressed for Daybook"
+	},
+	"images/posts/tomato-penne-photo.jpg": {
+		"openverse_id": "6fcab870-3a26-4751-a7c5-79b8acb421af",
+		"title": "Pizzeria Bella Italia (Crépieux-la-Pape) - Penne all'arrabbiata (2) (février 2020)",
+		"creator": "Benoît Prieur",
+		"source": "wikimedia",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Pizzeria_Bella_Italia_%28Cr%C3%A9pieux-la-Pape%29_-_Penne_all%27arrabbiata_%282%29_%28f%C3%A9vrier_2020%29.jpg",
+		"landing_url": "https://commons.wikimedia.org/w/index.php?curid=86489649",
+		"reused_from": "demo-pack ebasket/images/scenes/recipe-pasta-photo.jpg",
+		"output": "864x1080, cropped and recompressed for Daybook"
+	},
+	"images/posts/overnight-oats-photo.jpg": {
+		"openverse_id": "fdda4a8a-89b8-49f1-a437-a55a8e9f5962",
+		"title": "A bowl of overnight oats topped with fig and raspberries",
+		"creator": "Anariel Design",
+		"source": "wordpress",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://pd.w.org/2022/01/97361d40ace3691f2.73474279.jpg",
+		"landing_url": "https://wordpress.org/photos/photo/97361d40ac/",
+		"reused_from": "demo-pack ebasket/images/scenes/recipe-oats-photo.jpg",
+		"output": "1080x1080, cropped and recompressed for Daybook"
+	},
+	"images/posts/corn-salad-photo.jpg": {
+		"openverse_id": "d7a2f874-fcc4-4396-951e-7c04654ea087",
+		"title": "Salad Bowl",
+		"creator": "Foodie Girl",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/NI4QYAXHA0.jpg",
+		"landing_url": "https://stocksnap.io/photo/salad-bowl-NI4QYAXHA0",
+		"original_download": "StockSnap Free Download form on landing_url (photoId NI4QYAXHA0), original 6000x4000",
+		"reused_from": "demo-pack ebasket/images/scenes/recipe-salad-photo.jpg",
+		"output": "1600x900, cropped and recompressed for Daybook"
+	},
+	"images/posts/sourdough-photo.jpg": {
+		"openverse_id": "8a5e52b1-d400-47eb-a255-501f577251ab",
+		"title": "Baking Bread",
+		"creator": "Igor Trepeshchenok",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/XXNL0MZLOR.jpg",
+		"landing_url": "https://stocksnap.io/photo/baking-bread-XXNL0MZLOR",
+		"original_download": "StockSnap Free Download form on landing_url (photoId XXNL0MZLOR), original 6000x4000",
+		"reused_from": "demo-pack ebasket/images/products/sourdough-photo.jpg",
+		"output": "1000x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/baguettes-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Jackson Monichan",
+		"creator_page": "https://wordpress.org/photos/author/jackson23m/",
+		"source": "https://wordpress.org/photos/photo/7406a28fc9/",
+		"file": "https://pd.w.org/2026/06/7406a28fc94bcb986.38718954.jpg",
+		"original_size": [
+			3648,
+			2432
+		],
+		"description": "Many freshly baked golden-brown baguettes bread loaves dusted with flour rest on a metal cooling rack. It shows crisp crusts with diagonal scoring along the tops.",
+		"reused_from": "demo-pack yantra/images/posts/baguettes-photo.jpg",
+		"output": "1600x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/cinnamon-buns-photo.jpg": {
+		"openverse_id": "c8108840-feb8-4161-85cd-bc8febd283d6",
+		"title": "Cinnamon Roll",
+		"creator": "Snufkin",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/Z60VG68WD0.jpg",
+		"landing_url": "https://stocksnap.io/photo/cinnamon-roll-Z60VG68WD0",
+		"original_download": "StockSnap Free Download form on landing_url (photoId Z60VG68WD0), original 6000x4000",
+		"reused_from": "demo-pack ebasket/images/products/cinnamon-buns-photo.jpg",
+		"output": "1000x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/peppers-photo.jpg": {
+		"openverse_id": "07d4d072-68e2-49b7-827b-f857f20afe8f",
+		"title": "Fresh Peppers",
+		"creator": "Foodie Girl",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/BBGPLGHY5B.jpg",
+		"landing_url": "https://stocksnap.io/photo/fresh-peppers-BBGPLGHY5B",
+		"original_download": "StockSnap Free Download form on landing_url (photoId BBGPLGHY5B), original 6000x4000",
+		"reused_from": "demo-pack ebasket/images/scenes/market-produce-photo.jpg",
+		"output": "1600x900, cropped and recompressed for Daybook"
+	},
+	"images/posts/radish-photo.jpg": {
+		"openverse_id": "9fdceb5a-5749-431b-9270-1025925a1798",
+		"title": "Root Plant",
+		"creator": "Les comptoirs mitoyens",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/492V93M0G5.jpg",
+		"landing_url": "https://stocksnap.io/photo/root-plant-492V93M0G5",
+		"original_download": "StockSnap Free Download form on landing_url (photoId 492V93M0G5), original 1920x1281",
+		"reused_from": "demo-pack ebasket/images/scenes/grower-photo.jpg",
+		"output": "1600x900, cropped and recompressed for Daybook"
+	},
+	"images/posts/leaves-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Topher",
+		"creator_page": "https://wordpress.org/photos/author/topher1kenobe/",
+		"source": "https://wordpress.org/photos/photo/758690ccb5/",
+		"file": "https://pd.w.org/2025/11/758690ccb56c67505.69654345.jpeg",
+		"original_size": [
+			5712,
+			3213
+		],
+		"description": "Autumn leaves evenly covering the ground in the entire picture.  Seen from about 4 feet, 1.2 meters, above the ground.",
+		"reused_from": "demo-pack yantra/images/posts/leaves-photo.jpg",
+		"output": "1600x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/veg-basket-photo.jpg": {
+		"openverse_id": "e386996c-f8ff-4516-a852-3ae2144a8f6f",
+		"title": "Basket of Vegetables (Unsplash)",
+		"creator": "Markus Spiske markusspiske",
+		"source": "wikimedia",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Basket_of_Vegetables_%28Unsplash%29.jpg",
+		"landing_url": "https://commons.wikimedia.org/w/index.php?curid=61663250",
+		"reused_from": "demo-pack ebasket/images/scenes/delivery-photo.jpg",
+		"output": "1600x900, cropped and recompressed for Daybook"
+	},
+	"images/posts/vine-tomatoes-photo.jpg": {
+		"openverse_id": "6c3af578-f403-4214-9b44-5b9b2ed36aea",
+		"title": "Red Tomatoes",
+		"creator": "Krzysztof%20Puszczy%u0144ski",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/GB9LU1L8RG.jpg",
+		"landing_url": "https://stocksnap.io/photo/red-tomatoes-GB9LU1L8RG",
+		"original_download": "StockSnap Free Download form on landing_url (photoId GB9LU1L8RG), original 3796x2541",
+		"reused_from": "demo-pack ebasket/images/products/vine-tomatoes-photo.jpg",
+		"output": "1000x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/tulips-photo.jpg": {
+		"openverse_id": "56172b67-7c9b-43c2-bcdf-d1fe07766f40",
+		"title": "Red Tulip",
+		"creator": "Lisa Fotios",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://cdn.stocksnap.io/img-thumbs/960w/JTPSGVPRFX.jpg",
+		"landing_url": "https://stocksnap.io/photo/red-tulip-JTPSGVPRFX",
+		"original_download": "StockSnap Free Download form on landing_url (photoId JTPSGVPRFX), original 5903x3935",
+		"reused_from": "demo-pack ebasket/images/products/tulips-photo.jpg",
+		"output": "1000x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/pencils-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Orianna Radomile",
+		"creator_page": "https://wordpress.org/photos/author/oriannaradomile/",
+		"source": "https://wordpress.org/photos/photo/28769c130d/",
+		"file": "https://pd.w.org/2026/03/28769c130d3b7d7b2.95343123.jpg",
+		"original_size": [
+			3024,
+			2268
+		],
+		"description": "A top-down view of sharpened colored pencils in a radial bundle, forming a bright starburst on a clean white background.",
+		"reused_from": "demo-pack yantra/images/posts/pencils-photo.jpg",
+		"output": "1000x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/sketch-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Reyes Martínez",
+		"creator_page": "https://wordpress.org/photos/author/rmartinezduque/",
+		"source": "https://wordpress.org/photos/photo/33862250b3/",
+		"file": "https://pd.w.org/2022/03/33862250b30bac6b4.11610927.jpg",
+		"original_size": [
+			3888,
+			2592
+		],
+		"description": "Painting with watercolors",
+		"reused_from": "demo-pack yantra/images/posts/plan-photo.jpg",
+		"output": "1600x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/desk-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "onikart",
+		"creator_page": "https://wordpress.org/photos/author/onikart/",
+		"source": "https://wordpress.org/photos/photo/57467d1217/",
+		"file": "https://pd.w.org/2025/03/57467d12178a1a806.96122139.jpg",
+		"original_size": [
+			5760,
+			3840
+		],
+		"description": "A colorful assortment of stationery items scattered on a white surface, including pencils, pens, paperclips, pushpins, erasers, rulers, a compass, a pencil sharpener, sticky notes, and a utility knife.",
+		"reused_from": "demo-pack yantra/images/posts/stationery-photo.jpg",
+		"output": "800x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/candles-photo.jpg": {
+		"openverse_id": "1fea383a-cf80-42ac-93f3-f492bef89441",
+		"title": "A collection of yellow beeswax candles, varying in thickness, hang from thin white wicks against a light wooden background. The candles range from slender tapers to thicker, almost cylindrical shapes, showcasing different stages of production. Spotted from Prague Castle.",
+		"creator": "Bigul Malayi",
+		"source": "wordpress",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://pd.w.org/2025/03/66567eae3f2729600.42744391.jpg",
+		"landing_url": "https://wordpress.org/photos/photo/66567eae3f/",
+		"reused_from": "demo-pack ebasket/images/products/beeswax-candles-photo.jpg",
+		"output": "1000x1000, cropped and recompressed for Daybook"
+	},
+	"images/posts/candle-photo.jpg": {
+		"title": "Candle Table",
+		"creator": "Matt Moloney",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"landing_url": "https://stocksnap.io/photo/candle-table-CGNTB37FCT",
+		"original_download": "StockSnap Free Download form on landing_url (photoId CGNTB37FCT), original 5000x3462",
+		"output": "1600x1067, cropped and recompressed for Daybook",
+		"reused_from": "demo-pack luma/images/scenes/night-routine-photo.jpg"
+	},
+	"images/posts/balm-photo.jpg": {
+		"title": "Wellness Cosmetics",
+		"creator": "Authentic Stock",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"landing_url": "https://stocksnap.io/photo/wellness-cosmetics-G1GDELKCV6",
+		"original_download": "StockSnap Free Download form on landing_url (photoId G1GDELKCV6), original 5394x3596",
+		"output": "1200x900, cropped and recompressed for Daybook",
+		"reused_from": "demo-pack luma/images/scenes/routine-flatlay-photo.jpg"
+	},
+	"images/posts/hat-photo.jpg": {
+		"title": "Vacation Flat lay",
+		"creator": "Matt Bango",
+		"source": "stocksnap",
+		"license": "cc0",
+		"license_version": "1.0",
+		"landing_url": "https://stocksnap.io/photo/vacation-flatlay-DRX6PC9W6N",
+		"original_download": "StockSnap Free Download form on landing_url (photoId DRX6PC9W6N), original 5180x3453",
+		"output": "1280x1280, cropped and recompressed for Daybook",
+		"reused_from": "demo-pack luma/images/scenes/sun-care-photo.jpg"
+	},
+	"images/posts/dried-flowers-photo.jpg": {
+		"openverse_id": "b698b5f6-e1dc-47dc-b83b-2a9aa0fc0cdc",
+		"title": "",
+		"creator": "Unattributed",
+		"source": "rawpixel",
+		"license": "cc0",
+		"license_version": "1.0",
+		"url": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg1NjUyOTEtaW1hZ2Uta3d5cDVsbWQuanBn.jpg",
+		"landing_url": "https://www.rawpixel.com/image/5949312/free-public-domain-cc0-photo",
+		"original_download": "Openverse url (Rawpixel editor_1024, the largest size without a watermark), 1024x588",
+		"output": "1024x588, cropped and recompressed for Daybook",
+		"reused_from": "demo-pack luma/images/scenes/botanicals-photo.jpg"
+	},
+	"images/posts/hourglass-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Rashed Hossain",
+		"creator_page": "https://wordpress.org/photos/author/wprashed/",
+		"source": "https://wordpress.org/photos/photo/2466ac5ecf/",
+		"file": "https://pd.w.org/2026/10/2466ac5ecfa537207.42997513.jpg",
+		"original_size": [
+			4032,
+			3024
+		],
+		"description": "Wooden hourglass with pink sand beside a wooden pen holder on a desk.",
+		"reused_from": "demo-pack yantra/images/posts/hourglass-photo.jpg",
+		"output": "1600x1000, cropped and recompressed for Daybook"
+	}
+}

@@ -29,6 +29,7 @@ every file as it is.
 | `vitrena` | Vitrena | A showroom for considered electronics: 23 products from nine makers in five departments, with warranty, box contents and condition (ex-display, certified pre-owned) as attributes, brands, reviews, Visit, Services and Makers pages on the theme's page templates, a journal and a demo checkout |
 | `gadgetix` | Gadgetix | A gadget store: 25 products in six gadget categories, each with the devices it works with (a filterable global attribute), battery life, charging, capacity, water rating, ports and real dimensions for the actual size drawing; offers with end dates, low and sold-out stock, a cable sold in two colours, five makers as brands, reviews, buying guides, store pages and a demo checkout with free delivery over $50 |
 | `yantra` | Yantra, Yantra Pro | A business site with no store: Home, About, Pricing and Contact built from the theme's own block patterns, six posts in four categories, a main and a footer menu, four footer widgets, an announcement bar, a sticky header and a logo. Schema 2: needs the Storefill version that reads it. Listed twice in `index.json`, as `yantra` and `yantra-pro`, because Yantra Pro is a theme of its own, not a child theme |
+| `daybook` | Yantra Pro | A lifestyle blog in four sections, Cook, Grow, Make and Rest, with the latest posts as the homepage: 23 posts with photos and tags, a three-part bread series (Yantra Pro's series), a quote post, four sticky posts for the featured slider, About, Contact and Privacy pages, a main and a footer menu linking the sections, four footer widgets, a logo, and Yantra Pro's blog settings: Masonry with infinite scroll, a table of contents, floating share buttons, view counts, the author page header, dark mode with a header switch, a date and a note in the header's top row, and the phone bar. Schema 3: needs the Storefill version that reads it |
 
 ## Layout
 
@@ -100,17 +101,18 @@ After pushing, check that GitHub Pages published it
 
 All text in a pack is plain text: Storefill strips any HTML from it.
 
-## pack.json, schemas 1 and 2
+## pack.json, schemas 1, 2 and 3
 
 Every section except `schema` is optional.
 
-A pack that uses anything marked **schema 2** below says `"schema": 2`. Storefill versions that
-predate it then decline the pack with a clear message, rather than importing pages with their
-patterns left out. Everything else works in both.
+A pack that uses anything marked **schema 2** below says `"schema": 2`, and one that uses
+anything marked **schema 3** says `"schema": 3`. Storefill versions that predate it then decline
+the pack with a clear message, rather than importing pages with their patterns or links left out.
+Everything else works in all three.
 
 | Key | Shape | Notes |
 |---|---|---|
-| `schema` | `1` or `2` | Required. |
+| `schema` | `1`, `2` or `3` | Required. |
 | `required_plugins` | `[ { "slug", "name", "file", "minimum_version" } ]` | WordPress.org plugins prepared before the admin content import starts. Repeat the declaration in the pack's index entry. See Required plugins. |
 | `files` | `[ "settings.json", "customizer.json", "widgets.json" ]` | The optional files this pack has. |
 | `images` | `{ "<ref>": "<alt text>" }` | Every image the pack uses, including any named in `customizer.json`. A ref is a path in the pack folder (`images/products/phone.jpg`) or a theme file (`theme:assets/images/hero.jpg`). Leave alt empty for product photos: WooCommerce then uses the product name. |
@@ -121,8 +123,9 @@ patterns left out. Everything else works in both.
 | `reviews` | `{ "<product slug>": [ [ "Reviewer", 5, "Text" ] ] }` | Ratings 1–5. |
 | `post_categories` | `{ "<slug>": { "name", "description" } }` | |
 | `pages` | `{ "<slug>": { "title", "content", "template" } }` | See Content. `template` is a page template of the theme, by its file (`page-templates/full-width.php`) or, schema 2, by its file name alone (`full-width`); it is used only when the theme has it. |
-| `posts` | `{ "<slug>": { "title", "excerpt", "image", "days", "category", "content" } }` | `days`: how many days ago it was published. |
-| `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`; schema 2 adds `{ "label", "post" }` and an `"anchor"` on any of them (`{ "label": "Features", "page": "home", "anchor": "features" }`). Block themes get a navigation menu; classic themes get a menu assigned to `location`, which in schema 2 may be a list (`[ "primary", "mobile" ]`). Locations the theme does not register are skipped. |
+| `posts` | `{ "<slug>": { "title", "excerpt", "image", "days", "category", "content" } }` | `days`: how many days ago it was published. Schema 3 adds `tags` (tag names, created when missing), `"sticky": true` (sticky posts, such as the slides of a featured posts slider), `format` (a post format such as `quote`; the theme decides how it shows) and `terms`: terms of the theme's own post taxonomies by slug, as defined under `taxonomies` (`"terms": { "themor_series": [ "bread-step-by-step" ] }`). |
+| `taxonomies` | `{ "<taxonomy>": { "<slug>": { "name", "description" } } }` | Schema 3. Terms of a taxonomy the theme registers for posts, such as Yantra Pro's series (`themor_series`), for posts to name under `terms`. Categories, tags and post formats have keys of their own; a taxonomy the site does not register is skipped and named in the import log. A series lists its posts in the order they were published, so give them `days` from the first part to the last. |
+| `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`; schema 2 adds `{ "label", "post" }` and an `"anchor"` on any of them (`{ "label": "Features", "page": "home", "anchor": "features" }`); schema 3 adds `{ "label", "category" }`, a post category from `post_categories`. Block themes get a navigation menu; classic themes get a menu assigned to `location`, which in schema 2 may be a list (`[ "primary", "mobile" ]`). Locations the theme does not register are skipped. |
 | `menus` | list of menus shaped like `menu` | Schema 2. More menus, such as a footer menu, each with its own location. |
 
 ### Required plugins
@@ -204,7 +207,8 @@ Page, post and widget content is a list of items, each `[ type, value ]`:
 | `details` | `[ "details", "Question", "Answer" ]` | A details (FAQ) block. |
 | `img` | image ref | An image. |
 | `cover` | `{ "image", "heading", "text", "buttons", "height", "level" }` | A full-width banner: the image under a dark overlay, with a heading, text and buttons. `height` is in pixels (240–800, 520 by default). `level` is `1` for the banner that opens a page (the default: its heading is the page's main heading) or `2` for a later one, such as a closing call to action. |
-| `buttons` | list of links, and optionally `"center"` as a third element | A row of buttons; the first is filled, the rest outlined. Links are written like menu items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }` (a product slug), `{ "label", "product_cat" }` or `{ "label", "url" }`. A link to a page works from any page of the pack, whatever their order. `"center"` centres the row, as under a product grid. |
+| `quote` | `[ "quote", "Text", "Who said it" ]` | Schema 3. One quote in the flow of the text, such as a pull quote in a post; who said it is optional. A quote post shows its first quote in lists. (`quotes` puts quotes side by side in wide columns.) |
+| `buttons` | list of links, and optionally `"center"` as a third element | A row of buttons; the first is filled, the rest outlined. Links are written like menu items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }` (a product slug), `{ "label", "product_cat" }`, `{ "label", "category" }` (a post category, schema 3) or `{ "label", "url" }`. A link to a page works from any page of the pack, whatever their order. `"center"` centres the row, as under a product grid. |
 | `products` | `{ "show", "count" }` | A product grid (WooCommerce's Product Collection block). `show`: `featured`, `on-sale`, `newest` or `best-selling`. Skipped without WooCommerce. |
 | `posts` | `{ "count", "category", "layout" }` | The latest posts, with their featured images. `category` is a slug from `post_categories` (in schema 2 also a list of slugs): only their posts are listed, so posts the site already had, such as WordPress's "Hello world!", stay out of the demo's list. Schema 2: `"layout": "list"` lists titles and dates only, as in a footer column. |
 | `pattern` | `{ "slug", "links", "categories" }` | Schema 2. A block pattern the active theme registers, such as `yantra/hero`, written into the page as ordinary blocks (patterns inside it too), so it can be edited like any other. The theme's own words and look come with it, and its words are translated with the theme. `links` points the pattern's placeholder links (`href="#"`) at the pack's pages by the text they show: `[ { "text": "Get started", "page": "pricing" } ]`, written like menu items; text that does not match, as in another language, keeps its placeholder. `categories` (slugs from `post_categories`) limits the pattern's post lists (Query Loops) to the demo's posts. A pattern the theme does not have is left out and named in the import log. |
@@ -241,7 +245,7 @@ Dashboard settings. Every section is optional.
 | Key | Applied | Notes |
 |---|---|---|
 | `options` | On every import | Keep it to settings the demo cannot work without. |
-| `homepage` | When the owner ticks "Use the demo homepage and blog page" | Page slugs from `pack.json`. |
+| `homepage` | When the owner ticks "Use the demo homepage and blog page" | Page slugs from `pack.json`. Schema 3: `"latest_posts": true` opens the site on its latest posts instead, as a blog does. |
 | `demo_site` | Only with "This is a public demo site" or `--demo-site` | `options` (site title, address, currency, store visibility…), `returns_page` (a page slug), `checkout` (a payment method that takes no money, and delivery methods), `hide_sample_content` (unpublishes WordPress's sample post and page). |
 
 Removing the demo puts every setting back the way it was.

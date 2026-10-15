@@ -134,6 +134,17 @@
 			"requires": {
 				"wordpress": "6.5"
 			}
+		},
+		{
+			"id": "daybook",
+			"theme": "yantra-pro",
+			"title": "Daybook lifestyle blog",
+			"description": "A lifestyle blog in four sections, Cook, Grow, Make and Rest: 23 posts with photos and tags, a three-part bread series, a quote post, a featured slider of sticky posts, Masonry with infinite scroll, a table of contents, floating share buttons, view counts, dark mode with a header switch, a phone bar, About, Contact and Privacy pages, menus, footer widgets and a logo. For Yantra Pro.",
+			"version": "1.0.0",
+			"path": "daybook/pack.json",
+			"requires": {
+				"wordpress": "6.5"
+			}
 		}
 	]
 }

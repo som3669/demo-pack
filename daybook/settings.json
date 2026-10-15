@@ -1,0 +1,13 @@
+{
+	"schema": 1,
+	"homepage": {
+		"latest_posts": true
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Daybook",
+			"blogdescription": "Cook. Grow. Make. Rest."
+		},
+		"hide_sample_content": true
+	}
+}
