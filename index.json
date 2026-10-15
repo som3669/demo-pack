@@ -112,6 +112,28 @@
 				"wordpress": "7.0",
 				"woocommerce": "11.0"
 			}
+		},
+		{
+			"id": "yantra",
+			"theme": "yantra",
+			"title": "Yantra business site",
+			"description": "A calm business site: a homepage built from Yantra's patterns with features, figures, testimonials, plans, questions and the latest posts; About, Pricing and Contact pages; six posts in four categories with photos; a main and a footer menu, four footer widgets, an announcement bar, a sticky header, a logo and the Customizer settings to match. Needs no plugin besides Storefill.",
+			"version": "1.0.0",
+			"path": "yantra/pack.json",
+			"requires": {
+				"wordpress": "6.5"
+			}
+		},
+		{
+			"id": "yantra-pro",
+			"theme": "yantra-pro",
+			"title": "Yantra business site",
+			"description": "A calm business site: a homepage built from Yantra's patterns with features, figures, testimonials, plans, questions and the latest posts; About, Pricing and Contact pages; six posts in four categories with photos; a main and a footer menu, four footer widgets, an announcement bar, a sticky header, a logo and the Customizer settings to match. Needs no plugin besides Storefill.",
+			"version": "1.0.0",
+			"path": "yantra/pack.json",
+			"requires": {
+				"wordpress": "6.5"
+			}
 		}
 	]
 }
