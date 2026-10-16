@@ -1,0 +1,86 @@
+{
+	"schema": 1,
+	"sidebars": {
+		"footer-1": [
+			{
+				"title": "Kerbside",
+				"content": [
+					[
+						"p",
+						"A neighbourhood café, roastery and bakery. Coffee roasted a few doors down, bread baked before you're up."
+					],
+					[
+						"lines",
+						[
+							"12 Kerb Lane",
+							"Bristol BS2 0QX"
+						]
+					]
+				]
+			}
+		],
+		"footer-2": [
+			{
+				"title": "The café",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "Menu",
+								"page": "menu"
+							},
+							{
+								"label": "Order ahead",
+								"page": "order-ahead"
+							},
+							{
+								"label": "Coffee at home",
+								"product_cat": "coffee-at-home"
+							},
+							{
+								"label": "Our story",
+								"page": "about"
+							},
+							{
+								"label": "Journal",
+								"page": "journal"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-3": [
+			{
+				"title": "Opening hours",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "hours-widget"
+						}
+					]
+				]
+			}
+		],
+		"footer-4": [
+			{
+				"title": "Say hello",
+				"content": [
+					[
+						"lines",
+						[
+							"0117 496 0123",
+							"hello@kerbside.example"
+						]
+					],
+					[
+						"p",
+						"Private hire and wholesale coffee: ask at the counter or drop us a line."
+					]
+				]
+			}
+		]
+	}
+}

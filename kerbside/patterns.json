@@ -1,0 +1,149 @@
+{
+	"schema": 1,
+	"patterns": {
+		"hero": {
+			"title": "Café hero with an order receipt",
+			"file": "patterns/hero.html",
+			"links": [
+				{
+					"text": "Order ahead",
+					"page": "order-ahead"
+				},
+				{
+					"text": "See the menu",
+					"page": "menu"
+				}
+			]
+		},
+		"fresh": {
+			"title": "Out of the oven: featured bakes",
+			"file": "patterns/fresh.html",
+			"links": [
+				{
+					"text": "Order ahead",
+					"page": "order-ahead"
+				}
+			]
+		},
+		"menu-bento": {
+			"title": "The menu in short, as photo tiles",
+			"file": "patterns/menu-bento.html",
+			"links": [
+				{
+					"text": "The full menu",
+					"page": "menu"
+				}
+			]
+		},
+		"order-ahead": {
+			"title": "Order ahead in three steps",
+			"file": "patterns/order-ahead.html",
+			"links": [
+				{
+					"text": "Start an order",
+					"page": "order-ahead"
+				}
+			]
+		},
+		"beans": {
+			"title": "Coffee at home, as three receipts",
+			"file": "patterns/beans.html",
+			"links": [
+				{
+					"text": "Choose your grind",
+					"product": "house-blend"
+				},
+				{
+					"text": "Add both to basket",
+					"product_cat": "coffee-at-home"
+				},
+				{
+					"text": "Add to basket",
+					"product": "house-blend-kilo"
+				}
+			]
+		},
+		"roastery": {
+			"title": "The roastery, with three photos",
+			"file": "patterns/roastery.html",
+			"links": [
+				{
+					"text": "Read our story",
+					"page": "about"
+				}
+			]
+		},
+		"quote": {
+			"title": "A regular's quote on a dark card",
+			"file": "patterns/quote.html"
+		},
+		"visit": {
+			"title": "Visit: the terrace and opening hours",
+			"file": "patterns/visit.html",
+			"links": [
+				{
+					"text": "Get directions",
+					"page": "visit"
+				}
+			]
+		},
+		"journal": {
+			"title": "From the journal: the latest three posts",
+			"file": "patterns/journal.html",
+			"links": [
+				{
+					"text": "All posts",
+					"page": "journal"
+				}
+			]
+		},
+		"menu": {
+			"title": "The full menu",
+			"file": "patterns/menu.html"
+		},
+		"order": {
+			"title": "Order ahead: the menu to order from, by kind",
+			"file": "patterns/order.html"
+		},
+		"about-intro": {
+			"title": "Our story: how it started",
+			"file": "patterns/about-intro.html"
+		},
+		"about-timeline": {
+			"title": "Our story: the years since",
+			"file": "patterns/about-timeline.html"
+		},
+		"about-values": {
+			"title": "Our story: what we hold to",
+			"file": "patterns/about-values.html"
+		},
+		"cta": {
+			"title": "Come and say hello",
+			"file": "patterns/cta.html",
+			"links": [
+				{
+					"text": "Plan your visit",
+					"page": "visit"
+				},
+				{
+					"text": "Order ahead",
+					"page": "order-ahead"
+				}
+			]
+		},
+		"visit-page": {
+			"title": "Visit: how to find us, hours and allergens",
+			"file": "patterns/visit-page.html"
+		},
+		"hours-widget": {
+			"title": "The week's opening hours",
+			"file": "patterns/hours-widget.html",
+			"links": [
+				{
+					"text": "How to find us",
+					"page": "visit"
+				}
+			]
+		}
+	}
+}

@@ -202,6 +202,70 @@
 			"shown_with": [
 				"yantra"
 			]
+		},
+		{
+			"id": "kerbside",
+			"theme": "yantra-pro",
+			"pro": true,
+			"title": "Kerbside café and bakery",
+			"description": "A neighbourhood café, roastery and bakery that takes orders ahead: a homepage built from its own patterns, with a till-receipt hero, fresh bakes with the stock left, the menu in tiles and beans by post as receipts; Menu, Order ahead, Our story and Visit pages; 19 products (drinks with a choice of milk, bakes with their own badges and a back-in-stock date, beans by grind); opening hours with last orders and an open bar; six journal posts; menus, footer widgets, a logo and dark mode. For Yantra Pro.",
+			"version": "1.0.0",
+			"path": "kerbside/pack.json",
+			"required_plugins": [
+				{
+					"slug": "woocommerce",
+					"name": "WooCommerce",
+					"file": "woocommerce/woocommerce.php",
+					"minimum_version": "9.0"
+				}
+			],
+			"requires": {
+				"wordpress": "6.5",
+				"woocommerce": "9.0"
+			},
+			"preview": "kerbside/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "kerbside/screens/home.jpg"
+				},
+				{
+					"title": "Menu",
+					"image": "kerbside/screens/menu.jpg"
+				},
+				{
+					"title": "Order ahead",
+					"image": "kerbside/screens/order.jpg"
+				},
+				{
+					"title": "Coffee at home",
+					"image": "kerbside/screens/product.jpg"
+				},
+				{
+					"title": "Our story",
+					"image": "kerbside/screens/about.jpg"
+				},
+				{
+					"title": "Journal",
+					"image": "kerbside/screens/journal.jpg"
+				},
+				{
+					"title": "A post",
+					"image": "kerbside/screens/post.jpg"
+				},
+				{
+					"title": "Visit",
+					"image": "kerbside/screens/visit.jpg"
+				}
+			],
+			"categories": [
+				"Shop",
+				"Food and drink"
+			],
+			"theme_name": "Yantra Pro",
+			"shown_with": [
+				"yantra"
+			]
 		}
 	]
 }

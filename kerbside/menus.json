@@ -1,0 +1,59 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Kerbside menu",
+			"slug": "kerbside-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Menu",
+					"page": "menu"
+				},
+				{
+					"label": "Order ahead",
+					"page": "order-ahead"
+				},
+				{
+					"label": "Coffee at home",
+					"product_cat": "coffee-at-home"
+				},
+				{
+					"label": "Our story",
+					"page": "about"
+				},
+				{
+					"label": "Journal",
+					"page": "journal"
+				},
+				{
+					"label": "Visit",
+					"page": "visit"
+				}
+			]
+		},
+		{
+			"title": "Kerbside footer menu",
+			"slug": "kerbside-footer-menu",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Allergens",
+					"page": "visit",
+					"anchor": "allergens"
+				},
+				{
+					"label": "Our story",
+					"page": "about"
+				},
+				{
+					"label": "Instagram",
+					"url": "https://example.com/kerbside-on-instagram"
+				}
+			]
+		}
+	]
+}

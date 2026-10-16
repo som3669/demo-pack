@@ -1,0 +1,218 @@
+{
+	"schema": 1,
+	"css": "kerbside.css",
+	"theme_mods": {
+		"custom_logo": { "image": "images/kerbside-logo.png" },
+		"yantra_logo_width": {
+			"desktop": { "size": 40, "unit": "px" },
+			"tablet": { "size": 36, "unit": "px" },
+			"mobile": { "size": 34, "unit": "px" }
+		},
+		"yantra_site_title_typography": {
+			"font-family": "Bricolage Grotesque",
+			"font-weight": "800",
+			"font-size": { "desktop": { "size": 26, "unit": "px" }, "mobile": { "size": 22, "unit": "px" } },
+			"letter-spacing": { "desktop": { "size": -0.035, "unit": "em" } }
+		},
+
+		"yantra_color_palette": {
+			"id": "custom",
+			"name": "Kerbside",
+			"colors": {
+				"yantra-color-1": "#14513a",
+				"yantra-color-2": "#0e3d2b",
+				"yantra-color-3": "#0f1a15",
+				"yantra-color-4": "#3a4540",
+				"yantra-color-5": "#5f6b65",
+				"yantra-color-6": "#dce3de",
+				"yantra-color-7": "#eff3ef",
+				"yantra-color-8": "#ffffff",
+				"yantra-color-9": "#ffffff"
+			}
+		},
+		"themor_dark_mode": "toggle",
+		"themor_dark_mode_toggle_place": "none",
+		"themor_dark_palette": {
+			"id": "custom",
+			"name": "Kerbside dark",
+			"colors": {
+				"yantra-color-1": "#5ed39b",
+				"yantra-color-2": "#8be3b8",
+				"yantra-color-3": "#f2f5f3",
+				"yantra-color-4": "#c9d3cd",
+				"yantra-color-5": "#93a39a",
+				"yantra-color-6": "#24302b",
+				"yantra-color-7": "#14201b",
+				"yantra-color-8": "#0b1411",
+				"yantra-color-9": "#0b1411"
+			}
+		},
+
+		"yantra_body_typography": {
+			"font-family": "Instrument Sans",
+			"font-weight": "400",
+			"font-style": "default",
+			"text-transform": "default",
+			"font-size": { "desktop": { "size": 17, "unit": "px" } },
+			"line-height": { "desktop": { "size": 1.65, "unit": "-" } }
+		},
+		"yantra_heading_typography": {
+			"font-family": "Bricolage Grotesque",
+			"font-weight": "700",
+			"font-style": "default",
+			"text-transform": "default",
+			"line-height": { "desktop": { "size": 1.06, "unit": "-" } },
+			"letter-spacing": { "desktop": { "size": -0.032, "unit": "em" } }
+		},
+		"yantra_menu_typography": {
+			"font-weight": "500",
+			"text-transform": "default",
+			"font-size": { "desktop": { "size": 16, "unit": "px" } }
+		},
+		"yantra_radius": { "size": 14, "unit": "px" },
+		"yantra_box_radius": { "size": 26, "unit": "px" },
+		"yantra_button_radius": { "size": 12, "unit": "px" },
+
+		"yantra_header_builder": {
+			"desktop": {
+				"top": { "left": [ "store-status", "contact" ], "center": [], "right": [ "icon-text" ] },
+				"main": { "left": [ "logo" ], "center": [ "primary-menu" ], "right": [ "color-scheme", "cart", "button" ] },
+				"bottom": { "left": [], "center": [], "right": [] }
+			},
+			"mobile": {
+				"top": { "left": [ "store-status" ], "center": [], "right": [] },
+				"main": { "left": [ "logo" ], "center": [], "right": [ "cart", "toggle" ] },
+				"bottom": { "left": [], "center": [], "right": [] }
+			},
+			"offset": [ "mobile-menu", "button", "contact" ]
+		},
+		"yantra_header_top_background": {
+			"background-color": "#0f1a15",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_header_top_color": "#dce6e0",
+		"yantra_header_top_border": false,
+		"yantra_header_main_height": {
+			"desktop": { "size": 80, "unit": "px" },
+			"tablet": { "size": 70, "unit": "px" },
+			"mobile": { "size": 64, "unit": "px" }
+		},
+		"yantra_pro_contact_phone": "0117 496 0123",
+		"yantra_pro_contact_text": "12 Kerb Lane, Bristol",
+		"yantra_pro_contact_icons": true,
+		"yantra_pro_icon_text_icon": "fa-solid fa-bread-slice",
+		"yantra_pro_icon_text_text": "Fresh bakes from 7:30, until they're gone",
+		"yantra_header_button_text": "Order ahead",
+		"yantra_header_button_url": { "page_url": "order-ahead" },
+		"themor_sticky_header": true,
+		"themor_sticky_header_shrink": true,
+
+		"yantra_footer_builder": {
+			"desktop": {
+				"top": { "top-1": [], "top-2": [], "top-3": [], "top-4": [], "top-5": [], "top-6": [] },
+				"main": { "main-1": [ "widget-1", "socials" ], "main-2": [ "widget-2" ], "main-3": [ "widget-3" ], "main-4": [ "widget-4" ], "main-5": [], "main-6": [] },
+				"bottom": { "bottom-1": [ "copyright" ], "bottom-2": [ "footer-menu" ], "bottom-3": [], "bottom-4": [], "bottom-5": [], "bottom-6": [] }
+			}
+		},
+		"yantra_footer_main_background": {
+			"background-color": "#0f1a15",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_bottom_background": {
+			"background-color": "#0f1a15",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_main_color": "#c7d1cb",
+		"yantra_footer_bottom_color": "#93a39a",
+		"yantra_footer_main_border": false,
+		"yantra_footer_bottom_border": true,
+		"yantra_footer_copyright": "© {year} Kerbside Coffee & Bakery",
+		"yantra_footer_socials": [
+			{ "label": "Instagram", "url": "https://example.com/kerbside-on-instagram", "icon": "fa-brands fa-instagram", "network": "instagram" },
+			{ "label": "Facebook", "url": "https://example.com/kerbside-on-facebook", "icon": "fa-brands fa-facebook-f", "network": "facebook" }
+		],
+
+		"yantra_title_style": "banner",
+		"yantra_title_align": "start",
+		"yantra_breadcrumbs_position": "above",
+		"yantra_breadcrumbs_separator": "slash",
+
+		"yantra_blog_layout": "overlay",
+		"yantra_blog_columns": "3",
+		"yantra_blog_elements": [ "image", "categories", "title", "meta" ],
+		"yantra_blog_meta": [ "date", "reading-time" ],
+		"themor_blog_featured": true,
+		"themor_blog_featured_source": "sticky",
+		"themor_blog_featured_count": 2,
+
+		"yantra_post_header_style": "hero",
+		"yantra_post_meta": [ "date", "reading-time" ],
+		"yantra_post_footer_elements": [ "tags", "navigation", "related" ],
+		"yantra_sidebar_post": "narrow",
+		"themor_blog_progress": true,
+		"themor_blog_toc": true,
+		"themor_blog_toc_depth": "h2",
+		"themor_blog_toc_min": 3,
+		"themor_blog_share": true,
+		"themor_blog_related": true,
+		"themor_blog_related_title": "More from the journal",
+
+		"themor_shop_schedule": "hours",
+		"themor_shop_hours": {
+			"mon": { "open": true, "from": "07:30", "to": "17:00" },
+			"tue": { "open": true, "from": "07:30", "to": "17:00" },
+			"wed": { "open": true, "from": "07:30", "to": "17:00" },
+			"thu": { "open": true, "from": "07:30", "to": "17:00" },
+			"fri": { "open": true, "from": "07:30", "to": "17:00" },
+			"sat": { "open": true, "from": "08:00", "to": "17:00" },
+			"sun": { "open": true, "from": "09:00", "to": "15:00" }
+		},
+		"themor_shop_last_orders": 30,
+		"themor_shop_closed_mode": "notice",
+		"themor_shop_closed_message": "We're closed right now. Order ahead and collect it when we open.",
+		"themor_shop_open_bar": true,
+		"themor_shop_own_badges": true,
+		"themor_shop_stock_cards": true,
+		"themor_shop_restock": true,
+		"themor_shop_stock_bar": true,
+		"themor_shop_stock_low": 6,
+		"themor_shop_cart_drawer": true,
+		"themor_shop_ajax_add": true,
+		"themor_shop_free_shipping": true,
+		"themor_shop_free_shipping_amount": "15",
+		"themor_shop_qty_buttons": true,
+		"themor_shop_swatches": true,
+		"themor_shop_buy_now": true,
+		"themor_shop_delivery": true,
+		"themor_shop_delivery_cutoff": "14:00",
+		"themor_shop_delivery_days": [ "mon", "tue", "wed", "thu", "fri" ],
+		"themor_shop_delivery_min": 1,
+		"themor_shop_delivery_max": 2,
+		"themor_shop_together": true,
+		"themor_shop_together_source": "cross-sells",
+		"themor_shop_together_title": "Good with it",
+		"themor_shop_viewed": true,
+		"themor_shop_viewed_count": 4,
+
+		"themor_mbar_on": true,
+		"themor_mbar_items": [ "home", "custom", "cart", "phone", "menu" ],
+		"themor_mbar_custom_label": "Order",
+		"themor_mbar_custom_icon": "fa-solid fa-mug-hot",
+		"themor_mbar_custom_url": { "page_url": "order-ahead" },
+		"themor_mbar_phone": "+441174960123",
+		"themor_mbar_name_cart": "Basket",
+		"themor_mbar_hide_on_scroll": true
+	}
+}

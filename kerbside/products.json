@@ -1,0 +1,597 @@
+{
+	"schema": 1,
+	"product_categories": {
+		"drinks": {
+			"name": "Coffee and drinks",
+			"description": "Coffee, tea and cold drinks, made as your order comes in.",
+			"image": "images/latte-top-photo.jpg"
+		},
+		"bakery": {
+			"name": "Bakery",
+			"description": "Baked here from 5am, until the trays are empty.",
+			"image": "images/croissants-photo.jpg"
+		},
+		"breakfast": {
+			"name": "Breakfast",
+			"description": "Served until 11:30.",
+			"image": "images/avocado-photo.jpg"
+		},
+		"lunch": {
+			"name": "Lunch",
+			"description": "From 12 until 3, changed every Monday.",
+			"image": "images/corn-salad-photo.jpg"
+		},
+		"coffee-at-home": {
+			"name": "Coffee at home",
+			"description": "Beans roasted three doors down, posted every weekday. Free postage on orders over £15.",
+			"image": "images/coffee-beans-photo.jpg"
+		}
+	},
+	"attributes": {
+		"Milk": "milk",
+		"Grind": "grind"
+	},
+	"products": [
+		{
+			"slug": "flat-white",
+			"name": "Flat white",
+			"category": "drinks",
+			"image": "images/latte-top-photo.jpg",
+			"sku": "KB-FW",
+			"sales": 240,
+			"regular": "3.40",
+			"stock": null,
+			"short": "A double shot with silky milk, the one most people order.",
+			"description": [
+				"Our house blend as a double ristretto, with milk steamed to a thin, glossy foam. Short enough to taste the coffee, long enough for the walk to work."
+			],
+			"specs": {
+				"Milk": [
+					"Whole",
+					"Oat",
+					"Almond"
+				],
+				"Cup": "6 oz",
+				"Coffee": "House blend, double shot"
+			},
+			"variations": {
+				"Whole": {
+					"sku": "KB-FW-01",
+					"regular": "3.40"
+				},
+				"Oat": {
+					"sku": "KB-FW-02",
+					"regular": "3.40"
+				},
+				"Almond": {
+					"sku": "KB-FW-03",
+					"regular": "3.40"
+				}
+			}
+		},
+		{
+			"slug": "latte",
+			"name": "Latte",
+			"category": "drinks",
+			"image": "images/latte-wood-photo.jpg",
+			"sku": "KB-LT",
+			"sales": 180,
+			"regular": "3.60",
+			"stock": null,
+			"short": "Long, milky and gentle, in a 12 oz cup.",
+			"description": [
+				"A double shot in a tall cup of steamed milk. Ask for a third shot if the morning calls for it."
+			],
+			"specs": {
+				"Milk": [
+					"Whole",
+					"Oat",
+					"Almond"
+				],
+				"Cup": "12 oz",
+				"Coffee": "House blend, double shot"
+			},
+			"variations": {
+				"Whole": {
+					"sku": "KB-LT-01",
+					"regular": "3.60"
+				},
+				"Oat": {
+					"sku": "KB-LT-02",
+					"regular": "3.60"
+				},
+				"Almond": {
+					"sku": "KB-LT-03",
+					"regular": "3.60"
+				}
+			}
+		},
+		{
+			"slug": "espresso",
+			"name": "Espresso",
+			"category": "drinks",
+			"image": "images/espresso-crema-photo.jpg",
+			"sku": "KB-ES",
+			"sales": 90,
+			"regular": "2.60",
+			"stock": null,
+			"short": "A double shot, short and sweet.",
+			"description": [
+				"Pulled for 28 seconds, with a thick crema. Have it at the counter while it is at its best."
+			],
+			"specs": {
+				"Cup": "3 oz",
+				"Coffee": "House blend, double shot"
+			}
+		},
+		{
+			"slug": "cold-brew",
+			"name": "Cold brew",
+			"category": "drinks",
+			"image": "images/iced-coffee-photo.jpg",
+			"sku": "KB-CB",
+			"sales": 70,
+			"regular": "3.60",
+			"stock": null,
+			"short": "Steeped for eighteen hours, poured over ice.",
+			"description": [
+				"Coarse-ground coffee steeped in cold water overnight, then filtered twice. Smooth, low in acid and quietly strong."
+			],
+			"specs": {
+				"Cup": "12 oz",
+				"Coffee": "Roaster's pick, steeped cold"
+			}
+		},
+		{
+			"slug": "matcha-latte",
+			"name": "Matcha latte",
+			"category": "drinks",
+			"image": "images/matcha-latte-photo.jpg",
+			"sku": "KB-MT",
+			"sales": 60,
+			"regular": "3.80",
+			"stock": null,
+			"short": "Ceremonial-grade matcha, whisked to order.",
+			"description": [
+				"Japanese ceremonial-grade matcha, whisked with a little hot water and topped with steamed milk."
+			],
+			"specs": {
+				"Milk": [
+					"Whole",
+					"Oat",
+					"Almond"
+				],
+				"Cup": "12 oz"
+			},
+			"variations": {
+				"Whole": {
+					"sku": "KB-MT-01",
+					"regular": "3.80"
+				},
+				"Oat": {
+					"sku": "KB-MT-02",
+					"regular": "3.80"
+				},
+				"Almond": {
+					"sku": "KB-MT-03",
+					"regular": "3.80"
+				}
+			}
+		},
+		{
+			"slug": "cardamom-bun",
+			"name": "Cardamom bun",
+			"category": "bakery",
+			"image": "images/spiced-buns-photo.jpg",
+			"sku": "KB-BK-01",
+			"sales": 310,
+			"regular": "3.20",
+			"featured": true,
+			"stock": 3,
+			"specs": {
+				"Baked": "From 5am, every day",
+				"Diet": "Vegetarian"
+			},
+			"short": "Our most asked-for bake, and the first to sell out.",
+			"description": [
+				"A soft, buttery dough rolled with cardamom sugar, knotted by hand and baked until the edges caramelise. Warmed if you like."
+			],
+			"meta": {
+				"_themor_badge": "Sells out first",
+				"_themor_badge_color": "#F2C14E"
+			}
+		},
+		{
+			"slug": "butter-croissant",
+			"name": "Butter croissant",
+			"category": "bakery",
+			"image": "images/croissants-photo.jpg",
+			"sku": "KB-BK-02",
+			"sales": 260,
+			"regular": "2.80",
+			"featured": true,
+			"stock": null,
+			"specs": {
+				"Baked": "From 5am, every day",
+				"Diet": "Vegetarian"
+			},
+			"short": "Laminated over three days, with French butter.",
+			"description": [
+				"Folded and rested over three days for a shattering crust and a soft, honeycombed middle."
+			]
+		},
+		{
+			"slug": "country-sourdough",
+			"name": "Country sourdough",
+			"category": "bakery",
+			"image": "images/sourdough-photo.jpg",
+			"sku": "KB-BK-03",
+			"sales": 150,
+			"regular": "4.80",
+			"featured": true,
+			"stock": 6,
+			"specs": {
+				"Weight": "800 g",
+				"Baked": "From 5am, every day",
+				"Diet": "Vegan"
+			},
+			"short": "A whole loaf, sliced if you ask.",
+			"description": [
+				"Wheat and a little rye, fermented for thirty hours. It keeps for four days in a bread bag, and makes the best toast on day two."
+			]
+		},
+		{
+			"slug": "coffee-walnut-cake",
+			"name": "Coffee and walnut cake",
+			"category": "bakery",
+			"image": "images/coffee-cake-photo.jpg",
+			"sku": "KB-BK-04",
+			"sales": 120,
+			"regular": "3.80",
+			"featured": true,
+			"stock": "outofstock",
+			"specs": {
+				"Baked": "Fridays and Saturdays",
+				"Diet": "Vegetarian"
+			},
+			"short": "A slice of our coffee and walnut sponge.",
+			"description": [
+				"Made with our espresso and toasted walnuts, with a coffee buttercream. Baked at the end of the week, and usually gone by Sunday."
+			],
+			"meta": {
+				"_themor_restock_date": {
+					"days": 2
+				}
+			}
+		},
+		{
+			"slug": "bircher-oats",
+			"name": "Bircher oats",
+			"category": "breakfast",
+			"image": "images/oats-bowl-photo.jpg",
+			"sku": "KB-BR-01",
+			"sales": 80,
+			"regular": "6.50",
+			"stock": null,
+			"specs": {
+				"Served": "Until 11:30",
+				"Diet": "Vegetarian"
+			},
+			"short": "Soaked overnight, with fig, raspberries and honey.",
+			"description": [
+				"Oats soaked overnight in apple juice and yoghurt, topped with fig, raspberries and local honey."
+			]
+		},
+		{
+			"slug": "avocado-on-sourdough",
+			"name": "Avocado on sourdough",
+			"category": "breakfast",
+			"image": "images/avocado-photo.jpg",
+			"sku": "KB-BR-02",
+			"sales": 140,
+			"regular": "8.50",
+			"stock": null,
+			"specs": {
+				"Served": "Until 11:30",
+				"Diet": "Vegan"
+			},
+			"short": "Chilli, lime and toasted seeds on our own sourdough.",
+			"description": [
+				"Crushed avocado with chilli, lime and toasted seeds on a thick slice of our country sourdough."
+			]
+		},
+		{
+			"slug": "eggs-your-way",
+			"name": "Eggs your way",
+			"category": "breakfast",
+			"image": "images/eggs-photo.jpg",
+			"sku": "KB-BR-03",
+			"sales": 110,
+			"regular": "7.50",
+			"stock": null,
+			"specs": {
+				"Served": "Until 11:30",
+				"Diet": "Vegetarian"
+			},
+			"short": "Scrambled, poached or fried, on toast.",
+			"description": [
+				"Two free-range eggs from a farm outside Bath, cooked how you like them. Say which in the order note."
+			]
+		},
+		{
+			"slug": "corn-black-bean-salad",
+			"name": "Corn and black bean salad",
+			"category": "lunch",
+			"image": "images/corn-salad-photo.jpg",
+			"sku": "KB-LU-01",
+			"sales": 60,
+			"regular": "9.00",
+			"stock": null,
+			"specs": {
+				"Served": "From 12 until 3",
+				"Diet": "Vegan, gluten free"
+			},
+			"short": "Cherry tomatoes, lime and coriander.",
+			"description": [
+				"Charred sweetcorn and black beans with cherry tomatoes, red onion, lime and coriander."
+			]
+		},
+		{
+			"slug": "tomato-basil-penne",
+			"name": "Tomato and basil penne",
+			"category": "lunch",
+			"image": "images/tomato-pasta-photo.jpg",
+			"sku": "KB-LU-02",
+			"sales": 75,
+			"regular": "10.00",
+			"stock": null,
+			"specs": {
+				"Served": "From 12 until 3",
+				"Diet": "Vegetarian"
+			},
+			"short": "Slow-cooked sauce and parmesan.",
+			"description": [
+				"Penne in a tomato sauce cooked down for three hours, finished with basil and parmesan."
+			]
+		},
+		{
+			"slug": "house-blend",
+			"name": "House blend, 250 g",
+			"category": "coffee-at-home",
+			"image": "images/coffee-beans-photo.jpg",
+			"sku": "KB-HB",
+			"sales": 420,
+			"regular": "7.00",
+			"featured": false,
+			"stock": 4,
+			"weight": 0.27,
+			"size": [
+				20,
+				12,
+				5
+			],
+			"specs": {
+				"Grind": [
+					"Whole bean",
+					"Espresso",
+					"Filter",
+					"Cafetière",
+					"Moka pot"
+				],
+				"Weight": "250 g",
+				"Origin": "Brazil (Cerrado) and Colombia (Huila)",
+				"Tastes of": "Milk chocolate, hazelnut, red apple",
+				"Roasted": "Tuesdays and Fridays"
+			},
+			"variations": {
+				"Whole bean": {
+					"sku": "KB-HB-01",
+					"regular": "7.00"
+				},
+				"Espresso": {
+					"sku": "KB-HB-02",
+					"regular": "7.00"
+				},
+				"Filter": {
+					"sku": "KB-HB-03",
+					"regular": "7.00"
+				},
+				"Cafetière": {
+					"sku": "KB-HB-04",
+					"regular": "7.00"
+				},
+				"Moka pot": {
+					"sku": "KB-HB-05",
+					"regular": "7.00"
+				}
+			},
+			"short": "Our everyday coffee: sweet enough for milk, bright enough to drink black.",
+			"description": [
+				"We built this blend for the café's flat whites and kept it because people kept asking for a bag. Brazilian Cerrado for body and chocolate, a washed Colombian from Huila for the apple brightness on top.",
+				"Brew 15 g of coffee to 250 g of water at 94 °C. The full method is in our pour-over guide.",
+				"Roasted on Tuesdays and Fridays and posted the same day when you order before 2pm. Free postage on orders over £15."
+			],
+			"cross_sells": [
+				"wildflower-honey",
+				"pour-over-set"
+			]
+		},
+		{
+			"slug": "roasters-pick",
+			"name": "Roaster's pick, 250 g",
+			"category": "coffee-at-home",
+			"image": "images/coffee-cherries-photo.jpg",
+			"sku": "KB-RP",
+			"sales": 160,
+			"regular": "11.00",
+			"stock": null,
+			"weight": 0.27,
+			"size": [
+				20,
+				12,
+				5
+			],
+			"specs": {
+				"Grind": [
+					"Whole bean",
+					"Espresso",
+					"Filter",
+					"Cafetière",
+					"Moka pot"
+				],
+				"Weight": "250 g",
+				"Origin": "Guji, Ethiopia, washed",
+				"Tastes of": "Jasmine, peach, black tea",
+				"Roasted": "Tuesdays and Fridays"
+			},
+			"variations": {
+				"Whole bean": {
+					"sku": "KB-RP-01",
+					"regular": "11.00"
+				},
+				"Espresso": {
+					"sku": "KB-RP-02",
+					"regular": "11.00"
+				},
+				"Filter": {
+					"sku": "KB-RP-03",
+					"regular": "11.00"
+				},
+				"Cafetière": {
+					"sku": "KB-RP-04",
+					"regular": "11.00"
+				},
+				"Moka pot": {
+					"sku": "KB-RP-05",
+					"regular": "11.00"
+				}
+			},
+			"short": "A single-origin coffee we change with the harvest. This month: a washed Ethiopian.",
+			"description": [
+				"A light roast for filter and pour-over, from a washing station in Guji we have bought from for three years.",
+				"Best as filter. As espresso it is bright and lively; with milk it gets lost."
+			],
+			"meta": {
+				"_themor_badge": "New harvest",
+				"_themor_badge_color": "#14513A"
+			},
+			"cross_sells": [
+				"pour-over-set"
+			]
+		},
+		{
+			"slug": "house-blend-kilo",
+			"name": "House blend, 1 kg",
+			"category": "coffee-at-home",
+			"image": "images/many-cups-photo.jpg",
+			"sku": "KB-HB-1K",
+			"sales": 90,
+			"regular": "26.00",
+			"stock": null,
+			"weight": 1.05,
+			"size": [
+				30,
+				18,
+				8
+			],
+			"specs": {
+				"Grind": "Whole bean",
+				"Weight": "1 kg",
+				"Origin": "Brazil (Cerrado) and Colombia (Huila)",
+				"Roasted": "Tuesdays and Fridays"
+			},
+			"short": "Whole beans for the office, or a household that gets through a lot.",
+			"description": [
+				"The house blend in a one-kilo bag of whole beans, with a valve so it keeps fresh for a month once open. Free postage."
+			]
+		},
+		{
+			"slug": "wildflower-honey",
+			"name": "Wildflower honey, 340 g",
+			"category": "coffee-at-home",
+			"image": "images/honey-photo.jpg",
+			"sku": "KB-HY",
+			"sales": 70,
+			"regular": "6.00",
+			"stock": null,
+			"weight": 0.45,
+			"specs": {
+				"From": "Hives on the Mendip Hills",
+				"Weight": "340 g"
+			},
+			"short": "Raw honey from hives twenty miles south of the café.",
+			"description": [
+				"Unheated and unblended, so it sets in the cooler months. Stand the jar in warm water to loosen it."
+			]
+		},
+		{
+			"slug": "pour-over-set",
+			"name": "Glass pour-over set",
+			"category": "coffee-at-home",
+			"image": "images/pour-over-photo.jpg",
+			"sku": "KB-PO",
+			"sales": 40,
+			"regular": "24.00",
+			"stock": 8,
+			"weight": 0.6,
+			"size": [
+				16,
+				16,
+				18
+			],
+			"specs": {
+				"In the box": "Glass dripper, 600 ml jug, 40 paper filters",
+				"Makes": "One to three cups"
+			},
+			"short": "The same dripper and jug we use behind the counter.",
+			"description": [
+				"A glass dripper, a 600 ml jug and forty paper filters: all you need for the method in our pour-over guide."
+			]
+		}
+	],
+	"reviews": {
+		"house-blend": [
+			[
+				"Priya S.",
+				5,
+				"Exactly the flat white I get at the café, at home. Ground for my moka pot and it is spot on."
+			],
+			[
+				"Tom W.",
+				5,
+				"Arrives two days after roasting, every time. The bag fits through our letterbox."
+			],
+			[
+				"Helen M.",
+				4,
+				"Lovely chocolatey blend. I would like a bigger bag of ground coffee."
+			]
+		],
+		"cardamom-bun": [
+			[
+				"Ollie R.",
+				5,
+				"Worth ordering ahead: they were gone by ten on Saturday."
+			],
+			[
+				"Ana P.",
+				5,
+				"Soft, sticky and not too sweet. Ask for it warmed."
+			]
+		],
+		"flat-white": [
+			[
+				"Jess T.",
+				5,
+				"The best on our side of the river."
+			]
+		],
+		"roasters-pick": [
+			[
+				"Marek D.",
+				5,
+				"Bright and floral as a pour-over, like a cup of peach tea."
+			]
+		]
+	}
+}
