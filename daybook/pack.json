@@ -1,0 +1,11 @@
+{
+	"schema": 3,
+	"files": [
+		"settings.json",
+		"customizer.json",
+		"widgets.json",
+		"media.json",
+		"content.json",
+		"menus.json"
+	]
+}

@@ -1,0 +1,54 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Main menu",
+			"slug": "yantra-main-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Home",
+					"page": "home"
+				},
+				{
+					"label": "About",
+					"page": "about"
+				},
+				{
+					"label": "Pricing",
+					"page": "pricing"
+				},
+				{
+					"label": "Blog",
+					"page": "blog"
+				},
+				{
+					"label": "Contact",
+					"page": "contact"
+				}
+			]
+		},
+		{
+			"title": "Footer menu",
+			"slug": "yantra-footer-menu",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Privacy",
+					"page": "privacy"
+				},
+				{
+					"label": "Terms",
+					"page": "terms"
+				},
+				{
+					"label": "Contact",
+					"page": "contact"
+				}
+			]
+		}
+	]
+}

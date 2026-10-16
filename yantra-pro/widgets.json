@@ -1,0 +1,43 @@
+{
+	"schema": 1,
+	"sidebars": {
+		"footer-1": [
+			{
+				"title": "About Yantra",
+				"content": [
+					[ "p", "A calmer way to build a site: pages that stay clear, settings you can see change, and nothing in the way." ]
+				]
+			}
+		],
+		"footer-2": [
+			{
+				"title": "Company",
+				"content": [
+					[ "links", [
+						{ "label": "About", "page": "about" },
+						{ "label": "Pricing", "page": "pricing" },
+						{ "label": "Blog", "page": "blog" },
+						{ "label": "Contact", "page": "contact" }
+					] ]
+				]
+			}
+		],
+		"footer-3": [
+			{
+				"title": "Recent posts",
+				"content": [
+					[ "posts", { "count": 3, "layout": "list", "category": [ "guides", "design", "stories", "news" ] } ]
+				]
+			}
+		],
+		"footer-4": [
+			{
+				"title": "Get in touch",
+				"content": [
+					[ "lines", [ "hello@example.com", "+1 (555) 010-2030" ] ],
+					[ "lines", [ "123 Example Street, Springfield", "Monday to Friday, 9am to 5pm" ] ]
+				]
+			}
+		]
+	}
+}

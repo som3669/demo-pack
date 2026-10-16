@@ -1,0 +1,74 @@
+{
+	"images/posts/plan-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Reyes Martínez",
+		"creator_page": "https://wordpress.org/photos/author/rmartinezduque/",
+		"source": "https://wordpress.org/photos/photo/33862250b3/",
+		"file": "https://pd.w.org/2022/03/33862250b30bac6b4.11610927.jpg",
+		"original_size": [
+			3888,
+			2592
+		],
+		"description": "Painting with watercolors"
+	},
+	"images/posts/hourglass-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Rashed Hossain",
+		"creator_page": "https://wordpress.org/photos/author/wprashed/",
+		"source": "https://wordpress.org/photos/photo/2466ac5ecf/",
+		"file": "https://pd.w.org/2026/10/2466ac5ecfa537207.42997513.jpg",
+		"original_size": [
+			4032,
+			3024
+		],
+		"description": "Wooden hourglass with pink sand beside a wooden pen holder on a desk."
+	},
+	"images/posts/pencils-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Orianna Radomile",
+		"creator_page": "https://wordpress.org/photos/author/oriannaradomile/",
+		"source": "https://wordpress.org/photos/photo/28769c130d/",
+		"file": "https://pd.w.org/2026/03/28769c130d3b7d7b2.95343123.jpg",
+		"original_size": [
+			3024,
+			2268
+		],
+		"description": "A top-down view of sharpened colored pencils in a radial bundle, forming a bright starburst on a clean white background."
+	},
+	"images/posts/baguettes-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Jackson Monichan",
+		"creator_page": "https://wordpress.org/photos/author/jackson23m/",
+		"source": "https://wordpress.org/photos/photo/7406a28fc9/",
+		"file": "https://pd.w.org/2026/06/7406a28fc94bcb986.38718954.jpg",
+		"original_size": [
+			3648,
+			2432
+		],
+		"description": "Many freshly baked golden-brown baguettes bread loaves dusted with flour rest on a metal cooling rack. It shows crisp crusts with diagonal scoring along the tops."
+	},
+	"images/posts/leaves-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Topher",
+		"creator_page": "https://wordpress.org/photos/author/topher1kenobe/",
+		"source": "https://wordpress.org/photos/photo/758690ccb5/",
+		"file": "https://pd.w.org/2025/11/758690ccb56c67505.69654345.jpeg",
+		"original_size": [
+			5712,
+			3213
+		],
+		"description": "Autumn leaves evenly covering the ground in the entire picture.  Seen from about 4 feet, 1.2 meters, above the ground."
+	},
+	"images/posts/stationery-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "onikart",
+		"creator_page": "https://wordpress.org/photos/author/onikart/",
+		"source": "https://wordpress.org/photos/photo/57467d1217/",
+		"file": "https://pd.w.org/2025/03/57467d12178a1a806.96122139.jpg",
+		"original_size": [
+			5760,
+			3840
+		],
+		"description": "A colorful assortment of stationery items scattered on a white surface, including pencils, pens, paperclips, pushpins, erasers, rulers, a compass, a pencil sharpener, sticky notes, and a utility knife."
+	}
+}

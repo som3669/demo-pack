@@ -1,0 +1,58 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Daybook menu",
+			"slug": "daybook-main-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Cook",
+					"category": "cook"
+				},
+				{
+					"label": "Grow",
+					"category": "grow"
+				},
+				{
+					"label": "Make",
+					"category": "make"
+				},
+				{
+					"label": "Rest",
+					"category": "rest"
+				},
+				{
+					"label": "About",
+					"page": "about"
+				},
+				{
+					"label": "Contact",
+					"page": "contact"
+				}
+			]
+		},
+		{
+			"title": "Daybook footer menu",
+			"slug": "daybook-footer-menu",
+			"location": "footer",
+			"items": [
+				{
+					"label": "About",
+					"page": "about"
+				},
+				{
+					"label": "Contact",
+					"page": "contact"
+				},
+				{
+					"label": "Privacy policy",
+					"page": "privacy"
+				}
+			]
+		}
+	]
+}

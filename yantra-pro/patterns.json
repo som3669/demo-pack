@@ -1,0 +1,65 @@
+{
+	"schema": 1,
+	"patterns": {
+		"call-to-action": {
+			"title": "Call to action in a panel",
+			"file": "patterns/call-to-action.html"
+		},
+		"contact": {
+			"title": "Contact details",
+			"file": "patterns/contact.html"
+		},
+		"faq": {
+			"title": "Questions and answers",
+			"file": "patterns/faq.html"
+		},
+		"features": {
+			"title": "Features in a panel",
+			"file": "patterns/features.html"
+		},
+		"hero": {
+			"title": "Hero with an illustration",
+			"file": "patterns/hero.html"
+		},
+		"logos": {
+			"title": "Trusted by",
+			"file": "patterns/logos.html"
+		},
+		"page-about": {
+			"title": "About page",
+			"file": "patterns/page-about.html"
+		},
+		"page-contact": {
+			"title": "Contact page",
+			"file": "patterns/page-contact.html"
+		},
+		"page-pricing": {
+			"title": "Pricing page",
+			"file": "patterns/page-pricing.html"
+		},
+		"posts": {
+			"title": "Latest posts",
+			"file": "patterns/posts.html"
+		},
+		"pricing": {
+			"title": "Pricing plans",
+			"file": "patterns/pricing.html"
+		},
+		"split": {
+			"title": "Illustration beside text and a checklist",
+			"file": "patterns/split.html"
+		},
+		"stats": {
+			"title": "Figures in a row",
+			"file": "patterns/stats.html"
+		},
+		"team": {
+			"title": "Team",
+			"file": "patterns/team.html"
+		},
+		"testimonials": {
+			"title": "Testimonials in cards",
+			"file": "patterns/testimonials.html"
+		}
+	}
+}

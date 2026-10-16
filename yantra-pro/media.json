@@ -1,0 +1,14 @@
+{
+	"schema": 1,
+	"images": {
+		"images/yantra-logo.png": "Yantra",
+		"images/posts/plan-photo.jpg": "Hands sketching a page layout in pencil beside a box of watercolours",
+		"images/posts/hourglass-photo.jpg": "A wooden hourglass with pink sand beside a pen holder on a desk",
+		"images/posts/pencils-photo.jpg": "Coloured pencils standing in a cup, seen from above",
+		"images/posts/baguettes-photo.jpg": "Fresh baguettes dusted with flour on a cooling rack",
+		"images/posts/leaves-photo.jpg": "Autumn leaves covering the ground",
+		"images/posts/stationery-photo.jpg": "Pencils, paper clips, a ruler and sticky notes scattered on a white desk",
+		"images/dashboard.png": "An overview screen with revenue, customers and traffic charts",
+		"images/workspace.png": "A task list beside a message asking to publish the new pages"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"schema": 1,
+	"images": {
+		"images/daybook-logo.png": "Daybook",
+		"images/posts/veg-box-photo.jpg": "A crate of vegetables and fruit: carrots, cucumbers, oranges, kale and tomatoes",
+		"images/posts/tomato-penne-photo.jpg": "Penne in tomato sauce with a basil leaf",
+		"images/posts/overnight-oats-photo.jpg": "A ramekin of oats topped with a fig and a raspberry",
+		"images/posts/corn-salad-photo.jpg": "A bowl of tomato, corn and herb salad on a striped cloth",
+		"images/posts/sourdough-photo.jpg": "A round sourdough loaf on a board, one end sliced",
+		"images/posts/baguettes-photo.jpg": "Golden baguettes cooling on a wire rack",
+		"images/posts/cinnamon-buns-photo.jpg": "Cinnamon buns on a plate",
+		"images/posts/peppers-photo.jpg": "Crates of red, yellow and green peppers at a market",
+		"images/posts/radish-photo.jpg": "A hand holding a freshly pulled radish against green leaves",
+		"images/posts/leaves-photo.jpg": "Fallen autumn leaves covering the ground",
+		"images/posts/veg-basket-photo.jpg": "A wooden basket of carrots, beetroot and onions on grey boards",
+		"images/posts/vine-tomatoes-photo.jpg": "Ripe tomatoes on the vine",
+		"images/posts/tulips-photo.jpg": "A bunch of red tulips",
+		"images/posts/pencils-photo.jpg": "Coloured pencils in a cup, seen from above",
+		"images/posts/sketch-photo.jpg": "Hands sketching a room in pencil beside a box of watercolours",
+		"images/posts/desk-photo.jpg": "Pencils, rulers, clips and a compass spread over a white desk",
+		"images/posts/candles-photo.jpg": "Hand-dipped beeswax candles hanging in pairs",
+		"images/posts/candle-photo.jpg": "A lit candle in a jar on a wooden table by a window",
+		"images/posts/balm-photo.jpg": "Hands with dried herbs, a mortar and a wooden board on a white table",
+		"images/posts/hat-photo.jpg": "A straw hat and sunglasses on a speckled white surface",
+		"images/posts/dried-flowers-photo.jpg": "Dried petals, herbs and small glass bottles on a wooden table",
+		"images/posts/hourglass-photo.jpg": "A wooden hourglass beside a pen pot on a desk"
+	}
+}
