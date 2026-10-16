@@ -1,0 +1,878 @@
+/*
+ * Kerbside Coffee & Bakery: the demo's own look, on top of Yantra Pro.
+ * Colours come from the palette (--yantra-*), so dark mode follows; the gold, the dark
+ * quote card and the green hours card keep their colours in both.
+ * Signature: the till receipt, with a torn zigzag edge.
+ */
+
+.kerbside-hero__title {
+	font-size: clamp(2.8rem, 6vw, 5.4rem);
+	font-weight: 800;
+	line-height: 0.98;
+	letter-spacing: -0.045em;
+}
+
+.kerbside-hero__title mark {
+	padding: 0;
+	border-radius: 0;
+	background: none !important;
+	color: var(--yantra-accent);
+}
+
+.kerbside-hero__status {
+	gap: 8px 20px;
+	margin-top: 1.5rem;
+	color: var(--yantra-muted);
+	font-size: 15px;
+}
+
+.kerbside-hero__status p {
+	margin: 0;
+}
+
+.kerbside-hero__media {
+	position: relative;
+}
+
+.kerbside-hero__photo {
+	margin: 0;
+}
+
+.kerbside-hero__photo img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	border-radius: 32px;
+}
+
+.kerbside-receipt-wrap {
+	position: absolute;
+	inset-inline-start: -44px;
+	bottom: 36px;
+	width: 264px;
+	transform: rotate(-3deg);
+	filter: drop-shadow(0 22px 36px rgba(15, 26, 21, 0.28));
+}
+
+/* The till receipt. */
+.kerbside-receipt {
+	--kerbside-zig: 9px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: 100%;
+	padding: 28px 26px 40px;
+	font-size: 15px;
+	font-variant-numeric: tabular-nums;
+	-webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / calc(2 * var(--kerbside-zig)) var(--kerbside-zig) repeat-x, linear-gradient(#000 0 0) top / 100% calc(100% - var(--kerbside-zig)) no-repeat;
+	mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / calc(2 * var(--kerbside-zig)) var(--kerbside-zig) repeat-x, linear-gradient(#000 0 0) top / 100% calc(100% - var(--kerbside-zig)) no-repeat;
+}
+
+.kerbside-receipt > * {
+	margin-block: 0 !important;
+}
+
+.kerbside-receipt p {
+	margin: 0;
+}
+
+.kerbside-receipt__brand {
+	font-family: var(--yantra-font-heading);
+	font-size: 22px;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.kerbside-receipt__meta {
+	font-size: 12px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+
+.kerbside-receipt__title {
+	font-size: 28px;
+}
+
+.kerbside-receipt__rule.wp-block-separator {
+	width: 100% !important;
+	max-width: none !important;
+	margin: 4px 0 !important;
+	border: 0;
+	border-top: 1.5px dashed currentColor;
+	background: none;
+	opacity: 0.35;
+}
+
+.kerbside-receipt__row {
+	gap: 16px;
+}
+
+.kerbside-receipt__total {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.kerbside-receipt__total--big p:last-child {
+	font-family: var(--yantra-font-heading);
+	font-size: 34px;
+	letter-spacing: -0.03em;
+	text-transform: none;
+}
+
+.kerbside-receipt .wp-block-buttons {
+	margin-top: auto !important;
+	padding-top: 10px;
+}
+
+.kerbside-receipt .wp-block-button,
+.kerbside-receipt .wp-block-button__link {
+	width: 100%;
+}
+
+.kerbside-barcode {
+	margin-top: 6px !important;
+	background: repeating-linear-gradient(90deg, currentColor 0 2px, transparent 2px 4px, currentColor 4px 5px, transparent 5px 8px, currentColor 8px 11px, transparent 11px 13px);
+	opacity: 0.85;
+}
+
+.kerbside-receipts {
+	gap: 24px !important;
+}
+
+.kerbside-receipts > .wp-block-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.kerbside-receipts .has-accent-background-color .kerbside-receipt__meta {
+	opacity: 0.85;
+}
+
+.kerbside-button-light .wp-block-button__link {
+	background: #ffffff;
+	color: #0f1a15;
+}
+
+.kerbside-button-gold .wp-block-button__link {
+	background: #f2c14e;
+	color: #0f1a15;
+	font-weight: 700;
+}
+
+.kerbside-button-light .wp-block-button__link:hover,
+.kerbside-button-gold .wp-block-button__link:hover {
+	background: #ffffff;
+	color: #14513a;
+}
+
+/* Section heads and the "more" links. */
+.kerbside-heading-row {
+	gap: 16px 40px;
+	margin-bottom: clamp(1.5rem, 3vw, 2.5rem) !important;
+}
+
+.kerbside-heading-row .yantra-title,
+.kerbside-heading-block > * {
+	margin: 0;
+}
+
+.kerbside-aside {
+	max-width: 28rem;
+	margin: 0;
+	color: var(--yantra-muted);
+}
+
+.kerbside-more {
+	margin: 0;
+}
+
+.kerbside-more a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding-bottom: 2px;
+	border-bottom: 2px solid var(--yantra-accent);
+	color: var(--yantra-heading);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.kerbside-more a::after {
+	content: "\2192";
+	transition: transform 0.2s ease;
+}
+
+.kerbside-more a:hover::after {
+	transform: translateX(3px);
+}
+
+/* Out of the oven. */
+.kerbside-strip__title {
+	margin: 0;
+	font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.kerbside-strip > .alignwide:first-child {
+	margin-bottom: 1.75rem;
+}
+
+/* The menu in short, as tiles. */
+.kerbside-bento > * {
+	margin: 0 !important;
+	overflow: hidden;
+	border-radius: 28px;
+}
+
+.kerbside-bento__tall .wp-block-cover__background {
+	background: linear-gradient(180deg, rgba(15, 26, 21, 0) 40%, rgba(15, 26, 21, 0.85) 100%) !important;
+	opacity: 1 !important;
+}
+
+.kerbside-bento__tall,
+.kerbside-bento__tall p {
+	color: #ffffff;
+}
+
+.kerbside-bento__title {
+	margin: 0 0 6px;
+	font-size: clamp(1.35rem, 2vw, 1.7rem);
+}
+
+.kerbside-bento__tall .kerbside-bento__title {
+	color: #ffffff;
+	font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.kerbside-bento__price {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 4px 12px;
+	border-radius: 999px;
+	background: #f2c14e;
+	color: #0f1a15 !important;
+	font-weight: 700;
+}
+
+.kerbside-bento__card {
+	padding: 24px;
+}
+
+.kerbside-bento__card p {
+	margin: 0;
+	color: var(--yantra-muted);
+	font-size: 15px;
+}
+
+.kerbside-bento__trio {
+	margin-bottom: 18px;
+}
+
+.kerbside-bento__trio figure {
+	margin: 0;
+}
+
+.kerbside-bento__trio img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 14px;
+}
+
+.kerbside-bento__line {
+	border: 1px solid var(--yantra-border);
+}
+
+.kerbside-bento__wide {
+	margin: -24px -24px 18px !important;
+}
+
+.kerbside-bento__wide img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 8;
+	object-fit: cover;
+}
+
+.kerbside-bento__side {
+	gap: 18px;
+}
+
+.kerbside-bento__thumb {
+	flex: none;
+	margin: 0 !important;
+}
+
+.kerbside-bento__thumb img {
+	display: block;
+	width: 92px;
+	height: 92px;
+	object-fit: cover;
+	border-radius: 18px;
+}
+
+.kerbside-bento__gold {
+	background: #f2c14e;
+}
+
+.kerbside-bento__gold .kerbside-bento__title,
+.kerbside-bento__gold p {
+	color: #0f1a15 !important;
+}
+
+/* Order ahead in three steps. */
+.kerbside-steps {
+	display: grid;
+	gap: 18px;
+	margin: 1.75rem 0 2rem;
+	padding: 0;
+	list-style: none;
+	counter-reset: kerbside-step;
+}
+
+.kerbside-steps li {
+	position: relative;
+	padding-inline-start: 56px;
+	counter-increment: kerbside-step;
+}
+
+.kerbside-steps li::before {
+	content: counter(kerbside-step);
+	position: absolute;
+	inset-inline-start: 0;
+	top: -4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 38px;
+	height: 38px;
+	border-radius: 999px;
+	background: var(--yantra-accent);
+	color: var(--yantra-on-accent);
+	font-family: var(--yantra-font-heading);
+	font-weight: 700;
+}
+
+.kerbside-steps strong {
+	color: var(--yantra-heading);
+}
+
+/* Photos. */
+.kerbside-photo {
+	margin: 0;
+}
+
+.kerbside-photo img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 28px;
+}
+
+.kerbside-photo--portrait img {
+	aspect-ratio: 4 / 5;
+}
+
+.kerbside-photo--wide img {
+	aspect-ratio: 21 / 8;
+}
+
+/* The full menu. */
+.kerbside-menu-intro {
+	text-align: center;
+}
+
+.kerbside-menu-intro .yantra-lead {
+	max-width: 40rem;
+	margin-inline: auto;
+}
+
+.kerbside-chips {
+	gap: 8px;
+	justify-content: center;
+}
+
+.kerbside-chips .wp-block-button__link {
+	padding: 8px 16px;
+	border-radius: 999px;
+	font-size: 15px;
+}
+
+.kerbside-menu {
+	padding-top: clamp(2rem, 4vw, 3rem);
+	border-top: 1px solid var(--yantra-border);
+	scroll-margin-top: 120px;
+}
+
+.kerbside-menu__title {
+	margin-top: 0;
+	font-size: clamp(2rem, 3.4vw, 2.8rem);
+}
+
+.kerbside-menu .kerbside-photo img {
+	aspect-ratio: 4 / 3;
+}
+
+.kerbside-menu-list {
+	gap: 4px 40px !important;
+}
+
+.kerbside-menu-item {
+	gap: 16px;
+	padding: 16px 0;
+	border-bottom: 1.5px dashed var(--yantra-border);
+}
+
+.kerbside-menu-item > .wp-block-group {
+	min-width: 0;
+}
+
+.kerbside-menu-item__name {
+	margin: 0 0 2px;
+	font-family: var(--yantra-font-body);
+	font-size: 1.05rem;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+
+.kerbside-menu-item__note {
+	margin: 0;
+	color: var(--yantra-muted);
+	font-size: 14px;
+}
+
+.kerbside-menu-item__price {
+	flex: none;
+	margin: 0;
+	color: var(--yantra-heading);
+	font-family: var(--yantra-font-heading);
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+}
+
+/* The roastery's three photos: a tall one beside two squares. */
+.kerbside-collage > figure {
+	margin: 0 !important;
+}
+
+.kerbside-collage img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 24px;
+}
+
+.kerbside-collage > :first-child {
+	position: relative;
+	grid-row: span 2;
+}
+
+.kerbside-collage > :first-child img {
+	position: absolute;
+	inset: 0;
+	height: 100%;
+	aspect-ratio: auto;
+}
+
+/* What a regular says. */
+.kerbside-quote {
+	position: relative;
+	margin: 0;
+	padding: clamp(32px, 5vw, 60px) clamp(28px, 5vw, 64px);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	border-radius: 36px;
+	background: #0f1a15;
+	color: #c7d1cb;
+}
+
+.kerbside-quote::before {
+	content: "\201C";
+	display: block;
+	height: 0.55em;
+	margin-bottom: 18px;
+	color: #f2c14e;
+	font-family: var(--yantra-font-heading);
+	font-size: 6rem;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.kerbside-quote .kerbside-quote__text {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.kerbside-quote .kerbside-quote__text p {
+	max-width: 56rem;
+	margin: 0;
+	color: #ffffff;
+	font-family: var(--yantra-font-heading);
+	font-size: clamp(1.7rem, 3.4vw, 2.8rem);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.12;
+	letter-spacing: -0.03em;
+}
+
+.kerbside-quote__who {
+	gap: 14px;
+	margin-top: 28px;
+}
+
+.kerbside-quote__who p {
+	margin: 0;
+}
+
+.kerbside-quote__avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 999px;
+	background: #f2c14e;
+	color: #0f1a15;
+	font-family: var(--yantra-font-heading);
+	font-weight: 700;
+}
+
+.kerbside-quote__name {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.kerbside-quote__note {
+	font-size: 15px;
+}
+
+/* Visit: the terrace and the hours card. */
+.kerbside-visit {
+	gap: 24px !important;
+}
+
+.kerbside-visit__photo {
+	height: 100%;
+	overflow: hidden;
+	border-radius: 32px;
+}
+
+.kerbside-visit__photo .wp-block-cover__background {
+	background: linear-gradient(180deg, rgba(15, 26, 21, 0) 40%, rgba(15, 26, 21, 0.82) 100%) !important;
+	opacity: 1 !important;
+}
+
+.kerbside-visit__title {
+	margin: 0 0 8px;
+	color: #ffffff;
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: -0.04em;
+}
+
+.kerbside-visit__address {
+	margin: 0;
+	color: #e6eee9;
+}
+
+.kerbside-hours {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: 100%;
+	padding: 36px 36px 32px;
+	border-radius: 32px;
+	background: #14513a;
+	box-shadow: inset 0 0 0 6px #0e3d2b;
+	color: #ffffff;
+	font-variant-numeric: tabular-nums;
+}
+
+.kerbside-hours > * {
+	margin-block: 0 !important;
+}
+
+.kerbside-hours__title {
+	color: #f2c14e;
+	font-family: var(--yantra-font-heading);
+	font-size: 1.9rem;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.kerbside-hours__place {
+	margin-bottom: 12px !important;
+	color: #a9cdb9;
+	font-size: 13px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.kerbside-hours__note {
+	color: #a9cdb9;
+	font-size: 14px;
+}
+
+.kerbside-hours .wp-block-buttons {
+	margin-top: auto !important;
+}
+
+.kerbside-hours .wp-block-button,
+.kerbside-hours .wp-block-button__link {
+	width: 100%;
+}
+
+.kerbside-hours,
+.kerbside-hours a:not(.wp-block-button__link) {
+	--yantra-heading: #ffffff;
+	--yantra-text: #ffffff;
+	--yantra-muted: #a9cdb9;
+	--yantra-border: rgba(255, 255, 255, 0.18);
+}
+
+/* From the journal. */
+.kerbside-journal .wp-block-post-template {
+	gap: 28px;
+}
+
+.kerbside-journal .wp-block-post-featured-image {
+	margin-bottom: 14px;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.kerbside-journal .wp-block-post-featured-image img {
+	transition: transform 0.4s ease;
+}
+
+.kerbside-journal li:hover .wp-block-post-featured-image img {
+	transform: scale(1.04);
+}
+
+.kerbside-journal__cat {
+	margin: 0 0 6px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.kerbside-journal .kerbside-journal__cat a {
+	color: var(--yantra-accent);
+	text-decoration: none;
+}
+
+.kerbside-journal__title {
+	margin: 0 0 6px;
+	font-size: 1.4rem;
+	line-height: 1.2;
+}
+
+.kerbside-journal .kerbside-journal__title a {
+	color: var(--yantra-heading);
+	text-decoration: none;
+}
+
+.kerbside-journal .kerbside-journal__title a:hover {
+	color: var(--yantra-accent);
+}
+
+.kerbside-journal__date {
+	color: var(--yantra-muted);
+	font-size: 14px;
+}
+
+/* Order ahead: the menu to order from. */
+.kerbside-order-intro .yantra-lead {
+	margin-top: 0;
+}
+
+.kerbside-order-intro .kerbside-chips {
+	justify-content: flex-end;
+}
+
+.kerbside-order {
+	scroll-margin-top: 120px;
+}
+
+.kerbside-order__head {
+	gap: 8px 32px;
+	margin-bottom: 1.5rem !important;
+	padding-bottom: 14px;
+	border-bottom: 1px solid var(--yantra-border);
+}
+
+.kerbside-order__title {
+	margin: 0;
+	font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+/* Our story. */
+.kerbside-timeline-wrap > .yantra-title {
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+.kerbside-timeline__step {
+	padding-top: 18px;
+	border-top: 3px solid var(--yantra-accent);
+}
+
+.kerbside-timeline__step p {
+	margin: 0;
+}
+
+.kerbside-timeline__year {
+	color: var(--yantra-accent);
+	font-family: var(--yantra-font-heading);
+	font-size: 2.4rem;
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: -0.03em;
+}
+
+.kerbside-timeline__title {
+	margin: 10px 0 6px;
+	font-size: 1.25rem;
+}
+
+.kerbside-value .kerbside-photo img {
+	aspect-ratio: 4 / 3;
+	border-radius: 22px;
+}
+
+.kerbside-value h3 {
+	margin: 18px 0 8px;
+	font-size: 1.35rem;
+}
+
+.kerbside-value p {
+	margin: 0;
+	color: var(--yantra-muted);
+}
+
+/* A closing band. */
+.kerbside-cta {
+	padding: clamp(40px, 6vw, 72px) clamp(24px, 5vw, 56px);
+	border-radius: 36px;
+	background: #14513a;
+	color: #dcebe2;
+	text-align: center;
+}
+
+.kerbside-cta__title {
+	margin: 0 0 12px;
+	color: #ffffff;
+	font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+	font-weight: 800;
+}
+
+.kerbside-cta__text {
+	margin: 0 auto 28px;
+	max-width: 34rem;
+}
+
+.kerbside-cta .wp-block-buttons {
+	justify-content: center;
+}
+
+/* The Visit page. */
+.kerbside-find .yantra-title {
+	margin-top: 0;
+}
+
+.kerbside-ticks {
+	display: grid;
+	gap: 12px;
+	margin: 1.5rem 0 2rem;
+	padding: 0;
+	list-style: none;
+}
+
+.kerbside-ticks li {
+	position: relative;
+	padding-inline-start: 32px;
+}
+
+.kerbside-ticks li::before {
+	content: "";
+	position: absolute;
+	inset-inline-start: 2px;
+	top: 0.45em;
+	width: 14px;
+	height: 8px;
+	border: solid var(--yantra-accent);
+	border-width: 0 0 2.5px 2.5px;
+	transform: rotate(-45deg);
+}
+
+.kerbside-ticks strong {
+	color: var(--yantra-heading);
+}
+
+.kerbside-allergens {
+	max-width: 52rem;
+	scroll-margin-top: 120px;
+}
+
+.kerbside-allergens .wp-block-details {
+	padding: 16px 0;
+	border-bottom: 1px solid var(--yantra-border);
+}
+
+.kerbside-allergens summary {
+	color: var(--yantra-heading);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.kerbside-allergens .wp-block-details p {
+	margin: 10px 0 0;
+	color: var(--yantra-muted);
+}
+
+/* The week's hours in the dark footer. */
+footer .themor-store-hours dt,
+footer .themor-store-hours dd {
+	color: inherit;
+}
+
+/* Phones and tablets. */
+@media (max-width: 781px) {
+	.kerbside-receipt-wrap {
+		position: relative;
+		inset-inline-start: auto;
+		bottom: auto;
+		width: min(280px, 86%);
+		margin: -72px auto 0;
+	}
+
+	.kerbside-hero__photo img {
+		aspect-ratio: 4 / 3;
+	}
+
+	.kerbside-order-intro .kerbside-chips,
+	.kerbside-chips {
+		justify-content: flex-start;
+	}
+
+	.kerbside-menu-intro {
+		text-align: start;
+	}
+
+	.kerbside-hours {
+		padding: 28px 24px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.kerbside-more a::after,
+	.kerbside-journal .wp-block-post-featured-image img {
+		transition: none;
+	}
+}

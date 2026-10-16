@@ -1,0 +1,31 @@
+{
+	"schema": 1,
+	"images": {
+		"images/kerbside-logo.png": "Kerbside",
+		"images/pastries-lattes-photo.jpg": "Pastries and two lattes on a café table",
+		"images/latte-tray-photo.jpg": "A tray of lattes with leaf patterns in the foam",
+		"images/latte-top-photo.jpg": "",
+		"images/latte-wood-photo.jpg": "A latte on a wooden table",
+		"images/matcha-latte-photo.jpg": "",
+		"images/iced-coffee-photo.jpg": "",
+		"images/espresso-crema-photo.jpg": "",
+		"images/croissant-latte-photo.jpg": "A croissant beside a cup of coffee",
+		"images/croissants-photo.jpg": "",
+		"images/spiced-buns-photo.jpg": "",
+		"images/sourdough-photo.jpg": "",
+		"images/coffee-cake-photo.jpg": "",
+		"images/bakery-shelf-photo.jpg": "Loaves on the bakery shelf",
+		"images/oats-bowl-photo.jpg": "",
+		"images/avocado-photo.jpg": "",
+		"images/eggs-photo.jpg": "",
+		"images/corn-salad-photo.jpg": "",
+		"images/tomato-pasta-photo.jpg": "",
+		"images/coffee-beans-photo.jpg": "",
+		"images/coffee-cherries-photo.jpg": "Ripe red coffee cherries on the branch",
+		"images/many-cups-photo.jpg": "",
+		"images/honey-photo.jpg": "",
+		"images/pour-over-photo.jpg": "Coffee pouring into a glass jug from a pour-over brewer",
+		"images/counter-cup-photo.jpg": "A cup of coffee on the counter",
+		"images/terrace-cup-photo.jpg": "A yellow cup of coffee on an outdoor café table"
+	}
+}

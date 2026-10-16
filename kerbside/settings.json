@@ -1,0 +1,49 @@
+{
+	"schema": 1,
+	"options": {
+		"woocommerce_currency": "GBP",
+		"woocommerce_currency_pos": "left",
+		"woocommerce_manage_stock": "yes"
+	},
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "journal"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Kerbside",
+			"blogdescription": "Coffee & bakery on Kerb Lane",
+			"woocommerce_coming_soon": "no",
+			"woocommerce_store_address": "12 Kerb Lane",
+			"woocommerce_store_city": "Bristol",
+			"woocommerce_store_postcode": "BS2 0QX",
+			"woocommerce_default_country": "GB",
+			"woocommerce_weight_unit": "kg",
+			"woocommerce_dimension_unit": "cm"
+		},
+		"checkout": {
+			"payment_title": "Demo payment (no charge)",
+			"payment_description": "This is a demo café: nothing is charged and nothing will be made.",
+			"payment_instructions": "Thanks for trying the demo. No payment was taken.",
+			"shipping": [
+				{
+					"method": "local_pickup",
+					"title": "Collect from 12 Kerb Lane",
+					"cost": "0"
+				},
+				{
+					"method": "flat_rate",
+					"title": "Royal Mail",
+					"cost": "2.50"
+				},
+				{
+					"method": "free_shipping",
+					"title": "Free postage",
+					"requires": "min_amount",
+					"min_amount": "15"
+				}
+			]
+		},
+		"hide_sample_content": true
+	}
+}

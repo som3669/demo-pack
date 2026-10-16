@@ -1,0 +1,442 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"brew-guides": {
+			"name": "Brew guides",
+			"description": "How we make it, so you can make it at home."
+		},
+		"origins": {
+			"name": "Origins",
+			"description": "Where our coffee comes from, and who grows it."
+		},
+		"from-the-bakery": {
+			"name": "From the bakery",
+			"description": "Bread, buns and the room behind the counter."
+		},
+		"events": {
+			"name": "Events",
+			"description": "Evenings, tastings and the odd party."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "fresh"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "menu-bento"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "order-ahead"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "beans"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "roastery"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "quote"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "visit"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "journal",
+						"categories": [
+							"brew-guides",
+							"origins",
+							"from-the-bakery",
+							"events"
+						]
+					}
+				]
+			]
+		},
+		"menu": {
+			"title": "Menu",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "menu"
+					}
+				]
+			]
+		},
+		"order-ahead": {
+			"title": "Order ahead",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "order"
+					}
+				]
+			]
+		},
+		"about": {
+			"title": "Our story",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "about-intro"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-timeline"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-values"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "quote"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta"
+					}
+				]
+			]
+		},
+		"visit": {
+			"title": "Visit",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "visit-page"
+					}
+				]
+			]
+		},
+		"journal": {
+			"title": "Journal",
+			"content": []
+		}
+	},
+	"posts": {
+		"pour-over-at-home": {
+			"title": "Brew a pour-over at home in four minutes",
+			"category": "brew-guides",
+			"image": "images/pour-over-photo.jpg",
+			"days": 7,
+			"sticky": true,
+			"tags": [
+				"Pour-over",
+				"At home"
+			],
+			"excerpt": "A glass dripper, a kettle and fifteen grams of coffee: the method we use behind the counter, slowed down.",
+			"content": [
+				[
+					"p",
+					"Most of what makes a good cup happens before the water goes in. This is the method we teach at the counter, the one that works with our house blend and with the roaster's pick. It takes four minutes, five if you stop to smell it."
+				],
+				[
+					"h2",
+					"What you need"
+				],
+				[
+					"ul",
+					[
+						"A dripper and a paper filter",
+						"A kettle, ideally with a thin spout",
+						"15 g of coffee, ground like sea salt",
+						"250 g of water just off the boil, about 94 °C",
+						"Scales, or a steady hand and a tablespoon"
+					]
+				],
+				[
+					"h2",
+					"Rinse, then weigh"
+				],
+				[
+					"p",
+					"Rinse the paper filter with hot water. It warms the dripper and the cup, and takes away the papery taste. Pour that water away."
+				],
+				[
+					"p",
+					"Weigh 15 g of coffee into the filter and give it a shake so the bed is flat. A flat bed means the water passes through evenly."
+				],
+				[
+					"h2",
+					"The bloom"
+				],
+				[
+					"p",
+					"Pour about 40 g of water, just enough to wet all the grounds, and wait thirty seconds. Fresh coffee puffs up and bubbles as it lets go of gas; that is the bloom, and it is why freshly roasted beans matter."
+				],
+				[
+					"quote",
+					"If it does not bloom, the coffee is old. No method will fix that.",
+					"Sam, our roaster"
+				],
+				[
+					"h2",
+					"Pour in slow circles"
+				],
+				[
+					"ol",
+					[
+						"Pour in small circles from the middle outwards, up to 150 g.",
+						"Wait for the level to drop by a finger's width.",
+						"Pour again, up to 250 g.",
+						"Let it drain. The whole brew should take three to four minutes."
+					]
+				],
+				[
+					"h2",
+					"Taste, then change one thing"
+				],
+				[
+					"p",
+					"Sour or thin? Grind finer next time. Bitter or dry? Grind coarser. Change one thing at a time and you will have your perfect cup within a week."
+				]
+			]
+		},
+		"this-months-beans": {
+			"title": "Where this month's beans come from",
+			"category": "origins",
+			"image": "images/coffee-cherries-photo.jpg",
+			"days": 14,
+			"sticky": true,
+			"tags": [
+				"Ethiopia",
+				"Roaster's pick"
+			],
+			"excerpt": "Our roaster's pick is a washed coffee from Guji, in southern Ethiopia, from a washing station we have bought from for three years.",
+			"content": [
+				[
+					"p",
+					"This month's roaster's pick comes from Guji, in the highlands of southern Ethiopia, where coffee grows wild under the forest canopy and smallholders bring their cherries to a shared washing station."
+				],
+				[
+					"h2",
+					"Picked ripe, washed clean"
+				],
+				[
+					"p",
+					"Only the ripest red cherries are picked. They are pulped, fermented overnight and washed in channels of spring water, then dried on raised beds for two weeks."
+				],
+				[
+					"h2",
+					"Why we keep going back"
+				],
+				[
+					"p",
+					"We have bought from the same station for three years. We pay before the harvest, so the farmers are not waiting for their money, and every year the coffee tastes a little more like itself."
+				],
+				[
+					"h2",
+					"How it tastes"
+				],
+				[
+					"p",
+					"Jasmine when you open the bag, peach and black tea in the cup. Brew it as filter or pour-over to get the most from it."
+				]
+			]
+		},
+		"latte-art-evenings": {
+			"title": "Latte art evenings, every first Thursday",
+			"category": "events",
+			"image": "images/latte-tray-photo.jpg",
+			"days": 21,
+			"tags": [
+				"Events"
+			],
+			"excerpt": "Pour a heart, then a tulip, then a rosetta. Bring a friend; we bring the milk.",
+			"content": [
+				[
+					"p",
+					"On the first Thursday of every month we stay open late and hand the steam wand over to you. Our baristas show you how to texture milk and pour a heart, then a tulip, then, if the evening goes well, a rosetta."
+				],
+				[
+					"h2",
+					"What happens"
+				],
+				[
+					"ul",
+					[
+						"Doors at 18:00, pouring from 18:15",
+						"Six places, so everyone gets time on the machine",
+						"All the milk you can steam and a slice of cake",
+						"£15, paid at the counter"
+					]
+				],
+				[
+					"h2",
+					"Booking"
+				],
+				[
+					"p",
+					"Ask at the counter or call us on 0117 496 0123. Places go quickly, so book a month ahead if you can."
+				]
+			]
+		},
+		"bread-before-dawn": {
+			"title": "Why the bread is ready before you are",
+			"category": "from-the-bakery",
+			"image": "images/bakery-shelf-photo.jpg",
+			"days": 28,
+			"tags": [
+				"Sourdough",
+				"Bakery"
+			],
+			"excerpt": "The first loaves go in at five. A morning in the room behind the counter.",
+			"content": [
+				[
+					"p",
+					"Our baker, Ade, starts at four. By five the first loaves are in the oven and by half past seven, when we open, the shelf behind the counter is full."
+				],
+				[
+					"h2",
+					"Thirty hours for one loaf"
+				],
+				[
+					"p",
+					"A loaf of our country sourdough is mixed the morning before, folded through the day and left to prove slowly in the cold overnight. The long, cool rise is where the flavour comes from."
+				],
+				[
+					"h2",
+					"Then the pastry"
+				],
+				[
+					"p",
+					"Croissants and cardamom buns go in after the bread, in the same oven as it cools. The buns are the first thing to sell out, which is why we let you order them ahead."
+				],
+				[
+					"h2",
+					"And what is left"
+				],
+				[
+					"p",
+					"At closing time, what is left goes to the food bank on Station Road, or becomes tomorrow's bread pudding."
+				]
+			]
+		},
+		"cold-brew-tonight": {
+			"title": "A cold brew you can start tonight",
+			"category": "brew-guides",
+			"image": "images/iced-coffee-photo.jpg",
+			"days": 35,
+			"tags": [
+				"Cold brew",
+				"At home"
+			],
+			"excerpt": "A jar, a sieve and eighteen hours. The easiest coffee you will ever make.",
+			"content": [
+				[
+					"p",
+					"Cold brew asks for patience, not skill. Start it tonight and it is ready for tomorrow afternoon."
+				],
+				[
+					"h2",
+					"You need"
+				],
+				[
+					"ul",
+					[
+						"100 g of coffee, ground coarse like breadcrumbs",
+						"1 litre of cold water",
+						"A big jar, and a sieve lined with a paper filter"
+					]
+				],
+				[
+					"h2",
+					"Method"
+				],
+				[
+					"ol",
+					[
+						"Stir the coffee into the water so every grain is wet.",
+						"Cover and leave in the fridge for 18 hours.",
+						"Strain through the lined sieve. Twice, for a cleaner cup.",
+						"Keep it in the fridge for up to a week. Serve over ice, half and half with water or milk."
+					]
+				]
+			]
+		},
+		"yesterdays-sourdough": {
+			"title": "Five things to do with yesterday's sourdough",
+			"category": "from-the-bakery",
+			"image": "images/sourdough-photo.jpg",
+			"days": 42,
+			"tags": [
+				"Sourdough",
+				"At home"
+			],
+			"excerpt": "A day-old loaf is not a lost loaf. Our favourite ways to use the end of it.",
+			"content": [
+				[
+					"p",
+					"A good sourdough is at its best for toast on day two. By day four, it is time to get creative."
+				],
+				[
+					"h2",
+					"Five ideas"
+				],
+				[
+					"ol",
+					[
+						"Thick toast, butter and our wildflower honey.",
+						"Croutons: torn, tossed in olive oil and baked for ten minutes.",
+						"Panzanella, with ripe tomatoes and plenty of olive oil.",
+						"Breadcrumbs, frozen in a bag for the next time you need them.",
+						"Bread pudding, the way we make it at closing time."
+					]
+				],
+				[
+					"h2",
+					"Keeping it longer"
+				],
+				[
+					"p",
+					"Keep the loaf cut side down on a board, or in a cloth bag. Never the fridge: it goes stale faster there than anywhere."
+				]
+			]
+		}
+	}
+}
