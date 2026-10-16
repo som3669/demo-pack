@@ -142,25 +142,31 @@
 			"screens": [
 				{
 					"title": "Home",
-					"image": "yantra-pro/screens/home.jpg"
+					"image": "yantra-pro/screens/home.jpg",
+					"page": "yantra-pro/site/index.html"
 				},
 				{
 					"title": "About",
-					"image": "yantra-pro/screens/about.jpg"
+					"image": "yantra-pro/screens/about.jpg",
+					"page": "yantra-pro/site/about/index.html"
 				},
 				{
 					"title": "Pricing",
-					"image": "yantra-pro/screens/pricing.jpg"
+					"image": "yantra-pro/screens/pricing.jpg",
+					"page": "yantra-pro/site/pricing/index.html"
 				},
 				{
 					"title": "Contact",
-					"image": "yantra-pro/screens/contact.jpg"
+					"image": "yantra-pro/screens/contact.jpg",
+					"page": "yantra-pro/site/contact/index.html"
 				},
 				{
 					"title": "Blog",
-					"image": "yantra-pro/screens/blog.jpg"
+					"image": "yantra-pro/screens/blog.jpg",
+					"page": "yantra-pro/site/blog/index.html"
 				}
 			],
+			"demo_url": "https://som3669.github.io/demo-pack/yantra-pro/site/index.html",
 			"categories": [
 				"Business"
 			]
@@ -180,21 +186,26 @@
 			"screens": [
 				{
 					"title": "Home",
-					"image": "daybook/screens/home.jpg"
+					"image": "daybook/screens/home.jpg",
+					"page": "daybook/site/index.html"
 				},
 				{
 					"title": "A post",
-					"image": "daybook/screens/post.jpg"
+					"image": "daybook/screens/post.jpg",
+					"page": "daybook/site/a-week-of-dinners-from-one-veg-box/index.html"
 				},
 				{
 					"title": "A section",
-					"image": "daybook/screens/cook.jpg"
+					"image": "daybook/screens/cook.jpg",
+					"page": "daybook/site/category/cook/index.html"
 				},
 				{
 					"title": "About",
-					"image": "daybook/screens/about.jpg"
+					"image": "daybook/screens/about.jpg",
+					"page": "daybook/site/about/index.html"
 				}
 			],
+			"demo_url": "https://som3669.github.io/demo-pack/daybook/site/index.html",
 			"categories": [
 				"Blog"
 			],

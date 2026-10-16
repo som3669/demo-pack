@@ -1,0 +1,206 @@
+/*
+ * Themor's mobile bar: app-style links fixed at the bottom of small screens, and its search
+ * sheet. It shows below the width the module prints (a media query in its inline CSS). A theme
+ * restyles it through the custom properties below; --themor-mbar-offset (its height while it
+ * shows) lifts other fixed things above it.
+ */
+
+:root {
+	--themor-mbar-height: 62px;
+	--themor-mbar-bg: #fff;
+	--themor-mbar-color: #475569;
+	--themor-mbar-active: #2563eb;
+	--themor-mbar-border: #e5e7eb;
+	--themor-mbar-badge: #2563eb;
+	--themor-mbar-on-badge: #fff;
+	--themor-mbar-radius: 14px;
+}
+
+.themor-mbar {
+	position: fixed;
+	z-index: 95;
+	inset-inline: 0;
+	inset-block-end: 0;
+	display: none;
+	padding-block-end: env(safe-area-inset-bottom, 0px);
+	border-block-start: 1px solid var(--themor-mbar-border);
+	background: var(--themor-mbar-bg);
+	box-shadow: 0 -8px 24px -16px rgba(15, 23, 42, 0.35);
+	transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.themor-mbar.is-hidden {
+	transform: translateY(110%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.themor-mbar {
+		transition: none;
+	}
+}
+
+.themor-mbar__list {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-mbar__list > li {
+	flex: 1 1 0;
+	min-width: 0;
+	margin: 0;
+}
+
+.themor-mbar__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+	width: 100%;
+	height: var(--themor-mbar-height);
+	margin: 0;
+	padding: 0 2px;
+	border: 0;
+	background: transparent;
+	color: var(--themor-mbar-color);
+	font: inherit;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.1;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.themor-mbar--icons .themor-mbar__item {
+	gap: 0;
+}
+
+.themor-mbar__item:hover,
+.themor-mbar__item:focus-visible,
+.themor-mbar__item[aria-current="page"] {
+	color: var(--themor-mbar-active);
+}
+
+.themor-mbar__item:focus-visible {
+	outline: 2px solid var(--themor-mbar-active);
+	outline-offset: -4px;
+	border-radius: 10px;
+}
+
+.themor-mbar__item[aria-current="page"]::before {
+	content: "";
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline: 30%;
+	height: 3px;
+	border-radius: 0 0 3px 3px;
+	background: var(--themor-mbar-active);
+}
+
+.themor-mbar__icon,
+.themor-mbar__fa {
+	display: block;
+	flex: none;
+	width: 22px;
+	height: 22px;
+	font-size: 19px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.themor-mbar__label {
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.themor-mbar__count {
+	position: absolute;
+	inset-block-start: 8px;
+	inset-inline-start: calc(50% + 4px);
+	display: grid;
+	place-items: center;
+	min-width: 18px;
+	height: 18px;
+	padding: 0 4px;
+	border-radius: 999px;
+	background: var(--themor-mbar-badge);
+	color: var(--themor-mbar-on-badge);
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.themor-mbar__count[hidden] {
+	display: none;
+}
+
+/* The search sheet: from the bottom. */
+.themor-mbar-sheet {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: none;
+	margin: auto 0 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+
+.themor-mbar-sheet::backdrop {
+	background: rgba(15, 23, 42, 0.45);
+}
+
+.themor-mbar-sheet__panel {
+	padding: 1rem 1.25rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
+	border-radius: var(--themor-mbar-radius) var(--themor-mbar-radius) 0 0;
+	background: var(--themor-mbar-bg);
+	color: var(--themor-mbar-color);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.themor-mbar-sheet[open] .themor-mbar-sheet__panel {
+		animation: themor-mbar-up 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+}
+
+@keyframes themor-mbar-up {
+	from {
+		transform: translateY(100%);
+	}
+}
+
+.themor-mbar-sheet__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-block-end: 0.75rem;
+}
+
+.themor-mbar-sheet__title {
+	margin: 0;
+	font-size: 1.125rem;
+}
+
+.themor-mbar-sheet__close {
+	display: inline-grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+.themor-mbar-sheet form {
+	max-width: none;
+}
