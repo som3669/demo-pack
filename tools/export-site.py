@@ -19,6 +19,7 @@ PUBLIC = sys.argv[4].rstrip('/') if len(sys.argv) > 4 else ''
 HOST = re.escape(BASE)
 ESC_BASE = BASE.replace('/', '\\/')
 ASSET = ('/wp-content/', '/wp-includes/')
+LIGHT = '<script>try{if(!localStorage.getItem("themor-scheme")){document.documentElement.setAttribute("data-themor-scheme","light")}}catch(e){}</script>'
 SKIP = ('/wp-admin', '/wp-json', '/wp-login', '/feed', '/comments/feed', '/cart', '/checkout', '/my-account', '/xmlrpc', '/author/', '/tag/')
 
 pages, queue, assets, done_assets = {}, ['/'], set(), set()
@@ -107,7 +108,8 @@ for path in sorted(exported):
     html = re.sub(r'<link[^>]+rel=["\'](?:alternate|EditURI|https://api\.w\.org/|shortlink|canonical|wlwmanifest|pingback|preconnect|dns-prefetch)["\'][^>]*>\s*', '', html)
     html = re.sub(r'<meta name=["\']generator["\'][^>]*>\s*', '', html)
     html = re.sub(r'(<form\b[^>]*\baction=")[^"]*(")', r'\1#\2', html)
-    html = html.replace('<head>', '<head>\n<meta name="robots" content="noindex">', 1)
+    # Light unless the visitor switched to dark: a demo opens as its designer sees it.
+    html = html.replace('<head>', '<head>\n<meta name="robots" content="noindex">\n' + LIGHT, 1)
     html = rewrite(html, f)
     html = rewrite(html, f, escaped=True)
     enc = urllib.parse.quote(BASE, safe='')
