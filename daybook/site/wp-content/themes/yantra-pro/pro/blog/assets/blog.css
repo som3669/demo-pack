@@ -1,0 +1,111 @@
+/*
+ * Yantra Pro: the look of the blog module's Pro parts in Yantra (Yantra has the tokens), and Pro's
+ * blog layouts (Masonry, Overlay).
+ * Plain CSS, no build. The blog's Columns arrive as --yantra-pro-columns (the list's own
+ * --yantra-columns is set on it for the grid only).
+ */
+
+/* Yantra's tokens again, twice :root: the module's own stylesheet loads after Yantra's and sets
+ * its defaults (a blue accent) on :root, so the mapping in Yantra's stylesheet alone loses to it. */
+:root:root {
+	--themor-blog-bg: var(--yantra-bg);
+	--themor-blog-text: var(--yantra-text);
+	--themor-blog-heading: var(--yantra-heading);
+	--themor-blog-muted: var(--yantra-muted);
+	--themor-blog-border: var(--yantra-border);
+	--themor-blog-surface: var(--yantra-surface);
+	--themor-blog-accent: var(--yantra-accent);
+	--themor-blog-on-accent: var(--yantra-on-accent);
+	--themor-blog-radius: var(--yantra-radius-lg);
+	--themor-blog-ease: var(--yantra-ease);
+}
+
+.themor-featured__title {
+	font-family: var(--yantra-font-heading);
+}
+
+/* Masonry: columns of cards, each as tall as its picture and text. */
+.yantra-posts--masonry {
+	display: block;
+	columns: var(--yantra-pro-columns, 3) 15rem;
+	column-gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.yantra-posts--masonry > * {
+	width: 100%;
+	margin-block-end: clamp(1.5rem, 3vw, 2.5rem);
+	break-inside: avoid;
+}
+
+/* Each picture in its own shape (Masonry reads Image shape as Original): no ratio of the theme's,
+ * so its width and height attributes set it, also while a lazy picture with sizes="auto" waits. */
+.yantra-posts--masonry .yantra-entry__image img {
+	height: auto;
+}
+
+/* Overlay: tall pictures with the text over their foot. */
+.yantra-posts--overlay {
+	grid-template-columns: repeat(var(--yantra-pro-columns, 3), minmax(0, 1fr));
+}
+
+@media (max-width: 1024px) {
+	.yantra-posts--overlay {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 767px) {
+	.yantra-posts--overlay {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.yantra-posts--overlay .yantra-entry--has-media {
+	overflow: hidden;
+	border: 0;
+	border-radius: var(--yantra-radius-lg);
+	background: #0f172a;
+	isolation: isolate;
+}
+
+.yantra-posts--overlay .yantra-entry--has-media .yantra-entry__image {
+	border-radius: 0;
+}
+
+.yantra-posts--overlay .yantra-entry--has-media .yantra-entry__image img {
+	aspect-ratio: 4 / 5 !important;
+	height: auto;
+	object-fit: cover;
+}
+
+.yantra-posts--overlay .yantra-entry--has-media .yantra-entry__body {
+	position: absolute;
+	z-index: 1;
+	inset: auto 0 0;
+	padding: clamp(1.15rem, 2.5vw, 1.6rem);
+	background: linear-gradient(to top, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.55) 60%, rgba(15, 23, 42, 0));
+	color: #fff;
+	pointer-events: none;
+}
+
+.yantra-posts--overlay .yantra-entry--has-media .yantra-entry__body a {
+	color: #fff;
+	pointer-events: auto;
+}
+
+.yantra-posts--overlay .yantra-entry--has-media .yantra-entry__body :is(.yantra-entry__title, .yantra-entry__title a, .yantra-meta, .yantra-meta a, .yantra-entry__excerpt) {
+	color: #fff;
+}
+
+.yantra-posts--overlay .yantra-entry--has-media .yantra-entry__excerpt {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+/* The share buttons and the table of contents follow Yantra's links. */
+.themor-toc__item a:hover,
+.themor-toc__item a:focus-visible {
+	color: var(--yantra-link-hover);
+}

@@ -1,0 +1,100 @@
+/*!
+ * Yantra Pro: the header items (dividers, contact info, header widgets, the language switcher,
+ * the dark mode switch) and Themor's header extras in Yantra's tokens.
+ *
+ * Compiled from pro/assets/scss/header-items.scss by gulpfile.mjs.
+ */
+:root:root {
+  --themor-hx-bg: var(--yantra-bg);
+  --themor-hx-text: var(--yantra-text);
+  --themor-hx-heading: var(--yantra-heading);
+  --themor-hx-muted: var(--yantra-muted);
+  --themor-hx-border: var(--yantra-border);
+  --themor-hx-surface: var(--yantra-surface);
+  --themor-hx-accent: var(--yantra-accent);
+  --themor-hx-radius: var(--yantra-radius);
+  --themor-hx-shadow: var(--yantra-shadow-lg);
+}
+
+.themor-hx-dialog__title {
+  font-family: var(--yantra-font-heading);
+}
+
+.yantra-pro-divider {
+  display: block;
+  width: var(--yantra-pro-divider-width, 1px);
+  height: var(--yantra-pro-divider-height, 24px);
+  background: var(--yantra-pro-divider-color, var(--yantra-border));
+}
+
+.yantra-drawer .yantra-pro-divider {
+  width: 100%;
+  height: var(--yantra-pro-divider-width, 1px);
+}
+
+.yantra-header .themor-hx-contact,
+.yantra-header .themor-hx-language {
+  color: inherit;
+}
+
+.yantra-drawer .themor-hx-contact {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.yantra-drawer .themor-hx-language--dropdown ul {
+  position: static;
+  margin-block-start: 0.5rem;
+  box-shadow: none;
+}
+
+.yantra-pro-header-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+.yantra-pro-header-widgets > .widget {
+  margin: 0;
+}
+.yantra-pro-header-widgets p {
+  margin: 0;
+}
+
+.yantra-drawer .yantra-pro-header-widgets {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.yantra-pro-scheme .yantra-pro-scheme__sun {
+  display: none;
+}
+.yantra-pro-scheme[aria-pressed=true] .yantra-pro-scheme__moon {
+  display: none;
+}
+.yantra-pro-scheme[aria-pressed=true] .yantra-pro-scheme__sun {
+  display: block;
+}
+
+:root:root {
+  --themor-mbar-bg: var(--yantra-bg);
+  --themor-mbar-color: var(--yantra-muted);
+  --themor-mbar-active: var(--yantra-accent);
+  --themor-mbar-border: var(--yantra-border);
+  --themor-mbar-badge: var(--yantra-accent);
+  --themor-mbar-on-badge: var(--yantra-on-accent);
+  --themor-mbar-radius: var(--yantra-radius-lg);
+}
+
+.themor-mbar__item {
+  font-family: var(--yantra-font-body);
+}
+
+.themor-mbar-sheet__title {
+  color: var(--yantra-heading);
+  font-family: var(--yantra-font-heading);
+}
+
+.themor-has-mbar .yantra-scroll-top {
+  bottom: calc(1.5rem + var(--themor-mbar-offset, 0px));
+}
