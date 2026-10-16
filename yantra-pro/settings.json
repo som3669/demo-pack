@@ -1,0 +1,14 @@
+{
+	"schema": 1,
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "blog"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Yantra",
+			"blogdescription": "A calmer way to work"
+		},
+		"hide_sample_content": true
+	}
+}

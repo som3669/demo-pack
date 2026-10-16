@@ -122,18 +122,26 @@
 			"path": "yantra/pack.json",
 			"requires": {
 				"wordpress": "6.5"
-			}
+			},
+			"preview": "yantra/preview.jpg",
+			"categories": [
+				"Business"
+			]
 		},
 		{
 			"id": "yantra-pro",
 			"theme": "yantra-pro",
 			"title": "Yantra business site",
-			"description": "A calm business site: a homepage built from Yantra's patterns with features, figures, testimonials, plans, questions and the latest posts; About, Pricing and Contact pages; six posts in four categories with photos; a main and a footer menu, four footer widgets, an announcement bar, a sticky header, a logo and the Customizer settings to match. Needs no plugin besides Storefill.",
-			"version": "1.0.0",
-			"path": "yantra/pack.json",
+			"description": "A calm business site: a homepage built from its own patterns with features, figures, testimonials, plans, questions and the latest posts; About, Pricing and Contact pages; six posts in four categories with photos; a main and a footer menu, four footer widgets, an announcement bar, a sticky header, a logo and the Customizer settings to match. Its 15 patterns join the site's own patterns. For Yantra Pro.",
+			"version": "1.1.0",
+			"path": "yantra-pro/pack.json",
 			"requires": {
 				"wordpress": "6.5"
-			}
+			},
+			"preview": "yantra-pro/preview.jpg",
+			"categories": [
+				"Business"
+			]
 		},
 		{
 			"id": "daybook",
@@ -144,7 +152,15 @@
 			"path": "daybook/pack.json",
 			"requires": {
 				"wordpress": "6.5"
-			}
+			},
+			"preview": "daybook/preview.jpg",
+			"categories": [
+				"Blog"
+			],
+			"theme_name": "Yantra Pro",
+			"shown_with": [
+				"yantra"
+			]
 		}
 	]
 }

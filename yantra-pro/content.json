@@ -1,0 +1,496 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"guides": {
+			"name": "Guides",
+			"description": "Step-by-step help with building and running a site."
+		},
+		"design": {
+			"name": "Design",
+			"description": "Colour, type and the words on the page."
+		},
+		"stories": {
+			"name": "Stories",
+			"description": "How people use their sites to grow."
+		},
+		"news": {
+			"name": "News",
+			"description": "What is new at Yantra."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "hero",
+						"links": [
+							{
+								"text": "Get started",
+								"page": "pricing"
+							},
+							{
+								"text": "See how it works",
+								"page": "about"
+							}
+						]
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "logos"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "features"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "split",
+						"links": [
+							{
+								"text": "About us",
+								"page": "about"
+							}
+						]
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "stats"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "testimonials"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "pricing",
+						"links": [
+							{
+								"text": "Choose Starter",
+								"page": "contact"
+							},
+							{
+								"text": "Choose Team",
+								"page": "contact"
+							},
+							{
+								"text": "Choose Business",
+								"page": "contact"
+							}
+						]
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "faq",
+						"links": [
+							{
+								"text": "Contact us",
+								"page": "contact"
+							}
+						]
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "posts",
+						"links": [
+							{
+								"text": "All posts",
+								"page": "blog"
+							}
+						],
+						"categories": [
+							"guides",
+							"design",
+							"stories",
+							"news"
+						]
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "call-to-action",
+						"links": [
+							{
+								"text": "Start your free trial",
+								"page": "pricing"
+							},
+							{
+								"text": "Talk to us",
+								"page": "contact"
+							}
+						]
+					}
+				]
+			]
+		},
+		"about": {
+			"title": "About",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "page-about",
+						"links": [
+							{
+								"text": "Say hello",
+								"page": "contact"
+							},
+							{
+								"text": "Start your free trial",
+								"page": "pricing"
+							},
+							{
+								"text": "Talk to us",
+								"page": "contact"
+							}
+						]
+					}
+				]
+			]
+		},
+		"pricing": {
+			"title": "Pricing",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "page-pricing",
+						"links": [
+							{
+								"text": "Choose Starter",
+								"page": "contact"
+							},
+							{
+								"text": "Choose Team",
+								"page": "contact"
+							},
+							{
+								"text": "Choose Business",
+								"page": "contact"
+							},
+							{
+								"text": "Contact us",
+								"page": "contact"
+							},
+							{
+								"text": "Start your free trial",
+								"page": "contact"
+							},
+							{
+								"text": "Talk to us",
+								"page": "contact"
+							}
+						]
+					}
+				]
+			]
+		},
+		"contact": {
+			"title": "Contact",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "page-contact"
+					}
+				]
+			]
+		},
+		"blog": {
+			"title": "Blog",
+			"content": []
+		},
+		"privacy": {
+			"title": "Privacy policy",
+			"content": [
+				[
+					"p",
+					"This is a sample privacy policy for the Yantra demo. Replace it with your own before you publish your site."
+				],
+				[
+					"h2",
+					"What we collect"
+				],
+				[
+					"p",
+					"When you write to us, we keep your name, your email address and what you sent, so we can answer."
+				],
+				[
+					"h2",
+					"How we use it"
+				],
+				[
+					"p",
+					"Only to reply to you and to run this site. We never sell it or share it with anyone for their own use."
+				],
+				[
+					"h2",
+					"Your choices"
+				],
+				[
+					"p",
+					"Ask us at any time for a copy of what we hold about you, or to delete it."
+				]
+			]
+		},
+		"terms": {
+			"title": "Terms",
+			"content": [
+				[
+					"p",
+					"These are sample terms for the Yantra demo. Replace them with your own before you publish your site."
+				],
+				[
+					"h2",
+					"Using this site"
+				],
+				[
+					"p",
+					"You may read, share and link to anything here. Please do not copy whole pages as your own."
+				],
+				[
+					"h2",
+					"Plans and payments"
+				],
+				[
+					"p",
+					"Prices are per month unless a plan says otherwise. You can cancel at any time, and you keep your plan until the end of the period you paid for."
+				]
+			]
+		}
+	},
+	"posts": {
+		"plan-a-website-people-can-use": {
+			"title": "How to plan a website people can use",
+			"excerpt": "Before you pick a single colour, write down who visits, what they came for and the one thing each page should help them do.",
+			"image": "images/posts/plan-photo.jpg",
+			"days": 13,
+			"category": "guides",
+			"content": [
+				[
+					"p",
+					"Most sites start with a colour, a logo or a template. The ones that work start with a list of the people who will visit, and what each of them came to do."
+				],
+				[
+					"h2",
+					"Start with the visits, not the pages"
+				],
+				[
+					"p",
+					"Write down the five most common reasons someone lands on your site. A bakery might hear: what is open today, can I order a cake, where do I park. Each reason becomes a page, or a section of one."
+				],
+				[
+					"h2",
+					"Give every page one job"
+				],
+				[
+					"p",
+					"A page that tries to sell, explain and hire at the same time does none of them well. Pick the one thing a visitor should do next, and make that the biggest button."
+				],
+				[
+					"ul",
+					[
+						"Name the page's one job in a sentence.",
+						"Put the answer to the visitor's question first.",
+						"End with the next step as a button.",
+						"Cut anything that does not serve the job."
+					]
+				],
+				[
+					"h2",
+					"Test it with one real person"
+				],
+				[
+					"p",
+					"Ask a friend to find something on your site while you watch, without helping. Wherever they hesitate, the page needs work. Fix that, then ask someone else."
+				]
+			]
+		},
+		"five-small-changes-faster-pages": {
+			"title": "Five small changes that make pages faster",
+			"excerpt": "Smaller images, fewer fonts and one less plugin. None of them takes more than ten minutes.",
+			"image": "images/posts/hourglass-photo.jpg",
+			"days": 21,
+			"category": "guides",
+			"content": [
+				[
+					"p",
+					"A page that appears in one second feels calm. One that takes four feels broken, however good it looks. These five changes each take a few minutes."
+				],
+				[
+					"ol",
+					[
+						"Resize photos before you upload them: 2000 pixels wide is plenty.",
+						"Use one font family, in two weights at most.",
+						"Remove the plugins you no longer use.",
+						"Put video on its own page, not on the homepage.",
+						"Turn on a caching plugin, or ask your host if they cache for you."
+					]
+				],
+				[
+					"h2",
+					"Measure before and after"
+				],
+				[
+					"p",
+					"Open your homepage on your phone, away from your desk's fast connection, and count. Then make one change and count again. Small numbers add up."
+				]
+			]
+		},
+		"colours-your-visitors-can-read": {
+			"title": "Choosing colours your visitors can read",
+			"excerpt": "Contrast is not a matter of taste. Here is how to check it, and what to do when your brand colour fails.",
+			"image": "images/posts/pencils-photo.jpg",
+			"days": 33,
+			"category": "design",
+			"content": [
+				[
+					"p",
+					"Light grey text on white looks elegant on a big screen and disappears in sunlight. Good contrast is what lets everyone read your site, wherever they are."
+				],
+				[
+					"h2",
+					"Check it, do not guess"
+				],
+				[
+					"p",
+					"Body text needs a contrast ratio of at least 4.5 to 1 against its background, and large headings at least 3 to 1. Any online contrast checker tells you the ratio of two colours."
+				],
+				[
+					"h2",
+					"When your brand colour fails"
+				],
+				[
+					"p",
+					"Keep it for large things: buttons, headings and backgrounds. Use a darker shade of it for links and small text, so the page still feels like yours."
+				]
+			]
+		},
+		"corner-bakery-online-orders": {
+			"title": "How a corner bakery doubled its online orders",
+			"excerpt": "A clearer menu page, an order button in the header and photos taken on a phone at opening time.",
+			"image": "images/posts/baguettes-photo.jpg",
+			"days": 42,
+			"category": "stories",
+			"content": [
+				[
+					"p",
+					"The bakery on the corner had a site that looked fine and sold almost nothing. Three changes over one weekend doubled its online orders in a month."
+				],
+				[
+					"h2",
+					"One menu, one page"
+				],
+				[
+					"p",
+					"The menu had been a photo of the chalkboard. Now it is a page with every bread, its price and the days it is baked, so people can search it."
+				],
+				[
+					"h2",
+					"An order button that never moves"
+				],
+				[
+					"p",
+					"The header now holds a button that says Order for pickup, on every page. Nobody has to look for it."
+				],
+				[
+					"h2",
+					"Photos at opening time"
+				],
+				[
+					"p",
+					"The owner takes one photo each morning, on her phone, when the light is best and the shelves are full. People order what they can see."
+				]
+			]
+		},
+		"what-is-new-this-autumn": {
+			"title": "What is new in Yantra this autumn",
+			"excerpt": "Edit any part of your site by clicking it, a reading progress bar for long posts, and six palettes to start from.",
+			"image": "images/posts/leaves-photo.jpg",
+			"days": 49,
+			"category": "news",
+			"content": [
+				[
+					"p",
+					"This season's update is about doing more with fewer clicks. Here is what changed."
+				],
+				[
+					"h2",
+					"Click to edit"
+				],
+				[
+					"p",
+					"In the Customizer, click any part of the page, such as the logo, the menu or the footer, and its settings open."
+				],
+				[
+					"h2",
+					"Reading progress"
+				],
+				[
+					"p",
+					"Long posts can show a thin bar at the top of the window that fills as you read."
+				],
+				[
+					"h2",
+					"Six palettes"
+				],
+				[
+					"p",
+					"Indigo, Ocean, Forest, Ember, Rose and Graphite each set every colour on the site in one go, all with readable contrast."
+				]
+			]
+		},
+		"button-labels-say-what-happens": {
+			"title": "Button labels that say what happens next",
+			"excerpt": "Submit tells nobody anything. Name the action, and keep the same word from the button to the message after it.",
+			"image": "images/posts/stationery-photo.jpg",
+			"days": 58,
+			"category": "design",
+			"content": [
+				[
+					"p",
+					"A button is a promise. Its label should say exactly what happens when someone presses it."
+				],
+				[
+					"h2",
+					"Name the action"
+				],
+				[
+					"p",
+					"Send message, Book a call and Download the guide each say what will happen. Submit and Click here say nothing."
+				],
+				[
+					"h2",
+					"Keep the word"
+				],
+				[
+					"p",
+					"If the button says Book a call, the message after it should say Your call is booked. The same word, from start to finish, tells people they did what they meant to."
+				]
+			]
+		}
+	}
+}
