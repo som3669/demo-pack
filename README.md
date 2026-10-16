@@ -135,7 +135,7 @@ opens that demo straight away). These index fields fill the card and the demo's 
 | `categories` | list of names | The demo's kinds, such as `[ "Shop", "Food and drink" ]`. With more than one kind among a theme's demos, the importer shows a chip for each. |
 | `demo_url` | URL | The live demo, opened from the demo's page in a new tab. |
 | `screens` | list of `{ "title", "image" }` | The demo's pages as full-page pictures, such as `{ "title": "Home", "image": "daybook/screens/home.jpg" }`, up to 8. Opening the demo shows them in a preview with a tab for each page, beside Import. Take them 1280 pixels wide as `.jpg` (about 75% quality keeps a long page under 600 KB). Storefill downloads them into the site's uploads the first time the demo is opened, once per pack version. Without them, the preview shows `preview`. |
-| `pro` | `true` | A Pro demo, such as one made for a Pro theme. The importer shows a Pro badge at the top right of its card and of its preview. Leave it out for a free demo. |
+| `pro` | `true` | A demo only the Pro theme has, such as Daybook. The importer shows a Pro badge at the top right of its card and of its preview. Leave it out for a free demo, even when the Pro theme lists its own copy of it (the Yantra business site). |
 | `shown_with` | list of theme slugs | Also list the demo for these themes, such as a free theme's Pro demos: `"theme": "yantra-pro", "shown_with": [ "yantra" ]`. There it shows "For Yantra Pro" and imports once that theme is active (Activate, or Get Yantra Pro). |
 | `theme_name` | text | The theme's name, for a site that doesn't have it installed. |
 | `upgrade_url` | URL | Where the theme the demo needs is had; the Get button links there. |
