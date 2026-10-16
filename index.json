@@ -131,6 +131,7 @@
 		{
 			"id": "yantra-pro",
 			"theme": "yantra-pro",
+			"pro": true,
 			"title": "Yantra business site",
 			"description": "A calm business site: a homepage built from its own patterns with features, figures, testimonials, plans, questions and the latest posts; About, Pricing and Contact pages; six posts in four categories with photos; a main and a footer menu, four footer widgets, an announcement bar, a sticky header, a logo and the Customizer settings to match. Its 15 patterns join the site's own patterns. For Yantra Pro.",
 			"version": "1.1.0",
@@ -139,6 +140,28 @@
 				"wordpress": "6.5"
 			},
 			"preview": "yantra-pro/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "yantra-pro/screens/home.jpg"
+				},
+				{
+					"title": "About",
+					"image": "yantra-pro/screens/about.jpg"
+				},
+				{
+					"title": "Pricing",
+					"image": "yantra-pro/screens/pricing.jpg"
+				},
+				{
+					"title": "Contact",
+					"image": "yantra-pro/screens/contact.jpg"
+				},
+				{
+					"title": "Blog",
+					"image": "yantra-pro/screens/blog.jpg"
+				}
+			],
 			"categories": [
 				"Business"
 			]
@@ -146,6 +169,7 @@
 		{
 			"id": "daybook",
 			"theme": "yantra-pro",
+			"pro": true,
 			"title": "Daybook lifestyle blog",
 			"description": "A lifestyle blog in four sections, Cook, Grow, Make and Rest: 23 posts with photos and tags, a three-part bread series, a quote post, a featured slider of sticky posts, Masonry with infinite scroll, a table of contents, floating share buttons, view counts, dark mode with a header switch, a phone bar, About, Contact and Privacy pages, menus, footer widgets and a logo. For Yantra Pro.",
 			"version": "1.0.0",
@@ -154,6 +178,24 @@
 				"wordpress": "6.5"
 			},
 			"preview": "daybook/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "daybook/screens/home.jpg"
+				},
+				{
+					"title": "A post",
+					"image": "daybook/screens/post.jpg"
+				},
+				{
+					"title": "A section",
+					"image": "daybook/screens/cook.jpg"
+				},
+				{
+					"title": "About",
+					"image": "daybook/screens/about.jpg"
+				}
+			],
 			"categories": [
 				"Blog"
 			],
