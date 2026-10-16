@@ -2,7 +2,7 @@
 
 Kerbside Coffee & Bakery, its staff, prices and addresses are invented. No photograph shows a brand
 name, a logo, readable packaging text or an identifiable face. The pack is demo content for the
-Yantra Pro theme, and is still being built.
+Yantra Pro theme.
 
 Every photograph is **CC0 1.0**: dedicated to the public domain, free to use, change and
 redistribute, including commercially, with no attribution required. Credit is given as a courtesy.
