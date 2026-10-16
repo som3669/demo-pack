@@ -227,37 +227,46 @@
 			"screens": [
 				{
 					"title": "Home",
-					"image": "kerbside/screens/home.jpg"
+					"image": "kerbside/screens/home.jpg",
+					"page": "kerbside/site/index.html"
 				},
 				{
 					"title": "Menu",
-					"image": "kerbside/screens/menu.jpg"
+					"image": "kerbside/screens/menu.jpg",
+					"page": "kerbside/site/menu/index.html"
 				},
 				{
 					"title": "Order ahead",
-					"image": "kerbside/screens/order.jpg"
+					"image": "kerbside/screens/order.jpg",
+					"page": "kerbside/site/order-ahead/index.html"
 				},
 				{
 					"title": "Coffee at home",
-					"image": "kerbside/screens/product.jpg"
+					"image": "kerbside/screens/product.jpg",
+					"page": "kerbside/site/product/house-blend/index.html"
 				},
 				{
 					"title": "Our story",
-					"image": "kerbside/screens/about.jpg"
+					"image": "kerbside/screens/about.jpg",
+					"page": "kerbside/site/about/index.html"
 				},
 				{
 					"title": "Journal",
-					"image": "kerbside/screens/journal.jpg"
+					"image": "kerbside/screens/journal.jpg",
+					"page": "kerbside/site/journal/index.html"
 				},
 				{
 					"title": "A post",
-					"image": "kerbside/screens/post.jpg"
+					"image": "kerbside/screens/post.jpg",
+					"page": "kerbside/site/pour-over-at-home/index.html"
 				},
 				{
 					"title": "Visit",
-					"image": "kerbside/screens/visit.jpg"
+					"image": "kerbside/screens/visit.jpg",
+					"page": "kerbside/site/visit/index.html"
 				}
 			],
+			"demo_url": "https://som3669.github.io/demo-pack/kerbside/site/index.html",
 			"categories": [
 				"Shop",
 				"Food and drink"
