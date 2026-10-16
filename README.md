@@ -54,6 +54,9 @@ index.json                 Every pack: its theme, its card in the importer, wher
 <pack>/preview.jpg         The demo's picture on its card in the importer
 <pack>/images/…            Photos
 <pack>/CREDITS.md          Licence and source of every photo
+<pack>/screens/*.jpg       Full-page pictures of the demo's pages, for the importer's preview
+<pack>/site/…              The demo's static copy (Static copy below)
+tools/export-site.py       Makes a static copy from an imported demo
 ```
 
 `pack.json` is required. A pack lists the other files it has under `"files"`, and Storefill reads
@@ -136,7 +139,7 @@ opens that demo straight away). These index fields fill the card and the demo's 
 | `preview` | path in the library | The demo's picture, 4:3 (1200 × 900), `.jpg`, `.png` or `.webp`. Storefill downloads it once per pack version into the site's uploads (`storefill-previews/`), so the admin screen never loads an image from the library's host. Without one, the theme's screenshot shows. |
 | `categories` | list of names | The demo's kinds, such as `[ "Shop", "Food and drink" ]`. With more than one kind among a theme's demos, the importer shows a chip for each. |
 | `demo_url` | URL | The live demo, opened from the demo's page in a new tab. |
-| `screens` | list of `{ "title", "image" }` | The demo's pages as full-page pictures, such as `{ "title": "Home", "image": "daybook/screens/home.jpg" }`, up to 8. Opening the demo shows them in a preview with a tab for each page, beside Import. Take them 1280 pixels wide as `.jpg` (about 75% quality keeps a long page under 600 KB). Storefill downloads them into the site's uploads the first time the demo is opened, once per pack version. Without them, the preview shows `preview`. |
+| `screens` | list of `{ "title", "image" }` | The demo's pages as full-page pictures, such as `{ "title": "Home", "image": "daybook/screens/home.jpg" }`, up to 8. Opening the demo shows them in a preview with a tab for each page, beside Import. Take them 1280 pixels wide as `.jpg` (about 75% quality keeps a long page under 600 KB). Storefill downloads them into the site's uploads the first time the demo is opened, once per pack version. Without them, the preview shows `preview`. Give every screen a `page` too, the matching page of the demo's static copy (`"page": "kerbside/site/menu/index.html"`, see Static copy below), and the preview shows the real pages instead, in one frame with a width switch for desktop, tablet and phone; the pictures stay as the fallback. |
 | `pro` | `true` | A demo only the Pro theme has, such as Daybook. The importer shows a Pro badge at the top right of its card and of its preview. Leave it out for a free demo, even when the Pro theme lists its own copy of it (the Yantra business site). |
 | `shown_with` | list of theme slugs | Also list the demo for these themes, such as a free theme's Pro demos: `"theme": "yantra-pro", "shown_with": [ "yantra" ]`. There it shows "For Yantra Pro" and imports once that theme is active (Activate, or Get Yantra Pro). |
 | `theme_name` | text | The theme's name, for a site that doesn't have it installed. |
@@ -145,6 +148,27 @@ opens that demo straight away). These index fields fill the card and the demo's 
 All text in a pack is plain text: Storefill strips any HTML from it. Pattern files are the one
 exception: block markup, cleaned the way WordPress cleans a post by an author without the
 `unfiltered_html` capability.
+
+### Static copy
+
+A demo's static copy is its imported site saved as plain HTML, CSS and photos under
+`<pack>/site/`, one `index.html` per page, so GitHub Pages serves it as a look-only demo: links
+between its pages work; the cart, checkout, account and search do nothing. The importer's preview
+opens these pages (each screen's `page`), and `demo_url` can point at its `index.html` as the
+pack's live demo.
+
+1. Import the pack on a clean test site, as for testing (step 6 of Adding a theme), logged out
+   pages showing what a visitor sees (store open, no admin bar).
+2. Export it: `python tools/export-site.py http://127.0.0.1:8098 kerbside/site 80 https://som3669.github.io/demo-pack/kerbside/site`.
+   It crawls up to 80 pages from the homepage (not tag archives), saves the theme's and
+   plugins' files and the photos with the site's own folder layout, rewrites every address to a
+   relative one and points share links at the published copy.
+3. Check it served from a folder (`php -S 127.0.0.1:8099 -t .` and open
+   `/kerbside/site/index.html`), then add `page` to each screen in `index.json`.
+
+The preview loads the copy in a sandboxed frame from the library's host, without a referrer.
+With a local library (`STOREFILL_LOCAL_PACKS`), define `STOREFILL_LOCAL_PACKS_URL` as the address
+that serves the same folder (`http://127.0.0.1:8099/`); without it the preview shows the pictures.
 
 ## pack.json, schemas 1, 2 and 3
 
