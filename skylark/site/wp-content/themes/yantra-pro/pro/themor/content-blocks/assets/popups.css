@@ -1,0 +1,214 @@
+/*
+ * Themor content blocks' popups (content-blocks/includes/Popups.php, assets/popups.js). Each
+ * popup's own look comes after this, as these variables on `.themor-popup-{ID}`:
+ *
+ *   --themor-popup-width     its width (600px)
+ *   --themor-popup-height    a height of its own (none: as tall as its content)
+ *   --themor-popup-offset    space from the window's edges (24px)
+ *   --themor-popup-padding   space inside (30px)
+ *   --themor-popup-radius    its corners (7px)
+ *   --themor-popup-shadow    its shadow
+ *   --themor-popup-speed     how long it takes to show and go (0.3s)
+ *   --themor-popup-distance  how far it slides in from (50px)
+ */
+
+.themor-popup {
+	box-sizing: border-box;
+	position: fixed;
+	inset: auto;
+	width: min(var(--themor-popup-width, 600px), 100vw - var(--themor-popup-offset, 24px) * 2);
+	max-width: none;
+	height: var(--themor-popup-height, fit-content);
+	max-height: calc(100vh - var(--themor-popup-offset, 24px) * 2);
+	max-height: calc(100dvh - var(--themor-popup-offset, 24px) * 2);
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: var(--themor-popup-radius, 7px);
+	background: #fff;
+	color: inherit;
+	box-shadow: var(--themor-popup-shadow, 0 10px 20px rgba(41, 51, 61, 0.1));
+	overflow: visible;
+	opacity: 0;
+	transform: var(--themor-popup-from, none);
+	transition: opacity var(--themor-popup-speed, 0.3s) ease, transform var(--themor-popup-speed, 0.3s) ease;
+}
+
+.themor-popup[open] {
+	display: flex;
+	flex-direction: column;
+}
+
+.themor-popup.is-open {
+	opacity: 1;
+	transform: none;
+}
+
+.themor-popup::backdrop {
+	background-color: rgba(18, 21, 25, 0.5);
+	opacity: 0;
+	transition: opacity var(--themor-popup-speed, 0.3s) ease;
+}
+
+.themor-popup.is-open::backdrop {
+	opacity: 1;
+}
+
+.themor-popup__content {
+	box-sizing: border-box;
+	flex: 1 1 auto;
+	min-height: 0;
+	padding: var(--themor-popup-padding, 30px);
+	border-radius: inherit;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.themor-popup--overflow-hidden .themor-popup__content {
+	overflow: hidden;
+}
+
+.themor-popup--overflow-visible .themor-popup__content {
+	overflow: visible;
+}
+
+.themor-popup__content > :first-child {
+	margin-block-start: 0;
+}
+
+.themor-popup__content > :last-child {
+	margin-block-end: 0;
+}
+
+.themor-popup__content[aria-busy="true"] {
+	min-height: 120px;
+	background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent) 0 0 / 200% 100%;
+	animation: themor-popup-loading 1.2s linear infinite;
+}
+
+@keyframes themor-popup-loading {
+	to {
+		background-position: -200% 0;
+	}
+}
+
+/* Where it sits: one of nine places, the offset away from the edges. */
+.themor-popup--top-left,
+.themor-popup--top,
+.themor-popup--top-right {
+	top: var(--themor-popup-offset, 24px);
+}
+
+.themor-popup--bottom-left,
+.themor-popup--bottom,
+.themor-popup--bottom-right {
+	bottom: var(--themor-popup-offset, 24px);
+}
+
+.themor-popup--top-left,
+.themor-popup--left,
+.themor-popup--bottom-left {
+	left: var(--themor-popup-offset, 24px);
+}
+
+.themor-popup--top-right,
+.themor-popup--right,
+.themor-popup--bottom-right {
+	right: var(--themor-popup-offset, 24px);
+}
+
+.themor-popup--top,
+.themor-popup--center,
+.themor-popup--bottom {
+	left: 0;
+	right: 0;
+	margin-inline: auto;
+}
+
+.themor-popup--left,
+.themor-popup--center,
+.themor-popup--right {
+	top: 0;
+	bottom: 0;
+	margin-block: auto;
+}
+
+/* How it comes in (and goes). */
+.themor-popup--anim-zoom {
+	--themor-popup-from: scale(0.85);
+}
+
+.themor-popup--anim-slide-left {
+	--themor-popup-from: translateX(calc(var(--themor-popup-distance, 50px) * -1));
+}
+
+.themor-popup--anim-slide-right {
+	--themor-popup-from: translateX(var(--themor-popup-distance, 50px));
+}
+
+.themor-popup--anim-slide-top {
+	--themor-popup-from: translateY(calc(var(--themor-popup-distance, 50px) * -1));
+}
+
+.themor-popup--anim-slide-bottom {
+	--themor-popup-from: translateY(var(--themor-popup-distance, 50px));
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.themor-popup,
+	.themor-popup::backdrop {
+		transition: none;
+	}
+
+	.themor-popup {
+		--themor-popup-from: none;
+	}
+}
+
+/* The close button: in the corner, or on it. */
+.themor-popup__close {
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	inset-inline-end: 10px;
+	display: grid;
+	place-items: center;
+	width: 32px;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.06);
+	color: #1e1e1e;
+	cursor: pointer;
+	transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.themor-popup__close:hover {
+	background-color: rgba(0, 0, 0, 0.12);
+}
+
+.themor-popup__close:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+.themor-popup--close-outside .themor-popup__close {
+	top: -14px;
+	inset-inline-end: -14px;
+	width: 30px;
+	height: 30px;
+	background: rgba(0, 0, 0, 0.65);
+	color: #fff;
+}
+
+.themor-popup--close-outside .themor-popup__close:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The page doesn't scroll behind a popup set to stop it. */
+html.themor-popup-locked {
+	overflow: hidden;
+	padding-inline-end: var(--themor-scrollbar, 0);
+}

@@ -1,0 +1,440 @@
+{
+	"schema": 1,
+	"patterns": {
+		"home-hero": {
+			"title": "Skylark hero with a results board",
+			"file": "patterns/home-hero.html",
+			"links": [
+				{
+					"text": "Get a free audit",
+					"page": "contact"
+				},
+				{
+					"text": "See our results",
+					"page": "case-studies"
+				}
+			]
+		},
+		"home-clients": {
+			"title": "Skylark clients strip",
+			"file": "patterns/home-clients.html"
+		},
+		"home-services": {
+			"title": "Skylark services grid",
+			"file": "patterns/home-services.html",
+			"links": [
+				{
+					"text": "More on local SEO",
+					"page": "local-seo"
+				},
+				{
+					"text": "More on Google Ads",
+					"page": "services",
+					"anchor": "google-ads"
+				},
+				{
+					"text": "More on social ads",
+					"page": "services",
+					"anchor": "social-ads"
+				},
+				{
+					"text": "More on email and SMS",
+					"page": "services",
+					"anchor": "email-sms"
+				},
+				{
+					"text": "More on websites",
+					"page": "services",
+					"anchor": "websites"
+				},
+				{
+					"text": "See a sample result",
+					"page": "case-northside-dental"
+				}
+			]
+		},
+		"home-why": {
+			"title": "Skylark why us, with photos and figures",
+			"file": "patterns/home-why.html",
+			"links": [
+				{
+					"text": "Meet the team",
+					"page": "about"
+				}
+			]
+		},
+		"process": {
+			"title": "Skylark how we work, four steps",
+			"file": "patterns/process.html"
+		},
+		"home-cases": {
+			"title": "Skylark three case studies",
+			"file": "patterns/home-cases.html",
+			"links": [
+				{
+					"text": "Read the Northside Dental story",
+					"page": "case-northside-dental"
+				},
+				{
+					"text": "Read the Spoke & Sprocket story",
+					"page": "case-spoke-and-sprocket"
+				},
+				{
+					"text": "Read the Rise Bakehouse story",
+					"page": "case-rise-bakehouse"
+				},
+				{
+					"text": "All case studies",
+					"page": "case-studies"
+				}
+			]
+		},
+		"home-reviews": {
+			"title": "Skylark client reviews",
+			"file": "patterns/home-reviews.html"
+		},
+		"home-pricing": {
+			"title": "Skylark plans with a monthly and yearly switch",
+			"file": "patterns/home-pricing.html",
+			"links": [
+				{
+					"text": "Choose Starter",
+					"page": "contact"
+				},
+				{
+					"text": "Choose Growth",
+					"page": "contact"
+				},
+				{
+					"text": "Choose Pro",
+					"page": "contact"
+				},
+				{
+					"text": "Compare every plan",
+					"page": "pricing"
+				}
+			]
+		},
+		"home-faq": {
+			"title": "Skylark questions and answers",
+			"file": "patterns/home-faq.html",
+			"links": [
+				{
+					"text": "Ask a question",
+					"page": "contact"
+				}
+			]
+		},
+		"home-blog": {
+			"title": "Skylark latest articles",
+			"file": "patterns/home-blog.html",
+			"links": [
+				{
+					"text": "All articles",
+					"page": "blog"
+				}
+			]
+		},
+		"cta-audit": {
+			"title": "Skylark free audit call to action",
+			"file": "patterns/cta-audit.html"
+		},
+		"band-rank": {
+			"title": "Skylark band: Not sure where you rank today?",
+			"file": "patterns/band-rank.html",
+			"links": [
+				{
+					"text": "Get a free audit",
+					"page": "contact"
+				}
+			]
+		},
+		"band-numbers": {
+			"title": "Skylark band: Want numbers like these?",
+			"file": "patterns/band-numbers.html",
+			"links": [
+				{
+					"text": "Get your free audit",
+					"page": "contact"
+				}
+			]
+		},
+		"services-hero": {
+			"title": "Skylark services page heading",
+			"file": "patterns/services-hero.html",
+			"links": [
+				{
+					"text": "Get a free audit",
+					"page": "contact"
+				},
+				{
+					"text": "See pricing",
+					"page": "pricing"
+				}
+			]
+		},
+		"services-list": {
+			"title": "Skylark services, one row each",
+			"file": "patterns/services-list.html",
+			"links": [
+				{
+					"text": "See local SEO in detail",
+					"page": "local-seo"
+				},
+				{
+					"text": "Ask about Google Ads",
+					"page": "contact"
+				},
+				{
+					"text": "Ask about social ads",
+					"page": "contact"
+				},
+				{
+					"text": "Ask about a landing page",
+					"page": "contact"
+				},
+				{
+					"text": "Ask about email",
+					"page": "contact"
+				},
+				{
+					"text": "See a real result",
+					"page": "case-northside-dental"
+				}
+			]
+		},
+		"seo-hero": {
+			"title": "Skylark local SEO heading with map results",
+			"file": "patterns/seo-hero.html",
+			"links": [
+				{
+					"text": "Get a free audit",
+					"page": "contact"
+				},
+				{
+					"text": "See pricing",
+					"page": "pricing"
+				}
+			]
+		},
+		"seo-included": {
+			"title": "Skylark what local SEO includes",
+			"file": "patterns/seo-included.html"
+		},
+		"seo-timeline": {
+			"title": "Skylark first six months",
+			"file": "patterns/seo-timeline.html"
+		},
+		"seo-proof": {
+			"title": "Skylark local SEO result with a chart",
+			"file": "patterns/seo-proof.html",
+			"links": [
+				{
+					"text": "Read the Northside story",
+					"page": "case-northside-dental"
+				}
+			]
+		},
+		"seo-faq": {
+			"title": "Skylark local SEO questions",
+			"file": "patterns/seo-faq.html"
+		},
+		"seo-related": {
+			"title": "Skylark services that work well together",
+			"file": "patterns/seo-related.html",
+			"links": [
+				{
+					"text": "More on Google Ads",
+					"page": "services",
+					"anchor": "google-ads"
+				},
+				{
+					"text": "More on websites",
+					"page": "services",
+					"anchor": "websites"
+				},
+				{
+					"text": "More on email and SMS",
+					"page": "services",
+					"anchor": "email-sms"
+				}
+			]
+		},
+		"cases-hero": {
+			"title": "Skylark case studies heading",
+			"file": "patterns/cases-hero.html"
+		},
+		"cases-grid": {
+			"title": "Skylark all case studies",
+			"file": "patterns/cases-grid.html",
+			"links": [
+				{
+					"text": "Read the Northside Dental story",
+					"page": "case-northside-dental"
+				},
+				{
+					"text": "Read the Spoke & Sprocket story",
+					"page": "case-spoke-and-sprocket"
+				},
+				{
+					"text": "Read the Rise Bakehouse story",
+					"page": "case-rise-bakehouse"
+				},
+				{
+					"text": "Read the Larkin Law story",
+					"page": "case-larkin-law"
+				},
+				{
+					"text": "Read the Tidewater Kayaks story",
+					"page": "case-tidewater-kayaks"
+				},
+				{
+					"text": "Read the Okafor Physio story",
+					"page": "case-okafor-physio"
+				}
+			]
+		},
+		"case-northside-dental": {
+			"title": "Skylark case summary: Northside Dental",
+			"file": "patterns/case-northside-dental.html"
+		},
+		"case-spoke-and-sprocket": {
+			"title": "Skylark case summary: Spoke & Sprocket",
+			"file": "patterns/case-spoke-and-sprocket.html"
+		},
+		"case-rise-bakehouse": {
+			"title": "Skylark case summary: Rise Bakehouse",
+			"file": "patterns/case-rise-bakehouse.html"
+		},
+		"case-larkin-law": {
+			"title": "Skylark case summary: Larkin Law",
+			"file": "patterns/case-larkin-law.html"
+		},
+		"case-tidewater-kayaks": {
+			"title": "Skylark case summary: Tidewater Kayaks",
+			"file": "patterns/case-tidewater-kayaks.html"
+		},
+		"case-okafor-physio": {
+			"title": "Skylark case summary: Okafor Physio",
+			"file": "patterns/case-okafor-physio.html"
+		},
+		"case-table-northside": {
+			"title": "Skylark Northside Dental before and after",
+			"file": "patterns/case-table-northside.html"
+		},
+		"pricing-hero": {
+			"title": "Skylark pricing heading with the plans",
+			"file": "patterns/pricing-hero.html",
+			"links": [
+				{
+					"text": "Choose Starter",
+					"page": "contact"
+				},
+				{
+					"text": "Choose Growth",
+					"page": "contact"
+				},
+				{
+					"text": "Choose Pro",
+					"page": "contact"
+				}
+			]
+		},
+		"pricing-compare": {
+			"title": "Skylark plan comparison table",
+			"file": "patterns/pricing-compare.html"
+		},
+		"pricing-addons": {
+			"title": "Skylark add-ons",
+			"file": "patterns/pricing-addons.html"
+		},
+		"pricing-faq": {
+			"title": "Skylark billing questions",
+			"file": "patterns/pricing-faq.html"
+		},
+		"about-hero": {
+			"title": "Skylark about heading with studio photos",
+			"file": "patterns/about-hero.html"
+		},
+		"about-story": {
+			"title": "Skylark our story",
+			"file": "patterns/about-story.html"
+		},
+		"about-values": {
+			"title": "Skylark what we promise",
+			"file": "patterns/about-values.html"
+		},
+		"about-team": {
+			"title": "Skylark the team",
+			"file": "patterns/about-team.html"
+		},
+		"about-jobs": {
+			"title": "Skylark open role",
+			"file": "patterns/about-jobs.html"
+		},
+		"contact-hero": {
+			"title": "Skylark contact heading with ways to reach us",
+			"file": "patterns/contact-hero.html"
+		},
+		"contact-visit": {
+			"title": "Skylark visit the studio",
+			"file": "patterns/contact-visit.html"
+		},
+		"lp-header": {
+			"title": "Skylark landing page header",
+			"file": "patterns/lp-header.html"
+		},
+		"lp-hero": {
+			"title": "Skylark landing page hero for practices",
+			"file": "patterns/lp-hero.html"
+		},
+		"lp-proof": {
+			"title": "Skylark practices we work with",
+			"file": "patterns/lp-proof.html"
+		},
+		"lp-results": {
+			"title": "Skylark a year with us, for a practice",
+			"file": "patterns/lp-results.html"
+		},
+		"lp-steps": {
+			"title": "Skylark what happens next",
+			"file": "patterns/lp-steps.html"
+		},
+		"lp-quote": {
+			"title": "Skylark a practice owner on the results",
+			"file": "patterns/lp-quote.html"
+		},
+		"lp-faq": {
+			"title": "Skylark questions practices ask",
+			"file": "patterns/lp-faq.html"
+		},
+		"lp-cta": {
+			"title": "Skylark landing page closing call to action",
+			"file": "patterns/lp-cta.html"
+		},
+		"lp-footer": {
+			"title": "Skylark landing page footer",
+			"file": "patterns/lp-footer.html",
+			"links": [
+				{
+					"text": "Privacy policy",
+					"page": "privacy"
+				}
+			]
+		},
+		"popup-audit": {
+			"title": "Skylark exit popup: free audit",
+			"file": "patterns/popup-audit.html"
+		},
+		"post-offer": {
+			"title": "Skylark offer inside posts",
+			"file": "patterns/post-offer.html",
+			"links": [
+				{
+					"text": "Get a free audit",
+					"page": "contact"
+				}
+			]
+		}
+	}
+}

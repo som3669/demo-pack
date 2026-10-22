@@ -1,0 +1,1807 @@
+/*
+ * Skylark Digital: the demo's own look, on top of Yantra Pro.
+ * Light and airy: white and pale sky sections, a sky-blue primary with navy words on it, soft cards.
+ * Colours come from the palette (--yantra-*), so dark mode follows; the sky blue keeps its colour in
+ * both, with navy words on it.
+ * Signature: the results board, a photo with live-looking campaign cards over it.
+ */
+
+:root {
+	--skylark-sky: #74c6f7;
+	--skylark-sky-strong: #2e9be0;
+	--skylark-on-sky: #0f2742;
+	--skylark-tint: color-mix(in srgb, #74c6f7 18%, var(--yantra-color-8, #fff));
+	--skylark-card: var(--yantra-color-8, #fff);
+	--skylark-line: var(--yantra-border, #dce9f3);
+	--skylark-shadow: 0 1px 2px rgba(15, 39, 66, 0.06), 0 18px 40px -18px rgba(15, 39, 66, 0.28);
+	--skylark-shadow-soft: 0 1px 2px rgba(15, 39, 66, 0.05), 0 14px 34px -22px rgba(15, 39, 66, 0.24);
+}
+
+/* Sections: full-width bands with the wide row inside. */
+.skylark-section {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.skylark-section > * + * {
+	margin-top: clamp(32px, 4vw, 48px);
+}
+
+.skylark-section--hero {
+	padding-top: clamp(32px, 5vw, 72px) !important;
+}
+
+.skylark-section--strip {
+	padding-top: 22px !important;
+	padding-bottom: 22px !important;
+	border-top: 1px solid var(--skylark-line);
+	border-bottom: 1px solid var(--skylark-line);
+}
+
+.skylark-section--page {
+	padding-top: clamp(40px, 5vw, 72px) !important;
+}
+
+.skylark-section--cta,
+.skylark-section--band {
+	padding-top: clamp(24px, 3vw, 40px) !important;
+}
+
+/* Words. */
+.skylark-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	width: fit-content;
+	margin: 0 0 14px !important;
+	padding: 6px 14px;
+	border-radius: 999px;
+	background: var(--skylark-tint);
+	color: var(--yantra-accent);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.skylark-pill--dot::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 999px;
+	background: var(--skylark-sky-strong);
+}
+
+.skylark-pill--search::before,
+.skylark-pill--pin::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: currentColor;
+	-webkit-mask: var(--skylark-i-search) center / contain no-repeat;
+	mask: var(--skylark-i-search) center / contain no-repeat;
+}
+
+.skylark-pill--pin::before {
+	-webkit-mask-image: var(--skylark-i-pin);
+	mask-image: var(--skylark-i-pin);
+}
+
+.skylark-pill--sky {
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+}
+
+.skylark-head {
+	max-width: 46rem;
+}
+
+.skylark-head--center {
+	margin-inline: auto;
+	text-align: center;
+}
+
+.skylark-head--center .skylark-pill {
+	margin-inline: auto !important;
+}
+
+.skylark-head-row {
+	gap: 20px 48px;
+}
+
+.skylark-head-row > .skylark-head {
+	flex: 1 1 32rem;
+}
+
+.skylark-title {
+	margin: 0 !important;
+	font-size: clamp(1.9rem, 3.4vw, 2.85rem);
+	font-weight: 600;
+	line-height: 1.15;
+	letter-spacing: -0.025em;
+}
+
+.skylark-title--page,
+.skylark-hero__title {
+	font-size: clamp(2.3rem, 4.6vw, 3.6rem);
+	line-height: 1.1;
+	letter-spacing: -0.03em;
+}
+
+.skylark-title--small {
+	font-size: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+.skylark-intro,
+.skylark-lead,
+.skylark-body {
+	max-width: 36rem;
+	margin-top: 16px !important;
+	font-size: 1.1rem;
+	line-height: 1.65;
+}
+
+.skylark-lead {
+	font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+}
+
+.skylark-head--center .skylark-intro {
+	margin-inline: auto;
+}
+
+.skylark-note,
+.skylark-head-note {
+	margin: 0;
+	color: var(--yantra-muted);
+	font-size: 15px;
+}
+
+.skylark-sr {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+/* Buttons: sky with navy words (the theme's buttons); the outline one white with a soft edge. */
+.skylark-buttons,
+.skylark-cta__buttons,
+.skylark-band__button,
+.skylark-offer__button,
+.skylark-lp-header__buttons {
+	gap: 12px;
+	margin-top: 24px;
+}
+
+.skylark-section .wp-block-button__link,
+.skylark-lp-header .wp-block-button__link,
+.skylark-popup .wp-block-button__link,
+.skylark-offer .wp-block-button__link {
+	min-height: 52px;
+	padding: 0 26px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+
+.skylark-section .is-style-outline > .wp-block-button__link,
+.skylark-lp-header .is-style-outline > .wp-block-button__link {
+	border: 1px solid var(--skylark-line);
+	background: var(--skylark-card);
+	color: var(--yantra-heading);
+}
+
+.skylark-section .is-style-outline > .wp-block-button__link:hover,
+.skylark-lp-header .is-style-outline > .wp-block-button__link:hover {
+	border-color: var(--skylark-sky-strong);
+	background: var(--skylark-card);
+	color: var(--yantra-heading);
+}
+
+.skylark-more {
+	margin-top: auto !important;
+	padding-top: 10px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.skylark-more a {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--yantra-accent);
+	text-decoration: none;
+}
+
+.skylark-more a::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: currentColor;
+	-webkit-mask: var(--skylark-i-arrow) center / contain no-repeat;
+	mask: var(--skylark-i-arrow) center / contain no-repeat;
+	transition: transform 0.2s ease;
+}
+
+.skylark-more a:hover::after {
+	transform: translateX(3px);
+}
+
+.skylark-more--aside {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.skylark-more--center {
+	text-align: center;
+}
+
+/* Lists with ticks. */
+.skylark-checks {
+	margin: 20px 0 0 !important;
+	padding: 0 !important;
+	list-style: none;
+	color: var(--yantra-heading);
+}
+
+.skylark-checks li {
+	position: relative;
+	margin: 0 0 12px;
+	padding-left: 32px;
+	line-height: 1.5;
+}
+
+.skylark-checks li::before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	background: var(--skylark-sky-strong);
+	-webkit-mask: var(--skylark-i-check) center / contain no-repeat;
+	mask: var(--skylark-i-check) center / contain no-repeat;
+}
+
+.skylark-tick,
+.skylark-rating {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	font-size: 15px;
+}
+
+.skylark-tick::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: var(--skylark-sky-strong);
+	-webkit-mask: var(--skylark-i-check) center / contain no-repeat;
+	mask: var(--skylark-i-check) center / contain no-repeat;
+}
+
+.skylark-rating::before,
+.skylark-stars::before {
+	content: "";
+	width: 88px;
+	height: 16px;
+	background: #ffc94d;
+	-webkit-mask: var(--skylark-i-stars) left center / 17.6px 16px repeat-x;
+	mask: var(--skylark-i-stars) left center / 17.6px 16px repeat-x;
+}
+
+.skylark-rating strong {
+	color: var(--yantra-heading);
+}
+
+.skylark-trust {
+	gap: 10px 28px;
+	margin-top: 22px;
+}
+
+/* Hero and the results board. */
+.skylark-hero {
+	gap: 48px 56px;
+}
+
+.skylark-hero__title {
+	margin-top: 0 !important;
+}
+
+.skylark-board {
+	position: relative;
+	padding: clamp(18px, 3vw, 32px);
+	border-radius: 32px;
+	background: var(--skylark-tint);
+}
+
+.skylark-board__photo {
+	width: 70%;
+	margin: 0 0 0 auto !important;
+}
+
+.skylark-board__photo img,
+.skylark-row__photo img,
+.skylark-collage img,
+.skylark-gallery__photo img,
+.skylark-case-photo img {
+	width: 100%;
+	border-radius: 24px;
+}
+
+.skylark-float {
+	position: absolute;
+	margin: 0 !important;
+	padding: 16px 18px;
+	border-radius: 20px;
+	background: var(--skylark-card);
+	box-shadow: var(--skylark-shadow);
+	color: var(--yantra-text);
+}
+
+.skylark-float p {
+	margin: 0;
+}
+
+.skylark-float--visitors {
+	top: 18%;
+	left: clamp(10px, 2vw, 24px);
+	width: min(290px, 58%);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.skylark-float--leads {
+	bottom: 9%;
+	left: clamp(16px, 3vw, 40px);
+	width: min(236px, 48%);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.skylark-float--rank {
+	top: clamp(10px, 2vw, 20px);
+	right: clamp(10px, 2vw, 20px);
+	gap: 10px;
+	padding: 8px 16px 8px 8px;
+	border-radius: 999px;
+}
+
+.skylark-card__label {
+	color: var(--yantra-muted);
+	font-size: 13px;
+}
+
+.skylark-card__row {
+	gap: 6px 10px;
+}
+
+.skylark-card__big {
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.02em;
+}
+
+.skylark-up {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	padding: 3px 9px;
+	border-radius: 999px;
+	background: var(--skylark-tint);
+	color: var(--yantra-accent);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.skylark-up::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background: currentColor;
+	-webkit-mask: var(--skylark-i-up) center / contain no-repeat;
+	mask: var(--skylark-i-up) center / contain no-repeat;
+}
+
+.skylark-spark {
+	aspect-ratio: 240 / 72;
+	margin: 0 !important;
+	background: var(--skylark-spark) center / 100% 100% no-repeat;
+}
+
+.skylark-bars {
+	width: 92px;
+	height: 36px;
+	margin: 0 !important;
+	background: var(--skylark-bars) center / contain no-repeat;
+}
+
+.skylark-card__axis,
+.skylark-card__note {
+	color: var(--yantra-muted);
+	font-size: 11px;
+}
+
+.skylark-card__note {
+	color: var(--yantra-accent);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.skylark-rank__badge {
+	flex: none;
+	width: 36px;
+	height: 36px;
+	border-radius: 999px;
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--yantra-font-heading);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.skylark-rank__text {
+	line-height: 1.3;
+}
+
+.skylark-rank__text p {
+	font-size: 13px;
+	color: var(--yantra-muted);
+}
+
+.skylark-rank__text strong {
+	color: var(--yantra-heading);
+}
+
+/* Clients strip. */
+.skylark-strip {
+	gap: 14px 36px;
+}
+
+.skylark-strip p {
+	margin: 0;
+}
+
+.skylark-strip__label {
+	color: var(--yantra-heading);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.skylark-strip__names {
+	gap: 10px 34px;
+}
+
+.skylark-client {
+	color: var(--yantra-muted);
+	font-family: var(--yantra-font-heading);
+	font-size: 17px;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+
+/* Cards and grids. */
+.skylark-grid > * {
+	margin: 0 !important;
+}
+
+.skylark-card,
+.skylark-plan,
+.skylark-feature,
+.skylark-related,
+.skylark-addon,
+.skylark-value,
+.skylark-person {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 28px;
+	border-radius: 24px;
+	background: var(--skylark-card);
+	box-shadow: var(--skylark-shadow-soft);
+}
+
+.skylark-card p,
+.skylark-feature p,
+.skylark-related p,
+.skylark-addon p,
+.skylark-value p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.skylark-card__title {
+	margin: 0 !important;
+	font-size: 1.3rem;
+	letter-spacing: -0.015em;
+}
+
+.skylark-service::before,
+.skylark-feature::before,
+.skylark-value::before {
+	content: "";
+	width: 54px;
+	height: 54px;
+	margin-bottom: 6px;
+	border-radius: 16px;
+	background-color: var(--yantra-accent);
+	-webkit-mask-size: 26px;
+	mask-size: 26px;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+}
+
+/* The mask cuts the icon out of its tile, so the pale tile sits behind it as a layer of its own. */
+.skylark-service,
+.skylark-feature,
+.skylark-value {
+	position: relative;
+}
+
+.skylark-service::after,
+.skylark-feature::after,
+.skylark-value::after {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 28px;
+	width: 54px;
+	height: 54px;
+	border-radius: 16px;
+	background: var(--skylark-tint);
+	z-index: 0;
+}
+
+.skylark-service > *,
+.skylark-feature > *,
+.skylark-value > * {
+	position: relative;
+	z-index: 1;
+}
+
+.skylark-service::before,
+.skylark-feature::before,
+.skylark-value::before {
+	position: relative;
+	z-index: 1;
+	box-shadow: none;
+}
+
+.skylark-feature,
+.skylark-related,
+.skylark-addon {
+	box-shadow: none;
+	border: 1px solid var(--skylark-line);
+}
+
+/* Why us: the photo collage and the figures. */
+.skylark-why {
+	gap: 48px 64px;
+}
+
+.skylark-collage {
+	position: relative;
+	padding-bottom: 56px;
+}
+
+.skylark-collage__main {
+	width: 86%;
+	margin: 0 !important;
+}
+
+.skylark-collage__small {
+	position: absolute !important;
+	right: 0;
+	bottom: 0;
+	width: 44%;
+	margin: 0 !important;
+}
+
+.skylark-collage__small img {
+	border: 8px solid var(--skylark-card);
+	box-sizing: border-box;
+}
+
+.skylark-badge {
+	bottom: 18px;
+	left: 24px;
+	gap: 14px;
+	padding: 16px 20px;
+}
+
+.skylark-badge__big {
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.skylark-badge__text {
+	max-width: 11rem;
+	font-size: 14px;
+	line-height: 1.35;
+}
+
+.skylark-stats {
+	padding: clamp(28px, 4vw, 48px);
+	border-radius: 32px;
+	background: var(--skylark-tint);
+}
+
+.skylark-stat p {
+	margin: 0;
+}
+
+.skylark-stat p.skylark-stat__big,
+.skylark-stat__big {
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: clamp(2.1rem, 3.6vw, 3rem);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.03em;
+}
+
+.skylark-stat p.skylark-stat__text,
+.skylark-stat__text {
+	margin-top: 8px !important;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.skylark-stat--tint {
+	padding: 28px;
+	border-radius: 24px;
+	background: var(--skylark-tint);
+}
+
+/* Steps, with a dashed line to the next one. */
+.skylark-step {
+	position: relative;
+}
+
+.skylark-step__num {
+	width: 44px;
+	height: 44px;
+	border-radius: 999px;
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky) !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--yantra-font-heading);
+	font-size: 17px !important;
+	font-weight: 600;
+}
+
+.skylark-step:not(:last-child) .skylark-step__num::after {
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 84px;
+	right: 28px;
+	border-top: 2px dashed color-mix(in srgb, var(--skylark-sky) 60%, transparent);
+}
+
+/* Case studies. */
+.skylark-case {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid var(--skylark-line);
+	border-radius: 24px;
+	background: var(--skylark-card);
+}
+
+.skylark-case__photo {
+	margin: 0 !important;
+}
+
+.skylark-case__photo img {
+	width: 100%;
+}
+
+.skylark-case__body {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 22px 26px 26px;
+}
+
+.skylark-case__body p {
+	margin: 0;
+}
+
+.skylark-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.skylark-tag {
+	padding: 4px 12px;
+	border-radius: 999px;
+	background: var(--skylark-tint);
+	color: var(--yantra-accent);
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.skylark-case__result {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	padding-top: 14px;
+	border-top: 1px solid var(--skylark-line);
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+.skylark-case__result strong {
+	flex: none;
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+
+/* Reviews. */
+.skylark-stars {
+	display: flex;
+	height: 16px;
+	overflow: hidden;
+	color: transparent;
+	font-size: 0;
+}
+
+.skylark-review__text {
+	color: var(--yantra-heading);
+	font-size: 17px !important;
+}
+
+.skylark-review__by {
+	gap: 12px;
+	margin-top: auto;
+}
+
+.skylark-review__who p {
+	margin: 0;
+	line-height: 1.35;
+}
+
+.skylark-review__biz {
+	color: var(--yantra-muted);
+	font-size: 14px !important;
+}
+
+.skylark-avatar {
+	flex: none;
+	width: 46px;
+	height: 46px;
+	margin: 0;
+	border-radius: 999px;
+	background: var(--skylark-tint);
+	color: var(--yantra-accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--yantra-font-heading);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.skylark-avatar--big {
+	width: 64px;
+	height: 64px;
+	font-size: 20px;
+}
+
+.skylark-avatar--sky {
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+}
+
+/* Pricing. */
+.skylark-section .wp-block-themor-price-switch {
+	margin-top: 22px;
+}
+
+.skylark-section .themor-price-switch {
+	--themor-switch-track: var(--skylark-tint);
+	--themor-switch-picked: var(--skylark-card);
+	--themor-switch-color: var(--yantra-heading);
+	--themor-switch-picked-color: var(--yantra-heading);
+}
+
+.skylark-section .themor-price-switch__note {
+	color: var(--yantra-accent);
+	opacity: 1;
+}
+
+.skylark-plans {
+	align-items: stretch;
+}
+
+.skylark-plan {
+	position: relative;
+	gap: 8px;
+	padding: 32px;
+	border: 1px solid var(--skylark-line);
+	border-radius: 28px;
+	box-shadow: none;
+}
+
+.skylark-plan--popular {
+	border: 2px solid var(--skylark-sky);
+	background: var(--skylark-tint);
+}
+
+.skylark-plan p {
+	margin: 0;
+}
+
+.skylark-plan__badge {
+	position: absolute;
+	top: -15px;
+	left: 32px;
+	padding: 5px 14px;
+	border-radius: 999px;
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.skylark-plan__name {
+	margin: 0 !important;
+	font-size: 1.35rem;
+}
+
+.skylark-plan__lead {
+	font-size: 15px;
+}
+
+.skylark-plan__price {
+	margin-top: 12px !important;
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: 44px;
+	font-weight: 600;
+	line-height: 1.05;
+	letter-spacing: -0.03em;
+}
+
+.skylark-plan__price span {
+	display: block;
+	margin-top: 4px;
+	color: var(--yantra-muted);
+	font-family: var(--yantra-font-body);
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+.skylark-plan .skylark-checks {
+	margin-top: 16px !important;
+	padding-top: 18px !important;
+	border-top: 1px solid var(--skylark-line);
+	font-size: 15px;
+}
+
+.skylark-plan .skylark-checks li::before {
+	-webkit-mask-image: var(--skylark-i-tick);
+	mask-image: var(--skylark-i-tick);
+}
+
+.skylark-plan__cta {
+	margin-top: auto !important;
+	padding-top: 12px;
+}
+
+.skylark-plan__cta,
+.skylark-plan__cta .wp-block-button,
+.skylark-plan__cta .wp-block-button__link {
+	width: 100%;
+}
+
+/* Questions. */
+.skylark-faq-cols {
+	gap: 40px 64px;
+}
+
+.skylark-faqs {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.skylark-faqs--narrow {
+	max-width: 860px;
+	margin-inline: auto !important;
+}
+
+.skylark-faq {
+	margin: 0 !important;
+	border-radius: 20px;
+	background: var(--skylark-card);
+}
+
+.skylark-faq summary {
+	padding: 18px 20px 18px 22px;
+	font-family: var(--yantra-font-body);
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.skylark-faq summary::after {
+	width: 32px;
+	height: 32px;
+	border: 0;
+	background:
+		linear-gradient(var(--yantra-accent), var(--yantra-accent)) center / 12px 2px no-repeat,
+		linear-gradient(var(--yantra-accent), var(--yantra-accent)) center / 2px 12px no-repeat,
+		var(--skylark-tint);
+}
+
+.skylark-faq > p {
+	margin: 0 !important;
+	padding: 0 22px 22px;
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+/* Latest articles. */
+.skylark-posts .wp-block-post-template {
+	gap: 32px 24px;
+}
+
+.skylark-post__photo img {
+	border-radius: 22px;
+}
+
+.skylark-post__terms {
+	margin-top: 14px;
+	font-size: 14px;
+}
+
+.skylark-post__terms a {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 999px;
+	background: var(--skylark-tint);
+	color: var(--yantra-accent);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.skylark-post__title {
+	margin-top: 10px !important;
+	font-size: 1.3rem;
+	line-height: 1.3;
+}
+
+.skylark-post__title a {
+	color: var(--yantra-heading);
+	text-decoration: none;
+}
+
+/* The sky panel that closes a page. */
+.skylark-cta {
+	gap: 28px 56px;
+	padding: clamp(32px, 5vw, 64px);
+	border-radius: 32px;
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+}
+
+.skylark-cta .skylark-title,
+.skylark-cta .skylark-intro,
+.skylark-cta p {
+	color: var(--skylark-on-sky);
+}
+
+.skylark-cta__text {
+	flex: 1 1 28rem;
+}
+
+.skylark-cta__actions {
+	flex: 0 1 28rem;
+}
+
+.skylark-cta__buttons {
+	margin-top: 0;
+}
+
+.skylark-cta .wp-block-button:not(.is-style-outline) > .wp-block-button__link {
+	background: var(--skylark-on-sky);
+	color: #fff;
+}
+
+.skylark-cta .is-style-outline > .wp-block-button__link {
+	border-color: rgba(15, 39, 66, 0.35);
+	background: transparent;
+	color: var(--skylark-on-sky);
+}
+
+.skylark-cta__note {
+	margin: 14px 0 0;
+	font-size: 14px;
+}
+
+/* A thinner band, pale sky, with a navy button. */
+.skylark-band {
+	gap: 20px 40px;
+	padding: clamp(24px, 3vw, 36px) clamp(24px, 4vw, 44px);
+	border-radius: 28px;
+	background: var(--skylark-tint);
+}
+
+.skylark-band__text {
+	flex: 1 1 26rem;
+}
+
+.skylark-band__text p {
+	margin: 6px 0 0;
+}
+
+.skylark-band__text .skylark-pill {
+	margin-bottom: 10px !important;
+}
+
+.skylark-band__title {
+	margin: 0 !important;
+	font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+}
+
+.skylark-band__button {
+	margin-top: 0;
+}
+
+.skylark-band .wp-block-button__link {
+	background: var(--skylark-on-sky);
+	color: #fff;
+}
+
+/* Services: a row per service. */
+.skylark-row-wrap + .skylark-row-wrap {
+	margin-top: clamp(48px, 7vw, 88px) !important;
+}
+
+.skylark-row {
+	gap: 40px 64px;
+}
+
+.skylark-row__photo {
+	margin: 0 !important;
+}
+
+.skylark-from {
+	margin-top: 12px !important;
+	color: var(--yantra-heading);
+	font-weight: 700;
+}
+
+/* Local SEO: small figures and the map results. */
+.skylark-minis {
+	gap: 16px 36px;
+	margin-top: 28px;
+}
+
+.skylark-mini p {
+	margin: 0;
+}
+
+.skylark-mini__label {
+	color: var(--yantra-muted);
+	font-size: 14px;
+}
+
+.skylark-mini__value {
+	margin-top: 2px !important;
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: 26px;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+.skylark-mappack {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 22px;
+	border-radius: 28px;
+	background: var(--skylark-card);
+	box-shadow: var(--skylark-shadow);
+}
+
+.skylark-mappack p {
+	margin: 0;
+}
+
+.skylark-mappack__search {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 48px;
+	padding: 0 18px;
+	border: 1px solid var(--skylark-line);
+	border-radius: 999px;
+	color: var(--yantra-heading);
+}
+
+.skylark-mappack__search::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: var(--yantra-muted);
+	-webkit-mask: var(--skylark-i-search) center / contain no-repeat;
+	mask: var(--skylark-i-search) center / contain no-repeat;
+}
+
+.skylark-map {
+	height: 150px;
+	border-radius: 18px;
+	background: var(--skylark-map) center / cover no-repeat;
+}
+
+.skylark-results {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.skylark-result {
+	gap: 14px;
+	padding: 14px 16px;
+	border: 1px solid var(--skylark-line);
+	border-radius: 18px;
+}
+
+.skylark-result--first {
+	border: 2px solid var(--skylark-sky);
+	background: var(--skylark-tint);
+}
+
+.skylark-result__num {
+	flex: none;
+	width: 34px;
+	height: 34px;
+	border-radius: 999px;
+	background: var(--yantra-surface);
+	color: var(--yantra-muted);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--yantra-font-heading);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.skylark-result--first .skylark-result__num {
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+}
+
+.skylark-result__text {
+	flex: 1;
+	min-width: 0;
+}
+
+.skylark-result__text strong {
+	color: var(--yantra-heading);
+}
+
+.skylark-result__meta {
+	font-size: 13px;
+}
+
+.skylark-result__badge {
+	flex: none;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: var(--skylark-card);
+	color: var(--yantra-accent);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.skylark-mappack__caption {
+	color: var(--yantra-muted);
+	font-size: 13px;
+}
+
+/* Feature tiles share the card icon; months carry a sky label. */
+.skylark-when {
+	width: fit-content;
+	padding: 4px 12px;
+	border-radius: 999px;
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+	font-size: 13px !important;
+	font-weight: 700;
+}
+
+.skylark-when--soft {
+	background: var(--skylark-tint);
+	color: var(--yantra-accent);
+}
+
+/* Charts. */
+.skylark-proof {
+	gap: 40px 64px;
+}
+
+.skylark-chartcard {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 28px;
+	border: 1px solid var(--skylark-line);
+	border-radius: 28px;
+}
+
+.skylark-chartcard p {
+	margin: 0;
+}
+
+.skylark-chartcard__head {
+	gap: 8px 20px;
+}
+
+.skylark-chartcard__head strong {
+	color: var(--yantra-heading);
+}
+
+.skylark-chartcard__muted,
+.skylark-chartcard__axis {
+	color: var(--yantra-muted);
+	font-size: 13px;
+}
+
+.skylark-chart {
+	height: 180px;
+	border-bottom: 1px solid var(--skylark-line);
+	background: var(--skylark-chart) center / 100% 100% no-repeat;
+}
+
+/* Case study pages. */
+.skylark-case-summary > * + * {
+	margin-top: 28px !important;
+}
+
+.skylark-case-meta {
+	gap: 16px 40px;
+	padding: 22px 26px;
+	border-radius: 22px;
+	background: var(--yantra-surface);
+}
+
+.skylark-case-stats .skylark-stat {
+	padding: 24px;
+}
+
+.skylark-case-photo {
+	margin-bottom: 0 !important;
+}
+
+.skylark-table table {
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	border-radius: 20px;
+	font-size: 16px;
+}
+
+.skylark-table {
+	overflow-x: auto;
+	border: 1px solid var(--skylark-line);
+	border-radius: 20px;
+}
+
+.skylark-table th,
+.skylark-table td {
+	padding: 14px 20px;
+	border: 0;
+	border-top: 1px solid var(--skylark-line);
+	text-align: right;
+}
+
+.skylark-table th:first-child,
+.skylark-table td:first-child {
+	text-align: left;
+}
+
+.skylark-table thead th {
+	border-top: 0;
+	background: var(--yantra-surface);
+	color: var(--yantra-heading);
+}
+
+.skylark-table td:last-child {
+	color: var(--yantra-heading);
+	font-weight: 700;
+}
+
+.skylark-table--compare th,
+.skylark-table--compare td {
+	text-align: center;
+}
+
+.skylark-table--compare td:last-child {
+	font-weight: 400;
+	color: inherit;
+}
+
+.skylark-table--compare th:nth-child(3),
+.skylark-table--compare td:nth-child(3) {
+	background: var(--skylark-tint);
+	color: var(--yantra-heading);
+	font-weight: 700;
+}
+
+/* Pricing extras. */
+.skylark-addon {
+	background: var(--yantra-surface);
+	border: 0;
+}
+
+.skylark-addon__price {
+	margin-top: 8px !important;
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: 20px !important;
+	font-weight: 600;
+}
+
+.skylark-addon__price span {
+	color: var(--yantra-muted);
+	font-family: var(--yantra-font-body);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* About. */
+.skylark-gallery__photo {
+	margin: 0 !important;
+}
+
+.skylark-story {
+	gap: 32px 64px;
+}
+
+.skylark-person {
+	flex-direction: row;
+	gap: 16px;
+	padding: 22px;
+	border: 1px solid var(--skylark-line);
+	box-shadow: none;
+}
+
+.skylark-person p {
+	margin: 0;
+}
+
+.skylark-person__text strong {
+	color: var(--yantra-heading);
+	font-size: 17px;
+}
+
+.skylark-person__role {
+	font-size: 15px;
+}
+
+/* Contact. */
+.skylark-contact {
+	gap: 40px 56px;
+}
+
+.skylark-contact-card {
+	gap: 16px;
+	margin-top: 28px;
+}
+
+.skylark-status {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--yantra-heading);
+	font-weight: 700;
+}
+
+.skylark-status::before {
+	content: "";
+	flex: none;
+	width: 10px;
+	height: 10px;
+	border-radius: 999px;
+	background: var(--skylark-sky-strong);
+	box-shadow: 0 0 0 4px var(--skylark-tint);
+}
+
+.skylark-info {
+	position: relative;
+	min-height: 44px;
+	padding-left: 58px;
+	line-height: 1.45;
+}
+
+.skylark-info a {
+	color: var(--yantra-heading);
+	text-decoration: none;
+}
+
+.skylark-info::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 44px;
+	height: 44px;
+	border-radius: 14px;
+	background: var(--skylark-tint);
+}
+
+.skylark-info::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	z-index: 1;
+	width: 20px;
+	height: 20px;
+	background: var(--yantra-accent);
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
+.skylark-ways,
+.skylark-auditcard {
+	padding: clamp(24px, 3.4vw, 40px);
+	border-radius: 28px;
+	background: var(--skylark-card);
+	box-shadow: var(--skylark-shadow);
+}
+
+.skylark-steps-list {
+	margin: 22px 0 0 !important;
+	padding: 0 !important;
+	list-style: none;
+	counter-reset: skylark-step;
+}
+
+.skylark-steps-list li {
+	position: relative;
+	min-height: 40px;
+	margin: 0 0 16px;
+	padding-left: 56px;
+	color: var(--yantra-heading);
+	line-height: 1.5;
+	counter-increment: skylark-step;
+}
+
+.skylark-steps-list li::before {
+	content: counter(skylark-step);
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 999px;
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--yantra-font-heading);
+	font-weight: 600;
+}
+
+.skylark-ways .skylark-note,
+.skylark-auditcard .skylark-note {
+	margin-top: 14px;
+}
+
+.skylark-visit {
+	gap: 40px 64px;
+}
+
+/* The ad landing page: its own header and footer (Blank canvas template). */
+.skylark-lp-header {
+	gap: 14px 24px;
+	margin: 0 !important;
+	padding: 16px clamp(20px, 4vw, 40px);
+	border-bottom: 1px solid var(--skylark-line);
+	background: var(--skylark-card);
+}
+
+.skylark-lp-brand {
+	gap: 10px;
+}
+
+.skylark-lp-brand .wp-block-site-title {
+	margin: 0;
+	font-family: var(--yantra-font-heading);
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.skylark-lp-brand .wp-block-site-title a {
+	color: var(--yantra-heading);
+	text-decoration: none;
+}
+
+.skylark-lp-header__buttons {
+	margin-top: 0;
+}
+
+.skylark-lp-hero {
+	gap: 40px 64px;
+}
+
+.skylark-lock {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 14px 0 0;
+	color: var(--yantra-muted);
+	font-size: 13px;
+}
+
+.skylark-lock::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: currentColor;
+	-webkit-mask: var(--skylark-i-lock) center / contain no-repeat;
+	mask: var(--skylark-i-lock) center / contain no-repeat;
+}
+
+.skylark-lp-quote {
+	gap: 40px 64px;
+}
+
+.skylark-bigquote {
+	margin: 0 0 22px;
+	padding-top: 52px;
+	font-family: var(--yantra-font-heading);
+	color: var(--yantra-heading);
+	font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+	font-weight: 500;
+	line-height: 1.4;
+	letter-spacing: -0.015em;
+	background: linear-gradient(var(--skylark-sky), var(--skylark-sky)) left top / 44px 6px no-repeat;
+}
+
+.skylark-lp-footer {
+	gap: 10px 24px;
+	margin: 0 !important;
+	padding: 22px clamp(20px, 4vw, 40px);
+	border-top: 1px solid var(--skylark-line);
+	color: var(--yantra-muted);
+	font-size: 14px;
+}
+
+.skylark-lp-footer p {
+	margin: 0;
+}
+
+.skylark-lp-footer a {
+	color: var(--yantra-muted);
+}
+
+/* The exit popup (a content block) and the offer in posts. */
+.skylark-popup {
+	overflow: hidden;
+	border-radius: 28px;
+	background: var(--skylark-card);
+}
+
+.skylark-popup__cols {
+	gap: 0;
+	margin: 0 !important;
+}
+
+.skylark-popup__photo {
+	height: 100%;
+	margin: 0 !important;
+}
+
+.skylark-popup__photo img {
+	width: 100%;
+	height: 100% !important;
+	min-height: 420px;
+}
+
+.skylark-popup__text {
+	padding: 40px 40px 32px;
+}
+
+.skylark-popup__text > p {
+	margin: 14px 0 0;
+}
+
+.skylark-popup__foot {
+	color: var(--yantra-muted);
+	font-size: 14px;
+}
+
+.skylark-popup__foot a {
+	color: var(--yantra-text);
+}
+
+.skylark-popup__foot strong {
+	color: var(--yantra-accent);
+}
+
+.skylark-offer {
+	gap: 16px 24px;
+	margin: 32px 0 !important;
+	padding: 24px 26px;
+	border-radius: 24px;
+	background: var(--skylark-tint);
+}
+
+.skylark-offer::before {
+	content: "";
+	flex: none;
+	width: 52px;
+	height: 52px;
+	border-radius: 16px;
+	background: var(--skylark-sky) var(--skylark-i-search) center / 24px no-repeat;
+}
+
+.skylark-offer__text {
+	flex: 1 1 18rem;
+}
+
+.skylark-offer__text p {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.skylark-offer__text strong {
+	color: var(--yantra-heading);
+	font-family: var(--yantra-font-heading);
+	font-size: 18px;
+}
+
+.skylark-offer__button {
+	margin-top: 0;
+}
+
+.skylark-offer .wp-block-button__link {
+	background: var(--skylark-on-sky);
+	color: #fff;
+}
+
+/* Phones. */
+@media (max-width: 781px) {
+	.skylark-board__photo {
+		width: 74%;
+	}
+
+	.skylark-float--visitors {
+		top: 22%;
+	}
+
+	.skylark-step:not(:last-child) .skylark-step__num::after {
+		display: none;
+	}
+
+	.skylark-popup__media {
+		display: none;
+	}
+
+	.skylark-popup__text {
+		padding: 32px 24px 24px;
+	}
+}
+
+/* The header's Call button: navy words on white, and no button breaks onto two lines. */
+#masthead a.yantra-button {
+	white-space: nowrap;
+}
+
+#masthead a.yantra-button.yantra-button--outline {
+	border-color: var(--skylark-line);
+	color: var(--yantra-heading);
+}
+
+#masthead a.yantra-button.yantra-button--outline:hover {
+	border-color: var(--skylark-sky);
+	background: var(--skylark-sky);
+	color: var(--skylark-on-sky);
+}
+
+/* Links that read as links already (an arrow, a card title, a chip) need no underline. */
+.entry-content .skylark-more a,
+.entry-content .skylark-post__title a,
+.entry-content .skylark-post__terms a,
+.entry-content .skylark-info a {
+	text-decoration-line: none;
+}
+
+/* Flex and grid groups space their own children. */
+.skylark-mappack > *,
+.skylark-results > *,
+.skylark-chartcard > * {
+	margin-block: 0 !important;
+}
+
+/* Case study pages: the story in a readable measure under the figures. */
+.entry-content > .skylark-case-summary ~ :is(p, h2, h3, ol, ul, .wp-block-quote, .wp-block-table) {
+	max-width: 760px !important;
+}
+
+.skylark-case-meta .skylark-mini__value {
+	font-size: 18px;
+}
+
+/* Icons: each a mask filled with the colour of the element that shows it. */
+:root { --skylark-i-seo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-4-4M8.5 12.5l2-2 1.5 1.5 2.5-2.5'/%3E%3C/svg%3E"); }
+:root { --skylark-i-ads: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='8.5'/%3E%3Ccircle cx='12' cy='12' r='4.5'/%3E%3Cpath d='M12 12l6.5-6.5M16 5.5h3v3'/%3E%3C/svg%3E"); }
+:root { --skylark-i-social: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3.5 20.5l1.6-4.6A8.5 8.5 0 1 1 21 11.5z'/%3E%3Cpath d='M12 15s-3.5-2-3.5-4.4A1.9 1.9 0 0 1 12 9.5a1.9 1.9 0 0 1 3.5 1.1C15.5 13 12 15 12 15z'/%3E%3C/svg%3E"); }
+:root { --skylark-i-email: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3.5 7l8.5 6 8.5-6'/%3E%3C/svg%3E"); }
+:root { --skylark-i-web: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='16' rx='2.5'/%3E%3Cpath d='M3 9h18M7 13h6M7 16h4'/%3E%3C/svg%3E"); }
+:root { --skylark-i-report: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16M7 16v-4M12 16V7M17 16v-6'/%3E%3C/svg%3E"); }
+:root { --skylark-i-pin: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z'/%3E%3Ccircle cx='12' cy='9.5' r='2.5'/%3E%3C/svg%3E"); }
+:root { --skylark-i-star: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z'/%3E%3C/svg%3E"); }
+:root { --skylark-i-page: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='3' width='16' height='18' rx='2.5'/%3E%3Cpath d='M8 8h8M8 12h8M8 16h5'/%3E%3C/svg%3E"); }
+:root { --skylark-i-link: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1'/%3E%3Cpath d='M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1'/%3E%3C/svg%3E"); }
+:root { --skylark-i-bolt: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 3L5 13h6l-1 8 8-10h-6z'/%3E%3C/svg%3E"); }
+:root { --skylark-i-chart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16M7 16v-4M12 16V7M17 16v-6'/%3E%3C/svg%3E"); }
+:root { --skylark-i-eye: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E"); }
+:root { --skylark-i-person: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21a8 8 0 0 1 16 0'/%3E%3C/svg%3E"); }
+:root { --skylark-i-stop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M9 9l6 6M15 9l-6 6'/%3E%3C/svg%3E"); }
+:root { --skylark-i-calendar: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='5' width='16' height='15' rx='2'/%3E%3Cpath d='M8 3v4M16 3v4M4 10h16'/%3E%3C/svg%3E"); }
+:root { --skylark-i-phone: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/%3E%3C/svg%3E"); }
+:root { --skylark-i-mail: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2.5'/%3E%3Cpath d='M3.5 7l8.5 6 8.5-6'/%3E%3C/svg%3E"); }
+:root { --skylark-i-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-4-4'/%3E%3C/svg%3E"); }
+:root { --skylark-i-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9.5'/%3E%3Cpath d='M8 12.5l2.7 2.7L16 9.8'/%3E%3C/svg%3E"); }
+:root { --skylark-i-tick: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
+:root { --skylark-i-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E"); }
+:root { --skylark-i-up: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V5M6 11l6-6 6 6'/%3E%3C/svg%3E"); }
+:root { --skylark-i-lock: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='10' width='14' height='10' rx='2'/%3E%3Cpath d='M8 10V7a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E"); }
+:root { --skylark-i-plus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E"); }
+:root { --skylark-i-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3C/svg%3E"); }
+:root { --skylark-i-stars: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' d='M8 1l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.4 3.5 14.8l.9-5L.8 6.3l5-.7z'/%3E%3C/svg%3E"); --skylark-spark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 72' preserveAspectRatio='none'%3E%3Cpath d='M0 64C30 61 48 57 70 50S110 44 130 36 168 27 190 19 222 9 234 7L234 72 0 72Z' fill='%2374C6F7' fill-opacity='0.22'/%3E%3Cpath d='M0 64C30 61 48 57 70 50S110 44 130 36 168 27 190 19 222 9 234 7' fill='none' stroke='%232E9BE0' stroke-width='3' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3Ccircle cx='234' cy='7' r='4.5' fill='white' stroke='%232E9BE0' stroke-width='3'/%3E%3C/svg%3E"); --skylark-bars: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 92 36'%3E%3Crect x='0' y='22' width='8' height='14' rx='3' fill='%23BFE3FA'/%3E%3Crect x='12' y='16' width='8' height='20' rx='3' fill='%23BFE3FA'/%3E%3Crect x='24' y='20' width='8' height='16' rx='3' fill='%23BFE3FA'/%3E%3Crect x='36' y='11' width='8' height='25' rx='3' fill='%23BFE3FA'/%3E%3Crect x='48' y='14' width='8' height='22' rx='3' fill='%23BFE3FA'/%3E%3Crect x='60' y='6' width='8' height='30' rx='3' fill='%23BFE3FA'/%3E%3Crect x='72' y='0' width='8' height='36' rx='3' fill='%232E9BE0'/%3E%3C/svg%3E"); --skylark-chart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 236 180' preserveAspectRatio='none'%3E%3Crect x='0' y='122.4' width='14' height='57.6' rx='4' fill='%23BFE3FA'/%3E%3Crect x='20' y='126.0' width='14' height='54.0' rx='4' fill='%23BFE3FA'/%3E%3Crect x='40' y='111.6' width='14' height='68.4' rx='4' fill='%23BFE3FA'/%3E%3Crect x='60' y='100.8' width='14' height='79.2' rx='4' fill='%23BFE3FA'/%3E%3Crect x='80' y='106.2' width='14' height='73.8' rx='4' fill='%23BFE3FA'/%3E%3Crect x='100' y='86.4' width='14' height='93.6' rx='4' fill='%23BFE3FA'/%3E%3Crect x='120' y='75.6' width='14' height='104.4' rx='4' fill='%23BFE3FA'/%3E%3Crect x='140' y='66.6' width='14' height='113.4' rx='4' fill='%23BFE3FA'/%3E%3Crect x='160' y='52.2' width='14' height='127.8' rx='4' fill='%23BFE3FA'/%3E%3Crect x='180' y='39.6' width='14' height='140.4' rx='4' fill='%23BFE3FA'/%3E%3Crect x='200' y='25.2' width='14' height='154.8' rx='4' fill='%23BFE3FA'/%3E%3Crect x='220' y='0.0' width='14' height='180.0' rx='4' fill='%232E9BE0'/%3E%3C/svg%3E"); --skylark-map: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 150' preserveAspectRatio='xMidYMid slice'%3E%3Crect width='400' height='150' fill='%23E3F3FD'/%3E%3Cpath d='M-20 90L420 50' stroke='white' stroke-width='14'/%3E%3Cpath d='M120 -10L150 170' stroke='white' stroke-width='12'/%3E%3Cpath d='M260 -10L250 170' stroke='white' stroke-width='9'/%3E%3Cpath d='M-10 30L180 20' stroke='white' stroke-width='6'/%3E%3Cpath d='M190 40c-11 0-19 8-19 19 0 14 19 30 19 30s19-16 19-30c0-11-8-19-19-19z' fill='%232E9BE0'/%3E%3Ccircle cx='190' cy='59' r='6' fill='white'/%3E%3Cpath d='M90 85c-8 0-13 6-13 13 0 10 13 21 13 21s13-11 13-21c0-7-5-13-13-13z' fill='%239FB3C8'/%3E%3Cpath d='M300 78c-8 0-13 6-13 13 0 10 13 21 13 21s13-11 13-21c0-7-5-13-13-13z' fill='%239FB3C8'/%3E%3C/svg%3E"); }
+.skylark-icon--seo::before { -webkit-mask-image: var(--skylark-i-seo); mask-image: var(--skylark-i-seo); }
+.skylark-icon--ads::before { -webkit-mask-image: var(--skylark-i-ads); mask-image: var(--skylark-i-ads); }
+.skylark-icon--social::before { -webkit-mask-image: var(--skylark-i-social); mask-image: var(--skylark-i-social); }
+.skylark-icon--email::before { -webkit-mask-image: var(--skylark-i-email); mask-image: var(--skylark-i-email); }
+.skylark-icon--web::before { -webkit-mask-image: var(--skylark-i-web); mask-image: var(--skylark-i-web); }
+.skylark-icon--report::before { -webkit-mask-image: var(--skylark-i-report); mask-image: var(--skylark-i-report); }
+.skylark-icon--pin::before { -webkit-mask-image: var(--skylark-i-pin); mask-image: var(--skylark-i-pin); }
+.skylark-icon--star::before { -webkit-mask-image: var(--skylark-i-star); mask-image: var(--skylark-i-star); }
+.skylark-icon--page::before { -webkit-mask-image: var(--skylark-i-page); mask-image: var(--skylark-i-page); }
+.skylark-icon--link::before { -webkit-mask-image: var(--skylark-i-link); mask-image: var(--skylark-i-link); }
+.skylark-icon--bolt::before { -webkit-mask-image: var(--skylark-i-bolt); mask-image: var(--skylark-i-bolt); }
+.skylark-icon--chart::before { -webkit-mask-image: var(--skylark-i-chart); mask-image: var(--skylark-i-chart); }
+.skylark-icon--eye::before { -webkit-mask-image: var(--skylark-i-eye); mask-image: var(--skylark-i-eye); }
+.skylark-icon--person::before { -webkit-mask-image: var(--skylark-i-person); mask-image: var(--skylark-i-person); }
+.skylark-icon--stop::before { -webkit-mask-image: var(--skylark-i-stop); mask-image: var(--skylark-i-stop); }
+.skylark-icon--calendar::before { -webkit-mask-image: var(--skylark-i-calendar); mask-image: var(--skylark-i-calendar); }
+.skylark-info.skylark-icon--phone::before { -webkit-mask-image: var(--skylark-i-phone); mask-image: var(--skylark-i-phone); }
+.skylark-info.skylark-icon--mail::before { -webkit-mask-image: var(--skylark-i-mail); mask-image: var(--skylark-i-mail); }
+.skylark-info.skylark-icon--pin::before { -webkit-mask-image: var(--skylark-i-pin); mask-image: var(--skylark-i-pin); }

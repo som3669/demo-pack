@@ -1,0 +1,20 @@
+{
+	"schema": 1,
+	"options": {
+		"yantra_pro_modules": [
+			"mega-menu",
+			"content-blocks"
+		]
+	},
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "blog"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Skylark",
+			"blogdescription": "Digital marketing for local businesses"
+		},
+		"hide_sample_content": true
+	}
+}

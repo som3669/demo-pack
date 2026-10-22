@@ -286,6 +286,70 @@
 			"shown_with": [
 				"yantra"
 			]
+		},
+		{
+			"id": "skylark",
+			"theme": "yantra-pro",
+			"pro": true,
+			"title": "Skylark digital marketing studio",
+			"description": "A digital marketing studio for local businesses: a homepage with a results board, services, a local SEO page with map results, six case studies, pricing with a monthly and yearly switch, About, a free audit page and an ad landing page on the Blank canvas template whose headline matches the ad it came from; six articles with a table of contents, a reading bar and share buttons; a Services mega menu, an exit popup and an offer inside posts (Yantra Pro content blocks); an offer bar, a sticky header with Call and Free audit buttons, dark mode, the phone bar, menus, footer widgets and a logo. For Yantra Pro.",
+			"version": "1.0.0",
+			"path": "skylark/pack.json",
+			"requires": {
+				"wordpress": "6.5"
+			},
+			"preview": "skylark/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "skylark/screens/home.jpg",
+					"page": "skylark/site/index.html"
+				},
+				{
+					"title": "Services",
+					"image": "skylark/screens/services.jpg",
+					"page": "skylark/site/services/index.html"
+				},
+				{
+					"title": "Local SEO",
+					"image": "skylark/screens/local-seo.jpg",
+					"page": "skylark/site/local-seo/index.html"
+				},
+				{
+					"title": "Case studies",
+					"image": "skylark/screens/case-studies.jpg",
+					"page": "skylark/site/case-studies/index.html"
+				},
+				{
+					"title": "A case study",
+					"image": "skylark/screens/case-study.jpg",
+					"page": "skylark/site/case-northside-dental/index.html"
+				},
+				{
+					"title": "Pricing",
+					"image": "skylark/screens/pricing.jpg",
+					"page": "skylark/site/pricing/index.html"
+				},
+				{
+					"title": "A post",
+					"image": "skylark/screens/post.jpg",
+					"page": "skylark/site/your-google-listing-matters-more-than-your-homepage/index.html"
+				},
+				{
+					"title": "Ad landing page",
+					"image": "skylark/screens/landing.jpg",
+					"page": "skylark/site/free-audit/index.html"
+				}
+			],
+			"demo_url": "https://som3669.github.io/demo-pack/skylark/site/index.html",
+			"categories": [
+				"Business",
+				"Agency"
+			],
+			"theme_name": "Yantra Pro",
+			"shown_with": [
+				"yantra"
+			]
 		}
 	]
 }

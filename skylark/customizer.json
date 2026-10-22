@@ -1,0 +1,362 @@
+{
+	"schema": 1,
+	"css": "skylark.css",
+	"theme_mods": {
+		"custom_logo": {
+			"image": "images/skylark-logo.png"
+		},
+		"yantra_logo_width": {
+			"desktop": {
+				"size": 40,
+				"unit": "px"
+			},
+			"tablet": {
+				"size": 36,
+				"unit": "px"
+			},
+			"mobile": {
+				"size": 34,
+				"unit": "px"
+			}
+		},
+		"yantra_site_title_typography": {
+			"font-family": "Sora",
+			"font-weight": "700",
+			"font-size": {
+				"desktop": {
+					"size": 22,
+					"unit": "px"
+				},
+				"mobile": {
+					"size": 20,
+					"unit": "px"
+				}
+			},
+			"letter-spacing": {
+				"desktop": {
+					"size": -0.02,
+					"unit": "em"
+				}
+			}
+		},
+		"yantra_color_palette": {
+			"id": "custom",
+			"name": "Skylark",
+			"colors": {
+				"yantra-color-1": "#0b6fb3",
+				"yantra-color-2": "#095a92",
+				"yantra-color-3": "#0f2742",
+				"yantra-color-4": "#4a5c72",
+				"yantra-color-5": "#5f7187",
+				"yantra-color-6": "#dce9f3",
+				"yantra-color-7": "#f3f9fd",
+				"yantra-color-8": "#ffffff",
+				"yantra-color-9": "#ffffff"
+			}
+		},
+		"themor_dark_mode": "toggle",
+		"themor_dark_mode_toggle_place": "none",
+		"themor_dark_palette": {
+			"id": "custom",
+			"name": "Skylark dark",
+			"colors": {
+				"yantra-color-1": "#74c6f7",
+				"yantra-color-2": "#a9d8f8",
+				"yantra-color-3": "#f1f6fb",
+				"yantra-color-4": "#c5d3e0",
+				"yantra-color-5": "#93a6ba",
+				"yantra-color-6": "#23384f",
+				"yantra-color-7": "#142338",
+				"yantra-color-8": "#0b1726",
+				"yantra-color-9": "#0b1726"
+			}
+		},
+		"yantra_button_background": "#74c6f7",
+		"yantra_button_background_hover": "#5bb9f2",
+		"yantra_button_text_color": "#0f2742",
+		"yantra_button_text_color_hover": "#0f2742",
+		"yantra_body_typography": {
+			"font-family": "Figtree",
+			"font-weight": "400",
+			"font-style": "default",
+			"text-transform": "default",
+			"font-size": {
+				"desktop": {
+					"size": 17,
+					"unit": "px"
+				}
+			},
+			"line-height": {
+				"desktop": {
+					"size": 1.65,
+					"unit": "-"
+				}
+			}
+		},
+		"yantra_heading_typography": {
+			"font-family": "Sora",
+			"font-weight": "600",
+			"font-style": "default",
+			"text-transform": "default",
+			"line-height": {
+				"desktop": {
+					"size": 1.15,
+					"unit": "-"
+				}
+			},
+			"letter-spacing": {
+				"desktop": {
+					"size": -0.025,
+					"unit": "em"
+				}
+			}
+		},
+		"yantra_menu_typography": {
+			"font-weight": "600",
+			"text-transform": "default",
+			"font-size": {
+				"desktop": {
+					"size": 16,
+					"unit": "px"
+				}
+			}
+		},
+		"yantra_radius": {
+			"size": 16,
+			"unit": "px"
+		},
+		"yantra_box_radius": {
+			"size": 24,
+			"unit": "px"
+		},
+		"yantra_button_radius": {
+			"size": 100,
+			"unit": "px"
+		},
+		"yantra_header_builder": {
+			"desktop": {
+				"top": {
+					"left": [],
+					"center": [],
+					"right": []
+				},
+				"main": {
+					"left": [
+						"logo"
+					],
+					"center": [
+						"primary-menu"
+					],
+					"right": [
+						"color-scheme",
+						"button-2",
+						"button"
+					]
+				},
+				"bottom": {
+					"left": [],
+					"center": [],
+					"right": []
+				}
+			},
+			"mobile": {
+				"top": {
+					"left": [],
+					"center": [],
+					"right": []
+				},
+				"main": {
+					"left": [
+						"logo"
+					],
+					"center": [],
+					"right": [
+						"color-scheme",
+						"toggle"
+					]
+				},
+				"bottom": {
+					"left": [],
+					"center": [],
+					"right": []
+				}
+			},
+			"offset": [
+				"mobile-menu",
+				"button",
+				"button-2"
+			]
+		},
+		"yantra_header_main_height": {
+			"desktop": {
+				"size": 84,
+				"unit": "px"
+			},
+			"tablet": {
+				"size": 70,
+				"unit": "px"
+			},
+			"mobile": {
+				"size": 64,
+				"unit": "px"
+			}
+		},
+		"yantra_header_button_text": "Get a free audit",
+		"yantra_header_button_url": {
+			"page_url": "contact"
+		},
+		"yantra_header_button_style": "solid",
+		"yantra_header_button_2_text": "(503) 555-0186",
+		"yantra_header_button_2_url": "tel:+15035550186",
+		"yantra_header_button_2_style": "outline",
+		"themor_sticky_header": true,
+		"themor_sticky_header_shrink": true,
+		"themor_site_announce": true,
+		"themor_site_announce_text": "Free audits for November: 4 spots left",
+		"themor_site_announce_label": "Claim yours",
+		"themor_site_announce_url": {
+			"page_url": "contact"
+		},
+		"themor_site_announce_close": true,
+		"themor_site_announce_bg": "#74c6f7",
+		"themor_site_announce_color": "#0f2742",
+		"yantra_title_style": "banner",
+		"yantra_title_align": "start",
+		"yantra_breadcrumbs_position": "above",
+		"yantra_breadcrumbs_separator": "chevron",
+		"yantra_blog_layout": "grid",
+		"yantra_blog_columns": "3",
+		"yantra_blog_elements": [
+			"image",
+			"categories",
+			"title",
+			"excerpt",
+			"meta"
+		],
+		"yantra_blog_meta": [
+			"date",
+			"reading-time"
+		],
+		"yantra_pagination_style": "load-more",
+		"yantra_post_meta": [
+			"author",
+			"date",
+			"reading-time"
+		],
+		"yantra_post_footer_elements": [
+			"tags",
+			"author-box",
+			"navigation",
+			"related"
+		],
+		"themor_blog_progress": true,
+		"themor_blog_toc": true,
+		"themor_blog_toc_depth": "h2",
+		"themor_blog_toc_min": 3,
+		"themor_blog_share": true,
+		"themor_blog_related": true,
+		"themor_blog_related_title": "Keep reading",
+		"themor_mbar_on": true,
+		"themor_mbar_items": [
+			"home",
+			"custom",
+			"custom2",
+			"phone",
+			"menu"
+		],
+		"themor_mbar_custom_label": "Services",
+		"themor_mbar_custom_icon": "fa-solid fa-table-cells-large",
+		"themor_mbar_custom_url": {
+			"page_url": "services"
+		},
+		"themor_mbar_custom2_label": "Free audit",
+		"themor_mbar_custom2_icon": "fa-solid fa-magnifying-glass-chart",
+		"themor_mbar_custom2_url": {
+			"page_url": "contact"
+		},
+		"themor_mbar_phone": "+15035550186",
+		"themor_mbar_hide_on_scroll": true,
+		"yantra_footer_builder": {
+			"desktop": {
+				"top": {
+					"top-1": [],
+					"top-2": [],
+					"top-3": [],
+					"top-4": [],
+					"top-5": [],
+					"top-6": []
+				},
+				"main": {
+					"main-1": [
+						"widget-1",
+						"socials"
+					],
+					"main-2": [
+						"widget-2"
+					],
+					"main-3": [
+						"widget-3"
+					],
+					"main-4": [
+						"widget-4"
+					],
+					"main-5": [],
+					"main-6": []
+				},
+				"bottom": {
+					"bottom-1": [
+						"copyright"
+					],
+					"bottom-2": [
+						"footer-menu"
+					],
+					"bottom-3": [],
+					"bottom-4": [],
+					"bottom-5": [],
+					"bottom-6": []
+				}
+			}
+		},
+		"yantra_footer_main_background": {
+			"background-color": "#f3f9fd",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_bottom_background": {
+			"background-color": "#f3f9fd",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_main_color": "#4a5c72",
+		"yantra_footer_bottom_color": "#5f7187",
+		"yantra_footer_main_border": true,
+		"yantra_footer_bottom_border": true,
+		"yantra_footer_copyright": "© {year} Skylark Digital LLC",
+		"yantra_footer_socials": [
+			{
+				"label": "Instagram",
+				"url": "https://example.com/skylark-on-instagram",
+				"icon": "fa-brands fa-instagram",
+				"network": "instagram"
+			},
+			{
+				"label": "LinkedIn",
+				"url": "https://example.com/skylark-on-linkedin",
+				"icon": "fa-brands fa-linkedin",
+				"network": "linkedin"
+			},
+			{
+				"label": "Facebook",
+				"url": "https://example.com/skylark-on-facebook",
+				"icon": "fa-brands fa-facebook",
+				"network": "facebook"
+			}
+		]
+	}
+}

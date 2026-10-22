@@ -1,0 +1,77 @@
+/*
+ * Themor content blocks on the site (content-blocks/includes/Render.php). A theme tunes them
+ * with these variables:
+ *
+ *   --themor-content-block-width   width of a block in the site's width (default 1200px)
+ *   --themor-content-block-narrow  width of a narrow block (default 760px)
+ *   --themor-content-block-gutter  space beside it on small screens (default 1rem)
+ *
+ * Which devices a block hides on is printed with this stylesheet, at Themor's breakpoints.
+ */
+
+.themor-content-block {
+	box-sizing: border-box;
+}
+
+.themor-content-block--full {
+	width: 100%;
+}
+
+.themor-content-block__inner {
+	box-sizing: border-box;
+	width: min(100%, var(--themor-content-block-width, 1200px) + var(--themor-content-block-gutter, 1rem) * 2);
+	margin-inline: auto;
+	padding-inline: var(--themor-content-block-gutter, 1rem);
+}
+
+.themor-content-block--narrow > .themor-content-block__inner {
+	width: min(100%, var(--themor-content-block-narrow, 760px) + var(--themor-content-block-gutter, 1rem) * 2);
+}
+
+/* In a list of posts laid out as a grid, a block takes a whole row. */
+.themor-content-block--in-list {
+	grid-column: 1 / -1;
+}
+
+.themor-content-block--spacing-small {
+	padding-block: 1rem;
+}
+
+.themor-content-block--spacing-medium {
+	padding-block: 2rem;
+}
+
+.themor-content-block--spacing-large {
+	padding-block: 4rem;
+}
+
+.themor-content-block > :first-child,
+.themor-content-block__inner > :first-child {
+	margin-block-start: 0;
+}
+
+.themor-content-block > :last-child,
+.themor-content-block__inner > :last-child {
+	margin-block-end: 0;
+}
+
+/* The locations on the page, for people who asked to see them (Show hook locations). */
+.themor-hook-marker {
+	box-sizing: border-box;
+	margin: 4px;
+	padding: 6px 10px;
+	border: 1px dashed #3858e9;
+	border-radius: 4px;
+	background: rgba(56, 88, 233, 0.06);
+	color: #1e1e1e;
+	font: 12px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	text-align: start;
+}
+
+.themor-hook-marker code {
+	margin-inline-start: 6px;
+	padding: 1px 4px;
+	border-radius: 3px;
+	background: #fff;
+	font-size: 11px;
+}
