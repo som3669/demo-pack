@@ -1,0 +1,1144 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"local-seo": {
+			"name": "Local SEO",
+			"description": "Getting found on the map and in local searches."
+		},
+		"google-ads": {
+			"name": "Google Ads",
+			"description": "Paying only for searches that turn into customers."
+		},
+		"social-ads": {
+			"name": "Social ads",
+			"description": "Instagram and Facebook campaigns that bring people in."
+		},
+		"reporting": {
+			"name": "Reporting",
+			"description": "Knowing what your marketing brought in."
+		},
+		"email-sms": {
+			"name": "Email & SMS",
+			"description": "Turning first visits into regular customers."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "home-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-clients"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-services"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-why"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "process"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-cases"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-reviews"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-pricing"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-blog",
+						"categories": [
+							"local-seo",
+							"google-ads",
+							"social-ads",
+							"reporting",
+							"email-sms"
+						]
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta-audit"
+					}
+				]
+			]
+		},
+		"services": {
+			"title": "Services",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "services-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "services-list"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "process"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta-audit"
+					}
+				]
+			]
+		},
+		"local-seo": {
+			"title": "Local SEO",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "seo-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "seo-included"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-rank"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "seo-timeline"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "seo-proof"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "seo-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "seo-related"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta-audit"
+					}
+				]
+			]
+		},
+		"case-studies": {
+			"title": "Case studies",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "cases-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cases-grid"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-numbers"
+					}
+				]
+			]
+		},
+		"pricing": {
+			"title": "Pricing",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "pricing-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "pricing-compare"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "pricing-addons"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "pricing-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta-audit"
+					}
+				]
+			]
+		},
+		"about": {
+			"title": "About",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "about-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-story"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-values"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-team"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-jobs"
+					}
+				]
+			]
+		},
+		"contact": {
+			"title": "Free audit",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "contact-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "contact-visit"
+					}
+				]
+			]
+		},
+		"blog": {
+			"title": "Blog",
+			"content": []
+		},
+		"free-audit": {
+			"title": "Free practice audit",
+			"template": "canvas",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "lp-header"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-proof"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-results"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-steps"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-quote"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-cta"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lp-footer"
+					}
+				]
+			]
+		},
+		"privacy": {
+			"title": "Privacy policy",
+			"content": [
+				[
+					"p",
+					"Skylark Digital LLC runs this website. This page says what we collect when you visit it or get in touch, and what we do with it."
+				],
+				[
+					"h2",
+					"What we collect"
+				],
+				[
+					"p",
+					"When you email or call us, we keep your name, your contact details, your website and what you tell us about your business, so we can reply and prepare your audit."
+				],
+				[
+					"p",
+					"This site counts visits with privacy-friendly analytics. It sets no advertising cookies unless you agree to them."
+				],
+				[
+					"h2",
+					"What we do with it"
+				],
+				[
+					"p",
+					"We use your details to answer you and, if you become a client, to run your campaigns. We never sell them or share them with anyone who does not work on your account."
+				],
+				[
+					"h2",
+					"How long we keep it"
+				],
+				[
+					"p",
+					"Requests that do not become work are deleted after twelve months. Client records are kept for as long as the law asks."
+				],
+				[
+					"h2",
+					"Your choices"
+				],
+				[
+					"p",
+					"Ask us at hello@skylark.studio to see, correct or delete what we hold about you, and we will do it within a month."
+				]
+			]
+		},
+		"case-northside-dental": {
+			"title": "Northside Dental: three times the bookings",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "case-northside-dental"
+					}
+				],
+				[
+					"h2",
+					"The challenge"
+				],
+				[
+					"p",
+					"Northside Dental had a good reputation and a quiet phone. They sat on page two of Google for \"dentist near me\", and the ads they ran were paying for searches like \"dental school\" and \"free dentist\"."
+				],
+				[
+					"p",
+					"Dr. Chen wanted 80 new bookings a month without hiring a front-desk person to chase leads."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ol",
+					[
+						"Stopped the waste: we paused 140 search terms that never booked and cut the ad budget by a third in week one.",
+						"Fixed the Google listing: new categories, 60 fresh photos, weekly posts and online booking right on the listing.",
+						"Asked for reviews: a text after each visit took them from 64 reviews to 212 in a year.",
+						"Built a page per treatment: implants, emergencies and children's visits each got a page that answers what people search."
+					]
+				],
+				[
+					"quote",
+					"They told us what to stop before they told us what to buy. That is when I knew we had the right people.",
+					"Dr. Maya Chen, owner"
+				],
+				[
+					"h2",
+					"The results"
+				],
+				[
+					"pattern",
+					{
+						"slug": "case-table-northside"
+					}
+				],
+				[
+					"p",
+					"The spend went up a little; what it bought went up three times. Northside now books its hygiene slots two weeks ahead."
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-numbers"
+					}
+				]
+			]
+		},
+		"case-spoke-and-sprocket": {
+			"title": "Spoke & Sprocket: 3.6× more online orders",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "case-spoke-and-sprocket"
+					}
+				],
+				[
+					"h2",
+					"The challenge"
+				],
+				[
+					"p",
+					"Spoke & Sprocket sells bikes, parts and repairs from one shop on Division Street. Their shopping ads spent most of the budget on people already searching for the shop by name, and they had no email list at all."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ol",
+					[
+						"Cleaned the product feed so every part showed its real price, stock and photo.",
+						"Stopped bidding on the shop's own name, where visitors came anyway.",
+						"Started a basket reminder and a welcome email with the first service free.",
+						"Ran a winter service offer on Instagram for three weeks in November."
+					]
+				],
+				[
+					"quote",
+					"In the first week they told us to stop two of our ad campaigns. That alone paid for the first month.",
+					"Luis Ortega, owner"
+				],
+				[
+					"h2",
+					"The results"
+				],
+				[
+					"p",
+					"Online orders went from 52 to 188 a month in nine months, and each order now costs $9 in ads instead of $26. The email list passed 2,000 people by spring."
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-numbers"
+					}
+				]
+			]
+		},
+		"case-rise-bakehouse": {
+			"title": "Rise Bakehouse: pre-orders nearly tripled",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "case-rise-bakehouse"
+					}
+				],
+				[
+					"h2",
+					"The challenge"
+				],
+				[
+					"p",
+					"Rise bakes before dawn and sells out by noon. The owners wanted more weekend pre-orders, so they could bake to order and stop throwing bread away on quiet days."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ol",
+					[
+						"Built one pre-order page with a Friday cut-off, linked from the Google listing.",
+						"Ran Instagram ads around one offer at a time: the cardamom bun, then the sourdough share.",
+						"Sent a Thursday email with the weekend's bakes and a link to order."
+					]
+				],
+				[
+					"quote",
+					"The monthly report is one page and I actually read it. Our pre-orders have nearly tripled since spring.",
+					"Hannah Pike, co-owner"
+				],
+				[
+					"h2",
+					"The results"
+				],
+				[
+					"p",
+					"Pre-orders went from 140 to 410 a month in six months. Almost a third now come from the Thursday email, and waste on Sundays fell by half."
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-numbers"
+					}
+				]
+			]
+		},
+		"case-larkin-law": {
+			"title": "Larkin Law: 2.6× more qualified calls",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "case-larkin-law"
+					}
+				],
+				[
+					"h2",
+					"The challenge"
+				],
+				[
+					"p",
+					"Larkin Law handles family law in Beaverton and the west side. Their phone rang, but often about cases they do not take, and the good calls went to the firms above them on the map."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ol",
+					[
+						"Rewrote the service pages around the cases they do take: divorce, custody and mediation.",
+						"Added the four suburbs they serve as areas, with a page for each.",
+						"Ran call-only ads during office hours, with the questions that tell a good case early."
+					]
+				],
+				[
+					"quote",
+					"We take fewer calls and more cases. The team finally has time for the clients we already have.",
+					"Rachel Larkin, partner"
+				],
+				[
+					"h2",
+					"The results"
+				],
+				[
+					"p",
+					"Qualified calls went from 18 to 47 a month, calls about cases they do not take fell by 62%, and the firm is in the top three on the map in all four suburbs."
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-numbers"
+					}
+				]
+			]
+		},
+		"case-tidewater-kayaks": {
+			"title": "Tidewater Kayaks: a full summer, booked by June",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "case-tidewater-kayaks"
+					}
+				],
+				[
+					"h2",
+					"The challenge"
+				],
+				[
+					"p",
+					"Tidewater runs guided kayak tours on the Columbia from Astoria. Bookings came late and in a rush, so guides were idle in May and turning people away in August."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ol",
+					[
+						"Started search ads for tours in early spring, when visitors plan their trips.",
+						"Showed Instagram videos of the evening tour to people who had looked at Astoria hotels.",
+						"Sent a reminder to last year's guests before the summer dates opened."
+					]
+				],
+				[
+					"quote",
+					"For the first time we knew in May what August would look like.",
+					"Sam Reyes, owner"
+				],
+				[
+					"h2",
+					"The results"
+				],
+				[
+					"p",
+					"Tour bookings went from 64 to 151 a month at the season's peak, 2.4 times the summer before, at $11 in ads per booking. The summer was full by the middle of June."
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-numbers"
+					}
+				]
+			]
+		},
+		"case-okafor-physio": {
+			"title": "Okafor Physio: 2.6× more new patients",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "case-okafor-physio"
+					}
+				],
+				[
+					"h2",
+					"The challenge"
+				],
+				[
+					"p",
+					"Okafor Physio is a two-room clinic in Sellwood. They had a handful of old reviews, a listing with the wrong hours and a website that took eight seconds to open on a phone."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ol",
+					[
+						"Fixed the listing: hours, services, photos of the rooms and online booking.",
+						"Asked every patient for a review after their third visit.",
+						"Rebuilt the slowest pages so the site opens in under two seconds."
+					]
+				],
+				[
+					"quote",
+					"Most new patients now tell us they found us on the map. That never happened before.",
+					"Dr. Ade Okafor"
+				],
+				[
+					"h2",
+					"The results"
+				],
+				[
+					"p",
+					"New patients went from 22 to 58 a month in a year. The clinic's rating rose from 3.9 to 4.8, and 71% of new patients now find them on the map."
+				],
+				[
+					"pattern",
+					{
+						"slug": "band-numbers"
+					}
+				]
+			]
+		}
+	},
+	"posts": {
+		"your-google-listing-matters-more-than-your-homepage": {
+			"title": "Your Google listing matters more than your homepage",
+			"category": "local-seo",
+			"days": 2,
+			"image": "images/white-keys-photo.jpg",
+			"excerpt": "Most local customers decide before they ever reach your website. Here is what they see first, and the five things to fix this week.",
+			"content": [
+				[
+					"p",
+					"Search for a plumber, a dentist or a bakery near you and look at what Google shows first. It is not anyone's website. It is a map with three businesses on it, their stars, their hours and a button to call."
+				],
+				[
+					"p",
+					"For most of our clients, more people call straight from the Google listing than ever visit the website. If the listing is thin, the homepage never gets a chance."
+				],
+				[
+					"p",
+					"The good news: a listing is quicker to fix than a website, and it is free."
+				],
+				[
+					"h2",
+					"Why the listing comes first"
+				],
+				[
+					"p",
+					"Google picks the three businesses on the map by how close they are, how well their listing matches the search and how trusted they look. You cannot move your shop, but the other two are yours to work on."
+				],
+				[
+					"h2",
+					"Five things to fix this week"
+				],
+				[
+					"ol",
+					[
+						"The main category: pick the one that matches what people search, not what you call yourself.",
+						"Hours, including holidays: \"Closed\" when you are open costs more calls than anything else.",
+						"Services with prices: even a \"from\" price gets more clicks than none.",
+						"Ten real photos: the front door, the team at work, the finished job.",
+						"A booking or call button: whatever you most want people to do, make it one tap."
+					]
+				],
+				[
+					"h2",
+					"Photos and posts"
+				],
+				[
+					"p",
+					"Listings with fresh photos get more direction requests. Add a few each month and a short post each week: an offer, a new service, a finished job."
+				],
+				[
+					"h2",
+					"Reviews"
+				],
+				[
+					"p",
+					"Ask every happy customer, the same day, with a direct link. Reply to every review, good or bad, within a couple of days. People read the replies."
+				],
+				[
+					"quote",
+					"People decide on the map. The website is where they check they were right.",
+					"Chloe Park, local SEO lead"
+				],
+				[
+					"h2",
+					"How to tell it is working"
+				],
+				[
+					"p",
+					"Your listing's Performance page shows calls, direction requests and website clicks each month. Write last month's numbers down today, and compare in four weeks."
+				]
+			]
+		},
+		"the-three-numbers-on-every-report-we-send": {
+			"title": "The three numbers on every report we send",
+			"category": "reporting",
+			"days": 9,
+			"image": "images/markers-photo.jpg",
+			"excerpt": "A monthly report should fit on one page. These are the three numbers that earn their place on it.",
+			"content": [
+				[
+					"p",
+					"Most marketing reports are long because nobody decided what mattered. Ours fit on one page, and the top of that page always holds the same three numbers."
+				],
+				[
+					"p",
+					"They are not clicks, impressions or followers. They are the numbers a business owner would write down anyway."
+				],
+				[
+					"p",
+					"Here they are, and why each one earns its place."
+				],
+				[
+					"h2",
+					"What you spent"
+				],
+				[
+					"p",
+					"Every dollar of ad spend, by channel, plus our fee. If the total surprises you, the report has already failed."
+				],
+				[
+					"h2",
+					"What it brought in"
+				],
+				[
+					"p",
+					"The one result you hired us for: bookings, orders, calls or sign-ups. We agree on it in the first week and we never swap it for a nicer-looking one."
+				],
+				[
+					"h2",
+					"What each one cost"
+				],
+				[
+					"p",
+					"Spend divided by results. It is the number that tells you whether to spend more, and the one we work hardest to bring down."
+				],
+				[
+					"h2",
+					"And then: what we will change"
+				],
+				[
+					"p",
+					"Below the numbers, three lines: what we will try next month, what we will stop, and what we need from you. That part is the reason for the call."
+				]
+			]
+		},
+		"is-paying-for-clicks-worth-it-in-a-small-town": {
+			"title": "Is paying for clicks worth it in a small town?",
+			"category": "google-ads",
+			"days": 16,
+			"image": "images/sticky-note-photo.jpg",
+			"excerpt": "Fewer people search in a small town, but the ones who do are ready to call. How to tell if Google Ads will pay for you.",
+			"content": [
+				[
+					"p",
+					"A business owner in a town of 20,000 people asked us last month whether Google Ads made sense for them at all. It is a fair question: fewer people search, so there is less to buy."
+				],
+				[
+					"p",
+					"Our answer is usually yes, with three conditions."
+				],
+				[
+					"p",
+					"Here is how we check them before spending a dollar."
+				],
+				[
+					"h2",
+					"Look at the searches first"
+				],
+				[
+					"p",
+					"Google's planner shows roughly how many people search for what you sell in your area each month. Under a hundred, ads rarely pay. Over a few hundred, they usually do."
+				],
+				[
+					"h2",
+					"Know what a customer is worth"
+				],
+				[
+					"p",
+					"If a new customer is worth $400 to you and a click costs $3, you can afford a lot of clicks per customer. If they are worth $40, you cannot."
+				],
+				[
+					"h2",
+					"Only pay for intent"
+				],
+				[
+					"p",
+					"In a small town, most of the waste is people who were never going to buy: job seekers, students, other businesses. A weekly list of search terms to block fixes most of it."
+				],
+				[
+					"h2",
+					"Start small and measure calls"
+				],
+				[
+					"p",
+					"A month at $10 to $20 a day, with every call tracked, tells you more than any forecast. Then spend more on what booked."
+				]
+			]
+		},
+		"one-offer-at-a-time-why-our-ads-say-less": {
+			"title": "One offer at a time: why our social ads say less",
+			"category": "social-ads",
+			"days": 23,
+			"image": "images/microphone-photo.jpg",
+			"excerpt": "An ad that tries to say everything says nothing. Why every social campaign we run is built around a single offer.",
+			"content": [
+				[
+					"p",
+					"Open Instagram and count how many ads you scroll past in a minute. The ones you remember asked you to do one thing."
+				],
+				[
+					"p",
+					"That is why every social campaign we run is built around a single offer, with one photo, one line and one button."
+				],
+				[
+					"p",
+					"Here is how we pick the offer, and how long we let it run."
+				],
+				[
+					"h2",
+					"Pick an offer people can picture"
+				],
+				[
+					"p",
+					"\"Twenty percent off\" is easy to ignore. \"Your first service free\" or \"the Saturday cardamom bun\" is something people can picture, and picture themselves getting."
+				],
+				[
+					"h2",
+					"Give it two weeks"
+				],
+				[
+					"p",
+					"An ad needs a few days to find its audience and a few more to show whether it works. We change the creative every fortnight, not every morning."
+				],
+				[
+					"h2",
+					"Change one thing at a time"
+				],
+				[
+					"p",
+					"New photo or new words, never both. Otherwise you never know which one made the difference."
+				],
+				[
+					"h2",
+					"Measure what it brought in"
+				],
+				[
+					"p",
+					"Likes are nice. Bookings, orders and sign-ups pay the bills, so those are what the monthly report counts."
+				]
+			]
+		},
+		"how-to-ask-for-reviews-without-being-awkward": {
+			"title": "How to ask for reviews without being awkward",
+			"category": "local-seo",
+			"days": 31,
+			"image": "images/notebooks-photo.jpg",
+			"excerpt": "Most happy customers will leave a review. They just need to be asked at the right moment, the right way.",
+			"content": [
+				[
+					"p",
+					"Reviews move you up the map and they turn searches into calls. Yet most local businesses we meet have far fewer than their happy customers would gladly write."
+				],
+				[
+					"p",
+					"The reason is simple: nobody asked, or they asked a week too late."
+				],
+				[
+					"p",
+					"Here is the routine we set up for our clients."
+				],
+				[
+					"h2",
+					"Ask the same day"
+				],
+				[
+					"p",
+					"Send a short text or email a few hours after the visit, while it is fresh. Next week, it is already forgotten."
+				],
+				[
+					"h2",
+					"Make it one tap"
+				],
+				[
+					"p",
+					"Link straight to the review box on your Google listing. Every extra step loses people."
+				],
+				[
+					"h2",
+					"Keep the words plain"
+				],
+				[
+					"p",
+					"\"Thanks for coming in today. If you have a minute, a review helps other people find us.\" That is all it needs."
+				],
+				[
+					"h2",
+					"Reply to every one"
+				],
+				[
+					"p",
+					"Thank the good ones by name and answer the bad ones calmly, once. Future customers read your replies more closely than the reviews."
+				]
+			]
+		},
+		"the-welcome-email-that-pays-for-itself": {
+			"title": "The welcome email that pays for itself",
+			"category": "email-sms",
+			"days": 40,
+			"image": "images/paper-stack-photo.jpg",
+			"excerpt": "The first email someone gets from you is the one they are most likely to open. Make it count.",
+			"content": [
+				[
+					"p",
+					"When someone joins your email list, they are as interested as they will ever be. The first email they get from you is the one they are most likely to open."
+				],
+				[
+					"p",
+					"Most businesses send a plain \"thanks for subscribing\". It is a wasted chance."
+				],
+				[
+					"p",
+					"Here is what we put in a welcome email instead."
+				],
+				[
+					"h2",
+					"Say who you are, in two lines"
+				],
+				[
+					"p",
+					"Who you are, where you are and what you are good at. Skip the history; that can come later."
+				],
+				[
+					"h2",
+					"Give them a reason to come back"
+				],
+				[
+					"p",
+					"A first-visit offer, a free service, a useful guide. Something they can use this week, not someday."
+				],
+				[
+					"h2",
+					"Ask for one thing"
+				],
+				[
+					"p",
+					"Book, order, visit or reply. One button, near the top, where phones show it without scrolling."
+				],
+				[
+					"h2",
+					"Then send the next one"
+				],
+				[
+					"p",
+					"A second email three days later, with a story or a tip, keeps you in mind. Two emails, written once, keep working for years."
+				]
+			]
+		}
+	},
+	"theme_posts": {
+		"themor_content_block": {
+			"skylark-free-audit-popup": {
+				"title": "Free audit popup",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "popup-audit"
+						}
+					]
+				],
+				"meta": {
+					"_themor_content_block_type": "popup",
+					"_themor_content_block": {
+						"type": "popup",
+						"enabled": true,
+						"conditions": [
+							{
+								"type": "everywhere"
+							}
+						],
+						"devices": [
+							"desktop",
+							"tablet"
+						],
+						"popup_trigger": "exit",
+						"popup_again": "after",
+						"popup_again_days": 14,
+						"popup_again_done": 30,
+						"popup_close_action": "button",
+						"popup_close_selector": ".skylark-popup-close a, .skylark-popup-skip",
+						"popup_size": "custom",
+						"popup_width": {
+							"size": 880,
+							"unit": "px"
+						},
+						"popup_position": "center",
+						"popup_animation": "zoom",
+						"popup_backdrop_color": "rgba(15, 39, 66, 0.4)",
+						"popup_radius": 28,
+						"popup_padding": {
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"unit": "px"
+						},
+						"popup_shadow_color": "rgba(15, 39, 66, 0.25)",
+						"popup_overflow": "hidden"
+					}
+				}
+			},
+			"skylark-offer-in-posts": {
+				"title": "Free audit offer in posts",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "post-offer"
+						}
+					]
+				],
+				"meta": {
+					"_themor_content_block_type": "hook",
+					"_themor_content_block": {
+						"type": "hook",
+						"enabled": true,
+						"location": "content:paragraph",
+						"paragraph": 3,
+						"conditions": [
+							{
+								"type": "post_type:post"
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

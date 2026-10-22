@@ -1,0 +1,25 @@
+{
+	"schema": 1,
+	"images": {
+		"images/skylark-logo.png": "Skylark",
+		"images/plant-light-photo.jpg": "A laptop on a desk beside a potted plant in afternoon sun",
+		"images/meeting-room-photo.jpg": "A bright meeting room with a wooden table and a whiteboard",
+		"images/latte-desk-photo.jpg": "A latte, a croissant and an open laptop on a wooden desk",
+		"images/notebook-pencil-photo.jpg": "A white spiral notebook and a copper pencil",
+		"images/keyboard-phone-photo.jpg": "A keyboard and a phone in an orange case on a blue desk",
+		"images/lounge-photo.jpg": "An office lounge with blue and yellow beanbags by tall windows",
+		"images/white-keys-photo.jpg": "A white keyboard on a light wooden desk",
+		"images/markers-photo.jpg": "A row of blue, yellow, green and pink highlighter tips",
+		"images/sticky-note-photo.jpg": "A peach sticky note and a pen resting on a laptop",
+		"images/microphone-photo.jpg": "A microphone on a stand against a soft grey background",
+		"images/smiley-note-photo.jpg": "A green sticky note with a smiley face on white paper",
+		"images/open-office-photo.jpg": "A bright open-plan office with rows of desks",
+		"images/stair-lounge-photo.jpg": "A lounge under a wooden staircase with an orange sofa",
+		"images/phone-booths-photo.jpg": "Orange and yellow phone booths in an open-plan office",
+		"images/meeting-table-photo.jpg": "A meeting table with chairs in a small office",
+		"images/office-aisle-photo.jpg": "A long office aisle with white desks and green chairs",
+		"images/paper-fan-photo.jpg": "An orange and white folded paper fan",
+		"images/notebooks-photo.jpg": "Stacks of black notebooks beside a small plant",
+		"images/paper-stack-photo.jpg": "Shelves of coloured paper in a print room"
+	}
+}

@@ -32,6 +32,7 @@ every file as it is.
 | `yantra-pro` | Yantra Pro | The same business site for Yantra Pro (a theme of its own, not a child theme), with its 15 layouts as the pack's own patterns, since Yantra Pro has no patterns. Schema 3 |
 | `daybook` | Yantra Pro | A lifestyle blog in four sections, Cook, Grow, Make and Rest, with the latest posts as the homepage: 23 posts with photos and tags, a three-part bread series (Yantra Pro's series), a quote post, four sticky posts for the featured slider, About, Contact and Privacy pages, a main and a footer menu linking the sections, four footer widgets, a logo, and Yantra Pro's blog settings: Masonry with infinite scroll, a table of contents, floating share buttons, view counts, the author page header, dark mode with a header switch, a date and a note in the header's top row, and the phone bar. Schema 3: needs the Storefill version that reads it |
 | `kerbside` | Yantra Pro | A café, roastery and bakery that takes orders ahead: a homepage of its own 17 patterns (a till-receipt hero, fresh bakes with the stock left, the menu as tiles, beans by post as receipts, the roastery, a regular's quote, the terrace with the week's hours, the journal), Menu, Order ahead, Our story and Visit pages; 19 products in five categories (drinks by milk and beans by grind as variations, bakes with Yantra Pro's own badges and a back-in-stock date, low and sold-out stock), reviews, six journal posts, a main and a footer menu, four footer widgets, a logo and its CSS; Yantra Pro's store hours with last orders and the open bar, the cart drawer, swatches, delivery estimate, bought together, dark mode and the phone bar; a demo checkout with collection, postage and free postage over £15. Schema 3 |
+| `skylark` | Yantra Pro | A digital marketing studio for local businesses, light and sky blue: a homepage of its own patterns (a results board over a photo, services, why us with figures, how a month works, case studies, reviews, plans with a monthly and yearly price switch, questions, the latest articles), Services, a Local SEO page with map results, Case studies with six case study pages, Pricing with a comparison table, About, Free audit and Privacy pages, and an ad landing page on the Blank canvas template whose headline matches the ad it came from (block visibility by the page address); six articles in five categories with a table of contents, a reading bar and share buttons; Yantra Pro's Mega Menu and Content Blocks modules turned on, with a Services mega menu in four columns, an exit popup and an offer after the third paragraph of every post; an offer bar, a sticky header with a dark mode switch and Call and Free audit buttons, the phone bar, a footer menu, four footer widgets, a logo and its CSS. Schema 3 |
 
 ## Layout
 
@@ -43,7 +44,7 @@ index.json                 Every pack: its theme, its card in the importer, wher
 <pack>/pack.json           The pack: its schema, the files it has, the plugins it needs
 <pack>/media.json          Images: every photo the pack imports, with its alt text
 <pack>/products.json       Store: product categories, brands, attributes, products, reviews
-<pack>/content.json        Pages and posts: post categories, the theme's own taxonomies, pages, posts
+<pack>/content.json        Pages and posts: post categories, the theme's own taxonomies, pages, posts, the theme's own items
 <pack>/menus.json          Menus, each with its locations
 <pack>/patterns.json       The pack's own block patterns, each a file under patterns/
 <pack>/customizer.json     Customizer settings (theme mods), a style variation, the pack's CSS
@@ -197,6 +198,29 @@ Everything else works in all three.
 | `menu` | `{ "title", "slug", "location", "items" }` | Items: `{ "label", "page" }`, `{ "label", "woocommerce": "shop" }`, `{ "label", "product" }`, `{ "label", "product_cat" }`, `{ "label", "url" }`; schema 2 adds `{ "label", "post" }` and an `"anchor"` on any of them (`{ "label": "Features", "page": "home", "anchor": "features" }`); schema 3 adds `{ "label", "category" }`, a post category from `post_categories`. Block themes get a navigation menu; classic themes get a menu assigned to `location`, which in schema 2 may be a list (`[ "primary", "mobile" ]`). Locations the theme does not register are skipped. |
 | `menus` | list of menus shaped like `menu` | Schema 2. More menus, such as a footer menu, each with its own location. In `menus.json`, every menu is in this list. |
 | `patterns` | `{ "<key>": { "title", "file", "links" } }` | Schema 3. The pack's own block patterns. See Patterns. |
+| `theme_posts` | `{ "<post type>": { "<slug>": { "title", "content", "meta" } } }` | Schema 3. Items of the theme's own kinds, such as Yantra Pro's content blocks (`themor_content_block`: popups and sections it adds to pages), published with the demo and deleted with it. `content` is in the Content format (often one `pattern` item); `meta` holds their settings. Only post types the active theme lets packs make (`storefill_post_types`) are made; others are skipped and named in the import log. |
+
+#### Details (`meta`) on pages, posts, menu items and the theme's own items
+
+Schema 3. A page, a post, a menu item or one of `theme_posts` may carry `meta`: details the theme
+reads, such as a menu item's mega menu settings (`_themor_mega_menu`) or a content block's settings
+(`_themor_content_block`: where and when it shows, a popup's trigger). Only keys the active theme
+allows for that kind of item (`storefill_post_meta_keys`) are set, each as the theme asks (text, or
+an object it reads as JSON or as a list of settings); others are skipped and named in the import
+log. The theme checks every value when it reads it, as it does its own.
+
+#### Menu items under others (`children`)
+
+Schema 3. A menu item may list `children`, items shown under it, two levels deep: a mega menu's
+columns and the links in each. Give a column without a link of its own `"url": "#"`.
+
+```json
+{ "label": "Services", "page": "services", "meta": { "_themor_mega_menu": { "mega": true, "columns": 4 } }, "children": [
+  { "label": "Get found", "url": "#", "meta": { "_themor_mega_menu": { "label": "heading", "link": false } }, "children": [
+    { "label": "Local SEO", "page": "local-seo", "meta": { "_themor_mega_menu": { "icon_type": "icon", "icon": "fa-solid fa-magnifying-glass" } } }
+  ] }
+] }
+```
 
 ### Required plugins
 
@@ -369,6 +393,11 @@ security settings.
 `woocommerce_enable_reviews`, `woocommerce_enable_review_rating`,
 `woocommerce_review_rating_required`, `woocommerce_manage_stock`,
 `woocommerce_hide_out_of_stock_items`.
+
+Schema 3: a setting the active theme keeps as a list and lets packs add to
+(`storefill_list_options`), such as Yantra Pro's modules turned on (`yantra_pro_modules`), takes a
+list in `options`: `"yantra_pro_modules": [ "mega-menu", "content-blocks" ]` turns those on as well
+as any the site has on already. Removing the demo puts the list back as it was.
 
 ## customizer.json
 

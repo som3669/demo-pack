@@ -1,0 +1,109 @@
+{
+	"schema": 1,
+	"sidebars": {
+		"footer-1": [
+			{
+				"title": "Skylark",
+				"content": [
+					[
+						"p",
+						"Digital marketing for local businesses in Portland and across the Pacific Northwest."
+					],
+					[
+						"lines",
+						[
+							"Floor 3, 1150 SE Grand Ave",
+							"Portland, OR 97214"
+						]
+					]
+				]
+			}
+		],
+		"footer-2": [
+			{
+				"title": "Services",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "Local SEO",
+								"page": "local-seo"
+							},
+							{
+								"label": "Google Ads",
+								"page": "services",
+								"anchor": "google-ads"
+							},
+							{
+								"label": "Social media ads",
+								"page": "services",
+								"anchor": "social-ads"
+							},
+							{
+								"label": "Email & SMS",
+								"page": "services",
+								"anchor": "email-sms"
+							},
+							{
+								"label": "Websites",
+								"page": "services",
+								"anchor": "websites"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-3": [
+			{
+				"title": "Company",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "About us",
+								"page": "about"
+							},
+							{
+								"label": "Case studies",
+								"page": "case-studies"
+							},
+							{
+								"label": "Pricing",
+								"page": "pricing"
+							},
+							{
+								"label": "Blog",
+								"page": "blog"
+							},
+							{
+								"label": "Free audit",
+								"page": "contact"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-4": [
+			{
+				"title": "Contact",
+				"content": [
+					[
+						"lines",
+						[
+							"(503) 555-0186",
+							"hello@skylark.studio"
+						]
+					],
+					[
+						"p",
+						"Monday to Friday, 9 am to 5:30 pm"
+					]
+				]
+			}
+		]
+	}
+}

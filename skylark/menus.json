@@ -1,0 +1,195 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Skylark menu",
+			"slug": "skylark-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Services",
+					"page": "services",
+					"meta": {
+						"_themor_mega_menu": {
+							"mega": true,
+							"columns": 4,
+							"width": "container"
+						}
+					},
+					"children": [
+						{
+							"label": "Get found",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Local SEO",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-magnifying-glass",
+											"icon_size": 16
+										}
+									},
+									"page": "local-seo"
+								},
+								{
+									"label": "Google Ads",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-bullseye",
+											"icon_size": 16
+										}
+									},
+									"page": "services",
+									"anchor": "google-ads"
+								}
+							]
+						},
+						{
+							"label": "Get chosen",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Social media ads",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-regular fa-comment",
+											"icon_size": 16
+										}
+									},
+									"page": "services",
+									"anchor": "social-ads"
+								},
+								{
+									"label": "Websites & landing pages",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-regular fa-window-maximize",
+											"icon_size": 16
+										}
+									},
+									"page": "services",
+									"anchor": "websites"
+								}
+							]
+						},
+						{
+							"label": "Keep customers",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Email & SMS",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-regular fa-envelope",
+											"icon_size": 16
+										}
+									},
+									"page": "services",
+									"anchor": "email-sms"
+								},
+								{
+									"label": "Reports you can read",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-chart-column",
+											"icon_size": 16
+										}
+									},
+									"page": "services",
+									"anchor": "reports"
+								}
+							]
+						},
+						{
+							"label": "Free audit",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false,
+									"content": "text",
+									"text": "Your website, Google listing and ads checked in a week, with the three fixes to do first."
+								}
+							},
+							"children": [
+								{
+									"label": "Ask for your audit",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-arrow-right",
+											"icon_size": 16
+										}
+									},
+									"page": "contact"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Case studies",
+					"page": "case-studies"
+				},
+				{
+					"label": "Pricing",
+					"page": "pricing"
+				},
+				{
+					"label": "About",
+					"page": "about"
+				},
+				{
+					"label": "Blog",
+					"page": "blog"
+				}
+			]
+		},
+		{
+			"title": "Skylark footer menu",
+			"slug": "skylark-footer-menu",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Privacy policy",
+					"page": "privacy"
+				},
+				{
+					"label": "Free audit",
+					"page": "contact"
+				},
+				{
+					"label": "Practices",
+					"page": "free-audit"
+				}
+			]
+		}
+	]
+}
