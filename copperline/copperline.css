@@ -1,0 +1,2463 @@
+/*
+ * Copperline Home Services: the demo's own look, on top of Yantra Pro.
+ * A tradesperson's clarity: cobalt and night blue, a signal orange used sparingly, mist sections,
+ * tall Big Shoulders headings over Public Sans. Colours come from the palette (--yantra-*), so dark
+ * mode follows; the orange and the night blue keep their colour in both.
+ * Signature: the day rail, a tape measure from 8 am to 6 pm with its two-hour windows (booked
+ * hatched, free in orange, chosen in cobalt), on the homepage, the trade pages and the jobs' own
+ * arrival-window swatches.
+ */
+
+:root {
+	--cl-cobalt: var(--yantra-color-1, #1c3fd1);
+	--cl-cobalt-deep: var(--yantra-color-2, #142f9e);
+	--cl-night: #0a1633;
+	--cl-night-2: #16224a;
+	--cl-orange: #ff6a13;
+	--cl-orange-ink: #a33a00;
+	--cl-orange-tint: #fff1e8;
+	--cl-mist: var(--yantra-color-7, #eef2fb);
+	--cl-line: var(--yantra-color-6, #d5dcec);
+	--cl-card: var(--yantra-color-8, #fff);
+	--cl-ink: var(--yantra-color-3, #0a1633);
+	--cl-body: var(--yantra-color-4, #33405c);
+	--cl-muted: var(--yantra-color-5, #5b6680);
+	--cl-green: #116b33;
+	--cl-green-dot: #1f9d55;
+	--cl-green-tint: #e7f6ec;
+	--cl-hatch: repeating-linear-gradient(135deg, #e4e9f4 0 6px, #f4f6fb 6px 12px);
+	--cl-tick: #8e9ab8;
+	--cl-display: var(--yantra-font-heading, "Big Shoulders Display", "Arial Narrow", sans-serif);
+	--cl-shadow: 0 2px 4px rgba(10, 22, 51, 0.06), 0 28px 56px -24px rgba(10, 22, 51, 0.38);
+	--cl-radius: 18px;
+}
+
+html[data-themor-scheme="dark"] {
+	--cl-orange-ink: #ff9a5c;
+	--cl-orange-tint: rgba(255, 106, 19, 0.14);
+	--cl-green: #4ad08a;
+	--cl-green-tint: rgba(31, 157, 85, 0.16);
+	--cl-hatch: repeating-linear-gradient(135deg, #1b2747 0 6px, #131d3a 6px 12px);
+	--cl-tick: #5e6b8c;
+}
+
+/* Sections: full-width bands with the wide row inside. */
+.copperline-section {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.copperline-section > * + * {
+	margin-top: clamp(28px, 3.4vw, 40px);
+}
+
+.copperline-section--hero {
+	padding-top: clamp(28px, 4vw, 56px) !important;
+}
+
+.copperline-section--page {
+	padding-top: clamp(28px, 4vw, 48px) !important;
+}
+
+.copperline-section--tight {
+	padding-top: clamp(28px, 4vw, 48px) !important;
+	padding-bottom: clamp(28px, 4vw, 48px) !important;
+}
+
+.copperline-section--mist {
+	background: var(--cl-mist);
+}
+
+.copperline-section--cobalt {
+	background: #1c3fd1;
+	color: #dce3ff;
+}
+
+.copperline-section--night {
+	background: var(--cl-night);
+	color: #c9d2e8;
+}
+
+.copperline-section--orange {
+	background: var(--cl-orange);
+	color: var(--cl-night);
+}
+
+.copperline-section--cobalt :is(h1, h2, h3, strong),
+.copperline-section--night :is(h1, h2, h3, strong) {
+	color: #fff;
+}
+
+.copperline-section--orange :is(h1, h2, h3, p) {
+	color: var(--cl-night);
+}
+
+/* Words. */
+.copperline-eyebrow {
+	margin: 0 0 10px !important;
+	color: var(--cl-cobalt);
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.copperline-eyebrow--orange {
+	color: var(--cl-orange);
+}
+
+.copperline-title,
+.copperline-display {
+	margin: 0 !important;
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-weight: 800;
+	line-height: 0.95;
+	letter-spacing: 0;
+	text-wrap: balance;
+}
+
+.copperline-title {
+	font-size: clamp(42px, 5.4vw, 68px);
+}
+
+.copperline-title--small {
+	font-size: clamp(32px, 3.4vw, 40px);
+	line-height: 1;
+}
+
+.copperline-title--card {
+	font-size: 28px;
+	line-height: 1.05;
+}
+
+.copperline-title--huge {
+	font-size: clamp(46px, 6vw, 80px);
+	font-weight: 900;
+	line-height: 0.92;
+}
+
+.copperline-title--cta {
+	color: #fff !important;
+	font-size: clamp(40px, 5vw, 64px);
+	font-weight: 900;
+	line-height: 0.92;
+}
+
+.copperline-display {
+	font-size: clamp(60px, 8vw, 112px);
+	font-weight: 900;
+	line-height: 0.9;
+	text-wrap: wrap;
+}
+
+.copperline-display--page {
+	font-size: clamp(52px, 7vw, 96px);
+	margin-top: 10px !important;
+}
+
+.copperline-accent {
+	color: var(--cl-cobalt);
+}
+
+.copperline-lead {
+	max-width: 36rem;
+	margin: 18px 0 0 !important;
+	font-size: clamp(17px, 1.5vw, 20px);
+	line-height: 1.55;
+}
+
+.copperline-section--cobalt .copperline-lead {
+	color: #dce3ff;
+}
+
+.copperline-intro {
+	max-width: 40rem;
+	margin: 14px 0 0 !important;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.copperline-fine {
+	margin: 12px 0 0 !important;
+	color: var(--cl-muted);
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.copperline-small-caps {
+	margin: 0 !important;
+	color: var(--cl-muted);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.copperline-more {
+	margin: 0 !important;
+}
+
+.copperline-more a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding-bottom: 2px;
+	border-bottom: 2px solid var(--cl-cobalt);
+	color: var(--cl-ink);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.copperline-more a::after {
+	content: "→";
+}
+
+.copperline-section--cobalt .copperline-more a,
+.copperline-guarantee .copperline-more a {
+	border-bottom-color: var(--cl-orange);
+	color: #fff;
+}
+
+.copperline-head {
+	gap: 16px 48px;
+	margin-bottom: 0 !important;
+}
+
+.copperline-head__words {
+	min-width: min(100%, 30rem);
+}
+
+.copperline-head__note {
+	max-width: 26rem;
+	margin: 0 !important;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.copperline-head__note strong {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 34px;
+	font-weight: 900;
+}
+
+.copperline-head__note a {
+	font-weight: 700;
+}
+
+/* Buttons: cobalt, an outline in night blue, and the big phone button. */
+.copperline-actions {
+	gap: 12px !important;
+	margin-top: 26px !important;
+}
+
+.copperline-button .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	min-height: 54px;
+	padding: 0 26px;
+	border: 2px solid var(--cl-cobalt);
+	border-radius: 10px;
+	background: var(--cl-cobalt);
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.copperline-button .wp-block-button__link:hover {
+	border-color: var(--cl-cobalt-deep);
+	background: var(--cl-cobalt-deep);
+	color: #fff;
+}
+
+.copperline-button.is-style-outline .wp-block-button__link {
+	border-color: var(--cl-ink);
+	background: transparent;
+	color: var(--cl-ink);
+}
+
+.copperline-button.is-style-outline .wp-block-button__link:hover {
+	background: var(--cl-ink);
+	color: var(--cl-card);
+}
+
+.copperline-button--call .wp-block-button__link::before,
+.copperline-button--phone .wp-block-button__link::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: currentColor;
+	-webkit-mask: var(--cl-i-phone) center / contain no-repeat;
+	mask: var(--cl-i-phone) center / contain no-repeat;
+}
+
+.copperline-button--full,
+.copperline-button--full .wp-block-button__link {
+	width: 100%;
+}
+
+.copperline-button--full .wp-block-button__link {
+	min-height: 50px;
+	font-size: 16px;
+}
+
+.copperline-button--orange .wp-block-button__link {
+	border-color: var(--cl-orange);
+	background: var(--cl-orange);
+	color: var(--cl-night);
+	min-height: 46px;
+	font-size: 15px;
+}
+
+.copperline-button--orange .wp-block-button__link:hover {
+	border-color: #ff8a47;
+	background: #ff8a47;
+	color: var(--cl-night);
+}
+
+.copperline-button--white .wp-block-button__link {
+	border-color: #fff;
+	background: #fff;
+	color: #1c3fd1;
+}
+
+.copperline-button--ghost .wp-block-button__link {
+	border-color: rgba(255, 255, 255, 0.7) !important;
+	color: #fff !important;
+}
+
+.copperline-button--phone .wp-block-button__link {
+	min-height: 72px;
+	padding: 0 30px;
+	border-color: var(--cl-night);
+	border-radius: 14px;
+	background: var(--cl-night);
+	color: #fff;
+	font-family: var(--cl-display);
+	font-size: clamp(30px, 3vw, 36px);
+	font-weight: 800;
+}
+
+.copperline-button--phone .wp-block-button__link::before {
+	width: 26px;
+	height: 26px;
+	background: var(--cl-orange);
+}
+
+.copperline-button--phone .wp-block-button__link:hover {
+	border-color: #000;
+	background: #000;
+}
+
+/* Little marks. */
+.copperline-dot {
+	display: inline-block;
+	flex: none;
+	width: 7px;
+	height: 7px;
+	margin-right: 6px;
+	border-radius: 999px;
+	background: var(--cl-green-dot);
+	vertical-align: middle;
+}
+
+.copperline-dot--orange {
+	background: var(--cl-orange);
+}
+
+.copperline-icon {
+	display: inline-block;
+	flex: none;
+	width: 18px;
+	height: 18px;
+	background: var(--cl-cobalt);
+	-webkit-mask: var(--cl-icon) center / contain no-repeat;
+	mask: var(--cl-icon) center / contain no-repeat;
+}
+
+.copperline-stars {
+	margin: 0 !important;
+	width: 86px;
+	height: 16px;
+	background: var(--cl-orange);
+	-webkit-mask: var(--cl-i-stars) left center / 86px 16px no-repeat;
+	mask: var(--cl-i-stars) left center / 86px 16px no-repeat;
+}
+
+.copperline-stars--inline {
+	display: inline-block;
+	margin-right: 8px !important;
+	vertical-align: -2px;
+}
+
+/* The hero: the promise beside a photo with the day's free windows over it. */
+.copperline-hero {
+	gap: 56px 64px !important;
+}
+
+.copperline-hero .copperline-display {
+	margin-top: 8px !important;
+}
+
+.copperline-trust {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 28px;
+	margin: 22px 0 0 !important;
+	padding: 0 !important;
+	list-style: none;
+	font-size: 15px;
+}
+
+.copperline-trust li {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+}
+
+.copperline-trust strong {
+	color: var(--cl-ink);
+}
+
+.copperline-hero__picture {
+	position: relative;
+}
+
+.copperline-hero__photo {
+	margin: 0 !important;
+}
+
+.copperline-hero__photo img {
+	width: 100%;
+	border-radius: 24px;
+}
+
+.copperline-windows {
+	position: relative;
+	margin: -132px 20px 0 !important;
+	padding: 22px 22px 20px;
+	border-radius: var(--cl-radius);
+	background: var(--cl-card);
+	box-shadow: var(--cl-shadow);
+}
+
+.copperline-windows > * + * {
+	margin-top: 14px !important;
+}
+
+.copperline-windows__top {
+	gap: 8px;
+}
+
+.copperline-card-title {
+	margin: 0 !important;
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.copperline-open {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 !important;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: var(--cl-green-tint);
+	color: var(--cl-green);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.copperline-windows__later {
+	margin: 14px 0 0 !important;
+	padding: 0 !important;
+	border-top: 1px solid var(--cl-line);
+	list-style: none;
+}
+
+.copperline-windows__later li {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	margin: 0;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--cl-line);
+	font-size: 15px;
+}
+
+.copperline-windows__later strong {
+	color: var(--cl-ink);
+}
+
+.copperline-windows__later em {
+	color: var(--cl-orange-ink);
+	font-style: normal;
+	font-weight: 700;
+}
+
+.copperline-windows .copperline-fine {
+	text-align: center;
+}
+
+/* The day rail. */
+.copperline-rail {
+	margin: 0 !important;
+}
+
+.copperline-rail__slots {
+	gap: 6px !important;
+	flex-wrap: nowrap !important;
+	align-items: stretch !important;
+}
+
+.copperline-rail__slots > .copperline-slot {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+.copperline-slot {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	min-height: 50px;
+	margin: 0 !important;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 1;
+}
+
+.copperline-slot.is-booked {
+	background: var(--cl-hatch);
+	color: var(--cl-muted);
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.copperline-slot.is-free {
+	border: 2px solid var(--cl-orange);
+	background: var(--cl-orange-tint);
+}
+
+.copperline-slot.is-chosen {
+	background: #1c3fd1;
+	color: #fff;
+}
+
+.copperline-slot strong {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.copperline-slot.is-chosen strong {
+	color: #fff;
+}
+
+.copperline-slot__note {
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.copperline-slot.is-free .copperline-slot__note {
+	color: var(--cl-orange-ink);
+}
+
+.copperline-rail__ticks {
+	height: 12px;
+	margin-top: 6px !important;
+	border-bottom: 1px solid var(--cl-tick);
+	background: repeating-linear-gradient(90deg, var(--cl-tick) 0 1px, transparent 1px 5%) bottom / 100% 5px no-repeat,
+		repeating-linear-gradient(90deg, var(--cl-tick) 0 1px, transparent 1px 10%) bottom / 100% 11px no-repeat;
+}
+
+.copperline-rail__hours {
+	display: flex;
+	justify-content: space-between;
+	margin: 4px 0 0 !important;
+	color: var(--cl-muted);
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.copperline-card--window {
+	padding: 22px;
+	border: 1px solid var(--cl-line);
+	border-radius: var(--cl-radius);
+	background: var(--cl-card);
+}
+
+.copperline-card--window > * + * {
+	margin-top: 10px !important;
+}
+
+.copperline-card--window .copperline-slot {
+	min-height: 46px;
+}
+
+/* Photo cards: problems, trades. The title's link covers the whole card. */
+.copperline-tiles {
+	gap: 20px !important;
+}
+
+.copperline-tile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid var(--cl-line);
+	border-radius: var(--cl-radius);
+	background: var(--cl-card);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.copperline-tile:hover {
+	box-shadow: 0 22px 40px -28px rgba(10, 22, 51, 0.5);
+	transform: translateY(-2px);
+}
+
+.copperline-tile > * {
+	margin: 0 !important;
+}
+
+.copperline-tile__photo img {
+	display: block;
+	width: 100%;
+}
+
+.copperline-tile__title {
+	padding: 16px 18px 0;
+	font-family: var(--cl-display);
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 1.05;
+}
+
+.copperline-tile__title a {
+	color: var(--cl-ink);
+	text-decoration: none;
+}
+
+.copperline-tile__title a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.copperline-tile__title a:focus-visible {
+	outline: none;
+}
+
+.copperline-tile:has(a:focus-visible) {
+	outline: 3px solid var(--cl-cobalt);
+	outline-offset: 2px;
+}
+
+.copperline-tile__price,
+.copperline-tile__words {
+	padding: 4px 18px 18px;
+	color: var(--cl-muted);
+	font-size: 15px;
+}
+
+.copperline-tile__price strong {
+	color: var(--cl-ink);
+}
+
+.copperline-tile--trade .copperline-tile__title {
+	font-size: 30px;
+}
+
+.copperline-tile--trade .copperline-tile__words {
+	padding-bottom: 6px;
+	color: var(--cl-body);
+}
+
+.copperline-tile--trade .copperline-tile__price {
+	padding-top: 0;
+	color: var(--cl-orange-ink);
+	font-weight: 700;
+}
+
+/* Product cards everywhere: the jobs to book. */
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 0 0 18px !important;
+	border: 1px solid var(--cl-line);
+	border-radius: var(--cl-radius);
+	background: var(--cl-card);
+	text-align: left;
+}
+
+.woocommerce ul.products li.product a img {
+	margin: 0 0 16px !important;
+	border-radius: 0 !important;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+	padding: 0 18px !important;
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 28px !important;
+	font-weight: 800;
+	line-height: 1 !important;
+}
+
+.woocommerce ul.products li.product .price {
+	display: block;
+	margin: 10px 0 0 !important;
+	padding: 0 18px;
+	color: var(--cl-ink) !important;
+	font-family: var(--cl-display);
+	font-size: 32px !important;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.woocommerce ul.products li.product .star-rating {
+	display: none;
+}
+
+.woocommerce ul.products li.product .themor-stock,
+.woocommerce ul.products li.product .themor-restock,
+.woocommerce ul.products li.product .themor-urgency {
+	margin: 10px 18px 0 !important;
+}
+
+.woocommerce ul.products li.product .themor-stock--card .themor-stock__text {
+	color: var(--cl-orange-ink);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.woocommerce ul.products li.product .themor-stock--free .themor-stock__text {
+	color: var(--cl-green);
+	font-weight: 600;
+}
+
+.woocommerce ul.products li.product .themor-stock__bar {
+	max-width: none;
+	height: 6px;
+	background: #e4e9f4;
+}
+
+.woocommerce ul.products li.product .themor-stock__bar span {
+	background: var(--cl-orange);
+}
+
+.woocommerce ul.products li.product .themor-restock {
+	color: var(--cl-muted);
+	font-size: 13px;
+}
+
+.woocommerce ul.products li.product .button {
+	display: flex !important;
+	align-self: stretch;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	min-height: 46px;
+	margin: auto 18px 0 !important;
+	border: 2px solid var(--cl-cobalt) !important;
+	border-radius: 10px !important;
+	background: var(--cl-cobalt) !important;
+	color: #fff !important;
+	font-weight: 700;
+	text-align: center;
+}
+
+.woocommerce ul.products li.product .themor-stock,
+.woocommerce ul.products li.product .themor-restock {
+	margin-bottom: 16px !important;
+}
+
+.woocommerce ul.products li.product.outofstock .button {
+	border-color: var(--cl-ink) !important;
+	background: transparent !important;
+	color: var(--cl-ink) !important;
+}
+
+.woocommerce ul.products li.product.outofstock a img {
+	opacity: 0.72;
+}
+
+.woocommerce ul.products li.product .themor-badges,
+.woocommerce ul.products li.product .themor-badge {
+	font-weight: 700;
+}
+
+/* A booked-up job wears its own "Fully booked" badge, so the theme's stock badge stays out. */
+.yantra-stock-badge {
+	display: none !important;
+}
+
+/* Lists of jobs inside the pages. */
+.copperline-products {
+	margin-top: 32px !important;
+}
+
+.copperline-products .woocommerce ul.products {
+	margin: 0 !important;
+}
+
+/* On a trade page: compact, picture beside the words. */
+.copperline-products--compact ul.products li.product {
+	display: grid !important;
+	grid-template-columns: 82px 1fr;
+	grid-template-rows: auto auto auto 1fr;
+	column-gap: 14px;
+	padding: 12px !important;
+}
+
+.copperline-products--compact ul.products li.product > a:first-child {
+	display: contents;
+}
+
+.copperline-products--compact ul.products li.product a img {
+	grid-row: 1 / span 4;
+	width: 82px !important;
+	height: 82px;
+	margin: 0 !important;
+	border-radius: 10px !important;
+	aspect-ratio: 1;
+}
+
+.copperline-products--compact ul.products li.product .woocommerce-loop-product__title {
+	padding: 0 !important;
+	font-size: 24px !important;
+}
+
+.copperline-products--compact ul.products li.product .price {
+	margin-top: 4px !important;
+	padding: 0;
+	font-size: 26px !important;
+}
+
+.copperline-products--compact ul.products li.product .themor-stock,
+.copperline-products--compact ul.products li.product .themor-restock {
+	grid-column: 2;
+	margin: 6px 0 0 !important;
+}
+
+.copperline-products--compact ul.products li.product .themor-stock__bar {
+	display: none;
+}
+
+.copperline-products--compact ul.products li.product .button {
+	display: inline-flex !important;
+	grid-column: 2;
+	justify-self: start;
+	align-self: start;
+	justify-content: flex-start;
+	min-height: 0;
+	margin: 6px 0 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: none !important;
+	color: var(--cl-cobalt) !important;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.copperline-products--compact ul.products li.product .themor-badges,
+.copperline-products--compact ul.products li.product .onsale {
+	display: none;
+}
+
+/* How a visit works. */
+.copperline-how {
+	gap: 48px 72px !important;
+}
+
+.copperline-steps {
+	counter-reset: cl-step;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	margin: 36px 0 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-steps li {
+	counter-increment: cl-step;
+	display: grid;
+	grid-template-columns: 52px minmax(0, 1fr);
+	gap: 4px 18px;
+	margin: 0;
+}
+
+.copperline-steps li::before {
+	content: counter(cl-step);
+	grid-row: 1 / span 2;
+	color: var(--cl-cobalt);
+	font-family: var(--cl-display);
+	font-size: 52px;
+	font-weight: 900;
+	line-height: 0.85;
+}
+
+.copperline-steps strong {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 1.05;
+}
+
+.copperline-steps span {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.copperline-steps--four {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	gap: 28px;
+}
+
+.copperline-chat {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.copperline-chat > * {
+	margin: 0 !important;
+}
+
+.copperline-bubble {
+	align-self: flex-start;
+	max-width: 340px;
+	padding: 14px 16px;
+	border: 1px solid var(--cl-line);
+	border-radius: 18px 18px 18px 4px;
+	background: var(--cl-card);
+	color: var(--cl-ink);
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.copperline-bubble--me {
+	align-self: flex-end;
+	max-width: 300px;
+	border-color: #1c3fd1;
+	border-radius: 18px 18px 4px 18px;
+	background: #1c3fd1;
+	color: #fff;
+}
+
+/* No surprise bills, on cobalt. */
+.copperline-stats {
+	gap: 28px !important;
+}
+
+.copperline-stat {
+	padding-top: 18px;
+	border-top: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.copperline-stat > * {
+	margin: 0 !important;
+}
+
+.copperline-stat__big {
+	color: #fff;
+	font-family: var(--cl-display);
+	font-size: 64px;
+	font-weight: 900;
+	line-height: 0.9;
+}
+
+.copperline-stat__words {
+	margin-top: 10px !important;
+	color: #dce3ff;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.copperline-stat__words strong {
+	display: block;
+}
+
+.copperline-stat--hot {
+	border-top-color: var(--cl-orange);
+}
+
+.copperline-stat--hot .copperline-stat__big {
+	color: var(--cl-orange);
+}
+
+/* Where we work. */
+.copperline-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 18px 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-chips li {
+	margin: 0;
+	padding: 8px 14px;
+	border-radius: 999px;
+	background: var(--cl-mist);
+	color: var(--cl-ink);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.copperline-chips li:has(.copperline-chip--later) {
+	background: var(--cl-orange-tint);
+}
+
+.copperline-map {
+	margin: 0 !important;
+}
+
+.copperline-map img {
+	width: 100%;
+	border-radius: 24px;
+}
+
+/* Reviews. */
+.copperline-reviews {
+	gap: 22px !important;
+}
+
+.copperline-review {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 26px;
+	border-radius: var(--cl-radius);
+	background: var(--cl-card);
+}
+
+.copperline-review > * {
+	margin: 0 !important;
+}
+
+.copperline-review__words {
+	color: var(--cl-ink);
+	font-size: 18px;
+	line-height: 1.55;
+}
+
+.copperline-review__who {
+	margin-top: auto !important;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.copperline-review__who strong {
+	display: block;
+	color: var(--cl-ink);
+}
+
+/* The guarantee and the family. */
+.copperline-family {
+	gap: 24px !important;
+	align-items: stretch !important;
+}
+
+.copperline-guarantee {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: 100%;
+	box-sizing: border-box;
+	padding: clamp(28px, 4vw, 44px);
+	border-radius: 24px;
+	background: var(--cl-night);
+	color: #c9d2e8;
+}
+
+.copperline-guarantee > * {
+	margin: 0 !important;
+}
+
+.copperline-guarantee .copperline-title {
+	color: #fff;
+}
+
+.copperline-guarantee .copperline-more {
+	margin-top: auto !important;
+	padding-top: 24px;
+}
+
+.copperline-big-number {
+	margin: 0 !important;
+	color: var(--cl-orange);
+	font-family: var(--cl-display);
+	font-size: clamp(88px, 10vw, 132px);
+	font-weight: 900;
+	line-height: 0.82;
+}
+
+.copperline-crew {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 100%;
+	box-sizing: border-box;
+	padding: clamp(28px, 4vw, 44px);
+	border: 1px solid var(--cl-line);
+	border-radius: 24px;
+}
+
+.copperline-crew > * {
+	margin: 0 !important;
+}
+
+.copperline-crew .copperline-eyebrow {
+	margin-bottom: -12px !important;
+}
+
+.copperline-crew__photo img {
+	width: 100%;
+	border-radius: 16px;
+}
+
+.copperline-people {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 18px 24px;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-people li {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.copperline-people strong {
+	display: block;
+	color: var(--cl-ink);
+	font-size: 16px;
+}
+
+.copperline-initials {
+	display: grid;
+	flex: none;
+	place-items: center;
+	width: 52px;
+	height: 52px;
+	border-radius: 14px;
+	font-family: var(--cl-display);
+	font-size: 22px;
+	font-weight: 800;
+}
+
+.copperline-initials--cobalt {
+	background: #1c3fd1;
+	color: #fff;
+}
+
+.copperline-initials--orange {
+	background: var(--cl-orange);
+	color: var(--cl-night);
+}
+
+.copperline-initials--night {
+	background: var(--cl-night);
+	color: #fff;
+}
+
+.copperline-initials--mist {
+	background: var(--cl-mist);
+	color: var(--cl-cobalt);
+}
+
+.copperline-initials--steel {
+	background: #2a4296;
+	color: #fff;
+}
+
+/* Advice: the latest posts. */
+.copperline-posts .wp-block-post-template {
+	gap: 26px !important;
+}
+
+.copperline-posts .wp-block-post-featured-image {
+	margin: 0 0 12px !important;
+	overflow: hidden;
+	border-radius: var(--cl-radius);
+}
+
+.copperline-posts .wp-block-post-featured-image img {
+	transition: transform 0.4s;
+}
+
+.copperline-posts li:hover .wp-block-post-featured-image img {
+	transform: scale(1.03);
+}
+
+.copperline-posts__cat {
+	margin: 0 !important;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.copperline-posts__cat a {
+	color: var(--cl-cobalt);
+	text-decoration: none !important;
+}
+
+.copperline-posts__title {
+	margin: 6px 0 0 !important;
+	font-family: var(--cl-display);
+	font-size: 28px !important;
+	font-weight: 800;
+	line-height: 1.05;
+}
+
+.copperline-posts__title a {
+	color: var(--cl-ink);
+	text-decoration: none !important;
+}
+
+/* Page heroes: breadcrumbs, the trades as chips, the status line. */
+.copperline-trail {
+	margin: 0 0 18px !important;
+	color: var(--cl-ink);
+	font-size: 14px;
+}
+
+.copperline-trail a {
+	color: var(--cl-muted);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.copperline-trail__sep {
+	margin: 0 4px;
+	color: var(--cl-muted);
+}
+
+.copperline-chips--trades {
+	margin: 0 0 26px !important;
+}
+
+.copperline-chips--trades li {
+	padding: 0;
+	border: 1px solid var(--cl-line);
+	background: var(--cl-card);
+}
+
+.copperline-chips--trades a,
+.copperline-chips--trades .copperline-chip--current {
+	display: block;
+	padding: 8px 14px;
+	border-radius: 999px;
+	color: var(--cl-ink);
+	text-decoration: none !important;
+}
+
+.copperline-chips--trades li:has(.copperline-chip--current) {
+	border-color: #1c3fd1;
+	background: #1c3fd1;
+}
+
+.copperline-chips--trades .copperline-chip--current {
+	color: #fff;
+}
+
+.copperline-status {
+	display: flex;
+	align-items: center;
+	margin: 18px 0 0 !important;
+	color: var(--cl-ink);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.copperline-trade-hero {
+	gap: 48px 64px !important;
+}
+
+.copperline-trade__photo img {
+	width: 100%;
+	border-radius: 24px;
+}
+
+/* What we fix. */
+.copperline-fixes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+	gap: 12px;
+	margin: 32px 0 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-fixes li {
+	display: grid;
+	grid-template-columns: 24px 1fr;
+	gap: 2px 12px;
+	margin: 0;
+	padding: 16px 18px;
+	border: 1px solid var(--cl-line);
+	border-radius: 14px;
+	font-size: 14px;
+	line-height: 1.45;
+}
+
+.copperline-fixes .copperline-icon {
+	grid-row: 1 / span 2;
+	margin-top: 2px;
+}
+
+.copperline-fixes strong {
+	color: var(--cl-ink);
+	font-size: 15px;
+}
+
+.copperline-fixes span:not(.copperline-icon) {
+	color: var(--cl-muted);
+}
+
+/* Typical prices and the dark card beside them. */
+.copperline-price-table {
+	margin: 24px 0 0 !important;
+	overflow: hidden;
+	border: 1px solid var(--cl-line);
+	border-radius: 16px;
+	background: var(--cl-card);
+}
+
+.copperline-price-table table {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.copperline-price-table.wp-block-table thead {
+	border-bottom: 1px solid var(--cl-line);
+}
+
+.copperline-price-table th,
+.copperline-price-table td {
+	padding: 14px 18px;
+	border: 0;
+	border-bottom: 1px solid var(--cl-line);
+	font-size: 15px;
+	text-align: left;
+}
+
+.copperline-price-table tr:last-child td {
+	border-bottom: 0;
+}
+
+.copperline-price-table th {
+	color: var(--cl-muted);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.copperline-price-table :is(th, td):last-child {
+	color: var(--cl-ink);
+	font-weight: 700;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.copperline-dark-card {
+	padding: clamp(24px, 3vw, 32px);
+	border-radius: var(--cl-radius);
+	background: var(--cl-night);
+	color: #c9d2e8;
+}
+
+.copperline-dark-card > * {
+	margin: 0 !important;
+}
+
+.copperline-dark-card > * + * {
+	margin-top: 12px !important;
+}
+
+.copperline-dark-card .copperline-title {
+	color: #fff;
+}
+
+.copperline-dark-card .wp-block-buttons {
+	margin-top: 22px !important;
+}
+
+/* Questions. */
+.copperline-faqs {
+	max-width: 760px;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.copperline-faqs > .copperline-title {
+	margin-bottom: 18px !important;
+}
+
+.copperline-faq {
+	margin: 0 !important;
+	padding: 18px 0;
+	border-top: 1px solid var(--cl-line);
+}
+
+.copperline-faq:last-child {
+	border-bottom: 1px solid var(--cl-line);
+}
+
+.copperline-faq summary {
+	color: var(--cl-ink);
+	font-family: var(--yantra-font-body, "Public Sans", sans-serif);
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0;
+	cursor: pointer;
+}
+
+.copperline-faq p {
+	margin: 10px 0 0 !important;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+/* The closing band of a trade page: cobalt, rounded, a rail on a white card. */
+.copperline-section--cta {
+	padding-top: 0 !important;
+}
+
+.copperline-cta {
+	padding: clamp(28px, 4vw, 48px) clamp(24px, 4vw, 56px);
+	border-radius: 24px;
+	background: #1c3fd1;
+	color: #dce3ff;
+}
+
+.copperline-cta p {
+	color: #dce3ff;
+}
+
+.copperline-rail--card {
+	padding: 14px;
+	border-radius: 14px;
+	background: #fff;
+}
+
+.copperline-rail--card .copperline-slot.is-booked {
+	background: repeating-linear-gradient(135deg, #e4e9f4 0 6px, #f4f6fb 6px 12px);
+}
+
+.copperline-rail--card .copperline-slot.is-free {
+	background: #fff1e8;
+}
+
+.copperline-rail--card .copperline-slot strong,
+.copperline-rail--card .copperline-rail__hours {
+	color: #0a1633;
+}
+
+/* Book online: the shop page's own words above the jobs. */
+.copperline-book-intro .copperline-lead {
+	margin-top: 0 !important;
+}
+
+.copperline-book-intro__row {
+	gap: 14px 24px;
+	margin-top: 20px !important;
+}
+
+.copperline-chips--filters {
+	margin: 0 !important;
+}
+
+.copperline-chips--filters li {
+	padding: 0;
+	border: 1px solid var(--cl-line);
+	background: var(--cl-card);
+}
+
+.copperline-chips--filters li:first-child {
+	border-color: #1c3fd1;
+	background: #1c3fd1;
+}
+
+.copperline-chips--filters a {
+	display: block;
+	padding: 9px 16px;
+	border-radius: 999px;
+	color: var(--cl-ink);
+	text-decoration: none;
+}
+
+.copperline-chips--filters li:first-child a {
+	color: #fff;
+}
+
+.copperline-pill {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 !important;
+	padding: 8px 14px;
+	border: 1px solid var(--cl-line);
+	border-radius: 999px;
+	background: var(--cl-card);
+	color: var(--cl-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.woocommerce-products-header .page-description,
+.woocommerce-products-header__description {
+	max-width: none;
+}
+
+/* Prices. */
+.copperline-fees {
+	gap: 16px !important;
+	margin-top: 32px !important;
+}
+
+.copperline-fee {
+	padding: 22px 26px;
+	border: 1px solid var(--cl-line);
+	border-radius: 16px;
+	background: var(--cl-card);
+}
+
+.copperline-fee > * {
+	margin: 0 !important;
+}
+
+.copperline-fee__big {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 56px;
+	font-weight: 900;
+	line-height: 0.95;
+}
+
+.copperline-fee__name {
+	margin-top: 10px !important;
+	color: var(--cl-ink);
+	font-weight: 700;
+}
+
+.copperline-fee__note {
+	margin-top: 4px !important;
+	color: var(--cl-muted);
+	font-size: 14px;
+}
+
+.copperline-fee--dark {
+	border-color: var(--cl-night);
+	background: var(--cl-night);
+}
+
+.copperline-fee--dark .copperline-fee__big {
+	color: var(--cl-orange);
+}
+
+.copperline-fee--dark .copperline-fee__name {
+	color: #fff;
+}
+
+.copperline-fee--dark .copperline-fee__note {
+	color: #c9d2e8;
+}
+
+.copperline-price-boxes {
+	gap: 18px !important;
+}
+
+.copperline-price-box {
+	overflow: hidden;
+	border: 1px solid var(--cl-line);
+	border-radius: 16px;
+	background: var(--cl-card);
+}
+
+.copperline-price-box > * {
+	margin: 0 !important;
+}
+
+.copperline-price-box__title {
+	padding: 16px 18px;
+	background: var(--cl-mist);
+	font-family: var(--cl-display);
+	font-size: 26px;
+	font-weight: 800;
+}
+
+.copperline-price-rows {
+	margin: 0 !important;
+	padding: 6px 18px 10px !important;
+	list-style: none;
+}
+
+.copperline-price-rows li {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	margin: 0;
+	padding: 11px 0;
+	border-bottom: 1px solid var(--cl-line);
+	font-size: 15px;
+}
+
+.copperline-price-rows li:last-child {
+	border-bottom: 0;
+}
+
+.copperline-price-rows a {
+	color: var(--cl-body);
+	text-decoration: none;
+}
+
+.copperline-price-rows a:hover {
+	color: var(--cl-cobalt);
+	text-decoration: underline;
+}
+
+.copperline-price-rows strong {
+	color: var(--cl-ink);
+	white-space: nowrap;
+}
+
+.copperline-checks {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	gap: 12px 32px;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-checks li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+	color: #dce3ff;
+	font-size: 17px;
+}
+
+.copperline-checks li::before,
+.copperline-promises li::before {
+	content: "";
+	flex: none;
+	width: 18px;
+	height: 18px;
+	background: var(--cl-orange);
+	-webkit-mask: var(--cl-i-tick) center / contain no-repeat;
+	mask: var(--cl-i-tick) center / contain no-repeat;
+}
+
+.copperline-cards {
+	gap: 16px !important;
+}
+
+.copperline-card {
+	padding: 22px 24px;
+	border: 1px solid var(--cl-line);
+	border-radius: 16px;
+	background: var(--cl-card);
+}
+
+.copperline-card > * {
+	margin: 0 !important;
+}
+
+.copperline-card > * + * {
+	margin-top: 10px !important;
+}
+
+/* Areas: the ZIP check, the map and the lists. */
+.copperline-zip-box {
+	margin-top: 28px !important;
+	padding: 20px;
+	border-radius: 16px;
+	background: var(--cl-mist);
+}
+
+.copperline-zip-box .themor-area-check__label {
+	color: var(--cl-ink);
+	font-size: 15px;
+}
+
+.copperline-zip-box input[type="text"] {
+	min-height: 46px;
+	background: var(--cl-card);
+	font-size: 17px;
+}
+
+.copperline-zip-box button {
+	min-height: 46px;
+	padding: 0 22px;
+	font-weight: 700;
+}
+
+.copperline-zip-box .themor-area-check__answer {
+	margin-bottom: 0;
+	color: var(--cl-ink);
+	font-size: 15px;
+}
+
+.copperline-zip-box .themor-area-check__answer[data-themor-area="next-day"] .themor-area-check__icon {
+	color: var(--cl-orange);
+}
+
+.copperline-keys {
+	display: flex;
+	gap: 18px;
+	margin: 12px 0 0 !important;
+	color: var(--cl-muted);
+	font-size: 13px;
+}
+
+.copperline-key::before {
+	content: "";
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin-right: 7px;
+	border-radius: 999px;
+	background: #1c3fd1;
+}
+
+.copperline-key--next::before {
+	background: var(--cl-orange);
+}
+
+.copperline-zips {
+	height: 100%;
+	box-sizing: border-box;
+	padding: 24px 26px;
+	border-radius: var(--cl-radius);
+	background: var(--cl-card);
+}
+
+.copperline-zips > * {
+	margin: 0 !important;
+}
+
+.copperline-zips__title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px !important;
+	font-family: var(--cl-display);
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.copperline-zips__title::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 999px;
+	background: #1c3fd1;
+}
+
+.copperline-zips__title--next::before {
+	background: var(--cl-orange);
+}
+
+.copperline-zips__rows {
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-zips__rows li {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	margin: 0;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--cl-line);
+	font-size: 15px;
+}
+
+.copperline-zips__rows li span:first-child {
+	color: var(--cl-ink);
+	font-weight: 600;
+}
+
+.copperline-zips .copperline-fine {
+	margin-top: 14px !important;
+}
+
+/* About. */
+.copperline-collage {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 12px;
+	aspect-ratio: 1;
+}
+
+.copperline-collage > figure {
+	margin: 0 !important;
+	overflow: hidden;
+	border-radius: 18px;
+}
+
+.copperline-collage__tall {
+	grid-row: 1 / span 2;
+}
+
+.copperline-collage img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.copperline-timeline {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+	gap: 24px;
+	margin: 32px 0 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-timeline li {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 0;
+	padding-top: 16px;
+	border-top: 3px solid #1c3fd1;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.copperline-timeline li:last-child {
+	border-top-color: var(--cl-orange);
+}
+
+.copperline-timeline strong {
+	color: var(--cl-ink);
+}
+
+.copperline-year {
+	color: var(--cl-cobalt) !important;
+	font-family: var(--cl-display);
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 0.95;
+}
+
+.copperline-timeline li:last-child .copperline-year {
+	color: var(--cl-orange-ink) !important;
+}
+
+.copperline-people--crew {
+	grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+	gap: 12px;
+	margin-top: 32px !important;
+}
+
+.copperline-people--crew li {
+	padding: 14px;
+	border-radius: 14px;
+	background: var(--cl-night-2);
+	color: #c9d2e8;
+}
+
+.copperline-people--crew strong {
+	color: #fff;
+}
+
+.copperline-people--crew .copperline-initials {
+	width: 42px;
+	height: 42px;
+	border-radius: 10px;
+	font-size: 19px;
+}
+
+.copperline-lines {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-lines li {
+	margin: 0;
+	padding: 16px 0;
+	border-bottom: 1px solid var(--cl-line);
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.copperline-banner {
+	gap: 20px 32px;
+	padding: clamp(24px, 3vw, 34px) clamp(24px, 3vw, 36px);
+	border-radius: 24px;
+	background: var(--cl-mist);
+}
+
+.copperline-banner p {
+	margin: 8px 0 0 !important;
+}
+
+/* Advice posts: the warning and the fixed-price offer. */
+.copperline-warning {
+	position: relative;
+	padding: 16px 20px 16px 52px;
+	border: 2px solid var(--cl-orange);
+	border-radius: 14px;
+	background: var(--cl-orange-tint);
+	color: var(--cl-ink);
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.copperline-warning::before {
+	content: "";
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	width: 20px;
+	height: 20px;
+	background: var(--cl-orange-ink);
+	-webkit-mask: var(--cl-i-alert) center / contain no-repeat;
+	mask: var(--cl-i-alert) center / contain no-repeat;
+}
+
+.copperline-offer {
+	gap: 16px !important;
+	margin-top: 36px !important;
+	padding: 14px;
+	border: 1px solid var(--cl-line);
+	border-radius: 16px;
+}
+
+.copperline-offer > * {
+	margin: 0 !important;
+}
+
+.copperline-offer__photo {
+	flex: none;
+	width: 66px;
+}
+
+.copperline-offer__photo img {
+	width: 66px;
+	height: 66px;
+	border-radius: 10px;
+}
+
+.copperline-offer__words {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.copperline-offer__name {
+	margin: 2px 0 0 !important;
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1.05;
+}
+
+.copperline-offer .copperline-button .wp-block-button__link {
+	min-height: 44px;
+	padding: 0 18px;
+	font-size: 15px;
+}
+
+/* Icons, as masks filled with the colour of the element that shows them. */
+.copperline-icon--shield { --cl-icon: var(--cl-i-shield); }
+.copperline-icon--tag { --cl-icon: var(--cl-i-tag); }
+.copperline-icon--drop { --cl-icon: var(--cl-i-drop); }
+.copperline-icon--toilet { --cl-icon: var(--cl-i-toilet); }
+.copperline-icon--gauge { --cl-icon: var(--cl-i-gauge); }
+.copperline-icon--pipe { --cl-icon: var(--cl-i-pipe); }
+.copperline-icon--flame { --cl-icon: var(--cl-i-flame); }
+.copperline-icon--wave { --cl-icon: var(--cl-i-wave); }
+.copperline-icon--wind { --cl-icon: var(--cl-i-wind); }
+.copperline-icon--alert { --cl-icon: var(--cl-i-alert); }
+.copperline-icon--clock { --cl-icon: var(--cl-i-clock); }
+.copperline-icon--pulse { --cl-icon: var(--cl-i-pulse); }
+.copperline-icon--snow { --cl-icon: var(--cl-i-snow); }
+.copperline-icon--dial { --cl-icon: var(--cl-i-dial); }
+.copperline-icon--house { --cl-icon: var(--cl-i-house); }
+.copperline-icon--frost { --cl-icon: var(--cl-i-frost); }
+.copperline-icon--bolt { --cl-icon: var(--cl-i-bolt); }
+.copperline-icon--plug { --cl-icon: var(--cl-i-plug); }
+.copperline-icon--bulb { --cl-icon: var(--cl-i-bulb); }
+.copperline-icon--plus { --cl-icon: var(--cl-i-plus); }
+.copperline-icon--panel { --cl-icon: var(--cl-i-panel); }
+.copperline-icon--leaf { --cl-icon: var(--cl-i-leaf); }
+.copperline-icon--shower { --cl-icon: var(--cl-i-shower); }
+.copperline-icon--cog { --cl-icon: var(--cl-i-cog); }
+
+/* The header: the night bar on top, the logo's name in the display face, a calendar for the booking. */
+.yantra-site-title,
+.yantra-site-title a {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	line-height: 1;
+}
+
+.yantra-site-tagline {
+	margin: 4px 0 0 !important;
+	color: var(--cl-muted);
+	font-size: 11px !important;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.yantra-cart__count {
+	background: var(--cl-orange) !important;
+	color: var(--cl-night) !important;
+}
+
+.copperline-call {
+	display: flex;
+	flex-direction: column;
+	margin: 0 !important;
+	line-height: 1.05;
+}
+
+.copperline-call span {
+	color: var(--cl-muted);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.copperline-call a {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: 24px;
+	font-weight: 800;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+/* The footer, on night blue. */
+.yantra-footer-area .widget_block > .wp-block-heading {
+	margin-bottom: 14px;
+	color: #fff;
+	font-family: var(--yantra-font-body, "Public Sans", sans-serif);
+	font-size: 12px !important;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+
+.yantra-footer-area .widget_block li {
+	margin-bottom: 6px;
+}
+
+.yantra-footer-area .copperline-footer-hours .themor-store-hours {
+	max-width: 18rem;
+	margin: 0;
+}
+
+.yantra-footer-area .copperline-footer-hours dt {
+	color: #c9d2e8;
+	font-weight: 400;
+}
+
+.yantra-footer-area .copperline-footer-hours dd {
+	color: #fff;
+	font-weight: 700;
+}
+
+.yantra-footer-area .copperline-footer-brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0 0 14px !important;
+	color: #fff;
+	font-family: var(--cl-display);
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.copperline-mark {
+	display: grid;
+	place-items: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 9px;
+	background: #1c3fd1;
+	box-shadow: 0 3px 0 var(--cl-orange);
+	color: #fff;
+	font-size: 22px;
+	font-weight: 900;
+}
+
+.copperline-footer-about p {
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.copperline-footer-label {
+	margin: 22px 0 6px !important;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.copperline-footer-phone {
+	margin: 0 !important;
+}
+
+.copperline-footer-phone a {
+	color: #fff !important;
+	font-family: var(--cl-display);
+	font-size: 28px;
+	font-weight: 800;
+	text-decoration: none !important;
+}
+
+.copperline-footer-sos {
+	display: flex;
+	align-items: center;
+	margin: 12px 0 0 !important;
+	color: var(--cl-orange);
+	font-size: 15px;
+	font-weight: 700;
+}
+
+/* The jobs' own pages. */
+.single-product .product_title {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-size: clamp(44px, 5.4vw, 68px) !important;
+	font-weight: 900;
+	line-height: 0.95 !important;
+}
+
+.single-product .summary .price {
+	color: var(--cl-ink) !important;
+	font-family: var(--cl-display);
+	font-size: 56px !important;
+	font-weight: 900;
+	line-height: 1;
+}
+
+.single-product .summary .woocommerce-product-details__short-description p {
+	margin: 6px 0 0;
+}
+
+.copperline-promises {
+	margin: 18px 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+.copperline-promises li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0 0 6px;
+	font-size: 15px;
+}
+
+.copperline-promises li::before {
+	background: var(--cl-green-dot);
+}
+
+.single-product .variations_form {
+	padding: 20px;
+	border: 1px solid var(--cl-line);
+	border-radius: 16px;
+}
+
+.single-product .variations,
+.single-product .variations tbody,
+.single-product .variations tr,
+.single-product .variations th,
+.single-product .variations td {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	text-align: left;
+}
+
+.single-product .variations tr + tr {
+	margin-top: 18px;
+}
+
+.single-product .variations th.label {
+	margin-bottom: 8px;
+}
+
+.single-product .variations th.label label {
+	color: var(--cl-ink);
+	font-size: 15px;
+	font-weight: 700;
+}
+
+/* A booking is one job in one window: no quantity to pick. */
+.single-product form.cart .quantity {
+	display: none !important;
+}
+
+:root:root {
+	--themor-shop-low: #ff6a13;
+}
+
+/* The arrival windows: a day rail of swatches. */
+.themor-swatches-wrap:has(select[data-attribute_name="attribute_arrival-window"]) .themor-swatches {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 6px;
+	padding-bottom: 14px;
+	background: repeating-linear-gradient(90deg, var(--cl-tick) 0 1px, transparent 1px 5%) bottom / 100% 5px no-repeat,
+		repeating-linear-gradient(90deg, var(--cl-tick) 0 1px, transparent 1px 10%) bottom / 100% 11px no-repeat,
+		linear-gradient(var(--cl-tick), var(--cl-tick)) bottom / 100% 1px no-repeat;
+}
+
+.themor-swatches-wrap--stock .themor-swatch--label {
+	min-height: 52px;
+	border: 2px solid var(--cl-orange);
+	border-radius: 8px;
+	background: var(--cl-orange-tint);
+	color: var(--cl-ink);
+	font-weight: 700;
+}
+
+.themor-swatches-wrap--stock .themor-swatch__name {
+	font-family: var(--cl-display);
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.themor-swatches-wrap--stock .themor-swatch[aria-checked="true"] {
+	border-color: #1c3fd1;
+	background: #1c3fd1;
+	box-shadow: none;
+	color: #fff;
+}
+
+.themor-swatches-wrap--stock .themor-swatch[aria-checked="true"] .themor-swatch__note {
+	color: #fff;
+}
+
+.themor-swatches-wrap--stock .themor-swatch.is-sold-out {
+	border-color: transparent;
+	background: var(--cl-hatch);
+	color: var(--cl-muted);
+}
+
+.themor-swatches-wrap--stock .themor-swatch.is-low .themor-swatch__note {
+	color: var(--cl-orange-ink);
+}
+
+.themor-swatches-wrap--stock .themor-swatch[aria-checked="true"].is-low .themor-swatch__note,
+.themor-swatches-wrap--stock .themor-swatch[aria-checked="true"] .themor-swatch__note {
+	color: #fff;
+}
+
+/* The days: plainer chips. */
+.themor-swatches-wrap:has(select[data-attribute_name="attribute_day"]) .themor-swatch--label {
+	border: 2px solid var(--cl-line);
+	background: var(--cl-card);
+}
+
+.themor-swatches-wrap:has(select[data-attribute_name="attribute_day"]) .themor-swatch__name {
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.themor-swatches-wrap:has(select[data-attribute_name="attribute_day"]) .themor-swatch[aria-checked="true"] {
+	border-color: #1c3fd1;
+	background: #1c3fd1;
+	color: #fff;
+}
+
+.themor-swatches-wrap:has(select[data-attribute_name="attribute_day"]) .themor-swatch.is-sold-out:not([aria-checked="true"]) {
+	border-color: transparent;
+	background: var(--cl-hatch);
+}
+
+.themor-swatches-wrap:has(select[data-attribute_name="attribute_arrival-window"]) .themor-swatch__name {
+	font-size: 18px;
+	white-space: nowrap;
+}
+
+.single-product .themor-delivery {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 14px 0 0;
+	padding: 12px 16px;
+	border-radius: 12px;
+	background: var(--cl-mist);
+	color: var(--cl-ink);
+	font-size: 15px;
+}
+
+.single-product .themor-delivery__icon {
+	color: var(--cl-cobalt);
+}
+
+.single-product .themor-buy-now {
+	border: 2px solid var(--cl-ink) !important;
+	background: transparent !important;
+	color: var(--cl-ink) !important;
+}
+
+.single-product .themor-together {
+	padding: 24px;
+	border: 1px solid var(--cl-line);
+	border-radius: var(--cl-radius);
+}
+
+.single-product .themor-together__title,
+.single-product .related > h2,
+.single-product .upsells > h2,
+.themor-viewed__title,
+.single-product .woocommerce-Reviews-title,
+.single-product .wc-tabs-wrapper h2 {
+	color: var(--cl-ink);
+	font-family: var(--cl-display);
+	font-weight: 800;
+}
+
+.single-product .woocommerce-Tabs-panel .wp-block-details,
+.single-product .themor-tabs .wp-block-details {
+	margin: 0;
+	padding: 14px 0;
+	border-top: 1px solid var(--cl-line);
+}
+
+.single-product .woocommerce-Tabs-panel .wp-block-details summary,
+.single-product .themor-tabs .wp-block-details summary {
+	color: var(--cl-ink);
+	font-family: var(--yantra-font-body, "Public Sans", sans-serif);
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0;
+	cursor: pointer;
+}
+
+.single-product .woocommerce-Tabs-panel h2.wp-block-heading,
+.single-product .themor-tabs h2.wp-block-heading {
+	margin: 28px 0 10px;
+	font-size: 30px;
+}
+
+/* The cart drawer: Your booking. */
+.themor-shop-dialog__title {
+	font-family: var(--cl-display);
+	font-size: 30px;
+	font-weight: 800;
+}
+
+/* Dark mode: the lighter cobalt takes night-blue words. */
+html[data-themor-scheme="dark"] .copperline-button:not(.is-style-outline):not(.copperline-button--phone):not(.copperline-button--white) .wp-block-button__link,
+html[data-themor-scheme="dark"] .woocommerce ul.products li.product:not(.outofstock) .button,
+html[data-themor-scheme="dark"] .copperline-zip-box button {
+	color: #0a1633 !important;
+}
+
+html[data-themor-scheme="dark"] .copperline-products--compact ul.products li.product .button {
+	color: var(--cl-cobalt) !important;
+}
+
+/* Phones. */
+@media (max-width: 781px) {
+	.yantra-site-tagline {
+		display: none;
+	}
+
+	.copperline-windows {
+		margin: -90px 12px 0 !important;
+	}
+
+	.copperline-head {
+		align-items: flex-start !important;
+	}
+
+	.copperline-collage {
+		aspect-ratio: auto;
+		grid-template-rows: 180px 180px;
+	}
+
+	.copperline-slot strong {
+		font-size: 17px;
+	}
+
+	.copperline-offer {
+		flex-wrap: wrap !important;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.copperline-tile,
+	.copperline-posts .wp-block-post-featured-image img {
+		transition: none;
+	}
+}
+
+/* Icons: each a mask filled with the colour of the element that shows it. */
+:root {
+	--cl-i-phone: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/%3E%3C/svg%3E");
+	--cl-i-shield: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z'/%3E%3Cpath d='M8.5 12l2.5 2.5 4.5-5'/%3E%3C/svg%3E");
+	--cl-i-tag: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12V4h8l10 10-8 8z'/%3E%3Ccircle cx='7.5' cy='7.5' r='1.5'/%3E%3C/svg%3E");
+	--cl-i-tick: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E");
+	--cl-i-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l10 18H2z'/%3E%3Cpath d='M12 10v5M12 18h.01'/%3E%3C/svg%3E");
+	--cl-i-drop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3c2 3 5 5.5 5 9.5a5 5 0 0 1-10 0C7 8.5 10 6 12 3z'/%3E%3C/svg%3E");
+	--cl-i-toilet: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h6v7H5zM5 11h14a6 6 0 0 1-6 6H9l1 4H7l-1-4'/%3E%3C/svg%3E");
+	--cl-i-gauge: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='13' r='7'/%3E%3Cpath d='M12 13l3-3M9 3h6'/%3E%3C/svg%3E");
+	--cl-i-pipe: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h7a4 4 0 0 1 4 4v9M3 13h4a2 2 0 0 1 2 2v6M17 21v-9a9 9 0 0 0-9-9H3'/%3E%3C/svg%3E");
+	--cl-i-flame: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3c1 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-4.5 2-7 2 1 3 2.5 3 4.5 1-1.5 1.5-4 1-8.5z'/%3E%3C/svg%3E");
+	--cl-i-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0'/%3E%3C/svg%3E");
+	--cl-i-wind: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7'/%3E%3C/svg%3E");
+	--cl-i-clock: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='8'/%3E%3Cpath d='M12 8v4l3 2'/%3E%3C/svg%3E");
+	--cl-i-pulse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h3l2-5 3 10 2-5h6'/%3E%3C/svg%3E");
+	--cl-i-snow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2v20M4 7l16 10M20 7L4 17'/%3E%3C/svg%3E");
+	--cl-i-dial: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='4' width='14' height='16' rx='3'/%3E%3Ccircle cx='12' cy='11' r='3'/%3E%3Cpath d='M9 17h6'/%3E%3C/svg%3E");
+	--cl-i-house: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21V10l9-6 9 6v11'/%3E%3Cpath d='M9 21v-6h6v6'/%3E%3C/svg%3E");
+	--cl-i-frost: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2v20M17 5l-5 3-5-3M17 19l-5-3-5 3M2 12h20'/%3E%3C/svg%3E");
+	--cl-i-bolt: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 3L5 13h6l-1 8 8-10h-6z'/%3E%3C/svg%3E");
+	--cl-i-plug: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4'/%3E%3C/svg%3E");
+	--cl-i-bulb: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z'/%3E%3C/svg%3E");
+	--cl-i-plus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='4' width='16' height='16' rx='3'/%3E%3Cpath d='M12 8v8M8 12h8'/%3E%3C/svg%3E");
+	--cl-i-panel: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='3' width='14' height='18' rx='2'/%3E%3Cpath d='M9 7h2M9 11h2M9 15h2M13 7h2M13 11h2M13 15h2'/%3E%3C/svg%3E");
+	--cl-i-leaf: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 19c0-9 5-14 15-15-1 10-6 15-15 15zM5 19l7-7'/%3E%3C/svg%3E");
+	--cl-i-shower: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 21V6a3 3 0 0 1 6 0M8 9a5 5 0 0 1 10 0zM10 14v1M13 14v1M16 14v1M11 18v1M15 18v1'/%3E%3C/svg%3E");
+	--cl-i-cog: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1'/%3E%3C/svg%3E");
+	--cl-i-stars: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 86 16'%3E%3Cpath fill='black' d='M8 1l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.4l-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3Cpath fill='black' d='M25.5 1l2.2 4.6 5 .7-3.6 3.5.9 5L25.5 12.4l-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3Cpath fill='black' d='M43 1l2.2 4.6 5 .7-3.6 3.5.9 5L43 12.4l-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3Cpath fill='black' d='M60.5 1l2.2 4.6 5 .7-3.6 3.5.9 5L60.5 12.4l-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3Cpath fill='black' d='M78 1l2.2 4.6 5 .7-3.6 3.5.9 5L78 12.4l-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3C/svg%3E");
+}

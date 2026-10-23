@@ -33,6 +33,7 @@ every file as it is.
 | `daybook` | Yantra Pro | A lifestyle blog in four sections, Cook, Grow, Make and Rest, with the latest posts as the homepage: 23 posts with photos and tags, a three-part bread series (Yantra Pro's series), a quote post, four sticky posts for the featured slider, About, Contact and Privacy pages, a main and a footer menu linking the sections, four footer widgets, a logo, and Yantra Pro's blog settings: Masonry with infinite scroll, a table of contents, floating share buttons, view counts, the author page header, dark mode with a header switch, a date and a note in the header's top row, and the phone bar. Schema 3: needs the Storefill version that reads it |
 | `kerbside` | Yantra Pro | A café, roastery and bakery that takes orders ahead: a homepage of its own 17 patterns (a till-receipt hero, fresh bakes with the stock left, the menu as tiles, beans by post as receipts, the roastery, a regular's quote, the terrace with the week's hours, the journal), Menu, Order ahead, Our story and Visit pages; 19 products in five categories (drinks by milk and beans by grind as variations, bakes with Yantra Pro's own badges and a back-in-stock date, low and sold-out stock), reviews, six journal posts, a main and a footer menu, four footer widgets, a logo and its CSS; Yantra Pro's store hours with last orders and the open bar, the cart drawer, swatches, delivery estimate, bought together, dark mode and the phone bar; a demo checkout with collection, postage and free postage over £15. Schema 3 |
 | `skylark` | Yantra Pro | A digital marketing studio for local businesses, light and sky blue: a homepage of its own patterns (a results board over a photo, services, why us with figures, how a month works, case studies, reviews, plans with a monthly and yearly price switch, questions, the latest articles), Services, a Local SEO page with map results, Case studies with six case study pages, Pricing with a comparison table, About, Free audit and Privacy pages, and an ad landing page on the Blank canvas template whose headline matches the ad it came from (block visibility by the page address); six articles in five categories with a table of contents, a reading bar and share buttons; Yantra Pro's Mega Menu and Content Blocks modules turned on, with a Services mega menu in four columns, an exit popup and an offer after the third paragraph of every post; an offer bar, a sticky header with a dark mode switch and Call and Free audit buttons, the phone bar, a footer menu, four footer widgets, a logo and its CSS. Schema 3 |
+| `copperline` | Yantra Pro | A family firm of plumbers, heating engineers and electricians in Columbus, Ohio, that takes bookings in two-hour arrival windows: a homepage of its own patterns (the day's free windows on a tape-measure rail over a photo, problems as photo cards, fixed-price jobs, how a visit works, prices on cobalt, a map of the areas it covers, reviews, the guarantee and the family, advice, an emergency band), a services hub and five trade pages, Book online (the shop) with 13 jobs booked by day and two-hour window, each window with its own stock, and four add-ons, Prices, an Areas page with a ZIP code checker, About, its own booking and checkout pages, six advice posts; Yantra Pro's booking wording, windows left on the swatches, office hours, own badges and next-window dates, the delivery line as the day of the visit, bought together, the cart drawer as Your booking, a Services mega menu, a calendar for the header cart, dark mode and the phone bar with a raised Call button. Schema 3 |
 
 ## Layout
 
@@ -284,14 +285,24 @@ remain installed when demo content is removed.
 - `stock`: `null` (in stock), a number (stock is managed), or `"outofstock"`.
 - `sale_days`: a sale that ends that many days after the import.
 - `weight` is in kg and `size` (length, width, height) in cm; Storefill converts to the store's units.
-- `specs` become visible attributes in this order. A spec whose value is a list is the one the
+- `specs` become visible attributes in this order. A spec whose value is a list is one the
   product varies by; add `"variations": { "<value>": { "sku", "regular", "sale" } }`.
+- A product that varies by several specs (schema 3, Storefill 1.1.1) lists its variations, each
+  naming its value of each: `"variations": [ { "options": { "Day": "Monday", "Arrival window":
+  "2–4 pm" }, "stock": 1 } ]`. A spec left out means any value; `regular`, `sale`, `sku`, `stock`
+  (like a product's) and `meta` are optional, and the price falls back to the product's.
+  `"defaults": { "Day": "Monday" }` picks the choices shown first (else the first variation's).
+- `"virtual": true` (schema 3): nothing to ship, such as a service; its variations too.
 - `sales` only orders best-seller rows.
 - `meta` (schema 3): extra details a theme reads from a product, such as its own badge or a
   back-in-stock date: `"meta": { "_themor_badge": "Fresh today", "_themor_restock_date": { "days": 2 } }`.
   Only keys the active theme allows through the `storefill_product_meta_keys` filter are set (as
   plain text); others are skipped and named in the import log. `{ "days": 2 }` becomes the date two
-  days after the import, so a demo's dates stay ahead.
+  days after the import, and `{ "next": "monday" }` the next Monday after it, so a demo's dates stay
+  ahead and fall on the day they mean (a business closed on Sundays never reopens on one).
+- `description` (schema 3) may also be content items, as pages take (`[ [ "p", "…" ], [ "h2", "…" ],
+  [ "ul", [ "…" ] ], [ "details", "Question", "Answer" ] ]`): Storefill builds them into blocks,
+  escaped. A pack's text is plain text everywhere, so markup in a plain description is dropped.
 
 ### Content
 
@@ -360,6 +371,7 @@ Dashboard settings. Every section is optional.
   "demo_site": {
     "options": { "blogname": "Bytewell", "woocommerce_coming_soon": "no" },
     "returns_page": "shipping-returns",
+    "woocommerce_pages": { "shop": "book-online", "cart": "your-booking", "checkout": "confirm-booking" },
     "checkout": {
       "payment_title": "Demo payment (no charge)",
       "payment_description": "…",
@@ -375,7 +387,7 @@ Dashboard settings. Every section is optional.
 |---|---|---|
 | `options` | On every import | Keep it to settings the demo cannot work without. |
 | `homepage` | When the owner ticks "Use the demo homepage and blog page" | Page slugs from `pack.json`. Schema 3: `"latest_posts": true` opens the site on its latest posts instead, as a blog does. |
-| `demo_site` | Only with "This is a public demo site" or `--demo-site` | `options` (site title, address, currency, store visibility…), `returns_page` (a page slug), `checkout` (a payment method that takes no money, and delivery methods), `hide_sample_content` (unpublishes WordPress's sample post and page). |
+| `demo_site` | Only with "This is a public demo site" or `--demo-site` | `options` (site title, address, currency, store visibility…), `returns_page` (a page slug), `woocommerce_pages` (schema 3: the pack's own pages as WooCommerce's `shop`, `cart`, `checkout`, `myaccount` or `terms`, by slug, such as a "Book online" page as the shop; a cart or checkout page holds WooCommerce's shortcode), `checkout` (a payment method that takes no money, and delivery methods), `hide_sample_content` (unpublishes WordPress's sample post and page). |
 
 Removing the demo puts every setting back the way it was.
 

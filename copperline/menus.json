@@ -1,0 +1,264 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Copperline menu",
+			"slug": "copperline-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Services",
+					"page": "services",
+					"meta": {
+						"_themor_mega_menu": {
+							"mega": true,
+							"columns": 4,
+							"width": "container"
+						}
+					},
+					"children": [
+						{
+							"label": "Plumbing",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Plumbing",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-faucet-drip",
+											"icon_size": 16
+										}
+									},
+									"page": "plumbing"
+								},
+								{
+									"label": "Leak found and fixed",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-droplet",
+											"icon_size": 16
+										}
+									},
+									"product": "leak-found-fixed"
+								},
+								{
+									"label": "Water heater flush",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-fire-flame-simple",
+											"icon_size": 16
+										}
+									},
+									"product": "water-heater-flush"
+								},
+								{
+									"label": "Drains",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-sink",
+											"icon_size": 16
+										}
+									},
+									"page": "drains"
+								}
+							]
+						},
+						{
+							"label": "Heating & cooling",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Heating & cooling",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-temperature-half",
+											"icon_size": 16
+										}
+									},
+									"page": "heating-cooling"
+								},
+								{
+									"label": "Furnace tune-up",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-fire",
+											"icon_size": 16
+										}
+									},
+									"product": "furnace-tune-up"
+								},
+								{
+									"label": "AC tune-up",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-snowflake",
+											"icon_size": 16
+										}
+									},
+									"product": "ac-tune-up"
+								},
+								{
+									"label": "Smart thermostat fitted",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-gauge",
+											"icon_size": 16
+										}
+									},
+									"product": "smart-thermostat-fitted"
+								}
+							]
+						},
+						{
+							"label": "Electrical",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Electrical",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-bolt",
+											"icon_size": 16
+										}
+									},
+									"page": "electrical"
+								},
+								{
+									"label": "Outlet or switch swapped",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-plug",
+											"icon_size": 16
+										}
+									},
+									"product": "outlet-switch-swapped"
+								},
+								{
+									"label": "Light fixture install",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-regular fa-lightbulb",
+											"icon_size": 16
+										}
+									},
+									"product": "light-fixture-install"
+								},
+								{
+									"label": "Kitchen & bath fit-outs",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-bath",
+											"icon_size": 16
+										}
+									},
+									"page": "kitchen-bath"
+								}
+							]
+						},
+						{
+							"label": "Emergencies",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false,
+									"content": "text",
+									"text": "Burst pipe, no heat or sparks? Someone answers, day or night, every day of the year."
+								}
+							},
+							"children": [
+								{
+									"label": "Call (614) 555-0142",
+									"meta": {
+										"_themor_mega_menu": {
+											"icon_type": "icon",
+											"icon": "fa-solid fa-phone",
+											"icon_size": 16
+										}
+									},
+									"url": "tel:+16145550142"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Book online",
+					"page": "book-online"
+				},
+				{
+					"label": "Prices",
+					"page": "prices"
+				},
+				{
+					"label": "Areas",
+					"page": "areas"
+				},
+				{
+					"label": "Advice",
+					"page": "advice"
+				},
+				{
+					"label": "About",
+					"page": "about"
+				}
+			]
+		},
+		{
+			"title": "Copperline footer menu",
+			"slug": "copperline-footer-menu",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Privacy",
+					"page": "privacy"
+				},
+				{
+					"label": "Terms",
+					"page": "terms"
+				},
+				{
+					"label": "Facebook",
+					"url": "https://example.com/copperline-on-facebook"
+				},
+				{
+					"label": "Instagram",
+					"url": "https://example.com/copperline-on-instagram"
+				}
+			]
+		}
+	]
+}

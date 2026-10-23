@@ -1,0 +1,61 @@
+/*
+ * Yantra Pro: Themor's mega menu in Yantra's header and drawer.
+ *
+ * Themor's mega-menu.css lays the dropdown out (columns on a grid, widths, centered in the
+ * nearest positioned box: Yantra's header row); it leaves opening and closing to the theme. This
+ * fits it to Yantra, after Yantra's stylesheet. Rules that only set a default use :where(), so each
+ * item's own look (printed later by Themor) wins.
+ */
+
+/* Open, a mega menu's dropdown shows as a grid, in the same states as Yantra's dropdowns
+   (_menus.scss): hovered, focus inside, opened by its button; closed by its button, it stays so. */
+.yantra-menu--header > li.themor-mega-menu:is(:hover, :focus-within, .is-open) > .sub-menu,
+.yantra-menu--header > li.themor-mega-menu > .yantra-submenu-toggle[aria-expanded="true"] + .sub-menu {
+	display: grid;
+}
+
+.yantra-menu--header > li.themor-mega-menu.is-closed > .sub-menu {
+	display: none;
+}
+
+/* Mega menus as wide as the site span the header's row, on the site's background. */
+.yantra-menu--header {
+	--themor-mega-container: 100%;
+	--themor-mega-surface: var(--yantra-bg);
+}
+
+/* Badges in the accent color, in every menu. */
+.yantra-menu {
+	--themor-menu-badge-background: var(--yantra-accent);
+	--themor-menu-badge-color: var(--yantra-on-accent);
+}
+
+/* The lists in the columns always show, so they need no open button. */
+.yantra-menu--header .themor-mega-menu .sub-menu .yantra-submenu-toggle {
+	display: none;
+}
+
+/* Yantra turns a dropdown that would leave the screen toward the other side; a centered mega
+   menu fits as it is (one of its own width is kept on screen by Themor's script). */
+.yantra-menu--header > li.themor-mega-menu:not(.themor-mega-menu--align-item).yantra-submenu--flip > .sub-menu {
+	inset-inline-start: 50%;
+	inset-inline-end: auto;
+}
+
+/* The columns' titles. */
+:where(.yantra-menu--header .themor-mega-menu > .sub-menu > .themor-mega-column) > a {
+	font-weight: 600;
+}
+
+/* Links in an item's own content read as links, not as menu items. */
+.yantra-menu .themor-menu-content a {
+	display: inline;
+	padding: 0;
+	color: var(--yantra-accent);
+	text-decoration: underline;
+}
+
+.yantra-menu .themor-menu-content a:hover {
+	background: none;
+	color: var(--yantra-accent-strong);
+}

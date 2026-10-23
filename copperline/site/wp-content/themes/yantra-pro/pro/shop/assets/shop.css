@@ -1,0 +1,92 @@
+/*
+ * Yantra Pro: Themor's shop module in Yantra's colors, corners and widths. Plain CSS, no build.
+ * The module's buttons keep WooCommerce's `button` class, which Yantra already draws.
+ */
+
+:root {
+	--themor-shop-bg: var(--yantra-bg);
+	--themor-shop-text: var(--yantra-text);
+	--themor-shop-heading: var(--yantra-heading);
+	--themor-shop-muted: var(--yantra-muted);
+	--themor-shop-border: var(--yantra-border);
+	--themor-shop-surface: var(--yantra-surface);
+	--themor-shop-accent: var(--yantra-accent);
+	--themor-shop-on-accent: var(--yantra-on-accent);
+	--themor-shop-radius: var(--yantra-radius);
+	--themor-shop-shadow: var(--yantra-shadow-lg);
+	--themor-shop-content-width: var(--yantra-container);
+	--themor-shop-ease: var(--yantra-ease);
+	/* The open bar ("We take orders until …") apart from the header's top row: a tint of the accent. */
+	--themor-open-bg: color-mix(in srgb, var(--yantra-accent) 12%, var(--yantra-bg));
+	--themor-open-color: var(--yantra-heading);
+}
+
+.themor-shop-dialog,
+.themor-sticky-cart,
+.themor-checkout-bar {
+	font-family: var(--yantra-font-body);
+}
+
+.themor-shop-dialog__title,
+.themor-quick-view__title,
+.themor-checkout-bar__name {
+	font-family: var(--yantra-font-heading);
+}
+
+/* Yantra draws the shop's toolbar (result count and ordering) in one row; the module's buttons join it. */
+.woocommerce .themor-shop-view {
+	margin-block-end: 1.5rem;
+}
+
+.themor-shop-filter-button {
+	margin-block-end: 1.5rem !important;
+}
+
+/* The back to top button rises above the sticky Add to cart bar while it shows. */
+body:has(.themor-sticky-cart.is-shown) .yantra-scroll-top {
+	bottom: calc(1.5rem + 76px + var(--themor-mbar-offset, 0px));
+}
+
+/* A focused checkout's content starts close below its bar. */
+.themor-focused-checkout .yantra-page-title {
+	padding-block-start: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/*
+ * The drawer's products to add: small buttons. Yantra draws WooCommerce's buttons with a selector
+ * as strong as two IDs (`#respond input#submit` in its list), so this needs as much.
+ */
+#themor-cart-drawer#themor-cart-drawer .themor-upsells .themor-upsells__add {
+	min-height: 0;
+	padding: 0.45rem 0.9rem;
+	font-size: 0.8125rem;
+}
+
+/* The Wishlist header item, as Yantra's header cart. */
+.yantra-wishlist {
+	min-height: 2.5rem;
+	padding-inline: 0.5rem;
+	border-radius: 999px;
+	text-decoration: none;
+}
+
+.yantra-wishlist:hover {
+	background: color-mix(in srgb, currentColor 8%, transparent);
+}
+
+.yantra-wishlist .themor-wish-link__count {
+	inset-block-start: 0.1rem;
+	inset-inline: 1.55rem auto;
+	font-size: 0.6875rem;
+}
+
+/* Quantity buttons and swatches in Yantra's corners. */
+.themor-qty,
+.themor-swatch {
+	border-radius: var(--yantra-radius);
+}
+
+/* The New badge in the type of Yantra's sale badge, under it. */
+.themor-badge {
+	font-size: var(--yantra-tiny);
+}

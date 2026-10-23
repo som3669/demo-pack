@@ -1,0 +1,719 @@
+{
+	"schema": 1,
+	"patterns": {
+		"hero": {
+			"title": "Home hero: the next free two-hour windows",
+			"file": "patterns/hero.html",
+			"links": [
+				{
+					"text": "Pick a window",
+					"page": "book-online"
+				},
+				{
+					"text": "Book 2–4 pm today",
+					"product": "furnace-tune-up"
+				}
+			]
+		},
+		"fix": {
+			"title": "What needs fixing: problems as photo cards",
+			"file": "patterns/fix.html",
+			"links": [
+				{
+					"text": "Leaks & burst pipes",
+					"page": "plumbing"
+				},
+				{
+					"text": "No heat",
+					"page": "heating-cooling"
+				},
+				{
+					"text": "AC not cooling",
+					"page": "heating-cooling"
+				},
+				{
+					"text": "No hot water",
+					"page": "plumbing"
+				},
+				{
+					"text": "Blocked drains",
+					"page": "drains"
+				},
+				{
+					"text": "Power out or tripping",
+					"page": "electrical"
+				},
+				{
+					"text": "Lights, outlets & switches",
+					"page": "electrical"
+				},
+				{
+					"text": "Kitchen & bath fit-outs",
+					"page": "kitchen-bath"
+				},
+				{
+					"text": "Describe it",
+					"url": "mailto:hello@copperline.example?subject=What%20needs%20fixing"
+				}
+			]
+		},
+		"jobs": {
+			"title": "Fixed prices, booked in a minute: four jobs from the shop",
+			"file": "patterns/jobs.html",
+			"links": [
+				{
+					"text": "All fixed-price jobs",
+					"page": "book-online"
+				}
+			]
+		},
+		"how": {
+			"title": "How a visit works: three steps beside a window and text messages",
+			"file": "patterns/how.html"
+		},
+		"promise": {
+			"title": "No surprise bills: the visit fee, the hourly rate and emergencies on cobalt",
+			"file": "patterns/promise.html",
+			"links": [
+				{
+					"text": "See every price",
+					"page": "prices"
+				}
+			]
+		},
+		"areas": {
+			"title": "Where we work: neighborhoods beside a map of Columbus",
+			"file": "patterns/areas.html",
+			"links": [
+				{
+					"text": "Check your street",
+					"page": "areas"
+				}
+			]
+		},
+		"reviews": {
+			"title": "What the neighbors say: three reviews",
+			"file": "patterns/reviews.html"
+		},
+		"family": {
+			"title": "The guarantee and the family on the van",
+			"file": "patterns/family.html",
+			"links": [
+				{
+					"text": "About the guarantee",
+					"page": "about"
+				}
+			]
+		},
+		"advice": {
+			"title": "Advice from the van: the latest three posts",
+			"file": "patterns/advice.html",
+			"links": [
+				{
+					"text": "All advice",
+					"page": "advice"
+				}
+			]
+		},
+		"emergency": {
+			"title": "Burst pipe at 3 am? The emergency line on orange",
+			"file": "patterns/emergency.html"
+		},
+		"services-hero": {
+			"title": "Services: three trades under one roof",
+			"file": "patterns/services-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				}
+			]
+		},
+		"trades": {
+			"title": "Services: the five trades as photo cards",
+			"file": "patterns/trades.html",
+			"links": [
+				{
+					"text": "Plumbing",
+					"page": "plumbing"
+				},
+				{
+					"text": "Heating & cooling",
+					"page": "heating-cooling"
+				},
+				{
+					"text": "Electrical",
+					"page": "electrical"
+				},
+				{
+					"text": "Drains",
+					"page": "drains"
+				},
+				{
+					"text": "Kitchen & bath fit-outs",
+					"page": "kitchen-bath"
+				},
+				{
+					"text": "Pick a window",
+					"page": "book-online"
+				}
+			]
+		},
+		"plumbing-hero": {
+			"title": "Plumbing: the page's hero",
+			"file": "patterns/plumbing-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				},
+				{
+					"text": "Services",
+					"page": "services"
+				},
+				{
+					"text": "Heating & cooling",
+					"page": "heating-cooling"
+				},
+				{
+					"text": "Electrical",
+					"page": "electrical"
+				},
+				{
+					"text": "Drains",
+					"page": "drains"
+				},
+				{
+					"text": "Kitchen & bath fit-outs",
+					"page": "kitchen-bath"
+				},
+				{
+					"text": "Book a leak fix · $119",
+					"product": "leak-found-fixed"
+				}
+			]
+		},
+		"plumbing-fix": {
+			"title": "Plumbing: what we fix",
+			"file": "patterns/plumbing-fix.html"
+		},
+		"plumbing-book": {
+			"title": "Plumbing: jobs to book",
+			"file": "patterns/plumbing-book.html",
+			"links": [
+				{
+					"text": "Every fixed-price job",
+					"page": "book-online"
+				}
+			]
+		},
+		"plumbing-prices": {
+			"title": "Plumbing: typical prices",
+			"file": "patterns/plumbing-prices.html"
+		},
+		"plumbing-faq": {
+			"title": "Plumbing: questions people ask",
+			"file": "patterns/plumbing-faq.html"
+		},
+		"plumbing-cta": {
+			"title": "Plumbing: closing band",
+			"file": "patterns/plumbing-cta.html",
+			"links": [
+				{
+					"text": "2–4",
+					"page": "book-online"
+				}
+			]
+		},
+		"heating-cooling-hero": {
+			"title": "Heating & cooling: the page's hero",
+			"file": "patterns/heating-cooling-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				},
+				{
+					"text": "Services",
+					"page": "services"
+				},
+				{
+					"text": "Plumbing",
+					"page": "plumbing"
+				},
+				{
+					"text": "Electrical",
+					"page": "electrical"
+				},
+				{
+					"text": "Drains",
+					"page": "drains"
+				},
+				{
+					"text": "Kitchen & bath fit-outs",
+					"page": "kitchen-bath"
+				},
+				{
+					"text": "Book a tune-up · $129",
+					"product": "furnace-tune-up"
+				}
+			]
+		},
+		"heating-cooling-fix": {
+			"title": "Heating & cooling: what we fix",
+			"file": "patterns/heating-cooling-fix.html"
+		},
+		"heating-cooling-book": {
+			"title": "Heating & cooling: jobs to book",
+			"file": "patterns/heating-cooling-book.html",
+			"links": [
+				{
+					"text": "Every fixed-price job",
+					"page": "book-online"
+				}
+			]
+		},
+		"heating-cooling-prices": {
+			"title": "Heating & cooling: typical prices",
+			"file": "patterns/heating-cooling-prices.html"
+		},
+		"heating-cooling-faq": {
+			"title": "Heating & cooling: questions people ask",
+			"file": "patterns/heating-cooling-faq.html"
+		},
+		"heating-cooling-cta": {
+			"title": "Heating & cooling: closing band",
+			"file": "patterns/heating-cooling-cta.html",
+			"links": [
+				{
+					"text": "2–4",
+					"page": "book-online"
+				}
+			]
+		},
+		"electrical-hero": {
+			"title": "Electrical: the page's hero",
+			"file": "patterns/electrical-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				},
+				{
+					"text": "Services",
+					"page": "services"
+				},
+				{
+					"text": "Plumbing",
+					"page": "plumbing"
+				},
+				{
+					"text": "Heating & cooling",
+					"page": "heating-cooling"
+				},
+				{
+					"text": "Drains",
+					"page": "drains"
+				},
+				{
+					"text": "Kitchen & bath fit-outs",
+					"page": "kitchen-bath"
+				},
+				{
+					"text": "Book an outlet swap · $89",
+					"product": "outlet-switch-swapped"
+				}
+			]
+		},
+		"electrical-fix": {
+			"title": "Electrical: what we fix",
+			"file": "patterns/electrical-fix.html"
+		},
+		"electrical-book": {
+			"title": "Electrical: jobs to book",
+			"file": "patterns/electrical-book.html",
+			"links": [
+				{
+					"text": "Every fixed-price job",
+					"page": "book-online"
+				}
+			]
+		},
+		"electrical-prices": {
+			"title": "Electrical: typical prices",
+			"file": "patterns/electrical-prices.html"
+		},
+		"electrical-faq": {
+			"title": "Electrical: questions people ask",
+			"file": "patterns/electrical-faq.html"
+		},
+		"electrical-cta": {
+			"title": "Electrical: closing band",
+			"file": "patterns/electrical-cta.html",
+			"links": [
+				{
+					"text": "2–4",
+					"page": "book-online"
+				}
+			]
+		},
+		"drains-hero": {
+			"title": "Drains: the page's hero",
+			"file": "patterns/drains-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				},
+				{
+					"text": "Services",
+					"page": "services"
+				},
+				{
+					"text": "Plumbing",
+					"page": "plumbing"
+				},
+				{
+					"text": "Heating & cooling",
+					"page": "heating-cooling"
+				},
+				{
+					"text": "Electrical",
+					"page": "electrical"
+				},
+				{
+					"text": "Kitchen & bath fit-outs",
+					"page": "kitchen-bath"
+				},
+				{
+					"text": "Book a drain clearing · $149",
+					"product": "drain-cleared"
+				}
+			]
+		},
+		"drains-fix": {
+			"title": "Drains: what we clear",
+			"file": "patterns/drains-fix.html"
+		},
+		"drains-book": {
+			"title": "Drains: jobs to book",
+			"file": "patterns/drains-book.html",
+			"links": [
+				{
+					"text": "Every fixed-price job",
+					"page": "book-online"
+				}
+			]
+		},
+		"drains-prices": {
+			"title": "Drains: typical prices",
+			"file": "patterns/drains-prices.html"
+		},
+		"drains-faq": {
+			"title": "Drains: questions people ask",
+			"file": "patterns/drains-faq.html"
+		},
+		"drains-cta": {
+			"title": "Drains: closing band",
+			"file": "patterns/drains-cta.html",
+			"links": [
+				{
+					"text": "2–4",
+					"page": "book-online"
+				}
+			]
+		},
+		"kitchen-bath-hero": {
+			"title": "Kitchen & bath fit-outs: the page's hero",
+			"file": "patterns/kitchen-bath-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				},
+				{
+					"text": "Services",
+					"page": "services"
+				},
+				{
+					"text": "Plumbing",
+					"page": "plumbing"
+				},
+				{
+					"text": "Heating & cooling",
+					"page": "heating-cooling"
+				},
+				{
+					"text": "Electrical",
+					"page": "electrical"
+				},
+				{
+					"text": "Drains",
+					"page": "drains"
+				}
+			]
+		},
+		"kitchen-bath-fix": {
+			"title": "Kitchen & bath fit-outs: what we fit",
+			"file": "patterns/kitchen-bath-fix.html"
+		},
+		"kitchen-bath-book": {
+			"title": "Kitchen & bath fit-outs: how a fit-out works",
+			"file": "patterns/kitchen-bath-book.html"
+		},
+		"kitchen-bath-prices": {
+			"title": "Kitchen & bath fit-outs: typical prices",
+			"file": "patterns/kitchen-bath-prices.html"
+		},
+		"kitchen-bath-faq": {
+			"title": "Kitchen & bath fit-outs: questions people ask",
+			"file": "patterns/kitchen-bath-faq.html"
+		},
+		"kitchen-bath-cta": {
+			"title": "Kitchen & bath fit-outs: closing band",
+			"file": "patterns/kitchen-bath-cta.html"
+		},
+		"book-intro": {
+			"title": "Book online: the intro, the kinds of job and the same-day cut-off",
+			"file": "patterns/book-intro.html",
+			"links": [
+				{
+					"text": "All jobs",
+					"page": "book-online"
+				},
+				{
+					"text": "Plumbing",
+					"product_cat": "plumbing"
+				},
+				{
+					"text": "Heating & cooling",
+					"product_cat": "heating-cooling"
+				},
+				{
+					"text": "Electrical",
+					"product_cat": "electrical"
+				},
+				{
+					"text": "Drains",
+					"product_cat": "drains"
+				}
+			]
+		},
+		"prices-hero": {
+			"title": "Prices: the visit fee, the hourly rate and emergencies",
+			"file": "patterns/prices-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				}
+			]
+		},
+		"prices-jobs": {
+			"title": "Prices: every fixed-price job, by trade",
+			"file": "patterns/prices-jobs.html",
+			"links": [
+				{
+					"text": "Book any of these online",
+					"page": "book-online"
+				},
+				{
+					"text": "Leak found and fixed",
+					"product": "leak-found-fixed"
+				},
+				{
+					"text": "Faucet replacement",
+					"product": "faucet-replacement"
+				},
+				{
+					"text": "Toilet repaired or reseated",
+					"product": "toilet-repaired"
+				},
+				{
+					"text": "Water heater flush",
+					"product": "water-heater-flush"
+				},
+				{
+					"text": "Furnace tune-up",
+					"product": "furnace-tune-up"
+				},
+				{
+					"text": "AC tune-up",
+					"product": "ac-tune-up"
+				},
+				{
+					"text": "Smart thermostat fitted",
+					"product": "smart-thermostat-fitted"
+				},
+				{
+					"text": "Radiators bled and balanced",
+					"product": "radiators-bled-balanced"
+				},
+				{
+					"text": "Outlet or switch swapped",
+					"product": "outlet-switch-swapped"
+				},
+				{
+					"text": "Light fixture install",
+					"product": "light-fixture-install"
+				},
+				{
+					"text": "Breaker panel safety check",
+					"product": "breaker-panel-check"
+				},
+				{
+					"text": "Smoke and CO alarms fitted, each",
+					"product": "smoke-co-alarms"
+				},
+				{
+					"text": "Sink, tub or shower drain cleared",
+					"product": "drain-cleared"
+				},
+				{
+					"text": "Main sewer line cleared",
+					"product": "main-sewer-cleared"
+				},
+				{
+					"text": "Camera inspection, with video",
+					"product": "camera-inspection"
+				}
+			]
+		},
+		"never-extra": {
+			"title": "Prices: what is never extra, on cobalt",
+			"file": "patterns/never-extra.html"
+		},
+		"paying": {
+			"title": "Prices: ways to pay",
+			"file": "patterns/paying.html"
+		},
+		"areas-hero": {
+			"title": "Areas: the ZIP code checker beside the map",
+			"file": "patterns/areas-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				}
+			]
+		},
+		"areas-zips": {
+			"title": "Areas: neighborhoods and their ZIP codes",
+			"file": "patterns/areas-zips.html"
+		},
+		"about-hero": {
+			"title": "About: one family, three trades",
+			"file": "patterns/about-hero.html",
+			"links": [
+				{
+					"text": "Home",
+					"page": "home"
+				}
+			]
+		},
+		"about-timeline": {
+			"title": "About: from one van to nine",
+			"file": "patterns/about-timeline.html"
+		},
+		"about-how": {
+			"title": "About: how we work",
+			"file": "patterns/about-how.html"
+		},
+		"about-team": {
+			"title": "About: who will knock on your door, on night blue",
+			"file": "patterns/about-team.html"
+		},
+		"about-guarantee": {
+			"title": "About: the guarantee in plain words",
+			"file": "patterns/about-guarantee.html"
+		},
+		"about-hiring": {
+			"title": "About: we are hiring apprentices",
+			"file": "patterns/about-hiring.html"
+		},
+		"offer-leak-found-fixed": {
+			"title": "Advice: book leak found and fixed at a fixed price",
+			"file": "patterns/offer-leak-found-fixed.html",
+			"links": [
+				{
+					"text": "Choose a window",
+					"product": "leak-found-fixed"
+				}
+			]
+		},
+		"offer-radiators-bled-balanced": {
+			"title": "Advice: book radiators bled and balanced at a fixed price",
+			"file": "patterns/offer-radiators-bled-balanced.html",
+			"links": [
+				{
+					"text": "Choose a window",
+					"product": "radiators-bled-balanced"
+				}
+			]
+		},
+		"offer-breaker-panel-check": {
+			"title": "Advice: book breaker panel safety check at a fixed price",
+			"file": "patterns/offer-breaker-panel-check.html",
+			"links": [
+				{
+					"text": "Choose a window",
+					"product": "breaker-panel-check"
+				}
+			]
+		},
+		"offer-water-heater-flush": {
+			"title": "Advice: book water heater flush at a fixed price",
+			"file": "patterns/offer-water-heater-flush.html",
+			"links": [
+				{
+					"text": "Choose a window",
+					"product": "water-heater-flush"
+				}
+			]
+		},
+		"offer-ac-tune-up": {
+			"title": "Advice: book ac tune-up at a fixed price",
+			"file": "patterns/offer-ac-tune-up.html",
+			"links": [
+				{
+					"text": "Choose a window",
+					"product": "ac-tune-up"
+				}
+			]
+		},
+		"offer-furnace-tune-up": {
+			"title": "Advice: book furnace tune-up at a fixed price",
+			"file": "patterns/offer-furnace-tune-up.html",
+			"links": [
+				{
+					"text": "Choose a window",
+					"product": "furnace-tune-up"
+				}
+			]
+		},
+		"post-warning": {
+			"title": "Advice: a safety warning before the steps",
+			"file": "patterns/post-warning.html"
+		},
+		"booking-page": {
+			"title": "Your booking: the cart",
+			"file": "patterns/booking-page.html"
+		},
+		"confirm-page": {
+			"title": "Confirm your booking: the checkout",
+			"file": "patterns/confirm-page.html"
+		},
+		"header-call": {
+			"title": "Header: call us, with the number",
+			"file": "patterns/header-call.html"
+		},
+		"footer-brand": {
+			"title": "Footer: who we are and where the yard is",
+			"file": "patterns/footer-brand.html"
+		},
+		"footer-hours": {
+			"title": "Footer: office hours and the emergency line",
+			"file": "patterns/footer-hours.html"
+		}
+	}
+}

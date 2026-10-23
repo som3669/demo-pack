@@ -1,0 +1,878 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"plumbing": {
+			"name": "Plumbing",
+			"description": "Leaks, pipes, faucets and water heaters."
+		},
+		"heating": {
+			"name": "Heating",
+			"description": "Furnaces, boilers and radiators."
+		},
+		"cooling": {
+			"name": "Cooling",
+			"description": "Central air, heat pumps and thermostats."
+		},
+		"electrical": {
+			"name": "Electrical",
+			"description": "Breakers, outlets, lights and safety."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "fix"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "jobs"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "how"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "promise"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "areas"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "reviews"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "family"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "advice"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "emergency"
+					}
+				]
+			]
+		},
+		"services": {
+			"title": "Services",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "services-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "trades"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "jobs"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "emergency"
+					}
+				]
+			]
+		},
+		"plumbing": {
+			"title": "Plumbing",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "plumbing-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "plumbing-fix"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "plumbing-book"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "plumbing-prices"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "plumbing-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "plumbing-cta"
+					}
+				]
+			]
+		},
+		"heating-cooling": {
+			"title": "Heating & cooling",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "heating-cooling-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "heating-cooling-fix"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "heating-cooling-book"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "heating-cooling-prices"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "heating-cooling-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "heating-cooling-cta"
+					}
+				]
+			]
+		},
+		"electrical": {
+			"title": "Electrical",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "electrical-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "electrical-fix"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "electrical-book"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "electrical-prices"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "electrical-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "electrical-cta"
+					}
+				]
+			]
+		},
+		"drains": {
+			"title": "Drains",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "drains-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "drains-fix"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "drains-book"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "drains-prices"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "drains-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "drains-cta"
+					}
+				]
+			]
+		},
+		"kitchen-bath": {
+			"title": "Kitchen & bath fit-outs",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "kitchen-bath-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "kitchen-bath-fix"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "kitchen-bath-book"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "kitchen-bath-prices"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "kitchen-bath-faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "kitchen-bath-cta"
+					}
+				]
+			]
+		},
+		"book-online": {
+			"title": "Book online",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "book-intro"
+					}
+				]
+			]
+		},
+		"prices": {
+			"title": "Prices",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "prices-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "prices-jobs"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "never-extra"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "paying"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "emergency"
+					}
+				]
+			]
+		},
+		"areas": {
+			"title": "Areas we cover",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "areas-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "areas-zips"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "emergency"
+					}
+				]
+			]
+		},
+		"about": {
+			"title": "About us",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "about-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-timeline"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-how"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-team"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-guarantee"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "about-hiring"
+					}
+				]
+			]
+		},
+		"advice": {
+			"title": "Advice",
+			"content": []
+		},
+		"your-booking": {
+			"title": "Your booking",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "booking-page"
+					}
+				]
+			]
+		},
+		"confirm-booking": {
+			"title": "Confirm your booking",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "confirm-page"
+					}
+				]
+			]
+		},
+		"privacy": {
+			"title": "Privacy",
+			"content": [
+				[
+					"p",
+					"This is a demo site. Copperline is a made-up business, and nothing you enter here is used for anything."
+				],
+				[
+					"h2",
+					"What a real site would say"
+				],
+				[
+					"p",
+					"Which details it keeps when you book (your name, address, phone and email), why it needs them (to send someone to your door and to text you when they're on the way), who it shares them with (nobody but the payment company), and how long it keeps them."
+				],
+				[
+					"h2",
+					"Cookies"
+				],
+				[
+					"p",
+					"Your booking and the jobs you looked at are kept in your browser, so they're there when you come back."
+				]
+			]
+		},
+		"terms": {
+			"title": "Terms",
+			"content": [
+				[
+					"p",
+					"This is a demo site: no visit will be booked and nothing will be charged."
+				],
+				[
+					"h2",
+					"Bookings"
+				],
+				[
+					"ul",
+					[
+						"A window is the two hours in which we arrive.",
+						"You can change or cancel a booking for free until 6 pm the day before.",
+						"Any work beyond the job you booked is priced in writing before we start.",
+						"You pay when the work is done."
+					]
+				],
+				[
+					"h2",
+					"The guarantee"
+				],
+				[
+					"p",
+					"Everything we fix or fit is covered for two years: the work, and the parts we supplied. It stays with the house if you sell it."
+				]
+			]
+		}
+	},
+	"posts": {
+		"burst-pipe-first-five-minutes": {
+			"title": "A burst pipe: the first five minutes",
+			"category": "plumbing",
+			"image": "images/brass-fittings-photo.jpg",
+			"days": 4,
+			"sticky": true,
+			"tags": [
+				"Emergencies",
+				"Pipes",
+				"Winter"
+			],
+			"excerpt": "Water moves fast. Do these five things first, in this order, then call.",
+			"content": [
+				[
+					"p",
+					"Water moves fast. In the time it takes to find our number, a burst pipe can soak a ceiling. Do these five things first, in this order, then call."
+				],
+				[
+					"pattern",
+					{
+						"slug": "post-warning"
+					}
+				],
+				[
+					"h2",
+					"Turn the water off at the main"
+				],
+				[
+					"p",
+					"The main shut-off valve is usually in the basement, on the wall facing the street, close to the water meter. Turn the handle clockwise until it stops. A lever valve turns a quarter turn, across the pipe."
+				],
+				[
+					"p",
+					"Can't find it, or it won't move? Your water company can shut it at the curb, and so can we."
+				],
+				[
+					"h2",
+					"Keep water and power apart"
+				],
+				[
+					"p",
+					"If the leak is above a light fitting or near outlets, switch off that circuit at the panel, but only if you can reach the panel standing somewhere dry."
+				],
+				[
+					"h2",
+					"Switch off the water heater"
+				],
+				[
+					"p",
+					"With no water coming in, a heater can run dry. Set a gas heater to \"pilot\" or turn off the breaker for an electric one."
+				],
+				[
+					"h2",
+					"Drain the pipes"
+				],
+				[
+					"p",
+					"Open the cold faucets on the lowest floor, then flush the toilets. That empties what's left in the pipes, so less comes out of the break."
+				],
+				[
+					"h2",
+					"Mop, catch and photograph"
+				],
+				[
+					"p",
+					"Put buckets under drips and towels along the edges of the water. Take photos before you move anything: your insurer will want them, and so will we."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-leak-found-fixed"
+					}
+				]
+			]
+		},
+		"bleed-a-radiator": {
+			"title": "Cold at the top? How to bleed a radiator",
+			"category": "heating",
+			"image": "images/radiator-valve-photo.jpg",
+			"days": 9,
+			"tags": [
+				"Radiators",
+				"Winter"
+			],
+			"excerpt": "A radiator that's hot at the bottom and cold at the top has air in it. Ten minutes and a key fix it.",
+			"content": [
+				[
+					"p",
+					"A radiator that's hot at the bottom and cold at the top has air trapped in it. Letting the air out takes ten minutes, a radiator key and an old towel."
+				],
+				[
+					"h2",
+					"You need"
+				],
+				[
+					"ul",
+					[
+						"A radiator key, from any hardware store (some valves take a flat screwdriver)",
+						"An old towel or a cup",
+						"Ten minutes, with the heating off"
+					]
+				],
+				[
+					"h2",
+					"Bleed it"
+				],
+				[
+					"ol",
+					[
+						"Turn the heating off and let the radiators cool for half an hour.",
+						"Start with the radiator furthest from the boiler, on the lowest floor.",
+						"Hold the towel under the bleed valve, at the top corner.",
+						"Turn the key a quarter turn counter-clockwise. You'll hear a hiss.",
+						"When water comes out instead of air, close the valve.",
+						"Do the rest the same way, working towards the boiler and upstairs."
+					]
+				],
+				[
+					"h2",
+					"Then check the pressure"
+				],
+				[
+					"p",
+					"Bleeding lets a little water out, so check the boiler's gauge. Most homes want 12 to 15 psi cold. Below that, top it up at the fill valve, or call us and we'll do it with the bleed."
+				],
+				[
+					"quote",
+					"If one radiator needs bleeding every week, air is getting in somewhere. That's worth a look.",
+					"Ana Reyes"
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-radiators-bled-balanced"
+					}
+				]
+			]
+		},
+		"breaker-keeps-tripping": {
+			"title": "The breaker keeps tripping. Is it the outlet?",
+			"category": "electrical",
+			"image": "images/breaker-wires-photo.jpg",
+			"days": 15,
+			"tags": [
+				"Breakers",
+				"Safety"
+			],
+			"excerpt": "A breaker that trips is doing its job. Here's how to tell an overload from a fault, and when to stop and call.",
+			"content": [
+				[
+					"p",
+					"A breaker that trips is doing its job: it's stopping a wire from getting hot. The question is why, and the answer is usually one of three things."
+				],
+				[
+					"h2",
+					"An overload"
+				],
+				[
+					"p",
+					"Too much on one circuit: a space heater and a hair dryer on the same bathroom circuit, say. It trips after a few minutes. Move one of them to another circuit and it stops."
+				],
+				[
+					"h2",
+					"A short circuit"
+				],
+				[
+					"p",
+					"It trips the moment you switch it back on, or the moment you plug one thing in. Unplug everything on the circuit and try again. If it holds, plug things back one at a time until you find the culprit."
+				],
+				[
+					"h2",
+					"A worn breaker"
+				],
+				[
+					"p",
+					"Breakers wear out, and old ones trip with very little on them. If it trips with almost nothing plugged in, the breaker itself may be the problem."
+				],
+				[
+					"h2",
+					"When to stop and call"
+				],
+				[
+					"ul",
+					[
+						"A burning smell, or an outlet or switch that's warm to the touch",
+						"Scorch marks on an outlet",
+						"A breaker that won't reset at all",
+						"Lights that dim when something else turns on"
+					]
+				],
+				[
+					"p",
+					"Any of those, switch the circuit off and leave it off. We'll come the same day."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-breaker-panel-check"
+					}
+				]
+			]
+		},
+		"hard-water-and-your-heater": {
+			"title": "Hard water in Columbus, and what it does to a heater",
+			"category": "plumbing",
+			"image": "images/water-glass-photo.jpg",
+			"days": 22,
+			"tags": [
+				"Water heaters",
+				"Hard water"
+			],
+			"excerpt": "Columbus water is hard. A yearly flush keeps the sediment from cooking at the bottom of your heater.",
+			"content": [
+				[
+					"p",
+					"Columbus water is hard: it carries calcium and magnesium that settle out when the water is heated. In a water heater, that sediment sits on the bottom of the tank, right on top of the burner."
+				],
+				[
+					"h2",
+					"How you can tell"
+				],
+				[
+					"ul",
+					[
+						"Popping or rumbling when the heater runs",
+						"Hot water that runs out sooner than it used to",
+						"White flakes in the aerators",
+						"A higher gas bill for the same showers"
+					]
+				],
+				[
+					"h2",
+					"What a flush does"
+				],
+				[
+					"p",
+					"We drain the tank through a hose, stir up the sediment with fresh water and flush it out until the water runs clear. Then we test the relief valve and check the anode, the rod that keeps the tank from rusting."
+				],
+				[
+					"h2",
+					"How often"
+				],
+				[
+					"p",
+					"Once a year for a tank. Every year or two for a tankless heater, which we descale with a pump and vinegar solution instead."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-water-heater-flush"
+					}
+				]
+			]
+		},
+		"thermostat-setting-that-saves": {
+			"title": "The thermostat setting that saves the most",
+			"category": "cooling",
+			"image": "images/thermometer-photo.jpg",
+			"days": 30,
+			"tags": [
+				"Thermostats",
+				"Saving energy"
+			],
+			"excerpt": "It isn't a number. It's how far you let the house drift while nobody's home.",
+			"content": [
+				[
+					"p",
+					"People ask us for the one number that saves the most. It isn't a number: it's how far you let the house drift while nobody's home or everyone's asleep."
+				],
+				[
+					"h2",
+					"In summer"
+				],
+				[
+					"p",
+					"Set it to 78°F while you're home and let it rise to 85°F while you're out. Each degree you let it drift for eight hours saves about one percent on cooling."
+				],
+				[
+					"h2",
+					"In winter"
+				],
+				[
+					"p",
+					"Around 68°F while you're up, and 7 to 10 degrees lower at night. A furnace doesn't work harder to warm the house back up than it saved by resting."
+				],
+				[
+					"h2",
+					"A heat pump is different"
+				],
+				[
+					"p",
+					"Big setbacks can make a heat pump switch on its backup heat, which costs more. Keep the drop to 2 or 3 degrees, or use a thermostat that knows it's driving a heat pump."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-ac-tune-up"
+					}
+				]
+			]
+		},
+		"no-heat-three-checks": {
+			"title": "No heat? Three checks before you call",
+			"category": "heating",
+			"image": "images/radiator-fins-photo.jpg",
+			"days": 38,
+			"tags": [
+				"Furnaces",
+				"Winter"
+			],
+			"excerpt": "Half our no-heat calls are fixed by one of these. Try them first; if they don't work, we'll come the same day.",
+			"content": [
+				[
+					"p",
+					"About half of our no-heat calls in the first cold week are fixed by one of three things. Try these before you call; if they don't work, we'll come the same day."
+				],
+				[
+					"h2",
+					"The thermostat"
+				],
+				[
+					"p",
+					"Is it set to Heat, and above the room temperature? Battery thermostats go blank when the batteries die. Replace them and give it five minutes."
+				],
+				[
+					"h2",
+					"The switch"
+				],
+				[
+					"p",
+					"There's a switch that looks like a light switch on or near the furnace. It gets turned off by accident more often than you'd think."
+				],
+				[
+					"h2",
+					"The filter"
+				],
+				[
+					"p",
+					"A clogged filter makes the furnace overheat and shut itself off. If you can't see light through it, change it and reset the furnace."
+				],
+				[
+					"quote",
+					"If you smell gas, don't check anything. Leave the house and call the gas company from outside.",
+					"Ana Reyes"
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-furnace-tune-up"
+					}
+				]
+			]
+		}
+	}
+}

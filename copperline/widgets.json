@@ -1,0 +1,113 @@
+{
+	"schema": 1,
+	"sidebars": {
+		"yantra-pro-header": [
+			{
+				"title": "",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "header-call"
+						}
+					]
+				]
+			}
+		],
+		"footer-1": [
+			{
+				"title": "",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "footer-brand"
+						}
+					]
+				]
+			}
+		],
+		"footer-2": [
+			{
+				"title": "Services",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "Plumbing",
+								"page": "plumbing"
+							},
+							{
+								"label": "Heating & cooling",
+								"page": "heating-cooling"
+							},
+							{
+								"label": "Electrical",
+								"page": "electrical"
+							},
+							{
+								"label": "Drains",
+								"page": "drains"
+							},
+							{
+								"label": "Kitchen & bath fit-outs",
+								"page": "kitchen-bath"
+							},
+							{
+								"label": "Fixed-price jobs",
+								"page": "book-online"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-3": [
+			{
+				"title": "Company",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "About us",
+								"page": "about"
+							},
+							{
+								"label": "Prices",
+								"page": "prices"
+							},
+							{
+								"label": "Areas we cover",
+								"page": "areas"
+							},
+							{
+								"label": "Advice",
+								"page": "advice"
+							},
+							{
+								"label": "Our guarantee",
+								"page": "about",
+								"anchor": "guarantee"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-4": [
+			{
+				"title": "Office hours",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "footer-hours"
+						}
+					]
+				]
+			}
+		]
+	}
+}

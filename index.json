@@ -350,6 +350,79 @@
 			"shown_with": [
 				"yantra"
 			]
+		},
+		{
+			"id": "copperline",
+			"theme": "yantra-pro",
+			"pro": true,
+			"title": "Copperline home services",
+			"description": "A family firm of plumbers, heating engineers and electricians that takes bookings in two-hour arrival windows: a homepage with the day's free windows, problems as photo cards, fixed-price jobs, how a visit works, the areas it covers on a map, reviews and the two-year guarantee; a services hub and five trade pages with what each trade fixes, typical prices and questions people ask; Book online (the shop) with 13 jobs to book by day and window, each window with its own stock, and four add-ons; Prices, an Areas page with a ZIP code checker, About and six advice posts. Yantra Pro's booking wording (\"Only 4 windows left this week\", \"Booked up · next windows on Monday\", \"Book within 2h 40m for today\"), windows left on the swatches, office hours, own badges, a Services mega menu, the cart drawer as Your booking, a calendar in the header, dark mode and the phone bar with a raised Call button. For Yantra Pro.",
+			"version": "1.0.0",
+			"path": "copperline/pack.json",
+			"required_plugins": [
+				{
+					"slug": "woocommerce",
+					"name": "WooCommerce",
+					"file": "woocommerce/woocommerce.php",
+					"minimum_version": "9.0"
+				}
+			],
+			"requires": {
+				"wordpress": "6.5",
+				"woocommerce": "9.0"
+			},
+			"preview": "copperline/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "copperline/screens/home.jpg",
+					"page": "copperline/site/index.html"
+				},
+				{
+					"title": "Book online",
+					"image": "copperline/screens/book.jpg",
+					"page": "copperline/site/book-online/index.html"
+				},
+				{
+					"title": "A job to book",
+					"image": "copperline/screens/product.jpg",
+					"page": "copperline/site/product/furnace-tune-up/index.html"
+				},
+				{
+					"title": "Heating & cooling",
+					"image": "copperline/screens/trade.jpg",
+					"page": "copperline/site/heating-cooling/index.html"
+				},
+				{
+					"title": "Prices",
+					"image": "copperline/screens/prices.jpg",
+					"page": "copperline/site/prices/index.html"
+				},
+				{
+					"title": "Areas we cover",
+					"image": "copperline/screens/areas.jpg",
+					"page": "copperline/site/areas/index.html"
+				},
+				{
+					"title": "About us",
+					"image": "copperline/screens/about.jpg",
+					"page": "copperline/site/about/index.html"
+				},
+				{
+					"title": "A post",
+					"image": "copperline/screens/post.jpg",
+					"page": "copperline/site/burst-pipe-first-five-minutes/index.html"
+				}
+			],
+			"demo_url": "https://som3669.github.io/demo-pack/copperline/site/index.html",
+			"categories": [
+				"Business",
+				"Home services"
+			],
+			"theme_name": "Yantra Pro",
+			"shown_with": [
+				"yantra"
+			]
 		}
 	]
 }

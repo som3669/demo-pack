@@ -1,0 +1,30 @@
+{
+	"schema": 1,
+	"images": {
+		"images/copperline-logo.png": "Copperline",
+		"images/copperline-map.png": "A map of Columbus inside the I-270 outerbelt",
+		"images/wrenches-pipe-photo.jpg": "Pipe wrenches gripping a steel pipe",
+		"images/pressure-gauges-photo.jpg": "Pressure gauges and red valve handles on heating pipes",
+		"images/breaker-wires-photo.jpg": "A main breaker in a panel full of colored wires",
+		"images/wrench-wall-photo.jpg": "Wrenches hanging in order on the workshop wall",
+		"images/thermometer-photo.jpg": "A wooden wall thermometer in Fahrenheit and Celsius",
+		"images/brass-fittings-photo.jpg": "A pile of copper pipe elbows and fittings",
+		"images/level-hand-photo.jpg": "A hand marking a wall beside a yellow spirit level",
+		"images/hose-valve-photo.jpg": "An outdoor faucet with a blue handle and an orange hose",
+		"images/dark-basin-photo.jpg": "A white basin under a running faucet against dark tiles",
+		"images/dripping-faucet-photo.jpg": "A chrome faucet with a drip at the spout",
+		"images/water-glass-photo.jpg": "A glass filling with tap water at a steel sink",
+		"images/kitchen-sink-photo.jpg": "A white kitchen sink with a brass faucet and pots of herbs",
+		"images/radiator-valve-photo.jpg": "A white thermostatic radiator valve set to 3",
+		"images/electrician-panel-photo.jpg": "An electrician in blue overalls at a pair of open breaker panels",
+		"images/colour-wires-photo.jpg": "Four stripped wires in yellow, blue, brown and red",
+		"images/light-switch-photo.jpg": "A white rocker light switch on a textured wall",
+		"images/black-faucet-photo.jpg": "An old cross-handle faucet over a grey sink",
+		"images/elbow-hand-photo.jpg": "A hand holding a grey pipe elbow",
+		"images/lit-mirror-photo.jpg": "A backlit bathroom mirror framed in mosaic tiles, beside a white basin",
+		"images/screwdriver-photo.jpg": "A red and blue screwdriver on a wooden bench",
+		"images/radiator-fins-photo.jpg": "Close-up of copper heating fins on a pipe",
+		"images/bathtub-photo.jpg": "A freestanding bathtub on dark floor tiles with a striped towel",
+		"images/copper-pendant-photo.jpg": "A copper pendant light hanging from a white ceiling"
+	}
+}

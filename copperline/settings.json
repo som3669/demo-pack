@@ -1,0 +1,40 @@
+{
+	"schema": 1,
+	"options": {
+		"yantra_pro_modules": [
+			"mega-menu"
+		],
+		"woocommerce_currency": "USD",
+		"woocommerce_currency_pos": "left",
+		"woocommerce_price_num_decimals": "0",
+		"woocommerce_manage_stock": "yes"
+	},
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "advice"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Copperline",
+			"blogdescription": "Plumbing · Heating · Electrical",
+			"woocommerce_coming_soon": "no",
+			"woocommerce_store_address": "1260 Indianola Avenue",
+			"woocommerce_store_city": "Columbus",
+			"woocommerce_store_postcode": "43201",
+			"woocommerce_default_country": "US:OH",
+			"woocommerce_enable_reviews": "yes",
+			"woocommerce_review_rating_required": "yes"
+		},
+		"woocommerce_pages": {
+			"shop": "book-online",
+			"cart": "your-booking",
+			"checkout": "confirm-booking"
+		},
+		"checkout": {
+			"payment_title": "Pay when it's done",
+			"payment_description": "This is a demo: nothing is charged, and nobody will come out.",
+			"payment_instructions": "Thanks for trying the demo. Nothing was booked and nothing was charged."
+		},
+		"hide_sample_content": true
+	}
+}

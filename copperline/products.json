@@ -1,0 +1,3730 @@
+{
+	"schema": 1,
+	"product_categories": {
+		"plumbing": {
+			"name": "Plumbing",
+			"description": "Leaks, faucets, toilets and water heaters, at a fixed price.",
+			"image": "images/dripping-faucet-photo.jpg"
+		},
+		"heating-cooling": {
+			"name": "Heating & cooling",
+			"description": "Furnace and AC tune-ups, thermostats and radiators, at a fixed price.",
+			"image": "images/radiator-fins-photo.jpg"
+		},
+		"electrical": {
+			"name": "Electrical",
+			"description": "Outlets, lights, panels and alarms, at a fixed price.",
+			"image": "images/light-switch-photo.jpg"
+		},
+		"drains": {
+			"name": "Drains",
+			"description": "Drains and the main sewer line cleared, and checked on camera.",
+			"image": "images/dark-basin-photo.jpg"
+		}
+	},
+	"products": [
+		{
+			"slug": "furnace-tune-up",
+			"name": "Furnace tune-up",
+			"category": "heating-cooling",
+			"image": "images/pressure-gauges-photo.jpg",
+			"gallery": [
+				"images/radiator-valve-photo.jpg",
+				"images/radiator-fins-photo.jpg",
+				"images/level-hand-photo.jpg"
+			],
+			"sku": "CL-FTU",
+			"sales": 212,
+			"regular": "129",
+			"featured": true,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Labor and a new filter included. About an hour. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"We clean the burners and flame sensor, change the filter, test for carbon monoxide, check every safety switch and leave you a written report."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Burners and flame sensor cleaned",
+						"Filter changed (standard sizes)",
+						"Carbon monoxide and gas pressure tested",
+						"Blower, belts and electrical connections checked",
+						"Thermostat calibrated",
+						"A written report, with photos of anything worn"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				}
+			],
+			"defaults": {
+				"Day": "Thursday",
+				"Arrival window": "2–4 pm"
+			},
+			"meta": {
+				"_themor_badge": "Most booked",
+				"_themor_badge_color": "#FF6A13"
+			},
+			"cross_sells": [
+				"radiators-bled-balanced",
+				"gas-line-leak-test",
+				"co-alarm-check"
+			]
+		},
+		{
+			"slug": "ac-tune-up",
+			"name": "AC tune-up",
+			"category": "heating-cooling",
+			"image": "images/thermometer-photo.jpg",
+			"gallery": [],
+			"sku": "CL-ACT",
+			"sales": 164,
+			"regular": "129",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Coils cleaned, refrigerant checked, drain line cleared. About an hour. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"Before the first hot week: we clean the outdoor coil, check the refrigerant and the capacitor, clear the condensate line and test the cooling at every vent."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Outdoor coil rinsed and straightened",
+						"Refrigerant pressures checked",
+						"Capacitor and contactor tested",
+						"Condensate line cleared",
+						"Air filter changed",
+						"Temperature drop measured at the vents"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				}
+			],
+			"cross_sells": [
+				"co-alarm-check"
+			]
+		},
+		{
+			"slug": "smart-thermostat-fitted",
+			"name": "Smart thermostat fitted",
+			"category": "heating-cooling",
+			"image": "images/radiator-valve-photo.jpg",
+			"gallery": [],
+			"sku": "CL-STF",
+			"sales": 98,
+			"regular": "149",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Your thermostat or ours, wired, set up on your Wi-Fi and explained. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"We fit the thermostat, add a common wire if your system needs one, connect it to your Wi-Fi and show you how the schedule works before we leave."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Old thermostat taken off and recycled",
+						"Common wire added if needed",
+						"New thermostat mounted and wired",
+						"Heating and cooling tested",
+						"Set up on your Wi-Fi and phone",
+						"A schedule set with you"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				}
+			],
+			"meta": {
+				"_themor_badge": "Fully booked",
+				"_themor_badge_color": "#0A1633",
+				"_themor_restock_date": {
+					"next": "monday"
+				}
+			}
+		},
+		{
+			"slug": "faucet-replacement",
+			"name": "Faucet replacement",
+			"category": "plumbing",
+			"image": "images/black-faucet-photo.jpg",
+			"gallery": [],
+			"sku": "CL-FAU",
+			"sales": 141,
+			"regular": "149",
+			"featured": true,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Kitchen or bathroom. Your faucet or ours, old one taken away. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"We take out the old faucet, fit the new one with new supply lines, check for leaks and take the old one away."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Water shut off and lines drained",
+						"Old faucet and supply lines removed",
+						"New faucet fitted and sealed",
+						"New braided supply lines",
+						"Run and checked for leaks",
+						"Old faucet taken away"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				}
+			],
+			"defaults": {
+				"Day": "Wednesday",
+				"Arrival window": "10–12"
+			},
+			"meta": {
+				"_themor_badge": "Done in an hour",
+				"_themor_badge_color": "#0A1633"
+			}
+		},
+		{
+			"slug": "leak-found-fixed",
+			"name": "Leak found and fixed",
+			"category": "plumbing",
+			"image": "images/dripping-faucet-photo.jpg",
+			"gallery": [],
+			"sku": "CL-LFF",
+			"sales": 188,
+			"regular": "119",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "A dripping faucet, a weeping joint or a leak under the sink, found and fixed. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"We find where the water is coming from and fix it: a washer or cartridge, a joint, a trap or a supply line. Bigger leaks get a fixed price before we start."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"The leak traced to its source",
+						"Washer, cartridge, seal or joint replaced",
+						"Traps and supply lines checked",
+						"Run under pressure and checked",
+						"Wet areas dried and photographed",
+						"Advice if anything else is close to failing"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				}
+			],
+			"cross_sells": [
+				"water-heater-flush"
+			]
+		},
+		{
+			"slug": "toilet-repaired",
+			"name": "Toilet repaired or reseated",
+			"category": "plumbing",
+			"image": "images/bathtub-photo.jpg",
+			"gallery": [],
+			"sku": "CL-TRR",
+			"sales": 77,
+			"regular": "139",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "A running, rocking or leaking toilet, fixed or reseated on a new seal. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"A toilet that runs, rocks or leaks at the base: we replace the flapper, fill valve or wax seal and set it level and tight."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Flapper and fill valve checked",
+						"Wax seal replaced if it leaks",
+						"Bowl reseated and leveled",
+						"Bolts and caps replaced",
+						"Flushed and checked for leaks"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				}
+			]
+		},
+		{
+			"slug": "water-heater-flush",
+			"name": "Water heater flush",
+			"category": "plumbing",
+			"image": "images/hose-valve-photo.jpg",
+			"gallery": [],
+			"sku": "CL-WHF",
+			"sales": 133,
+			"regular": "119",
+			"featured": true,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Drain the sediment, test the relief valve and the anode. Tank or tankless. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"Columbus water is hard, and sediment builds up in every heater. We flush it out, test the relief valve and check the anode that keeps the tank from rusting."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Heater drained and flushed",
+						"Relief valve tested",
+						"Anode rod checked",
+						"Burner or elements checked",
+						"Temperature set safely",
+						"Tankless: descaled with a pump"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				}
+			]
+		},
+		{
+			"slug": "outlet-switch-swapped",
+			"name": "Outlet or switch swapped",
+			"category": "electrical",
+			"image": "images/light-switch-photo.jpg",
+			"gallery": [],
+			"sku": "CL-OSS",
+			"sales": 120,
+			"regular": "89",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "A worn, loose or two-prong outlet, or a switch or dimmer, swapped and tested. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"We replace the outlet, switch or dimmer, tighten the connections behind it and test the circuit. Add more on the same visit for $35 each."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Circuit turned off and tested",
+						"Old device removed",
+						"Connections cleaned and tightened",
+						"New outlet, switch or dimmer fitted",
+						"Grounding and polarity tested"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				}
+			],
+			"defaults": {
+				"Day": "Tuesday",
+				"Arrival window": "12–2 pm"
+			}
+		},
+		{
+			"slug": "light-fixture-install",
+			"name": "Light fixture install",
+			"category": "electrical",
+			"image": "images/copper-pendant-photo.jpg",
+			"gallery": [],
+			"sku": "CL-LFI",
+			"sales": 102,
+			"regular": "99",
+			"featured": true,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Pendant, flush or ceiling fan, on an existing box. Tested and tidied. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"Your new pendant, flush light or ceiling fan, fitted to the existing box, the box checked for weight and the old fitting taken away."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Circuit turned off and tested",
+						"Box checked for weight",
+						"New fixture or fan fitted",
+						"Connections made and tested",
+						"Old fitting taken away"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				}
+			],
+			"meta": {
+				"_themor_badge": "Fully booked",
+				"_themor_badge_color": "#0A1633",
+				"_themor_restock_date": {
+					"next": "tuesday"
+				}
+			}
+		},
+		{
+			"slug": "breaker-panel-check",
+			"name": "Breaker panel safety check",
+			"category": "electrical",
+			"image": "images/breaker-wires-photo.jpg",
+			"gallery": [],
+			"sku": "CL-BPC",
+			"sales": 69,
+			"regular": "149",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Every breaker, connection and ground checked, with a written report and photos. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"For an older house, a new home or after a scare: Marisol or Chris checks your panel, every breaker and the grounding, and writes down what they find."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Panel opened and inspected",
+						"Breakers tested and labeled",
+						"Connections checked for heat",
+						"Grounding and bonding checked",
+						"GFCI and AFCI protection checked",
+						"A written report, with photos"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				}
+			],
+			"cross_sells": [
+				"smoke-co-alarms"
+			]
+		},
+		{
+			"slug": "drain-cleared",
+			"name": "Drain cleared",
+			"category": "drains",
+			"image": "images/dark-basin-photo.jpg",
+			"gallery": [],
+			"sku": "CL-DRC",
+			"sales": 156,
+			"regular": "149",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "A sink, tub or shower drain cleared with a cable, no chemicals. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"We clear the drain with a cable and water, check the trap and the vent, and run it hot to make sure it stays clear."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Trap removed and cleaned",
+						"Line cleared with a cable",
+						"Vent checked",
+						"Run hot and checked",
+						"Advice on keeping it clear"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				}
+			],
+			"defaults": {
+				"Day": "Monday",
+				"Arrival window": "4–6 pm"
+			}
+		},
+		{
+			"slug": "main-sewer-cleared",
+			"name": "Main sewer line cleared",
+			"category": "drains",
+			"image": "images/elbow-hand-photo.jpg",
+			"gallery": [],
+			"sku": "CL-MSC",
+			"sales": 54,
+			"regular": "289",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About two hours",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Roots and blockages cleared from the main line, from the cleanout. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"When every drain in the house is slow: we clear the main line from the cleanout with a root cutter, then run water to prove it."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Cleanout opened",
+						"Main line cleared with a root cutter",
+						"Water run through every floor",
+						"Cleanout sealed",
+						"Camera check offered at half price"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				}
+			],
+			"cross_sells": [
+				"camera-inspection"
+			]
+		},
+		{
+			"slug": "camera-inspection",
+			"name": "Camera inspection, with video",
+			"category": "drains",
+			"image": "images/kitchen-sink-photo.jpg",
+			"gallery": [],
+			"sku": "CL-CAM",
+			"sales": 41,
+			"regular": "199",
+			"featured": false,
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Day": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"Arrival window": [
+					"8–10 am",
+					"10–12",
+					"12–2 pm",
+					"2–4 pm",
+					"4–6 pm"
+				],
+				"Takes": "About an hour",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "A camera down the line, with you watching. You keep the recording. Nothing to pay until it's done, any repair priced in writing first, and two years' guarantee on the work.",
+			"description": [
+				[
+					"p",
+					"We run a camera down the drain or the main line, show you what we see on the screen and send you the recording."
+				],
+				[
+					"h2",
+					"What's in the visit"
+				],
+				[
+					"ul",
+					[
+						"Camera run from the cleanout",
+						"Depth and distance marked",
+						"Breaks, roots and sags noted",
+						"The video sent to you",
+						"A written note of what we found"
+					]
+				],
+				[
+					"details",
+					"Before we come",
+					"Clear a path to where we'll work and keep pets in another room. Someone over 18 needs to be home."
+				],
+				[
+					"details",
+					"If we find a fault",
+					"We show you, give you a fixed price, and only fix it if you say yes. Most repairs are done on the same visit."
+				],
+				[
+					"details",
+					"Changing or cancelling",
+					"Free until 6 pm the day before. From your account, or with a call."
+				]
+			],
+			"variations": [
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Monday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Tuesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "10–12"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Wednesday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Thursday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 0
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "10–12"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "2–4 pm"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Friday",
+						"Arrival window": "4–6 pm"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "8–10 am"
+					},
+					"stock": 3
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "10–12"
+					},
+					"stock": 1
+				},
+				{
+					"options": {
+						"Day": "Saturday",
+						"Arrival window": "12–2 pm"
+					},
+					"stock": 2
+				}
+			]
+		},
+		{
+			"slug": "radiators-bled-balanced",
+			"name": "Radiators bled and balanced",
+			"category": "heating-cooling",
+			"image": "images/radiator-fins-photo.jpg",
+			"sku": "CL-RBB",
+			"sales": 88,
+			"regular": "59",
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Takes": "Done on the same visit",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Every radiator bled and the system balanced, so the top floor warms up too.",
+			"description": [
+				"Done on the same visit as another job: every radiator bled of air, the valves set so the far rooms heat as well as the near ones."
+			]
+		},
+		{
+			"slug": "smoke-co-alarms",
+			"name": "Smoke and CO alarms fitted, each",
+			"category": "electrical",
+			"image": "images/screwdriver-photo.jpg",
+			"sku": "CL-SCA",
+			"sales": 73,
+			"regular": "59",
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Takes": "Done on the same visit",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Hard-wired or battery, fitted where the code says and tested.",
+			"description": [
+				"A smoke or carbon monoxide alarm fitted in the right place, linked to the others if they're hard-wired, and tested with you."
+			]
+		},
+		{
+			"slug": "gas-line-leak-test",
+			"name": "Gas line leak test",
+			"category": "heating-cooling",
+			"image": "images/brass-fittings-photo.jpg",
+			"sku": "CL-GLT",
+			"sales": 39,
+			"regular": "49",
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Takes": "Done on the same visit",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Every gas joint from the meter to the appliances, tested.",
+			"description": [
+				"Done on the same visit as another job: we test every joint on the gas line with a detector and soap, and tighten or remake any that leak."
+			]
+		},
+		{
+			"slug": "co-alarm-check",
+			"name": "CO alarm check",
+			"category": "heating-cooling",
+			"image": "images/colour-wires-photo.jpg",
+			"sku": "CL-COC",
+			"sales": 51,
+			"regular": "29",
+			"virtual": true,
+			"stock": null,
+			"specs": {
+				"Takes": "Done on the same visit",
+				"Guarantee": "Two years on the work"
+			},
+			"short": "Your carbon monoxide alarms tested, and moved if they're in the wrong place.",
+			"description": [
+				"While we're there: every carbon monoxide alarm tested, its date checked and its place checked against the code."
+			]
+		}
+	],
+	"reviews": {
+		"furnace-tune-up": [
+			[
+				"Tom W.",
+				5,
+				"Booked at breakfast for that afternoon. Ana found a cracked filter housing, showed me, and fixed it there and then."
+			],
+			[
+				"Lena H.",
+				5,
+				"The report had photos of everything. Nobody tried to sell me a new furnace."
+			],
+			[
+				"Greg P.",
+				5,
+				"Knocked at 2:15 for a 2 to 4 window. Done by 3:20 and the house was warm by dinner."
+			],
+			[
+				"Amara O.",
+				4,
+				"Thorough and friendly. I wish the Saturday windows didn't go so fast."
+			],
+			[
+				"Bill S.",
+				5,
+				"Fourth year in a row. Same price, same care."
+			]
+		],
+		"ac-tune-up": [
+			[
+				"Rosa M.",
+				5,
+				"The AC had been running warm for a month. A cleaned coil and a new capacitor later, it's cold again."
+			],
+			[
+				"Kevin D.",
+				5,
+				"They texted twenty minutes out, wore shoe covers and left the yard tidier than they found it."
+			]
+		],
+		"faucet-replacement": [
+			[
+				"Hannah L.",
+				5,
+				"Fitted the faucet I'd bought online and found the shut-off valve was seized. Fixed that too, for the price they quoted first."
+			],
+			[
+				"Darnell R.",
+				5,
+				"In and out in under an hour."
+			]
+		],
+		"leak-found-fixed": [
+			[
+				"Sofia G.",
+				5,
+				"Found a slow leak behind the dishwasher that two others missed."
+			],
+			[
+				"Pete A.",
+				4,
+				"Good work. The window was 10 to 12 and they came at 11:50, but they called ahead."
+			]
+		],
+		"outlet-switch-swapped": [
+			[
+				"Mei C.",
+				5,
+				"Swapped six two-prong outlets on one visit and labeled the breakers while they were at it."
+			]
+		],
+		"breaker-panel-check": [
+			[
+				"Jon F.",
+				5,
+				"Bought a 1950s house. The report told us exactly what to fix first, and what could wait."
+			],
+			[
+				"Alicia B.",
+				5,
+				"Marisol explained every photo in the report. Worth it for the peace of mind."
+			]
+		],
+		"drain-cleared": [
+			[
+				"Nate K.",
+				5,
+				"No chemicals, no mess, and the shower drains like new."
+			],
+			[
+				"Wendy T.",
+				4,
+				"Cleared quickly. They told me to get a hair catcher, and they were right."
+			]
+		],
+		"water-heater-flush": [
+			[
+				"Owen V.",
+				5,
+				"Our heater stopped popping and banging after the flush. They showed me how much sediment came out."
+			]
+		]
+	}
+}
