@@ -1,0 +1,440 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"style-notes": {
+			"name": "Style notes",
+			"description": "What to wear and how to wear it."
+		},
+		"wardrobe": {
+			"name": "Wardrobe",
+			"description": "Building a wardrobe that works."
+		},
+		"tech": {
+			"name": "Tech",
+			"description": "Desk tech, audio and small upgrades."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "perks"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "departments"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "deals"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "arrivals"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "promos"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "lists"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "summer"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "journal",
+						"categories": [
+							"style-notes",
+							"wardrobe",
+							"tech"
+						]
+					}
+				]
+			]
+		},
+		"new-in": {
+			"title": "New in",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "new-in-page"
+					}
+				]
+			]
+		},
+		"sale": {
+			"title": "Sale",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "sale-page"
+					}
+				]
+			]
+		},
+		"summer-shop": {
+			"title": "The summer edit",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "summer-page"
+					}
+				]
+			]
+		},
+		"gift-ideas": {
+			"title": "Gift ideas",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "gifts-page"
+					}
+				]
+			]
+		},
+		"wishlist": {
+			"title": "Wishlist",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "wishlist-page"
+					}
+				]
+			]
+		},
+		"size-guide": {
+			"title": "Size guide",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "size-guide-page"
+					}
+				]
+			]
+		},
+		"help": {
+			"title": "Help and returns",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "help-page"
+					}
+				]
+			]
+		},
+		"about": {
+			"title": "About us",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "about-page"
+					}
+				]
+			]
+		},
+		"journal": {
+			"title": "Journal",
+			"content": []
+		},
+		"privacy": {
+			"title": "Privacy",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "privacy-page"
+					}
+				]
+			]
+		},
+		"terms": {
+			"title": "Terms",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "terms-page"
+					}
+				]
+			]
+		}
+	},
+	"posts": {
+		"sun-hat-that-suits-you": {
+			"title": "How to choose a sun hat that suits you",
+			"category": "style-notes",
+			"image": "images/post-hats.jpg",
+			"days": 3,
+			"tags": [
+				"Summer",
+				"Hats"
+			],
+			"excerpt": "Brim width, crown height and straw: what to look for, by face shape and by day out.",
+			"content": [
+				[
+					"p",
+					"A good sun hat does two jobs: it keeps the sun off your face, and it looks like you meant to wear it. Three things decide both: the brim, the crown and the straw."
+				],
+				[
+					"h2",
+					"Start with the brim"
+				],
+				[
+					"p",
+					"A brim of three inches or more shades your face and the back of your neck. Narrower brims look sharper with a shirt, wider ones go better with a dress and a long walk on the beach."
+				],
+				[
+					"h2",
+					"Then the crown"
+				],
+				[
+					"p",
+					"A tall crown balances a round face, and a lower crown suits a long one. The band sits on your forehead, so try it there, not on the back of your head."
+				],
+				[
+					"h2",
+					"And the straw"
+				],
+				[
+					"ul",
+					[
+						"Panama straw is light, fine and packs flat when it’s rolled.",
+						"Raffia is soft and a little floppy, so it’s good for the beach.",
+						"Paper straw is cheap and cheerful, and doesn’t like rain."
+					]
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-aviators"
+					}
+				]
+			]
+		},
+		"spring-capsule-wardrobe": {
+			"title": "A spring capsule wardrobe in twelve pieces",
+			"category": "wardrobe",
+			"image": "images/post-capsule.jpg",
+			"days": 9,
+			"sticky": true,
+			"tags": [
+				"Wardrobe",
+				"Spring"
+			],
+			"excerpt": "Twelve pieces that make more than thirty outfits, from the office to the weekend.",
+			"content": [
+				[
+					"p",
+					"A capsule wardrobe isn’t about owning less for the sake of it. It’s about owning pieces that all go together, so getting dressed takes a minute and every outfit works."
+				],
+				[
+					"h2",
+					"The twelve pieces"
+				],
+				[
+					"ol",
+					[
+						"Two organic cotton tees, one white, one navy",
+						"A linen camp-collar shirt",
+						"A relaxed Oxford shirt",
+						"A striped knit jumper",
+						"Straight-leg jeans",
+						"A pleated midi skirt",
+						"A light blazer",
+						"Leather chukka boots",
+						"Rope sandals",
+						"A leather belt",
+						"A simple watch"
+					]
+				],
+				[
+					"h2",
+					"How to make it work"
+				],
+				[
+					"p",
+					"Keep to three colours and one accent. Here it’s navy, white and sand, with the stripe of the jumper as the accent. Everything goes with everything, so every top works with every bottom."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-striped-jumper"
+					}
+				],
+				[
+					"h2",
+					"What to leave out"
+				],
+				[
+					"p",
+					"Anything you have to save for a special day. A capsule is for every day, so leave the party pieces in another drawer."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-linen-shirt"
+					}
+				]
+			]
+		},
+		"desk-upgrades-under-50": {
+			"title": "Five desk upgrades under $50",
+			"category": "tech",
+			"image": "images/post-desk.jpg",
+			"days": 15,
+			"tags": [
+				"Desk",
+				"Working from home"
+			],
+			"excerpt": "Small changes that make long days at a desk easier on your hands, ears and eyes.",
+			"content": [
+				[
+					"p",
+					"You don’t need a new desk to work better at the one you have. These five small changes cost less than $50 each, and they’re the ones we’d buy first."
+				],
+				[
+					"h2",
+					"A quiet mouse"
+				],
+				[
+					"p",
+					"Silent clicks sound like a small thing until you’ve shared a room with a loud one. A mouse that fits your hand matters more than one with ten buttons."
+				],
+				[
+					"h2",
+					"A warm lamp"
+				],
+				[
+					"p",
+					"A lamp beside your screen, with a warm bulb, is easier on the eyes than a bright ceiling light alone."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-task-lamp"
+					}
+				],
+				[
+					"h2",
+					"Speakers that sit on the desk"
+				],
+				[
+					"p",
+					"Small speakers at ear height beat laptop speakers by miles, and save you from headphones all day."
+				],
+				[
+					"h2",
+					"A keyboard worth typing on"
+				],
+				[
+					"p",
+					"A compact keyboard leaves room for your mouse closer in, which is kinder to your shoulder."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-tkl-keyboard"
+					}
+				]
+			]
+		}
+	},
+	"theme_posts": {
+		"themor_content_block": {
+			"tagandtwine-welcome-popup": {
+				"title": "Welcome offer popup",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "popup-welcome"
+						}
+					]
+				],
+				"meta": {
+					"_themor_content_block_type": "popup",
+					"_themor_content_block": {
+						"type": "popup",
+						"enabled": true,
+						"conditions": [
+							{
+								"type": "everywhere"
+							}
+						],
+						"devices": [
+							"desktop",
+							"tablet",
+							"mobile"
+						],
+						"popup_trigger": "time",
+						"popup_delay": 6,
+						"popup_again": "after",
+						"popup_again_days": 30,
+						"popup_again_done": 90,
+						"popup_close_action": "button",
+						"popup_close_selector": ".tagandtwine-popup-close",
+						"popup_size": "custom",
+						"popup_width": {
+							"size": 860,
+							"unit": "px"
+						},
+						"popup_position": "center",
+						"popup_animation": "zoom",
+						"popup_backdrop_color": "rgba(23, 21, 31, 0.42)",
+						"popup_radius": 28,
+						"popup_padding": {
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"unit": "px"
+						},
+						"popup_shadow_color": "rgba(23, 21, 31, 0.28)",
+						"popup_overflow": "hidden"
+					}
+				}
+			}
+		}
+	}
+}

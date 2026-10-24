@@ -1,0 +1,216 @@
+/*
+ * Product tabs: the heading at the start of the tab row, the tabs as pills at its end (below it
+ * once they don't fit beside it, and on narrow screens), scrolling sideways when they don't fit in
+ * the width; then the picked tab's products, as the shop's grid draws them, and a "See all" link.
+ *
+ * Without scripts the tab row stays hidden and every tab's products show one after another, each
+ * under its tab's name. Where the browser runs scripts, the tab row and the first tab's products
+ * show from the start, so nothing moves when the script sets the tabs up (`is-tabbed`).
+ *
+ * A theme restyles it with custom properties, whose colors fall back to the shop module's
+ * (--themor-shop-*): --themor-product-tabs-bg, -color and -border (a tab), -active-bg and
+ * -active-color (the picked tab), -focus (the focus ring), -radius, -gap (between the tabs),
+ * -weight and -size (their type), -height (their least height), -padding (at their sides) and
+ * -space (between the tab row and the products, and before the link). "See all" is drawn as a tab.
+ */
+
+/* Its least width isn't the tab row's: in a grid or a row of blocks, the row scrolls instead. */
+.themor-product-tabs {
+	display: flex;
+	flex-direction: column;
+	gap: var(--themor-product-tabs-space, 1.5rem);
+	min-inline-size: 0;
+}
+
+.themor-product-tabs .themor-product-tabs__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: calc(var(--themor-product-tabs-space, 1.5rem) / 2) var(--themor-product-tabs-space, 1.5rem);
+	min-inline-size: 0;
+}
+
+.themor-product-tabs .themor-product-tabs__heading {
+	margin: 0;
+}
+
+/* The tab row: the 4px around the tabs are the focus ring's room inside the scrolling box. */
+.themor-product-tabs .themor-product-tabs__tabs {
+	display: none;
+	flex: 0 1 auto;
+	gap: var(--themor-product-tabs-gap, 0.5rem);
+	min-inline-size: 0;
+	margin: -4px;
+	padding: 4px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+	scroll-padding-inline: 4px;
+	scrollbar-width: thin;
+}
+
+.themor-product-tabs .themor-product-tabs__tab,
+.themor-product-tabs .themor-product-tabs__link {
+	display: inline-flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	box-sizing: border-box;
+	min-block-size: var(--themor-product-tabs-height, 2.5rem);
+	margin: 0;
+	padding-block: 0;
+	padding-inline: var(--themor-product-tabs-padding, 1.125rem);
+	border: 1px solid var(--themor-product-tabs-border, var(--themor-shop-border, #e5e7eb));
+	border-radius: var(--themor-product-tabs-radius, 999px);
+	background: var(--themor-product-tabs-bg, var(--themor-shop-bg, #fff));
+	box-shadow: none;
+	color: var(--themor-product-tabs-color, var(--themor-shop-text, #1f2937));
+	font: inherit;
+	font-size: var(--themor-product-tabs-size, 0.9375rem);
+	font-weight: var(--themor-product-tabs-weight, 600);
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-decoration: none;
+	text-transform: none;
+	white-space: nowrap;
+	cursor: pointer;
+	scroll-snap-align: start;
+	transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.themor-product-tabs .themor-product-tabs__tab:hover,
+.themor-product-tabs .themor-product-tabs__link:hover {
+	border-color: currentColor;
+	background: var(--themor-product-tabs-bg, var(--themor-shop-bg, #fff));
+	color: var(--themor-product-tabs-color, var(--themor-shop-text, #1f2937));
+}
+
+/* The picked tab; in the editor's preview, the tab shown (aria-pressed). */
+.themor-product-tabs .themor-product-tabs__tab[aria-selected="true"],
+.themor-product-tabs .themor-product-tabs__tab[aria-pressed="true"] {
+	border-color: var(--themor-product-tabs-active-bg, var(--themor-shop-accent, #2563eb));
+	background: var(--themor-product-tabs-active-bg, var(--themor-shop-accent, #2563eb));
+	color: var(--themor-product-tabs-active-color, var(--themor-shop-on-accent, #fff));
+	cursor: default;
+}
+
+.themor-product-tabs .themor-product-tabs__tab:focus-visible,
+.themor-product-tabs .themor-product-tabs__link:focus-visible {
+	outline: 2px solid var(--themor-product-tabs-focus, var(--themor-shop-accent, #2563eb));
+	outline-offset: 2px;
+}
+
+.themor-product-tabs .themor-product-tabs__panel:focus-visible {
+	outline: 2px solid var(--themor-product-tabs-focus, var(--themor-shop-accent, #2563eb));
+	outline-offset: 4px;
+}
+
+/* Each tab's name over its products, without scripts. */
+.themor-product-tabs .themor-product-tabs__label {
+	margin-block: 0 calc(var(--themor-product-tabs-space, 1.5rem) * 0.75);
+	margin-inline: 0;
+}
+
+.themor-product-tabs .themor-product-tabs__panel + .themor-product-tabs__panel {
+	margin-block-start: var(--themor-product-tabs-space, 1.5rem);
+}
+
+.themor-product-tabs .themor-product-tabs__more {
+	display: flex;
+	justify-content: center;
+	margin-block: var(--themor-product-tabs-space, 1.5rem) 0;
+	margin-inline: 0;
+}
+
+/* Over a theme's underlined links in content, such as `.entry-content a:not(.button)`. */
+.themor-product-tabs .themor-product-tabs__more .themor-product-tabs__link {
+	text-decoration: none;
+}
+
+.themor-product-tabs__arrow {
+	flex: none;
+	width: 1em;
+	height: 1em;
+}
+
+:where([dir="rtl"]) .themor-product-tabs__arrow {
+	transform: scaleX(-1);
+}
+
+/* As tabs: once the script has set them up. */
+.themor-product-tabs.is-tabbed .themor-product-tabs__tabs {
+	display: flex;
+}
+
+.themor-product-tabs.is-tabbed .themor-product-tabs__label {
+	display: none;
+}
+
+.themor-product-tabs.is-tabbed .themor-product-tabs__panel + .themor-product-tabs__panel {
+	margin-block-start: 0;
+}
+
+/* As tabs from the start where the browser runs scripts, the first tab's products only until the
+   script sets them up. Browsers that can't tell show every panel until then. */
+@media (scripting: enabled) {
+	.themor-product-tabs .themor-product-tabs__tabs {
+		display: flex;
+	}
+
+	.themor-product-tabs .themor-product-tabs__label {
+		display: none;
+	}
+
+	.themor-product-tabs .themor-product-tabs__panel + .themor-product-tabs__panel {
+		margin-block-start: 0;
+	}
+
+	.themor-product-tabs:not(.is-tabbed) .themor-product-tabs__panel ~ .themor-product-tabs__panel {
+		display: none;
+	}
+}
+
+/* Narrow screens: the tabs below the heading, scrolling sideways when they don't fit. One line, so
+   the tab row is as wide as the block, not as its tabs. */
+@media (max-width: 600px) {
+	.themor-product-tabs .themor-product-tabs__head {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: stretch;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.themor-product-tabs .themor-product-tabs__tab,
+	.themor-product-tabs .themor-product-tabs__link {
+		transition: none;
+	}
+}
+
+@media (forced-colors: active) {
+	.themor-product-tabs .themor-product-tabs__tab[aria-selected="true"],
+	.themor-product-tabs .themor-product-tabs__tab[aria-pressed="true"] {
+		border-color: Highlight;
+		background: Highlight;
+		color: HighlightText;
+		forced-color-adjust: none;
+	}
+}
+
+/* The editor's preview (src/product-tabs.tsx): its own tab row picks the tab whose products show
+   under it, printed by the site; the site's tab row there stays hidden. */
+.themor-product-tabs .themor-product-tabs__preview .themor-product-tabs__tabs {
+	display: none;
+}
+
+.themor-product-tabs .themor-product-tabs__empty {
+	margin: 0;
+	padding: 1.5rem;
+	border: 1px dashed var(--themor-product-tabs-border, var(--themor-shop-border, #e5e7eb));
+	border-radius: var(--themor-shop-radius, 10px);
+	color: var(--themor-shop-muted, #6b7280);
+	text-align: center;
+}

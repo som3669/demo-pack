@@ -1,0 +1,1390 @@
+/* Tag & Twine: a store of many departments, for Yantra Pro.
+ * White and a lilac mist, iris for links and badges, butter yellow for buttons and prices, and the
+ * signature: every price on a swing tag, notched and punched, with one hanging on twine in the hero. */
+
+:root {
+	--tt-ink: var(--yantra-color-3, #17151F);
+	--tt-body: var(--yantra-color-4, #48455A);
+	--tt-muted: var(--yantra-color-5, #6B6880);
+	--tt-line: var(--yantra-color-6, #E7E4F0);
+	--tt-mist: var(--yantra-color-7, #F5F2FF);
+	--tt-mist-line: #E2DCF7;
+	--tt-iris: var(--yantra-color-1, #5B46E8);
+	--tt-iris-dark: var(--yantra-color-2, #3F2DC4);
+	--tt-butter: #FFD84A;
+	--tt-butter-dark: #F5C518;
+	--tt-green: #17804F;
+	--tt-amber: #A14A00;
+	--tt-star: #F2A900;
+	--tt-rose: #FCE8F1;
+	--tt-sky: #E9ECFB;
+	--tt-lilac: #EFEBFF;
+	--tt-display: 'Gabarito', var(--yantra-heading-font, sans-serif);
+	--tt-card-radius: 20px;
+	--tt-section-radius: 28px;
+	/* The shop module's tokens. */
+	--themor-shop-low: #FFB224;
+	--themor-shop-free: var(--tt-green);
+	--themor-shop-new: #FFFFFF;
+	--themor-shop-own: #DDF3E7;
+	--themor-shop-on-own: #0F5F3A;
+	--themor-card-colors-size: 0.8rem;
+}
+
+/* -------------------------------------------------------------------------
+ * Shared pieces.
+ * ---------------------------------------------------------------------- */
+
+.tagandtwine-section {
+	margin-block: 0;
+}
+
+.tagandtwine-section .alignwide > *,
+.tagandtwine-hero,
+.tagandtwine-hero * {
+	margin-block-start: 0;
+}
+
+.tagandtwine-eyebrow {
+	margin: 0;
+	color: var(--tt-iris);
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.tagandtwine-display {
+	margin: 0;
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: clamp(42px, 5vw, 66px);
+	font-weight: 800;
+	line-height: 0.98;
+	letter-spacing: -0.02em;
+	text-wrap: balance;
+}
+
+.tagandtwine-lead {
+	max-width: 30rem;
+	margin: 0;
+	font-size: 17px;
+	line-height: 1.55;
+}
+
+.tagandtwine-title {
+	margin: 0;
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: clamp(26px, 2.4vw, 32px);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.tagandtwine-more {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.tagandtwine-more a {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--tt-iris);
+	text-decoration: none;
+}
+
+.tagandtwine-more a::after {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.tagandtwine-more a:hover {
+	color: var(--tt-iris-dark);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+[dir="rtl"] .tagandtwine-more a::after {
+	transform: scaleX(-1);
+}
+
+.tagandtwine-fine {
+	margin: 0;
+	color: var(--tt-muted);
+	font-size: 13px;
+}
+
+/* A section's heading row: the title and its note, a countdown or a link on the other side. */
+.tagandtwine-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 12px 24px;
+	margin-block-end: 24px !important;
+}
+
+.tagandtwine-head__words > * + * {
+	margin-block-start: 6px;
+}
+
+.tagandtwine-head__note {
+	margin: 0;
+	color: var(--tt-muted);
+	font-size: 15px;
+}
+
+.tagandtwine-head__side {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px 20px;
+}
+
+.tagandtwine-head__side > * {
+	margin: 0 !important;
+}
+
+/* The countdown chip: dark, with a butter clock (as strong as Yantra Pro's colours for the block). */
+.wp-block-themor-countdown.tagandtwine-countdown {
+	--themor-countdown-bg: var(--tt-ink);
+	--themor-countdown-color: #FFFFFF;
+	--themor-countdown-icon: var(--tt-butter);
+	--themor-countdown-radius: 12px;
+	--themor-countdown-weight: 600;
+}
+
+/* The signature: a price on a swing tag. */
+.tagandtwine-tag,
+.woocommerce ul.products li.product .price > .amount,
+.woocommerce ul.products li.product .price ins,
+.woocommerce div.product .summary .price > .amount,
+.woocommerce div.product .summary .price ins {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	min-height: 30px;
+	padding: 0 13px 0 25px;
+	background: var(--tt-butter);
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+	clip-path: polygon(12px 0, 100% 0, 100% 100%, 12px 100%, 0 50%);
+	border-radius: 0 8px 8px 0;
+}
+
+.tagandtwine-tag::before,
+.woocommerce ul.products li.product .price > .amount::before,
+.woocommerce ul.products li.product .price ins::before,
+.woocommerce div.product .summary .price > .amount::before,
+.woocommerce div.product .summary .price ins::before {
+	content: "";
+	position: absolute;
+	inset-inline-start: 10px;
+	top: 50%;
+	width: 6px;
+	height: 6px;
+	margin-top: -3px;
+	border-radius: 999px;
+	background: #FFFFFF;
+}
+
+[dir="rtl"] .tagandtwine-tag,
+[dir="rtl"] .woocommerce ul.products li.product .price > .amount,
+[dir="rtl"] .woocommerce ul.products li.product .price ins,
+[dir="rtl"] .woocommerce div.product .summary .price > .amount,
+[dir="rtl"] .woocommerce div.product .summary .price ins {
+	clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%);
+	border-radius: 8px 0 0 8px;
+}
+
+.tagandtwine-tag-line {
+	margin: 0;
+}
+
+/* Buttons: butter by the Customizer; a quiet text link where the design has one. */
+.tagandtwine-button .wp-block-button__link {
+	min-height: 52px;
+	padding: 0 26px;
+	display: inline-flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.tagandtwine-button--link .wp-block-button__link,
+.tagandtwine-button--link.is-style-outline .wp-block-button__link {
+	padding-inline: 4px;
+	border: 0;
+	background: none;
+	color: var(--tt-ink);
+	font-weight: 600;
+	font-size: 15px;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.tagandtwine-button--link .wp-block-button__link:hover {
+	color: var(--tt-iris);
+	background: none;
+}
+
+.tagandtwine-actions {
+	gap: 12px 20px;
+	margin-block-start: 6px !important;
+}
+
+/* -------------------------------------------------------------------------
+ * Home: the hero, with a tag hanging on twine, and two promotions.
+ * ---------------------------------------------------------------------- */
+
+.tagandtwine-hero {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	gap: 20px;
+}
+
+.tagandtwine-hero__lead {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+	overflow: hidden;
+	border-radius: var(--tt-section-radius);
+	background: var(--tt-mist);
+}
+
+.tagandtwine-hero__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 18px;
+	padding: clamp(28px, 4vw, 52px);
+}
+
+.tagandtwine-hero__picture {
+	position: relative;
+	min-height: 460px;
+}
+
+.tagandtwine-hero__photo {
+	position: absolute !important;
+	inset: 0;
+	margin: 0 !important;
+}
+
+.tagandtwine-hero__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.tagandtwine-hanger {
+	position: absolute !important;
+	top: 76px;
+	inset-inline-start: 96px;
+	margin: 0 !important;
+	transform: rotate(-9deg);
+	transform-origin: 15px 50%;
+	filter: drop-shadow(0 12px 18px rgb(23 21 31 / 0.18));
+}
+
+/* The twine: from the photo's top edge to the tag's hole. */
+.tagandtwine-hanger::before {
+	content: "";
+	position: absolute;
+	top: -76px;
+	inset-inline-start: -56px;
+	width: 120px;
+	height: 130px;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 130'%3E%3Cpath d='M8 0 C 14 46, 36 92, 71 122' fill='none' stroke='%23A08C6B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;
+	transform: rotate(9deg);
+	transform-origin: 71px 122px;
+	pointer-events: none;
+}
+
+.tagandtwine-swing {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2px;
+	box-sizing: border-box;
+	width: 168px;
+	height: 92px;
+	margin: 0;
+	padding: 0 18px 0 40px;
+	background: var(--tt-butter);
+	color: var(--tt-ink);
+	clip-path: polygon(20px 0, 100% 0, 100% 100%, 20px 100%, 0 50%);
+	border-radius: 0 12px 12px 0;
+}
+
+.tagandtwine-swing::before {
+	content: "";
+	position: absolute;
+	inset-inline-start: 10px;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	border-radius: 999px;
+	background: #FFFFFF;
+	box-shadow: inset 0 0 0 2px rgb(23 21 31 / 0.18);
+}
+
+.tagandtwine-swing span {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.tagandtwine-swing strong {
+	font-family: var(--tt-display);
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 0.9;
+}
+
+[dir="rtl"] .tagandtwine-swing {
+	padding: 0 40px 0 18px;
+	clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+	border-radius: 12px 0 0 12px;
+}
+
+[dir="rtl"] .tagandtwine-hanger,
+[dir="rtl"] .tagandtwine-hanger::before {
+	transform: none;
+}
+
+.tagandtwine-hero__side {
+	display: grid;
+	gap: 20px;
+}
+
+.tagandtwine-promo {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+	overflow: hidden;
+	min-height: 220px;
+	border-radius: var(--tt-section-radius);
+	color: var(--tt-ink);
+}
+
+.tagandtwine-promo--rose {
+	background: var(--tt-rose);
+}
+
+.tagandtwine-promo--sky {
+	background: var(--tt-sky);
+}
+
+.tagandtwine-promo__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+	padding: 24px 0 24px 26px;
+}
+
+.tagandtwine-promo__title {
+	margin: 0;
+	font-family: var(--tt-display);
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1.05;
+	letter-spacing: -0.01em;
+}
+
+.tagandtwine-promo__photo {
+	margin: 0 !important;
+}
+
+.tagandtwine-promo__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+/* Perks: delivery, returns, checkout and help. */
+.tagandtwine-perks {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px 24px;
+	margin: 0;
+	padding: 20px 4px;
+	border-block: 1px solid var(--tt-line);
+	list-style: none;
+}
+
+.tagandtwine-perks li {
+	display: grid;
+	grid-template-columns: 44px 1fr;
+	align-items: center;
+	column-gap: 14px;
+	margin: 0;
+}
+
+.tagandtwine-perks strong {
+	color: var(--tt-ink);
+	font-size: 15px;
+}
+
+.tagandtwine-perks li > span:last-child {
+	grid-column: 2;
+	color: var(--tt-muted);
+	font-size: 14px;
+}
+
+.tagandtwine-perk__icon {
+	grid-row: span 2;
+	width: 44px;
+	height: 44px;
+	border-radius: 999px;
+	background: var(--tt-mist);
+	position: relative;
+}
+
+.tagandtwine-perk__icon::after {
+	content: "";
+	position: absolute;
+	inset: 11px;
+	background: var(--tt-iris);
+	-webkit-mask: var(--tt-icon) center / contain no-repeat;
+	mask: var(--tt-icon) center / contain no-repeat;
+}
+
+.tagandtwine-perk__icon--truck {
+	--tt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 7h11v9H3zM14 10h4l3 3v3h-7z'/%3E%3Ccircle cx='7' cy='17.5' r='1.5'/%3E%3Ccircle cx='17.5' cy='17.5' r='1.5'/%3E%3C/svg%3E");
+}
+
+.tagandtwine-perk__icon--return {
+	--tt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12a8 8 0 1 0 2.3-5.6'/%3E%3Cpath d='M4 4v4h4'/%3E%3C/svg%3E");
+}
+
+.tagandtwine-perk__icon--lock {
+	--tt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='9' rx='2'/%3E%3Cpath d='M8 11V8a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E");
+}
+
+.tagandtwine-perk__icon--chat {
+	--tt-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 5h16v11H8l-4 4z'/%3E%3C/svg%3E");
+}
+
+/* Shop by department: round photo tiles. */
+.tagandtwine-depts {
+	display: grid;
+	grid-template-columns: repeat(8, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.tagandtwine-dept {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	text-align: center;
+}
+
+.tagandtwine-dept__photo {
+	width: 100%;
+	max-width: 132px;
+	margin: 0 !important;
+}
+
+.tagandtwine-dept__photo img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 999px;
+	background: var(--tt-mist);
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.tagandtwine-dept:hover .tagandtwine-dept__photo img {
+	box-shadow: 0 0 0 3px #FFFFFF, 0 0 0 5px var(--tt-iris);
+}
+
+.tagandtwine-dept__name {
+	margin: 0 !important;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.tagandtwine-dept__name a {
+	color: var(--tt-ink);
+	text-decoration: none;
+}
+
+/* The whole tile follows its name's link. */
+.tagandtwine-dept {
+	position: relative;
+}
+
+.tagandtwine-dept__name a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.tagandtwine-dept__name a:focus-visible {
+	outline: none;
+}
+
+.tagandtwine-dept:has(a:focus-visible) .tagandtwine-dept__photo img {
+	box-shadow: 0 0 0 3px #FFFFFF, 0 0 0 5px var(--tt-ink);
+}
+
+/* -------------------------------------------------------------------------
+ * Product cards, everywhere a list of products shows.
+ * ---------------------------------------------------------------------- */
+
+.woocommerce ul.products li.product a img,
+.woocommerce ul.products li.product a .woocommerce-placeholder {
+	aspect-ratio: 1;
+	object-fit: cover;
+	margin: 0 0 14px;
+	border-radius: var(--tt-card-radius);
+	background: var(--tt-mist);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+	margin: 0 0 6px;
+	padding: 0;
+	color: var(--tt-ink);
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.35;
+}
+
+.woocommerce ul.products li.product .star-rating {
+	margin: 0 0 8px;
+	color: var(--tt-star);
+	font-size: 13px;
+}
+
+.woocommerce ul.products li.product .price {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px 10px;
+	margin: 0 0 4px;
+	color: var(--tt-ink);
+}
+
+.woocommerce ul.products li.product .price del {
+	order: 2;
+	color: var(--tt-muted);
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 1;
+}
+
+.woocommerce ul.products li.product .price del .amount {
+	color: inherit;
+}
+
+/* The sale badge in iris and New in white, as pills. */
+.woocommerce ul.products li.product .onsale,
+.woocommerce span.onsale {
+	min-width: 0;
+	min-height: 0;
+	padding: 5px 11px;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.themor-badge--new {
+	color: var(--tt-ink);
+	box-shadow: 0 1px 4px rgb(23 21 31 / 0.14);
+}
+
+/* Card buttons: quiet outlines until pointed at, through Yantra's button tokens. */
+.woocommerce ul.products li.product {
+	--yantra-button-bg: transparent;
+	--yantra-button-text: var(--tt-ink);
+	--yantra-button-border: var(--tt-ink);
+	--yantra-button-hover: var(--tt-butter);
+	--yantra-button-text-hover: var(--tt-ink);
+	--yantra-button-border-hover: var(--tt-butter);
+	--yantra-button-border-width: 1.5px;
+	--yantra-button-padding-top: 9px;
+	--yantra-button-padding-bottom: 9px;
+	--yantra-button-padding-left: 16px;
+	--yantra-button-padding-right: 16px;
+	--yantra-button-size: 14px;
+}
+
+/* Grids made of groups: the editor's flow spacing would push all but the first child down. */
+:is(.tagandtwine-hero, .tagandtwine-hero__lead, .tagandtwine-hero__side, .tagandtwine-promo, .tagandtwine-depts, .tagandtwine-dept,
+	.tagandtwine-banner-cards, .tagandtwine-banner-card, .tagandtwine-lists, .tagandtwine-summer, .tagandtwine-popup) > * {
+	margin-block: 0;
+}
+
+.tagandtwine-posts .wp-block-post-template > li,
+.tagandtwine-posts .wp-block-post-template > li > * {
+	margin-block-start: 0;
+}
+
+.tagandtwine-posts .wp-block-post-template > li > * + * {
+	margin-block-start: 8px;
+}
+
+/* A product's page: Buy now as an outline beside Add to cart, the sale's countdown as a dark chip. */
+.woocommerce div.product form.cart .themor-buy-now {
+	--yantra-button-bg: transparent;
+	--yantra-button-text: var(--tt-ink);
+	--yantra-button-border: var(--tt-ink);
+	--yantra-button-hover: var(--tt-ink);
+	--yantra-button-text-hover: #FFFFFF;
+	--yantra-button-border-hover: var(--tt-ink);
+	--yantra-button-border-width: 2px;
+}
+
+.woocommerce div.product .themor-urgency__ends {
+	justify-self: start;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 7px 12px;
+	border-radius: 12px;
+	background: var(--tt-ink);
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.woocommerce div.product .themor-urgency__time {
+	padding: 0;
+	background: none;
+	color: var(--tt-butter);
+	font-variant-numeric: tabular-nums;
+}
+
+/* Low stock on a card. */
+.woocommerce ul.products li.product .themor-stock--card .themor-stock__text {
+	color: var(--tt-amber);
+}
+
+/* -------------------------------------------------------------------------
+ * Home: deals, arrivals, the basics and desk upgrades, three lists, summer, the journal.
+ * ---------------------------------------------------------------------- */
+
+.tagandtwine-section--deals {
+	background: linear-gradient(var(--tt-mist), var(--tt-mist)) center / 100% calc(100% - 0px) no-repeat;
+}
+
+.tagandtwine-products {
+	margin-block-start: 0 !important;
+}
+
+.tagandtwine-products .woocommerce {
+	margin: 0;
+}
+
+.tagandtwine-section--deals .woocommerce ul.products li.product a img {
+	background: #FFFFFF;
+}
+
+/* Product tabs: the pills. */
+.tagandtwine-arrivals {
+	--themor-product-tabs-active-bg: var(--tt-ink);
+	--themor-product-tabs-active-color: #FFFFFF;
+	--themor-product-tabs-border: var(--tt-line);
+	--themor-product-tabs-color: var(--tt-ink);
+}
+
+.tagandtwine-arrivals .themor-product-tabs__heading,
+.tagandtwine-arrivals h2 {
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: clamp(26px, 2.4vw, 32px);
+	font-weight: 700;
+}
+
+/* The basics shop and desk upgrades. */
+.tagandtwine-banner-cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.tagandtwine-banner-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: center;
+	overflow: hidden;
+	min-height: 260px;
+	border-radius: var(--tt-section-radius);
+	color: var(--tt-ink);
+}
+
+.tagandtwine-banner-card--lilac {
+	background: var(--tt-lilac);
+}
+
+.tagandtwine-banner-card--sky {
+	background: var(--tt-sky);
+}
+
+.tagandtwine-banner-card__photo {
+	align-self: stretch;
+	margin: 0 !important;
+}
+
+.tagandtwine-banner-card__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.tagandtwine-banner-card__words {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 28px;
+}
+
+.tagandtwine-banner-card__title {
+	margin: 0;
+	font-family: var(--tt-display);
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 1.05;
+}
+
+.tagandtwine-banner-card__line {
+	margin: 0;
+	color: var(--tt-body);
+	font-size: 15px;
+}
+
+/* Three short lists: a small photo beside each product. */
+.tagandtwine-lists {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.tagandtwine-list {
+	padding: 24px;
+	border: 1px solid var(--tt-line);
+	border-radius: 24px;
+}
+
+.tagandtwine-list__title {
+	margin: 0 0 16px !important;
+	font-size: 22px;
+}
+
+.tagandtwine-list .woocommerce ul.products {
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	gap: 14px;
+	margin: 0;
+}
+
+.tagandtwine-list .woocommerce ul.products li.product {
+	width: auto !important;
+	margin: 0 !important;
+	padding: 0;
+	float: none;
+}
+
+.tagandtwine-list .woocommerce ul.products li.product .woocommerce-LoopProduct-link {
+	display: grid;
+	grid-template-columns: 76px minmax(0, 1fr);
+	grid-template-rows: auto auto 1fr;
+	column-gap: 14px;
+	align-items: start;
+}
+
+.tagandtwine-list .woocommerce ul.products li.product a img {
+	grid-row: 1 / span 3;
+	width: 76px;
+	margin: 0;
+	border-radius: 14px;
+}
+
+.tagandtwine-list .woocommerce ul.products li.product .woocommerce-loop-product__title {
+	margin: 2px 0 4px;
+	font-size: 15px;
+}
+
+.tagandtwine-list .woocommerce ul.products li.product .star-rating {
+	margin: 0 0 6px;
+	font-size: 12px;
+}
+
+.tagandtwine-list .woocommerce ul.products li.product .price > .amount,
+.tagandtwine-list .woocommerce ul.products li.product .price ins {
+	min-height: 26px;
+	font-size: 16px;
+}
+
+.tagandtwine-list .woocommerce ul.products li.product .button,
+.tagandtwine-list .woocommerce ul.products li.product .onsale,
+.tagandtwine-list .woocommerce ul.products li.product .themor-new,
+.tagandtwine-list .woocommerce ul.products li.product .themor-badge,
+.tagandtwine-list .woocommerce ul.products li.product .themor-card-colors,
+.tagandtwine-list .woocommerce ul.products li.product .themor-stock--card,
+.tagandtwine-list .woocommerce ul.products li.product .themor-urgency,
+.tagandtwine-list .woocommerce ul.products li.product .themor-wish--card,
+.tagandtwine-list .woocommerce ul.products li.product .themor-quick-view-button,
+.tagandtwine-list .woocommerce ul.products li.product .added_to_cart {
+	display: none !important;
+}
+
+/* Summer: a wide photo and a card over it. */
+.tagandtwine-summer {
+	position: relative;
+	overflow: hidden;
+	border-radius: var(--tt-section-radius);
+	background: var(--tt-mist);
+}
+
+.tagandtwine-summer__photo {
+	margin: 0 !important;
+}
+
+.tagandtwine-summer__photo img {
+	display: block;
+	width: 100%;
+	height: clamp(320px, 34vw, 460px);
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.tagandtwine-summer__card {
+	position: absolute !important;
+	top: 50%;
+	inset-inline-end: clamp(20px, 5vw, 64px);
+	width: min(380px, calc(100% - 40px));
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 32px;
+	box-sizing: border-box;
+	border-radius: 24px;
+	background: #FFFFFF;
+	box-shadow: 0 24px 48px -24px rgb(23 21 31 / 0.35);
+}
+
+.tagandtwine-summer__title {
+	margin: 0;
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.tagandtwine-summer__line {
+	margin: 0;
+	font-size: 16px;
+}
+
+/* The journal. */
+.tagandtwine-posts .wp-block-post-template {
+	gap: 24px;
+}
+
+.tagandtwine-posts .wp-block-post-featured-image {
+	margin: 0 0 14px;
+}
+
+.tagandtwine-posts .wp-block-post-featured-image img {
+	border-radius: var(--tt-card-radius);
+}
+
+.tagandtwine-posts__cat {
+	margin: 0 0 6px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.tagandtwine-posts__cat a {
+	color: var(--tt-iris);
+	text-decoration: none;
+}
+
+.tagandtwine-posts__title {
+	margin: 0 0 8px;
+	font-family: var(--tt-display);
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.tagandtwine-posts__title a {
+	color: var(--tt-ink);
+	text-decoration: none;
+}
+
+.tagandtwine-posts__title a:hover {
+	color: var(--tt-iris);
+}
+
+.tagandtwine-posts__excerpt {
+	margin: 0;
+	color: var(--tt-body);
+	font-size: 15px;
+}
+
+.tagandtwine-posts__excerpt .wp-block-post-excerpt__more-text {
+	display: none;
+}
+
+/* -------------------------------------------------------------------------
+ * Pages.
+ * ---------------------------------------------------------------------- */
+
+.tagandtwine-section--page-head {
+	background: var(--tt-mist);
+}
+
+.tagandtwine-page-head__words > * + * {
+	margin-block-start: 12px;
+}
+
+.tagandtwine-page-title {
+	margin: 0;
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: clamp(36px, 4vw, 52px);
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+
+.tagandtwine-size-table table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tagandtwine-size-table th,
+.tagandtwine-size-table td {
+	padding: 12px 14px;
+	border: 0;
+	border-bottom: 1px solid var(--tt-line);
+	text-align: start;
+}
+
+.tagandtwine-size-table thead th {
+	background: var(--tt-mist);
+	color: var(--tt-ink);
+	font-weight: 700;
+}
+
+.tagandtwine-faq {
+	border-bottom: 1px solid var(--tt-line);
+	padding-block: 14px;
+}
+
+.tagandtwine-faq summary {
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: 19px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.tagandtwine-help-card {
+	padding: 28px;
+	border-radius: 24px;
+	background: var(--tt-mist);
+}
+
+.tagandtwine-help-card__title {
+	margin: 0 0 8px;
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.tagandtwine-help-card__email a {
+	color: var(--tt-ink);
+	font-weight: 700;
+}
+
+/* A product inside a journal post. */
+.tagandtwine-offer {
+	gap: 18px;
+	margin-block: 32px !important;
+	padding: 16px;
+	border: 1px solid var(--tt-line);
+	border-radius: 22px;
+}
+
+.tagandtwine-offer__photo {
+	flex: none;
+	width: 96px;
+	margin: 0 !important;
+}
+
+.tagandtwine-offer__photo img {
+	width: 96px;
+	height: 96px;
+	object-fit: cover;
+	border-radius: 14px;
+}
+
+.tagandtwine-offer__words {
+	flex: 1 1 auto;
+}
+
+.tagandtwine-offer__words > * {
+	margin: 0 0 6px !important;
+}
+
+.tagandtwine-offer__eyebrow {
+	color: var(--tt-iris);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.tagandtwine-offer__name {
+	color: var(--tt-ink);
+	font-size: 17px;
+	font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+ * The welcome popup: a photo beside the offer, and the code on a tag.
+ * ---------------------------------------------------------------------- */
+
+.tagandtwine-popup {
+	display: grid;
+	grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+	margin: 0;
+	background: #FFFFFF;
+}
+
+.tagandtwine-popup__photo {
+	margin: 0 !important;
+}
+
+.tagandtwine-popup__photo img {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.tagandtwine-popup__words {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 48px 44px 36px;
+}
+
+.tagandtwine-popup__words > * {
+	margin: 0 !important;
+}
+
+.tagandtwine-popup__title {
+	color: var(--tt-ink);
+	font-family: var(--tt-display);
+	font-size: clamp(32px, 3.4vw, 44px);
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: -0.02em;
+}
+
+.tagandtwine-popup__text {
+	font-size: 16px;
+}
+
+.tagandtwine-popup__actions {
+	align-items: center;
+}
+
+.tagandtwine-popup__skip a {
+	color: var(--tt-body);
+	font-weight: 600;
+}
+
+/* The code to copy, on a swing tag, beside an outline button (as strong as Yantra Pro's colours for the block). */
+.wp-block-themor-copy-code.tagandtwine-code {
+	--themor-copy-code-bg: var(--tt-butter);
+	--themor-copy-code-color: var(--tt-ink);
+	--themor-copy-code-border: 0 solid transparent;
+	--themor-copy-code-button-bg: transparent;
+	--themor-copy-code-button-color: var(--tt-ink);
+	--themor-copy-code-button-border: 2px solid var(--tt-ink);
+	--themor-copy-code-button-hover-bg: var(--tt-ink);
+	--themor-copy-code-button-hover-color: #FFFFFF;
+	--themor-copy-code-button-hover-border: 2px solid var(--tt-ink);
+	--themor-copy-code-radius: 0 12px 12px 0;
+	--themor-copy-code-padding: 0 26px 0 46px;
+	--themor-copy-code-size: 28px;
+	--themor-copy-code-weight: 800;
+	--themor-copy-code-spacing: 0.04em;
+	--themor-copy-code-font: var(--tt-display);
+}
+
+.tagandtwine-code .themor-copy-code__code {
+	position: relative;
+	min-height: 58px;
+	display: inline-flex;
+	align-items: center;
+	clip-path: polygon(22px 0, 100% 0, 100% 100%, 22px 100%, 0 50%);
+}
+
+.tagandtwine-code .themor-copy-code__code::before {
+	content: "";
+	position: absolute;
+	inset-inline-start: 18px;
+	top: 50%;
+	width: 9px;
+	height: 9px;
+	margin-top: -4.5px;
+	border-radius: 999px;
+	background: #FFFFFF;
+}
+
+/* -------------------------------------------------------------------------
+ * The header: the search as one bar, the account, wishlist and cart.
+ * ---------------------------------------------------------------------- */
+
+.yantra-header-row--top {
+	font-size: 13px;
+}
+
+.yantra-header-row--top .themor-hx-icon-text__icon {
+	color: var(--tt-iris);
+}
+
+.yantra-header-row--main .yantra-header-area--center {
+	flex: 1 1 auto;
+	justify-content: center;
+	min-width: 0;
+}
+
+.yantra-header-row--main .yantra-component--search {
+	width: min(640px, 100%);
+}
+
+/* On phones the search has a row of its own, across it. */
+.yantra-header__mobile .yantra-header-area:has(> .yantra-component--search) {
+	flex: 1 1 100%;
+}
+
+.yantra-header__mobile .yantra-component--search {
+	width: 100%;
+}
+
+.yantra-component--search .yantra-search-form {
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	overflow: hidden;
+	border: 2px solid var(--tt-ink);
+	border-radius: 12px;
+	background: #FFFFFF;
+}
+
+.yantra-component--search .yantra-search-form .search-field {
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 46px;
+	padding: 0 16px;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	font-size: 15px;
+}
+
+.yantra-component--search .yantra-search-form select {
+	flex: none;
+	min-height: 46px;
+	padding-block: 0;
+	padding-inline: 16px 34px;
+	border: 0;
+	border-inline-end: 1px solid var(--tt-line);
+	border-radius: 0;
+	background-color: var(--tt-mist);
+	color: var(--tt-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.yantra-component--search .yantra-search-form .search-submit {
+	flex: none;
+	width: 56px;
+	min-height: 46px;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	background: var(--tt-butter);
+	color: var(--tt-ink);
+}
+
+.yantra-component--search .yantra-search-form .search-submit:hover {
+	background: var(--tt-butter-dark);
+}
+
+.yantra-nav--primary .menu-item > a {
+	font-weight: 600;
+}
+
+/* Sale in the menu in iris, with its bolt. */
+.yantra-nav--primary .themor-menu-has-icon > a {
+	color: var(--tt-iris);
+}
+
+/* -------------------------------------------------------------------------
+ * The footer.
+ * ---------------------------------------------------------------------- */
+
+.tagandtwine-footer-blurb {
+	max-width: 24rem;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.tagandtwine-footer-contact {
+	display: flex;
+	gap: 14px;
+	margin: 6px 0 0 !important;
+	font-size: 14px;
+}
+
+.tagandtwine-footer-contact span {
+	min-width: 3.2rem;
+	color: var(--tt-muted);
+}
+
+.tagandtwine-footer-contact a {
+	color: var(--tt-ink);
+	font-weight: 600;
+}
+
+.site-footer .widget .wp-block-heading,
+.site-footer .widget-title {
+	margin-block-end: 14px;
+	color: var(--tt-ink);
+	font-family: inherit;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------
+ * Smaller screens.
+ * ---------------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+	.tagandtwine-hero {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.tagandtwine-hero__side {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.tagandtwine-depts {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.tagandtwine-perks {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.tagandtwine-lists {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.tagandtwine-hero__lead {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.tagandtwine-hero__picture {
+		order: -1;
+		min-height: 260px;
+	}
+
+	.tagandtwine-hero__side,
+	.tagandtwine-banner-cards,
+	.tagandtwine-perks {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.tagandtwine-depts {
+		display: flex;
+		gap: 14px;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: none;
+		margin-inline: calc(var(--yantra-gutter, 16px) * -1);
+		padding-inline: var(--yantra-gutter, 16px);
+	}
+
+	.tagandtwine-dept {
+		flex: none;
+		width: 84px;
+		scroll-snap-align: start;
+	}
+
+	.tagandtwine-dept__name {
+		font-size: 13px;
+	}
+
+	.tagandtwine-banner-card {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.tagandtwine-banner-card__photo img {
+		height: 180px;
+	}
+
+	.tagandtwine-summer__card {
+		position: relative !important;
+		inset: auto;
+		width: auto;
+		transform: none;
+		margin: -40px 16px 16px;
+	}
+
+	.tagandtwine-popup {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.tagandtwine-popup__photo img {
+		height: 160px;
+		min-height: 0;
+	}
+
+	.tagandtwine-popup__words {
+		padding: 28px 22px 24px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tagandtwine-dept__photo img {
+		transition: none;
+	}
+}

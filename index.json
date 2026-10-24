@@ -423,6 +423,79 @@
 			"shown_with": [
 				"yantra"
 			]
+		},
+		{
+			"id": "tagandtwine",
+			"theme": "yantra-pro",
+			"pro": true,
+			"title": "Tag & Twine department store",
+			"description": "A store of many departments, in the layout of the big ones: an \"All departments\" menu with a flyout for each, a search that picks the department, a sale hero with a swing tag, department tiles, today's deals with a countdown to midnight, new arrivals in tabs, best sellers, on sale and top rated lists, a summer banner and the journal; 55 products in clothing, shoes, bags, accessories, tech, home and beauty, most of them in several colours and sizes with what's left of each, colour dots on the cards, sale and New badges, a welcome popup with a code to copy, the cart drawer with free delivery over $50 and products to add, quick view, filters, a wishlist, a size guide, sale, gift and summer pages, help and returns, and three journal posts. For Yantra Pro.",
+			"version": "1.0.0",
+			"path": "tagandtwine/pack.json",
+			"required_plugins": [
+				{
+					"slug": "woocommerce",
+					"name": "WooCommerce",
+					"file": "woocommerce/woocommerce.php",
+					"minimum_version": "9.0"
+				}
+			],
+			"requires": {
+				"wordpress": "6.5",
+				"woocommerce": "9.0"
+			},
+			"preview": "tagandtwine/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "tagandtwine/screens/home.jpg",
+					"page": "tagandtwine/site/index.html"
+				},
+				{
+					"title": "Clothing",
+					"image": "tagandtwine/screens/shop.jpg",
+					"page": "tagandtwine/site/product-category/clothing/index.html"
+				},
+				{
+					"title": "A product",
+					"image": "tagandtwine/screens/product.jpg",
+					"page": "tagandtwine/site/product/striped-jumper/index.html"
+				},
+				{
+					"title": "Cart drawer",
+					"image": "tagandtwine/screens/drawer.jpg",
+					"page": "tagandtwine/site/product/striped-jumper/index.html"
+				},
+				{
+					"title": "All departments",
+					"image": "tagandtwine/screens/departments.jpg",
+					"page": "tagandtwine/site/index.html"
+				},
+				{
+					"title": "Sale",
+					"image": "tagandtwine/screens/sale.jpg",
+					"page": "tagandtwine/site/sale/index.html"
+				},
+				{
+					"title": "Help and returns",
+					"image": "tagandtwine/screens/help.jpg",
+					"page": "tagandtwine/site/help/index.html"
+				},
+				{
+					"title": "A post",
+					"image": "tagandtwine/screens/post.jpg",
+					"page": "tagandtwine/site/spring-capsule-wardrobe/index.html"
+				}
+			],
+			"demo_url": "https://som3669.github.io/demo-pack/tagandtwine/site/index.html",
+			"categories": [
+				"Shop",
+				"Fashion"
+			],
+			"theme_name": "Yantra Pro",
+			"shown_with": [
+				"yantra"
+			]
 		}
 	]
 }

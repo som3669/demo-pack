@@ -1,0 +1,423 @@
+{
+	"schema": 1,
+	"css": "tagandtwine.css",
+	"theme_mods": {
+		"custom_logo": {
+			"image": "images/tagandtwine-logo.png"
+		},
+		"yantra_logo_width": {
+			"desktop": {
+				"size": 190,
+				"unit": "px"
+			},
+			"tablet": {
+				"size": 170,
+				"unit": "px"
+			},
+			"mobile": {
+				"size": 150,
+				"unit": "px"
+			}
+		},
+		"yantra_show_site_title": false,
+		"yantra_show_tagline": false,
+		"yantra_site_title_typography": {
+			"font-family": "Gabarito",
+			"font-weight": "800",
+			"font-size": {
+				"desktop": {
+					"size": 26,
+					"unit": "px"
+				},
+				"mobile": {
+					"size": 22,
+					"unit": "px"
+				}
+			},
+			"letter-spacing": {
+				"desktop": {
+					"size": -0.02,
+					"unit": "em"
+				}
+			}
+		},
+		"yantra_color_palette": {
+			"id": "custom",
+			"name": "Tag & Twine",
+			"colors": {
+				"yantra-color-1": "#5B46E8",
+				"yantra-color-2": "#3F2DC4",
+				"yantra-color-3": "#17151F",
+				"yantra-color-4": "#48455A",
+				"yantra-color-5": "#6B6880",
+				"yantra-color-6": "#E7E4F0",
+				"yantra-color-7": "#F5F2FF",
+				"yantra-color-8": "#FFFFFF",
+				"yantra-color-9": "#FFFFFF"
+			}
+		},
+		"yantra_button_background": "#FFD84A",
+		"yantra_button_background_hover": "#F5C518",
+		"yantra_button_text_color": "#17151F",
+		"yantra_button_text_color_hover": "#17151F",
+		"yantra_body_typography": {
+			"font-family": "Onest",
+			"font-weight": "400",
+			"font-style": "default",
+			"text-transform": "default",
+			"font-size": {
+				"desktop": {
+					"size": 16,
+					"unit": "px"
+				}
+			},
+			"line-height": {
+				"desktop": {
+					"size": 1.6,
+					"unit": "-"
+				}
+			}
+		},
+		"yantra_heading_typography": {
+			"font-family": "Gabarito",
+			"font-weight": "700",
+			"font-style": "default",
+			"text-transform": "default",
+			"line-height": {
+				"desktop": {
+					"size": 1.1,
+					"unit": "-"
+				}
+			},
+			"letter-spacing": {
+				"desktop": {
+					"size": -0.01,
+					"unit": "em"
+				}
+			}
+		},
+		"yantra_menu_typography": {
+			"font-weight": "600",
+			"text-transform": "default",
+			"font-size": {
+				"desktop": {
+					"size": 15,
+					"unit": "px"
+				}
+			}
+		},
+		"yantra_radius": {
+			"size": 12,
+			"unit": "px"
+		},
+		"yantra_box_radius": {
+			"size": 20,
+			"unit": "px"
+		},
+		"yantra_button_radius": {
+			"size": 12,
+			"unit": "px"
+		},
+		"yantra_container_width": {
+			"size": 1320,
+			"unit": "px"
+		},
+		"yantra_header_builder": {
+			"desktop": {
+				"top": {
+					"left": [
+						"icon-text"
+					],
+					"center": [],
+					"right": [
+						"secondary-menu"
+					]
+				},
+				"main": {
+					"left": [
+						"logo"
+					],
+					"center": [
+						"search"
+					],
+					"right": [
+						"account",
+						"wishlist",
+						"cart"
+					]
+				},
+				"bottom": {
+					"left": [
+						"departments",
+						"primary-menu"
+					],
+					"center": [],
+					"right": [
+						"button"
+					]
+				}
+			},
+			"mobile": {
+				"top": {
+					"left": [],
+					"center": [],
+					"right": []
+				},
+				"main": {
+					"left": [
+						"toggle",
+						"logo"
+					],
+					"center": [],
+					"right": [
+						"account",
+						"cart"
+					]
+				},
+				"bottom": {
+					"left": [
+						"search"
+					],
+					"center": [],
+					"right": []
+				}
+			},
+			"offset": [
+				"departments",
+				"mobile-menu"
+			]
+		},
+		"yantra_header_top_background": {
+			"background-color": "#FFFFFF",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_header_top_color": "#6B6880",
+		"yantra_header_top_border": true,
+		"yantra_header_main_height": {
+			"desktop": {
+				"size": 84,
+				"unit": "px"
+			},
+			"tablet": {
+				"size": 68,
+				"unit": "px"
+			},
+			"mobile": {
+				"size": 64,
+				"unit": "px"
+			}
+		},
+		"yantra_header_bottom_background": {
+			"background-color": "#FFFFFF",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_header_bottom_border": true,
+		"yantra_search_style": "field",
+		"yantra_search_placeholder": "Search the store",
+		"yantra_account_display": "icon",
+		"yantra_pro_cart_icon": "bag",
+		"yantra_pro_live_search": true,
+		"yantra_pro_search_departments": true,
+		"yantra_pro_search_departments_label": "All departments",
+		"yantra_pro_departments_label": "All departments",
+		"yantra_pro_departments_counts": true,
+		"yantra_pro_icon_text_icon": "fa-solid fa-truck-fast",
+		"yantra_pro_icon_text_text": "Free delivery over $50 · Free returns for 30 days",
+		"yantra_header_button_text": "Today’s deals",
+		"yantra_header_button_url": {
+			"page_url": "sale"
+		},
+		"yantra_header_button_style": "solid",
+		"themor_sticky_header": true,
+		"themor_sticky_header_shrink": false,
+		"themor_site_announce": true,
+		"themor_site_announce_text": "Spring sale: up to 30% off clothing, shoes and bags.",
+		"themor_site_announce_label": "Shop the sale",
+		"themor_site_announce_url": {
+			"page_url": "sale"
+		},
+		"themor_site_announce_close": true,
+		"themor_site_announce_bg": "#5B46E8",
+		"themor_site_announce_color": "#FFFFFF",
+		"yantra_title_style": "banner",
+		"yantra_title_align": "start",
+		"yantra_breadcrumbs_position": "above",
+		"yantra_breadcrumbs_separator": "slash",
+		"yantra_blog_layout": "grid",
+		"yantra_blog_columns": "3",
+		"yantra_blog_elements": [
+			"image",
+			"categories",
+			"title",
+			"excerpt",
+			"meta"
+		],
+		"yantra_blog_meta": [
+			"reading-time"
+		],
+		"yantra_post_meta": [
+			"date",
+			"reading-time"
+		],
+		"yantra_post_footer_elements": [
+			"tags",
+			"navigation",
+			"related"
+		],
+		"themor_blog_related": true,
+		"themor_blog_related_title": "More from the journal",
+		"themor_blog_share": true,
+		"themor_shop_cart_drawer": true,
+		"themor_shop_open_on_add": true,
+		"themor_shop_ajax_add": true,
+		"themor_shop_free_shipping": true,
+		"themor_shop_free_shipping_amount": "50",
+		"themor_shop_upsells": true,
+		"themor_shop_upsells_count": 2,
+		"themor_shop_upsells_fallback": "related",
+		"themor_shop_upsells_title": "Goes well with it",
+		"themor_shop_quick_view": true,
+		"themor_shop_view_toggle": true,
+		"themor_shop_pagination": "load-more",
+		"themor_shop_filters": true,
+		"themor_shop_ajax_filters": true,
+		"themor_shop_sticky_cart": true,
+		"themor_shop_gallery_arrows": true,
+		"themor_shop_focused_checkout": true,
+		"themor_shop_sale_badge": "percent",
+		"themor_shop_sale_color": "#5B46E8",
+		"themor_shop_new_badge": true,
+		"themor_shop_new_days": 14,
+		"themor_shop_new_color": "#FFFFFF",
+		"themor_shop_own_badges": true,
+		"themor_shop_swatches": true,
+		"themor_shop_swatches_shape": "round",
+		"themor_shop_swatches_labels": true,
+		"themor_shop_swatches_stock": true,
+		"themor_shop_swatches_cards": true,
+		"themor_shop_qty_buttons": true,
+		"themor_shop_buy_now": true,
+		"themor_shop_stock_bar": true,
+		"themor_shop_stock_low": 6,
+		"themor_shop_stock_cards": true,
+		"themor_shop_restock": true,
+		"themor_shop_stock_alerts": true,
+		"themor_shop_sale_countdown": true,
+		"themor_shop_sale_countdown_days": 7,
+		"themor_shop_sold_recently": true,
+		"themor_shop_delivery": true,
+		"themor_shop_delivery_cutoff": "15:00",
+		"themor_shop_delivery_days": [
+			"mon",
+			"tue",
+			"wed",
+			"thu",
+			"fri"
+		],
+		"themor_shop_delivery_min": 2,
+		"themor_shop_delivery_max": 4,
+		"themor_shop_tabs": "accordion",
+		"themor_shop_size_guide": {
+			"page": "size-guide"
+		},
+		"themor_shop_together": true,
+		"themor_shop_together_source": "cross-sells",
+		"themor_shop_together_title": "Bought together",
+		"themor_shop_viewed": true,
+		"themor_shop_viewed_count": 4,
+		"themor_shop_viewed_title": "Recently viewed",
+		"themor_shop_wishlist": true,
+		"themor_shop_wishlist_page": {
+			"page": "wishlist"
+		},
+		"themor_mbar_on": true,
+		"themor_mbar_items": [
+			"home",
+			"shop",
+			"cart",
+			"custom",
+			"custom2"
+		],
+		"themor_mbar_custom_label": "Wishlist",
+		"themor_mbar_custom_icon": "fa-regular fa-heart",
+		"themor_mbar_custom_url": {
+			"page_url": "wishlist"
+		},
+		"themor_mbar_custom2_label": "Deals",
+		"themor_mbar_custom2_icon": "fa-solid fa-bolt",
+		"themor_mbar_custom2_url": {
+			"page_url": "sale"
+		},
+		"themor_mbar_raised": "cart",
+		"themor_mbar_raised_bg": "#FFD84A",
+		"themor_mbar_raised_color": "#17151F",
+		"themor_mbar_active": "#5B46E8",
+		"yantra_footer_builder": {
+			"desktop": {
+				"top": {
+					"top-1": [],
+					"top-2": [],
+					"top-3": [],
+					"top-4": [],
+					"top-5": [],
+					"top-6": []
+				},
+				"main": {
+					"main-1": [
+						"widget-1"
+					],
+					"main-2": [
+						"widget-2"
+					],
+					"main-3": [
+						"widget-3"
+					],
+					"main-4": [
+						"widget-4"
+					],
+					"main-5": [],
+					"main-6": []
+				},
+				"bottom": {
+					"bottom-1": [
+						"copyright"
+					],
+					"bottom-2": [
+						"footer-menu"
+					],
+					"bottom-3": [],
+					"bottom-4": [],
+					"bottom-5": [],
+					"bottom-6": []
+				}
+			}
+		},
+		"yantra_footer_main_background": {
+			"background-color": "#F5F2FF",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_bottom_background": {
+			"background-color": "#F5F2FF",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_main_border": false,
+		"yantra_footer_bottom_border": true,
+		"yantra_footer_copyright": "© {year} Tag & Twine. A demo store: nothing here is for sale."
+	}
+}

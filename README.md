@@ -34,6 +34,7 @@ every file as it is.
 | `kerbside` | Yantra Pro | A café, roastery and bakery that takes orders ahead: a homepage of its own 17 patterns (a till-receipt hero, fresh bakes with the stock left, the menu as tiles, beans by post as receipts, the roastery, a regular's quote, the terrace with the week's hours, the journal), Menu, Order ahead, Our story and Visit pages; 19 products in five categories (drinks by milk and beans by grind as variations, bakes with Yantra Pro's own badges and a back-in-stock date, low and sold-out stock), reviews, six journal posts, a main and a footer menu, four footer widgets, a logo and its CSS; Yantra Pro's store hours with last orders and the open bar, the cart drawer, swatches, delivery estimate, bought together, dark mode and the phone bar; a demo checkout with collection, postage and free postage over £15. Schema 3 |
 | `skylark` | Yantra Pro | A digital marketing studio for local businesses, light and sky blue: a homepage of its own patterns (a results board over a photo, services, why us with figures, how a month works, case studies, reviews, plans with a monthly and yearly price switch, questions, the latest articles), Services, a Local SEO page with map results, Case studies with six case study pages, Pricing with a comparison table, About, Free audit and Privacy pages, and an ad landing page on the Blank canvas template whose headline matches the ad it came from (block visibility by the page address); six articles in five categories with a table of contents, a reading bar and share buttons; Yantra Pro's Mega Menu and Content Blocks modules turned on, with a Services mega menu in four columns, an exit popup and an offer after the third paragraph of every post; an offer bar, a sticky header with a dark mode switch and Call and Free audit buttons, the phone bar, a footer menu, four footer widgets, a logo and its CSS. Schema 3 |
 | `copperline` | Yantra Pro | A family firm of plumbers, heating engineers and electricians in Columbus, Ohio, that takes bookings in two-hour arrival windows: a homepage of its own patterns (the day's free windows on a tape-measure rail over a photo, problems as photo cards, fixed-price jobs, how a visit works, prices on cobalt, a map of the areas it covers, reviews, the guarantee and the family, advice, an emergency band), a services hub and five trade pages, Book online (the shop) with 13 jobs booked by day and two-hour window, each window with its own stock, and four add-ons, Prices, an Areas page with a ZIP code checker, About, its own booking and checkout pages, six advice posts; Yantra Pro's booking wording, windows left on the swatches, office hours, own badges and next-window dates, the delivery line as the day of the visit, bought together, the cart drawer as Your booking, a Services mega menu, a calendar for the header cart, dark mode and the phone bar with a raised Call button. Schema 3 |
+| `tagandtwine` | Yantra Pro | A store of many departments in the layout of the big ones: a homepage of its own patterns (a sale hero with a swing tag hanging on twine, two promotions, delivery and returns, department tiles, today's deals with a countdown to midnight, new arrivals in tabs, the basics and desk upgrades, best sellers, on sale and top rated as short lists, a summer banner and the journal), New in, Sale, Summer, Gift ideas, Wishlist, Size guide, Help and returns, About, Privacy and Terms pages; 55 products in seven departments and 31 categories, most in colours and sizes with what's left of each (a colour swatch per value), sale and New badges and own badges, a scheduled sale, low stock and a back-in-stock date, reviews, bought together and cross-sells; a welcome popup with a code to copy and the HELLO10 coupon; Yantra Pro's departments menu with a flyout per department, a search that picks the department, a Clothing, Accessories and Tech mega menu, the cart drawer with free delivery over $50 and products to add, quick view, the filters drawer with WooCommerce's filters, colour dots on cards, a wishlist, a size guide, an announcement bar, a sticky header, the phone bar with a raised cart, a logo and its CSS. Schema 3 |
 
 ## Layout
 
@@ -187,9 +188,11 @@ Everything else works in all three.
 | `required_plugins` | `[ { "slug", "name", "file", "minimum_version" } ]` | WordPress.org plugins prepared before the admin content import starts. Repeat the declaration in the pack's index entry. See Required plugins. |
 | `files` | `[ "settings.json", "customizer.json", "widgets.json" ]` | The optional files this pack has. |
 | `images` | `{ "<ref>": "<alt text>" }` | Every image the pack uses, including any named in `customizer.json`. A ref is a path in the pack folder (`images/products/phone.jpg`) or a theme file (`theme:assets/images/hero.jpg`). Leave alt empty for product photos: WooCommerce then uses the product name. |
-| `product_categories` | `{ "<slug>": { "name", "description", "image" } }` | In menu order. `image` is an image ref. |
+| `product_categories` | `{ "<slug>": { "name", "description", "image", "parent" } }` | In menu order. `image` is an image ref. `parent` (Storefill 1.1.1): the slug of a category listed before it. |
 | `product_brands` | `{ "<slug>": { "name", "description" } }` | WooCommerce Brands (WooCommerce 9.6+). |
 | `attributes` | `{ "<Name>": "<slug>" }` | Global, filterable attributes. Any other spec becomes a product-level attribute. |
+| `attribute_terms` | `{ "<Name>": { "<value>": { "meta": { … } } } }` | Storefill 1.1.1. The values of a global attribute, made before the products so they keep this order (WooCommerce's custom order), with details the theme takes through `storefill_term_meta_keys`, such as a swatch's color (`"meta": { "themor_swatch_color": "#2E3352" }` for Yantra Pro). Values the site already had are left as they are. |
+| `coupons` | `[ { "code", "type", "amount", … } ]` | Storefill 1.1.1. `type` is `percent`, `fixed_cart` or `fixed_product`; also `description`, `individual_use`, `exclude_sale_items`, `free_shipping`, `minimum_amount`, `maximum_amount`, `usage_limit`, `usage_limit_per_user` and `expires_in_days`. Published on a demo site; on a store they arrive as drafts, so no discount works until the owner publishes it. A code the site already has is left out. |
 | `products` | list | See below. |
 | `reviews` | `{ "<product slug>": [ [ "Reviewer", 5, "Text" ] ] }` | Ratings 1–5. |
 | `post_categories` | `{ "<slug>": { "name", "description" } }` | |
@@ -283,7 +286,10 @@ remain installed when demo content is removed.
 - `tags` are product tag names, created when missing (eBasket shows them as diet badges and a shop
   filter). Storefill 1.0.0 skips this key; tags import from the next version.
 - `stock`: `null` (in stock), a number (stock is managed), or `"outofstock"`.
-- `sale_days`: a sale that ends that many days after the import.
+- `sale_days`: a sale that ends that many days after the import. Storefill 1.1.1: a variation with a `sale` takes its own
+  `sale_days`, else its product's.
+- `days` (Storefill 1.1.1): how many days ago the product arrived, the date WooCommerce's "newest" order and a theme's New
+  badge read. Without it, the first product is 20 days old and each one after it three days older.
 - `weight` is in kg and `size` (length, width, height) in cm; Storefill converts to the store's units.
 - `specs` become visible attributes in this order. A spec whose value is a list is one the
   product varies by; add `"variations": { "<value>": { "sku", "regular", "sale" } }`.
@@ -435,6 +441,8 @@ for classic themes, and for block themes one of the theme's own style variations
   `images`.
 - Schema 2: `{ "page_url": "<slug>" }` and `{ "post_url": "<slug>" }` become the address of one of
   the pack's pages or posts, such as where a header button or an announcement leads.
+- Storefill 1.1.1: `{ "page": "<slug>" }` becomes the ID of one of the pack's pages, for a setting that keeps one (a size
+  guide page, a wishlist page).
 - `nav_menu_locations` and `sidebars_widgets` are ignored here: the menu's `location` and
   `widgets.json` set those.
 - `"css": "kerbside.css"`: a CSS file of the pack, added to the site's Additional CSS after the
@@ -464,6 +472,11 @@ Widgets for the theme's widget areas (classic themes), imported as block widgets
 - Keys are widget area IDs, as the theme registers them. Areas the theme does not have are skipped
   and named in the import log.
 - Each widget has optional `title` (shown as a heading) and `content` in the Content format above.
+- Storefill 1.1.1: `[ "widget", { "id_base": "woocommerce_layered_nav", "instance": { "title": "Colour", "attribute":
+  "colour" } } ]` places one of WooCommerce's classic shop widgets as WordPress's Legacy Widget block: the filters by
+  price (`woocommerce_price_filter`), attribute (`woocommerce_layered_nav`), rating (`woocommerce_rating_filter`), the active
+  filters (`woocommerce_layered_nav_filters`) and the product categories (`woocommerce_product_categories`), such as in a
+  shop sidebar a filters drawer opens. The instance's values are plain text or numbers.
 - On a real store the demo's widgets are added after the ones already there. On a public demo site
   they take the area over, and the site's own widgets wait in **Inactive widgets**.
 - Removing the demo deletes the demo's widgets and puts the site's own back where they were.

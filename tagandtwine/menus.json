@@ -1,0 +1,616 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Tag & Twine menu",
+			"slug": "tagandtwine-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "New in",
+					"page": "new-in"
+				},
+				{
+					"label": "Clothing",
+					"product_cat": "clothing",
+					"meta": {
+						"_themor_mega_menu": {
+							"mega": true,
+							"columns": 3,
+							"width": "container"
+						}
+					},
+					"children": [
+						{
+							"label": "Tops",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Tops and tees",
+									"product_cat": "tops-and-tees"
+								},
+								{
+									"label": "Shirts",
+									"product_cat": "shirts"
+								},
+								{
+									"label": "Knitwear",
+									"product_cat": "knitwear"
+								}
+							],
+							"url": "#"
+						},
+						{
+							"label": "Bottoms",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Jeans and trousers",
+									"product_cat": "jeans-and-trousers"
+								},
+								{
+									"label": "Skirts and dresses",
+									"product_cat": "skirts-and-dresses"
+								}
+							],
+							"url": "#"
+						},
+						{
+							"label": "Outerwear",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Coats and jackets",
+									"product_cat": "coats-and-jackets"
+								},
+								{
+									"label": "Size guide",
+									"page": "size-guide"
+								}
+							],
+							"url": "#"
+						}
+					]
+				},
+				{
+					"label": "Shoes",
+					"product_cat": "shoes"
+				},
+				{
+					"label": "Bags",
+					"product_cat": "bags"
+				},
+				{
+					"label": "Accessories",
+					"product_cat": "accessories",
+					"meta": {
+						"_themor_mega_menu": {
+							"mega": true,
+							"columns": 2,
+							"width": "custom",
+							"custom_width": {
+								"size": 520,
+								"unit": "px"
+							}
+						}
+					},
+					"children": [
+						{
+							"label": "Jewellery and watches",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Jewellery",
+									"product_cat": "jewellery"
+								},
+								{
+									"label": "Watches",
+									"product_cat": "watches"
+								}
+							],
+							"url": "#"
+						},
+						{
+							"label": "Finishing touches",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Sunglasses",
+									"product_cat": "sunglasses"
+								},
+								{
+									"label": "Belts and wallets",
+									"product_cat": "belts-and-wallets"
+								},
+								{
+									"label": "Hats and scarves",
+									"product_cat": "hats-and-scarves"
+								}
+							],
+							"url": "#"
+						}
+					]
+				},
+				{
+					"label": "Tech",
+					"product_cat": "tech",
+					"meta": {
+						"_themor_mega_menu": {
+							"mega": true,
+							"columns": 3,
+							"width": "custom",
+							"custom_width": {
+								"size": 560,
+								"unit": "px"
+							}
+						}
+					},
+					"children": [
+						{
+							"label": "Listen",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Audio",
+									"product_cat": "audio"
+								}
+							],
+							"url": "#"
+						},
+						{
+							"label": "Work",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Desk",
+									"product_cat": "desk"
+								}
+							],
+							"url": "#"
+						},
+						{
+							"label": "Move",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "On the go",
+									"product_cat": "on-the-go"
+								}
+							],
+							"url": "#"
+						}
+					]
+				},
+				{
+					"label": "Home",
+					"product_cat": "home"
+				},
+				{
+					"label": "Beauty",
+					"product_cat": "beauty"
+				},
+				{
+					"label": "Sale",
+					"page": "sale",
+					"meta": {
+						"_themor_mega_menu": {
+							"icon_type": "icon",
+							"icon": "fa-solid fa-bolt",
+							"icon_size": 14
+						}
+					}
+				}
+			]
+		},
+		{
+			"title": "Tag & Twine departments",
+			"slug": "tagandtwine-departments",
+			"location": "departments",
+			"items": [
+				{
+					"label": "New in",
+					"page": "new-in"
+				},
+				{
+					"label": "Clothing",
+					"product_cat": "clothing",
+					"children": [
+						{
+							"label": "Tops",
+							"product_cat": "tops-and-tees",
+							"children": [
+								{
+									"label": "Tops and tees",
+									"product_cat": "tops-and-tees"
+								},
+								{
+									"label": "Shirts",
+									"product_cat": "shirts"
+								},
+								{
+									"label": "Knitwear",
+									"product_cat": "knitwear"
+								}
+							]
+						},
+						{
+							"label": "Bottoms",
+							"product_cat": "jeans-and-trousers",
+							"children": [
+								{
+									"label": "Jeans and trousers",
+									"product_cat": "jeans-and-trousers"
+								},
+								{
+									"label": "Skirts and dresses",
+									"product_cat": "skirts-and-dresses"
+								}
+							]
+						},
+						{
+							"label": "Outerwear",
+							"product_cat": "coats-and-jackets",
+							"children": [
+								{
+									"label": "Coats and jackets",
+									"product_cat": "coats-and-jackets"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Shoes",
+					"product_cat": "shoes",
+					"children": [
+						{
+							"label": "Everyday",
+							"product_cat": "trainers",
+							"children": [
+								{
+									"label": "Trainers",
+									"product_cat": "trainers"
+								},
+								{
+									"label": "Sandals",
+									"product_cat": "sandals"
+								}
+							]
+						},
+						{
+							"label": "Boots",
+							"product_cat": "boots",
+							"children": [
+								{
+									"label": "Chukka boots",
+									"product_cat": "boots"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Bags",
+					"product_cat": "bags",
+					"children": [
+						{
+							"label": "By style",
+							"product_cat": "bags",
+							"children": [
+								{
+									"label": "Handbags",
+									"product": "top-handle-bag"
+								},
+								{
+									"label": "Messenger bags",
+									"product": "messenger-bag"
+								},
+								{
+									"label": "Totes",
+									"product": "quilted-tote"
+								},
+								{
+									"label": "Weekend bags",
+									"product": "duffel-floor"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Jewellery and watches",
+					"product_cat": "accessories",
+					"children": [
+						{
+							"label": "Jewellery",
+							"product_cat": "jewellery",
+							"children": [
+								{
+									"label": "Necklaces",
+									"product": "layered-necklace"
+								},
+								{
+									"label": "Bracelets",
+									"product": "moon-bracelet"
+								},
+								{
+									"label": "Bangles",
+									"product": "bangle-set"
+								}
+							]
+						},
+						{
+							"label": "Watches",
+							"product_cat": "watches",
+							"children": [
+								{
+									"label": "Wood",
+									"product": "wood-watch"
+								},
+								{
+									"label": "Canvas strap",
+									"product": "canvas-watch"
+								}
+							]
+						},
+						{
+							"label": "Finishing touches",
+							"product_cat": "accessories",
+							"children": [
+								{
+									"label": "Sunglasses",
+									"product_cat": "sunglasses"
+								},
+								{
+									"label": "Belts and wallets",
+									"product_cat": "belts-and-wallets"
+								},
+								{
+									"label": "Hats and scarves",
+									"product_cat": "hats-and-scarves"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Tech",
+					"product_cat": "tech",
+					"children": [
+						{
+							"label": "Audio",
+							"product_cat": "audio",
+							"children": [
+								{
+									"label": "Headphones",
+									"product": "petal-headphones"
+								},
+								{
+									"label": "Speakers",
+									"product": "cube-speakers"
+								}
+							]
+						},
+						{
+							"label": "Desk",
+							"product_cat": "desk",
+							"children": [
+								{
+									"label": "Keyboards",
+									"product": "tkl-keyboard"
+								},
+								{
+									"label": "Mice",
+									"product": "wireless-mouse"
+								},
+								{
+									"label": "Lamps",
+									"product": "task-lamp"
+								}
+							]
+						},
+						{
+							"label": "On the go",
+							"product_cat": "on-the-go",
+							"children": [
+								{
+									"label": "Power banks",
+									"product": "power-bank"
+								},
+								{
+									"label": "Activity bands",
+									"product": "fitness-band"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Home",
+					"product_cat": "home",
+					"children": [
+						{
+							"label": "Kitchen",
+							"product_cat": "kitchen",
+							"children": [
+								{
+									"label": "Mugs",
+									"product": "speckled-mug"
+								}
+							]
+						},
+						{
+							"label": "Living",
+							"product_cat": "living",
+							"children": [
+								{
+									"label": "Lamps",
+									"product": "table-lamp"
+								},
+								{
+									"label": "Cushions",
+									"product": "honeycomb-cushion"
+								},
+								{
+									"label": "Chairs",
+									"product": "leather-chair"
+								}
+							]
+						},
+						{
+							"label": "Decor",
+							"product_cat": "decor",
+							"children": [
+								{
+									"label": "Vases",
+									"product": "glazed-vase"
+								},
+								{
+									"label": "Home fragrance",
+									"product_cat": "home-fragrance"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Beauty",
+					"product_cat": "beauty",
+					"children": [
+						{
+							"label": "Make-up",
+							"product_cat": "make-up",
+							"children": [
+								{
+									"label": "Lipstick",
+									"product": "lipstick-trio"
+								},
+								{
+									"label": "Nails",
+									"product": "nail-duo"
+								}
+							]
+						},
+						{
+							"label": "Skincare",
+							"product_cat": "skincare",
+							"children": [
+								{
+									"label": "Face oils",
+									"product": "botanical-oil"
+								},
+								{
+									"label": "Serums",
+									"product": "face-oil"
+								}
+							]
+						},
+						{
+							"label": "Fragrance",
+							"product_cat": "fragrance",
+							"children": [
+								{
+									"label": "Eau de parfum",
+									"product": "teal-perfume"
+								},
+								{
+									"label": "Eau de toilette",
+									"product": "perfume-flowers"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Gift ideas",
+					"page": "gift-ideas"
+				},
+				{
+					"label": "Sale",
+					"page": "sale"
+				}
+			]
+		},
+		{
+			"title": "Tag & Twine top links",
+			"slug": "tagandtwine-top-links",
+			"location": "secondary",
+			"items": [
+				{
+					"label": "Track your order",
+					"woocommerce": "myaccount"
+				},
+				{
+					"label": "Help and returns",
+					"page": "help"
+				},
+				{
+					"label": "Size guide",
+					"page": "size-guide"
+				}
+			]
+		},
+		{
+			"title": "Tag & Twine legal",
+			"slug": "tagandtwine-legal",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Privacy",
+					"page": "privacy"
+				},
+				{
+					"label": "Terms",
+					"page": "terms"
+				},
+				{
+					"label": "Help",
+					"page": "help"
+				}
+			]
+		}
+	]
+}

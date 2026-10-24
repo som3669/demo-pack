@@ -1,0 +1,233 @@
+{
+	"schema": 1,
+	"patterns": {
+		"hero": {
+			"title": "Home: the season's edit with a hanging tag, and two promotions",
+			"file": "patterns/hero.html",
+			"links": [
+				{
+					"text": "Shop the edit",
+					"product_cat": "clothing"
+				},
+				{
+					"text": "New in this week",
+					"page": "new-in"
+				},
+				{
+					"text": "Shop audio",
+					"product_cat": "audio"
+				},
+				{
+					"text": "Shop the kitchen",
+					"product_cat": "kitchen"
+				}
+			]
+		},
+		"perks": {
+			"title": "Home: delivery, returns, checkout and help in a row",
+			"file": "patterns/perks.html"
+		},
+		"departments": {
+			"title": "Home: shop by department, round photo tiles",
+			"file": "patterns/departments.html",
+			"links": [
+				{
+					"text": "Clothing",
+					"product_cat": "clothing"
+				},
+				{
+					"text": "Shoes",
+					"product_cat": "shoes"
+				},
+				{
+					"text": "Bags",
+					"product_cat": "bags"
+				},
+				{
+					"text": "Jewellery",
+					"product_cat": "jewellery"
+				},
+				{
+					"text": "Watches",
+					"product_cat": "watches"
+				},
+				{
+					"text": "Tech",
+					"product_cat": "tech"
+				},
+				{
+					"text": "Home",
+					"product_cat": "home"
+				},
+				{
+					"text": "Beauty",
+					"product_cat": "beauty"
+				},
+				{
+					"text": "All departments",
+					"woocommerce": "shop"
+				}
+			]
+		},
+		"deals": {
+			"title": "Home: today's deals, with a countdown to midnight",
+			"file": "patterns/deals.html",
+			"links": [
+				{
+					"text": "See all deals",
+					"page": "sale"
+				}
+			]
+		},
+		"arrivals": {
+			"title": "Home: new arrivals, with tabs by department",
+			"file": "patterns/arrivals.html"
+		},
+		"promos": {
+			"title": "Home: the basics shop and desk upgrades",
+			"file": "patterns/promos.html",
+			"links": [
+				{
+					"text": "Shop basics",
+					"product_cat": "tops-and-tees"
+				},
+				{
+					"text": "Shop desk upgrades",
+					"product_cat": "desk"
+				}
+			]
+		},
+		"lists": {
+			"title": "Home: best sellers, on sale and top rated, three short lists",
+			"file": "patterns/lists.html"
+		},
+		"summer": {
+			"title": "Home: summer accessories, a wide photo with a card",
+			"file": "patterns/summer.html",
+			"links": [
+				{
+					"text": "Shop the summer edit",
+					"page": "summer-shop"
+				}
+			]
+		},
+		"journal": {
+			"title": "Home: the latest from the journal",
+			"file": "patterns/journal.html",
+			"links": [
+				{
+					"text": "All posts",
+					"page": "journal"
+				}
+			]
+		},
+		"new-in-page": {
+			"title": "New in: the newest products",
+			"file": "patterns/new-in-page.html"
+		},
+		"sale-page": {
+			"title": "Sale: everything on sale, with today's deals first",
+			"file": "patterns/sale-page.html"
+		},
+		"summer-page": {
+			"title": "Summer shop: hats, sandals, sunglasses and beach bags",
+			"file": "patterns/summer-page.html"
+		},
+		"gifts-page": {
+			"title": "Gift ideas: small things that go a long way",
+			"file": "patterns/gifts-page.html"
+		},
+		"wishlist-page": {
+			"title": "Wishlist: the products a shopper saved",
+			"file": "patterns/wishlist-page.html"
+		},
+		"size-guide-page": {
+			"title": "Size guide: clothing and shoe sizes in tables",
+			"file": "patterns/size-guide-page.html"
+		},
+		"help-page": {
+			"title": "Help and returns: questions that open, and how to reach us",
+			"file": "patterns/help-page.html"
+		},
+		"about-page": {
+			"title": "About us: who picks the products, and how",
+			"file": "patterns/about-page.html"
+		},
+		"privacy-page": {
+			"title": "Privacy: what a real store would say",
+			"file": "patterns/privacy-page.html"
+		},
+		"terms-page": {
+			"title": "Terms: the demo's small print",
+			"file": "patterns/terms-page.html"
+		},
+		"offer-linen-shirt": {
+			"title": "Journal: linen camp-collar shirt, with its price",
+			"file": "patterns/offer-linen-shirt.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "linen-shirt"
+				}
+			]
+		},
+		"offer-striped-jumper": {
+			"title": "Journal: striped cotton-knit jumper, with its price",
+			"file": "patterns/offer-striped-jumper.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "striped-jumper"
+				}
+			]
+		},
+		"offer-tkl-keyboard": {
+			"title": "Journal: compact mechanical keyboard, with its price",
+			"file": "patterns/offer-tkl-keyboard.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "tkl-keyboard"
+				}
+			]
+		},
+		"offer-task-lamp": {
+			"title": "Journal: balance arm desk lamp, with its price",
+			"file": "patterns/offer-task-lamp.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "task-lamp"
+				}
+			]
+		},
+		"offer-aviators": {
+			"title": "Journal: gold-frame aviator sunglasses, with its price",
+			"file": "patterns/offer-aviators.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "aviators"
+				}
+			]
+		},
+		"popup-welcome": {
+			"title": "Popup: 10% off a first order, with a code to copy",
+			"file": "patterns/popup-welcome.html",
+			"links": [
+				{
+					"text": "Start shopping",
+					"woocommerce": "shop"
+				}
+			]
+		},
+		"footer-brand": {
+			"title": "Footer: the shop in a line, and how to reach it",
+			"file": "patterns/footer-brand.html"
+		},
+		"footer-pay": {
+			"title": "Footer: secure payment line",
+			"file": "patterns/footer-pay.html"
+		}
+	}
+}

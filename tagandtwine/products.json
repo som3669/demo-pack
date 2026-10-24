@@ -1,0 +1,4580 @@
+{
+	"schema": 1,
+	"attributes": {
+		"Colour": "colour",
+		"Size": "size",
+		"Frame": "frame"
+	},
+	"attribute_terms": {
+		"Colour": {
+			"Ecru": {
+				"meta": {
+					"themor_swatch_color": "#EFE9DE"
+				}
+			},
+			"Stone": {
+				"meta": {
+					"themor_swatch_color": "#E2DCD0"
+				}
+			},
+			"Sage": {
+				"meta": {
+					"themor_swatch_color": "#B8C3A6"
+				}
+			},
+			"White": {
+				"meta": {
+					"themor_swatch_color": "#F4F4F2"
+				}
+			},
+			"Pale blue": {
+				"meta": {
+					"themor_swatch_color": "#9DB3D6"
+				}
+			},
+			"Sand": {
+				"meta": {
+					"themor_swatch_color": "#E8DCC8"
+				}
+			},
+			"Black": {
+				"meta": {
+					"themor_swatch_color": "#1E1D24"
+				}
+			},
+			"Chocolate": {
+				"meta": {
+					"themor_swatch_color": "#5C4B3B"
+				}
+			},
+			"Navy stripe": {
+				"meta": {
+					"themor_swatch_color": "#2E3352"
+				}
+			},
+			"Grey stripe": {
+				"meta": {
+					"themor_swatch_color": "#9A9CA3"
+				}
+			},
+			"Oat stripe": {
+				"meta": {
+					"themor_swatch_color": "#E6DDCB"
+				}
+			},
+			"Grey": {
+				"meta": {
+					"themor_swatch_color": "#9A9CA3"
+				}
+			},
+			"Navy": {
+				"meta": {
+					"themor_swatch_color": "#34374A"
+				}
+			},
+			"Brick": {
+				"meta": {
+					"themor_swatch_color": "#B23A48"
+				}
+			},
+			"Olive": {
+				"meta": {
+					"themor_swatch_color": "#6F7A5C"
+				}
+			},
+			"Sky": {
+				"meta": {
+					"themor_swatch_color": "#A9C6E8"
+				}
+			},
+			"Cranberry": {
+				"meta": {
+					"themor_swatch_color": "#C9474D"
+				}
+			},
+			"Oat": {
+				"meta": {
+					"themor_swatch_color": "#E6DDCB"
+				}
+			},
+			"Walnut": {
+				"meta": {
+					"themor_swatch_color": "#7B6A58"
+				}
+			},
+			"Mid blue": {
+				"meta": {
+					"themor_swatch_color": "#3A5A86"
+				}
+			},
+			"Light blue": {
+				"meta": {
+					"themor_swatch_color": "#8FA9C8"
+				}
+			},
+			"Camel": {
+				"meta": {
+					"themor_swatch_color": "#C8B08F"
+				}
+			},
+			"Coral": {
+				"meta": {
+					"themor_swatch_color": "#F47B67"
+				}
+			},
+			"Tan": {
+				"meta": {
+					"themor_swatch_color": "#8A4A2B"
+				}
+			},
+			"Dark brown": {
+				"meta": {
+					"themor_swatch_color": "#2B2522"
+				}
+			},
+			"Charcoal": {
+				"meta": {
+					"themor_swatch_color": "#3A3B3F"
+				}
+			},
+			"Bone": {
+				"meta": {
+					"themor_swatch_color": "#E8E2D6"
+				}
+			},
+			"Mint": {
+				"meta": {
+					"themor_swatch_color": "#A8E3D9"
+				}
+			},
+			"Blush": {
+				"meta": {
+					"themor_swatch_color": "#F5C4D2"
+				}
+			},
+			"Green": {
+				"meta": {
+					"themor_swatch_color": "#3DBE5A"
+				}
+			},
+			"Silver": {
+				"meta": {
+					"themor_swatch_color": "#C7CBD3"
+				}
+			},
+			"Graphite": {
+				"meta": {
+					"themor_swatch_color": "#2B2D38"
+				}
+			},
+			"Lilac": {
+				"meta": {
+					"themor_swatch_color": "#C59BEF"
+				}
+			}
+		},
+		"Size": {
+			"XS": {},
+			"S": {},
+			"M": {},
+			"L": {},
+			"XL": {},
+			"28": {},
+			"30": {},
+			"32": {},
+			"34": {},
+			"36": {},
+			"6": {},
+			"7": {},
+			"8": {},
+			"9": {},
+			"10": {},
+			"11": {}
+		}
+	},
+	"product_categories": {
+		"clothing": {
+			"name": "Clothing",
+			"description": "Easy layers, good basics and a few pieces you’ll reach for every week.",
+			"image": "images/tee-pack.jpg"
+		},
+		"tops-and-tees": {
+			"name": "Tops and tees",
+			"parent": "clothing",
+			"description": "Organic cotton tees and easy tops.",
+			"image": "images/cotton-tee.jpg"
+		},
+		"shirts": {
+			"name": "Shirts",
+			"parent": "clothing",
+			"description": "Oxford, linen and everyday shirts.",
+			"image": "images/oxford-shirt.jpg"
+		},
+		"knitwear": {
+			"name": "Knitwear",
+			"parent": "clothing",
+			"description": "Cotton, merino and wool knits.",
+			"image": "images/striped-jumper.jpg"
+		},
+		"coats-and-jackets": {
+			"name": "Coats and jackets",
+			"parent": "clothing",
+			"description": "Coats and blazers for every season.",
+			"image": "images/wrap-coat.jpg"
+		},
+		"skirts-and-dresses": {
+			"name": "Skirts and dresses",
+			"parent": "clothing",
+			"description": "Midi skirts and easy dresses.",
+			"image": "images/pleated-skirt.jpg"
+		},
+		"jeans-and-trousers": {
+			"name": "Jeans and trousers",
+			"parent": "clothing",
+			"description": "Straight, relaxed and slim jeans.",
+			"image": "images/straight-jeans.jpg"
+		},
+		"shoes": {
+			"name": "Shoes",
+			"description": "Trainers, boots and sandals, made to be worn.",
+			"image": "images/coral-runner.jpg"
+		},
+		"trainers": {
+			"name": "Trainers",
+			"parent": "shoes",
+			"description": "Runners and everyday trainers.",
+			"image": "images/coral-runner.jpg"
+		},
+		"boots": {
+			"name": "Boots",
+			"parent": "shoes",
+			"description": "Leather boots that last.",
+			"image": "images/chukka-boots.jpg"
+		},
+		"sandals": {
+			"name": "Sandals",
+			"parent": "shoes",
+			"description": "Sandals for summer days.",
+			"image": "images/rope-sandals.jpg"
+		},
+		"bags": {
+			"name": "Bags",
+			"description": "Totes, handbags and bags for a weekend away.",
+			"image": "images/top-handle-bag.jpg"
+		},
+		"accessories": {
+			"name": "Accessories",
+			"description": "Jewellery, watches, sunglasses and the small things that finish an outfit.",
+			"image": "images/layered-necklace.jpg"
+		},
+		"jewellery": {
+			"name": "Jewellery",
+			"parent": "accessories",
+			"description": "Gold necklaces, bracelets and bangles.",
+			"image": "images/layered-necklace.jpg"
+		},
+		"watches": {
+			"name": "Watches",
+			"parent": "accessories",
+			"description": "Wood and steel watches.",
+			"image": "images/wood-watch.jpg"
+		},
+		"sunglasses": {
+			"name": "Sunglasses",
+			"parent": "accessories",
+			"description": "Aviators and square frames with UV400 lenses.",
+			"image": "images/aviators.jpg"
+		},
+		"belts-and-wallets": {
+			"name": "Belts and wallets",
+			"parent": "accessories",
+			"description": "Leather belts and wallets.",
+			"image": "images/leather-belt.jpg"
+		},
+		"hats-and-scarves": {
+			"name": "Hats and scarves",
+			"parent": "accessories",
+			"description": "Beanies, sun hats and scarves.",
+			"image": "images/knit-beanie.jpg"
+		},
+		"tech": {
+			"name": "Tech",
+			"description": "Headphones, speakers and desk tech under $100.",
+			"image": "images/mint-headphones.jpg"
+		},
+		"audio": {
+			"name": "Audio",
+			"parent": "tech",
+			"description": "Headphones and speakers.",
+			"image": "images/petal-headphones.jpg"
+		},
+		"desk": {
+			"name": "Desk",
+			"parent": "tech",
+			"description": "Keyboards, mice and lamps for a better workday.",
+			"image": "images/tkl-keyboard.jpg"
+		},
+		"on-the-go": {
+			"name": "On the go",
+			"parent": "tech",
+			"description": "Power banks and activity bands.",
+			"image": "images/power-bank.jpg"
+		},
+		"home": {
+			"name": "Home",
+			"description": "Mugs, vases, lamps and cushions.",
+			"image": "images/glazed-vase.jpg"
+		},
+		"kitchen": {
+			"name": "Kitchen",
+			"parent": "home",
+			"description": "Stoneware mugs and kitchen things.",
+			"image": "images/speckled-mug.jpg"
+		},
+		"living": {
+			"name": "Living",
+			"parent": "home",
+			"description": "Lamps, cushions and a chair to sit in.",
+			"image": "images/table-lamp.jpg"
+		},
+		"decor": {
+			"name": "Decor",
+			"parent": "home",
+			"description": "Vases and small things for shelves.",
+			"image": "images/celadon-vase.jpg"
+		},
+		"home-fragrance": {
+			"name": "Home fragrance",
+			"parent": "home",
+			"description": "Candles that burn slow.",
+			"image": "images/soy-candle.jpg"
+		},
+		"beauty": {
+			"name": "Beauty",
+			"description": "Make-up, skincare and fragrance.",
+			"image": "images/teal-perfume.jpg"
+		},
+		"make-up": {
+			"name": "Make-up",
+			"parent": "beauty",
+			"description": "Lipsticks and nail colours.",
+			"image": "images/lipstick-trio.jpg"
+		},
+		"skincare": {
+			"name": "Skincare",
+			"parent": "beauty",
+			"description": "Face oils and serums.",
+			"image": "images/botanical-oil.jpg"
+		},
+		"fragrance": {
+			"name": "Fragrance",
+			"parent": "beauty",
+			"description": "Eau de parfum and eau de toilette.",
+			"image": "images/teal-perfume.jpg"
+		}
+	},
+	"products": [
+		{
+			"slug": "linen-shirt",
+			"name": "Linen camp-collar shirt",
+			"category": [
+				"shirts"
+			],
+			"image": "images/linen-shirt.jpg",
+			"gallery": [],
+			"sales": 61,
+			"regular": "54",
+			"featured": false,
+			"short": "A relaxed camp-collar shirt in washed linen that softens with every wear.",
+			"description": [
+				[
+					"p",
+					"Cut boxy and a little short, to wear open over a tee or buttoned on its own. The linen is washed before it’s sewn, so it’s soft from the first day and won’t shrink."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"100% washed linen",
+						"Camp collar and a straight hem",
+						"Coconut-shell buttons",
+						"Relaxed fit: take your usual size"
+					]
+				]
+			],
+			"tags": [
+				"Summer"
+			],
+			"days": 3,
+			"specs": {
+				"Colour": [
+					"Ecru",
+					"Stone",
+					"Sage"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "100% linen",
+				"Fit": "Relaxed",
+				"Care": "Machine wash cold, line dry"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "XS"
+					},
+					"stock": 12,
+					"sku": "TT-101-01"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "S"
+					},
+					"stock": 2,
+					"sku": "TT-101-02"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "M"
+					},
+					"stock": 3,
+					"sku": "TT-101-03"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "L"
+					},
+					"stock": 3,
+					"sku": "TT-101-04"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "XL"
+					},
+					"stock": 30,
+					"sku": "TT-101-05"
+				},
+				{
+					"options": {
+						"Colour": "Stone",
+						"Size": "XS"
+					},
+					"stock": 8,
+					"sku": "TT-101-06"
+				},
+				{
+					"options": {
+						"Colour": "Stone",
+						"Size": "S"
+					},
+					"stock": 18,
+					"sku": "TT-101-07"
+				},
+				{
+					"options": {
+						"Colour": "Stone",
+						"Size": "M"
+					},
+					"stock": 2,
+					"sku": "TT-101-08"
+				},
+				{
+					"options": {
+						"Colour": "Stone",
+						"Size": "L"
+					},
+					"stock": 24,
+					"sku": "TT-101-09"
+				},
+				{
+					"options": {
+						"Colour": "Stone",
+						"Size": "XL"
+					},
+					"stock": 18,
+					"sku": "TT-101-10"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Size": "XS"
+					},
+					"stock": 0,
+					"sku": "TT-101-11"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Size": "S"
+					},
+					"stock": 0,
+					"sku": "TT-101-12"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Size": "M"
+					},
+					"stock": 12,
+					"sku": "TT-101-13"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Size": "L"
+					},
+					"stock": 24,
+					"sku": "TT-101-14"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Size": "XL"
+					},
+					"stock": 12,
+					"sku": "TT-101-15"
+				}
+			],
+			"cross_sells": [
+				"cotton-tee",
+				"rope-sandals"
+			],
+			"sku": "TT-101"
+		},
+		{
+			"slug": "oxford-shirt",
+			"name": "Relaxed Oxford shirt",
+			"category": [
+				"shirts"
+			],
+			"image": "images/oxford-shirt.jpg",
+			"gallery": [],
+			"sales": 74,
+			"regular": "48",
+			"featured": false,
+			"short": "Our everyday Oxford, cut a little roomier, with a button-down collar.",
+			"description": [
+				[
+					"p",
+					"The cotton Oxford weave is soft but sturdy, and the shirt is long enough to tuck in. A box pleat at the back gives you room to move."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"100% cotton Oxford",
+						"Button-down collar",
+						"Box pleat and a locker loop at the back",
+						"Relaxed fit"
+					]
+				]
+			],
+			"days": 5,
+			"specs": {
+				"Colour": [
+					"White",
+					"Pale blue",
+					"Sand"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "100% cotton",
+				"Fit": "Relaxed",
+				"Care": "Machine wash cold, dry flat"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "XS"
+					},
+					"stock": 30,
+					"sku": "TT-102-01"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "S"
+					},
+					"stock": 18,
+					"sku": "TT-102-02"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "M"
+					},
+					"stock": 30,
+					"sku": "TT-102-03"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "L"
+					},
+					"stock": 3,
+					"sku": "TT-102-04"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "XL"
+					},
+					"stock": 5,
+					"sku": "TT-102-05"
+				},
+				{
+					"options": {
+						"Colour": "Pale blue",
+						"Size": "XS"
+					},
+					"stock": 8,
+					"sku": "TT-102-06"
+				},
+				{
+					"options": {
+						"Colour": "Pale blue",
+						"Size": "S"
+					},
+					"stock": 3,
+					"sku": "TT-102-07"
+				},
+				{
+					"options": {
+						"Colour": "Pale blue",
+						"Size": "M"
+					},
+					"stock": 2,
+					"sku": "TT-102-08"
+				},
+				{
+					"options": {
+						"Colour": "Pale blue",
+						"Size": "L"
+					},
+					"stock": 12,
+					"sku": "TT-102-09"
+				},
+				{
+					"options": {
+						"Colour": "Pale blue",
+						"Size": "XL"
+					},
+					"stock": 3,
+					"sku": "TT-102-10"
+				},
+				{
+					"options": {
+						"Colour": "Sand",
+						"Size": "XS"
+					},
+					"stock": 3,
+					"sku": "TT-102-11"
+				},
+				{
+					"options": {
+						"Colour": "Sand",
+						"Size": "S"
+					},
+					"stock": 3,
+					"sku": "TT-102-12"
+				},
+				{
+					"options": {
+						"Colour": "Sand",
+						"Size": "M"
+					},
+					"stock": 12,
+					"sku": "TT-102-13"
+				},
+				{
+					"options": {
+						"Colour": "Sand",
+						"Size": "L"
+					},
+					"stock": 2,
+					"sku": "TT-102-14"
+				},
+				{
+					"options": {
+						"Colour": "Sand",
+						"Size": "XL"
+					},
+					"stock": 12,
+					"sku": "TT-102-15"
+				}
+			],
+			"cross_sells": [
+				"straight-jeans",
+				"leather-belt"
+			],
+			"sku": "TT-102"
+		},
+		{
+			"slug": "pleated-skirt",
+			"name": "Pleated midi skirt",
+			"category": [
+				"skirts-and-dresses"
+			],
+			"image": "images/pleated-skirt.jpg",
+			"gallery": [],
+			"sales": 39,
+			"regular": "58",
+			"featured": false,
+			"short": "A swishy midi skirt with knife pleats and an elastic back waist.",
+			"description": [
+				[
+					"p",
+					"Falls to mid-calf and moves well. The pleats are pressed in for good, so it comes out of the wash ready to wear."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Recycled polyester",
+						"Flat front, elastic back waist",
+						"Knife pleats all round",
+						"Midi length: about 30 in"
+					]
+				]
+			],
+			"days": 8,
+			"specs": {
+				"Colour": [
+					"Black",
+					"Chocolate"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L"
+				],
+				"Material": "Recycled polyester",
+				"Fit": "True to size",
+				"Care": "Machine wash cold, hang to dry"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "XS"
+					},
+					"stock": 12,
+					"sku": "TT-103-01"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "S"
+					},
+					"stock": 2,
+					"sku": "TT-103-02"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "M"
+					},
+					"stock": 12,
+					"sku": "TT-103-03"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "L"
+					},
+					"stock": 0,
+					"sku": "TT-103-04"
+				},
+				{
+					"options": {
+						"Colour": "Chocolate",
+						"Size": "XS"
+					},
+					"stock": 0,
+					"sku": "TT-103-05"
+				},
+				{
+					"options": {
+						"Colour": "Chocolate",
+						"Size": "S"
+					},
+					"stock": 2,
+					"sku": "TT-103-06"
+				},
+				{
+					"options": {
+						"Colour": "Chocolate",
+						"Size": "M"
+					},
+					"stock": 18,
+					"sku": "TT-103-07"
+				},
+				{
+					"options": {
+						"Colour": "Chocolate",
+						"Size": "L"
+					},
+					"stock": 12,
+					"sku": "TT-103-08"
+				}
+			],
+			"sku": "TT-103"
+		},
+		{
+			"slug": "striped-jumper",
+			"name": "Striped cotton-knit jumper",
+			"category": [
+				"knitwear"
+			],
+			"image": "images/striped-jumper.jpg",
+			"gallery": [
+				"images/jumper-detail.jpg",
+				"images/jumper-collar.jpg"
+			],
+			"sales": 86,
+			"regular": "52",
+			"featured": true,
+			"short": "A relaxed jumper in a chunky waffle knit, in soft cotton that breathes.",
+			"description": [
+				[
+					"p",
+					"We knit it in a deep waffle stitch, so it holds its shape and keeps a little air in. The fit is relaxed through the body, with dropped shoulders and a hem that sits at the hip."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"100% cotton",
+						"Ribbed collar, cuffs and hem",
+						"Dropped shoulders",
+						"The model is 5′9″ and wears M"
+					]
+				],
+				[
+					"p",
+					"Take your usual size for a relaxed fit, or one size down for a closer fit."
+				]
+			],
+			"sale": "39",
+			"sale_days": 3,
+			"tags": [
+				"Today’s deal"
+			],
+			"days": 20,
+			"specs": {
+				"Colour": [
+					"Navy stripe",
+					"Grey stripe",
+					"Oat stripe"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "100% cotton",
+				"Fit": "Relaxed",
+				"Care": "Machine wash cold, dry flat"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Navy stripe",
+						"Size": "XS"
+					},
+					"stock": 4,
+					"sale": "39",
+					"sku": "TT-104-01"
+				},
+				{
+					"options": {
+						"Colour": "Navy stripe",
+						"Size": "S"
+					},
+					"stock": 6,
+					"sale": "39",
+					"sku": "TT-104-02"
+				},
+				{
+					"options": {
+						"Colour": "Navy stripe",
+						"Size": "M"
+					},
+					"stock": 2,
+					"sale": "39",
+					"sku": "TT-104-03"
+				},
+				{
+					"options": {
+						"Colour": "Navy stripe",
+						"Size": "L"
+					},
+					"stock": 18,
+					"sale": "39",
+					"sku": "TT-104-04"
+				},
+				{
+					"options": {
+						"Colour": "Navy stripe",
+						"Size": "XL"
+					},
+					"stock": 0,
+					"sale": "39",
+					"sku": "TT-104-05"
+				},
+				{
+					"options": {
+						"Colour": "Grey stripe",
+						"Size": "XS"
+					},
+					"stock": 8,
+					"sale": "39",
+					"sku": "TT-104-06"
+				},
+				{
+					"options": {
+						"Colour": "Grey stripe",
+						"Size": "S"
+					},
+					"stock": 10,
+					"sale": "39",
+					"sku": "TT-104-07"
+				},
+				{
+					"options": {
+						"Colour": "Grey stripe",
+						"Size": "M"
+					},
+					"stock": 6,
+					"sale": "39",
+					"sku": "TT-104-08"
+				},
+				{
+					"options": {
+						"Colour": "Grey stripe",
+						"Size": "L"
+					},
+					"stock": 12,
+					"sale": "39",
+					"sku": "TT-104-09"
+				},
+				{
+					"options": {
+						"Colour": "Grey stripe",
+						"Size": "XL"
+					},
+					"stock": 5,
+					"sale": "39",
+					"sku": "TT-104-10"
+				},
+				{
+					"options": {
+						"Colour": "Oat stripe",
+						"Size": "XS"
+					},
+					"stock": 3,
+					"sale": "39",
+					"sku": "TT-104-11"
+				},
+				{
+					"options": {
+						"Colour": "Oat stripe",
+						"Size": "S"
+					},
+					"stock": 2,
+					"sale": "39",
+					"sku": "TT-104-12"
+				},
+				{
+					"options": {
+						"Colour": "Oat stripe",
+						"Size": "M"
+					},
+					"stock": 5,
+					"sale": "39",
+					"sku": "TT-104-13"
+				},
+				{
+					"options": {
+						"Colour": "Oat stripe",
+						"Size": "L"
+					},
+					"stock": 9,
+					"sale": "39",
+					"sku": "TT-104-14"
+				},
+				{
+					"options": {
+						"Colour": "Oat stripe",
+						"Size": "XL"
+					},
+					"stock": 0,
+					"sale": "39",
+					"sku": "TT-104-15"
+				}
+			],
+			"defaults": {
+				"Colour": "Navy stripe",
+				"Size": "M"
+			},
+			"cross_sells": [
+				"cotton-tee",
+				"straight-jeans"
+			],
+			"upsells": [
+				"merino-crew",
+				"chunky-sweater"
+			],
+			"sku": "TT-104"
+		},
+		{
+			"slug": "cotton-tee",
+			"name": "Organic cotton tee",
+			"category": [
+				"tops-and-tees"
+			],
+			"image": "images/cotton-tee.jpg",
+			"gallery": [],
+			"sales": 842,
+			"regular": "19",
+			"featured": false,
+			"short": "The tee we wear most: organic cotton, a clean crew neck and a fit that keeps its shape.",
+			"description": [
+				[
+					"p",
+					"Made from heavy organic cotton jersey that gets softer, not thinner. Pre-shrunk, so the size you buy is the size you keep."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"100% organic cotton, 180 gsm",
+						"Crew neck with a narrow rib",
+						"Side seams, so it hangs straight",
+						"Regular fit"
+					]
+				]
+			],
+			"days": 40,
+			"specs": {
+				"Colour": [
+					"White",
+					"Grey",
+					"Navy",
+					"Brick",
+					"Olive",
+					"Sky"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "100% organic cotton",
+				"Fit": "Regular",
+				"Care": "Machine wash warm"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "XS"
+					},
+					"stock": 2,
+					"sku": "TT-105-01"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "S"
+					},
+					"stock": 18,
+					"sku": "TT-105-02"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "M"
+					},
+					"stock": 18,
+					"sku": "TT-105-03"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "L"
+					},
+					"stock": 18,
+					"sku": "TT-105-04"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Size": "XL"
+					},
+					"stock": 5,
+					"sku": "TT-105-05"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "XS"
+					},
+					"stock": 2,
+					"sku": "TT-105-06"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "S"
+					},
+					"stock": 30,
+					"sku": "TT-105-07"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "M"
+					},
+					"stock": 5,
+					"sku": "TT-105-08"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "L"
+					},
+					"stock": 8,
+					"sku": "TT-105-09"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "XL"
+					},
+					"stock": 18,
+					"sku": "TT-105-10"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "XS"
+					},
+					"stock": 12,
+					"sku": "TT-105-11"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "S"
+					},
+					"stock": 0,
+					"sku": "TT-105-12"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "M"
+					},
+					"stock": 12,
+					"sku": "TT-105-13"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "L"
+					},
+					"stock": 2,
+					"sku": "TT-105-14"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "XL"
+					},
+					"stock": 2,
+					"sku": "TT-105-15"
+				},
+				{
+					"options": {
+						"Colour": "Brick",
+						"Size": "XS"
+					},
+					"stock": 18,
+					"sku": "TT-105-16"
+				},
+				{
+					"options": {
+						"Colour": "Brick",
+						"Size": "S"
+					},
+					"stock": 5,
+					"sku": "TT-105-17"
+				},
+				{
+					"options": {
+						"Colour": "Brick",
+						"Size": "M"
+					},
+					"stock": 2,
+					"sku": "TT-105-18"
+				},
+				{
+					"options": {
+						"Colour": "Brick",
+						"Size": "L"
+					},
+					"stock": 5,
+					"sku": "TT-105-19"
+				},
+				{
+					"options": {
+						"Colour": "Brick",
+						"Size": "XL"
+					},
+					"stock": 12,
+					"sku": "TT-105-20"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "XS"
+					},
+					"stock": 3,
+					"sku": "TT-105-21"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "S"
+					},
+					"stock": 12,
+					"sku": "TT-105-22"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "M"
+					},
+					"stock": 18,
+					"sku": "TT-105-23"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "L"
+					},
+					"stock": 12,
+					"sku": "TT-105-24"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "XL"
+					},
+					"stock": 12,
+					"sku": "TT-105-25"
+				},
+				{
+					"options": {
+						"Colour": "Sky",
+						"Size": "XS"
+					},
+					"stock": 24,
+					"sku": "TT-105-26"
+				},
+				{
+					"options": {
+						"Colour": "Sky",
+						"Size": "S"
+					},
+					"stock": 30,
+					"sku": "TT-105-27"
+				},
+				{
+					"options": {
+						"Colour": "Sky",
+						"Size": "M"
+					},
+					"stock": 24,
+					"sku": "TT-105-28"
+				},
+				{
+					"options": {
+						"Colour": "Sky",
+						"Size": "L"
+					},
+					"stock": 5,
+					"sku": "TT-105-29"
+				},
+				{
+					"options": {
+						"Colour": "Sky",
+						"Size": "XL"
+					},
+					"stock": 12,
+					"sku": "TT-105-30"
+				}
+			],
+			"defaults": {
+				"Colour": "White",
+				"Size": "M"
+			},
+			"sku": "TT-105"
+		},
+		{
+			"slug": "tee-pack",
+			"name": "Everyday tee, pack of three",
+			"category": [
+				"tops-and-tees"
+			],
+			"image": "images/mega-tees.jpg",
+			"gallery": [],
+			"sales": 1240,
+			"regular": "45",
+			"featured": false,
+			"short": "Three organic cotton tees in white, grey and navy, for less than the price of three.",
+			"description": [
+				[
+					"p",
+					"Our organic cotton tee in the three colours you reach for most, folded together in one recycled paper sleeve."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"One white, one grey and one navy tee",
+						"100% organic cotton, 180 gsm",
+						"Pre-shrunk",
+						"Regular fit"
+					]
+				]
+			],
+			"days": 44,
+			"specs": {
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Colours": "White, grey and navy",
+				"Material": "100% organic cotton",
+				"Care": "Machine wash warm"
+			},
+			"variations": [
+				{
+					"options": {
+						"Size": "XS"
+					},
+					"stock": 30,
+					"sku": "TT-106-01"
+				},
+				{
+					"options": {
+						"Size": "S"
+					},
+					"stock": 8,
+					"sku": "TT-106-02"
+				},
+				{
+					"options": {
+						"Size": "M"
+					},
+					"stock": 0,
+					"sku": "TT-106-03"
+				},
+				{
+					"options": {
+						"Size": "L"
+					},
+					"stock": 12,
+					"sku": "TT-106-04"
+				},
+				{
+					"options": {
+						"Size": "XL"
+					},
+					"stock": 30,
+					"sku": "TT-106-05"
+				}
+			],
+			"meta": {
+				"_themor_badge": "Organic cotton",
+				"_themor_badge_color": "#17804F"
+			},
+			"sku": "TT-106"
+		},
+		{
+			"slug": "merino-crew",
+			"name": "Merino crew jumper",
+			"category": [
+				"knitwear"
+			],
+			"image": "images/merino-crew.jpg",
+			"gallery": [],
+			"sales": 128,
+			"regular": "62",
+			"featured": false,
+			"short": "A fine-gauge merino crew that’s warm without weight and never itches.",
+			"description": [
+				[
+					"p",
+					"Extra-fine merino from Australia, knitted thin enough to wear under a coat or over a shirt."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"100% extra-fine merino",
+						"Fully fashioned shoulders",
+						"Ribbed neck, cuffs and hem",
+						"Regular fit"
+					]
+				]
+			],
+			"days": 48,
+			"specs": {
+				"Colour": [
+					"Navy",
+					"Cranberry",
+					"Olive"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "100% merino wool",
+				"Fit": "Regular",
+				"Care": "Hand wash cold or wool cycle"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "XS"
+					},
+					"stock": 18,
+					"sku": "TT-107-01"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "S"
+					},
+					"stock": 0,
+					"sku": "TT-107-02"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "M"
+					},
+					"stock": 12,
+					"sku": "TT-107-03"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "L"
+					},
+					"stock": 18,
+					"sku": "TT-107-04"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "XL"
+					},
+					"stock": 18,
+					"sku": "TT-107-05"
+				},
+				{
+					"options": {
+						"Colour": "Cranberry",
+						"Size": "XS"
+					},
+					"stock": 18,
+					"sku": "TT-107-06"
+				},
+				{
+					"options": {
+						"Colour": "Cranberry",
+						"Size": "S"
+					},
+					"stock": 2,
+					"sku": "TT-107-07"
+				},
+				{
+					"options": {
+						"Colour": "Cranberry",
+						"Size": "M"
+					},
+					"stock": 12,
+					"sku": "TT-107-08"
+				},
+				{
+					"options": {
+						"Colour": "Cranberry",
+						"Size": "L"
+					},
+					"stock": 12,
+					"sku": "TT-107-09"
+				},
+				{
+					"options": {
+						"Colour": "Cranberry",
+						"Size": "XL"
+					},
+					"stock": 8,
+					"sku": "TT-107-10"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "XS"
+					},
+					"stock": 12,
+					"sku": "TT-107-11"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "S"
+					},
+					"stock": 18,
+					"sku": "TT-107-12"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "M"
+					},
+					"stock": 30,
+					"sku": "TT-107-13"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "L"
+					},
+					"stock": 30,
+					"sku": "TT-107-14"
+				},
+				{
+					"options": {
+						"Colour": "Olive",
+						"Size": "XL"
+					},
+					"stock": 3,
+					"sku": "TT-107-15"
+				}
+			],
+			"sku": "TT-107"
+		},
+		{
+			"slug": "chunky-sweater",
+			"name": "Chunky rib-knit sweater",
+			"category": [
+				"knitwear"
+			],
+			"image": "images/chunky-sweater.jpg",
+			"gallery": [],
+			"sales": 142,
+			"regular": "68",
+			"featured": false,
+			"short": "A thick, slouchy rib-knit for the coldest mornings.",
+			"description": [
+				[
+					"p",
+					"Knitted from a soft wool and cotton blend in a deep rib that holds warmth. Long enough to cover your hips."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"60% cotton, 40% wool",
+						"Deep rib all over",
+						"Dropped shoulders",
+						"Oversized fit"
+					]
+				]
+			],
+			"sale": "51",
+			"days": 52,
+			"specs": {
+				"Colour": [
+					"Oat",
+					"Walnut"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "Cotton and wool",
+				"Fit": "Oversized",
+				"Care": "Hand wash cold"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Oat",
+						"Size": "XS"
+					},
+					"stock": 12,
+					"sale": "51",
+					"sku": "TT-108-01"
+				},
+				{
+					"options": {
+						"Colour": "Oat",
+						"Size": "S"
+					},
+					"stock": 12,
+					"sale": "51",
+					"sku": "TT-108-02"
+				},
+				{
+					"options": {
+						"Colour": "Oat",
+						"Size": "M"
+					},
+					"stock": 5,
+					"sale": "51",
+					"sku": "TT-108-03"
+				},
+				{
+					"options": {
+						"Colour": "Oat",
+						"Size": "L"
+					},
+					"stock": 30,
+					"sale": "51",
+					"sku": "TT-108-04"
+				},
+				{
+					"options": {
+						"Colour": "Oat",
+						"Size": "XL"
+					},
+					"stock": 18,
+					"sale": "51",
+					"sku": "TT-108-05"
+				},
+				{
+					"options": {
+						"Colour": "Walnut",
+						"Size": "XS"
+					},
+					"stock": 12,
+					"sale": "51",
+					"sku": "TT-108-06"
+				},
+				{
+					"options": {
+						"Colour": "Walnut",
+						"Size": "S"
+					},
+					"stock": 3,
+					"sale": "51",
+					"sku": "TT-108-07"
+				},
+				{
+					"options": {
+						"Colour": "Walnut",
+						"Size": "M"
+					},
+					"stock": 3,
+					"sale": "51",
+					"sku": "TT-108-08"
+				},
+				{
+					"options": {
+						"Colour": "Walnut",
+						"Size": "L"
+					},
+					"stock": 24,
+					"sale": "51",
+					"sku": "TT-108-09"
+				},
+				{
+					"options": {
+						"Colour": "Walnut",
+						"Size": "XL"
+					},
+					"stock": 0,
+					"sale": "51",
+					"sku": "TT-108-10"
+				}
+			],
+			"sku": "TT-108"
+		},
+		{
+			"slug": "straight-jeans",
+			"name": "Straight-leg jeans",
+			"category": [
+				"jeans-and-trousers"
+			],
+			"image": "images/straight-jeans.jpg",
+			"gallery": [],
+			"sales": 310,
+			"regular": "69",
+			"featured": false,
+			"short": "Mid-rise jeans with a straight leg, in a rigid denim that softens as you wear it.",
+			"description": [
+				[
+					"p",
+					"A classic five-pocket jean in 13 oz cotton denim with a little stretch. The leg falls straight from the hip."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"98% cotton, 2% elastane",
+						"Mid rise, straight leg",
+						"Button fly",
+						"Inside leg 32 in"
+					]
+				]
+			],
+			"days": 56,
+			"specs": {
+				"Colour": [
+					"Mid blue",
+					"Black",
+					"Light blue"
+				],
+				"Size": [
+					"28",
+					"30",
+					"32",
+					"34",
+					"36"
+				],
+				"Material": "98% cotton, 2% elastane",
+				"Fit": "Straight",
+				"Care": "Wash inside out, cold"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Mid blue",
+						"Size": "28"
+					},
+					"stock": 30,
+					"sku": "TT-109-01"
+				},
+				{
+					"options": {
+						"Colour": "Mid blue",
+						"Size": "30"
+					},
+					"stock": 18,
+					"sku": "TT-109-02"
+				},
+				{
+					"options": {
+						"Colour": "Mid blue",
+						"Size": "32"
+					},
+					"stock": 2,
+					"sku": "TT-109-03"
+				},
+				{
+					"options": {
+						"Colour": "Mid blue",
+						"Size": "34"
+					},
+					"stock": 5,
+					"sku": "TT-109-04"
+				},
+				{
+					"options": {
+						"Colour": "Mid blue",
+						"Size": "36"
+					},
+					"stock": 12,
+					"sku": "TT-109-05"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "28"
+					},
+					"stock": 8,
+					"sku": "TT-109-06"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "30"
+					},
+					"stock": 2,
+					"sku": "TT-109-07"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "32"
+					},
+					"stock": 12,
+					"sku": "TT-109-08"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "34"
+					},
+					"stock": 24,
+					"sku": "TT-109-09"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "36"
+					},
+					"stock": 12,
+					"sku": "TT-109-10"
+				},
+				{
+					"options": {
+						"Colour": "Light blue",
+						"Size": "28"
+					},
+					"stock": 8,
+					"sku": "TT-109-11"
+				},
+				{
+					"options": {
+						"Colour": "Light blue",
+						"Size": "30"
+					},
+					"stock": 18,
+					"sku": "TT-109-12"
+				},
+				{
+					"options": {
+						"Colour": "Light blue",
+						"Size": "32"
+					},
+					"stock": 18,
+					"sku": "TT-109-13"
+				},
+				{
+					"options": {
+						"Colour": "Light blue",
+						"Size": "34"
+					},
+					"stock": 30,
+					"sku": "TT-109-14"
+				},
+				{
+					"options": {
+						"Colour": "Light blue",
+						"Size": "36"
+					},
+					"stock": 3,
+					"sku": "TT-109-15"
+				}
+			],
+			"sku": "TT-109"
+		},
+		{
+			"slug": "wrap-coat",
+			"name": "Belted wrap coat",
+			"category": [
+				"coats-and-jackets"
+			],
+			"image": "images/wrap-coat.jpg",
+			"gallery": [],
+			"sales": 52,
+			"regular": "149",
+			"featured": false,
+			"short": "A long wrap coat in a soft wool blend, with a tie belt and deep pockets.",
+			"description": [
+				[
+					"p",
+					"Unlined so it drapes, with a shawl collar and a belt you can tie at the front or the back."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"70% wool, 30% recycled polyester",
+						"Shawl collar and tie belt",
+						"Two deep patch pockets",
+						"Falls below the knee"
+					]
+				]
+			],
+			"days": 60,
+			"specs": {
+				"Colour": [
+					"Ecru",
+					"Camel"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "Wool blend",
+				"Fit": "Relaxed",
+				"Care": "Dry clean"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "XS"
+					},
+					"stock": 8,
+					"sku": "TT-110-01"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "S"
+					},
+					"stock": 18,
+					"sku": "TT-110-02"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "M"
+					},
+					"stock": 18,
+					"sku": "TT-110-03"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "L"
+					},
+					"stock": 3,
+					"sku": "TT-110-04"
+				},
+				{
+					"options": {
+						"Colour": "Ecru",
+						"Size": "XL"
+					},
+					"stock": 18,
+					"sku": "TT-110-05"
+				},
+				{
+					"options": {
+						"Colour": "Camel",
+						"Size": "XS"
+					},
+					"stock": 3,
+					"sku": "TT-110-06"
+				},
+				{
+					"options": {
+						"Colour": "Camel",
+						"Size": "S"
+					},
+					"stock": 2,
+					"sku": "TT-110-07"
+				},
+				{
+					"options": {
+						"Colour": "Camel",
+						"Size": "M"
+					},
+					"stock": 12,
+					"sku": "TT-110-08"
+				},
+				{
+					"options": {
+						"Colour": "Camel",
+						"Size": "L"
+					},
+					"stock": 12,
+					"sku": "TT-110-09"
+				},
+				{
+					"options": {
+						"Colour": "Camel",
+						"Size": "XL"
+					},
+					"stock": 2,
+					"sku": "TT-110-10"
+				}
+			],
+			"meta": {
+				"_themor_badge": "Wool blend",
+				"_themor_badge_color": "#17804F"
+			},
+			"sku": "TT-110"
+		},
+		{
+			"slug": "blazer",
+			"name": "Wool-blend blazer",
+			"category": [
+				"coats-and-jackets"
+			],
+			"image": "images/blazer.jpg",
+			"gallery": [],
+			"sales": 37,
+			"regular": "129",
+			"featured": false,
+			"short": "A single-breasted blazer that works with jeans as well as it does with trousers.",
+			"description": [
+				[
+					"p",
+					"Half-lined and lightly structured, with two flap pockets and a single vent."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Wool and viscose blend",
+						"Two-button front",
+						"Half lined",
+						"Regular fit"
+					]
+				]
+			],
+			"days": 64,
+			"specs": {
+				"Colour": [
+					"Grey",
+					"Black"
+				],
+				"Size": [
+					"XS",
+					"S",
+					"M",
+					"L",
+					"XL"
+				],
+				"Material": "Wool blend",
+				"Fit": "Regular",
+				"Care": "Dry clean"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "XS"
+					},
+					"stock": 0,
+					"sku": "TT-111-01"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "S"
+					},
+					"stock": 0,
+					"sku": "TT-111-02"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "M"
+					},
+					"stock": 1,
+					"sku": "TT-111-03"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "L"
+					},
+					"stock": 1,
+					"sku": "TT-111-04"
+				},
+				{
+					"options": {
+						"Colour": "Grey",
+						"Size": "XL"
+					},
+					"stock": 0,
+					"sku": "TT-111-05"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "XS"
+					},
+					"stock": 0,
+					"sku": "TT-111-06"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "S"
+					},
+					"stock": 0,
+					"sku": "TT-111-07"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "M"
+					},
+					"stock": 1,
+					"sku": "TT-111-08"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "L"
+					},
+					"stock": 0,
+					"sku": "TT-111-09"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Size": "XL"
+					},
+					"stock": 0,
+					"sku": "TT-111-10"
+				}
+			],
+			"sku": "TT-111"
+		},
+		{
+			"slug": "knit-beanie",
+			"name": "Cable-knit beanie",
+			"category": [
+				"hats-and-scarves"
+			],
+			"image": "images/knit-beanie.jpg",
+			"gallery": [],
+			"sales": 204,
+			"regular": "22",
+			"featured": false,
+			"short": "A deep cable-knit beanie with a turn-up, in soft lambswool.",
+			"description": [
+				[
+					"p",
+					"Deep enough to cover your ears with the turn-up down. Lambswool, so it stays warm when it’s damp."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"100% lambswool",
+						"Cable knit with a turn-up",
+						"One size"
+					]
+				]
+			],
+			"days": 68,
+			"specs": {
+				"Colour": [
+					"Oat",
+					"Grey"
+				],
+				"Material": "100% lambswool",
+				"Care": "Hand wash cold"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Oat"
+					},
+					"stock": 0,
+					"sku": "TT-112-01"
+				},
+				{
+					"options": {
+						"Colour": "Grey"
+					},
+					"stock": 0,
+					"sku": "TT-112-02"
+				}
+			],
+			"meta": {
+				"_themor_restock_date": {
+					"next": "friday"
+				}
+			},
+			"sku": "TT-112"
+		},
+		{
+			"slug": "leather-belt",
+			"name": "Brass-buckle leather belt",
+			"category": [
+				"belts-and-wallets"
+			],
+			"image": "images/leather-belt.jpg",
+			"gallery": [],
+			"sales": 205,
+			"regular": "38",
+			"featured": false,
+			"short": "A full-grain leather belt with a solid brass buckle that will outlast your jeans.",
+			"description": [
+				[
+					"p",
+					"Cut from a single piece of vegetable-tanned leather that darkens and softens with wear."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Full-grain leather, 1.25 in wide",
+						"Solid brass buckle",
+						"Made in Mexico"
+					]
+				]
+			],
+			"tags": [
+				"Gift idea"
+			],
+			"days": 72,
+			"specs": {
+				"Size": [
+					"S",
+					"M",
+					"L"
+				],
+				"Colour": "Tan",
+				"Material": "Full-grain leather"
+			},
+			"variations": [
+				{
+					"options": {
+						"Size": "S"
+					},
+					"stock": 8,
+					"sku": "TT-113-01"
+				},
+				{
+					"options": {
+						"Size": "M"
+					},
+					"stock": 3,
+					"sku": "TT-113-02"
+				},
+				{
+					"options": {
+						"Size": "L"
+					},
+					"stock": 0,
+					"sku": "TT-113-03"
+				}
+			],
+			"sku": "TT-113"
+		},
+		{
+			"slug": "bifold-wallet",
+			"name": "Leather bifold wallet",
+			"category": [
+				"belts-and-wallets"
+			],
+			"image": "images/bifold-wallet.jpg",
+			"gallery": [],
+			"sales": 96,
+			"regular": "39",
+			"featured": false,
+			"short": "A slim bifold with six card slots and room for notes, in soft brown leather.",
+			"description": [
+				[
+					"p",
+					"Slim enough for a front pocket. The leather is soft from day one and gets better with age."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Full-grain leather",
+						"Six card slots and a note pocket",
+						"4.4 × 3.5 in closed"
+					]
+				]
+			],
+			"stock": 14,
+			"tags": [
+				"Gift idea"
+			],
+			"days": 76,
+			"sku": "TT-114"
+		},
+		{
+			"slug": "bangle-set",
+			"name": "Gold bangle set of three",
+			"category": [
+				"jewellery"
+			],
+			"image": "images/bangle-set.jpg",
+			"gallery": [],
+			"sales": 41,
+			"regular": "34",
+			"featured": false,
+			"short": "Three slim bangles to wear together or on their own.",
+			"description": [
+				[
+					"p",
+					"Brass with a thick gold plating that won’t rub off, in three textures: smooth, twisted and hammered."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Gold-plated brass",
+						"Three bangles, 2.6 in across",
+						"Nickel free"
+					]
+				]
+			],
+			"sale": "24",
+			"stock": 3,
+			"tags": [
+				"Today’s deal",
+				"Gift idea"
+			],
+			"days": 80,
+			"sku": "TT-115"
+		},
+		{
+			"slug": "layered-necklace",
+			"name": "Layered gold necklace",
+			"category": [
+				"jewellery"
+			],
+			"image": "images/layered-necklace.jpg",
+			"gallery": [],
+			"sales": 63,
+			"regular": "39",
+			"featured": false,
+			"short": "Two fine chains on one clasp, so they never tangle.",
+			"description": [
+				[
+					"p",
+					"A short chain and a long one, joined at the clasp. Gold vermeil on sterling silver."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"18k gold vermeil on sterling silver",
+						"16 and 20 in chains",
+						"Nickel free"
+					]
+				]
+			],
+			"stock": 22,
+			"tags": [
+				"Gift idea"
+			],
+			"days": 84,
+			"sku": "TT-116"
+		},
+		{
+			"slug": "moon-bracelet",
+			"name": "Crescent moon bracelet",
+			"category": [
+				"jewellery"
+			],
+			"image": "images/moon-bracelet.jpg",
+			"gallery": [],
+			"sales": 48,
+			"regular": "29",
+			"featured": false,
+			"short": "A fine chain bracelet with a small crescent moon charm.",
+			"description": [
+				[
+					"p",
+					"Delicate enough to wear every day, with an adjustable chain that fits most wrists."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Gold-plated sterling silver",
+						"Adjustable from 6 to 7.5 in"
+					]
+				]
+			],
+			"stock": 30,
+			"tags": [
+				"Gift idea"
+			],
+			"days": 88,
+			"sku": "TT-117"
+		},
+		{
+			"slug": "wood-watch",
+			"name": "Maple wood watch",
+			"category": [
+				"watches"
+			],
+			"image": "images/wood-watch.jpg",
+			"gallery": [],
+			"sales": 176,
+			"regular": "89",
+			"featured": false,
+			"short": "A light maple case with a cream dial and a soft leather strap.",
+			"description": [
+				[
+					"p",
+					"The case is cut from a single block of maple, so it weighs almost nothing on your wrist."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Maple wood case, 40 mm",
+						"Japanese quartz movement",
+						"Tan leather strap",
+						"Splash resistant"
+					]
+				]
+			],
+			"stock": 11,
+			"tags": [
+				"Gift idea"
+			],
+			"days": 92,
+			"sku": "TT-118"
+		},
+		{
+			"slug": "canvas-watch",
+			"name": "Black canvas-strap watch",
+			"category": [
+				"watches"
+			],
+			"image": "images/canvas-watch.jpg",
+			"gallery": [],
+			"sales": 58,
+			"regular": "75",
+			"featured": false,
+			"short": "A clean white dial on a black case, with a tough canvas strap.",
+			"description": [
+				[
+					"p",
+					"Simple to read at a glance, with a quiet movement and a strap you can swap in seconds."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Stainless steel case, 38 mm",
+						"Japanese quartz movement",
+						"Canvas strap with quick-release pins",
+						"Water resistant to 30 m"
+					]
+				]
+			],
+			"stock": 9,
+			"days": 96,
+			"sku": "TT-119"
+		},
+		{
+			"slug": "aviators",
+			"name": "Gold-frame aviator sunglasses",
+			"category": [
+				"sunglasses"
+			],
+			"image": "images/aviators.jpg",
+			"gallery": [],
+			"sales": 89,
+			"regular": "45",
+			"featured": false,
+			"short": "Classic aviators with a light gold frame and grey lenses.",
+			"description": [
+				[
+					"p",
+					"Polarised lenses cut the glare off water and roads, and block 100% of UVA and UVB."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Metal frame",
+						"Polarised grey lenses",
+						"UV400 protection",
+						"Comes with a soft case"
+					]
+				]
+			],
+			"sale": "32",
+			"stock": 16,
+			"tags": [
+				"Summer"
+			],
+			"days": 100,
+			"sku": "TT-120"
+		},
+		{
+			"slug": "lilac-sunglasses",
+			"name": "Lilac-lens sunglasses",
+			"category": [
+				"sunglasses"
+			],
+			"image": "images/lilac-sunglasses.jpg",
+			"gallery": [],
+			"sales": 38,
+			"regular": "29",
+			"featured": false,
+			"short": "Square frames with soft lilac lenses that make everything look like early evening.",
+			"description": [
+				[
+					"p",
+					"Lightweight acetate frames and tinted lenses with full UV protection."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Acetate frame",
+						"Lilac tinted lenses",
+						"UV400 protection"
+					]
+				]
+			],
+			"tags": [
+				"Summer"
+			],
+			"days": 9,
+			"specs": {
+				"Frame": [
+					"Black",
+					"Tortoise"
+				],
+				"Lenses": "Lilac"
+			},
+			"variations": [
+				{
+					"options": {
+						"Frame": "Black"
+					},
+					"stock": 12,
+					"sku": "TT-121-01"
+				},
+				{
+					"options": {
+						"Frame": "Tortoise"
+					},
+					"stock": 7,
+					"sku": "TT-121-02"
+				}
+			],
+			"sku": "TT-121"
+		},
+		{
+			"slug": "coral-runner",
+			"name": "Mesh trail runner",
+			"category": [
+				"trainers"
+			],
+			"image": "images/coral-runner.jpg",
+			"gallery": [],
+			"sales": 92,
+			"regular": "75",
+			"featured": false,
+			"short": "A light trail runner with a grippy sole and a breathable knit upper.",
+			"description": [
+				[
+					"p",
+					"Comfortable from the first run, with a cushioned sole that grips on gravel and wet paths."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Recycled knit upper",
+						"Cushioned foam midsole",
+						"Rubber lugs for grip",
+						"True to size"
+					]
+				]
+			],
+			"days": 10,
+			"specs": {
+				"Colour": [
+					"Coral",
+					"Navy"
+				],
+				"Size": [
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11"
+				],
+				"Material": "Recycled knit and rubber"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Coral",
+						"Size": "6"
+					},
+					"stock": 18,
+					"sku": "TT-122-01"
+				},
+				{
+					"options": {
+						"Colour": "Coral",
+						"Size": "7"
+					},
+					"stock": 2,
+					"sku": "TT-122-02"
+				},
+				{
+					"options": {
+						"Colour": "Coral",
+						"Size": "8"
+					},
+					"stock": 5,
+					"sku": "TT-122-03"
+				},
+				{
+					"options": {
+						"Colour": "Coral",
+						"Size": "9"
+					},
+					"stock": 2,
+					"sku": "TT-122-04"
+				},
+				{
+					"options": {
+						"Colour": "Coral",
+						"Size": "10"
+					},
+					"stock": 24,
+					"sku": "TT-122-05"
+				},
+				{
+					"options": {
+						"Colour": "Coral",
+						"Size": "11"
+					},
+					"stock": 0,
+					"sku": "TT-122-06"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "6"
+					},
+					"stock": 3,
+					"sku": "TT-122-07"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "7"
+					},
+					"stock": 3,
+					"sku": "TT-122-08"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "8"
+					},
+					"stock": 30,
+					"sku": "TT-122-09"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "9"
+					},
+					"stock": 24,
+					"sku": "TT-122-10"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "10"
+					},
+					"stock": 18,
+					"sku": "TT-122-11"
+				},
+				{
+					"options": {
+						"Colour": "Navy",
+						"Size": "11"
+					},
+					"stock": 30,
+					"sku": "TT-122-12"
+				}
+			],
+			"sku": "TT-122"
+		},
+		{
+			"slug": "rope-sandals",
+			"name": "Rope toe-post sandals",
+			"category": [
+				"sandals"
+			],
+			"image": "images/rope-sandals.jpg",
+			"gallery": [],
+			"sales": 57,
+			"regular": "39",
+			"featured": false,
+			"short": "Toe-post sandals with a braided rope sole and soft suede straps.",
+			"description": [
+				[
+					"p",
+					"A braided jute sole with a rubber base, so they last on pavements as well as the beach."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Suede straps",
+						"Braided jute sole with a rubber base",
+						"True to size"
+					]
+				]
+			],
+			"tags": [
+				"Summer"
+			],
+			"days": 16,
+			"specs": {
+				"Size": [
+					"6",
+					"7",
+					"8",
+					"9",
+					"10"
+				],
+				"Colour": "Natural",
+				"Material": "Suede and jute"
+			},
+			"variations": [
+				{
+					"options": {
+						"Size": "6"
+					},
+					"stock": 8,
+					"sku": "TT-123-01"
+				},
+				{
+					"options": {
+						"Size": "7"
+					},
+					"stock": 12,
+					"sku": "TT-123-02"
+				},
+				{
+					"options": {
+						"Size": "8"
+					},
+					"stock": 2,
+					"sku": "TT-123-03"
+				},
+				{
+					"options": {
+						"Size": "9"
+					},
+					"stock": 5,
+					"sku": "TT-123-04"
+				},
+				{
+					"options": {
+						"Size": "10"
+					},
+					"stock": 12,
+					"sku": "TT-123-05"
+				}
+			],
+			"sku": "TT-123"
+		},
+		{
+			"slug": "chukka-boots",
+			"name": "Leather chukka boots",
+			"category": [
+				"boots"
+			],
+			"image": "images/chukka-boots.jpg",
+			"gallery": [],
+			"sales": 210,
+			"regular": "119",
+			"featured": false,
+			"short": "Two-eyelet chukkas in soft leather, on a crepe sole.",
+			"description": [
+				[
+					"p",
+					"Smart enough for work and easy enough for the weekend. The crepe sole is light and quiet."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Full-grain leather",
+						"Natural crepe sole",
+						"Leather lining",
+						"True to size"
+					]
+				]
+			],
+			"days": 104,
+			"specs": {
+				"Colour": [
+					"Tan",
+					"Dark brown"
+				],
+				"Size": [
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11"
+				],
+				"Material": "Leather"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Tan",
+						"Size": "6"
+					},
+					"stock": 5,
+					"sku": "TT-124-01"
+				},
+				{
+					"options": {
+						"Colour": "Tan",
+						"Size": "7"
+					},
+					"stock": 5,
+					"sku": "TT-124-02"
+				},
+				{
+					"options": {
+						"Colour": "Tan",
+						"Size": "8"
+					},
+					"stock": 3,
+					"sku": "TT-124-03"
+				},
+				{
+					"options": {
+						"Colour": "Tan",
+						"Size": "9"
+					},
+					"stock": 5,
+					"sku": "TT-124-04"
+				},
+				{
+					"options": {
+						"Colour": "Tan",
+						"Size": "10"
+					},
+					"stock": 18,
+					"sku": "TT-124-05"
+				},
+				{
+					"options": {
+						"Colour": "Tan",
+						"Size": "11"
+					},
+					"stock": 18,
+					"sku": "TT-124-06"
+				},
+				{
+					"options": {
+						"Colour": "Dark brown",
+						"Size": "6"
+					},
+					"stock": 24,
+					"sku": "TT-124-07"
+				},
+				{
+					"options": {
+						"Colour": "Dark brown",
+						"Size": "7"
+					},
+					"stock": 30,
+					"sku": "TT-124-08"
+				},
+				{
+					"options": {
+						"Colour": "Dark brown",
+						"Size": "8"
+					},
+					"stock": 0,
+					"sku": "TT-124-09"
+				},
+				{
+					"options": {
+						"Colour": "Dark brown",
+						"Size": "9"
+					},
+					"stock": 24,
+					"sku": "TT-124-10"
+				},
+				{
+					"options": {
+						"Colour": "Dark brown",
+						"Size": "10"
+					},
+					"stock": 12,
+					"sku": "TT-124-11"
+				},
+				{
+					"options": {
+						"Colour": "Dark brown",
+						"Size": "11"
+					},
+					"stock": 12,
+					"sku": "TT-124-12"
+				}
+			],
+			"sku": "TT-124"
+		},
+		{
+			"slug": "quilted-tote",
+			"name": "Quilted top-handle bag",
+			"category": [
+				"bags"
+			],
+			"image": "images/quilted-tote.jpg",
+			"gallery": [],
+			"sales": 43,
+			"regular": "64",
+			"featured": false,
+			"short": "A soft quilted bag with two top handles and a long strap.",
+			"description": [
+				[
+					"p",
+					"Big enough for a tablet and a book, with a zip pocket inside for keys."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Recycled nylon, quilted",
+						"Two handles and a long detachable strap",
+						"Zip top",
+						"13 × 10 × 4 in"
+					]
+				]
+			],
+			"days": 14,
+			"specs": {
+				"Colour": [
+					"Charcoal",
+					"Bone"
+				],
+				"Material": "Recycled nylon"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Charcoal"
+					},
+					"stock": 24,
+					"sku": "TT-125-01"
+				},
+				{
+					"options": {
+						"Colour": "Bone"
+					},
+					"stock": 12,
+					"sku": "TT-125-02"
+				}
+			],
+			"sku": "TT-125"
+		},
+		{
+			"slug": "top-handle-bag",
+			"name": "Black structured handbag",
+			"category": [
+				"bags"
+			],
+			"image": "images/top-handle-bag.jpg",
+			"gallery": [],
+			"sales": 88,
+			"regular": "89",
+			"featured": false,
+			"short": "A structured leather handbag with a top handle and a slim front pocket.",
+			"description": [
+				[
+					"p",
+					"Holds its shape when it’s empty and closes with a magnetic flap."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Leather",
+						"Top handles and a detachable strap",
+						"Three inside pockets",
+						"12 × 9 × 5 in"
+					]
+				]
+			],
+			"stock": 8,
+			"days": 108,
+			"sku": "TT-126"
+		},
+		{
+			"slug": "messenger-bag",
+			"name": "Waxed leather messenger bag",
+			"category": [
+				"bags"
+			],
+			"image": "images/messenger-bag.jpg",
+			"gallery": [],
+			"sales": 67,
+			"regular": "129",
+			"featured": false,
+			"short": "A waxed leather messenger with a padded laptop sleeve and brass buckles.",
+			"description": [
+				[
+					"p",
+					"Fits a 15-inch laptop, with a wide strap that sits well on the shoulder."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Waxed leather",
+						"Padded laptop sleeve",
+						"Brass buckles",
+						"15 × 11 × 4 in"
+					]
+				]
+			],
+			"sale": "99",
+			"stock": 6,
+			"days": 112,
+			"sku": "TT-127"
+		},
+		{
+			"slug": "lock-bag",
+			"name": "Coral padlock handbag",
+			"category": [
+				"bags"
+			],
+			"image": "images/lock-bag.jpg",
+			"gallery": [],
+			"sales": 33,
+			"regular": "69",
+			"featured": false,
+			"short": "A small structured bag in coral with a gold padlock charm.",
+			"description": [
+				[
+					"p",
+					"Just big enough for the essentials, with a long strap to wear it across the body."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Vegan leather",
+						"Gold padlock charm",
+						"Detachable long strap"
+					]
+				]
+			],
+			"stock": 12,
+			"days": 116,
+			"sku": "TT-128"
+		},
+		{
+			"slug": "beach-tote",
+			"name": "Striped beach tote",
+			"category": [
+				"bags"
+			],
+			"image": "images/beach-tote.jpg",
+			"gallery": [],
+			"sales": 51,
+			"regular": "35",
+			"featured": false,
+			"short": "A roomy canvas tote in bold stripes, for the beach and the market.",
+			"description": [
+				[
+					"p",
+					"Heavy cotton canvas with rope handles and an inside pocket for your phone."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Cotton canvas",
+						"Rope handles",
+						"20 × 15 × 6 in"
+					]
+				]
+			],
+			"stock": 25,
+			"tags": [
+				"Summer"
+			],
+			"days": 120,
+			"sku": "TT-129"
+		},
+		{
+			"slug": "duffel-floor",
+			"name": "Leather weekend duffel",
+			"category": [
+				"bags"
+			],
+			"image": "images/duffel-floor.jpg",
+			"gallery": [],
+			"sales": 40,
+			"regular": "149",
+			"featured": false,
+			"short": "A soft leather duffel that holds a weekend and fits under a plane seat.",
+			"description": [
+				[
+					"p",
+					"Waxed leather that only gets better with knocks, with a zip pocket for shoes."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Waxed leather",
+						"Shoe pocket and an inside zip pocket",
+						"Long strap and two handles",
+						"20 × 11 × 10 in"
+					]
+				]
+			],
+			"stock": 5,
+			"tags": [
+				"Gift idea"
+			],
+			"days": 124,
+			"sku": "TT-130"
+		},
+		{
+			"slug": "mint-headphones",
+			"name": "Mint on-ear headphones",
+			"category": [
+				"audio"
+			],
+			"image": "images/mint-headphones.jpg",
+			"gallery": [],
+			"sales": 96,
+			"regular": "49",
+			"featured": false,
+			"short": "Light wireless on-ears with a 40-hour battery, in soft colours.",
+			"description": [
+				[
+					"p",
+					"They fold flat, charge in two hours and last a week of commuting."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth 5.3",
+						"40 hours of play",
+						"Folding design",
+						"USB-C charging"
+					]
+				]
+			],
+			"days": 6,
+			"specs": {
+				"Colour": [
+					"Mint",
+					"Blush",
+					"White"
+				],
+				"Battery": "40 hours"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Mint"
+					},
+					"stock": 12,
+					"sku": "TT-131-01"
+				},
+				{
+					"options": {
+						"Colour": "Blush"
+					},
+					"stock": 8,
+					"sku": "TT-131-02"
+				},
+				{
+					"options": {
+						"Colour": "White"
+					},
+					"stock": 2,
+					"sku": "TT-131-03"
+				}
+			],
+			"sku": "TT-131"
+		},
+		{
+			"slug": "petal-headphones",
+			"name": "Petal on-ear headphones",
+			"category": [
+				"audio"
+			],
+			"image": "images/petal-headphones.jpg",
+			"gallery": [],
+			"sales": 318,
+			"regular": "59",
+			"featured": false,
+			"short": "Cushioned wireless headphones with a warm sound and a 30-hour battery.",
+			"description": [
+				[
+					"p",
+					"Memory-foam cushions, easy buttons on the ear cup and a cable for when the battery runs out."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth 5.3",
+						"30 hours of play",
+						"3.5 mm cable included"
+					]
+				]
+			],
+			"stock": 40,
+			"days": 128,
+			"sku": "TT-132"
+		},
+		{
+			"slug": "cube-speakers",
+			"name": "Cube desk speakers, pair",
+			"category": [
+				"audio"
+			],
+			"image": "images/cube-speakers.jpg",
+			"gallery": [],
+			"sales": 158,
+			"regular": "89",
+			"featured": false,
+			"short": "A pair of small cube speakers with a big sound for a desk or a shelf.",
+			"description": [
+				[
+					"p",
+					"Plug them into your computer by USB-C or play from your phone over Bluetooth."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth and USB-C",
+						"2 × 10 W",
+						"Walnut veneer cabinets"
+					]
+				]
+			],
+			"sale": "69",
+			"stock": 7,
+			"tags": [
+				"Today’s deal"
+			],
+			"days": 132,
+			"sku": "TT-133"
+		},
+		{
+			"slug": "pebble-speaker",
+			"name": "Pebble mini speaker",
+			"category": [
+				"audio"
+			],
+			"image": "images/pebble-speaker.jpg",
+			"gallery": [],
+			"sales": 188,
+			"regular": "35",
+			"featured": false,
+			"short": "A palm-size speaker that floats, with 12 hours of battery.",
+			"description": [
+				[
+					"p",
+					"Waterproof and dustproof, with a strap to hang it in the shower or from a bag."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth 5.3",
+						"Waterproof (IP67)",
+						"12 hours of play"
+					]
+				]
+			],
+			"days": 136,
+			"specs": {
+				"Colour": [
+					"Green",
+					"White"
+				],
+				"Battery": "12 hours"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Green"
+					},
+					"stock": 30,
+					"sku": "TT-134-01"
+				},
+				{
+					"options": {
+						"Colour": "White"
+					},
+					"stock": 18,
+					"sku": "TT-134-02"
+				}
+			],
+			"sku": "TT-134"
+		},
+		{
+			"slug": "tkl-keyboard",
+			"name": "Compact mechanical keyboard",
+			"category": [
+				"desk"
+			],
+			"image": "images/tkl-keyboard.jpg",
+			"gallery": [],
+			"sales": 74,
+			"regular": "99",
+			"featured": false,
+			"short": "A tenkeyless mechanical keyboard with quiet switches and a solid aluminium case.",
+			"description": [
+				[
+					"p",
+					"Quiet tactile switches, keys you can swap, and a cable or Bluetooth for up to three devices."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Tenkeyless layout",
+						"Quiet tactile switches",
+						"Bluetooth and USB-C",
+						"Aluminium case"
+					]
+				]
+			],
+			"stock": 10,
+			"days": 140,
+			"sku": "TT-135"
+		},
+		{
+			"slug": "wireless-mouse",
+			"name": "Silent wireless mouse",
+			"category": [
+				"desk"
+			],
+			"image": "images/wireless-mouse.jpg",
+			"gallery": [],
+			"sales": 233,
+			"regular": "25",
+			"featured": false,
+			"short": "A quiet mouse that fits either hand and runs for a year on one battery.",
+			"description": [
+				[
+					"p",
+					"Silent buttons, a smooth scroll wheel and a small receiver that stores inside it."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Silent clicks",
+						"Bluetooth and a USB receiver",
+						"One AA battery, about 12 months"
+					]
+				]
+			],
+			"days": 144,
+			"specs": {
+				"Colour": [
+					"Silver",
+					"Graphite"
+				]
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Silver"
+					},
+					"stock": 12,
+					"sku": "TT-136-01"
+				},
+				{
+					"options": {
+						"Colour": "Graphite"
+					},
+					"stock": 24,
+					"sku": "TT-136-02"
+				}
+			],
+			"sku": "TT-136"
+		},
+		{
+			"slug": "task-lamp",
+			"name": "Balance arm desk lamp",
+			"category": [
+				"desk"
+			],
+			"image": "images/task-lamp.jpg",
+			"gallery": [],
+			"sales": 61,
+			"regular": "59",
+			"featured": false,
+			"short": "A black steel desk lamp with a counterweighted arm and a brass knob.",
+			"description": [
+				[
+					"p",
+					"The arm stays where you put it, and the warm LED bulb is included."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Powder-coated steel",
+						"Counterweighted arm",
+						"Warm LED bulb included"
+					]
+				]
+			],
+			"stock": 9,
+			"days": 148,
+			"sku": "TT-137"
+		},
+		{
+			"slug": "power-bank",
+			"name": "Slim power bank",
+			"category": [
+				"on-the-go"
+			],
+			"image": "images/power-bank.jpg",
+			"gallery": [],
+			"sales": 144,
+			"regular": "35",
+			"featured": false,
+			"short": "A 10,000 mAh power bank as thin as a phone, with fast USB-C charging.",
+			"description": [
+				[
+					"p",
+					"Charges a phone twice over and charges itself in three hours."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"10,000 mAh",
+						"USB-C in and out, 20 W",
+						"Charges two devices at once"
+					]
+				]
+			],
+			"sale": "29",
+			"stock": 33,
+			"days": 152,
+			"sku": "TT-138"
+		},
+		{
+			"slug": "fitness-band",
+			"name": "Activity band",
+			"category": [
+				"on-the-go"
+			],
+			"image": "images/fitness-band.jpg",
+			"gallery": [],
+			"sales": 141,
+			"regular": "39",
+			"featured": false,
+			"short": "Counts steps, sleep and heart rate, and lasts ten days between charges.",
+			"description": [
+				[
+					"p",
+					"A light band with a bright screen, notifications from your phone and water resistance for swimming."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Steps, sleep and heart rate",
+						"10 days of battery",
+						"Water resistant to 50 m"
+					]
+				]
+			],
+			"days": 156,
+			"specs": {
+				"Colour": [
+					"Lilac",
+					"Black"
+				],
+				"Battery": "10 days"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Lilac"
+					},
+					"stock": 2,
+					"sku": "TT-139-01"
+				},
+				{
+					"options": {
+						"Colour": "Black"
+					},
+					"stock": 8,
+					"sku": "TT-139-02"
+				}
+			],
+			"sku": "TT-139"
+		},
+		{
+			"slug": "speckled-mug",
+			"name": "Speckled stoneware mug",
+			"category": [
+				"kitchen"
+			],
+			"image": "images/speckled-mug.jpg",
+			"gallery": [],
+			"sales": 305,
+			"regular": "16",
+			"featured": false,
+			"short": "A hand-glazed stoneware mug with a speckled finish and a generous handle.",
+			"description": [
+				[
+					"p",
+					"Each one is glazed by hand, so the speckles are never quite the same."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Stoneware",
+						"Holds 12 fl oz",
+						"Dishwasher and microwave safe"
+					]
+				]
+			],
+			"stock": 48,
+			"days": 7,
+			"sku": "TT-140"
+		},
+		{
+			"slug": "stoneware-mugs",
+			"name": "Stoneware mugs, set of two",
+			"category": [
+				"kitchen"
+			],
+			"image": "images/stoneware-mugs.jpg",
+			"gallery": [],
+			"sales": 122,
+			"regular": "28",
+			"featured": false,
+			"short": "Two plain white stoneware mugs that stack neatly in the cupboard.",
+			"description": [
+				[
+					"p",
+					"Heavy enough to keep coffee warm, light enough to drink from all morning."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Stoneware",
+						"Holds 10 fl oz each",
+						"Dishwasher and microwave safe"
+					]
+				]
+			],
+			"stock": 36,
+			"tags": [
+				"Gift idea"
+			],
+			"days": 160,
+			"sku": "TT-141"
+		},
+		{
+			"slug": "glazed-vase",
+			"name": "Drip-glaze bud vase",
+			"category": [
+				"decor"
+			],
+			"image": "images/glazed-vase.jpg",
+			"gallery": [],
+			"sales": 64,
+			"regular": "42",
+			"featured": false,
+			"short": "A small stoneware vase with a blue drip glaze over a sandy clay.",
+			"description": [
+				[
+					"p",
+					"Made for a single stem or a small bunch. The glaze runs differently on every vase."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Stoneware",
+						"6 in tall",
+						"Watertight"
+					]
+				]
+			],
+			"stock": 12,
+			"days": 11,
+			"sku": "TT-142"
+		},
+		{
+			"slug": "celadon-vase",
+			"name": "Pale celadon vase",
+			"category": [
+				"decor"
+			],
+			"image": "images/celadon-vase.jpg",
+			"gallery": [],
+			"sales": 31,
+			"regular": "36",
+			"featured": false,
+			"short": "A round vase with a pale celadon glaze and a short neck.",
+			"description": [
+				[
+					"p",
+					"A quiet shape that looks good with flowers in it or without."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Porcelain",
+						"7 in tall",
+						"Watertight"
+					]
+				]
+			],
+			"stock": 10,
+			"days": 164,
+			"sku": "TT-143"
+		},
+		{
+			"slug": "table-lamp",
+			"name": "Ceramic table lamp",
+			"category": [
+				"living"
+			],
+			"image": "images/table-lamp.jpg",
+			"gallery": [],
+			"sales": 47,
+			"regular": "69",
+			"featured": false,
+			"short": "A white ceramic lamp with a pleated linen shade.",
+			"description": [
+				[
+					"p",
+					"A soft, warm light for a side table or a bedside."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Ceramic base",
+						"Linen shade",
+						"19 in tall",
+						"Bulb not included"
+					]
+				]
+			],
+			"stock": 8,
+			"days": 168,
+			"sku": "TT-144"
+		},
+		{
+			"slug": "bed-cushions",
+			"name": "Woven texture cushions, pair",
+			"category": [
+				"living"
+			],
+			"image": "images/bed-cushions.jpg",
+			"gallery": [],
+			"sales": 52,
+			"regular": "48",
+			"featured": false,
+			"short": "Two cushion covers in a hand-woven wool and cotton, with a fringe.",
+			"description": [
+				[
+					"p",
+					"Woven on looms in Portugal from wool and cotton. Inserts not included."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Wool and cotton",
+						"18 × 18 in",
+						"Hidden zip"
+					]
+				]
+			],
+			"stock": 14,
+			"days": 172,
+			"sku": "TT-145"
+		},
+		{
+			"slug": "honeycomb-cushion",
+			"name": "Honeycomb cushion cover",
+			"category": [
+				"living"
+			],
+			"image": "images/honeycomb-cushion.jpg",
+			"gallery": [],
+			"sales": 94,
+			"regular": "32",
+			"featured": false,
+			"short": "A cushion cover in a deep honeycomb knit.",
+			"description": [
+				[
+					"p",
+					"Knitted from soft cotton in a raised honeycomb stitch. Insert not included."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"100% cotton",
+						"18 × 18 in",
+						"Envelope back"
+					]
+				]
+			],
+			"stock": 20,
+			"days": 176,
+			"sku": "TT-146"
+		},
+		{
+			"slug": "leather-chair",
+			"name": "Leather butterfly chair",
+			"category": [
+				"living"
+			],
+			"image": "images/leather-chair.jpg",
+			"gallery": [],
+			"sales": 19,
+			"regular": "249",
+			"featured": false,
+			"short": "A leather sling on a folding steel frame: the chair everyone sits in first.",
+			"description": [
+				[
+					"p",
+					"Vegetable-tanned leather that softens and darkens with use, on a black steel frame that folds flat."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Full-grain leather sling",
+						"Black steel frame",
+						"Folds flat",
+						"33 × 31 × 35 in"
+					]
+				]
+			],
+			"stock": 4,
+			"days": 180,
+			"sku": "TT-147"
+		},
+		{
+			"slug": "soy-candle",
+			"name": "Soy wax candle, fig & cedar",
+			"category": [
+				"home-fragrance"
+			],
+			"image": "images/soy-candle.jpg",
+			"gallery": [],
+			"sales": 112,
+			"regular": "22",
+			"featured": false,
+			"short": "A slow-burning soy candle that smells of ripe figs and cedar wood.",
+			"description": [
+				[
+					"p",
+					"Hand-poured soy wax and a cotton wick, in a glass you can use again."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Soy wax, cotton wick",
+						"About 45 hours of burning",
+						"8 oz"
+					]
+				]
+			],
+			"sale": "16",
+			"stock": 42,
+			"tags": [
+				"Today’s deal",
+				"Gift idea"
+			],
+			"days": 184,
+			"sku": "TT-148"
+		},
+		{
+			"slug": "lipstick-trio",
+			"name": "Satin lipstick trio",
+			"category": [
+				"make-up"
+			],
+			"image": "images/lipstick-trio.jpg",
+			"gallery": [],
+			"sales": 119,
+			"regular": "36",
+			"featured": false,
+			"short": "Three satin lipsticks in a red, a rose and a berry.",
+			"description": [
+				[
+					"p",
+					"Creamy colour that lasts through lunch, and never dries your lips."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Three full-size lipsticks",
+						"Satin finish",
+						"Vegan, never tested on animals"
+					]
+				]
+			],
+			"stock": 26,
+			"days": 188,
+			"sku": "TT-149"
+		},
+		{
+			"slug": "lipstick-set",
+			"name": "Lipstick set of six",
+			"category": [
+				"make-up"
+			],
+			"image": "images/lipstick-set.jpg",
+			"gallery": [],
+			"sales": 48,
+			"regular": "48",
+			"featured": false,
+			"short": "Six satin lipsticks from soft coral to deep red, in one box.",
+			"description": [
+				[
+					"p",
+					"Every shade you need for a year, packed in a recycled card box."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Six full-size lipsticks",
+						"Satin finish",
+						"Vegan"
+					]
+				]
+			],
+			"stock": 15,
+			"tags": [
+				"Gift idea"
+			],
+			"days": 192,
+			"sku": "TT-150"
+		},
+		{
+			"slug": "nail-duo",
+			"name": "Nail colour duo",
+			"category": [
+				"make-up"
+			],
+			"image": "images/nail-duo.jpg",
+			"gallery": [],
+			"sales": 67,
+			"regular": "14",
+			"featured": false,
+			"short": "A pair of quick-dry nail colours, in a soft pink and a deep red.",
+			"description": [
+				[
+					"p",
+					"Glossy colour in two coats, dry in a minute."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Two 0.3 fl oz bottles",
+						"Quick dry",
+						"Vegan"
+					]
+				]
+			],
+			"stock": 31,
+			"days": 196,
+			"sku": "TT-151"
+		},
+		{
+			"slug": "face-oil",
+			"name": "Brightening face serum",
+			"category": [
+				"skincare"
+			],
+			"image": "images/face-oil.jpg",
+			"gallery": [],
+			"sales": 84,
+			"regular": "32",
+			"featured": false,
+			"short": "A light serum with vitamin C to even out your skin.",
+			"description": [
+				[
+					"p",
+					"Absorbs in seconds and sits well under make-up. Use it in the morning, before sunscreen."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"10% vitamin C",
+						"1 fl oz dropper bottle",
+						"Fragrance free"
+					]
+				]
+			],
+			"stock": 19,
+			"days": 200,
+			"sku": "TT-152"
+		},
+		{
+			"slug": "botanical-oil",
+			"name": "Botanical face oil",
+			"category": [
+				"skincare"
+			],
+			"image": "images/botanical-oil.jpg",
+			"gallery": [],
+			"sales": 233,
+			"regular": "28",
+			"featured": false,
+			"short": "A calendula face oil that calms dry skin overnight.",
+			"description": [
+				[
+					"p",
+					"Cold-pressed oils with calendula, for dry or tired skin. A few drops at night are enough."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Calendula, jojoba and rosehip oils",
+						"1 fl oz glass bottle",
+						"Vegan"
+					]
+				]
+			],
+			"stock": 23,
+			"days": 204,
+			"sku": "TT-153"
+		},
+		{
+			"slug": "teal-perfume",
+			"name": "Sea glass eau de parfum",
+			"category": [
+				"fragrance"
+			],
+			"image": "images/teal-perfume.jpg",
+			"gallery": [],
+			"sales": 52,
+			"regular": "58",
+			"featured": false,
+			"short": "Fresh and salty: sea air, bergamot and a little cedar.",
+			"description": [
+				[
+					"p",
+					"A clean, airy scent that lasts all day without filling the room."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Eau de parfum, 1.7 fl oz",
+						"Bergamot, sea salt, cedar"
+					]
+				]
+			],
+			"stock": 13,
+			"days": 208,
+			"sku": "TT-154"
+		},
+		{
+			"slug": "perfume-flowers",
+			"name": "Wildflower eau de toilette",
+			"category": [
+				"fragrance"
+			],
+			"image": "images/perfume-flowers.jpg",
+			"gallery": [],
+			"sales": 36,
+			"regular": "48",
+			"featured": false,
+			"short": "Light and green: cut grass, chamomile and white flowers.",
+			"description": [
+				[
+					"p",
+					"A gentle scent for warm days, made in small batches in Grasse."
+				],
+				[
+					"h2",
+					"Details"
+				],
+				[
+					"ul",
+					[
+						"Eau de toilette, 1.7 fl oz",
+						"Chamomile, cut grass, white flowers"
+					]
+				]
+			],
+			"stock": 17,
+			"days": 212,
+			"sku": "TT-155"
+		}
+	],
+	"reviews": {
+		"striped-jumper": [
+			[
+				"Hannah L.",
+				5,
+				"Soft, thick and not itchy at all. I took my usual M and it’s relaxed, exactly like the photos."
+			],
+			[
+				"Marcus T.",
+				5,
+				"Bought the navy and went back for the oat. Washed both twice and they kept their shape."
+			],
+			[
+				"Priya S.",
+				4,
+				"Lovely knit. The sleeves are a little long on me, but I like pushing them up."
+			],
+			[
+				"Leo B.",
+				5,
+				"Warm enough for a cool morning without a coat."
+			]
+		],
+		"cotton-tee": [
+			[
+				"Jo K.",
+				5,
+				"The best basic tee I own. Heavy, soft, and still the right size after twenty washes."
+			],
+			[
+				"Sam R.",
+				4,
+				"Great tee. The white needs a vest underneath for me, the colours don’t."
+			],
+			[
+				"Dana W.",
+				5,
+				"I own it in four colours now. That says it all."
+			]
+		],
+		"tee-pack": [
+			[
+				"Alex M.",
+				5,
+				"Three good tees for the price of two. The navy is a proper deep navy."
+			],
+			[
+				"Chris P.",
+				5,
+				"Fit is spot on and they don’t twist after washing."
+			],
+			[
+				"Rae N.",
+				4,
+				"Really good value. I wish there was a black pack too."
+			]
+		],
+		"linen-shirt": [
+			[
+				"Tom H.",
+				5,
+				"Soft right out of the bag. I wear it open over a tee all summer."
+			],
+			[
+				"Ines G.",
+				4,
+				"Boxy and short, as it says. I sized down and it’s perfect."
+			]
+		],
+		"oxford-shirt": [
+			[
+				"Ben A.",
+				5,
+				"Proper Oxford cloth, and the collar rolls nicely."
+			],
+			[
+				"Kit F.",
+				4,
+				"Roomy fit, as promised. The pale blue is my favourite."
+			]
+		],
+		"merino-crew": [
+			[
+				"Nora J.",
+				5,
+				"Fine, warm and not a hint of itch. I wear it under my coat every day."
+			],
+			[
+				"Owen C.",
+				5,
+				"The cranberry is a beautiful colour in person."
+			]
+		],
+		"chunky-sweater": [
+			[
+				"Maya E.",
+				5,
+				"Thick and cosy, and long enough to wear with leggings."
+			],
+			[
+				"Iris V.",
+				4,
+				"Oversized indeed: I sized down one."
+			]
+		],
+		"straight-jeans": [
+			[
+				"Paul D.",
+				5,
+				"Stiff for a week, then perfect. The straight leg is just right."
+			],
+			[
+				"Ana L.",
+				4,
+				"Good jeans. The 32 inside leg is a touch long for me, easy to turn up."
+			]
+		],
+		"leather-belt": [
+			[
+				"Gus O.",
+				5,
+				"Solid buckle, thick leather. It’ll last longer than I will."
+			],
+			[
+				"Ray B.",
+				5,
+				"Sized exactly as the guide said."
+			]
+		],
+		"wood-watch": [
+			[
+				"Elle S.",
+				5,
+				"So light I forget I’m wearing it, and people always ask about it."
+			],
+			[
+				"Max T.",
+				5,
+				"Bought it as a gift and then bought one for myself."
+			],
+			[
+				"Zoe P.",
+				5,
+				"The strap was stiff for a few days, then it moulded to my wrist."
+			]
+		],
+		"botanical-oil": [
+			[
+				"Lena R.",
+				5,
+				"My dry patches were gone in a week. A little goes a long way."
+			],
+			[
+				"Fran C.",
+				5,
+				"Smells like a garden and sinks in overnight."
+			],
+			[
+				"Hal W.",
+				5,
+				"The only face oil that doesn’t break me out."
+			]
+		],
+		"honeycomb-cushion": [
+			[
+				"Jen M.",
+				5,
+				"The texture is lovely and it washes well."
+			],
+			[
+				"Tara D.",
+				5,
+				"Bought two for the sofa and they look expensive."
+			]
+		],
+		"petal-headphones": [
+			[
+				"Ian K.",
+				5,
+				"Comfortable for a whole flight and the battery lasted the trip back too."
+			],
+			[
+				"Mo S.",
+				4,
+				"Warm, full sound. A little snug on big ears."
+			]
+		],
+		"mint-headphones": [
+			[
+				"Lucy F.",
+				5,
+				"The colour is even nicer in person, and they last all week."
+			],
+			[
+				"Ash N.",
+				4,
+				"Light and comfy. Not the deepest bass, but great for podcasts."
+			]
+		],
+		"cube-speakers": [
+			[
+				"Rob V.",
+				5,
+				"Much bigger sound than they look. Perfect for my desk."
+			],
+			[
+				"Kim L.",
+				4,
+				"Easy to set up over USB-C. The walnut looks great."
+			]
+		],
+		"speckled-mug": [
+			[
+				"Bea H.",
+				5,
+				"The perfect size for a big coffee, and every one is a little different."
+			],
+			[
+				"Ned G.",
+				5,
+				"Bought one, came back for four more."
+			]
+		],
+		"soy-candle": [
+			[
+				"Ola T.",
+				5,
+				"Smells like a fig tree in the sun. Burns evenly to the end."
+			],
+			[
+				"Jade R.",
+				5,
+				"My favourite candle, and the glass makes a nice pot afterwards."
+			]
+		],
+		"bangle-set": [
+			[
+				"Sia M.",
+				5,
+				"I wear all three together every day and the gold hasn’t faded."
+			],
+			[
+				"Rhea K.",
+				4,
+				"Pretty and light. A little big on my small wrists."
+			]
+		],
+		"chukka-boots": [
+			[
+				"Theo W.",
+				5,
+				"Comfortable from the first day, and the crepe sole is so quiet."
+			],
+			[
+				"Ivo P.",
+				5,
+				"True to size. They look better with every wear."
+			]
+		],
+		"coral-runner": [
+			[
+				"Remy A.",
+				4,
+				"Light and grippy on the trail. Runs a little narrow."
+			],
+			[
+				"Sky J.",
+				5,
+				"My new favourite running shoe. The coral is bright in the best way."
+			]
+		],
+		"quilted-tote": [
+			[
+				"Ava B.",
+				5,
+				"Light, holds my laptop and a lunch, and the long strap is handy."
+			]
+		],
+		"messenger-bag": [
+			[
+				"Lou D.",
+				5,
+				"Beautiful leather and it fits my 15-inch laptop with room to spare."
+			]
+		],
+		"aviators": [
+			[
+				"Cal M.",
+				4,
+				"Classic look and the polarised lenses really help when driving."
+			]
+		],
+		"lilac-sunglasses": [
+			[
+				"Pia O.",
+				5,
+				"Everything looks like golden hour. I love them."
+			]
+		],
+		"tkl-keyboard": [
+			[
+				"Dev S.",
+				5,
+				"Quiet enough for the office and lovely to type on."
+			]
+		],
+		"wireless-mouse": [
+			[
+				"Una C.",
+				5,
+				"Truly silent clicks. My partner thanks you."
+			]
+		],
+		"glazed-vase": [
+			[
+				"Mira L.",
+				5,
+				"The glaze is gorgeous. Mine has a lovely deep blue drip."
+			]
+		],
+		"teal-perfume": [
+			[
+				"Noa F.",
+				4,
+				"Fresh and clean. I wish it lasted a little longer on me."
+			]
+		],
+		"lipstick-trio": [
+			[
+				"Gia R.",
+				5,
+				"All three shades suit me, and they don’t dry my lips."
+			]
+		]
+	},
+	"coupons": [
+		{
+			"code": "HELLO10",
+			"type": "percent",
+			"amount": "10",
+			"description": "Welcome offer: 10% off a first order of full-price items.",
+			"individual_use": true,
+			"exclude_sale_items": true,
+			"usage_limit_per_user": 1
+		}
+	]
+}

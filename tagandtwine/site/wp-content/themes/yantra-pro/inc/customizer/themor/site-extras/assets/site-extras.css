@@ -1,0 +1,200 @@
+/*
+ * Themor's site extras: the announcement bar, the sidebar's button and drawer. A theme restyles
+ * them through the custom properties below; the footer reveal's CSS is printed for the theme's
+ * parts (SiteExtras::enqueue()).
+ */
+
+:root {
+	--themor-site-bg: #fff;
+	--themor-site-heading: #111827;
+	--themor-site-border: #e5e7eb;
+	--themor-site-width: 1200px;
+	--themor-site-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* The announcement bar. */
+.themor-announce {
+	position: relative;
+	background: var(--themor-announce-bg, #111827);
+	color: var(--themor-announce-color, #fff);
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.themor-announce[hidden] {
+	display: none;
+}
+
+.themor-announce__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.4rem 1rem;
+	max-width: var(--themor-site-width);
+	margin-inline: auto;
+	padding: 0.6rem 3rem;
+	text-align: center;
+}
+
+.themor-announce__text {
+	margin: 0;
+}
+
+.themor-announce a {
+	color: inherit;
+}
+
+.themor-announce__countdown {
+	padding: 0.15rem 0.6rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, currentColor 16%, transparent);
+	font-variant-numeric: tabular-nums;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.themor-announce .themor-announce__button {
+	padding: 0.3rem 0.85rem;
+	border-radius: 999px;
+	background: var(--themor-announce-color, #fff);
+	color: var(--themor-announce-bg, #111827);
+	font-weight: 600;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.themor-announce__close {
+	position: absolute;
+	inset-block-start: 50%;
+	inset-inline-end: 0.75rem;
+	display: grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: none;
+	color: inherit;
+	cursor: pointer;
+	transform: translateY(-50%);
+}
+
+.themor-announce__close:hover,
+.themor-announce__close:focus-visible {
+	background: color-mix(in srgb, currentColor 16%, transparent);
+}
+
+/* The sidebar's button, above the content below the tablet width. */
+.themor-sidebar-button {
+	display: inline-flex;
+	align-items: center;
+	justify-self: start;
+	gap: 0.5rem;
+	margin: 0 0 1rem;
+	padding: 0.55rem 1rem;
+	border: 1px solid var(--themor-site-border);
+	border-radius: 999px;
+	background: var(--themor-site-bg);
+	color: var(--themor-site-heading);
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.themor-sidebar-button[hidden] {
+	display: none;
+}
+
+/* The drawer: a modal <dialog> at the side. */
+html.themor-site-locked {
+	overflow: hidden;
+}
+
+.themor-site-drawer {
+	position: fixed;
+	inset: 0 auto 0 0;
+	width: min(380px, 90vw);
+	max-width: none;
+	height: 100%;
+	max-height: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: var(--themor-site-bg);
+	color: inherit;
+	box-shadow: 0 24px 60px -12px rgba(15, 23, 42, 0.28);
+}
+
+[dir="rtl"] .themor-site-drawer {
+	inset: 0 0 0 auto;
+}
+
+.themor-site-drawer::backdrop {
+	background: rgba(15, 23, 42, 0.45);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.themor-site-drawer[open] {
+		animation: themor-site-drawer-in 0.3s var(--themor-site-ease);
+	}
+}
+
+@keyframes themor-site-drawer-in {
+	from {
+		transform: translateX(-100%);
+	}
+}
+
+.themor-site-drawer__panel {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.themor-site-drawer__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 1.25rem;
+	border-block-end: 1px solid var(--themor-site-border);
+}
+
+.themor-site-drawer__title {
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+.themor-site-drawer__close {
+	display: grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: none;
+	color: var(--themor-site-heading);
+	cursor: pointer;
+}
+
+.themor-site-drawer__close:hover {
+	background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.themor-site-drawer__body {
+	flex: 1;
+	overflow-y: auto;
+	padding: 1.25rem;
+}
+
+/* The sidebar inside it: no sticking, its own width. */
+.themor-site-drawer__body > * {
+	position: static !important;
+	top: auto !important;
+	width: auto !important;
+}
