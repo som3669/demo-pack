@@ -517,6 +517,50 @@
 				"wordpress": "6.5",
 				"woocommerce": "9.0"
 			},
+			"preview": "fullcharge/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "fullcharge/screens/home.jpg",
+					"page": "fullcharge/site/index.html"
+				},
+				{
+					"title": "Laptops",
+					"image": "fullcharge/screens/shop.jpg",
+					"page": "fullcharge/site/product-category/laptops/index.html"
+				},
+				{
+					"title": "A laptop",
+					"image": "fullcharge/screens/product.jpg",
+					"page": "fullcharge/site/product/altis-air-14/index.html"
+				},
+				{
+					"title": "Compare",
+					"image": "fullcharge/screens/compare.jpg",
+					"page": "fullcharge/site/compare/index.html"
+				},
+				{
+					"title": "Cart drawer",
+					"image": "fullcharge/screens/drawer.jpg",
+					"page": "fullcharge/site/product/altis-air-14/index.html"
+				},
+				{
+					"title": "All departments",
+					"image": "fullcharge/screens/departments.jpg",
+					"page": "fullcharge/site/index.html"
+				},
+				{
+					"title": "Today’s deals",
+					"image": "fullcharge/screens/deals.jpg",
+					"page": "fullcharge/site/deals/index.html"
+				},
+				{
+					"title": "A buying guide",
+					"image": "fullcharge/screens/post.jpg",
+					"page": "fullcharge/site/choose-a-laptop-for-study/index.html"
+				}
+			],
+			"demo_url": "https://som3669.github.io/demo-pack/fullcharge/site/index.html",
 			"categories": [
 				"Shop",
 				"Electronics"

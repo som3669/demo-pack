@@ -1,0 +1,265 @@
+/*!
+ * Yantra Pro: the header items (dividers, contact info, header widgets, the language switcher,
+ * the dark mode switch, departments, the search by department) and Themor's header extras in
+ * Yantra's tokens.
+ *
+ * Compiled from pro/assets/scss/header-items.scss by gulpfile.mjs.
+ */
+:root:root {
+  --themor-hx-bg: var(--yantra-bg);
+  --themor-hx-text: var(--yantra-text);
+  --themor-hx-heading: var(--yantra-heading);
+  --themor-hx-muted: var(--yantra-muted);
+  --themor-hx-border: var(--yantra-border);
+  --themor-hx-surface: var(--yantra-surface);
+  --themor-hx-accent: var(--yantra-accent);
+  --themor-hx-radius: var(--yantra-radius);
+  --themor-hx-shadow: var(--yantra-shadow-lg);
+}
+
+.themor-hx-dialog__title {
+  font-family: var(--yantra-font-heading);
+}
+
+.yantra-pro-divider {
+  display: block;
+  width: var(--yantra-pro-divider-width, 1px);
+  height: var(--yantra-pro-divider-height, 24px);
+  background: var(--yantra-pro-divider-color, var(--yantra-border));
+}
+
+.yantra-drawer .yantra-pro-divider {
+  width: 100%;
+  height: var(--yantra-pro-divider-width, 1px);
+}
+
+.yantra-header .themor-hx-contact,
+.yantra-header .themor-hx-language {
+  color: inherit;
+}
+
+.yantra-drawer .themor-hx-contact {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.yantra-drawer .themor-hx-language--dropdown ul {
+  position: static;
+  margin-block-start: 0.5rem;
+  box-shadow: none;
+}
+
+.yantra-pro-header-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+.yantra-pro-header-widgets > .widget {
+  margin: 0;
+}
+.yantra-pro-header-widgets p {
+  margin: 0;
+}
+
+.yantra-drawer .yantra-pro-header-widgets {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.yantra-pro-scheme .yantra-pro-scheme__sun {
+  display: none;
+}
+.yantra-pro-scheme[aria-pressed=true] .yantra-pro-scheme__moon {
+  display: none;
+}
+.yantra-pro-scheme[aria-pressed=true] .yantra-pro-scheme__sun {
+  display: block;
+}
+
+.yantra-header .themor-hx-dept {
+  --themor-hx-dept-anchor: static;
+  --themor-hx-dept-width: 100%;
+  --themor-hx-dept-list: 300px;
+  --themor-hx-dept-offset: 0.5rem;
+  --themor-hx-dept-button-bg: var(--yantra-pro-departments-bg, var(--yantra-color-3));
+  --themor-hx-dept-button-color: var(--yantra-pro-departments-color, var(--yantra-color-8));
+  --themor-hx-dept-button-hover-bg: var(--yantra-pro-departments-bg-hover, var(--yantra-color-1));
+  --themor-hx-dept-button-hover-color: var(--yantra-pro-departments-color-hover, var(--yantra-color-9));
+  --themor-hx-dept-button-radius: var(--yantra-button-radius);
+  --themor-menu-badge-background: var(--yantra-accent);
+  --themor-menu-badge-color: var(--yantra-on-accent);
+}
+
+.themor-hx-dept__button {
+  font-family: var(--yantra-font-body);
+  font-size: 0.95rem;
+}
+
+.themor-hx-dept__title {
+  font-family: var(--yantra-font-heading);
+}
+
+#masthead .themor-hx-dept__promo .wp-element-button {
+  color: var(--yantra-button-text);
+}
+
+#masthead .themor-hx-dept__promo .is-style-outline .wp-element-button {
+  color: var(--yantra-button-bg);
+}
+
+#masthead .themor-hx-dept__promo .themor-menu-content a:not(.wp-element-button) {
+  color: var(--yantra-accent);
+}
+
+.yantra-pro-departments__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-block: 0.85rem;
+  border-block-end: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.yantra-pro-departments__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.yantra-pro-departments__label {
+  flex: 1;
+}
+
+.yantra-pro-departments[open] > .yantra-pro-departments__toggle .themor-hx-icon--chevron {
+  rotate: 180deg;
+}
+
+.yantra-pro-departments > .yantra-nav {
+  padding-inline-start: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .yantra-pro-departments__toggle .themor-hx-icon--chevron {
+    transition: rotate var(--yantra-speed) var(--yantra-ease);
+  }
+}
+.yantra-search-form:has(> .yantra-pro-search-cat) {
+  align-items: stretch;
+  border: 1px solid var(--yantra-border);
+  border-radius: var(--yantra-radius-sm);
+  background: var(--yantra-bg);
+  transition: border-color var(--yantra-speed) var(--yantra-ease), box-shadow var(--yantra-speed) var(--yantra-ease);
+}
+.yantra-search-form:has(> .yantra-pro-search-cat):hover {
+  border-color: color-mix(in srgb, var(--yantra-heading) 30%, var(--yantra-border));
+}
+.yantra-search-form:has(> .yantra-pro-search-cat):focus-within {
+  border-color: var(--yantra-field-focus-color, var(--yantra-accent));
+  box-shadow: var(--yantra-field-focus-shadow, 0 0 0 3px color-mix(in srgb, var(--yantra-field-focus-color, var(--yantra-accent)) 25%, transparent));
+}
+.yantra-search-form:has(> .yantra-pro-search-cat) .search-field {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.yantra-search-form:has(> .yantra-pro-search-cat) .search-field:focus, .yantra-search-form:has(> .yantra-pro-search-cat) .search-field:focus-visible {
+  box-shadow: none;
+  outline: none;
+}
+.yantra-search-form:has(> .yantra-pro-search-cat) .yantra-pro-search-cat {
+  display: flex;
+  flex: none;
+  max-width: 45%;
+}
+.yantra-search-form:has(> .yantra-pro-search-cat) select {
+  width: auto;
+  max-width: min(100%, 12rem);
+  min-height: 0;
+  field-sizing: content;
+  padding-block: 0;
+  padding-inline: 0.85rem 2.25rem;
+  overflow: hidden;
+  border: 0;
+  border-inline-end: 1px solid var(--yantra-border);
+  border-radius: 0;
+  border-start-start-radius: calc(var(--yantra-radius-sm) - 1px);
+  border-end-start-radius: calc(var(--yantra-radius-sm) - 1px);
+  background-color: var(--yantra-surface);
+  color: var(--yantra-heading);
+  font-size: 0.9375rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.yantra-search-form:has(> .yantra-pro-search-cat) select:hover, .yantra-search-form:has(> .yantra-pro-search-cat) select:focus {
+  border-inline-end-color: var(--yantra-border);
+  box-shadow: none;
+}
+.yantra-search-form:has(> .yantra-pro-search-cat) select:focus-visible {
+  outline-offset: -2px;
+}
+
+.yantra-header__desktop .yantra-search-form:has(> .yantra-pro-search-cat) {
+  min-width: 20rem;
+}
+
+.yantra-search-panel:has(.yantra-pro-search-cat) {
+  width: min(28rem, 100vw - var(--yantra-gutter) * 2);
+}
+
+.yantra-header__mobile .yantra-component--search > .yantra-search-form .yantra-pro-search-cat {
+  display: none;
+}
+
+.yantra-drawer .yantra-search-form:has(> .yantra-pro-search-cat) {
+  flex-wrap: wrap;
+}
+.yantra-drawer .yantra-search-form:has(> .yantra-pro-search-cat) .yantra-pro-search-cat {
+  flex: 1 0 100%;
+  max-width: none;
+}
+.yantra-drawer .yantra-search-form:has(> .yantra-pro-search-cat) select {
+  flex: 1;
+  max-width: none;
+  min-height: 2.75rem;
+  field-sizing: fixed;
+  border-inline-end: 0;
+  border-block-end: 1px solid var(--yantra-border);
+  border-start-end-radius: calc(var(--yantra-radius-sm) - 1px);
+  border-end-start-radius: 0;
+}
+.yantra-drawer .yantra-search-form:has(> .yantra-pro-search-cat) select:hover, .yantra-drawer .yantra-search-form:has(> .yantra-pro-search-cat) select:focus {
+  border-block-end-color: var(--yantra-border);
+}
+.yantra-drawer .yantra-search-form:has(> .yantra-pro-search-cat) .search-field {
+  flex: 1 0 100%;
+}
+.yantra-drawer .yantra-search-form:has(> .yantra-pro-search-cat) .search-submit {
+  inset-block-start: auto;
+  block-size: 2.375rem;
+}
+
+:root:root {
+  --themor-mbar-bg: var(--yantra-bg);
+  --themor-mbar-color: var(--yantra-muted);
+  --themor-mbar-active: var(--yantra-accent);
+  --themor-mbar-border: var(--yantra-border);
+  --themor-mbar-badge: var(--yantra-accent);
+  --themor-mbar-on-badge: var(--yantra-on-accent);
+  --themor-mbar-radius: var(--yantra-radius-lg);
+}
+
+.themor-mbar__item {
+  font-family: var(--yantra-font-body);
+}
+
+.themor-mbar-sheet__title {
+  color: var(--yantra-heading);
+  font-family: var(--yantra-font-heading);
+}
+
+.themor-has-mbar .yantra-scroll-top {
+  bottom: calc(1.5rem + var(--themor-mbar-offset, 0px));
+}

@@ -1061,21 +1061,13 @@
 	margin-block-start: 14px;
 }
 
-.fullcharge-finder .themor-finder {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	gap: 10px 14px;
-	margin-block-end: 20px;
-}
-
-.fullcharge-finder label {
+.fullcharge-finder .themor-finder__label {
 	color: var(--fc-ink);
 	font-size: 14px;
 	font-weight: 700;
 }
 
-.fullcharge-finder select {
+.fullcharge-finder .themor-finder__select {
 	min-height: 52px;
 	min-width: 16rem;
 	padding-inline: 16px 40px;
@@ -1380,12 +1372,18 @@
 	font-size: 16px;
 }
 
-.fullcharge-signup {
-	--themor-signup-radius: 999px;
-	--themor-signup-border: 1.5px solid var(--fc-ink);
+.wp-block-themor-signup.fullcharge-signup {
+	--themor-signup-height: 54px;
+	--themor-signup-input-radius: 999px;
+	--themor-signup-input-border: 1.5px solid var(--fc-ink);
+	--themor-signup-button-radius: 999px;
 	--themor-signup-button-bg: var(--fc-mint);
 	--themor-signup-button-color: var(--fc-ink);
 	--themor-signup-button-border: 1.5px solid var(--fc-ink);
+	--themor-signup-button-hover-bg: var(--fc-mint-dark);
+	--themor-signup-button-hover-color: var(--fc-ink);
+	--themor-signup-button-hover-border: 1.5px solid var(--fc-ink);
+	--themor-signup-done: var(--fc-mint-deep);
 }
 
 /* -------------------------------------------------------------------------
@@ -1813,7 +1811,7 @@
 		padding: 28px 22px 24px;
 	}
 
-	.fullcharge-finder select {
+	.fullcharge-finder .themor-finder__select {
 		min-width: 0;
 		width: 100%;
 	}
