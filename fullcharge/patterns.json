@@ -1,0 +1,267 @@
+{
+	"schema": 1,
+	"patterns": {
+		"hero": {
+			"title": "Home: the newest laptop, its price and three facts",
+			"file": "patterns/hero.html",
+			"links": [
+				{
+					"text": "Shop laptops",
+					"product_cat": "laptops"
+				},
+				{
+					"text": "Compare models",
+					"page": "compare"
+				}
+			]
+		},
+		"perks": {
+			"title": "Home: delivery, returns, warranty and help in a row",
+			"file": "patterns/perks.html"
+		},
+		"offers": {
+			"title": "Home: drop-tested phone cases, and 30% off controllers with a code to copy",
+			"file": "patterns/offers.html",
+			"links": [
+				{
+					"text": "Shop cases",
+					"product_cat": "phone-cases"
+				},
+				{
+					"text": "Shop controllers",
+					"product_cat": "video-games"
+				}
+			]
+		},
+		"deals": {
+			"title": "Home: today's deals with a countdown to midnight and how many are left",
+			"file": "patterns/deals.html",
+			"links": [
+				{
+					"text": "See all deals",
+					"page": "deals"
+				}
+			]
+		},
+		"price-tiles": {
+			"title": "Home: three starting prices, headphones, smart lighting and controllers",
+			"file": "patterns/price-tiles.html",
+			"links": [
+				{
+					"text": "Wireless headphones",
+					"product_cat": "headphones"
+				},
+				{
+					"text": "Smart lighting",
+					"product_cat": "smart-home"
+				},
+				{
+					"text": "Controllers",
+					"product_cat": "video-games"
+				}
+			]
+		},
+		"popular": {
+			"title": "Home: popular right now, with tabs for laptops, phones, headphones, smart home and games",
+			"file": "patterns/popular.html"
+		},
+		"case-finder": {
+			"title": "Home: find a case that fits, a phone picker over the cases made for it",
+			"file": "patterns/case-finder.html"
+		},
+		"brands": {
+			"title": "Home: save on Altis laptops, and the brands we sell",
+			"file": "patterns/brands.html",
+			"links": [
+				{
+					"text": "Shop Altis",
+					"product_brand": "altis"
+				},
+				{
+					"text": "Altis",
+					"product_brand": "altis"
+				},
+				{
+					"text": "Corvo",
+					"product_brand": "corvo"
+				},
+				{
+					"text": "Mira",
+					"product_brand": "mira"
+				},
+				{
+					"text": "Kestrel",
+					"product_brand": "kestrel"
+				},
+				{
+					"text": "Hollis",
+					"product_brand": "hollis"
+				},
+				{
+					"text": "Pixelpine",
+					"product_brand": "pixelpine"
+				}
+			]
+		},
+		"advice": {
+			"title": "Home: ask someone who has used it, by email or phone",
+			"file": "patterns/advice.html"
+		},
+		"newsletter": {
+			"title": "Home: deals by email, a sign-up form",
+			"file": "patterns/newsletter.html"
+		},
+		"deals-page": {
+			"title": "Today's deals: the deals of the day with their countdown, then everything on sale",
+			"file": "patterns/deals-page.html"
+		},
+		"compare-page": {
+			"title": "Compare: how it works, above the products chosen",
+			"file": "patterns/compare-page.html"
+		},
+		"wishlist-page": {
+			"title": "Wishlist: the products a shopper saved",
+			"file": "patterns/wishlist-page.html"
+		},
+		"help-page": {
+			"title": "Help and returns: questions that open, and how to reach us",
+			"file": "patterns/help-page.html"
+		},
+		"about-page": {
+			"title": "About us: who picks the products, and how",
+			"file": "patterns/about-page.html"
+		},
+		"privacy-page": {
+			"title": "Privacy: what a real store would say",
+			"file": "patterns/privacy-page.html"
+		},
+		"terms-page": {
+			"title": "Terms: the demo's small print",
+			"file": "patterns/terms-page.html"
+		},
+		"offer-altis-air-13": {
+			"title": "Guide: Altis Air 13, with its price",
+			"file": "patterns/offer-altis-air-13.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "altis-air-13"
+				}
+			]
+		},
+		"offer-corvo-slim-13": {
+			"title": "Guide: Corvo Slim 13, with its price",
+			"file": "patterns/offer-corvo-slim-13.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "corvo-slim-13"
+				}
+			]
+		},
+		"offer-kestrel-studio-wireless": {
+			"title": "Guide: Kestrel Studio wireless headphones, with its price",
+			"file": "patterns/offer-kestrel-studio-wireless.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "kestrel-studio-wireless"
+				}
+			]
+		},
+		"offer-kestrel-buds": {
+			"title": "Guide: Kestrel Buds, with its price",
+			"file": "patterns/offer-kestrel-buds.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "kestrel-buds"
+				}
+			]
+		},
+		"offer-hollis-glow": {
+			"title": "Guide: Hollis Glow smart bulbs, 2 pack, with its price",
+			"file": "patterns/offer-hollis-glow.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "hollis-glow"
+				}
+			]
+		},
+		"popup-first-order": {
+			"title": "Popup: free delivery on a first order, with a code to copy",
+			"file": "patterns/popup-first-order.html",
+			"links": [
+				{
+					"text": "Start shopping",
+					"woocommerce": "shop"
+				}
+			]
+		},
+		"footer-brand": {
+			"title": "Footer: the shop in a line, and how to reach it",
+			"file": "patterns/footer-brand.html"
+		},
+		"categories": {
+			"title": "Home: shop by category, eight tiles with their counts",
+			"file": "patterns/categories.html",
+			"links": [
+				{
+					"text": "Laptops",
+					"product_cat": "laptops"
+				},
+				{
+					"text": "Phones",
+					"product_cat": "phones"
+				},
+				{
+					"text": "Headphones and speakers",
+					"product_cat": "audio"
+				},
+				{
+					"text": "Phone cases",
+					"product_cat": "phone-cases"
+				},
+				{
+					"text": "Smart home",
+					"product_cat": "smart-home"
+				},
+				{
+					"text": "Video games",
+					"product_cat": "video-games"
+				},
+				{
+					"text": "Chargers and power",
+					"product_cat": "chargers-power"
+				},
+				{
+					"text": "Watches and bands",
+					"product_cat": "watches-bands"
+				},
+				{
+					"text": "See all departments",
+					"woocommerce": "shop"
+				}
+			]
+		},
+		"reviews": {
+			"title": "Home: what customers say, three reviews with the product bought",
+			"file": "patterns/reviews.html",
+			"links": [
+				{
+					"text": "Altis Air 14",
+					"product": "altis-air-14"
+				},
+				{
+					"text": "Kestrel Fold wireless headphones",
+					"product": "kestrel-fold"
+				},
+				{
+					"text": "Paper planes case",
+					"product": "paper-planes-case"
+				}
+			]
+		}
+	}
+}

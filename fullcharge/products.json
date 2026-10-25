@@ -1,0 +1,2668 @@
+{
+	"schema": 1,
+	"attributes": {
+		"Colour": "colour",
+		"Screen size": "screen-size",
+		"Display": "display",
+		"Processor": "processor",
+		"Memory": "memory",
+		"Storage": "storage",
+		"Battery": "battery",
+		"Weight": "weight",
+		"Ports": "ports",
+		"Wireless": "wireless",
+		"Camera": "camera",
+		"Fits": "fits",
+		"Connection": "connection",
+		"Power": "power"
+	},
+	"attribute_terms": {
+		"Colour": {
+			"Silver": {
+				"meta": {
+					"themor_swatch_color": "#C9CED6"
+				}
+			},
+			"Graphite": {
+				"meta": {
+					"themor_swatch_color": "#4A4F57"
+				}
+			},
+			"Sage": {
+				"meta": {
+					"themor_swatch_color": "#9DB8A6"
+				}
+			},
+			"Sand": {
+				"meta": {
+					"themor_swatch_color": "#D9C7A7"
+				}
+			},
+			"Black": {
+				"meta": {
+					"themor_swatch_color": "#1F2329"
+				}
+			},
+			"Blue": {
+				"meta": {
+					"themor_swatch_color": "#3D7FD9"
+				}
+			},
+			"White": {
+				"meta": {
+					"themor_swatch_color": "#F4F5F7"
+				}
+			},
+			"Red": {
+				"meta": {
+					"themor_swatch_color": "#D93A3A"
+				}
+			},
+			"Mint": {
+				"meta": {
+					"themor_swatch_color": "#A8E3D9"
+				}
+			},
+			"Green": {
+				"meta": {
+					"themor_swatch_color": "#3DBE5A"
+				}
+			},
+			"Rose gold": {
+				"meta": {
+					"themor_swatch_color": "#E3B7A5"
+				}
+			},
+			"Sky": {
+				"meta": {
+					"themor_swatch_color": "#8ED3F2"
+				}
+			},
+			"Lilac": {
+				"meta": {
+					"themor_swatch_color": "#C59BEF"
+				}
+			},
+			"Rose": {
+				"meta": {
+					"themor_swatch_color": "#F49AB4"
+				}
+			},
+			"Navy": {
+				"meta": {
+					"themor_swatch_color": "#2E3A5C"
+				}
+			},
+			"Midnight": {
+				"meta": {
+					"themor_swatch_color": "#22252B"
+				}
+			}
+		},
+		"Memory": {
+			"8 GB": {},
+			"16 GB": {},
+			"32 GB": {}
+		},
+		"Storage": {
+			"128 GB": {},
+			"256 GB": {},
+			"512 GB": {},
+			"1 TB": {}
+		},
+		"Screen size": {
+			"13.3″": {},
+			"13.6″": {},
+			"14″": {},
+			"15.3″": {},
+			"15.6″": {},
+			"16″": {},
+			"6.1″": {},
+			"6.4″": {},
+			"6.6″": {},
+			"6.7″": {},
+			"41 mm": {},
+			"45 mm": {}
+		},
+		"Fits": {
+			"Mira 12": {},
+			"Mira 12 Pro": {},
+			"Pell Note 9": {},
+			"Pell Nova 5a": {}
+		}
+	},
+	"product_categories": {
+		"laptops": {
+			"name": "Laptops",
+			"description": "Thin and light ones for study, big screens for work, and fast ones for games. Every laptop comes with a 2-year warranty.",
+			"image": "images/cat-laptops.jpg"
+		},
+		"13-14-inch": {
+			"name": "13″ and 14″",
+			"parent": "laptops",
+			"description": "Light laptops to carry all day.",
+			"image": "images/altis-air-14.jpg"
+		},
+		"15-16-inch": {
+			"name": "15″ and 16″",
+			"parent": "laptops",
+			"description": "Big screens for work, films and games.",
+			"image": "images/altis-air-15.jpg"
+		},
+		"gaming-laptops": {
+			"name": "Gaming laptops",
+			"parent": "laptops",
+			"description": "Fast screens and graphics for games.",
+			"image": "images/corvo-play-16.jpg"
+		},
+		"2-in-1-laptops": {
+			"name": "2-in-1 laptops",
+			"parent": "laptops",
+			"description": "Laptops that fold into tablets.",
+			"image": "images/corvo-flip-14.jpg"
+		},
+		"phones": {
+			"name": "Phones",
+			"description": "Phones from Mira and Pell, with the cases made for each.",
+			"image": "images/mira-12.jpg"
+		},
+		"audio": {
+			"name": "Headphones and speakers",
+			"description": "Headphones, earbuds and speakers, wired and wireless.",
+			"image": "images/kestrel-fold.jpg"
+		},
+		"headphones": {
+			"name": "Headphones",
+			"parent": "audio",
+			"description": "Over-ear and on-ear headphones.",
+			"image": "images/kestrel-studio-wireless.jpg"
+		},
+		"earbuds": {
+			"name": "Earbuds",
+			"parent": "audio",
+			"description": "Earbuds and sport earphones.",
+			"image": "images/kestrel-buds.jpg"
+		},
+		"speakers": {
+			"name": "Speakers",
+			"parent": "audio",
+			"description": "Portable and desk speakers.",
+			"image": "images/pebble-speaker.jpg"
+		},
+		"phone-cases": {
+			"name": "Phone cases",
+			"description": "Drop-tested cases, each made for the phones it lists.",
+			"image": "images/cat-cases.jpg"
+		},
+		"smart-home": {
+			"name": "Smart home",
+			"description": "Smart speakers, bulbs and lamps, set up from your phone.",
+			"image": "images/hollis-dome.jpg"
+		},
+		"video-games": {
+			"name": "Video games",
+			"description": "Controllers, arcade sticks, keyboards and mice.",
+			"image": "images/pixelpine-wave.jpg"
+		},
+		"chargers-power": {
+			"name": "Chargers and power",
+			"description": "Chargers, cables and power banks.",
+			"image": "images/charger-20w.jpg"
+		},
+		"watches-bands": {
+			"name": "Watches and bands",
+			"description": "Smartwatches and activity bands.",
+			"image": "images/pulse-band-sky.jpg"
+		}
+	},
+	"product_brands": {
+		"altis": {
+			"name": "Altis",
+			"description": "Light laptops with long batteries.",
+			"image": "images/brand-altis.png"
+		},
+		"corvo": {
+			"name": "Corvo",
+			"description": "Laptops for every budget, from school to games.",
+			"image": "images/brand-corvo.png"
+		},
+		"mira": {
+			"name": "Mira",
+			"description": "Phones, watches and bands.",
+			"image": "images/brand-mira.png"
+		},
+		"pell": {
+			"name": "Pell",
+			"description": "Good phones for less.",
+			"image": "images/brand-pell.png"
+		},
+		"kestrel": {
+			"name": "Kestrel",
+			"description": "Headphones, earbuds and speakers.",
+			"image": "images/brand-kestrel.png"
+		},
+		"hollis": {
+			"name": "Hollis",
+			"description": "Smart speakers, bulbs and lamps.",
+			"image": "images/brand-hollis.png"
+		},
+		"pixelpine": {
+			"name": "Pixelpine",
+			"description": "Controllers, keyboards and mice for games.",
+			"image": "images/brand-pixelpine.png"
+		},
+		"fullcharge": {
+			"name": "Fullcharge",
+			"description": "Our own cases, chargers and cables.",
+			"image": "images/brand-fullcharge.png"
+		}
+	},
+	"products": [
+		{
+			"slug": "altis-air-14",
+			"name": "Altis Air 14",
+			"category": [
+				"13-14-inch"
+			],
+			"image": "images/altis-air-14.jpg",
+			"gallery": [
+				"images/altis-air-14-desk.jpg",
+				"images/altis-air-14-ports.jpg",
+				"images/altis-air-14-top.jpg"
+			],
+			"sales": 37,
+			"regular": "999",
+			"featured": true,
+			"short": "A 14″ laptop that weighs 1.2 kg and runs for up to 18 hours on one charge.",
+			"description": [
+				[
+					"p",
+					"The Air 14 is for people who carry a laptop all day. It’s 1.2 kg, the battery lasts a full working day with room to spare, and the 2.8K screen makes long documents easy on the eyes."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"14″ 2.8K screen at 120 Hz",
+						"Up to 18 hours of video on one charge, 50% in 30 minutes",
+						"Quiet backlit keyboard and a large trackpad",
+						"1080p camera with a shutter you slide across",
+						"2 × USB-C, HDMI and a headphone jack"
+					]
+				],
+				[
+					"p",
+					"Every laptop comes with a 2-year warranty: if it goes wrong, we collect it, fix it and bring it back."
+				]
+			],
+			"brand": "altis",
+			"sale": "899",
+			"sale_days": 5,
+			"days": 4,
+			"specs": {
+				"Colour": [
+					"Silver",
+					"Graphite",
+					"Sage"
+				],
+				"Screen size": "14″",
+				"Display": "2.8K, 120 Hz",
+				"Processor": "8-core, up to 4.4 GHz",
+				"Memory": [
+					"16 GB",
+					"32 GB"
+				],
+				"Storage": [
+					"512 GB",
+					"1 TB"
+				],
+				"Battery": "Up to 18 hours",
+				"Weight": "1.2 kg",
+				"Ports": "2 × USB-C, HDMI, headphone jack",
+				"Wireless": "Wi-Fi 6E, Bluetooth 5.3",
+				"Camera": "1080p, with a privacy shutter"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Silver",
+						"Memory": "16 GB",
+						"Storage": "512 GB"
+					},
+					"regular": "999",
+					"sale": "899",
+					"sale_days": 5,
+					"stock": 7,
+					"sku": "FC-101-01"
+				},
+				{
+					"options": {
+						"Colour": "Silver",
+						"Memory": "16 GB",
+						"Storage": "1 TB"
+					},
+					"regular": "1199",
+					"sale": "1099",
+					"sale_days": 5,
+					"stock": 12,
+					"sku": "FC-101-02"
+				},
+				{
+					"options": {
+						"Colour": "Silver",
+						"Memory": "32 GB",
+						"Storage": "512 GB"
+					},
+					"regular": "1299",
+					"sale": "1199",
+					"sale_days": 5,
+					"stock": 3,
+					"sku": "FC-101-03"
+				},
+				{
+					"options": {
+						"Colour": "Silver",
+						"Memory": "32 GB",
+						"Storage": "1 TB"
+					},
+					"regular": "1499",
+					"sale": "1399",
+					"sale_days": 5,
+					"stock": 2,
+					"sku": "FC-101-04"
+				},
+				{
+					"options": {
+						"Colour": "Graphite",
+						"Memory": "16 GB",
+						"Storage": "512 GB"
+					},
+					"regular": "999",
+					"sale": "899",
+					"sale_days": 5,
+					"stock": 7,
+					"sku": "FC-101-05"
+				},
+				{
+					"options": {
+						"Colour": "Graphite",
+						"Memory": "16 GB",
+						"Storage": "1 TB"
+					},
+					"regular": "1199",
+					"sale": "1099",
+					"sale_days": 5,
+					"stock": 12,
+					"sku": "FC-101-06"
+				},
+				{
+					"options": {
+						"Colour": "Graphite",
+						"Memory": "32 GB",
+						"Storage": "512 GB"
+					},
+					"regular": "1299",
+					"sale": "1199",
+					"sale_days": 5,
+					"stock": 3,
+					"sku": "FC-101-07"
+				},
+				{
+					"options": {
+						"Colour": "Graphite",
+						"Memory": "32 GB",
+						"Storage": "1 TB"
+					},
+					"regular": "1499",
+					"sale": "1399",
+					"sale_days": 5,
+					"stock": 2,
+					"sku": "FC-101-08"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Memory": "16 GB",
+						"Storage": "512 GB"
+					},
+					"regular": "999",
+					"sale": "899",
+					"sale_days": 5,
+					"stock": 7,
+					"sku": "FC-101-09"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Memory": "16 GB",
+						"Storage": "1 TB"
+					},
+					"regular": "1199",
+					"sale": "1099",
+					"sale_days": 5,
+					"stock": 12,
+					"sku": "FC-101-10"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Memory": "32 GB",
+						"Storage": "512 GB"
+					},
+					"regular": "1299",
+					"sale": "1199",
+					"sale_days": 5,
+					"stock": "outofstock",
+					"meta": {
+						"_themor_restock_date": {
+							"next": "friday"
+						}
+					},
+					"sku": "FC-101-11"
+				},
+				{
+					"options": {
+						"Colour": "Sage",
+						"Memory": "32 GB",
+						"Storage": "1 TB"
+					},
+					"regular": "1499",
+					"sale": "1399",
+					"sale_days": 5,
+					"stock": "outofstock",
+					"meta": {
+						"_themor_restock_date": {
+							"next": "friday"
+						}
+					},
+					"sku": "FC-101-12"
+				}
+			],
+			"defaults": {
+				"Colour": "Silver",
+				"Memory": "16 GB",
+				"Storage": "512 GB"
+			},
+			"cross_sells": [
+				"pixelpine-glide",
+				"charger-20w",
+				"braided-cable"
+			],
+			"upsells": [
+				"altis-pro-14",
+				"altis-air-15"
+			],
+			"sku": "FC-101"
+		},
+		{
+			"slug": "altis-pro-14",
+			"name": "Altis Pro 14",
+			"category": [
+				"13-14-inch"
+			],
+			"image": "images/altis-pro-14.jpg",
+			"gallery": [],
+			"sales": 64,
+			"regular": "1499",
+			"featured": false,
+			"short": "The Air’s bigger sibling: a 3K OLED screen, 32 GB of memory and a 1 TB drive.",
+			"description": [
+				[
+					"p",
+					"For photo editing, big spreadsheets and a hundred tabs at once. The OLED screen shows true blacks, and the fans stay quiet until you really need them."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"14″ 3K OLED screen at 120 Hz",
+						"12-core processor, up to 5.0 GHz",
+						"32 GB of memory and a 1 TB drive",
+						"Up to 15 hours on one charge",
+						"3 × USB-C, HDMI, an SD card slot and a headphone jack"
+					]
+				]
+			],
+			"brand": "altis",
+			"stock": 3,
+			"days": 30,
+			"specs": {
+				"Screen size": "14″",
+				"Display": "3K OLED, 120 Hz",
+				"Processor": "12-core, up to 5.0 GHz",
+				"Memory": "32 GB",
+				"Storage": "1 TB",
+				"Battery": "Up to 15 hours",
+				"Weight": "1.4 kg",
+				"Ports": "3 × USB-C, HDMI, SD card, headphone jack",
+				"Wireless": "Wi-Fi 6E, Bluetooth 5.3",
+				"Camera": "1080p, with a privacy shutter",
+				"Colour": "Graphite"
+			},
+			"cross_sells": [
+				"pixelpine-glide",
+				"braided-cable"
+			],
+			"sku": "FC-102"
+		},
+		{
+			"slug": "corvo-slim-13",
+			"name": "Corvo Slim 13",
+			"category": [
+				"13-14-inch"
+			],
+			"image": "images/corvo-slim-13.jpg",
+			"gallery": [],
+			"sales": 210,
+			"regular": "649",
+			"featured": false,
+			"short": "Our lightest laptop under $700: 1.1 kg, a full HD screen and 11 hours of battery.",
+			"description": [
+				[
+					"p",
+					"A sensible first laptop for school or the sofa. Light enough for a backpack, quick enough for essays, video calls and streaming."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"13.3″ full HD screen",
+						"6-core processor",
+						"8 GB of memory and a 256 GB drive",
+						"Up to 11 hours on one charge",
+						"USB-C, USB-A and a headphone jack"
+					]
+				]
+			],
+			"brand": "corvo",
+			"stock": 22,
+			"days": 60,
+			"specs": {
+				"Screen size": "13.3″",
+				"Display": "Full HD, 60 Hz",
+				"Processor": "6-core, up to 4.0 GHz",
+				"Memory": "8 GB",
+				"Storage": "256 GB",
+				"Battery": "Up to 11 hours",
+				"Weight": "1.1 kg",
+				"Ports": "USB-C, USB-A, headphone jack",
+				"Wireless": "Wi-Fi 6, Bluetooth 5.2",
+				"Camera": "720p",
+				"Colour": "Silver"
+			},
+			"cross_sells": [
+				"pixelpine-glide",
+				"charger-20w"
+			],
+			"sku": "FC-103"
+		},
+		{
+			"slug": "corvo-book-15",
+			"name": "Corvo Book 15",
+			"category": [
+				"15-16-inch"
+			],
+			"image": "images/corvo-book-15.jpg",
+			"gallery": [],
+			"sales": 88,
+			"regular": "849",
+			"featured": false,
+			"short": "A big-screen laptop with a number pad, for spreadsheets and films.",
+			"description": [
+				[
+					"p",
+					"The 15.6″ screen and full keyboard with a number pad make it a good desk laptop that still folds into a bag."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"15.6″ full HD screen at 120 Hz",
+						"8-core processor",
+						"16 GB of memory and a 512 GB drive",
+						"Up to 12 hours on one charge",
+						"Full keyboard with a number pad"
+					]
+				]
+			],
+			"brand": "corvo",
+			"sale": "779",
+			"stock": 14,
+			"days": 80,
+			"specs": {
+				"Screen size": "15.6″",
+				"Display": "Full HD, 120 Hz",
+				"Processor": "8-core, up to 4.4 GHz",
+				"Memory": "16 GB",
+				"Storage": "512 GB",
+				"Battery": "Up to 12 hours",
+				"Weight": "1.7 kg",
+				"Ports": "USB-C, 2 × USB-A, HDMI, headphone jack",
+				"Wireless": "Wi-Fi 6, Bluetooth 5.2",
+				"Camera": "1080p, with a privacy shutter",
+				"Colour": "Silver"
+			},
+			"sku": "FC-104"
+		},
+		{
+			"slug": "altis-air-13",
+			"name": "Altis Air 13",
+			"category": [
+				"13-14-inch"
+			],
+			"image": "images/altis-air-13.jpg",
+			"gallery": [],
+			"sales": 301,
+			"regular": "749",
+			"featured": false,
+			"short": "The smallest Air: 1.15 kg, 16 hours of battery, in four colours.",
+			"description": [
+				[
+					"p",
+					"Everything we like about the Air 14 in a smaller body. A great laptop for students and anyone who works on the move."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"13.6″ 2.5K screen",
+						"8-core processor",
+						"8 GB of memory and a 256 GB drive",
+						"Up to 16 hours on one charge",
+						"In silver, graphite, sage or sand"
+					]
+				]
+			],
+			"brand": "altis",
+			"days": 40,
+			"specs": {
+				"Colour": [
+					"Silver",
+					"Graphite",
+					"Sage",
+					"Sand"
+				],
+				"Screen size": "13.6″",
+				"Display": "2.5K, 60 Hz",
+				"Processor": "8-core, up to 4.2 GHz",
+				"Memory": "8 GB",
+				"Storage": "256 GB",
+				"Battery": "Up to 16 hours",
+				"Weight": "1.15 kg",
+				"Ports": "2 × USB-C, headphone jack",
+				"Wireless": "Wi-Fi 6E, Bluetooth 5.3",
+				"Camera": "1080p, with a privacy shutter"
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Silver"
+					},
+					"stock": 18,
+					"sku": "FC-105-01"
+				},
+				{
+					"options": {
+						"Colour": "Graphite"
+					},
+					"stock": 12,
+					"sku": "FC-105-02"
+				},
+				{
+					"options": {
+						"Colour": "Sage"
+					},
+					"stock": 9,
+					"sku": "FC-105-03"
+				},
+				{
+					"options": {
+						"Colour": "Sand"
+					},
+					"stock": 6,
+					"sku": "FC-105-04"
+				}
+			],
+			"defaults": {
+				"Colour": "Silver"
+			},
+			"cross_sells": [
+				"pixelpine-glide",
+				"braided-cable"
+			],
+			"sku": "FC-105"
+		},
+		{
+			"slug": "altis-pro-16",
+			"name": "Altis Pro 16",
+			"category": [
+				"15-16-inch"
+			],
+			"image": "images/altis-pro-16.jpg",
+			"gallery": [],
+			"sales": 41,
+			"regular": "2199",
+			"featured": false,
+			"short": "Our most powerful laptop: a 16″ 3.5K OLED screen, 14 cores and 32 GB of memory.",
+			"description": [
+				[
+					"p",
+					"Built for video editing, 3D work and code that takes a while to compile. The big battery still lasts a long working day."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"16″ 3.5K OLED screen at 120 Hz",
+						"14-core processor, up to 5.2 GHz",
+						"32 GB of memory and a 1 TB drive",
+						"Up to 14 hours on one charge"
+					]
+				]
+			],
+			"brand": "altis",
+			"stock": 5,
+			"days": 20,
+			"specs": {
+				"Screen size": "16″",
+				"Display": "3.5K OLED, 120 Hz",
+				"Processor": "14-core, up to 5.2 GHz",
+				"Memory": "32 GB",
+				"Storage": "1 TB",
+				"Battery": "Up to 14 hours",
+				"Weight": "1.9 kg",
+				"Ports": "3 × USB-C, HDMI, SD card, headphone jack",
+				"Wireless": "Wi-Fi 6E, Bluetooth 5.3",
+				"Camera": "1080p, with a privacy shutter",
+				"Colour": "Graphite"
+			},
+			"sku": "FC-106"
+		},
+		{
+			"slug": "corvo-flip-14",
+			"name": "Corvo Flip 14, 2-in-1",
+			"category": [
+				"13-14-inch",
+				"2-in-1-laptops"
+			],
+			"image": "images/corvo-flip-14.jpg",
+			"gallery": [],
+			"sales": 57,
+			"regular": "829",
+			"featured": false,
+			"short": "A touch-screen laptop that folds back into a tablet, with a pen in the box.",
+			"description": [
+				[
+					"p",
+					"Fold the screen all the way back to draw, take notes or watch a film on a plane tray."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"14″ full HD touch screen",
+						"Folds into a tablet",
+						"Pen included",
+						"16 GB of memory and a 512 GB drive",
+						"Up to 13 hours on one charge"
+					]
+				]
+			],
+			"brand": "corvo",
+			"stock": 12,
+			"days": 90,
+			"specs": {
+				"Screen size": "14″",
+				"Display": "Full HD touch, 60 Hz",
+				"Processor": "8-core, up to 4.4 GHz",
+				"Memory": "16 GB",
+				"Storage": "512 GB",
+				"Battery": "Up to 13 hours",
+				"Weight": "1.4 kg",
+				"Ports": "USB-C, USB-A, HDMI, headphone jack",
+				"Wireless": "Wi-Fi 6, Bluetooth 5.2",
+				"Camera": "1080p, with a privacy shutter",
+				"Colour": "Silver"
+			},
+			"sku": "FC-107"
+		},
+		{
+			"slug": "altis-air-15",
+			"name": "Altis Air 15",
+			"category": [
+				"15-16-inch"
+			],
+			"image": "images/altis-air-15.jpg",
+			"gallery": [],
+			"sales": 77,
+			"regular": "1249",
+			"featured": false,
+			"short": "The Air with a big screen: 15.3″, 1.5 kg and 18 hours of battery.",
+			"description": [
+				[
+					"p",
+					"Room for two windows side by side without the weight of a big laptop."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"15.3″ 2.8K screen at 120 Hz",
+						"8-core processor",
+						"16 GB of memory and a 512 GB drive",
+						"Up to 18 hours on one charge"
+					]
+				]
+			],
+			"brand": "altis",
+			"sale": "1099",
+			"stock": 16,
+			"days": 25,
+			"specs": {
+				"Screen size": "15.3″",
+				"Display": "2.8K, 120 Hz",
+				"Processor": "8-core, up to 4.4 GHz",
+				"Memory": "16 GB",
+				"Storage": "512 GB",
+				"Battery": "Up to 18 hours",
+				"Weight": "1.5 kg",
+				"Ports": "2 × USB-C, HDMI, headphone jack",
+				"Wireless": "Wi-Fi 6E, Bluetooth 5.3",
+				"Camera": "1080p, with a privacy shutter",
+				"Colour": "Silver"
+			},
+			"sku": "FC-108"
+		},
+		{
+			"slug": "corvo-play-16",
+			"name": "Corvo Play 16",
+			"category": [
+				"15-16-inch",
+				"gaming-laptops"
+			],
+			"image": "images/corvo-play-16.jpg",
+			"gallery": [],
+			"sales": 39,
+			"regular": "1449",
+			"featured": false,
+			"short": "A gaming laptop with a 165 Hz screen, a 1 TB drive and a keyboard you can light up.",
+			"description": [
+				[
+					"p",
+					"Fast enough for this year’s games at high settings, with fans that stay calm and a keyboard made for long sessions."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"16″ QHD screen at 165 Hz",
+						"12-core processor",
+						"16 GB of memory and a 1 TB drive",
+						"RGB keyboard",
+						"Ethernet, HDMI and five USB ports"
+					]
+				]
+			],
+			"brand": "corvo",
+			"sale": "1299",
+			"stock": 4,
+			"days": 50,
+			"specs": {
+				"Screen size": "16″",
+				"Display": "QHD, 165 Hz",
+				"Processor": "12-core, up to 5.0 GHz",
+				"Memory": "16 GB",
+				"Storage": "1 TB",
+				"Battery": "Up to 8 hours",
+				"Weight": "2.3 kg",
+				"Ports": "2 × USB-C, 3 × USB-A, HDMI, Ethernet, headphone jack",
+				"Wireless": "Wi-Fi 6E, Bluetooth 5.3",
+				"Camera": "1080p, with a privacy shutter",
+				"Colour": "Black"
+			},
+			"cross_sells": [
+				"pixelpine-glide",
+				"pixelpine-87"
+			],
+			"sku": "FC-109"
+		},
+		{
+			"slug": "mira-12",
+			"name": "Mira 12",
+			"category": [
+				"phones"
+			],
+			"image": "images/mira-12.jpg",
+			"gallery": [],
+			"sales": 412,
+			"regular": "599",
+			"featured": false,
+			"short": "A 6.1″ phone with a bright OLED screen, two good cameras and a battery that lasts the day.",
+			"description": [
+				[
+					"p",
+					"Small enough for one hand, with a screen that’s easy to read in the sun and cameras that cope with low light."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"6.1″ OLED screen at 120 Hz",
+						"Two 48 MP cameras",
+						"Up to 22 hours of video",
+						"In blue, black or white"
+					]
+				],
+				[
+					"p",
+					"Cases made for it: Dusk sand, Paper planes and Ink wash."
+				]
+			],
+			"brand": "mira",
+			"days": 15,
+			"specs": {
+				"Screen size": "6.1″",
+				"Display": "OLED, 120 Hz",
+				"Storage": [
+					"128 GB",
+					"256 GB"
+				],
+				"Battery": "Up to 22 hours",
+				"Camera": "Two 48 MP cameras",
+				"Weight": "172 g",
+				"Connection": "5G, Wi-Fi 6E",
+				"Colour": [
+					"Blue",
+					"Black",
+					"White"
+				]
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Blue",
+						"Storage": "128 GB"
+					},
+					"regular": "599",
+					"stock": 14,
+					"sku": "FC-110-01"
+				},
+				{
+					"options": {
+						"Colour": "Blue",
+						"Storage": "256 GB"
+					},
+					"regular": "699",
+					"stock": 8,
+					"sku": "FC-110-02"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Storage": "128 GB"
+					},
+					"regular": "599",
+					"stock": 20,
+					"sku": "FC-110-03"
+				},
+				{
+					"options": {
+						"Colour": "Black",
+						"Storage": "256 GB"
+					},
+					"regular": "699",
+					"stock": 11,
+					"sku": "FC-110-04"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Storage": "128 GB"
+					},
+					"regular": "599",
+					"stock": 9,
+					"sku": "FC-110-05"
+				},
+				{
+					"options": {
+						"Colour": "White",
+						"Storage": "256 GB"
+					},
+					"regular": "699",
+					"stock": 4,
+					"sku": "FC-110-06"
+				}
+			],
+			"defaults": {
+				"Colour": "Blue",
+				"Storage": "128 GB"
+			},
+			"cross_sells": [
+				"dusk-sand-case",
+				"charger-20w",
+				"braided-cable"
+			],
+			"sku": "FC-110"
+		},
+		{
+			"slug": "mira-12-pro",
+			"name": "Mira 12 Pro",
+			"category": [
+				"phones"
+			],
+			"image": "images/mira-12-pro.jpg",
+			"gallery": [],
+			"sales": 230,
+			"regular": "899",
+			"featured": false,
+			"short": "The bigger Mira: a 6.7″ screen, three cameras and up to 27 hours of video.",
+			"description": [
+				[
+					"p",
+					"Three cameras, including a 3× zoom, and the biggest battery we sell in a phone this thin."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"6.7″ OLED screen at 120 Hz",
+						"Three 48 MP cameras with 3× zoom",
+						"Up to 27 hours of video",
+						"256 GB or 512 GB"
+					]
+				],
+				[
+					"p",
+					"Cases made for it: Dusk sand, Prism and Ink wash."
+				]
+			],
+			"brand": "mira",
+			"days": 15,
+			"specs": {
+				"Screen size": "6.7″",
+				"Display": "OLED, 120 Hz",
+				"Storage": [
+					"256 GB",
+					"512 GB"
+				],
+				"Battery": "Up to 27 hours",
+				"Camera": "Three 48 MP cameras",
+				"Weight": "203 g",
+				"Connection": "5G, Wi-Fi 6E",
+				"Colour": "Black"
+			},
+			"variations": [
+				{
+					"options": {
+						"Storage": "256 GB"
+					},
+					"regular": "899",
+					"stock": 12,
+					"sku": "FC-111-01"
+				},
+				{
+					"options": {
+						"Storage": "512 GB"
+					},
+					"regular": "1099",
+					"stock": 5,
+					"sku": "FC-111-02"
+				}
+			],
+			"defaults": {
+				"Storage": "256 GB"
+			},
+			"cross_sells": [
+				"prism-case",
+				"charging-stand"
+			],
+			"sku": "FC-111"
+		},
+		{
+			"slug": "pell-note-9",
+			"name": "Pell Note 9",
+			"category": [
+				"phones"
+			],
+			"image": "images/pell-note-9.jpg",
+			"gallery": [],
+			"sales": 174,
+			"regular": "449",
+			"featured": false,
+			"short": "A big-screen phone with a 30-hour battery and wireless charging, for under $450.",
+			"description": [
+				[
+					"p",
+					"A 6.6″ screen, two days of battery for most people, and it charges on any wireless pad."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"6.6″ screen at 90 Hz",
+						"256 GB of storage",
+						"Up to 30 hours of video",
+						"Wireless and 33 W wired charging"
+					]
+				],
+				[
+					"p",
+					"Cases made for it: Paper planes and Prism."
+				]
+			],
+			"brand": "pell",
+			"stock": 18,
+			"days": 70,
+			"specs": {
+				"Screen size": "6.6″",
+				"Display": "LCD, 90 Hz",
+				"Storage": "256 GB",
+				"Battery": "Up to 30 hours",
+				"Camera": "Two cameras, 50 MP",
+				"Weight": "195 g",
+				"Connection": "5G, Wi-Fi 6",
+				"Colour": "Black"
+			},
+			"cross_sells": [
+				"paper-planes-case",
+				"charging-stand"
+			],
+			"sku": "FC-112"
+		},
+		{
+			"slug": "pell-nova-5a",
+			"name": "Pell Nova 5a",
+			"category": [
+				"phones"
+			],
+			"image": "images/pell-nova-5a.jpg",
+			"gallery": [],
+			"sales": 391,
+			"regular": "399",
+			"featured": false,
+			"short": "A good phone for less: a 6.4″ screen, 128 GB and a 5,000 mAh battery.",
+			"description": [
+				[
+					"p",
+					"Everything most people need from a phone, for the price of a pair of good headphones."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"6.4″ screen at 90 Hz",
+						"128 GB of storage",
+						"Up to 32 hours of video from a 5,000 mAh battery",
+						"50 MP camera"
+					]
+				],
+				[
+					"p",
+					"Cases made for it: Prism and Ink wash."
+				]
+			],
+			"brand": "pell",
+			"sale": "349",
+			"stock": 27,
+			"days": 100,
+			"specs": {
+				"Screen size": "6.4″",
+				"Display": "LCD, 90 Hz",
+				"Storage": "128 GB",
+				"Battery": "Up to 32 hours",
+				"Camera": "50 MP camera",
+				"Weight": "188 g",
+				"Connection": "5G, Wi-Fi 6",
+				"Colour": "Black"
+			},
+			"cross_sells": [
+				"ink-wash-case"
+			],
+			"sku": "FC-113"
+		},
+		{
+			"slug": "dusk-sand-case",
+			"name": "Dusk sand case",
+			"category": [
+				"phone-cases"
+			],
+			"image": "images/dusk-sand-case.jpg",
+			"gallery": [],
+			"sales": 122,
+			"regular": "24",
+			"featured": false,
+			"short": "A slim case that fades from white to black sand, with raised edges round the screen and camera.",
+			"description": [
+				[
+					"p",
+					"Drop-tested to 3 m on concrete. The print is under a clear coat, so it won’t rub off."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Soft edges, a hard back",
+						"Raised lip round the screen and camera",
+						"Works with wireless charging"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 30,
+			"days": 35,
+			"specs": {
+				"Fits": [
+					"Mira 12",
+					"Mira 12 Pro"
+				],
+				"Material": "TPU edges, polycarbonate back"
+			},
+			"sku": "FC-114"
+		},
+		{
+			"slug": "paper-planes-case",
+			"name": "Paper planes case",
+			"category": [
+				"phone-cases"
+			],
+			"image": "images/paper-planes-case.jpg",
+			"gallery": [],
+			"sales": 180,
+			"regular": "24",
+			"featured": false,
+			"short": "White paper planes on black, on a slim case drop-tested to 3 m.",
+			"description": [
+				[
+					"p",
+					"Our best-selling print. A grippy finish that doesn’t pick up fluff in a pocket."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Soft edges, a hard back",
+						"Raised lip round the screen and camera",
+						"Works with wireless charging"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 26,
+			"days": 45,
+			"specs": {
+				"Fits": [
+					"Mira 12",
+					"Pell Note 9"
+				],
+				"Material": "TPU edges, polycarbonate back"
+			},
+			"sku": "FC-115"
+		},
+		{
+			"slug": "prism-case",
+			"name": "Prism case",
+			"category": [
+				"phone-cases"
+			],
+			"image": "images/prism-case.jpg",
+			"gallery": [],
+			"sales": 96,
+			"regular": "19",
+			"featured": false,
+			"short": "Pink and purple triangles on a slim, flexible case.",
+			"description": [
+				[
+					"p",
+					"A flexible case that snaps on in a second and adds almost nothing to the phone’s size."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Flexible TPU",
+						"Raised lip round the screen",
+						"Works with wireless charging"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 40,
+			"days": 55,
+			"specs": {
+				"Fits": [
+					"Mira 12 Pro",
+					"Pell Note 9",
+					"Pell Nova 5a"
+				],
+				"Material": "Flexible TPU"
+			},
+			"sku": "FC-116"
+		},
+		{
+			"slug": "ink-wash-case",
+			"name": "Ink wash case",
+			"category": [
+				"phone-cases"
+			],
+			"image": "images/ink-wash-case.jpg",
+			"gallery": [],
+			"sales": 88,
+			"regular": "19",
+			"featured": false,
+			"short": "A white case with a magenta ink wash, slim and flexible.",
+			"description": [
+				[
+					"p",
+					"Each one is printed with the same wash, painted by hand once and scanned."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Flexible TPU",
+						"Raised lip round the screen",
+						"Works with wireless charging"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 33,
+			"days": 65,
+			"specs": {
+				"Fits": [
+					"Mira 12",
+					"Mira 12 Pro",
+					"Pell Nova 5a"
+				],
+				"Material": "Flexible TPU"
+			},
+			"sku": "FC-117"
+		},
+		{
+			"slug": "kestrel-fold",
+			"name": "Kestrel Fold wireless headphones",
+			"category": [
+				"headphones"
+			],
+			"image": "images/kestrel-fold.jpg",
+			"gallery": [],
+			"sales": 640,
+			"regular": "45",
+			"featured": false,
+			"short": "Light wireless headphones that fold flat and last 40 hours.",
+			"description": [
+				[
+					"p",
+					"Our best seller under $50: comfortable cushions, easy buttons on the ear cup and a cable for when the battery runs out."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth 5.3",
+						"40 hours of play",
+						"Folds flat",
+						"USB-C charging, 3.5 mm cable included"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"stock": 34,
+			"days": 110,
+			"specs": {
+				"Connection": "Bluetooth 5.3",
+				"Battery": "40 hours",
+				"Weight": "210 g",
+				"Colour": "Black"
+			},
+			"sku": "FC-118"
+		},
+		{
+			"slug": "kestrel-studio-wireless",
+			"name": "Kestrel Studio wireless headphones",
+			"category": [
+				"headphones"
+			],
+			"image": "images/kestrel-studio-wireless.jpg",
+			"gallery": [],
+			"sales": 212,
+			"regular": "199",
+			"featured": false,
+			"short": "Noise-cancelling over-ears with a warm sound and 30 hours of battery.",
+			"description": [
+				[
+					"p",
+					"Adaptive noise cancelling turns down trains and air conditioning, and a transparency mode lets the world back in at a tap."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Adaptive noise cancelling",
+						"30 hours of play with it on",
+						"Bluetooth 5.3, two devices at once",
+						"Folds into a hard case"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"sale": "149",
+			"sale_days": 1,
+			"stock": 9,
+			"tags": [
+				"Today’s deal"
+			],
+			"days": 12,
+			"specs": {
+				"Connection": "Bluetooth 5.3",
+				"Battery": "30 hours",
+				"Weight": "255 g",
+				"Colour": "Red"
+			},
+			"cross_sells": [
+				"braided-cable"
+			],
+			"sku": "FC-119"
+		},
+		{
+			"slug": "kestrel-studio-pro",
+			"name": "Kestrel Studio Pro, wired",
+			"category": [
+				"headphones"
+			],
+			"image": "images/kestrel-studio-pro.jpg",
+			"gallery": [],
+			"sales": 75,
+			"regular": "189",
+			"featured": false,
+			"short": "Open-back studio headphones with 50 mm drivers and a cable you can replace.",
+			"description": [
+				[
+					"p",
+					"For mixing, mastering and long listening at a desk. Velour pads that stay cool for hours."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"50 mm drivers",
+						"Open back",
+						"Detachable 3 m cable",
+						"Velour ear pads"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"stock": 11,
+			"days": 120,
+			"specs": {
+				"Connection": "Wired, 3.5 mm",
+				"Weight": "290 g",
+				"Colour": "Silver"
+			},
+			"sku": "FC-120"
+		},
+		{
+			"slug": "kestrel-buds",
+			"name": "Kestrel Buds noise-cancelling earbuds",
+			"category": [
+				"earbuds"
+			],
+			"image": "images/kestrel-buds.jpg",
+			"gallery": [],
+			"sales": 348,
+			"regular": "99",
+			"featured": false,
+			"short": "Small noise-cancelling earbuds with 28 hours of battery in their case.",
+			"description": [
+				[
+					"p",
+					"Three sizes of tips in the box, a case that charges wirelessly, and noise cancelling that works on the bus."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Noise cancelling",
+						"7 hours a charge, 28 with the case",
+						"Wireless charging case",
+						"Sweat resistant"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"sale": "79",
+			"sale_days": 1,
+			"stock": 23,
+			"tags": [
+				"Today’s deal"
+			],
+			"days": 18,
+			"specs": {
+				"Connection": "Bluetooth 5.3",
+				"Battery": "28 hours with the case",
+				"Colour": "Black"
+			},
+			"sku": "FC-121"
+		},
+		{
+			"slug": "kestrel-petal",
+			"name": "Kestrel Petal on-ear headphones",
+			"category": [
+				"headphones"
+			],
+			"image": "images/kestrel-petal.jpg",
+			"gallery": [],
+			"sales": 96,
+			"regular": "29",
+			"featured": false,
+			"short": "Light wired on-ears in soft mint, with a mic on the cable.",
+			"description": [
+				[
+					"p",
+					"Light enough for a whole day of calls, and they fold into a small pouch."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Wired, 3.5 mm",
+						"Mic and button on the cable",
+						"Weighs 140 g"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"stock": 40,
+			"days": 95,
+			"specs": {
+				"Connection": "Wired, 3.5 mm",
+				"Weight": "140 g",
+				"Colour": "Mint"
+			},
+			"sku": "FC-122"
+		},
+		{
+			"slug": "kestrel-sport",
+			"name": "Kestrel Sport earphones",
+			"category": [
+				"earbuds"
+			],
+			"image": "images/kestrel-sport.jpg",
+			"gallery": [],
+			"sales": 155,
+			"regular": "29",
+			"featured": false,
+			"short": "Wireless sport earphones with ear hooks that stay put on a run.",
+			"description": [
+				[
+					"p",
+					"Sweat resistant, with hooks that keep them in on the bumpiest trail."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth 5.0",
+						"8 hours of play",
+						"Sweat resistant",
+						"Ear hooks"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"stock": 50,
+			"days": 130,
+			"specs": {
+				"Connection": "Bluetooth 5.0",
+				"Battery": "8 hours",
+				"Colour": "Red"
+			},
+			"sku": "FC-123"
+		},
+		{
+			"slug": "pebble-speaker",
+			"name": "Pebble mini speaker",
+			"category": [
+				"speakers"
+			],
+			"image": "images/pebble-speaker.jpg",
+			"gallery": [],
+			"sales": 530,
+			"regular": "35",
+			"featured": false,
+			"short": "A palm-size speaker that floats, with 12 hours of battery.",
+			"description": [
+				[
+					"p",
+					"Waterproof and dustproof, with a strap to hang it in the shower or from a bag."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth 5.3",
+						"Waterproof (IP67)",
+						"12 hours of play"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"sale": "24",
+			"sale_days": 1,
+			"stock": 31,
+			"tags": [
+				"Today’s deal"
+			],
+			"days": 140,
+			"specs": {
+				"Connection": "Bluetooth 5.3",
+				"Battery": "12 hours",
+				"Colour": "Green"
+			},
+			"sku": "FC-124"
+		},
+		{
+			"slug": "brick-speaker",
+			"name": "Brick portable speaker",
+			"category": [
+				"speakers"
+			],
+			"image": "images/brick-speaker.jpg",
+			"gallery": [],
+			"sales": 188,
+			"regular": "39",
+			"featured": false,
+			"short": "A pocket speaker with a big sound and 10 hours of battery.",
+			"description": [
+				[
+					"p",
+					"Pair two for stereo, or take one to the park with a USB-C cable for charging."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth 5.0",
+						"10 hours of play",
+						"Pairs with a second for stereo"
+					]
+				]
+			],
+			"brand": "kestrel",
+			"stock": 24,
+			"days": 150,
+			"specs": {
+				"Connection": "Bluetooth 5.0",
+				"Battery": "10 hours",
+				"Colour": "Black"
+			},
+			"sku": "FC-125"
+		},
+		{
+			"slug": "hollis-dome",
+			"name": "Hollis Dome smart speaker",
+			"category": [
+				"smart-home"
+			],
+			"image": "images/hollis-dome.jpg",
+			"gallery": [],
+			"sales": 158,
+			"regular": "99",
+			"featured": false,
+			"short": "A round speaker that plays music, answers questions and runs your smart home by voice.",
+			"description": [
+				[
+					"p",
+					"Room-filling sound from a speaker the size of a dinner plate, and a button to turn the microphones off."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Voice control",
+						"Wi-Fi and Bluetooth",
+						"Microphones off at a touch",
+						"Plays in stereo with a second Dome"
+					]
+				]
+			],
+			"brand": "hollis",
+			"stock": 19,
+			"days": 75,
+			"specs": {
+				"Connection": "Wi-Fi, Bluetooth",
+				"Colour": "White"
+			},
+			"sku": "FC-126"
+		},
+		{
+			"slug": "hollis-glow",
+			"name": "Hollis Glow smart bulbs, 2 pack",
+			"category": [
+				"smart-home"
+			],
+			"image": "images/hollis-glow.jpg",
+			"gallery": [],
+			"sales": 402,
+			"regular": "29",
+			"featured": false,
+			"short": "Two dimmable smart bulbs with warm filaments, set from your phone or by voice.",
+			"description": [
+				[
+					"p",
+					"Warm, dimmable light on a schedule: on slowly in the morning, down for a film, off when you leave."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Two bulbs",
+						"Dimmable, warm to cool white",
+						"806 lumens each",
+						"Works over Wi-Fi, no hub"
+					]
+				]
+			],
+			"brand": "hollis",
+			"stock": 60,
+			"days": 28,
+			"specs": {
+				"Connection": "Wi-Fi",
+				"Power": "7 W each"
+			},
+			"sku": "FC-127"
+		},
+		{
+			"slug": "hollis-arc",
+			"name": "Hollis Arc smart desk lamp",
+			"category": [
+				"smart-home"
+			],
+			"image": "images/hollis-arc.jpg",
+			"gallery": [],
+			"sales": 61,
+			"regular": "69",
+			"featured": false,
+			"short": "A balanced-arm desk lamp you can dim and schedule, with a USB-C port in its base.",
+			"description": [
+				[
+					"p",
+					"Set it to warm in the evening and bright in the morning, and charge your phone from the base."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"App and voice control",
+						"Dimmable, warm to cool white",
+						"USB-C port in the base"
+					]
+				]
+			],
+			"brand": "hollis",
+			"stock": 13,
+			"days": 85,
+			"specs": {
+				"Connection": "Wi-Fi",
+				"Colour": "Black"
+			},
+			"sku": "FC-128"
+		},
+		{
+			"slug": "hollis-cube",
+			"name": "Hollis Cube speakers, pair",
+			"category": [
+				"smart-home"
+			],
+			"image": "images/hollis-cube.jpg",
+			"gallery": [],
+			"sales": 97,
+			"regular": "49",
+			"featured": false,
+			"short": "A pair of small cube speakers for a desk or a shelf.",
+			"description": [
+				[
+					"p",
+					"Plug them into a computer by USB-C or play from your phone over Bluetooth."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth and USB-C",
+						"2 × 5 W",
+						"Small enough for a shelf"
+					]
+				]
+			],
+			"brand": "hollis",
+			"stock": 17,
+			"days": 160,
+			"specs": {
+				"Connection": "Bluetooth 5.0, USB-C",
+				"Colour": "White"
+			},
+			"sku": "FC-129"
+		},
+		{
+			"slug": "pixelpine-wave",
+			"name": "Pixelpine Wave wireless controller",
+			"category": [
+				"video-games"
+			],
+			"image": "images/pixelpine-wave.jpg",
+			"gallery": [
+				"images/pixelpine-wave-angle.jpg"
+			],
+			"sales": 283,
+			"regular": "49",
+			"featured": false,
+			"short": "A comfortable wireless controller with 40 hours of battery, for PC, phones and tablets.",
+			"description": [
+				[
+					"p",
+					"Textured grips, quiet buttons and a battery that lasts a long weekend of play."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Bluetooth and a 2.4 GHz receiver",
+						"40 hours of play",
+						"USB-C charging",
+						"Works with PC, phones and tablets"
+					]
+				]
+			],
+			"brand": "pixelpine",
+			"stock": 26,
+			"days": 22,
+			"specs": {
+				"Connection": "Bluetooth, 2.4 GHz",
+				"Battery": "40 hours",
+				"Colour": "Black"
+			},
+			"cross_sells": [
+				"braided-cable"
+			],
+			"sku": "FC-130"
+		},
+		{
+			"slug": "pixelpine-pro",
+			"name": "Pixelpine Pro controller",
+			"category": [
+				"video-games"
+			],
+			"image": "images/pixelpine-pro.jpg",
+			"gallery": [],
+			"sales": 119,
+			"regular": "69",
+			"featured": false,
+			"short": "A pro controller with Hall-effect sticks that won’t drift, and two back buttons.",
+			"description": [
+				[
+					"p",
+					"Magnetic sensors in the sticks mean no drift, ever. The back buttons take any input you like."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Hall-effect sticks",
+						"Two remappable back buttons",
+						"Bluetooth and USB-C"
+					]
+				]
+			],
+			"brand": "pixelpine",
+			"stock": 8,
+			"days": 10,
+			"specs": {
+				"Connection": "Bluetooth, USB-C",
+				"Battery": "30 hours",
+				"Colour": "Black"
+			},
+			"sku": "FC-131"
+		},
+		{
+			"slug": "pixelpine-arcade",
+			"name": "Pixelpine arcade stick",
+			"category": [
+				"video-games"
+			],
+			"image": "images/pixelpine-arcade.jpg",
+			"gallery": [],
+			"sales": 44,
+			"regular": "119",
+			"featured": false,
+			"short": "An arcade stick with a ball-top lever and eight full-size buttons.",
+			"description": [
+				[
+					"p",
+					"A heavy base that stays put, a lever that clicks like the real thing, and buttons you can swap."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Ball-top lever",
+						"Eight 30 mm buttons",
+						"USB-C, 3 m cable"
+					]
+				]
+			],
+			"brand": "pixelpine",
+			"stock": 6,
+			"days": 8,
+			"specs": {
+				"Connection": "USB-C, 3 m cable",
+				"Colour": "Black"
+			},
+			"sku": "FC-132"
+		},
+		{
+			"slug": "pixelpine-87",
+			"name": "Pixelpine 87 mechanical keyboard",
+			"category": [
+				"video-games"
+			],
+			"image": "images/pixelpine-87.jpg",
+			"gallery": [],
+			"sales": 204,
+			"regular": "89",
+			"featured": false,
+			"short": "A compact mechanical keyboard with hot-swap switches and a backlight.",
+			"description": [
+				[
+					"p",
+					"Leaves room for your mouse, connects to three devices, and lets you change switches without soldering."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Tenkeyless layout",
+						"Hot-swap switches",
+						"Bluetooth and USB-C",
+						"Backlit keys"
+					]
+				]
+			],
+			"brand": "pixelpine",
+			"stock": 10,
+			"days": 105,
+			"specs": {
+				"Connection": "Bluetooth, USB-C",
+				"Colour": "Black"
+			},
+			"sku": "FC-133"
+		},
+		{
+			"slug": "pixelpine-glide",
+			"name": "Pixelpine Glide wireless mouse",
+			"category": [
+				"video-games"
+			],
+			"image": "images/pixelpine-glide.jpg",
+			"gallery": [],
+			"sales": 318,
+			"regular": "29",
+			"featured": false,
+			"short": "A quiet wireless mouse that runs for a year on one battery.",
+			"description": [
+				[
+					"p",
+					"Silent clicks, a smooth scroll wheel and a small receiver that stores inside it."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Silent clicks",
+						"2.4 GHz receiver",
+						"About 12 months on one AA battery"
+					]
+				]
+			],
+			"brand": "pixelpine",
+			"stock": 45,
+			"days": 125,
+			"specs": {
+				"Connection": "2.4 GHz",
+				"Battery": "12 months",
+				"Colour": "Black"
+			},
+			"sku": "FC-134"
+		},
+		{
+			"slug": "charger-20w",
+			"name": "20 W USB-C charger",
+			"category": [
+				"chargers-power"
+			],
+			"image": "images/charger-20w.jpg",
+			"gallery": [],
+			"sales": 520,
+			"regular": "19",
+			"featured": false,
+			"short": "A small fast charger for phones, earbuds and tablets.",
+			"description": [
+				[
+					"p",
+					"Charges most phones to half in about 30 minutes. Folds flat? No, but it’s small enough not to block the next socket."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"20 W USB-C",
+						"Charges phones, earbuds and tablets",
+						"Cable not included"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 80,
+			"days": 170,
+			"specs": {
+				"Connection": "USB-C",
+				"Power": "20 W"
+			},
+			"sku": "FC-135"
+		},
+		{
+			"slug": "braided-cable",
+			"name": "Braided USB-C cable, 2 m",
+			"category": [
+				"chargers-power"
+			],
+			"image": "images/braided-cable.jpg",
+			"gallery": [],
+			"sales": 610,
+			"regular": "15",
+			"featured": false,
+			"short": "A two-metre USB-C cable in a braid that doesn’t tangle or fray.",
+			"description": [
+				[
+					"p",
+					"Long enough to reach the bed from the socket, and tough enough for a bag."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"USB-C to USB-C",
+						"2 m, braided",
+						"Up to 60 W"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 120,
+			"days": 175,
+			"specs": {
+				"Connection": "USB-C",
+				"Power": "60 W"
+			},
+			"sku": "FC-136"
+		},
+		{
+			"slug": "slim-power-bank",
+			"name": "Slim power bank, 10,000 mAh",
+			"category": [
+				"chargers-power"
+			],
+			"image": "images/slim-power-bank.jpg",
+			"gallery": [],
+			"sales": 144,
+			"regular": "25",
+			"featured": false,
+			"short": "A 10,000 mAh power bank as thin as a phone, with fast USB-C charging.",
+			"description": [
+				[
+					"p",
+					"Charges a phone twice over and charges itself in three hours."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"10,000 mAh",
+						"USB-C in and out, 20 W",
+						"Charges two devices at once"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 36,
+			"days": 180,
+			"specs": {
+				"Connection": "USB-C, USB-A",
+				"Battery": "10,000 mAh",
+				"Power": "20 W"
+			},
+			"sku": "FC-137"
+		},
+		{
+			"slug": "charging-stand",
+			"name": "Wireless charging stand",
+			"category": [
+				"chargers-power"
+			],
+			"image": "images/charging-stand.jpg",
+			"gallery": [],
+			"sales": 98,
+			"regular": "35",
+			"featured": false,
+			"short": "Stands your phone up as it charges, so you can see it on the desk.",
+			"description": [
+				[
+					"p",
+					"Charges through most cases up to 5 mm thick, upright or on its side."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"15 W wireless charging",
+						"Works through most cases",
+						"USB-C cable included"
+					]
+				]
+			],
+			"brand": "fullcharge",
+			"stock": 22,
+			"days": 185,
+			"specs": {
+				"Connection": "Wireless, USB-C",
+				"Power": "15 W"
+			},
+			"sku": "FC-138"
+		},
+		{
+			"slug": "mira-watch-2",
+			"name": "Mira Watch 2, 41 mm",
+			"category": [
+				"watches-bands"
+			],
+			"image": "images/mira-watch-2.jpg",
+			"gallery": [],
+			"sales": 96,
+			"regular": "279",
+			"featured": false,
+			"short": "A smartwatch with a bright screen, heart rate, sleep and 36 hours of battery.",
+			"description": [
+				[
+					"p",
+					"Calls and messages on your wrist, workouts tracked on their own, and a screen you can read in the sun."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"41 mm always-on screen",
+						"Heart rate, sleep and workouts",
+						"Up to 36 hours of battery",
+						"Water resistant to 50 m"
+					]
+				]
+			],
+			"brand": "mira",
+			"sale": "229",
+			"sale_days": 1,
+			"stock": 4,
+			"tags": [
+				"Today’s deal"
+			],
+			"days": 32,
+			"specs": {
+				"Screen size": "41 mm",
+				"Battery": "Up to 36 hours",
+				"Connection": "Bluetooth, Wi-Fi",
+				"Colour": "Rose gold"
+			},
+			"sku": "FC-139"
+		},
+		{
+			"slug": "mira-watch-active",
+			"name": "Mira Watch Active, 45 mm",
+			"category": [
+				"watches-bands"
+			],
+			"image": "images/mira-watch-active.jpg",
+			"gallery": [],
+			"sales": 64,
+			"regular": "199",
+			"featured": false,
+			"short": "A sports watch with GPS and a week of battery.",
+			"description": [
+				[
+					"p",
+					"Maps your runs and rides with GPS and lasts a week between charges."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"45 mm screen",
+						"GPS",
+						"Up to 7 days of battery",
+						"Water resistant to 50 m"
+					]
+				]
+			],
+			"brand": "mira",
+			"stock": 14,
+			"days": 60,
+			"specs": {
+				"Screen size": "45 mm",
+				"Battery": "Up to 7 days",
+				"Connection": "Bluetooth, GPS",
+				"Colour": "Black"
+			},
+			"sku": "FC-140"
+		},
+		{
+			"slug": "pulse-band",
+			"name": "Pulse activity band",
+			"category": [
+				"watches-bands"
+			],
+			"image": "images/pulse-band-sky.jpg",
+			"gallery": [],
+			"sales": 141,
+			"regular": "39",
+			"featured": false,
+			"short": "Counts steps, sleep and heart rate, and lasts ten days between charges.",
+			"description": [
+				[
+					"p",
+					"A light band with a bright screen, notifications from your phone and water resistance for swimming."
+				],
+				[
+					"h2",
+					"What you get"
+				],
+				[
+					"ul",
+					[
+						"Steps, sleep and heart rate",
+						"10 days of battery",
+						"Water resistant to 50 m",
+						"In five colours"
+					]
+				]
+			],
+			"brand": "mira",
+			"days": 6,
+			"specs": {
+				"Battery": "10 days",
+				"Connection": "Bluetooth",
+				"Colour": [
+					"Sky",
+					"Lilac",
+					"Rose",
+					"Navy",
+					"Midnight"
+				]
+			},
+			"variations": [
+				{
+					"options": {
+						"Colour": "Sky"
+					},
+					"stock": 16,
+					"image": "images/pulse-band-sky.jpg",
+					"sku": "FC-141-01"
+				},
+				{
+					"options": {
+						"Colour": "Lilac"
+					},
+					"stock": 9,
+					"image": "images/pulse-band-lilac.jpg",
+					"sku": "FC-141-02"
+				},
+				{
+					"options": {
+						"Colour": "Rose"
+					},
+					"stock": 12,
+					"image": "images/pulse-band-rose.jpg",
+					"sku": "FC-141-03"
+				},
+				{
+					"options": {
+						"Colour": "Navy"
+					},
+					"stock": 6,
+					"image": "images/pulse-band-navy.jpg",
+					"sku": "FC-141-04"
+				},
+				{
+					"options": {
+						"Colour": "Midnight"
+					},
+					"stock": 20,
+					"image": "images/pulse-band-midnight.jpg",
+					"sku": "FC-141-05"
+				}
+			],
+			"defaults": {
+				"Colour": "Sky"
+			},
+			"sku": "FC-141"
+		}
+	],
+	"reviews": {
+		"altis-air-14": [
+			[
+				"Priya S.",
+				5,
+				"Ordered on Monday and set up by Wednesday. The battery really does last my whole working day."
+			],
+			[
+				"Tom R.",
+				5,
+				"Lighter than my old one by almost a kilo. The screen is lovely; the speakers are only fine."
+			],
+			[
+				"Hana W.",
+				4,
+				"Great laptop. I went for 16 GB and haven’t needed more yet."
+			]
+		],
+		"kestrel-fold": [
+			[
+				"Daniel K.",
+				5,
+				"I emailed to ask which pair to get, and they told me the cheaper one suited me better."
+			],
+			[
+				"Ruth A.",
+				4,
+				"Comfortable for hours and the battery never seems to run out."
+			],
+			[
+				"Jon P.",
+				5,
+				"Folded in my coat pocket every day for a month and still perfect."
+			]
+		],
+		"paper-planes-case": [
+			[
+				"Mei L.",
+				4,
+				"Fits perfectly and survived a fall onto concrete. I’d love it in more colours."
+			],
+			[
+				"Ola T.",
+				5,
+				"Grippy without being sticky. The print hasn’t faded at all."
+			]
+		],
+		"kestrel-studio-wireless": [
+			[
+				"Sam R.",
+				5,
+				"The noise cancelling turns my commute into a quiet room."
+			],
+			[
+				"Iris V.",
+				4,
+				"Warm sound. A little snug on big ears."
+			]
+		],
+		"kestrel-buds": [
+			[
+				"Leo B.",
+				5,
+				"Small, comfortable and the case lasts a week of commuting."
+			],
+			[
+				"Kit F.",
+				4,
+				"Great sound, good noise cancelling for the price."
+			]
+		],
+		"mira-12": [
+			[
+				"Ana L.",
+				5,
+				"The screen is so bright, and it lasts a full day of heavy use."
+			],
+			[
+				"Gus O.",
+				5,
+				"Great cameras in low light."
+			]
+		],
+		"pell-nova-5a": [
+			[
+				"Rae N.",
+				5,
+				"Two days of battery and it does everything I need."
+			],
+			[
+				"Ivo P.",
+				4,
+				"Brilliant value. The camera is fine, not amazing."
+			]
+		],
+		"corvo-slim-13": [
+			[
+				"Bea H.",
+				5,
+				"Perfect for school: light and quick enough."
+			],
+			[
+				"Ned G.",
+				4,
+				"Good value. I wish it had a backlit keyboard."
+			]
+		],
+		"hollis-glow": [
+			[
+				"Jade R.",
+				5,
+				"Set them to come on slowly in the morning. Life-changing."
+			],
+			[
+				"Hal W.",
+				5,
+				"Easy to set up without a hub."
+			]
+		],
+		"pixelpine-wave": [
+			[
+				"Remy A.",
+				5,
+				"Comfortable for long sessions and the battery goes forever."
+			],
+			[
+				"Sky J.",
+				4,
+				"Works with my laptop and my tablet without fuss."
+			]
+		],
+		"pebble-speaker": [
+			[
+				"Ash N.",
+				5,
+				"Lives in the shower now. Surprisingly loud."
+			],
+			[
+				"Lucy F.",
+				5,
+				"Floated in the pool and kept playing."
+			]
+		],
+		"mira-watch-2": [
+			[
+				"Elle S.",
+				5,
+				"Bright screen and the sleep tracking is spot on."
+			],
+			[
+				"Max T.",
+				4,
+				"Battery lasts a day and a half for me."
+			]
+		],
+		"charger-20w": [
+			[
+				"Una C.",
+				5,
+				"Small and quick. Bought two."
+			]
+		],
+		"braided-cable": [
+			[
+				"Dev S.",
+				5,
+				"Long enough to reach my bed. The braid is lovely."
+			]
+		]
+	},
+	"coupons": [
+		{
+			"code": "PLAY30",
+			"type": "percent",
+			"amount": "30",
+			"description": "30% off controllers and gaming gear, this week.",
+			"categories": [
+				"video-games"
+			],
+			"usage_limit_per_user": 1
+		},
+		{
+			"code": "FIRSTFREE",
+			"type": "fixed_cart",
+			"amount": "0",
+			"free_shipping": true,
+			"description": "Free delivery on a first order.",
+			"usage_limit_per_user": 1
+		}
+	]
+}

@@ -1,0 +1,1832 @@
+/* Fullcharge: an electronics store for Yantra Pro.
+ * White and a pale ice blue, a fresh mint for buttons and charge, amber for deals and low stock,
+ * Readex Pro for headings and prices. The signature: a battery of ten cells, charged to how many are
+ * left, how close the cart is to free delivery, and how long a battery lasts. */
+
+:root {
+	--fc-ink: var(--yantra-color-3, #0E1A2B);
+	--fc-body: var(--yantra-color-4, #45526A);
+	--fc-muted: var(--yantra-color-5, #5F6B80);
+	--fc-line: var(--yantra-color-6, #E2E8EF);
+	--fc-ice: var(--yantra-color-7, #EEF4F8);
+	--fc-frost: #F6F9FB;
+	--fc-card: #F3F6F9;
+	--fc-cell: #EDF1F5;
+	--fc-cell-line: #C9D3DF;
+	--fc-mint: #2ED39A;
+	--fc-mint-dark: #1FC487;
+	--fc-mint-deep: var(--yantra-color-1, #067552);
+	--fc-mint-wash: #E2F8EE;
+	--fc-amber: #FFC23D;
+	--fc-amber-wash: #FFF3D3;
+	--fc-amber-deep: #8A5A00;
+	--fc-star: #F5A524;
+	--fc-display: 'Readex Pro', var(--yantra-heading-font, sans-serif);
+	--fc-card-radius: 20px;
+	--fc-section-radius: 28px;
+	/* The shop module's tokens. */
+	--themor-shop-low: var(--fc-amber);
+	--themor-shop-free: var(--fc-mint-deep);
+	--themor-shop-new: var(--fc-mint-wash);
+	--themor-card-colors-size: 0.8rem;
+	--themor-specs-bg: var(--fc-ice);
+	--themor-specs-color: var(--fc-ink);
+	--themor-specs-radius: 8px;
+}
+
+/* -------------------------------------------------------------------------
+ * Shared pieces.
+ * ---------------------------------------------------------------------- */
+
+.fullcharge-section {
+	margin-block: 0;
+}
+
+.fullcharge-section .alignwide > *,
+.fullcharge-hero,
+.fullcharge-hero * {
+	margin-block-start: 0;
+}
+
+.fullcharge-eyebrow {
+	margin: 0;
+	color: var(--fc-mint-deep);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.fullcharge-display {
+	margin: 0;
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: clamp(40px, 4.6vw, 64px);
+	font-weight: 600;
+	line-height: 1.04;
+	letter-spacing: -0.025em;
+	text-wrap: balance;
+}
+
+.fullcharge-lead {
+	max-width: 32rem;
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.55;
+}
+
+.fullcharge-title {
+	margin: 0;
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: clamp(26px, 2.4vw, 34px);
+	font-weight: 600;
+	line-height: 1.12;
+	letter-spacing: -0.015em;
+}
+
+.fullcharge-more {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.fullcharge-more a {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	min-height: 44px;
+	color: var(--fc-ink);
+	text-decoration: none;
+}
+
+.fullcharge-more a::after {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.fullcharge-more a:hover {
+	color: var(--fc-mint-deep);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+[dir="rtl"] .fullcharge-more a::after {
+	transform: scaleX(-1);
+}
+
+.fullcharge-fine {
+	margin: 0;
+	color: var(--fc-muted);
+	font-size: 13px;
+}
+
+/* A section's heading row: the title and its note, a countdown or a link on the other side. */
+.fullcharge-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 12px 24px;
+	margin-block-end: 24px !important;
+}
+
+.fullcharge-head__words > * + * {
+	margin-block-start: 6px;
+}
+
+.fullcharge-head__note {
+	margin: 0;
+	color: var(--fc-muted);
+	font-size: 15px;
+}
+
+.fullcharge-head__side {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px 20px;
+}
+
+.fullcharge-head__side > * {
+	margin: 0 !important;
+}
+
+/* The countdown chip: amber wash, the digits in white boxes. */
+.wp-block-themor-countdown.fullcharge-countdown {
+	--themor-countdown-bg: var(--fc-amber-wash);
+	--themor-countdown-color: var(--fc-ink);
+	--themor-countdown-icon: var(--fc-amber-deep);
+	--themor-countdown-radius: 999px;
+	--themor-countdown-weight: 600;
+}
+
+.fullcharge-countdown .themor-countdown__time,
+.fullcharge-countdown time {
+	font-family: var(--fc-display);
+	font-variant-numeric: tabular-nums;
+}
+
+/* Buttons: mint pills by the Customizer; a quiet text link and a white outline where the design has them. */
+.fullcharge-button .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 54px;
+	padding: 0 28px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.fullcharge-button--link .wp-block-button__link,
+.fullcharge-button--link.is-style-outline .wp-block-button__link {
+	padding-inline: 4px;
+	border: 0;
+	background: none;
+	color: var(--fc-ink);
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.fullcharge-button--link .wp-block-button__link:hover {
+	color: var(--fc-mint-deep);
+	background: none;
+}
+
+.fullcharge-button--white.is-style-outline .wp-block-button__link {
+	border: 1.5px solid var(--fc-ink);
+	background: #FFFFFF;
+	color: var(--fc-ink);
+}
+
+.fullcharge-button--white.is-style-outline .wp-block-button__link:hover {
+	border-color: var(--fc-mint);
+	background: var(--fc-mint);
+}
+
+.fullcharge-actions {
+	gap: 12px 24px;
+	margin-block-start: 4px !important;
+}
+
+/* -------------------------------------------------------------------------
+ * The signature: a battery of ten cells.
+ * ---------------------------------------------------------------------- */
+
+.fullcharge-battery {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	flex: none;
+	box-sizing: border-box;
+	width: 30px;
+	height: 16px;
+	margin-inline-end: 6px;
+	padding: 2px;
+	border: 1.5px solid var(--fc-ink);
+	border-radius: 5px;
+	vertical-align: middle;
+}
+
+.fullcharge-battery::after {
+	content: "";
+	position: absolute;
+	inset-inline-end: -5px;
+	top: 50%;
+	width: 2.5px;
+	height: 6px;
+	margin-top: -3px;
+	border-radius: 0 2px 2px 0;
+	background: var(--fc-ink);
+}
+
+.fullcharge-battery__cells {
+	display: grid;
+	grid-template-columns: repeat(10, minmax(0, 1fr));
+	gap: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.fullcharge-battery__cells .on {
+	background: var(--fc-mint);
+}
+
+.fullcharge-battery__cells .on:first-child {
+	border-radius: 2px 0 0 2px;
+}
+
+.fullcharge-battery__cells .on:last-child {
+	border-radius: 0 2px 2px 0;
+}
+
+/* Low stock, on a product's page and its card: the shop module's bar as a battery, amber because it runs low. */
+.themor-stock__bar {
+	position: relative;
+	box-sizing: border-box;
+	height: 16px;
+	max-width: 22rem;
+	padding: 3px;
+	overflow: visible;
+	border: 1.5px solid var(--fc-cell-line);
+	border-radius: 7px;
+	background: linear-gradient(var(--fc-cell), var(--fc-cell)) content-box, #FFFFFF;
+}
+
+.themor-stock__bar::before {
+	content: "";
+	position: absolute;
+	inset: 3px;
+	z-index: 1;
+	background: repeating-linear-gradient(90deg, transparent 0 calc(10% - 3px), #FFFFFF calc(10% - 3px) 10%);
+	pointer-events: none;
+}
+
+.themor-stock__bar::after {
+	content: "";
+	position: absolute;
+	inset-inline-end: -6px;
+	top: 50%;
+	width: 3px;
+	height: 8px;
+	margin-top: -4px;
+	border-radius: 0 2px 2px 0;
+	background: var(--fc-cell-line);
+}
+
+.themor-stock__bar span {
+	border-radius: 2px;
+	background: var(--fc-amber);
+}
+
+.themor-stock--card .themor-stock__bar {
+	height: 14px;
+	max-width: 11rem;
+}
+
+.woocommerce .themor-stock .themor-stock__text,
+.woocommerce ul.products li.product .themor-stock--card .themor-stock__text {
+	color: var(--fc-amber-deep);
+	font-weight: 700;
+}
+
+/* The cart's way to free delivery: the same battery, charging in mint, with a bolt once it's full. */
+.themor-free-shipping {
+	background: var(--fc-frost);
+	border-radius: 18px;
+}
+
+.themor-free-shipping--done {
+	background: var(--fc-mint-wash);
+}
+
+.themor-free-shipping__text {
+	color: var(--fc-ink);
+}
+
+.themor-free-shipping__track {
+	position: relative;
+	box-sizing: border-box;
+	height: 20px;
+	margin-inline-end: 36px;
+	padding: 4px;
+	overflow: visible;
+	border: 2px solid var(--fc-ink);
+	border-radius: 9px;
+	background: linear-gradient(var(--fc-cell), var(--fc-cell)) content-box, #FFFFFF;
+}
+
+.themor-free-shipping__track::before {
+	content: "";
+	position: absolute;
+	inset: 4px;
+	z-index: 1;
+	background: repeating-linear-gradient(90deg, transparent 0 calc(10% - 4px), #FFFFFF calc(10% - 4px) 10%);
+	pointer-events: none;
+}
+
+.themor-free-shipping__track::after {
+	content: "";
+	position: absolute;
+	inset-inline-end: -36px;
+	top: 50%;
+	width: 26px;
+	height: 26px;
+	margin-top: -13px;
+	border-radius: 999px;
+	background: var(--fc-line) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 3L5 13h6l-1 8 8-10h-6z' fill='%230E1A2B'/%3E%3C/svg%3E") center / 14px no-repeat;
+	box-shadow: -10px 0 0 -8px var(--fc-ink);
+}
+
+.themor-free-shipping--done .themor-free-shipping__track::after {
+	background-color: var(--fc-mint);
+}
+
+.themor-free-shipping__fill,
+.themor-free-shipping--done .themor-free-shipping__fill {
+	border-radius: 3px;
+	background: var(--fc-mint);
+}
+
+/* -------------------------------------------------------------------------
+ * Home: the hero, with the newest laptop's price and three facts.
+ * ---------------------------------------------------------------------- */
+
+.fullcharge-hero {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+	overflow: hidden;
+	border-radius: var(--fc-section-radius);
+	background: var(--fc-ice);
+}
+
+.fullcharge-hero__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 22px;
+	padding: clamp(28px, 4.5vw, 64px);
+}
+
+.fullcharge-chip {
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	margin: 0;
+	padding: 7px 16px 7px 12px;
+	border-radius: 999px;
+	background: #FFFFFF;
+	color: var(--fc-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.fullcharge-chip--plain {
+	padding: 0;
+	background: none;
+	color: var(--fc-mint-deep);
+	font-weight: 700;
+}
+
+.fullcharge-facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 4px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fullcharge-facts li {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	padding: 9px 14px;
+	border-radius: 14px;
+	background: #FFFFFF;
+	color: var(--fc-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.fullcharge-fact__icon {
+	width: 20px;
+	height: 20px;
+	background: var(--fc-mint-deep);
+	-webkit-mask: var(--fc-icon) center / contain no-repeat;
+	mask: var(--fc-icon) center / contain no-repeat;
+}
+
+.fullcharge-fact__icon--screen {
+	--fc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4.5' width='18' height='12' rx='1.5'/%3E%3Cpath d='M9 20h6M12 16.5V20'/%3E%3C/svg%3E");
+}
+
+.fullcharge-fact__icon--weight {
+	--fc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 9a3.5 3.5 0 1 1 7 0'/%3E%3Cpath d='M6 9h12l1.5 11h-15z'/%3E%3C/svg%3E");
+}
+
+.fullcharge-hero__picture {
+	position: relative;
+	min-height: 480px;
+}
+
+.fullcharge-hero__photo {
+	position: absolute !important;
+	inset: 0;
+	margin: 0 !important;
+}
+
+.fullcharge-hero__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.fullcharge-price-card {
+	position: absolute !important;
+	inset-inline-start: 24px;
+	bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 0 !important;
+	padding: 16px 20px;
+	border-radius: 18px;
+	background: #FFFFFF;
+	box-shadow: 0 18px 40px rgb(14 26 43 / 0.14);
+}
+
+.fullcharge-price-card > * {
+	margin: 0 !important;
+}
+
+.fullcharge-price-card__name {
+	color: var(--fc-muted);
+	font-size: 13px;
+}
+
+.fullcharge-price-card__price {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.fullcharge-price-card__price strong {
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.fullcharge-price-card__price s {
+	color: var(--fc-muted);
+	font-size: 15px;
+}
+
+.fullcharge-price-card__save {
+	align-self: flex-start;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: var(--fc-amber-wash);
+	color: var(--fc-amber-deep);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+/* Perks: delivery, returns, warranty and help. */
+.fullcharge-perks {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px 24px;
+	margin: 0;
+	padding: 18px 4px;
+	list-style: none;
+}
+
+.fullcharge-perks li {
+	display: grid;
+	grid-template-columns: 46px 1fr;
+	align-items: center;
+	column-gap: 14px;
+	margin: 0;
+}
+
+.fullcharge-perks strong {
+	color: var(--fc-ink);
+	font-size: 15px;
+}
+
+.fullcharge-perks li > span:last-child {
+	grid-column: 2;
+	color: var(--fc-muted);
+	font-size: 14px;
+}
+
+.fullcharge-perk__icon {
+	position: relative;
+	grid-row: span 2;
+	width: 46px;
+	height: 46px;
+	border-radius: 999px;
+	background: var(--fc-mint-wash);
+}
+
+.fullcharge-perk__icon::after {
+	content: "";
+	position: absolute;
+	inset: 12px;
+	background: var(--fc-mint-deep);
+	-webkit-mask: var(--fc-icon) center / contain no-repeat;
+	mask: var(--fc-icon) center / contain no-repeat;
+}
+
+.fullcharge-perk__icon--truck {
+	--fc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 7h11v9H3zM14 10h4l3 3v3h-7z'/%3E%3Ccircle cx='7' cy='17.5' r='1.5'/%3E%3Ccircle cx='17.5' cy='17.5' r='1.5'/%3E%3C/svg%3E");
+}
+
+.fullcharge-perk__icon--return {
+	--fc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12a8 8 0 1 0 2.3-5.6'/%3E%3Cpath d='M4 4v4h4'/%3E%3C/svg%3E");
+}
+
+.fullcharge-perk__icon--shield {
+	--fc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z'/%3E%3Cpath d='M8.5 12l2.5 2.5 4.5-5'/%3E%3C/svg%3E");
+}
+
+.fullcharge-perk__icon--chat {
+	--fc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 5h16v11H9l-5 4z'/%3E%3C/svg%3E");
+}
+
+/* Shop by category: eight tiles, the name and count beside a photo. */
+.fullcharge-cats {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.fullcharge-cat {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	min-height: 132px;
+	padding: 14px 14px 14px 22px;
+	box-sizing: border-box;
+	border-radius: var(--fc-card-radius);
+	background: var(--fc-ice);
+	transition: box-shadow 0.2s;
+}
+
+.fullcharge-cat:hover {
+	box-shadow: inset 0 0 0 2px var(--fc-mint);
+}
+
+.fullcharge-cat__words {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.fullcharge-cat__words > * {
+	margin: 0 !important;
+}
+
+.fullcharge-cat__name {
+	font-family: var(--fc-display);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.fullcharge-cat__name a {
+	color: var(--fc-ink);
+	text-decoration: none;
+}
+
+/* The whole tile follows its name's link. */
+.fullcharge-cat__name a::after,
+.fullcharge-tile__name a::after,
+.fullcharge-brand__name a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.fullcharge-cat__name a:focus-visible,
+.fullcharge-tile__name a:focus-visible,
+.fullcharge-brand__name a:focus-visible {
+	outline: none;
+}
+
+.fullcharge-cat:has(a:focus-visible),
+.fullcharge-tile:has(a:focus-visible),
+.fullcharge-brand:has(a:focus-visible) {
+	outline: 2px solid var(--fc-ink);
+	outline-offset: 3px;
+}
+
+.fullcharge-cat__count {
+	margin-block-start: 4px !important;
+	color: var(--fc-muted);
+	font-size: 14px;
+}
+
+.fullcharge-cat__photo {
+	flex: none;
+	width: 104px;
+	margin: 0 !important;
+}
+
+.fullcharge-cat__photo img {
+	display: block;
+	width: 104px;
+	height: 104px;
+	object-fit: cover;
+	border-radius: 16px;
+	background: #FFFFFF;
+}
+
+/* Two offers: cases on mint, controllers on amber with a code to copy. */
+.fullcharge-offer-cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.fullcharge-offer-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+	overflow: hidden;
+	min-height: 300px;
+	border-radius: 24px;
+	color: var(--fc-ink);
+}
+
+.fullcharge-offer-card--mint {
+	background: var(--fc-mint-wash);
+}
+
+.fullcharge-offer-card--amber {
+	background: var(--fc-amber-wash);
+}
+
+.fullcharge-offer-card--amber .fullcharge-eyebrow {
+	color: var(--fc-amber-deep);
+}
+
+.fullcharge-offer-card__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 14px;
+	padding: clamp(24px, 3vw, 40px);
+}
+
+.fullcharge-offer-card__words > * {
+	margin: 0 !important;
+}
+
+.fullcharge-offer-card__title {
+	font-family: var(--fc-display);
+	font-size: clamp(26px, 2.4vw, 32px);
+	font-weight: 600;
+	line-height: 1.1;
+	letter-spacing: -0.015em;
+}
+
+.fullcharge-offer-card__line {
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.fullcharge-offer-card__photo {
+	align-self: stretch;
+	margin: 0 !important;
+}
+
+.fullcharge-offer-card__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+/* The code to copy: a dashed ticket with an amber button (as strong as Yantra Pro's colours for the block). */
+.wp-block-themor-copy-code.fullcharge-code {
+	--themor-copy-code-bg: #FFFFFF;
+	--themor-copy-code-color: var(--fc-ink);
+	--themor-copy-code-border: 1.5px dashed var(--fc-ink);
+	--themor-copy-code-button-bg: var(--fc-amber);
+	--themor-copy-code-button-color: var(--fc-ink);
+	--themor-copy-code-button-border: 1.5px solid var(--fc-ink);
+	--themor-copy-code-button-hover-bg: var(--fc-ink);
+	--themor-copy-code-button-hover-color: #FFFFFF;
+	--themor-copy-code-button-hover-border: 1.5px solid var(--fc-ink);
+	--themor-copy-code-radius: 14px;
+	--themor-copy-code-padding: 0 20px;
+	--themor-copy-code-size: 20px;
+	--themor-copy-code-weight: 600;
+	--themor-copy-code-spacing: 0.08em;
+	--themor-copy-code-font: var(--fc-display);
+}
+
+/* -------------------------------------------------------------------------
+ * Product cards, everywhere a list of products shows.
+ * ---------------------------------------------------------------------- */
+
+.woocommerce ul.products li.product a img,
+.woocommerce ul.products li.product a .woocommerce-placeholder {
+	aspect-ratio: 1;
+	object-fit: cover;
+	margin: 0 0 14px;
+	border-radius: var(--fc-card-radius);
+	background: var(--fc-card);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+	margin: 0 0 8px;
+	padding: 0;
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.woocommerce ul.products li.product .themor-specs {
+	margin: 0 0 10px;
+}
+
+.woocommerce ul.products li.product .star-rating {
+	margin: 0 0 8px;
+	color: var(--fc-star);
+	font-size: 13px;
+}
+
+.woocommerce ul.products li.product .price {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 6px 10px;
+	margin: 0 0 6px;
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.woocommerce ul.products li.product .price ins {
+	text-decoration: none;
+}
+
+.woocommerce ul.products li.product .price .amount,
+.woocommerce ul.products li.product .price ins .amount,
+.woocommerce div.product .summary .price .amount,
+.woocommerce div.product .summary .price ins .amount {
+	color: var(--fc-ink);
+}
+
+.woocommerce ul.products li.product .price del .amount,
+.woocommerce div.product .summary .price del .amount {
+	color: var(--fc-muted);
+}
+
+.fullcharge-nowrap {
+	white-space: nowrap;
+}
+
+.woocommerce ul.products li.product .price del {
+	order: 2;
+	color: var(--fc-muted);
+	font-family: var(--yantra-body-font, inherit);
+	font-size: 15px;
+	font-weight: 400;
+	opacity: 1;
+}
+
+.woocommerce ul.products li.product .price del .amount {
+	color: inherit;
+}
+
+/* The sale badge in amber and New in mint, as pills. */
+.woocommerce ul.products li.product .onsale,
+.woocommerce span.onsale {
+	min-width: 0;
+	min-height: 0;
+	padding: 5px 11px;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.themor-badge--new {
+	color: var(--fc-mint-deep);
+}
+
+/* Card buttons: an ink outline until pointed at, then mint, through Yantra's button tokens. */
+.woocommerce ul.products li.product {
+	--yantra-button-bg: transparent;
+	--yantra-button-text: var(--fc-ink);
+	--yantra-button-border: var(--fc-ink);
+	--yantra-button-hover: var(--fc-mint);
+	--yantra-button-text-hover: var(--fc-ink);
+	--yantra-button-border-hover: var(--fc-mint);
+	--yantra-button-border-width: 1.5px;
+	--yantra-button-padding-top: 10px;
+	--yantra-button-padding-bottom: 10px;
+	--yantra-button-padding-left: 18px;
+	--yantra-button-padding-right: 18px;
+	--yantra-button-size: 14px;
+}
+
+.woocommerce ul.products li.product .themor-compare-check {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--fc-ink);
+}
+
+.woocommerce ul.products li.product .themor-compare-check input {
+	accent-color: var(--fc-mint-deep);
+}
+
+/* Grids made of groups: the editor's flow spacing would push all but the first child down. */
+:is(.fullcharge-hero, .fullcharge-hero__picture, .fullcharge-cats, .fullcharge-cat, .fullcharge-offer-cards, .fullcharge-offer-card,
+	.fullcharge-tiles, .fullcharge-tile, .fullcharge-tile__card, .fullcharge-finder-row, .fullcharge-brands, .fullcharge-brand-promo,
+	.fullcharge-brand-grid, .fullcharge-brand, .fullcharge-reviews, .fullcharge-review, .fullcharge-review__by, .fullcharge-advice,
+	.fullcharge-newsletter, .fullcharge-popup) > * {
+	margin-block: 0;
+}
+
+.fullcharge-posts .wp-block-post-template > li,
+.fullcharge-posts .wp-block-post-template > li > * {
+	margin-block-start: 0;
+}
+
+/* A product's page: the price large, Buy now as an outline beside Add to cart, the sale's countdown as an amber chip. */
+.woocommerce div.product .summary .price {
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-weight: 600;
+}
+
+.woocommerce div.product .summary .price ins {
+	text-decoration: none;
+}
+
+.woocommerce div.product .summary .price del {
+	color: var(--fc-muted);
+	font-family: var(--yantra-body-font, inherit);
+	font-size: 0.65em;
+	font-weight: 400;
+}
+
+.woocommerce div.product form.cart .themor-buy-now {
+	--yantra-button-bg: transparent;
+	--yantra-button-text: var(--fc-ink);
+	--yantra-button-border: var(--fc-ink);
+	--yantra-button-hover: var(--fc-ink);
+	--yantra-button-text-hover: #FFFFFF;
+	--yantra-button-border-hover: var(--fc-ink);
+	--yantra-button-border-width: 1.5px;
+}
+
+.woocommerce div.product .themor-urgency__ends {
+	justify-self: start;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 7px 14px;
+	border-radius: 999px;
+	background: var(--fc-amber-wash);
+	color: var(--fc-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.woocommerce div.product .themor-urgency__time {
+	padding: 0;
+	background: none;
+	color: var(--fc-amber-deep);
+	font-variant-numeric: tabular-nums;
+}
+
+/* -------------------------------------------------------------------------
+ * Home: deals, three starting prices, popular, the case finder, brands, reviews, advice, deal emails.
+ * ---------------------------------------------------------------------- */
+
+.fullcharge-products {
+	margin-block-start: 0 !important;
+}
+
+.fullcharge-products .woocommerce {
+	margin: 0;
+}
+
+/* Three starting prices: a photo, its card at the bottom. */
+.fullcharge-tiles {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.fullcharge-tile {
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 4 / 3;
+	border-radius: 24px;
+	background: var(--fc-ice);
+}
+
+.fullcharge-tile__photo {
+	position: absolute !important;
+	inset: 0;
+	margin: 0 !important;
+}
+
+.fullcharge-tile__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+	transition: transform 0.4s;
+}
+
+.fullcharge-tile:hover .fullcharge-tile__photo img {
+	transform: scale(1.03);
+}
+
+.fullcharge-tile__card {
+	position: absolute !important;
+	inset-inline: 16px;
+	bottom: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 14px 14px 14px 20px;
+	border-radius: 18px;
+	background: #FFFFFF;
+}
+
+.fullcharge-tile__words > * {
+	margin: 0 !important;
+}
+
+.fullcharge-tile__name {
+	font-family: var(--fc-display);
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.fullcharge-tile__name a {
+	color: var(--fc-ink);
+	text-decoration: none;
+}
+
+.fullcharge-tile__price {
+	margin-block-start: 2px !important;
+	color: var(--fc-mint-deep);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.fullcharge-tile__arrow {
+	margin: 0 !important;
+}
+
+.fullcharge-tile__arrow span {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 999px;
+	background: var(--fc-mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230E1A2B' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / 18px no-repeat;
+}
+
+/* Popular right now: the product tabs as pills, the chosen one mint. */
+.fullcharge-popular {
+	--themor-product-tabs-active-bg: var(--fc-mint);
+	--themor-product-tabs-active-color: var(--fc-ink);
+	--themor-product-tabs-border: var(--fc-line);
+	--themor-product-tabs-color: var(--fc-ink);
+}
+
+.fullcharge-popular .themor-product-tabs__heading,
+.fullcharge-popular h2 {
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: clamp(26px, 2.4vw, 34px);
+	font-weight: 600;
+}
+
+/* Find a case that fits: words beside the picker and the cases. */
+.fullcharge-section--finder {
+	background: var(--fc-frost);
+}
+
+.fullcharge-finder-row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2.6fr);
+	align-items: start;
+	gap: 32px 48px;
+}
+
+.fullcharge-finder__words > * + * {
+	margin-block-start: 14px;
+}
+
+.fullcharge-finder .themor-finder {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 10px 14px;
+	margin-block-end: 20px;
+}
+
+.fullcharge-finder label {
+	color: var(--fc-ink);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.fullcharge-finder select {
+	min-height: 52px;
+	min-width: 16rem;
+	padding-inline: 16px 40px;
+	border: 1.5px solid var(--fc-cell-line);
+	border-radius: 14px;
+	background-color: #FFFFFF;
+	color: var(--fc-ink);
+	font-size: 16px;
+}
+
+.fullcharge-finder .themor-finder__status {
+	color: var(--fc-muted);
+	font-size: 14px;
+}
+
+.fullcharge-section--finder .woocommerce ul.products li.product {
+	padding: 12px 12px 16px;
+	border: 1px solid var(--fc-line);
+	border-radius: var(--fc-card-radius);
+	background: #FFFFFF;
+}
+
+.fullcharge-section--finder .woocommerce ul.products li.product a img {
+	border-radius: 14px;
+}
+
+/* Save on Altis, and the brands we sell. */
+.fullcharge-brands {
+	display: grid;
+	grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+	gap: 20px;
+}
+
+.fullcharge-brand-promo {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	overflow: hidden;
+	min-height: 380px;
+	border-radius: var(--fc-section-radius);
+	background: var(--fc-ice);
+	color: var(--fc-ink);
+}
+
+.fullcharge-brand-promo__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+	padding: clamp(28px, 3.5vw, 48px);
+}
+
+.fullcharge-brand-promo__words > * {
+	margin: 0 !important;
+}
+
+.fullcharge-brand-promo__title {
+	font-family: var(--fc-display);
+	font-size: clamp(28px, 2.8vw, 38px);
+	font-weight: 600;
+	line-height: 1.08;
+	letter-spacing: -0.02em;
+}
+
+.fullcharge-brand-promo__line {
+	font-size: 16px;
+}
+
+.fullcharge-brand-promo__photo {
+	align-self: stretch;
+	margin: 0 !important;
+}
+
+.fullcharge-brand-promo__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.fullcharge-brands__side {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.fullcharge-brand-grid {
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 12px;
+}
+
+.fullcharge-brand {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 104px;
+	padding: 14px;
+	box-sizing: border-box;
+	border: 1px solid var(--fc-line);
+	border-radius: 18px;
+	background: #FFFFFF;
+	transition: border-color 0.2s;
+}
+
+.fullcharge-brand:hover {
+	border-color: var(--fc-mint);
+}
+
+.fullcharge-brand__logo {
+	margin: 0 !important;
+}
+
+.fullcharge-brand__logo img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: 56px;
+	object-fit: contain;
+}
+
+/* The brand's name names the link, read but not shown: the logo says it. */
+.fullcharge-brand__name {
+	margin: 0 !important;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* What customers say. */
+.fullcharge-reviews {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.fullcharge-review {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 26px;
+	border: 1px solid var(--fc-line);
+	border-radius: 22px;
+}
+
+.fullcharge-review > * {
+	margin: 0 !important;
+}
+
+.fullcharge-stars {
+	display: inline-flex;
+	gap: 3px;
+}
+
+.fullcharge-stars span {
+	width: 18px;
+	height: 18px;
+	background: var(--fc-star);
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.6 9.6l5.8-.8z'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.6 9.6l5.8-.8z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.fullcharge-stars .off {
+	background: var(--fc-line);
+}
+
+.fullcharge-review__quote {
+	flex: 1 1 auto;
+	color: var(--fc-ink);
+	font-size: 17px;
+	line-height: 1.55;
+}
+
+.fullcharge-review__by {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.fullcharge-review__photo {
+	flex: none;
+	margin: 0 !important;
+}
+
+.fullcharge-review__photo img {
+	display: block;
+	width: 52px;
+	height: 52px;
+	object-fit: cover;
+	border-radius: 12px;
+	background: var(--fc-card);
+}
+
+.fullcharge-review__who {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	margin: 0 !important;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.fullcharge-review__who strong {
+	color: var(--fc-ink);
+	font-size: 15px;
+}
+
+.fullcharge-review__who a {
+	color: var(--fc-body);
+}
+
+.fullcharge-review__who em {
+	color: var(--fc-mint-deep);
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* Ask someone who has used it. */
+.fullcharge-advice {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	overflow: hidden;
+	border-radius: var(--fc-section-radius);
+	background: var(--fc-ice);
+}
+
+.fullcharge-advice__photo {
+	margin: 0 !important;
+}
+
+.fullcharge-advice__photo img {
+	width: 100%;
+	height: 100%;
+	min-height: 340px;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.fullcharge-advice__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+	padding: clamp(28px, 4vw, 56px);
+}
+
+.fullcharge-advice__words > * {
+	margin: 0 !important;
+}
+
+.fullcharge-advice__title {
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: clamp(28px, 2.8vw, 38px);
+	font-weight: 600;
+	line-height: 1.08;
+	letter-spacing: -0.02em;
+}
+
+.fullcharge-advice__line {
+	max-width: 30rem;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+.fullcharge-advice__phone {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--fc-ink);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.fullcharge-phone-icon {
+	width: 20px;
+	height: 20px;
+	background: var(--fc-mint-deep);
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* Deal emails: words beside the sign-up form, on mint. */
+.fullcharge-newsletter {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: center;
+	gap: 24px 40px;
+	padding: clamp(28px, 4vw, 48px);
+	border-radius: var(--fc-section-radius);
+	background: var(--fc-mint-wash);
+}
+
+.fullcharge-newsletter__words > * + * {
+	margin-block-start: 10px;
+}
+
+.fullcharge-newsletter__line {
+	margin: 0;
+	font-size: 16px;
+}
+
+.fullcharge-signup {
+	--themor-signup-radius: 999px;
+	--themor-signup-border: 1.5px solid var(--fc-ink);
+	--themor-signup-button-bg: var(--fc-mint);
+	--themor-signup-button-color: var(--fc-ink);
+	--themor-signup-button-border: 1.5px solid var(--fc-ink);
+}
+
+/* -------------------------------------------------------------------------
+ * Compare: the bar while products are chosen, and the table.
+ * ---------------------------------------------------------------------- */
+
+.themor-compare__table .is-best {
+	background: var(--fc-mint-wash);
+}
+
+.themor-compare__best {
+	background: var(--fc-mint);
+	color: var(--fc-ink);
+}
+
+/* -------------------------------------------------------------------------
+ * Pages.
+ * ---------------------------------------------------------------------- */
+
+.fullcharge-section--page-head {
+	background: var(--fc-ice);
+}
+
+.fullcharge-page-head__words > * + * {
+	margin-block-start: 12px;
+}
+
+.fullcharge-page-title {
+	margin: 0;
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: clamp(36px, 4vw, 52px);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+.fullcharge-faq {
+	border-bottom: 1px solid var(--fc-line);
+	padding-block: 14px;
+}
+
+.fullcharge-faq summary {
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: 19px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.fullcharge-help-card {
+	padding: 28px;
+	border-radius: 24px;
+	background: var(--fc-ice);
+}
+
+.fullcharge-help-card__title {
+	margin: 0 0 8px;
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.fullcharge-help-card__email a,
+.fullcharge-help-card__phone {
+	color: var(--fc-ink);
+	font-weight: 700;
+}
+
+/* A product inside a buying guide. */
+.fullcharge-offer {
+	gap: 18px;
+	margin-block: 32px !important;
+	padding: 16px;
+	border: 1px solid var(--fc-line);
+	border-radius: 22px;
+}
+
+.fullcharge-offer__photo {
+	flex: none;
+	width: 96px;
+	margin: 0 !important;
+}
+
+.fullcharge-offer__photo img {
+	width: 96px;
+	height: 96px;
+	object-fit: cover;
+	border-radius: 14px;
+	background: var(--fc-card);
+}
+
+.fullcharge-offer__words {
+	flex: 1 1 auto;
+}
+
+.fullcharge-offer__words > * {
+	margin: 0 0 4px !important;
+}
+
+.fullcharge-offer__eyebrow {
+	color: var(--fc-mint-deep);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.fullcharge-offer__name {
+	color: var(--fc-ink);
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.fullcharge-offer__price {
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+ * The first-order popup: a photo beside the offer, and the code to copy.
+ * ---------------------------------------------------------------------- */
+
+.fullcharge-popup {
+	display: grid;
+	grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+	margin: 0;
+	background: #FFFFFF;
+}
+
+.fullcharge-popup__photo {
+	margin: 0 !important;
+}
+
+.fullcharge-popup__photo img {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.fullcharge-popup__words {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 48px 44px 36px;
+}
+
+.fullcharge-popup__words > * {
+	margin: 0 !important;
+}
+
+.fullcharge-popup__title {
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: clamp(32px, 3.4vw, 42px);
+	font-weight: 600;
+	line-height: 1.05;
+	letter-spacing: -0.02em;
+}
+
+.fullcharge-popup__text {
+	font-size: 16px;
+}
+
+.fullcharge-popup__actions {
+	align-items: center;
+}
+
+.fullcharge-popup__skip a {
+	color: var(--fc-body);
+	font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+ * The header: the search as one pill, the departments, compare, wishlist and cart.
+ * ---------------------------------------------------------------------- */
+
+.yantra-header-row--top {
+	font-size: 13px;
+}
+
+.yantra-header-row--top .themor-hx-icon-text__icon {
+	color: var(--fc-mint-deep);
+}
+
+.yantra-header-row--main .yantra-header-area--center {
+	flex: 1 1 auto;
+	justify-content: center;
+	min-width: 0;
+}
+
+.yantra-header-row--main .yantra-component--search {
+	width: min(680px, 100%);
+}
+
+/* On phones the search has a row of its own, across it. */
+.yantra-header__mobile .yantra-header-area:has(> .yantra-component--search) {
+	flex: 1 1 100%;
+}
+
+.yantra-header__mobile .yantra-component--search {
+	width: 100%;
+}
+
+.yantra-component--search .yantra-search-form {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 4px;
+	box-sizing: border-box;
+	border: 1.5px solid var(--fc-cell-line);
+	border-radius: 999px;
+	background: #FFFFFF;
+}
+
+.yantra-component--search .yantra-search-form .search-field {
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 44px;
+	padding: 0 14px;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	font-size: 15px;
+}
+
+.yantra-component--search .yantra-search-form select {
+	flex: none;
+	min-height: 44px;
+	padding-block: 0;
+	padding-inline: 16px 34px;
+	border: 0;
+	border-radius: 999px;
+	background-color: var(--fc-ice);
+	color: var(--fc-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.yantra-component--search .yantra-search-form .search-submit {
+	flex: none;
+	width: 44px;
+	min-height: 44px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: var(--fc-mint);
+	color: var(--fc-ink);
+}
+
+.yantra-component--search .yantra-search-form .search-submit:hover {
+	background: var(--fc-mint-dark);
+}
+
+.themor-hx-dept__button {
+	border-radius: 999px;
+	background: var(--fc-ice);
+	color: var(--fc-ink);
+}
+
+.themor-hx-dept[open] .themor-hx-dept__button {
+	background: var(--fc-mint);
+}
+
+.yantra-nav--primary .menu-item > a {
+	font-weight: 600;
+}
+
+/* The header's Today's deals: a link with an amber bolt, not a second button. */
+.yantra-header-row--bottom .yantra-component--button .wp-element-button,
+.yantra-header-row--bottom .yantra-component--button a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	min-height: 44px;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--fc-ink);
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.yantra-header-row--bottom .yantra-component--button a::before {
+	content: "";
+	flex: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 999px;
+	background: var(--fc-amber) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 3L5 13h6l-1 8 8-10h-6z' fill='%230E1A2B'/%3E%3C/svg%3E") center / 16px no-repeat;
+}
+
+.yantra-header-row--bottom .yantra-component--button a:hover {
+	background: none;
+	color: var(--fc-mint-deep);
+}
+
+.yantra-cart {
+	border-radius: 999px;
+	background: var(--fc-ice);
+}
+
+/* -------------------------------------------------------------------------
+ * The footer.
+ * ---------------------------------------------------------------------- */
+
+.fullcharge-footer-blurb {
+	max-width: 24rem;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.fullcharge-footer-contact {
+	display: flex;
+	gap: 14px;
+	margin: 6px 0 0 !important;
+	font-size: 14px;
+	color: var(--fc-ink);
+}
+
+.fullcharge-footer-contact span {
+	min-width: 3.4rem;
+	color: var(--fc-muted);
+}
+
+.fullcharge-footer-contact a {
+	color: var(--fc-ink);
+	font-weight: 600;
+}
+
+.site-footer .widget .wp-block-heading,
+.site-footer .widget-title {
+	margin-block-end: 14px;
+	color: var(--fc-ink);
+	font-family: var(--fc-display);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+ * Smaller screens.
+ * ---------------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+	.fullcharge-cats {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.fullcharge-perks {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.fullcharge-offer-cards,
+	.fullcharge-brands,
+	.fullcharge-finder-row {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.fullcharge-reviews {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.fullcharge-hero,
+	.fullcharge-advice,
+	.fullcharge-newsletter,
+	.fullcharge-brand-promo,
+	.fullcharge-offer-card,
+	.fullcharge-tiles,
+	.fullcharge-perks {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.fullcharge-hero__picture {
+		order: -1;
+		min-height: 260px;
+	}
+
+	.fullcharge-cats {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 10px;
+	}
+
+	.fullcharge-cat {
+		min-height: 96px;
+	}
+
+	.fullcharge-cat__photo,
+	.fullcharge-cat__photo img {
+		width: 72px;
+		height: 72px;
+	}
+
+	.fullcharge-offer-card__photo img {
+		height: 200px;
+	}
+
+	.fullcharge-brand-promo__photo img {
+		height: 220px;
+	}
+
+	.fullcharge-brand-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.fullcharge-advice__photo img {
+		min-height: 220px;
+		height: 220px;
+	}
+
+	.fullcharge-popup {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.fullcharge-popup__photo img {
+		height: 160px;
+		min-height: 0;
+	}
+
+	.fullcharge-popup__words {
+		padding: 28px 22px 24px;
+	}
+
+	.fullcharge-finder select {
+		min-width: 0;
+		width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.fullcharge-tile__photo img,
+	.fullcharge-cat,
+	.fullcharge-brand {
+		transition: none;
+	}
+
+	.fullcharge-tile:hover .fullcharge-tile__photo img {
+		transform: none;
+	}
+}

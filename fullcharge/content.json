@@ -1,0 +1,424 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"laptops-and-phones": {
+			"name": "Laptops and phones",
+			"description": "What to look for in a laptop or a phone, and what to skip."
+		},
+		"audio-guides": {
+			"name": "Audio",
+			"description": "Headphones, earbuds and speakers, explained."
+		},
+		"smart-home-guides": {
+			"name": "Smart home",
+			"description": "Where to start with a smart home, and what to add next."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "perks"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "categories"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "offers"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "deals"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "price-tiles"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "popular"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "case-finder"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "brands"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "reviews"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "advice"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "newsletter"
+					}
+				]
+			]
+		},
+		"deals": {
+			"title": "Today’s deals",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "deals-page"
+					}
+				]
+			]
+		},
+		"compare": {
+			"title": "Compare",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "compare-page"
+					}
+				]
+			]
+		},
+		"wishlist": {
+			"title": "Wishlist",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "wishlist-page"
+					}
+				]
+			]
+		},
+		"help": {
+			"title": "Help and returns",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "help-page"
+					}
+				]
+			]
+		},
+		"delivery-returns": {
+			"title": "Delivery and returns",
+			"content": [
+				[
+					"p",
+					"Free delivery on orders over $80, usually in 2–3 working days. Order before 3 pm on a weekday and it leaves the same day."
+				],
+				[
+					"p",
+					"You have 30 days to send it back for a full refund. Print the label from your account and drop the parcel at any post office."
+				],
+				[
+					"p",
+					"Laptops and phones have a 2-year warranty; everything else has one year. If it goes wrong, we collect it, fix it and bring it back."
+				]
+			]
+		},
+		"about": {
+			"title": "About us",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "about-page"
+					}
+				]
+			]
+		},
+		"guides": {
+			"title": "Buying guides",
+			"content": []
+		},
+		"privacy": {
+			"title": "Privacy",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "privacy-page"
+					}
+				]
+			]
+		},
+		"terms": {
+			"title": "Terms",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "terms-page"
+					}
+				]
+			]
+		}
+	},
+	"posts": {
+		"choose-a-laptop-for-study": {
+			"title": "How to choose a laptop for study",
+			"category": "laptops-and-phones",
+			"image": "images/post-laptop.jpg",
+			"days": 3,
+			"sticky": true,
+			"tags": [
+				"Laptops",
+				"Students"
+			],
+			"excerpt": "Weight, battery, screen and memory: what matters for four years of lectures and essays, and what doesn’t.",
+			"content": [
+				[
+					"p",
+					"A laptop for study gets carried more than any other. It goes to every lecture, the library and home for the holidays, so weight and battery matter more than raw speed."
+				],
+				[
+					"h2",
+					"Start with weight and battery"
+				],
+				[
+					"p",
+					"Under 1.3 kg is light enough that you won’t notice it in a bag. Look for at least 12 hours of battery, so you can leave the charger at home for a full day."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-altis-air-13"
+					}
+				],
+				[
+					"h2",
+					"Then the screen"
+				],
+				[
+					"p",
+					"A 13″ or 14″ screen is the sweet spot: big enough for two documents side by side, small enough for a library desk. A sharper screen (2.5K or more) is easier on the eyes for long reading."
+				],
+				[
+					"h2",
+					"How much memory?"
+				],
+				[
+					"ul",
+					[
+						"8 GB is enough for essays, browsing and video calls.",
+						"16 GB is worth it for design, coding or lots of tabs.",
+						"256 GB of storage fills up fast with photos: 512 GB if you can."
+					]
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-corvo-slim-13"
+					}
+				],
+				[
+					"h2",
+					"What you can skip"
+				],
+				[
+					"p",
+					"A gaming graphics card, a 4K screen and a huge drive. They add weight and cost, and they drain the battery."
+				]
+			]
+		},
+		"noise-cancelling-explained": {
+			"title": "Noise cancelling, explained",
+			"category": "audio-guides",
+			"image": "images/post-headphones.jpg",
+			"days": 9,
+			"tags": [
+				"Headphones"
+			],
+			"excerpt": "What noise cancelling does, what it can’t do, and whether it’s worth paying more for.",
+			"content": [
+				[
+					"p",
+					"Noise cancelling headphones listen to the sound around you and play the opposite wave, so the two cancel out before they reach your ear."
+				],
+				[
+					"h2",
+					"What it’s good at"
+				],
+				[
+					"p",
+					"Steady, low sounds: train and plane engines, air conditioning, the hum of an office. These almost disappear."
+				],
+				[
+					"h2",
+					"What it can’t do"
+				],
+				[
+					"p",
+					"Sudden or high sounds, like voices or a dog barking, get quieter but don’t go away. A good fit around the ear does as much for those as the electronics."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-kestrel-studio-wireless"
+					}
+				],
+				[
+					"h2",
+					"Over-ears or earbuds?"
+				],
+				[
+					"p",
+					"Over-ears cancel more and last longer. Earbuds go in a pocket. If you commute and sit at a desk, many people end up with both."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-kestrel-buds"
+					}
+				]
+			]
+		},
+		"smart-bulbs-where-to-start": {
+			"title": "Smart bulbs: where to start",
+			"category": "smart-home-guides",
+			"image": "images/post-bulb.jpg",
+			"days": 15,
+			"tags": [
+				"Smart home"
+			],
+			"excerpt": "Start with two bulbs and one routine. Here’s which, and why.",
+			"content": [
+				[
+					"p",
+					"The easiest way into a smart home is a smart bulb. It fits the lamp you already have, and you can set it up in five minutes from your phone."
+				],
+				[
+					"h2",
+					"Start with two bulbs"
+				],
+				[
+					"p",
+					"Put one in the lamp you use most in the evening and one by your bed. That’s where a schedule makes the biggest difference."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-hollis-glow"
+					}
+				],
+				[
+					"h2",
+					"Then one routine"
+				],
+				[
+					"ul",
+					[
+						"Bedside light on slowly, ten minutes before your alarm.",
+						"Living room down to warm and dim at 9 pm.",
+						"Everything off when the last phone leaves home."
+					]
+				],
+				[
+					"h2",
+					"Do you need a hub?"
+				],
+				[
+					"p",
+					"Not for Wi-Fi bulbs. A hub helps once you have more than twenty devices, or want them to work when the internet is down."
+				]
+			]
+		}
+	},
+	"theme_posts": {
+		"themor_content_block": {
+			"fullcharge-first-order-popup": {
+				"title": "First-order popup",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "popup-first-order"
+						}
+					]
+				],
+				"meta": {
+					"_themor_content_block_type": "popup",
+					"_themor_content_block": {
+						"type": "popup",
+						"enabled": true,
+						"conditions": [
+							{
+								"type": "everywhere"
+							}
+						],
+						"devices": [
+							"desktop",
+							"tablet",
+							"mobile"
+						],
+						"popup_trigger": "time",
+						"popup_delay": 8,
+						"popup_again": "after",
+						"popup_again_days": 30,
+						"popup_again_done": 90,
+						"popup_close_action": "button",
+						"popup_close_selector": ".fullcharge-popup-close",
+						"popup_size": "custom",
+						"popup_width": {
+							"size": 860,
+							"unit": "px"
+						},
+						"popup_position": "center",
+						"popup_animation": "zoom",
+						"popup_backdrop_color": "rgba(14, 26, 43, 0.4)",
+						"popup_radius": 28,
+						"popup_padding": {
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"unit": "px"
+						},
+						"popup_shadow_color": "rgba(14, 26, 43, 0.28)",
+						"popup_overflow": "hidden"
+					}
+				}
+			}
+		}
+	}
+}

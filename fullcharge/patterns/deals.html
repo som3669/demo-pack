@@ -1,0 +1,27 @@
+<!-- wp:group {"tagName":"section","align":"full","className":"fullcharge-section fullcharge-section--deals","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull fullcharge-section fullcharge-section--deals" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"align":"wide","className":"fullcharge-head fullcharge-head--deals","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group alignwide fullcharge-head fullcharge-head--deals"><!-- wp:group {"className":"fullcharge-head__words","layout":{"type":"default"}} -->
+<div class="wp-block-group fullcharge-head__words"><!-- wp:heading {"className":"fullcharge-title"} -->
+<h2 class="wp-block-heading fullcharge-title">Today’s deals</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fullcharge-head__note"} -->
+<p class="fullcharge-head__note">New prices every morning, while they last</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fullcharge-head__side","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group fullcharge-head__side"><!-- wp:themor/countdown {"ends":"daily","time":"00:00","label":"Ends in","className":"fullcharge-countdown"} /-->
+
+<!-- wp:paragraph {"className":"fullcharge-more"} -->
+<p class="fullcharge-more"><a href="#">See all deals</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","className":"fullcharge-products fullcharge-products--deals","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide fullcharge-products fullcharge-products--deals"><!-- wp:shortcode -->
+[products tag="todays-deal" limit="4" columns="4" orderby="menu_order" order="ASC"]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->

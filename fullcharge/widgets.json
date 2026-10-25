@@ -1,0 +1,235 @@
+{
+	"schema": 1,
+	"sidebars": {
+		"footer-1": [
+			{
+				"title": "",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "footer-brand"
+						}
+					]
+				]
+			}
+		],
+		"footer-2": [
+			{
+				"title": "Shop",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "Laptops",
+								"product_cat": "laptops"
+							},
+							{
+								"label": "Phones",
+								"product_cat": "phones"
+							},
+							{
+								"label": "Headphones and speakers",
+								"product_cat": "audio"
+							},
+							{
+								"label": "Phone cases",
+								"product_cat": "phone-cases"
+							},
+							{
+								"label": "Smart home",
+								"product_cat": "smart-home"
+							},
+							{
+								"label": "Video games",
+								"product_cat": "video-games"
+							},
+							{
+								"label": "Today’s deals",
+								"page": "deals"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-3": [
+			{
+				"title": "Help",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "Delivery and returns",
+								"page": "help"
+							},
+							{
+								"label": "Track your order",
+								"woocommerce": "myaccount"
+							},
+							{
+								"label": "Warranty",
+								"page": "help"
+							},
+							{
+								"label": "Contact us",
+								"page": "help"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-4": [
+			{
+				"title": "Fullcharge",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "About us",
+								"page": "about"
+							},
+							{
+								"label": "Buying guides",
+								"page": "guides"
+							},
+							{
+								"label": "Compare products",
+								"page": "compare"
+							},
+							{
+								"label": "Wishlist",
+								"page": "wishlist"
+							}
+						]
+					]
+				]
+			}
+		],
+		"sidebar-shop": [
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav_filters",
+							"instance": {
+								"title": "Active filters"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_price_filter",
+							"instance": {
+								"title": "Price"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Memory",
+								"attribute": "memory",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Storage",
+								"attribute": "storage",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Screen size",
+								"attribute": "screen-size",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Fits",
+								"attribute": "fits",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Colour",
+								"attribute": "colour",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_rating_filter",
+							"instance": {
+								"title": "Rating"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+}

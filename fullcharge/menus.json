@@ -1,0 +1,503 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Fullcharge menu",
+			"slug": "fullcharge-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Laptops",
+					"product_cat": "laptops",
+					"meta": {
+						"_themor_mega_menu": {
+							"mega": true,
+							"columns": 3,
+							"width": "custom",
+							"custom_width": {
+								"size": 620,
+								"unit": "px"
+							}
+						}
+					},
+					"children": [
+						{
+							"label": "By size",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "13″ and 14″",
+									"product_cat": "13-14-inch"
+								},
+								{
+									"label": "15″ and 16″",
+									"product_cat": "15-16-inch"
+								}
+							],
+							"url": "#"
+						},
+						{
+							"label": "By use",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Gaming laptops",
+									"product_cat": "gaming-laptops"
+								},
+								{
+									"label": "2-in-1 laptops",
+									"product_cat": "2-in-1-laptops"
+								}
+							],
+							"url": "#"
+						},
+						{
+							"label": "Brands",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Altis",
+									"product_brand": "altis"
+								},
+								{
+									"label": "Corvo",
+									"product_brand": "corvo"
+								}
+							],
+							"url": "#"
+						}
+					]
+				},
+				{
+					"label": "Phones",
+					"product_cat": "phones"
+				},
+				{
+					"label": "Audio",
+					"product_cat": "audio",
+					"children": [
+						{
+							"label": "Headphones",
+							"product_cat": "headphones"
+						},
+						{
+							"label": "Earbuds",
+							"product_cat": "earbuds"
+						},
+						{
+							"label": "Speakers",
+							"product_cat": "speakers"
+						}
+					]
+				},
+				{
+					"label": "Phone cases",
+					"product_cat": "phone-cases"
+				},
+				{
+					"label": "Smart home",
+					"product_cat": "smart-home"
+				},
+				{
+					"label": "Video games",
+					"product_cat": "video-games"
+				},
+				{
+					"label": "Chargers",
+					"product_cat": "chargers-power"
+				},
+				{
+					"label": "Watches",
+					"product_cat": "watches-bands"
+				}
+			]
+		},
+		{
+			"title": "Fullcharge departments",
+			"slug": "fullcharge-departments",
+			"location": "departments",
+			"items": [
+				{
+					"label": "Laptops",
+					"product_cat": "laptops",
+					"children": [
+						{
+							"label": "By size",
+							"product_cat": "laptops",
+							"children": [
+								{
+									"label": "13″ and 14″",
+									"product_cat": "13-14-inch"
+								},
+								{
+									"label": "15″ and 16″",
+									"product_cat": "15-16-inch"
+								}
+							]
+						},
+						{
+							"label": "By use",
+							"product_cat": "laptops",
+							"children": [
+								{
+									"label": "Gaming laptops",
+									"product_cat": "gaming-laptops"
+								},
+								{
+									"label": "2-in-1 laptops",
+									"product_cat": "2-in-1-laptops"
+								}
+							]
+						},
+						{
+							"label": "Accessories",
+							"product_cat": "chargers-power",
+							"children": [
+								{
+									"label": "Mice",
+									"product": "pixelpine-glide"
+								},
+								{
+									"label": "Chargers",
+									"product": "charger-20w"
+								},
+								{
+									"label": "Cables",
+									"product": "braided-cable"
+								}
+							]
+						},
+						{
+							"label": "Brands",
+							"product_brand": "altis",
+							"children": [
+								{
+									"label": "Altis",
+									"product_brand": "altis"
+								},
+								{
+									"label": "Corvo",
+									"product_brand": "corvo"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Phones",
+					"product_cat": "phones",
+					"children": [
+						{
+							"label": "By brand",
+							"product_cat": "phones",
+							"children": [
+								{
+									"label": "Mira",
+									"product_brand": "mira"
+								},
+								{
+									"label": "Pell",
+									"product_brand": "pell"
+								}
+							]
+						},
+						{
+							"label": "Accessories",
+							"product_cat": "phone-cases",
+							"children": [
+								{
+									"label": "Cases",
+									"product_cat": "phone-cases"
+								},
+								{
+									"label": "Wireless chargers",
+									"product": "charging-stand"
+								},
+								{
+									"label": "Power banks",
+									"product": "slim-power-bank"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Headphones and speakers",
+					"product_cat": "audio",
+					"children": [
+						{
+							"label": "Headphones",
+							"product_cat": "headphones",
+							"children": [
+								{
+									"label": "Noise cancelling",
+									"product": "kestrel-studio-wireless"
+								},
+								{
+									"label": "Wireless",
+									"product": "kestrel-fold"
+								},
+								{
+									"label": "Studio",
+									"product": "kestrel-studio-pro"
+								}
+							]
+						},
+						{
+							"label": "Earbuds",
+							"product_cat": "earbuds",
+							"children": [
+								{
+									"label": "Noise cancelling",
+									"product": "kestrel-buds"
+								},
+								{
+									"label": "Sport",
+									"product": "kestrel-sport"
+								}
+							]
+						},
+						{
+							"label": "Speakers",
+							"product_cat": "speakers",
+							"children": [
+								{
+									"label": "Portable",
+									"product": "brick-speaker"
+								},
+								{
+									"label": "Waterproof",
+									"product": "pebble-speaker"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Phone cases",
+					"product_cat": "phone-cases",
+					"children": [
+						{
+							"label": "By phone",
+							"product_cat": "phone-cases",
+							"children": [
+								{
+									"label": "Mira 12",
+									"product": "dusk-sand-case"
+								},
+								{
+									"label": "Mira 12 Pro",
+									"product": "prism-case"
+								},
+								{
+									"label": "Pell Note 9",
+									"product": "paper-planes-case"
+								},
+								{
+									"label": "Pell Nova 5a",
+									"product": "ink-wash-case"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Smart home",
+					"product_cat": "smart-home",
+					"children": [
+						{
+							"label": "Lighting",
+							"product_cat": "smart-home",
+							"children": [
+								{
+									"label": "Smart bulbs",
+									"product": "hollis-glow"
+								},
+								{
+									"label": "Desk lamps",
+									"product": "hollis-arc"
+								}
+							]
+						},
+						{
+							"label": "Sound",
+							"product_cat": "smart-home",
+							"children": [
+								{
+									"label": "Smart speakers",
+									"product": "hollis-dome"
+								},
+								{
+									"label": "Speaker pairs",
+									"product": "hollis-cube"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Video games",
+					"product_cat": "video-games",
+					"children": [
+						{
+							"label": "Controllers",
+							"product_cat": "video-games",
+							"children": [
+								{
+									"label": "Wireless",
+									"product": "pixelpine-wave"
+								},
+								{
+									"label": "Pro",
+									"product": "pixelpine-pro"
+								},
+								{
+									"label": "Arcade sticks",
+									"product": "pixelpine-arcade"
+								}
+							]
+						},
+						{
+							"label": "PC gaming",
+							"product_cat": "video-games",
+							"children": [
+								{
+									"label": "Keyboards",
+									"product": "pixelpine-87"
+								},
+								{
+									"label": "Mice",
+									"product": "pixelpine-glide"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Chargers and power",
+					"product_cat": "chargers-power",
+					"children": [
+						{
+							"label": "Charging",
+							"product_cat": "chargers-power",
+							"children": [
+								{
+									"label": "Wall chargers",
+									"product": "charger-20w"
+								},
+								{
+									"label": "Wireless chargers",
+									"product": "charging-stand"
+								},
+								{
+									"label": "Cables",
+									"product": "braided-cable"
+								}
+							]
+						},
+						{
+							"label": "On the go",
+							"product_cat": "chargers-power",
+							"children": [
+								{
+									"label": "Power banks",
+									"product": "slim-power-bank"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Watches and bands",
+					"product_cat": "watches-bands",
+					"children": [
+						{
+							"label": "Smartwatches",
+							"product_cat": "watches-bands",
+							"children": [
+								{
+									"label": "Mira Watch 2",
+									"product": "mira-watch-2"
+								},
+								{
+									"label": "Mira Watch Active",
+									"product": "mira-watch-active"
+								}
+							]
+						},
+						{
+							"label": "Activity bands",
+							"product_cat": "watches-bands",
+							"children": [
+								{
+									"label": "Pulse band",
+									"product": "pulse-band"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Today’s deals",
+					"page": "deals"
+				}
+			]
+		},
+		{
+			"title": "Fullcharge top links",
+			"slug": "fullcharge-top-links",
+			"location": "secondary",
+			"items": [
+				{
+					"label": "Delivery and returns",
+					"page": "help"
+				},
+				{
+					"label": "Track your order",
+					"woocommerce": "myaccount"
+				},
+				{
+					"label": "Compare",
+					"page": "compare"
+				}
+			]
+		},
+		{
+			"title": "Fullcharge legal",
+			"slug": "fullcharge-legal",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Privacy",
+					"page": "privacy"
+				},
+				{
+					"label": "Terms",
+					"page": "terms"
+				},
+				{
+					"label": "Help",
+					"page": "help"
+				}
+			]
+		}
+	]
+}

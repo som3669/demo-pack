@@ -496,6 +496,35 @@
 			"shown_with": [
 				"yantra"
 			]
+		},
+		{
+			"id": "fullcharge",
+			"theme": "yantra-pro",
+			"pro": true,
+			"title": "Fullcharge electronics store",
+			"description": "An electronics store for laptops, phones, headphones, cases, smart home and video games: a hero with the newest laptop and its price, the eight departments as tiles with their counts, drop-tested cases and 30% off controllers with a code to copy, today's deals with a countdown to midnight and a battery of what's left, starting prices, popular products in tabs, a case finder that shows only the cases made for your phone, brands, reviews, help from people who have used it and deal emails; 41 products with their specs as chips on every card, a compare page that marks the best of each row, an \"All departments\" menu with pictures, search by department, colour swatches with what's left of each, a sold-out option back on Friday, the cart drawer charging toward free delivery over $80, a first-order popup, quick view, filters, a wishlist and three buying guides. For Yantra Pro.",
+			"version": "1.0.0",
+			"path": "fullcharge/pack.json",
+			"required_plugins": [
+				{
+					"slug": "woocommerce",
+					"name": "WooCommerce",
+					"file": "woocommerce/woocommerce.php",
+					"minimum_version": "9.0"
+				}
+			],
+			"requires": {
+				"wordpress": "6.5",
+				"woocommerce": "9.0"
+			},
+			"categories": [
+				"Shop",
+				"Electronics"
+			],
+			"theme_name": "Yantra Pro",
+			"shown_with": [
+				"yantra"
+			]
 		}
 	]
 }
