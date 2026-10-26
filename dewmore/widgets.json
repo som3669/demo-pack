@@ -1,0 +1,215 @@
+{
+	"schema": 1,
+	"sidebars": {
+		"footer-1": [
+			{
+				"title": "",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "footer-brand"
+						}
+					]
+				]
+			}
+		],
+		"footer-2": [
+			{
+				"title": "Shop",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "Skincare",
+								"product_cat": "skincare"
+							},
+							{
+								"label": "Makeup",
+								"product_cat": "makeup"
+							},
+							{
+								"label": "Body",
+								"product_cat": "body"
+							},
+							{
+								"label": "Sets and gifts",
+								"product_cat": "sets-gifts"
+							},
+							{
+								"label": "Refills",
+								"product_cat": "refills"
+							},
+							{
+								"label": "Build your routine",
+								"page": "routine"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-3": [
+			{
+				"title": "Help",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "Delivery and returns",
+								"page": "help"
+							},
+							{
+								"label": "Track your order",
+								"woocommerce": "myaccount"
+							},
+							{
+								"label": "Find your skin type",
+								"page": "skin-types"
+							},
+							{
+								"label": "Shade guide",
+								"page": "shade-guide"
+							}
+						]
+					]
+				]
+			}
+		],
+		"footer-4": [
+			{
+				"title": "Dewmore",
+				"content": [
+					[
+						"links",
+						[
+							{
+								"label": "About us",
+								"page": "about"
+							},
+							{
+								"label": "Journal",
+								"page": "journal"
+							},
+							{
+								"label": "Compare products",
+								"page": "compare"
+							},
+							{
+								"label": "Wishlist",
+								"page": "wishlist"
+							}
+						]
+					]
+				]
+			}
+		],
+		"sidebar-shop": [
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav_filters",
+							"instance": {
+								"title": "Active filters"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Skin type",
+								"attribute": "skin-type",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Concern",
+								"attribute": "concern",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Key ingredient",
+								"attribute": "key-ingredient",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_layered_nav",
+							"instance": {
+								"title": "Size",
+								"attribute": "size",
+								"display_type": "list",
+								"query_type": "or"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_price_filter",
+							"instance": {
+								"title": "Price"
+							}
+						}
+					]
+				]
+			},
+			{
+				"content": [
+					[
+						"widget",
+						{
+							"id_base": "woocommerce_rating_filter",
+							"instance": {
+								"title": "Rating"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+}

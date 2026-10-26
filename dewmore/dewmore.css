@@ -1,0 +1,2159 @@
+/* Dewmore: calm skincare and sheer makeup for Yantra Pro.
+ * White and a pale lilac wash, lilac pills for buttons, peach for sets and savings, Urbanist for
+ * headings and prices. The signature: the shopper's skin type, marked on every product ("Suits
+ * combination skin") and kept from the home page to the header, the shop and the routine builder. */
+
+:root {
+	--dm-ink: var(--yantra-color-3, #221A33);
+	--dm-body: var(--yantra-color-4, #5A536B);
+	--dm-muted: var(--yantra-color-5, #6E6880);
+	--dm-line: var(--yantra-color-6, #E7E2F0);
+	--dm-wash: var(--yantra-color-7, #F4F0FC);
+	--dm-paper: var(--yantra-color-8, #FFFFFF);
+	--dm-deep: var(--yantra-color-1, #6248C2);
+	--dm-card: #F7F5FB;
+	--dm-field: #DAD3E8;
+	--dm-lilac: #C7B5F4;
+	--dm-lilac-hover: #B7A1F0;
+	--dm-on-lilac: #221A33;
+	--dm-tint: #EFEAFD;
+	--dm-tint-text: #5638B8;
+	--dm-peach: #FFE9D6;
+	--dm-peach-strong: #FFE1C7;
+	--dm-peach-text: #8A4B17;
+	--dm-star: #D9952B;
+	--dm-open: #2F9E5B;
+	--dm-display: 'Urbanist', var(--yantra-heading-font, sans-serif);
+	--dm-section-radius: 32px;
+	--dm-card-radius: 22px;
+	/* The shop module's tokens. */
+	--themor-shop-low: #E08A3C;
+	--themor-shop-free: var(--dm-deep);
+	--themor-shop-new: var(--dm-lilac);
+	--themor-pick-bg: #F4F3F6;
+	--themor-pick-color: var(--dm-body);
+	--themor-pick-match-bg: var(--dm-tint);
+	--themor-pick-match-color: var(--dm-tint-text);
+	--themor-specs-bg: var(--dm-wash);
+	--themor-specs-color: var(--dm-ink);
+	--themor-specs-radius: 999px;
+}
+
+/* Dark mode: the washes and the peach turned down, the lilac kept for buttons. */
+:root[data-themor-scheme="dark"] {
+	--dm-card: #221C2E;
+	--dm-field: #3A3150;
+	--dm-tint: #2E2545;
+	--dm-tint-text: #D9CCF8;
+	--dm-peach: #3A2A20;
+	--dm-peach-strong: #4A3424;
+	--dm-peach-text: #FFD2AE;
+	--themor-pick-bg: #29223A;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-themor-scheme="light"]) {
+		--dm-card: #221C2E;
+		--dm-field: #3A3150;
+		--dm-tint: #2E2545;
+		--dm-tint-text: #D9CCF8;
+		--dm-peach: #3A2A20;
+		--dm-peach-strong: #4A3424;
+		--dm-peach-text: #FFD2AE;
+		--themor-pick-bg: #29223A;
+	}
+
+	:root:not([data-themor-scheme="light"]) .custom-logo {
+		filter: invert(1) hue-rotate(180deg);
+	}
+}
+
+/* The logo's ink wordmark turned light in dark mode (the theme has one logo for both). */
+:root[data-themor-scheme="dark"] .custom-logo {
+	filter: invert(1) hue-rotate(180deg);
+}
+
+/* -------------------------------------------------------------------------
+ * Shared pieces.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-section {
+	margin-block: 0;
+}
+
+/* Bands of the home page sit 56 to 96 pixels apart: half that above and below each. At their sides,
+   the header's gutter (20 px on phones, 32 px from 1280 px wide) until the content's width takes over. */
+.dewmore-section {
+	padding-inline: clamp(20px, 2.5vw, 32px) !important;
+}
+
+.dewmore-section:not(.dewmore-section--hero):not(.dewmore-section--page-head) {
+	padding-block: clamp(28px, 3.4vw, 48px) !important;
+}
+
+.dewmore-section .alignwide > *,
+.dewmore-hero,
+.dewmore-hero * {
+	margin-block-start: 0;
+}
+
+.dewmore-eyebrow {
+	margin: 0;
+	color: var(--dm-deep);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.dewmore-display {
+	margin: 0;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: clamp(42px, 5vw, 70px);
+	font-weight: 700;
+	line-height: 1.02;
+	letter-spacing: -0.03em;
+	text-wrap: balance;
+}
+
+.dewmore-lead {
+	max-width: 32rem;
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.55;
+}
+
+.dewmore-title {
+	margin: 0;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: clamp(30px, 3vw, 42px);
+	font-weight: 700;
+	line-height: 1.08;
+	letter-spacing: -0.025em;
+	text-wrap: balance;
+}
+
+.dewmore-more {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.dewmore-more a {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	min-height: 44px;
+	color: var(--dm-ink);
+	text-decoration: none;
+}
+
+.dewmore-more a::after {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.dewmore-more a:hover {
+	color: var(--dm-deep);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+[dir="rtl"] .dewmore-more a::after {
+	transform: scaleX(-1);
+}
+
+/* A section's heading row: the eyebrow, title and note, with a link or a switch on the other side. */
+.dewmore-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 16px 40px;
+	margin-block-end: 28px !important;
+}
+
+.dewmore-head__words {
+	max-width: 640px;
+}
+
+.dewmore-head__words > * + * {
+	margin-block-start: 10px;
+}
+
+.dewmore-head__note {
+	margin: 0;
+	font-size: 17px;
+}
+
+.dewmore-head__side {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px 20px;
+}
+
+.dewmore-head__side > * {
+	margin: 0 !important;
+}
+
+/* Buttons: lilac pills by the Customizer; a quiet text link and white pills where the design has them. */
+.dewmore-button .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 54px;
+	padding: 0 28px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.dewmore-button--link .wp-block-button__link,
+.dewmore-button--link.is-style-outline .wp-block-button__link {
+	min-height: 44px;
+	padding-inline: 4px;
+	border: 0;
+	background: none;
+	color: var(--dm-ink);
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.dewmore-button--link .wp-block-button__link:hover {
+	background: none;
+	color: var(--dm-deep);
+}
+
+.dewmore-button--white .wp-block-button__link {
+	min-height: 46px;
+	padding: 0 22px;
+	border: 0;
+	background: var(--dm-paper);
+	color: var(--dm-ink);
+	font-size: 15px;
+}
+
+.dewmore-button--white .wp-block-button__link:hover {
+	background: var(--dm-ink);
+	color: var(--dm-paper);
+}
+
+.dewmore-button--outline.is-style-outline .wp-block-button__link {
+	min-height: 50px;
+	padding: 0 24px;
+	border: 1.5px solid var(--dm-ink);
+	background: transparent;
+	color: var(--dm-ink);
+	font-size: 16px;
+}
+
+.dewmore-button--outline.is-style-outline .wp-block-button__link:hover {
+	border-color: var(--dm-lilac);
+	background: var(--dm-lilac);
+	color: var(--dm-on-lilac);
+}
+
+.dewmore-actions {
+	gap: 12px 26px;
+	margin-block-start: 0 !important;
+}
+
+/* The chip over a heading: "New" in a lilac pill, on white. */
+.dewmore-chip {
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+	padding: 7px 16px 7px 8px;
+	border-radius: 999px;
+	background: var(--dm-paper);
+	color: var(--dm-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.dewmore-chip__tag {
+	padding: 3px 10px;
+	border-radius: 999px;
+	background: var(--dm-lilac);
+	color: var(--dm-on-lilac);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.dewmore-chip--peach {
+	padding: 6px 14px;
+	background: var(--dm-peach);
+	color: var(--dm-peach-text);
+	font-weight: 700;
+}
+
+/* The countdown: an ink pill with a clock. */
+.wp-block-themor-countdown.dewmore-countdown {
+	--themor-countdown-bg: var(--dm-ink);
+	--themor-countdown-color: var(--dm-paper);
+	--themor-countdown-icon: var(--dm-paper);
+	--themor-countdown-radius: 999px;
+	--themor-countdown-weight: 700;
+	--themor-countdown-size: 14px;
+	--themor-countdown-padding: 6px 14px;
+}
+
+.dewmore-countdown time,
+.dewmore-countdown .themor-countdown__time {
+	font-variant-numeric: tabular-nums;
+}
+
+/* The code to copy: the code on the lilac wash, a lilac button beside it. */
+.wp-block-themor-copy-code.dewmore-code {
+	--themor-copy-code-bg: var(--dm-wash);
+	--themor-copy-code-border: 0;
+	--themor-copy-code-color: var(--dm-ink);
+	--themor-copy-code-font: var(--dm-display);
+	--themor-copy-code-size: 22px;
+	--themor-copy-code-weight: 800;
+	--themor-copy-code-spacing: 0.1em;
+	--themor-copy-code-height: 54px;
+	--themor-copy-code-radius: 16px;
+	--themor-copy-code-gap: 10px;
+	--themor-copy-code-button-bg: var(--dm-lilac);
+	--themor-copy-code-button-color: var(--dm-on-lilac);
+	--themor-copy-code-button-border: 0;
+	--themor-copy-code-button-radius: 999px;
+	--themor-copy-code-button-hover-bg: var(--dm-lilac-hover);
+	--themor-copy-code-button-hover-color: var(--dm-on-lilac);
+	--themor-copy-code-button-hover-border: 0;
+}
+
+/* Stars, drawn so they keep their color in dark mode. */
+.dewmore-stars {
+	display: inline-flex;
+	gap: 3px;
+}
+
+.dewmore-stars span {
+	width: 17px;
+	height: 17px;
+	background: var(--dm-star);
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.6 9.6l5.8-.8z'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.6 9.6l5.8-.8z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.dewmore-stars .off {
+	background: var(--dm-line);
+}
+
+/* Grids made of groups: the editor's flow spacing would push all but the first child down. */
+:is(.dewmore-hero, .dewmore-hero__picture, .dewmore-price-card, .dewmore-sale, .dewmore-sale__code, .dewmore-offer-cards, .dewmore-offer-card,
+	.dewmore-best-row, .dewmore-tall, .dewmore-concerns, .dewmore-concern, .dewmore-routine, .dewmore-steps, .dewmore-step, .dewmore-why,
+	.dewmore-refills, .dewmore-reviews, .dewmore-review, .dewmore-review__by, .dewmore-join, .dewmore-types, .dewmore-type, .dewmore-popup,
+	.dewmore-help-card, .dewmore-same-day) > * {
+	margin-block: 0;
+}
+
+/* -------------------------------------------------------------------------
+ * Home: the hero, with the new serum and its price.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-hero {
+	display: grid;
+	grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+	overflow: hidden;
+	border-radius: var(--dm-section-radius);
+	background: var(--dm-wash);
+}
+
+.dewmore-hero__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
+	padding: clamp(28px, 5vw, 72px);
+}
+
+.dewmore-hero__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-trust {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 6px 0 0 !important;
+	padding: 0;
+	list-style: none;
+}
+
+.dewmore-trust li {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	padding: 9px 14px;
+	border-radius: 14px;
+	background: var(--dm-paper);
+	color: var(--dm-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.dewmore-trust__icon,
+.dewmore-point__icon::before {
+	flex: none;
+	width: 18px;
+	height: 18px;
+	background: var(--dm-deep);
+	-webkit-mask: var(--dm-icon) center / contain no-repeat;
+	mask: var(--dm-icon) center / contain no-repeat;
+}
+
+.dewmore-trust__icon--free,
+.dewmore-point__icon--free {
+	--dm-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3c3 4 6 7.2 6 10.5A6 6 0 0 1 6 13.5C6 10.2 9 7 12 3z'/%3E%3Cpath d='M4 4l16 16'/%3E%3C/svg%3E");
+}
+
+.dewmore-trust__icon--kind {
+	--dm-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 4c-2 0-3 2-3 4 0 1.5.6 2.6 1.4 3.4L5 20h14l-2.4-8.6C17.4 10.6 18 9.5 18 8c0-2-1-4-3-4-1.2 0-2.2.7-3 1.6C11.2 4.7 10.2 4 9 4z'/%3E%3C/svg%3E");
+}
+
+.dewmore-trust__icon--glass {
+	--dm-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 19H5l-2-3.5L5.5 11M17 19h2l2-3.5-2.5-4.5M9 5.5 12 3l3 2.5'/%3E%3Cpath d='M8.5 8.5 12 3M15.5 8.5 12 3M7 19l3.5-6M17 19l-3.5-6M10.5 19h3'/%3E%3C/svg%3E");
+}
+
+.dewmore-point__icon--list {
+	--dm-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 6h11M8 12h11M8 18h11'/%3E%3Ccircle cx='4' cy='6' r='1'/%3E%3Ccircle cx='4' cy='12' r='1'/%3E%3Ccircle cx='4' cy='18' r='1'/%3E%3C/svg%3E");
+}
+
+.dewmore-point__icon--shield {
+	--dm-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6z'/%3E%3Cpath d='m8.5 12 2.5 2.5 4.5-5'/%3E%3C/svg%3E");
+}
+
+.dewmore-hero__picture {
+	position: relative;
+	min-height: 540px;
+}
+
+.dewmore-hero__photo {
+	position: absolute !important;
+	inset: 0;
+	margin: 0 !important;
+}
+
+.dewmore-hero__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.dewmore-price-card {
+	position: absolute !important;
+	inset-inline-start: clamp(16px, 3vw, 32px);
+	bottom: clamp(16px, 3vw, 32px);
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	max-width: 340px;
+	padding: 14px 20px 14px 14px;
+	border-radius: 20px;
+	background: var(--dm-paper);
+	box-shadow: 0 12px 32px rgb(34 26 51 / 0.12);
+}
+
+.dewmore-price-card__photo {
+	flex: none;
+	margin: 0 !important;
+}
+
+.dewmore-price-card__photo img {
+	display: block;
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 14px;
+}
+
+.dewmore-price-card__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-price-card__name {
+	color: var(--dm-ink);
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.dewmore-price-card__line {
+	margin-block-start: 2px !important;
+	font-size: 13px;
+}
+
+.dewmore-price-card__price {
+	margin-block-start: 4px !important;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 17px;
+	font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------
+ * Home: pick your skin type. The attribute finder as pills; the products it shows are the shop's cards.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-section--skin .dewmore-head {
+	margin-block-end: 22px !important;
+}
+
+.wp-block-themor-attribute-finder.dewmore-finder,
+.themor-finder-block.dewmore-finder {
+	--themor-finder-space: 1.75rem;
+	--themor-finder-choice-bg: var(--dm-paper);
+	--themor-finder-choice-color: var(--dm-ink);
+	--themor-finder-choice-border: var(--dm-field);
+	--themor-finder-choice-on-bg: var(--dm-ink);
+	--themor-finder-choice-on-color: var(--dm-paper);
+	--themor-finder-link-bg: transparent;
+	--themor-finder-link-color: var(--dm-ink);
+	--themor-finder-link-border: var(--dm-ink);
+	--themor-finder-focus: var(--dm-deep);
+	--themor-finder-muted: var(--dm-ink);
+}
+
+.dewmore-finder .themor-finder__label {
+	color: var(--dm-muted);
+	font-size: 14px;
+}
+
+.dewmore-finder .themor-finder__choice {
+	min-height: 48px;
+	padding-inline: 22px;
+	font-size: 15px;
+}
+
+.dewmore-finder .themor-finder__status {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--dm-ink);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.dewmore-finder .themor-finder__status::before {
+	content: "";
+	flex: none;
+	width: 20px;
+	height: 20px;
+	background: var(--dm-deep);
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3c3.2 4.2 6.5 7.5 6.5 11a6.5 6.5 0 0 1-13 0C5.5 10.5 8.8 7.2 12 3z'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3c3.2 4.2 6.5 7.5 6.5 11a6.5 6.5 0 0 1-13 0C5.5 10.5 8.8 7.2 12 3z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.dewmore-finder .themor-finder__link {
+	min-height: 46px;
+	padding-inline: 24px;
+	border-width: 1.5px;
+	font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------
+ * Home: the weekend sale, the two offers, best sellers.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-sale {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 18px 32px;
+	padding: 26px clamp(20px, 3vw, 36px);
+	border: 1.5px dashed var(--dm-field);
+	border-radius: 28px;
+	background: var(--dm-paper);
+}
+
+.dewmore-sale__words {
+	flex: 1 1 320px;
+	min-width: 0;
+}
+
+.dewmore-sale__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-sale__title {
+	margin-block-start: 12px !important;
+	font-size: 28px;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+}
+
+.dewmore-sale__line {
+	margin-block-start: 6px !important;
+	font-size: 15px;
+}
+
+.dewmore-sale__code {
+	flex: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px 18px;
+}
+
+.dewmore-offer-cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.dewmore-offer-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+	min-height: 300px;
+	overflow: hidden;
+	border-radius: 28px;
+	color: var(--dm-ink);
+}
+
+.dewmore-offer-card--peach {
+	background: var(--dm-peach);
+}
+
+.dewmore-offer-card--lilac {
+	background: var(--dm-tint);
+}
+
+.dewmore-offer-card__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 12px;
+	padding: 36px;
+}
+
+.dewmore-offer-card__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-offer-card--peach .dewmore-eyebrow {
+	color: var(--dm-peach-text);
+}
+
+.dewmore-offer-card__title {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+}
+
+.dewmore-offer-card__line {
+	font-size: 15px;
+}
+
+.dewmore-offer-card .wp-block-buttons {
+	margin-block-start: 6px !important;
+}
+
+.dewmore-offer-card__photo {
+	margin: 0 !important;
+}
+
+.dewmore-offer-card__photo img {
+	width: 100%;
+	height: 100%;
+	min-height: 220px;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+/* Best sellers: a tall photo with a white card, beside the product tabs. */
+.dewmore-best-row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+	align-items: start;
+	gap: 20px 28px;
+}
+
+.dewmore-tall {
+	position: relative;
+	min-height: 560px;
+	overflow: hidden;
+	border-radius: 28px;
+}
+
+.dewmore-tall__photo {
+	position: absolute !important;
+	inset: 0;
+	margin: 0 !important;
+}
+
+.dewmore-tall__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.dewmore-tall__card {
+	position: absolute !important;
+	inset-inline: 20px;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 26px;
+	border-radius: 22px;
+	background: var(--dm-paper);
+}
+
+.dewmore-tall__card > * {
+	margin: 0 !important;
+}
+
+.dewmore-tall__title {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.15;
+	letter-spacing: -0.02em;
+}
+
+.dewmore-tall__line {
+	font-size: 15px;
+}
+
+.dewmore-tall .dewmore-button .wp-block-button__link {
+	min-height: 46px;
+	padding: 0 22px;
+	font-size: 15px;
+}
+
+.wp-block-themor-product-tabs.dewmore-best,
+.dewmore-best {
+	--themor-product-tabs-bg: var(--dm-wash);
+	--themor-product-tabs-color: var(--dm-ink);
+	--themor-product-tabs-border: transparent;
+	--themor-product-tabs-active-bg: var(--dm-ink);
+	--themor-product-tabs-active-color: var(--dm-paper);
+	--themor-product-tabs-radius: 999px;
+	--themor-product-tabs-height: 42px;
+	--themor-product-tabs-weight: 700;
+	--themor-product-tabs-focus: var(--dm-deep);
+}
+
+.dewmore-best .themor-product-tabs__heading,
+.dewmore-best h2 {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: clamp(30px, 3vw, 42px);
+	font-weight: 700;
+	letter-spacing: -0.025em;
+}
+
+/* -------------------------------------------------------------------------
+ * Home: shop by concern, makeup, the routine builder.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-concerns {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.dewmore-concern {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	padding: 22px 16px 20px;
+	border-radius: 24px;
+	background: var(--dm-card);
+	text-align: center;
+	transition: background 0.2s;
+}
+
+.dewmore-concern:hover {
+	background: var(--dm-tint);
+}
+
+.dewmore-concern__photo {
+	margin: 0 0 8px !important;
+}
+
+.dewmore-concern__photo img {
+	display: block;
+	width: 116px;
+	height: 116px;
+	object-fit: cover;
+	border: 4px solid var(--dm-paper);
+	border-radius: 999px;
+}
+
+.dewmore-concern__name {
+	font-family: var(--dm-display);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.dewmore-concern .dewmore-concern__name a {
+	color: var(--dm-ink);
+	text-decoration: none;
+}
+
+/* The whole tile follows its name's link. */
+.dewmore-concern__name a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+}
+
+.dewmore-concern__name a:focus-visible {
+	outline: none;
+}
+
+.dewmore-concern:has(a:focus-visible) {
+	outline: 2px solid var(--dm-deep);
+	outline-offset: 3px;
+}
+
+.dewmore-concern__count {
+	font-size: 14px;
+}
+
+/* The routine builder, on the lilac wash: the words, then the four steps in white cards. */
+.dewmore-routine {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.9fr);
+	align-items: center;
+	gap: 32px 48px;
+	padding: clamp(28px, 4vw, 56px);
+	border-radius: var(--dm-section-radius);
+	background: var(--dm-wash);
+}
+
+.dewmore-routine__words {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 14px;
+}
+
+.dewmore-routine__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-routine__words .dewmore-lead {
+	font-size: 17px;
+}
+
+.dewmore-routine__price {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 4px 12px;
+	color: var(--dm-ink);
+}
+
+.dewmore-routine__price strong {
+	font-family: var(--dm-display);
+	font-size: 34px;
+	font-weight: 800;
+}
+
+.dewmore-routine__price s {
+	color: var(--dm-muted);
+	font-size: 17px;
+}
+
+.dewmore-routine__price span {
+	padding: 3px 10px;
+	border-radius: 999px;
+	background: var(--dm-paper);
+	color: var(--dm-deep);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.dewmore-steps {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 14px;
+}
+
+.dewmore-step {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 14px;
+	border-radius: 22px;
+	background: var(--dm-paper);
+}
+
+.dewmore-step__name {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--dm-ink);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.dewmore-step__number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	border-radius: 999px;
+	background: var(--dm-lilac);
+	color: var(--dm-on-lilac);
+	font-size: 13px;
+}
+
+.dewmore-step__photo {
+	margin: 0 !important;
+}
+
+.dewmore-step__photo img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 16px;
+}
+
+.dewmore-step__product {
+	color: var(--dm-ink);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.dewmore-step__price {
+	margin-block-start: -4px !important;
+	font-size: 14px;
+}
+
+/* -------------------------------------------------------------------------
+ * Home: why, refills, reviews, the journal, joining.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-why {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: center;
+	gap: 32px 64px;
+}
+
+.dewmore-why__photo {
+	margin: 0 !important;
+}
+
+.dewmore-why__photo img {
+	width: 100%;
+	height: 460px;
+	object-fit: cover;
+	border-radius: 28px;
+}
+
+.dewmore-why__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-points {
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+	margin: 28px 0 32px !important;
+	padding: 0;
+	list-style: none;
+}
+
+.dewmore-points li {
+	display: grid;
+	grid-template-columns: 52px minmax(0, 1fr);
+	column-gap: 18px;
+	margin: 0;
+}
+
+.dewmore-point__icon {
+	grid-row: span 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 52px;
+	height: 52px;
+	border-radius: 999px;
+	background: var(--dm-wash);
+}
+
+.dewmore-point__icon::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+}
+
+.dewmore-points strong {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.dewmore-points li > span:last-child {
+	margin-block-start: 6px;
+}
+
+/* Refills: the price switch beside the heading, bottles or pouches below. */
+.dewmore-refills {
+	padding: clamp(28px, 4vw, 52px);
+	border-radius: var(--dm-section-radius);
+	background: var(--dm-card);
+}
+
+.dewmore-refills > .dewmore-more {
+	margin-block-start: 8px !important;
+}
+
+/* Yantra Pro sets these on the switch itself, so they are set there too. */
+.dewmore-switch .themor-price-switch {
+	--themor-switch-track: var(--dm-paper);
+	--themor-switch-picked: var(--dm-ink);
+	--themor-switch-color: var(--dm-ink);
+	--themor-switch-picked-color: var(--dm-paper);
+}
+
+.dewmore-switch .themor-price-switch__note,
+.dewmore-switch small {
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: var(--dm-peach-strong);
+	color: var(--dm-ink);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.dewmore-refill-row .woocommerce {
+	margin: 0;
+}
+
+/* Bottles and pouches as compact rows: the photo beside the name, price and button. */
+.dewmore-refill-row ul.products li.product {
+	position: relative;
+	display: grid;
+	grid-template-columns: 104px minmax(0, 1fr);
+	align-content: center;
+	column-gap: 16px;
+	padding: 14px;
+	border-radius: 24px;
+	background: var(--dm-paper);
+}
+
+.dewmore-refill-row ul.products li.product > a.woocommerce-LoopProduct-link {
+	display: grid;
+	grid-column: 1 / -1;
+	grid-template-columns: 104px minmax(0, 1fr);
+	align-items: center;
+	column-gap: 16px;
+}
+
+.dewmore-refill-row ul.products li.product > a.woocommerce-LoopProduct-link > * {
+	grid-column: 2;
+	margin-inline: 0;
+}
+
+.dewmore-refill-row ul.products li.product > a.woocommerce-LoopProduct-link > img {
+	grid-column: 1;
+	grid-row: 1 / span 4;
+	width: 104px;
+	height: 104px;
+	margin: 0;
+	border-radius: 18px;
+}
+
+.dewmore-refill-row ul.products li.product .woocommerce-loop-product__title {
+	font-size: 17px;
+}
+
+.dewmore-refill-row ul.products li.product .price {
+	margin: 0;
+}
+
+.dewmore-refill-row ul.products li.product > .button {
+	grid-column: 2;
+	justify-self: start;
+	margin-block-start: 10px;
+}
+
+.dewmore-refill-row ul.products li.product :is(.themor-specs, .star-rating, .onsale, .themor-badges, .themor-badge, .themor-quick-view-button, .themor-compare-check, .themor-wish) {
+	display: none;
+}
+
+/* In their words. */
+.dewmore-reviews {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.dewmore-review {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 28px;
+	border: 1px solid var(--dm-line);
+	border-radius: 24px;
+}
+
+.dewmore-review__quote {
+	flex: 1 1 auto;
+	color: var(--dm-ink);
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.dewmore-review__by {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.dewmore-review__photo {
+	flex: none;
+	margin: 0 !important;
+}
+
+.dewmore-review__photo img {
+	display: block;
+	width: 48px;
+	height: 48px;
+	object-fit: cover;
+	border-radius: 14px;
+}
+
+.dewmore-review__who {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2px 8px;
+	margin: 0 !important;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.dewmore-review__who strong {
+	color: var(--dm-ink);
+	font-size: 15px;
+}
+
+.dewmore-review__who > span:last-child {
+	flex: 1 1 100%;
+}
+
+.dewmore-review__skin {
+	padding: 2px 9px;
+	border-radius: 999px;
+	background: var(--dm-wash);
+	color: var(--dm-deep);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.dewmore-review__who a {
+	color: var(--dm-deep);
+	text-underline-offset: 2px;
+}
+
+/* The three newest articles. The block's own grid styles print after these, so they are matched and beaten. */
+ul.wp-block-latest-posts.is-grid.dewmore-latest {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 28px 20px;
+	margin: 0;
+	padding: 0;
+}
+
+ul.wp-block-latest-posts.is-grid.dewmore-latest li {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: auto;
+	margin: 0;
+}
+
+.dewmore-latest .wp-block-latest-posts__featured-image {
+	margin: 0 0 6px;
+}
+
+.dewmore-latest .wp-block-latest-posts__featured-image img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: var(--dm-card-radius);
+}
+
+ul.dewmore-latest a.wp-block-latest-posts__post-title {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.dewmore-latest .wp-block-latest-posts__post-title:hover {
+	color: var(--dm-deep);
+}
+
+.dewmore-latest .wp-block-latest-posts__post-excerpt {
+	margin: 0;
+	font-size: 15px;
+}
+
+/* Join: the words and the form on lilac, beside a photo. */
+.dewmore-join {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+	overflow: hidden;
+	border-radius: var(--dm-section-radius);
+	background: var(--dm-wash);
+}
+
+.dewmore-join__words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 16px;
+	padding: clamp(28px, 4.5vw, 64px);
+}
+
+.dewmore-join__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-join__photo {
+	margin: 0 !important;
+}
+
+.dewmore-join__photo img {
+	width: 100%;
+	height: 100%;
+	min-height: 360px;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.wp-block-themor-signup.dewmore-signup {
+	--themor-signup-height: 54px;
+	--themor-signup-gap: 10px;
+	--themor-signup-input-bg: var(--dm-paper);
+	--themor-signup-input-color: var(--dm-ink);
+	--themor-signup-input-border: 1.5px solid var(--dm-field);
+	--themor-signup-input-radius: 999px;
+	--themor-signup-button-bg: var(--dm-lilac);
+	--themor-signup-button-color: var(--dm-on-lilac);
+	--themor-signup-button-border: 0;
+	--themor-signup-button-radius: 999px;
+	--themor-signup-button-hover-bg: var(--dm-lilac-hover);
+	--themor-signup-button-hover-color: var(--dm-on-lilac);
+	--themor-signup-button-hover-border: 0;
+	--themor-signup-note-color: var(--dm-muted);
+	--themor-signup-note-size: 13px;
+	--themor-signup-done: var(--dm-ink);
+	--themor-signup-code-bg: var(--dm-paper);
+	--themor-signup-code-color: var(--dm-ink);
+	--themor-signup-code-border: 1.5px dashed var(--dm-deep);
+	--themor-signup-code-radius: 14px;
+	--themor-signup-code-size: 20px;
+}
+
+.dewmore-signup .themor-signup__code {
+	font-family: var(--dm-display);
+	font-weight: 800;
+	letter-spacing: 0.08em;
+}
+
+.dewmore-signup .themor-signup__reward {
+	padding: 18px;
+	border-radius: 22px;
+	background: var(--dm-paper);
+}
+
+/* -------------------------------------------------------------------------
+ * Product cards, everywhere a list of products shows.
+ * ---------------------------------------------------------------------- */
+
+.woocommerce ul.products li.product a img,
+.woocommerce ul.products li.product a .woocommerce-placeholder {
+	aspect-ratio: 1;
+	object-fit: cover;
+	margin: 0 0 12px;
+	border-radius: var(--dm-card-radius);
+	background: var(--dm-card);
+}
+
+.woocommerce ul.products li.product .themor-pick {
+	margin: 0 0 10px;
+	padding: 4px 10px;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+	margin: 0 0 6px;
+	padding: 0;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.woocommerce ul.products li.product .themor-specs {
+	margin: 0 0 8px;
+}
+
+.woocommerce ul.products li.product .star-rating {
+	margin: 0 0 8px;
+	color: var(--dm-star);
+	font-size: 13px;
+}
+
+.woocommerce ul.products li.product .price {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 4px 8px;
+	margin: 0 0 8px;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.woocommerce ul.products li.product .price ins {
+	text-decoration: none;
+}
+
+.woocommerce ul.products li.product .price .amount,
+.woocommerce ul.products li.product .price ins .amount,
+.woocommerce div.product .summary .price .amount,
+.woocommerce div.product .summary .price ins .amount {
+	color: var(--dm-ink);
+}
+
+.woocommerce ul.products li.product .price del {
+	order: 2;
+	color: var(--dm-muted);
+	font-family: var(--yantra-body-font, inherit);
+	font-size: 14px;
+	font-weight: 500;
+	opacity: 1;
+}
+
+.woocommerce ul.products li.product .price del .amount,
+.woocommerce div.product .summary .price del .amount {
+	color: var(--dm-muted);
+}
+
+/* The sale badge in peach, New in lilac, own badges ("Refill available") in their own color: pills. */
+.woocommerce ul.products li.product .onsale,
+.woocommerce span.onsale {
+	min-width: 0;
+	min-height: 0;
+	padding: 5px 12px;
+	border-radius: 999px;
+	background: var(--dm-peach-strong);
+	color: var(--dm-ink);
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.themor-badge {
+	border-radius: 999px;
+	font-weight: 700;
+}
+
+.themor-badge--new {
+	color: var(--dm-on-lilac);
+}
+
+/* Card buttons: an ink outline until pointed at, then lilac, through Yantra's button tokens. */
+.woocommerce ul.products li.product {
+	--yantra-button-bg: transparent;
+	--yantra-button-text: var(--dm-ink);
+	--yantra-button-border: var(--dm-ink);
+	--yantra-button-hover: var(--dm-lilac);
+	--yantra-button-text-hover: var(--dm-on-lilac);
+	--yantra-button-border-hover: var(--dm-lilac);
+	--yantra-button-border-width: 1.5px;
+	--yantra-button-padding-top: 10px;
+	--yantra-button-padding-bottom: 10px;
+	--yantra-button-padding-left: 18px;
+	--yantra-button-padding-right: 18px;
+	--yantra-button-size: 14px;
+}
+
+.woocommerce ul.products li.product .themor-compare-check {
+	color: var(--dm-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.woocommerce ul.products li.product .themor-compare-check input {
+	accent-color: var(--dm-deep);
+}
+
+/* Shade swatches: round, a ring round the one picked. */
+.woocommerce ul.products li.product .themor-swatch,
+.woocommerce div.product .themor-swatch {
+	border-radius: 999px;
+}
+
+/* The shop's switch to show only what suits the shopper. */
+.themor-pick-only {
+	border-color: var(--dm-field);
+	color: var(--dm-ink);
+}
+
+.themor-pick-only[aria-checked="true"] .themor-pick-only__track {
+	background: var(--dm-deep);
+}
+
+/* The header item and its window. */
+.yantra-pick .themor-pick-item,
+.themor-pick-item {
+	border-color: var(--dm-field);
+	color: var(--dm-ink);
+}
+
+.themor-pick-item__icon {
+	color: var(--dm-deep);
+}
+
+.themor-pick-choice[aria-pressed="true"] {
+	border-color: var(--dm-ink);
+	background: var(--dm-ink);
+	color: var(--dm-paper);
+}
+
+/* -------------------------------------------------------------------------
+ * A product's page: the pick at the top of the summary, the price large, Buy now as an outline.
+ * ---------------------------------------------------------------------- */
+
+.woocommerce div.product .product_title {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+/* "How to use it" and "What's inside" in the description: small headings, not page titles. */
+.woocommerce div.product .woocommerce-tabs .panel h2,
+.woocommerce div.product .themor-tab h2 {
+	margin: 22px 0 8px;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.woocommerce div.product .summary .price {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-weight: 700;
+}
+
+.woocommerce div.product .summary .price ins {
+	text-decoration: none;
+}
+
+.woocommerce div.product .summary .price del {
+	color: var(--dm-muted);
+	font-family: var(--yantra-body-font, inherit);
+	font-size: 0.65em;
+	font-weight: 400;
+}
+
+.woocommerce div.product .themor-pick--product {
+	border-radius: 18px;
+}
+
+.woocommerce div.product form.cart .themor-buy-now {
+	--yantra-button-bg: transparent;
+	--yantra-button-text: var(--dm-ink);
+	--yantra-button-border: var(--dm-ink);
+	--yantra-button-hover: var(--dm-ink);
+	--yantra-button-text-hover: var(--dm-paper);
+	--yantra-button-border-hover: var(--dm-ink);
+	--yantra-button-border-width: 1.5px;
+}
+
+.woocommerce div.product .themor-urgency__ends {
+	justify-self: start;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 7px 14px;
+	border-radius: 999px;
+	background: var(--dm-peach);
+	color: var(--dm-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.woocommerce div.product .themor-urgency__time {
+	padding: 0;
+	background: none;
+	color: var(--dm-peach-text);
+	font-variant-numeric: tabular-nums;
+}
+
+/* Same-day delivery, under Add to cart. */
+.dewmore-same-day {
+	margin-block: 18px 6px;
+	padding: 16px 18px;
+	border-radius: 18px;
+	background: var(--dm-card);
+}
+
+.wp-block-themor-area-check.dewmore-zip,
+.dewmore-zip {
+	--themor-area-check-border: var(--dm-field);
+	--themor-area-check-button-bg: var(--dm-ink);
+	--themor-area-check-button-color: var(--dm-paper);
+	--themor-area-check-found: var(--dm-open);
+	--themor-area-check-missing: var(--dm-body);
+	--themor-area-check-radius: 999px;
+}
+
+/* The free gift, in the cart drawer's bar and the cart. */
+.themor-free-shipping--steps .themor-free-shipping__mark.is-done {
+	background: var(--dm-deep);
+}
+
+/* -------------------------------------------------------------------------
+ * The routine builder.
+ * ---------------------------------------------------------------------- */
+
+.wp-block-themor-bundle.dewmore-bundle,
+.themor-bundle.dewmore-bundle {
+	--themor-bundle-tabs-bg: var(--dm-wash);
+	--themor-bundle-tab-color: var(--dm-ink);
+	--themor-bundle-tab-on-bg: var(--dm-paper);
+	--themor-bundle-card-bg: var(--dm-paper);
+	--themor-bundle-card-border: var(--dm-line);
+	--themor-bundle-card-radius: 20px;
+	--themor-bundle-number-bg: var(--dm-lilac);
+	--themor-bundle-number-color: var(--dm-on-lilac);
+	--themor-bundle-picked: var(--dm-deep);
+	--themor-bundle-saving: var(--dm-deep);
+	--themor-bundle-summary-bg: var(--dm-wash);
+	--themor-bundle-summary-radius: 28px;
+}
+
+.dewmore-bundle .themor-bundle__title,
+.dewmore-bundle .themor-bundle__step-label,
+.dewmore-bundle .themor-bundle__total {
+	font-family: var(--dm-display);
+}
+
+/* -------------------------------------------------------------------------
+ * Pages.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-section--page-head {
+	background: var(--dm-wash);
+}
+
+.dewmore-page-head__words {
+	max-width: 760px;
+}
+
+.dewmore-page-head__words > * + * {
+	margin-block-start: 12px;
+}
+
+.dewmore-page-title {
+	margin: 0;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: clamp(38px, 4.2vw, 56px);
+	font-weight: 700;
+	line-height: 1.05;
+	letter-spacing: -0.025em;
+}
+
+.dewmore-faq {
+	border-bottom: 1px solid var(--dm-line);
+	padding-block: 16px;
+}
+
+.dewmore-faq summary {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 19px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.dewmore-faq summary + * {
+	margin-block-start: 10px;
+}
+
+.dewmore-help-card {
+	margin-block-end: 20px !important;
+	padding: 28px;
+	border-radius: 24px;
+	background: var(--dm-wash);
+}
+
+.dewmore-help-card > * + * {
+	margin-block-start: 8px !important;
+}
+
+.dewmore-help-card__title {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.dewmore-help-card__email a,
+.dewmore-help-card__phone {
+	color: var(--dm-ink);
+	font-weight: 700;
+}
+
+/* The skin types: five cards. */
+.dewmore-types {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+	gap: 20px;
+}
+
+.dewmore-type {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 28px;
+	border-radius: 24px;
+	background: var(--dm-card);
+}
+
+.dewmore-type .dewmore-more {
+	margin-block-start: auto !important;
+}
+
+.dewmore-type__name {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.dewmore-shades table {
+	border-collapse: collapse;
+}
+
+.dewmore-shades th,
+.dewmore-shades td {
+	padding: 12px 14px;
+	border: 0;
+	border-bottom: 1px solid var(--dm-line);
+	text-align: start;
+}
+
+.dewmore-shades thead th {
+	color: var(--dm-ink);
+	font-weight: 700;
+}
+
+/* A product inside an article. */
+.dewmore-offer {
+	gap: 18px;
+	margin-block: 32px !important;
+	padding: 16px;
+	border: 1px solid var(--dm-line);
+	border-radius: 22px;
+}
+
+.dewmore-offer__photo {
+	flex: none;
+	width: 96px;
+	margin: 0 !important;
+}
+
+.dewmore-offer__photo img {
+	width: 96px;
+	height: 96px;
+	object-fit: cover;
+	border-radius: 16px;
+	background: var(--dm-card);
+}
+
+.dewmore-offer__words {
+	flex: 1 1 auto;
+}
+
+.dewmore-offer__words > * {
+	margin: 0 0 4px !important;
+}
+
+.dewmore-offer__eyebrow {
+	color: var(--dm-deep);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.dewmore-offer__name {
+	color: var(--dm-ink);
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.dewmore-offer__price {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.dewmore-offer .dewmore-button .wp-block-button__link {
+	min-height: 46px;
+	padding: 0 20px;
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+/* -------------------------------------------------------------------------
+ * The welcome popup: a photo beside the offer and the form.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-popup {
+	display: grid;
+	grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+	margin: 0;
+	background: var(--dm-paper);
+}
+
+.dewmore-popup__photo {
+	margin: 0 !important;
+}
+
+.dewmore-popup__photo img {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.dewmore-popup__words {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 48px 44px 36px;
+}
+
+.dewmore-popup__words > * {
+	margin: 0 !important;
+}
+
+.dewmore-popup__title {
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: clamp(32px, 3.4vw, 42px);
+	font-weight: 700;
+	line-height: 1.05;
+	letter-spacing: -0.02em;
+}
+
+.dewmore-popup__text {
+	font-size: 16px;
+}
+
+.dewmore-signup--popup {
+	--themor-signup-input-radius: 16px;
+}
+
+.dewmore-popup__skip {
+	font-size: 14px;
+}
+
+.dewmore-popup__skip a {
+	color: var(--dm-body);
+	font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+ * The header: the search as one pill, the skin type, compare, wishlist and the cart.
+ * ---------------------------------------------------------------------- */
+
+.yantra-header-row--top {
+	font-size: 13px;
+}
+
+.yantra-header-row--top .themor-hx-icon-text__icon,
+.yantra-header-row--top .themor-hx-contact__icon {
+	color: var(--dm-deep);
+}
+
+.yantra-header-row--main .yantra-header-area--center {
+	flex: 1 1 auto;
+	justify-content: center;
+	min-width: 0;
+}
+
+.yantra-header-row--main .yantra-component--search {
+	width: min(620px, 100%);
+}
+
+/* On phones the search has a row of its own, across it: the row's empty areas step aside. */
+.yantra-header__mobile .yantra-header-row__inner:has(.yantra-component--search) {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.yantra-header__mobile .yantra-header-row__inner:has(.yantra-component--search) > .yantra-header-area:not(:has(.yantra-component)) {
+	display: none;
+}
+
+.yantra-header__mobile .yantra-header-row__inner > .yantra-header-area:has(> .yantra-component--search) {
+	flex: 1 1 100%;
+}
+
+.yantra-header__mobile .yantra-component--search {
+	width: 100%;
+}
+
+.yantra-component--search .yantra-search-form {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 4px;
+	box-sizing: border-box;
+	border: 1.5px solid var(--dm-field);
+	border-radius: 999px;
+	background: var(--dm-paper);
+}
+
+.yantra-component--search .yantra-search-form .search-field {
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 42px;
+	padding: 0 14px;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	font-size: 15px;
+}
+
+.yantra-component--search .yantra-search-form select {
+	flex: none;
+	min-height: 42px;
+	padding-block: 0;
+	padding-inline: 16px 34px;
+	border: 0;
+	border-radius: 999px;
+	background-color: var(--dm-wash);
+	color: var(--dm-ink);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.yantra-component--search .yantra-search-form .search-submit {
+	flex: none;
+	width: 42px;
+	min-height: 42px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: var(--dm-lilac);
+	color: var(--dm-on-lilac);
+}
+
+.yantra-component--search .yantra-search-form .search-submit:hover {
+	background: var(--dm-lilac-hover);
+}
+
+.yantra-nav--primary .menu-item > a {
+	font-weight: 600;
+}
+
+/* The header's routine button: a peach pill, not a second lilac one. Like the lilac buttons it
+   keeps its colors in dark mode. */
+.yantra-header-row--bottom .yantra-component--button .wp-element-button,
+.yantra-header-row--bottom .yantra-component--button a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	min-height: 42px;
+	padding: 0 16px 0 8px;
+	border: 0;
+	border-radius: 999px;
+	background: #FFE9D6;
+	color: #221A33;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.yantra-header-row--bottom .yantra-component--button a::before {
+	content: "";
+	flex: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 999px;
+	background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23221A33' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 7h10M4 12h7M4 17h10M17 10l3 3-3 3'/%3E%3C/svg%3E") center / 16px no-repeat;
+}
+
+.yantra-header-row--bottom .yantra-component--button a:hover {
+	background: #FFE1C7;
+	color: #221A33;
+}
+
+.yantra-cart {
+	border-radius: 999px;
+	background: var(--dm-wash);
+}
+
+/* -------------------------------------------------------------------------
+ * The shop's filters: small headings, quiet links, the counts in grey.
+ * ---------------------------------------------------------------------- */
+
+.yantra-sidebar .widgettitle,
+.yantra-sidebar .widget-title {
+	margin: 0 0 10px;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.yantra-sidebar .widget:empty {
+	display: none;
+}
+
+.yantra-sidebar .widget + .widget {
+	margin-block-start: 26px;
+}
+
+.yantra-sidebar .woocommerce-widget-layered-nav-list li {
+	padding-block: 4px;
+}
+
+.yantra-sidebar .woocommerce-widget-layered-nav-list a {
+	color: var(--dm-ink);
+	text-decoration: none;
+}
+
+.yantra-sidebar .woocommerce-widget-layered-nav-list a:hover {
+	color: var(--dm-deep);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.yantra-sidebar .woocommerce-widget-layered-nav-list .chosen a {
+	color: var(--dm-deep);
+	font-weight: 700;
+}
+
+.yantra-sidebar .count {
+	color: var(--dm-muted);
+	font-size: 13px;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+	background: var(--dm-lilac);
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+	background: var(--dm-deep);
+}
+
+/* -------------------------------------------------------------------------
+ * The footer.
+ * ---------------------------------------------------------------------- */
+
+.dewmore-footer-blurb {
+	max-width: 24rem;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.dewmore-footer-contact {
+	display: flex;
+	gap: 14px;
+	margin: 6px 0 0 !important;
+	color: var(--dm-ink);
+	font-size: 14px;
+}
+
+.dewmore-footer-contact span {
+	min-width: 3.6rem;
+	color: var(--dm-muted);
+}
+
+.dewmore-footer-contact a {
+	color: var(--dm-ink);
+	font-weight: 600;
+}
+
+.site-footer .widget .wp-block-heading,
+.site-footer .widget-title {
+	margin-block-end: 14px;
+	color: var(--dm-ink);
+	font-family: var(--dm-display);
+	font-size: 17px;
+	font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------
+ * Smaller screens.
+ * ---------------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+	.dewmore-concerns {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.dewmore-offer-cards,
+	.dewmore-best-row,
+	.dewmore-routine,
+	.dewmore-reviews {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.dewmore-tall {
+		min-height: 420px;
+	}
+
+	ul.wp-block-latest-posts.is-grid.dewmore-latest {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 767px) {
+	.dewmore-hero,
+	.dewmore-why,
+	.dewmore-join,
+	.dewmore-offer-card,
+	.dewmore-popup {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	/* The routine builder's choices two to a row. */
+	.dewmore-bundle .themor-bundle__choices {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	/* The refill rows, one under another, and the switch across the width. */
+	.dewmore-refill-row .woocommerce ul.products.columns-3 {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.dewmore-refills .dewmore-head__side,
+	.dewmore-switch,
+	.dewmore-switch .themor-price-switch {
+		width: 100%;
+	}
+
+	.dewmore-switch .themor-price-switch {
+		flex-wrap: nowrap;
+		box-sizing: border-box;
+	}
+
+	.dewmore-switch .themor-price-switch__choice {
+		flex: 1 1 0;
+		justify-content: center;
+		min-height: 48px;
+		padding: 4px 10px;
+		font-size: 14px;
+		text-align: center;
+		flex-wrap: wrap;
+		row-gap: 2px;
+	}
+
+	.dewmore-hero__picture {
+		order: -1;
+		min-height: 300px;
+	}
+
+	.dewmore-price-card {
+		inset-inline-end: 16px;
+		max-width: none;
+	}
+
+	.dewmore-concerns {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 10px;
+	}
+
+	.dewmore-concern__photo img {
+		width: 88px;
+		height: 88px;
+	}
+
+	.dewmore-steps {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.dewmore-why__photo img {
+		height: 260px;
+	}
+
+	.dewmore-offer-card__photo img {
+		height: 200px;
+		min-height: 0;
+	}
+
+	.dewmore-join__photo img {
+		height: 220px;
+		min-height: 0;
+	}
+
+	ul.wp-block-latest-posts.is-grid.dewmore-latest {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.dewmore-popup__photo img {
+		height: 160px;
+		min-height: 0;
+	}
+
+	.dewmore-popup__words {
+		padding: 28px 22px 24px;
+	}
+
+	.dewmore-sale__code {
+		flex: 1 1 100%;
+	}
+
+	.dewmore-offer {
+		flex-wrap: wrap !important;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.dewmore-concern {
+		transition: none;
+	}
+}

@@ -1,0 +1,105 @@
+/**
+ * Area check: the label, then the field and its button in a row that wraps on narrow screens,
+ * then the answer with its icon. A theme restyles it with custom properties:
+ * --themor-area-check-border (the field's border), --themor-area-check-radius (the field's and
+ * the button's corners), --themor-area-check-button-bg and --themor-area-check-button-color (the
+ * button), --themor-area-check-found and --themor-area-check-missing (the answer's icon, for a
+ * code covered and for one that isn't) and --themor-area-check-width (the form's widest).
+ */
+.themor-area-check {
+	max-width: var(--themor-area-check-width, 36rem);
+}
+
+/* Centered, the form sits in the middle of the block's row. */
+.wp-block-themor-area-check.aligncenter .themor-area-check {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.wp-block-themor-area-check.aligncenter .themor-area-check__row,
+.wp-block-themor-area-check.aligncenter .themor-area-check__answer {
+	justify-content: center;
+}
+
+.themor-area-check__label {
+	display: block;
+	margin: 0 0 8px;
+	font-weight: 600;
+}
+
+.themor-area-check__row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+/* The field takes the row's room; the button, once it wraps below, takes all of its own row. */
+.themor-area-check__input {
+	box-sizing: border-box;
+	flex: 999 1 12rem;
+	min-width: 0;
+	min-height: 44px;
+	margin: 0;
+	padding: 0 12px;
+	border: var(--themor-area-check-border, 1px solid #949494);
+	border-radius: var(--themor-area-check-radius, 4px);
+	font: inherit;
+}
+
+.themor-area-check__button {
+	box-sizing: border-box;
+	display: inline-flex;
+	flex: 1 0 auto;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	margin: 0;
+	padding: 0 20px;
+	border: 0;
+	border-radius: var(--themor-area-check-radius, 4px);
+	background: var(--themor-area-check-button-bg, #1e1e1e);
+	color: var(--themor-area-check-button-color, #fff);
+	font: inherit;
+	font-weight: 600;
+	line-height: 1.2;
+	cursor: pointer;
+}
+
+.themor-area-check__input:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 1px;
+}
+
+.themor-area-check__button:focus-visible {
+	outline: 2px solid var(--themor-area-check-button-bg, #1e1e1e);
+	outline-offset: 2px;
+}
+
+.themor-area-check__answer {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	margin: 12px 0 0;
+}
+
+/* Before a code is checked the answer takes no room. It stays in the page, so screen readers
+   hear the answer when it comes. */
+.themor-area-check__answer:empty {
+	margin: 0;
+}
+
+.themor-area-check__icon {
+	flex: none;
+	width: 1.25em;
+	height: 1.25em;
+	margin-top: 0.1em;
+}
+
+.themor-area-check__icon--found {
+	color: var(--themor-area-check-found, #1a7f37);
+}
+
+.themor-area-check__icon--missing {
+	color: var(--themor-area-check-missing, #9a6700);
+}

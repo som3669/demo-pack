@@ -1,0 +1,2762 @@
+{
+	"schema": 1,
+	"attributes": {
+		"Skin type": "skin-type",
+		"Concern": "concern",
+		"Key ingredient": "key-ingredient",
+		"Size": "size",
+		"Texture": "texture",
+		"Shade": "shade"
+	},
+	"attribute_terms": {
+		"Skin type": {
+			"Dry": {},
+			"Oily": {},
+			"Combination": {},
+			"Sensitive": {},
+			"Normal": {}
+		},
+		"Concern": {
+			"Dryness": {},
+			"Shine": {},
+			"Breakouts": {},
+			"Dullness": {},
+			"Redness": {},
+			"Fine lines": {},
+			"Dark marks": {}
+		},
+		"Shade": {
+			"Porcelain": {
+				"meta": {
+					"themor_swatch_color": "#F6E0D2"
+				}
+			},
+			"Shell": {
+				"meta": {
+					"themor_swatch_color": "#F3D9C4"
+				}
+			},
+			"Ivory": {
+				"meta": {
+					"themor_swatch_color": "#EFD2B6"
+				}
+			},
+			"Sand": {
+				"meta": {
+					"themor_swatch_color": "#E6C3A0"
+				}
+			},
+			"Beige": {
+				"meta": {
+					"themor_swatch_color": "#DDB592"
+				}
+			},
+			"Honey": {
+				"meta": {
+					"themor_swatch_color": "#CF9F72"
+				}
+			},
+			"Golden": {
+				"meta": {
+					"themor_swatch_color": "#C08A5B"
+				}
+			},
+			"Amber": {
+				"meta": {
+					"themor_swatch_color": "#A8714A"
+				}
+			},
+			"Caramel": {
+				"meta": {
+					"themor_swatch_color": "#96603D"
+				}
+			},
+			"Chestnut": {
+				"meta": {
+					"themor_swatch_color": "#7E4F33"
+				}
+			},
+			"Cocoa": {
+				"meta": {
+					"themor_swatch_color": "#6E4630"
+				}
+			},
+			"Espresso": {
+				"meta": {
+					"themor_swatch_color": "#4E3122"
+				}
+			},
+			"Light": {
+				"meta": {
+					"themor_swatch_color": "#EBCFB4"
+				}
+			},
+			"Medium": {
+				"meta": {
+					"themor_swatch_color": "#C89A6E"
+				}
+			},
+			"Deep": {
+				"meta": {
+					"themor_swatch_color": "#7A4E33"
+				}
+			},
+			"Petal": {
+				"meta": {
+					"themor_swatch_color": "#F2A7B5"
+				}
+			},
+			"Rosewood": {
+				"meta": {
+					"themor_swatch_color": "#C9707E"
+				}
+			},
+			"Apricot": {
+				"meta": {
+					"themor_swatch_color": "#F0A27A"
+				}
+			},
+			"Berry": {
+				"meta": {
+					"themor_swatch_color": "#9C3F5C"
+				}
+			},
+			"Nude": {
+				"meta": {
+					"themor_swatch_color": "#C98E7D"
+				}
+			},
+			"Coral": {
+				"meta": {
+					"themor_swatch_color": "#E0705E"
+				}
+			},
+			"Red": {
+				"meta": {
+					"themor_swatch_color": "#B8283A"
+				}
+			},
+			"Plum": {
+				"meta": {
+					"themor_swatch_color": "#7A2E4A"
+				}
+			},
+			"Mauve": {
+				"meta": {
+					"themor_swatch_color": "#A56778"
+				}
+			}
+		},
+		"Size": {
+			"15 ml": {},
+			"30 ml": {},
+			"50 ml": {},
+			"100 ml": {},
+			"150 ml": {},
+			"200 ml": {}
+		}
+	},
+	"product_categories": {
+		"skincare": {
+			"name": "Skincare",
+			"description": "Cleansers, serums, moisturisers and sun care for every skin type, each made to do one job well.",
+			"image": "images/dew-drop-serum.jpg"
+		},
+		"cleansers": {
+			"name": "Cleansers",
+			"parent": "skincare",
+			"description": "Cream, gel and balm cleansers that take everything off and leave nothing tight.",
+			"image": "images/oat-milk-cleanser.jpg"
+		},
+		"toners-essences": {
+			"name": "Toners and essences",
+			"parent": "skincare",
+			"description": "Watery layers that add water back after cleansing.",
+			"image": "images/rose-water-toner.jpg"
+		},
+		"serums": {
+			"name": "Serums",
+			"parent": "skincare",
+			"description": "Light, concentrated and made to do one job each. Use one or two after cleansing, before your moisturiser.",
+			"image": "images/hyaluronic-water-serum.jpg"
+		},
+		"moisturisers": {
+			"name": "Moisturisers",
+			"parent": "skincare",
+			"description": "Gel creams for oily skin and rich creams for dry, to seal your serum in.",
+			"image": "images/ceramide-barrier-cream.jpg"
+		},
+		"eye-care": {
+			"name": "Eye care",
+			"parent": "skincare",
+			"description": "Light creams for the thin skin under the eyes.",
+			"image": "images/bright-eye-cream.jpg"
+		},
+		"masks": {
+			"name": "Masks",
+			"parent": "skincare",
+			"description": "Clay and overnight masks, two or three times a week.",
+			"image": "images/pink-clay-mask.jpg"
+		},
+		"sun-care": {
+			"name": "Sun care",
+			"parent": "skincare",
+			"description": "Sheer sun creams for every morning, and aloe for after.",
+			"image": "images/mineral-spf-50.jpg"
+		},
+		"makeup": {
+			"name": "Makeup",
+			"description": "Sheer colour made like skincare: tints, blush, lipstick and the tools to put them on.",
+			"image": "images/dew-skin-tint.jpg"
+		},
+		"base": {
+			"name": "Base",
+			"parent": "makeup",
+			"description": "A sheer tint in twelve shades, and a powder to set it.",
+			"image": "images/dew-skin-tint.jpg"
+		},
+		"cheeks": {
+			"name": "Cheeks",
+			"parent": "makeup",
+			"description": "Cream blush for cheeks and lips.",
+			"image": "images/cream-blush.jpg"
+		},
+		"lips": {
+			"name": "Lips",
+			"parent": "makeup",
+			"description": "Comfortable lipstick in five shades.",
+			"image": "images/cat-lips.jpg"
+		},
+		"eyes": {
+			"name": "Eyes",
+			"parent": "makeup",
+			"description": "Soft shadows and a mascara that washes off with water.",
+			"image": "images/soft-neutrals-palette.jpg"
+		},
+		"tools": {
+			"name": "Tools",
+			"description": "Brushes, cloths and rounds you can wash and keep.",
+			"image": "images/brush-set.jpg"
+		},
+		"body": {
+			"name": "Body",
+			"description": "Butters, oils and scrubs for the rest of you.",
+			"image": "images/shea-body-butter.jpg"
+		},
+		"sets-gifts": {
+			"name": "Sets and gifts",
+			"description": "Routines and gifts, together for less.",
+			"image": "images/night-shift-set.jpg"
+		},
+		"refills": {
+			"name": "Refills",
+			"description": "Keep the bottle, refill the rest: paper pouches that cost 20% less.",
+			"image": "images/dew-drop-serum.jpg"
+		}
+	},
+	"products": [
+		{
+			"slug": "oat-milk-cleanser",
+			"name": "Oat milk cleanser",
+			"category": [
+				"cleansers"
+			],
+			"image": "images/oat-milk-cleanser.jpg",
+			"gallery": [],
+			"sales": 380,
+			"regular": "16",
+			"featured": false,
+			"short": "A cream cleanser for dry and sensitive skin that takes off sunscreen without leaving your face tight.",
+			"description": [
+				[
+					"p",
+					"Oat and glycerin calm and soften while it cleans, so skin that stings after washing feels comfortable again."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Massage a little into dry or damp skin, morning and night.",
+						"Rinse with lukewarm water and pat dry."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Oat, glycerin and a gentle cleansing base. No fragrance, no essential oils, no sulfates."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness",
+					"Redness"
+				],
+				"Key ingredient": "Oat",
+				"Size": "150 ml",
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Dryness",
+				"Redness"
+			],
+			"stock": 40,
+			"days": 60,
+			"cross_sells": [
+				"calm-essence",
+				"ceramide-barrier-cream"
+			],
+			"sku": "DM-101"
+		},
+		{
+			"slug": "clear-gel-cleanser",
+			"name": "Clear gel cleanser",
+			"category": [
+				"cleansers"
+			],
+			"image": "images/clear-gel-cleanser.jpg",
+			"gallery": [],
+			"sales": 290,
+			"regular": "14",
+			"featured": false,
+			"short": "A clear gel for oily and combination skin that lathers lightly and rinses clean.",
+			"description": [
+				[
+					"p",
+					"Zinc PCA helps with oil, and the gel rinses off without squeaky-tight skin after."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Lather a little with water, morning and night.",
+						"Rinse well and pat dry."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Zinc PCA, glycerin and a mild cleansing base. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Oily",
+					"Combination"
+				],
+				"Concern": [
+					"Shine",
+					"Breakouts"
+				],
+				"Key ingredient": "Zinc PCA",
+				"Size": "200 ml",
+				"Texture": "Gel"
+			},
+			"tags": [
+				"Shine",
+				"Breakouts"
+			],
+			"stock": 55,
+			"days": 70,
+			"cross_sells": [
+				"dew-drop-serum",
+				"water-gel-cream"
+			],
+			"sku": "DM-102"
+		},
+		{
+			"slug": "melt-cleansing-balm",
+			"name": "Melt cleansing balm",
+			"category": [
+				"cleansers"
+			],
+			"image": "images/melt-cleansing-balm.jpg",
+			"gallery": [],
+			"sales": 210,
+			"regular": "21",
+			"featured": false,
+			"short": "A balm that melts off makeup and sunscreen, then rinses to a milk.",
+			"description": [
+				[
+					"p",
+					"Use it first at night to take everything off, then follow with your usual cleanser if you like."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Massage over dry skin for a minute.",
+						"Add water to turn it to a milk, then rinse."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Plant oils and a rinse-off emulsifier. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Normal",
+					"Sensitive"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Plant oils",
+				"Size": "90 g",
+				"Texture": "Balm"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 22,
+			"days": 80,
+			"sku": "DM-103"
+		},
+		{
+			"slug": "rose-water-toner",
+			"name": "Rose water toner",
+			"category": [
+				"toners-essences"
+			],
+			"image": "images/rose-water-toner.jpg",
+			"gallery": [],
+			"sales": 150,
+			"regular": "",
+			"featured": false,
+			"short": "A soft toner with rose water that adds water back after cleansing, with no alcohol.",
+			"description": [
+				[
+					"p",
+					"Pat it on after cleansing for skin that feels tight, or before a serum to help it spread."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Shake a few drops into your palms.",
+						"Press into your face and neck."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Rose water and glycerin. No alcohol, no added fragrance beyond the rose water itself."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Rose water",
+				"Size": [
+					"100 ml",
+					"200 ml"
+				],
+				"Texture": "Water"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"days": 90,
+			"variations": [
+				{
+					"options": {
+						"Size": "100 ml"
+					},
+					"regular": "15",
+					"stock": 30,
+					"sku": "DM-104-01"
+				},
+				{
+					"options": {
+						"Size": "200 ml"
+					},
+					"regular": "24",
+					"stock": 18,
+					"sku": "DM-104-02"
+				}
+			],
+			"vary_by": [
+				"Size"
+			],
+			"defaults": {
+				"Size": "100 ml"
+			},
+			"sku": "DM-104"
+		},
+		{
+			"slug": "calm-essence",
+			"name": "Calm essence",
+			"category": [
+				"toners-essences"
+			],
+			"image": "images/calm-essence.jpg",
+			"gallery": [],
+			"sales": 120,
+			"regular": "20",
+			"featured": false,
+			"short": "A watery essence with centella and oat for skin that flushes and stings.",
+			"description": [
+				[
+					"p",
+					"Calms skin after cleansing and before your serum, and suits days when everything else stings."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Pat a few drops into your skin after cleansing.",
+						"Follow with your serum or moisturiser."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Centella, oat and panthenol. No fragrance, no essential oils, no alcohol."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Sensitive",
+					"Dry"
+				],
+				"Concern": [
+					"Redness",
+					"Dryness"
+				],
+				"Key ingredient": "Centella",
+				"Size": "100 ml",
+				"Texture": "Water"
+			},
+			"tags": [
+				"Redness",
+				"Dryness"
+			],
+			"stock": 26,
+			"days": 45,
+			"sku": "DM-105"
+		},
+		{
+			"slug": "kiwi-glow-tonic",
+			"name": "Kiwi glow tonic",
+			"category": [
+				"toners-essences"
+			],
+			"image": "images/kiwi-glow-tonic.jpg",
+			"gallery": [],
+			"sales": 66,
+			"regular": "18",
+			"featured": false,
+			"short": "A gentle acid tonic that lifts dullness, two or three evenings a week.",
+			"description": [
+				[
+					"p",
+					"5% lactic acid smooths and brightens, slowly, without the sting of stronger acids."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Sweep over clean skin with a cotton round, two or three evenings a week.",
+						"Wear sun cream the next morning."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"5% lactic acid, kiwi extract and glycerin. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Oily",
+					"Combination",
+					"Normal"
+				],
+				"Concern": [
+					"Dullness",
+					"Shine"
+				],
+				"Key ingredient": "5% lactic acid",
+				"Size": "100 ml",
+				"Texture": "Water"
+			},
+			"tags": [
+				"Dullness",
+				"Shine"
+			],
+			"stock": 30,
+			"days": 5,
+			"sku": "DM-106"
+		},
+		{
+			"slug": "dew-drop-serum",
+			"name": "Dew Drop niacinamide serum",
+			"category": [
+				"serums"
+			],
+			"image": "images/dew-drop-serum.jpg",
+			"gallery": [
+				"images/hyaluronic-water-serum.jpg"
+			],
+			"sales": 640,
+			"regular": "",
+			"featured": true,
+			"short": "A light serum with 5% niacinamide and zinc that evens out shine and calms redness.",
+			"description": [
+				[
+					"p",
+					"Two or three drops even out redness and dark marks and keep shine down through the day. Most people see a difference in about four weeks."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Press two or three drops into clean skin, morning and night.",
+						"Follow with moisturiser, and SPF in the morning."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Water, 5% niacinamide, 1% zinc PCA, panthenol, glycerin and sodium hyaluronate. No fragrance, no essential oils."
+				],
+				[
+					"p",
+					"The 50 ml bottle is back soon. Refill pouches for the 30 ml cost 20% less."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Oily",
+					"Combination",
+					"Normal"
+				],
+				"Concern": [
+					"Shine",
+					"Redness",
+					"Breakouts"
+				],
+				"Key ingredient": "5% niacinamide",
+				"Size": [
+					"15 ml",
+					"30 ml",
+					"50 ml"
+				],
+				"Texture": "Gel"
+			},
+			"tags": [
+				"Shine",
+				"Redness",
+				"Breakouts"
+			],
+			"days": 4,
+			"variations": [
+				{
+					"options": {
+						"Size": "15 ml"
+					},
+					"regular": "24",
+					"stock": 30,
+					"sku": "DM-107-01"
+				},
+				{
+					"options": {
+						"Size": "30 ml"
+					},
+					"regular": "30",
+					"stock": 6,
+					"sku": "DM-107-02"
+				},
+				{
+					"options": {
+						"Size": "50 ml"
+					},
+					"regular": "38",
+					"stock": "outofstock",
+					"meta": {
+						"_themor_restock_date": {
+							"days": 11
+						}
+					},
+					"sku": "DM-107-03"
+				}
+			],
+			"vary_by": [
+				"Size"
+			],
+			"defaults": {
+				"Size": "30 ml"
+			},
+			"meta": {
+				"_themor_badge": "Refill available",
+				"_themor_badge_color": "#E3F4E8"
+			},
+			"cross_sells": [
+				"clear-gel-cleanser",
+				"water-gel-cream",
+				"mineral-spf-50"
+			],
+			"sku": "DM-107"
+		},
+		{
+			"slug": "hyaluronic-water-serum",
+			"name": "Hyaluronic water serum",
+			"category": [
+				"serums"
+			],
+			"image": "images/hyaluronic-water-serum.jpg",
+			"gallery": [],
+			"sales": 420,
+			"regular": "22",
+			"featured": false,
+			"short": "Three sizes of hyaluronic acid for skin that feels tight. Use it on damp skin.",
+			"description": [
+				[
+					"p",
+					"A watery serum that holds water in the skin, for any skin type and any time of day."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Press a few drops into damp skin, morning and night.",
+						"Follow with moisturiser to seal it in."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Water, hyaluronic acid in three sizes, panthenol and glycerin. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Hyaluronic acid",
+				"Size": "30 ml",
+				"Texture": "Water"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 35,
+			"days": 50,
+			"meta": {
+				"_themor_badge": "Refill available",
+				"_themor_badge_color": "#E3F4E8"
+			},
+			"cross_sells": [
+				"dew-drop-serum",
+				"ceramide-barrier-cream"
+			],
+			"sku": "DM-108"
+		},
+		{
+			"slug": "bright-c-serum",
+			"name": "Bright C serum",
+			"category": [
+				"serums"
+			],
+			"image": "images/bright-c-serum.jpg",
+			"gallery": [],
+			"sales": 97,
+			"regular": "34",
+			"featured": false,
+			"short": "A stable 10% vitamin C for dull skin and dark marks, in the morning under SPF.",
+			"description": [
+				[
+					"p",
+					"Brightens dull skin and fades dark marks over a couple of months. Keep it in its box, away from the light."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Press three drops into clean skin in the morning.",
+						"Follow with moisturiser and sun cream."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"10% vitamin C (ascorbyl glucoside), ferulic acid and glycerin. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Normal",
+					"Combination",
+					"Oily"
+				],
+				"Concern": [
+					"Dullness",
+					"Dark marks"
+				],
+				"Key ingredient": "10% vitamin C",
+				"Size": "30 ml",
+				"Texture": "Serum"
+			},
+			"tags": [
+				"Dullness",
+				"Dark marks"
+			],
+			"sale": "28",
+			"sale_days": 2,
+			"stock": 4,
+			"days": 35,
+			"cross_sells": [
+				"mineral-spf-50"
+			],
+			"sku": "DM-109"
+		},
+		{
+			"slug": "gentle-retinal-serum",
+			"name": "Gentle retinal serum",
+			"category": [
+				"serums"
+			],
+			"image": "images/gentle-retinal-serum.jpg",
+			"gallery": [],
+			"sales": 79,
+			"regular": "",
+			"featured": false,
+			"short": "Retinal at a strength that suits beginners, for fine lines and texture. Nights only.",
+			"description": [
+				[
+					"p",
+					"Retinal works faster than retinol at a lower strength. Start with two nights a week and build up."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Two nights a week at first, a pea-size amount after cleansing.",
+						"Moisturise after, and wear sun cream every morning."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"0.05% retinal, squalane and ceramides. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Normal",
+					"Dry",
+					"Combination"
+				],
+				"Concern": [
+					"Fine lines"
+				],
+				"Key ingredient": "0.05% retinal",
+				"Size": [
+					"15 ml",
+					"30 ml"
+				],
+				"Texture": "Serum"
+			},
+			"tags": [
+				"Fine lines"
+			],
+			"days": 55,
+			"variations": [
+				{
+					"options": {
+						"Size": "15 ml"
+					},
+					"regular": "26",
+					"stock": 12,
+					"sku": "DM-110-01"
+				},
+				{
+					"options": {
+						"Size": "30 ml"
+					},
+					"regular": "34",
+					"stock": 9,
+					"sku": "DM-110-02"
+				}
+			],
+			"vary_by": [
+				"Size"
+			],
+			"defaults": {
+				"Size": "30 ml"
+			},
+			"cross_sells": [
+				"ceramide-barrier-cream",
+				"bright-eye-cream"
+			],
+			"sku": "DM-110"
+		},
+		{
+			"slug": "squalane-face-oil",
+			"name": "Squalane face oil",
+			"category": [
+				"serums"
+			],
+			"image": "images/squalane-face-oil.jpg",
+			"gallery": [],
+			"sales": 58,
+			"regular": "26",
+			"featured": false,
+			"short": "Two drops over moisturiser on dry nights. Light, never greasy.",
+			"description": [
+				[
+					"p",
+					"Plant squalane sinks in fast and keeps water in, without a shine."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Press two drops over your moisturiser at night.",
+						"On very dry days, mix one drop into your morning cream."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"100% plant squalane. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Squalane",
+				"Size": "30 ml",
+				"Texture": "Oil"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 18,
+			"days": 95,
+			"sku": "DM-111"
+		},
+		{
+			"slug": "ceramide-barrier-cream",
+			"name": "Ceramide barrier cream",
+			"category": [
+				"moisturisers"
+			],
+			"image": "images/ceramide-barrier-cream.jpg",
+			"gallery": [],
+			"sales": 520,
+			"regular": "",
+			"featured": false,
+			"short": "A rich cream with ceramides for dry, tight skin that needs its barrier back.",
+			"description": [
+				[
+					"p",
+					"Thick enough for winter, never greasy. The big jar lasts about three months of twice a day."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Smooth over your face and neck after your serum, morning and night."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Ceramides, cholesterol, squalane and glycerin. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness",
+					"Redness"
+				],
+				"Key ingredient": "Ceramides",
+				"Size": [
+					"50 ml",
+					"100 ml"
+				],
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Dryness",
+				"Redness"
+			],
+			"days": 65,
+			"variations": [
+				{
+					"options": {
+						"Size": "50 ml"
+					},
+					"regular": "26",
+					"stock": 24,
+					"sku": "DM-112-01"
+				},
+				{
+					"options": {
+						"Size": "100 ml"
+					},
+					"regular": "42",
+					"stock": 14,
+					"sku": "DM-112-02"
+				}
+			],
+			"vary_by": [
+				"Size"
+			],
+			"defaults": {
+				"Size": "50 ml"
+			},
+			"cross_sells": [
+				"oat-milk-cleanser",
+				"hyaluronic-water-serum"
+			],
+			"sku": "DM-112"
+		},
+		{
+			"slug": "water-gel-cream",
+			"name": "Water gel cream",
+			"category": [
+				"moisturisers"
+			],
+			"image": "images/water-gel-cream.jpg",
+			"gallery": [],
+			"sales": 260,
+			"regular": "22",
+			"featured": false,
+			"short": "A light gel cream that leaves no shine, for oily and combination skin.",
+			"description": [
+				[
+					"p",
+					"Moisture without weight: it sinks in in seconds and sits well under sun cream and makeup."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Smooth over your face after your serum, morning and night."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Glycerin, hyaluronic acid and niacinamide. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Oily",
+					"Combination",
+					"Normal"
+				],
+				"Concern": [
+					"Shine"
+				],
+				"Key ingredient": "Glycerin",
+				"Size": "50 ml",
+				"Texture": "Gel"
+			},
+			"tags": [
+				"Shine"
+			],
+			"stock": 32,
+			"days": 75,
+			"cross_sells": [
+				"clear-gel-cleanser",
+				"dew-drop-serum"
+			],
+			"sku": "DM-113"
+		},
+		{
+			"slug": "bright-eye-cream",
+			"name": "Bright eye cream",
+			"category": [
+				"eye-care"
+			],
+			"image": "images/bright-eye-cream.jpg",
+			"gallery": [],
+			"sales": 64,
+			"regular": "24",
+			"featured": false,
+			"short": "Caffeine and peptides for puffiness and fine lines under the eyes.",
+			"description": [
+				[
+					"p",
+					"A light cream for the thin skin under the eyes: tap it in with your ring finger."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Tap a little around the eyes, morning and night."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Caffeine, peptides and glycerin. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Fine lines"
+				],
+				"Key ingredient": "Caffeine",
+				"Size": "15 ml",
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Fine lines"
+			],
+			"stock": 20,
+			"days": 85,
+			"sku": "DM-114"
+		},
+		{
+			"slug": "overnight-sleep-mask",
+			"name": "Overnight sleep mask",
+			"category": [
+				"masks"
+			],
+			"image": "images/overnight-sleep-mask.jpg",
+			"gallery": [],
+			"sales": 88,
+			"regular": "27",
+			"featured": false,
+			"short": "A rich mask to leave on overnight, two or three times a week.",
+			"description": [
+				[
+					"p",
+					"Wake up to softer, calmer skin. Use it as the last step on dry nights."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Smooth a thin layer over your face as the last step at night.",
+						"Rinse off in the morning."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Shea butter, squalane and oat. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness",
+					"Dullness"
+				],
+				"Key ingredient": "Shea butter",
+				"Size": "75 ml",
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Dryness",
+				"Dullness"
+			],
+			"stock": 16,
+			"days": 100,
+			"sku": "DM-115"
+		},
+		{
+			"slug": "pink-clay-mask",
+			"name": "Pink clay mask",
+			"category": [
+				"masks"
+			],
+			"image": "images/pink-clay-mask.jpg",
+			"gallery": [],
+			"sales": 54,
+			"regular": "18",
+			"featured": false,
+			"short": "A soft clay mask that clears pores without drying, ten minutes at a time.",
+			"description": [
+				[
+					"p",
+					"Kaolin clay lifts oil from pores without the tight feeling of stronger clays."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Smooth a thin layer over clean skin, avoiding the eyes.",
+						"Rinse off after ten minutes."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Kaolin clay, glycerin and zinc. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Oily",
+					"Combination"
+				],
+				"Concern": [
+					"Breakouts",
+					"Shine"
+				],
+				"Key ingredient": "Kaolin clay",
+				"Size": "75 ml",
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Breakouts",
+				"Shine"
+			],
+			"stock": 21,
+			"days": 110,
+			"sku": "DM-116"
+		},
+		{
+			"slug": "mineral-spf-50",
+			"name": "Mineral SPF 50",
+			"category": [
+				"sun-care"
+			],
+			"image": "images/mineral-spf-50.jpg",
+			"gallery": [],
+			"sales": 300,
+			"regular": "19",
+			"featured": false,
+			"short": "A sheer mineral sun cream with no white cast, gentle enough for sensitive skin.",
+			"description": [
+				[
+					"p",
+					"Zinc oxide only, in a sheer cream that leaves no white cast on any skin tone."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Two finger lengths for face and neck, as the last step every morning.",
+						"Put more on every two hours in the sun."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Zinc oxide (SPF 50), squalane and glycerin. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Key ingredient": "Zinc oxide",
+				"Size": "50 ml",
+				"Texture": "Lotion"
+			},
+			"stock": 48,
+			"days": 3,
+			"cross_sells": [
+				"bright-c-serum"
+			],
+			"sku": "DM-117"
+		},
+		{
+			"slug": "daily-fluid-spf-30",
+			"name": "Daily fluid SPF 30",
+			"category": [
+				"sun-care"
+			],
+			"image": "images/daily-fluid-spf-30.jpg",
+			"gallery": [],
+			"sales": 140,
+			"regular": "17",
+			"featured": false,
+			"short": "A sheer fluid that sits well under makeup, for every morning.",
+			"description": [
+				[
+					"p",
+					"A runny fluid that disappears into the skin, for days in town."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Two finger lengths for face and neck, as the last step every morning."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"UV filters (SPF 30), glycerin and niacinamide. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Oily",
+					"Combination",
+					"Normal"
+				],
+				"Key ingredient": "UV filters",
+				"Size": "50 ml",
+				"Texture": "Fluid"
+			},
+			"stock": 36,
+			"days": 120,
+			"sku": "DM-118"
+		},
+		{
+			"slug": "after-sun-aloe-gel",
+			"name": "After-sun aloe gel",
+			"category": [
+				"sun-care"
+			],
+			"image": "images/after-sun-aloe-gel.jpg",
+			"gallery": [],
+			"sales": 45,
+			"regular": "14",
+			"featured": false,
+			"short": "Cool aloe gel for skin that had too much sun.",
+			"description": [
+				[
+					"p",
+					"Keep it in the fridge for the evenings after a day outside."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Smooth over warm skin as often as you like."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Aloe, panthenol and glycerin. No fragrance, no essential oils, no alcohol."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Redness"
+				],
+				"Key ingredient": "Aloe",
+				"Size": "150 ml",
+				"Texture": "Gel"
+			},
+			"tags": [
+				"Redness"
+			],
+			"stock": 28,
+			"days": 130,
+			"sku": "DM-119"
+		},
+		{
+			"slug": "dew-skin-tint",
+			"name": "Dew skin tint",
+			"category": [
+				"base"
+			],
+			"image": "images/dew-skin-tint.jpg",
+			"gallery": [],
+			"sales": 260,
+			"regular": "",
+			"featured": false,
+			"short": "A sheer tint with SPF 20 that evens skin out without covering it.",
+			"description": [
+				[
+					"p",
+					"Twelve shades, each sheer enough to wear alone or under concealer. Find yours in the shade guide."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Dot over your face after moisturiser and blend with your fingers."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Hyaluronic acid, zinc oxide (SPF 20) and mineral pigments. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Key ingredient": "Hyaluronic acid",
+				"Shade": [
+					"Porcelain",
+					"Shell",
+					"Ivory",
+					"Sand",
+					"Beige",
+					"Honey",
+					"Golden",
+					"Amber",
+					"Caramel",
+					"Chestnut",
+					"Cocoa",
+					"Espresso"
+				],
+				"Size": "30 ml"
+			},
+			"days": 20,
+			"variations": [
+				{
+					"options": {
+						"Shade": "Porcelain"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-01"
+				},
+				{
+					"options": {
+						"Shade": "Shell"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-02"
+				},
+				{
+					"options": {
+						"Shade": "Ivory"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-03"
+				},
+				{
+					"options": {
+						"Shade": "Sand"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-04"
+				},
+				{
+					"options": {
+						"Shade": "Beige"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-05"
+				},
+				{
+					"options": {
+						"Shade": "Honey"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-06"
+				},
+				{
+					"options": {
+						"Shade": "Golden"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-07"
+				},
+				{
+					"options": {
+						"Shade": "Amber"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-08"
+				},
+				{
+					"options": {
+						"Shade": "Caramel"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-09"
+				},
+				{
+					"options": {
+						"Shade": "Chestnut"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-10"
+				},
+				{
+					"options": {
+						"Shade": "Cocoa"
+					},
+					"stock": "outofstock",
+					"meta": {
+						"_themor_restock_date": {
+							"days": 9
+						}
+					},
+					"regular": "24",
+					"sku": "DM-120-11"
+				},
+				{
+					"options": {
+						"Shade": "Espresso"
+					},
+					"stock": 14,
+					"regular": "24",
+					"sku": "DM-120-12"
+				}
+			],
+			"vary_by": [
+				"Shade"
+			],
+			"defaults": {
+				"Shade": "Sand"
+			},
+			"sku": "DM-120"
+		},
+		{
+			"slug": "loose-setting-powder",
+			"name": "Loose setting powder",
+			"category": [
+				"base"
+			],
+			"image": "images/loose-setting-powder.jpg",
+			"gallery": [],
+			"sales": 70,
+			"regular": "",
+			"featured": false,
+			"short": "A fine powder that takes the shine off without settling into lines.",
+			"description": [
+				[
+					"p",
+					"A light dusting over the T-zone keeps shine down until the evening."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Press a little over the T-zone with a powder brush."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Corn starch, silica and mineral pigments. No fragrance."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Key ingredient": "Silica",
+				"Shade": [
+					"Light",
+					"Medium",
+					"Deep"
+				],
+				"Size": "8 g"
+			},
+			"days": 140,
+			"variations": [
+				{
+					"options": {
+						"Shade": "Light"
+					},
+					"stock": 15,
+					"regular": "20",
+					"sku": "DM-121-01"
+				},
+				{
+					"options": {
+						"Shade": "Medium"
+					},
+					"stock": 15,
+					"regular": "20",
+					"sku": "DM-121-02"
+				},
+				{
+					"options": {
+						"Shade": "Deep"
+					},
+					"stock": 15,
+					"regular": "20",
+					"sku": "DM-121-03"
+				}
+			],
+			"vary_by": [
+				"Shade"
+			],
+			"defaults": {
+				"Shade": "Light"
+			},
+			"sku": "DM-121"
+		},
+		{
+			"slug": "cream-blush",
+			"name": "Cream blush",
+			"category": [
+				"cheeks"
+			],
+			"image": "images/cream-blush.jpg",
+			"gallery": [],
+			"sales": 150,
+			"regular": "",
+			"featured": false,
+			"short": "A creamy blush for cheeks and lips that melts in with your fingers.",
+			"description": [
+				[
+					"p",
+					"Tap a little onto the apples of your cheeks and blend up. It works on lips too."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Tap onto cheeks with your fingers and blend."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Plant oils, waxes and mineral pigments. No fragrance."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Key ingredient": "Plant oils",
+				"Shade": [
+					"Petal",
+					"Rosewood",
+					"Apricot",
+					"Berry"
+				],
+				"Size": "6 g"
+			},
+			"days": 25,
+			"variations": [
+				{
+					"options": {
+						"Shade": "Petal"
+					},
+					"stock": 18,
+					"regular": "18",
+					"sku": "DM-122-01"
+				},
+				{
+					"options": {
+						"Shade": "Rosewood"
+					},
+					"stock": 18,
+					"regular": "18",
+					"sku": "DM-122-02"
+				},
+				{
+					"options": {
+						"Shade": "Apricot"
+					},
+					"stock": 18,
+					"regular": "18",
+					"sku": "DM-122-03"
+				},
+				{
+					"options": {
+						"Shade": "Berry"
+					},
+					"stock": 18,
+					"regular": "18",
+					"sku": "DM-122-04"
+				}
+			],
+			"vary_by": [
+				"Shade"
+			],
+			"defaults": {
+				"Shade": "Petal"
+			},
+			"sku": "DM-122"
+		},
+		{
+			"slug": "satin-lipstick",
+			"name": "Satin lipstick",
+			"category": [
+				"lips"
+			],
+			"image": "images/satin-lipstick.jpg",
+			"gallery": [],
+			"sales": 130,
+			"regular": "",
+			"featured": false,
+			"short": "A comfortable lipstick with a soft satin finish, in five shades.",
+			"description": [
+				[
+					"p",
+					"Full colour in one swipe that stays comfortable for hours."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Apply straight from the bullet, or press on with a finger for a softer look."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Plant oils, waxes and mineral pigments. No fragrance."
+				]
+			],
+			"specs": {
+				"Key ingredient": "Plant oils",
+				"Shade": [
+					"Nude",
+					"Coral",
+					"Red",
+					"Plum",
+					"Mauve"
+				],
+				"Size": "3.5 g"
+			},
+			"days": 40,
+			"variations": [
+				{
+					"options": {
+						"Shade": "Nude"
+					},
+					"stock": 16,
+					"regular": "20",
+					"sku": "DM-123-01"
+				},
+				{
+					"options": {
+						"Shade": "Coral"
+					},
+					"stock": 16,
+					"regular": "20",
+					"sku": "DM-123-02"
+				},
+				{
+					"options": {
+						"Shade": "Red"
+					},
+					"stock": 16,
+					"regular": "20",
+					"sku": "DM-123-03"
+				},
+				{
+					"options": {
+						"Shade": "Plum"
+					},
+					"stock": 16,
+					"regular": "20",
+					"sku": "DM-123-04"
+				},
+				{
+					"options": {
+						"Shade": "Mauve"
+					},
+					"stock": 16,
+					"regular": "20",
+					"sku": "DM-123-05"
+				}
+			],
+			"vary_by": [
+				"Shade"
+			],
+			"defaults": {
+				"Shade": "Nude"
+			},
+			"sku": "DM-123"
+		},
+		{
+			"slug": "soft-neutrals-palette",
+			"name": "Soft neutrals palette",
+			"category": [
+				"eyes"
+			],
+			"image": "images/soft-neutrals-palette.jpg",
+			"gallery": [],
+			"sales": 60,
+			"regular": "26",
+			"featured": false,
+			"short": "Nine soft eye shadows, matte and shimmer, that go with everything.",
+			"description": [
+				[
+					"p",
+					"Nine shades from cream to taupe, to wear one at a time or blended together."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Sweep with a brush or a fingertip."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Mica, plant oils and mineral pigments. No fragrance."
+				]
+			],
+			"specs": {
+				"Key ingredient": "Mineral pigments",
+				"Size": "9 g"
+			},
+			"stock": 14,
+			"days": 150,
+			"sku": "DM-124"
+		},
+		{
+			"slug": "lengthening-mascara",
+			"name": "Lengthening mascara",
+			"category": [
+				"eyes"
+			],
+			"image": "images/lengthening-mascara.jpg",
+			"gallery": [],
+			"sales": 110,
+			"regular": "16",
+			"featured": false,
+			"short": "A mascara that lengthens without clumps and washes off with warm water.",
+			"description": [
+				[
+					"p",
+					"Tube technology: it wraps each lash and slides off with warm water, no rubbing."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Wiggle from the root to the tips. Two coats for more."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Polymers, waxes and iron oxides. No fragrance."
+				]
+			],
+			"specs": {
+				"Key ingredient": "Iron oxides",
+				"Size": "8 ml"
+			},
+			"stock": 40,
+			"days": 160,
+			"sku": "DM-125"
+		},
+		{
+			"slug": "powder-brush",
+			"name": "Powder brush",
+			"category": [
+				"tools"
+			],
+			"image": "images/powder-brush.jpg",
+			"gallery": [],
+			"sales": 40,
+			"regular": "16",
+			"featured": false,
+			"short": "A soft, full brush for powder and blush.",
+			"description": [
+				[
+					"p",
+					"Soft synthetic bristles that pick up just enough powder. Wash it once a week with mild soap."
+				]
+			],
+			"stock": 30,
+			"days": 170,
+			"sku": "DM-126"
+		},
+		{
+			"slug": "brush-set",
+			"name": "Brush set",
+			"category": [
+				"tools"
+			],
+			"image": "images/brush-set.jpg",
+			"gallery": [],
+			"sales": 35,
+			"regular": "38",
+			"featured": false,
+			"short": "Eight brushes for base, cheeks and eyes, in a roll-up case.",
+			"description": [
+				[
+					"p",
+					"Every brush you need for a full face, in a case that rolls up for travel."
+				]
+			],
+			"stock": 12,
+			"days": 180,
+			"sku": "DM-127"
+		},
+		{
+			"slug": "muslin-face-cloths",
+			"name": "Muslin face cloths, 3 pack",
+			"category": [
+				"tools"
+			],
+			"image": "images/muslin-face-cloths.jpg",
+			"gallery": [],
+			"sales": 90,
+			"regular": "10",
+			"featured": false,
+			"short": "Soft muslin cloths for taking off balm cleansers.",
+			"description": [
+				[
+					"p",
+					"Wet one with warm water and use it to lift off balm or mask. Wash with your towels."
+				]
+			],
+			"stock": 60,
+			"days": 190,
+			"sku": "DM-128"
+		},
+		{
+			"slug": "reusable-cotton-rounds",
+			"name": "Reusable cotton rounds, 10 pack",
+			"category": [
+				"tools"
+			],
+			"image": "images/reusable-cotton-rounds.jpg",
+			"gallery": [],
+			"sales": 70,
+			"regular": "12",
+			"featured": false,
+			"short": "Washable rounds for toner and tonic, in a mesh wash bag.",
+			"description": [
+				[
+					"p",
+					"Use one for toner or tonic, then wash them all together in the bag they come in."
+				]
+			],
+			"stock": 50,
+			"days": 200,
+			"sku": "DM-129"
+		},
+		{
+			"slug": "shea-body-butter",
+			"name": "Shea body butter",
+			"category": [
+				"body"
+			],
+			"image": "images/shea-body-butter.jpg",
+			"gallery": [],
+			"sales": 95,
+			"regular": "22",
+			"featured": false,
+			"short": "A rich body butter for dry skin, for after the bath.",
+			"description": [
+				[
+					"p",
+					"Shea butter and squalane for elbows, knees and legs that feel dry."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Smooth over damp skin after a bath or shower."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Shea butter, squalane and glycerin. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Normal",
+					"Sensitive"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Shea butter",
+				"Size": "200 ml",
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 26,
+			"days": 210,
+			"sku": "DM-130"
+		},
+		{
+			"slug": "dry-body-oil",
+			"name": "Dry body oil",
+			"category": [
+				"body"
+			],
+			"image": "images/lilac-body-oil.jpg",
+			"gallery": [],
+			"sales": 60,
+			"regular": "24",
+			"featured": false,
+			"short": "A light oil that sinks in fast, for arms, legs and hair ends.",
+			"description": [
+				[
+					"p",
+					"A dry-touch oil for bare legs in summer, or a drop on the ends of your hair."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Smooth over damp skin after a shower."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Squalane and plant oils. No fragrance, no essential oils."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Squalane",
+				"Size": "100 ml",
+				"Texture": "Oil"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 22,
+			"days": 220,
+			"sku": "DM-131"
+		},
+		{
+			"slug": "sugar-body-scrub",
+			"name": "Sugar body scrub",
+			"category": [
+				"body"
+			],
+			"image": "images/sugar-body-scrub.jpg",
+			"gallery": [],
+			"sales": 50,
+			"regular": "18",
+			"featured": false,
+			"short": "A soft sugar scrub that melts as you use it.",
+			"description": [
+				[
+					"p",
+					"Smooths dry patches once or twice a week, then rinses clean."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Massage over damp skin in the shower, then rinse."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Sugar, plant oils and glycerin. No fragrance."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Normal",
+					"Oily",
+					"Combination"
+				],
+				"Key ingredient": "Sugar",
+				"Size": "250 g",
+				"Texture": "Balm"
+			},
+			"stock": 24,
+			"days": 230,
+			"sku": "DM-132"
+		},
+		{
+			"slug": "hand-balm",
+			"name": "Hand balm",
+			"category": [
+				"body"
+			],
+			"image": "images/hand-balm.jpg",
+			"gallery": [],
+			"sales": 180,
+			"regular": "10",
+			"featured": false,
+			"short": "A small tin of rich balm for dry hands and cuticles.",
+			"description": [
+				[
+					"p",
+					"A tin small enough for a pocket, for hands that are always in water."
+				],
+				[
+					"h2",
+					"How to use it"
+				],
+				[
+					"ul",
+					[
+						"Rub a little into hands and cuticles as often as you like."
+					]
+				],
+				[
+					"h2",
+					"What’s inside"
+				],
+				[
+					"p",
+					"Shea butter, beeswax-free plant waxes and squalane. No fragrance."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Oily",
+					"Combination",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Shea butter",
+				"Size": "30 g",
+				"Texture": "Balm"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 70,
+			"days": 240,
+			"sku": "DM-133"
+		},
+		{
+			"slug": "mineral-bath-soak",
+			"name": "Mineral bath soak",
+			"category": [
+				"body"
+			],
+			"image": "images/bath-soak.jpg",
+			"gallery": [],
+			"sales": 40,
+			"regular": "16",
+			"featured": false,
+			"short": "Mineral salts for a long, warm bath.",
+			"description": [
+				[
+					"p",
+					"A handful in a warm bath. No fragrance: just salts, to soak in for twenty minutes."
+				]
+			],
+			"specs": {
+				"Key ingredient": "Magnesium salts",
+				"Size": "500 g"
+			},
+			"stock": 30,
+			"days": 250,
+			"sku": "DM-134"
+		},
+		{
+			"slug": "dry-body-brush",
+			"name": "Dry body brush",
+			"category": [
+				"body"
+			],
+			"image": "images/dry-body-brush.jpg",
+			"gallery": [],
+			"sales": 30,
+			"regular": "14",
+			"featured": false,
+			"short": "A firm natural-bristle brush for dry brushing before a shower.",
+			"description": [
+				[
+					"p",
+					"Brush in long strokes towards the heart before a shower. Rinse the bristles once a week."
+				]
+			],
+			"stock": 25,
+			"days": 260,
+			"sku": "DM-135"
+		},
+		{
+			"slug": "night-shift-set",
+			"name": "The night shift set",
+			"category": [
+				"sets-gifts"
+			],
+			"image": "images/night-shift-set.jpg",
+			"gallery": [],
+			"sales": 75,
+			"regular": "85",
+			"featured": false,
+			"short": "Retinal serum, sleep mask and eye cream for the three steps before bed. Save 20%.",
+			"description": [
+				[
+					"p",
+					"Our three night products, together for 20% less: Gentle retinal serum (15 ml), Overnight sleep mask and Bright eye cream."
+				],
+				[
+					"ul",
+					[
+						"Gentle retinal serum, 15 ml",
+						"Overnight sleep mask, 75 ml",
+						"Bright eye cream, 15 ml"
+					]
+				]
+			],
+			"sale": "68",
+			"stock": 15,
+			"days": 8,
+			"sku": "DM-136"
+		},
+		{
+			"slug": "morning-glow-set",
+			"name": "Morning glow set",
+			"category": [
+				"sets-gifts"
+			],
+			"image": "images/morning-glow-set.jpg",
+			"gallery": [],
+			"sales": 50,
+			"regular": "64",
+			"featured": false,
+			"short": "Oat milk cleanser, Bright C serum and Mineral SPF 50 for a bright start. Save 15%.",
+			"description": [
+				[
+					"p",
+					"Three morning steps, together for 15% less."
+				],
+				[
+					"ul",
+					[
+						"Oat milk cleanser, 150 ml",
+						"Bright C serum, 30 ml",
+						"Mineral SPF 50, 50 ml"
+					]
+				]
+			],
+			"sale": "54",
+			"stock": 12,
+			"days": 18,
+			"sku": "DM-137"
+		},
+		{
+			"slug": "dew-drop-serum-refill",
+			"name": "Dew Drop serum refill, 30 ml",
+			"category": [
+				"refills"
+			],
+			"image": "images/dew-drop-serum.jpg",
+			"gallery": [],
+			"sales": 110,
+			"regular": "24",
+			"featured": false,
+			"short": "A refill pouch of Dew Drop niacinamide serum to pour into your bottle. 20% less than a new bottle.",
+			"description": [
+				[
+					"p",
+					"Pour into your clean 30 ml Dew Drop bottle. The pouch goes in your home compost."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Oily",
+					"Combination",
+					"Normal"
+				],
+				"Concern": [
+					"Shine",
+					"Redness"
+				],
+				"Key ingredient": "5% niacinamide",
+				"Size": "30 ml",
+				"Texture": "Gel"
+			},
+			"tags": [
+				"Shine",
+				"Redness"
+			],
+			"stock": 40,
+			"days": 30,
+			"meta": {
+				"_themor_badge": "Refill pouch",
+				"_themor_badge_color": "#E3F4E8"
+			},
+			"sku": "DM-138"
+		},
+		{
+			"slug": "ceramide-cream-refill",
+			"name": "Ceramide barrier cream refill, 50 ml",
+			"category": [
+				"refills"
+			],
+			"image": "images/ceramide-barrier-cream.jpg",
+			"gallery": [],
+			"sales": 80,
+			"regular": "20.80",
+			"featured": false,
+			"short": "A refill pouch of Ceramide barrier cream for your jar. 20% less than a new jar.",
+			"description": [
+				[
+					"p",
+					"Squeeze into your clean 50 ml jar. The pouch goes in your home compost."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Ceramides",
+				"Size": "50 ml",
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 30,
+			"days": 30,
+			"meta": {
+				"_themor_badge": "Refill pouch",
+				"_themor_badge_color": "#E3F4E8"
+			},
+			"sku": "DM-139"
+		},
+		{
+			"slug": "oat-milk-cleanser-refill",
+			"name": "Oat milk cleanser refill, 150 ml",
+			"category": [
+				"refills"
+			],
+			"image": "images/oat-milk-cleanser.jpg",
+			"gallery": [],
+			"sales": 95,
+			"regular": "12.80",
+			"featured": false,
+			"short": "A refill pouch of Oat milk cleanser for your bottle. 20% less than a new bottle.",
+			"description": [
+				[
+					"p",
+					"Pour into your clean 150 ml bottle. The pouch goes in your home compost."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Sensitive",
+					"Normal"
+				],
+				"Concern": [
+					"Dryness"
+				],
+				"Key ingredient": "Oat",
+				"Size": "150 ml",
+				"Texture": "Cream"
+			},
+			"tags": [
+				"Dryness"
+			],
+			"stock": 36,
+			"days": 30,
+			"meta": {
+				"_themor_badge": "Refill pouch",
+				"_themor_badge_color": "#E3F4E8"
+			},
+			"sku": "DM-140"
+		},
+		{
+			"slug": "oat-milk-cleanser-travel",
+			"name": "Oat milk cleanser, travel size",
+			"category": [
+				"cleansers"
+			],
+			"image": "images/oat-milk-cleanser.jpg",
+			"gallery": [],
+			"sales": 0,
+			"regular": "6",
+			"featured": false,
+			"short": "A 30 ml travel size of our oat milk cleanser, free with orders over $60.",
+			"description": [
+				[
+					"p",
+					"Our best-selling cleanser in a size for a wash bag. Free with orders over $60 while stocks last."
+				]
+			],
+			"specs": {
+				"Skin type": [
+					"Dry",
+					"Sensitive",
+					"Normal"
+				],
+				"Key ingredient": "Oat",
+				"Size": "30 ml",
+				"Texture": "Cream"
+			},
+			"stock": 200,
+			"days": 30,
+			"visibility": "hidden",
+			"sku": "DM-141"
+		}
+	],
+	"reviews": {
+		"dew-drop-serum": [
+			[
+				"Jordan P.",
+				5,
+				"Two drops every morning under SPF. My T-zone used to be shiny by eleven; now it lasts the day."
+			],
+			[
+				"Mei L.",
+				5,
+				"The redness round my nose has faded a lot in a month. No stinging at all, which is rare for me."
+			],
+			[
+				"Sam K.",
+				4,
+				"Works well and the 50 ml lasts ages. It feels slightly tacky for a minute before it sinks in."
+			]
+		],
+		"oat-milk-cleanser": [
+			[
+				"Hana R.",
+				5,
+				"The first cleanser that hasn’t made my cheeks go red. I’m on my third bottle."
+			],
+			[
+				"Priya N.",
+				5,
+				"Takes off sunscreen properly and my skin still feels soft after."
+			]
+		],
+		"ceramide-barrier-cream": [
+			[
+				"Amara O.",
+				4,
+				"Thick enough for winter, never greasy. The big jar lasted me three months."
+			],
+			[
+				"Lena V.",
+				5,
+				"My skin stopped flaking within a week. I use it morning and night."
+			]
+		],
+		"mineral-spf-50": [
+			[
+				"Tom B.",
+				5,
+				"Finally a mineral sun cream that doesn’t leave me grey. It disappears in a minute."
+			],
+			[
+				"Kit F.",
+				4,
+				"Sheer and gentle. A tiny bit thick, so I warm it between my fingers first."
+			]
+		],
+		"hyaluronic-water-serum": [
+			[
+				"Ola T.",
+				5,
+				"On damp skin it makes everything after it sink in better."
+			]
+		],
+		"bright-c-serum": [
+			[
+				"Ruth A.",
+				5,
+				"My dark marks from spots are fading and it doesn’t sting."
+			]
+		],
+		"clear-gel-cleanser": [
+			[
+				"Ned G.",
+				4,
+				"Clean without that tight feeling. Lasts a long time."
+			]
+		],
+		"dew-skin-tint": [
+			[
+				"Ivy S.",
+				5,
+				"Sand is perfect for me. It looks like skin, just calmer."
+			],
+			[
+				"Jo P.",
+				4,
+				"Lovely and sheer. I needed the shade guide to pick."
+			]
+		],
+		"cream-blush": [
+			[
+				"Elle M.",
+				5,
+				"Petal on cheeks and lips: my whole makeup in one pot."
+			]
+		],
+		"gentle-retinal-serum": [
+			[
+				"Dev S.",
+				4,
+				"Started twice a week as the post said. No peeling, and my skin is smoother."
+			]
+		]
+	},
+	"coupons": [
+		{
+			"code": "WELCOME15",
+			"type": "percent",
+			"amount": "15",
+			"description": "15% off a first order over $30, for joining the list.",
+			"individual_use": true,
+			"usage_limit_per_user": 1,
+			"minimum_amount": "30"
+		},
+		{
+			"code": "GLOW20",
+			"type": "percent",
+			"amount": "20",
+			"description": "The glow sale: 20% off every serum.",
+			"categories": [
+				"serums"
+			]
+		}
+	]
+}

@@ -1,0 +1,265 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Dewmore menu",
+			"slug": "dewmore-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Skincare",
+					"product_cat": "skincare",
+					"meta": {
+						"_themor_mega_menu": {
+							"mega": true,
+							"columns": 3,
+							"width": "custom",
+							"custom_width": {
+								"size": 720,
+								"unit": "px"
+							}
+						}
+					},
+					"children": [
+						{
+							"label": "By product",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Cleansers",
+									"product_cat": "cleansers"
+								},
+								{
+									"label": "Toners and essences",
+									"product_cat": "toners-essences"
+								},
+								{
+									"label": "Serums",
+									"product_cat": "serums"
+								},
+								{
+									"label": "Moisturisers",
+									"product_cat": "moisturisers"
+								},
+								{
+									"label": "Eye care",
+									"product_cat": "eye-care"
+								},
+								{
+									"label": "Masks",
+									"product_cat": "masks"
+								},
+								{
+									"label": "Sun care",
+									"product_cat": "sun-care"
+								}
+							]
+						},
+						{
+							"label": "By concern",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Dryness",
+									"product_tag": "dryness"
+								},
+								{
+									"label": "Breakouts",
+									"product_tag": "breakouts"
+								},
+								{
+									"label": "Dullness",
+									"product_tag": "dullness"
+								},
+								{
+									"label": "Redness",
+									"product_tag": "redness"
+								},
+								{
+									"label": "Fine lines",
+									"product_tag": "fine-lines"
+								},
+								{
+									"label": "Shine",
+									"product_tag": "shine"
+								}
+							]
+						},
+						{
+							"label": "By skin type",
+							"url": "#",
+							"meta": {
+								"_themor_mega_menu": {
+									"label": "heading",
+									"link": false
+								}
+							},
+							"children": [
+								{
+									"label": "Dry skin",
+									"product_cat": "skincare",
+									"filter": {
+										"skin-type": "dry"
+									}
+								},
+								{
+									"label": "Oily skin",
+									"product_cat": "skincare",
+									"filter": {
+										"skin-type": "oily"
+									}
+								},
+								{
+									"label": "Combination skin",
+									"product_cat": "skincare",
+									"filter": {
+										"skin-type": "combination"
+									}
+								},
+								{
+									"label": "Sensitive skin",
+									"product_cat": "skincare",
+									"filter": {
+										"skin-type": "sensitive"
+									}
+								},
+								{
+									"label": "Normal skin",
+									"product_cat": "skincare",
+									"filter": {
+										"skin-type": "normal"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Makeup",
+					"product_cat": "makeup",
+					"children": [
+						{
+							"label": "Base",
+							"product_cat": "base"
+						},
+						{
+							"label": "Cheeks",
+							"product_cat": "cheeks"
+						},
+						{
+							"label": "Lips",
+							"product_cat": "lips"
+						},
+						{
+							"label": "Eyes",
+							"product_cat": "eyes"
+						},
+						{
+							"label": "Tools",
+							"product_cat": "tools"
+						}
+					]
+				},
+				{
+					"label": "Body",
+					"product_cat": "body"
+				},
+				{
+					"label": "Sets and gifts",
+					"product_cat": "sets-gifts"
+				},
+				{
+					"label": "Shop by concern",
+					"url": "#",
+					"children": [
+						{
+							"label": "Dryness",
+							"product_tag": "dryness"
+						},
+						{
+							"label": "Breakouts",
+							"product_tag": "breakouts"
+						},
+						{
+							"label": "Dullness",
+							"product_tag": "dullness"
+						},
+						{
+							"label": "Redness",
+							"product_tag": "redness"
+						},
+						{
+							"label": "Fine lines",
+							"product_tag": "fine-lines"
+						},
+						{
+							"label": "Shine",
+							"product_tag": "shine"
+						}
+					]
+				},
+				{
+					"label": "Refills",
+					"product_cat": "refills"
+				},
+				{
+					"label": "Journal",
+					"page": "journal"
+				}
+			]
+		},
+		{
+			"title": "Dewmore top links",
+			"slug": "dewmore-top-links",
+			"location": "secondary",
+			"items": [
+				{
+					"label": "Track your order",
+					"woocommerce": "myaccount"
+				},
+				{
+					"label": "Skin guide",
+					"page": "skin-types"
+				},
+				{
+					"label": "Help",
+					"page": "help"
+				}
+			]
+		},
+		{
+			"title": "Dewmore legal",
+			"slug": "dewmore-legal",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Privacy",
+					"page": "privacy"
+				},
+				{
+					"label": "Terms",
+					"page": "terms"
+				},
+				{
+					"label": "Help",
+					"page": "help"
+				}
+			]
+		}
+	]
+}

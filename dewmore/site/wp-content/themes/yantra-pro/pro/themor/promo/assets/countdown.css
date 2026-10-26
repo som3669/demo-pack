@@ -1,0 +1,95 @@
+/**
+ * Countdown: a chip with a clock, the label and the time left ("Ends in 08:14:22"), or a one-off's
+ * words once it has ended; the Plain style (`is-style-plain`) is the words alone. A theme
+ * restyles it with custom properties:
+ * --themor-countdown-bg and --themor-countdown-color (the chip's background and words),
+ * --themor-countdown-icon (the clock), --themor-countdown-radius (the chip's corners),
+ * --themor-countdown-weight and --themor-countdown-size (the words' weight and size),
+ * --themor-countdown-padding, --themor-countdown-gap (between the clock, label and time),
+ * --themor-countdown-icon-size, and --themor-countdown-plain-color (the words in the Plain style).
+ */
+
+/* The block is a row the chip sits in, whatever a theme's alignment classes say (some float or
+   turn .aligncenter into a block of its own). Left and right are the start and end of the line. */
+.wp-block-themor-countdown,
+.wp-block-themor-countdown.alignleft,
+.wp-block-themor-countdown.aligncenter,
+.wp-block-themor-countdown.alignright {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	float: none;
+}
+
+/* Not floated by a layout's rules either (a block theme's content, the editor). */
+:is(.is-layout-flow, .is-layout-constrained) > .wp-block-themor-countdown:is(.alignleft, .alignright) {
+	float: none;
+}
+
+/* Where blocks keep to the content's width (a constrained layout, the editor's page), left and
+   right keep to it too, as the block's other alignments do. */
+:is(.is-layout-constrained, .block-editor-block-list__layout.is-root-container) > .wp-block-themor-countdown:is(.alignleft, .alignright) {
+	max-inline-size: var(--wp--style--global--content-size, 100%);
+	margin-inline: auto;
+}
+
+.wp-block-themor-countdown.aligncenter {
+	justify-content: center;
+}
+
+.wp-block-themor-countdown.alignright {
+	justify-content: flex-end;
+}
+
+/* A one-off set to hide once it ends. */
+.wp-block-themor-countdown[hidden] {
+	display: none;
+}
+
+.themor-countdown {
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--themor-countdown-gap, 0.4em);
+	max-inline-size: 100%;
+	padding: var(--themor-countdown-padding, 0.35em 0.85em);
+	border-radius: var(--themor-countdown-radius, 999px);
+	background: var(--themor-countdown-bg, #1e1e1e);
+	color: var(--themor-countdown-color, #fff);
+	font-size: var(--themor-countdown-size, 0.875em);
+	font-weight: var(--themor-countdown-weight, 600);
+	line-height: 1.3;
+}
+
+.themor-countdown__icon {
+	flex: none;
+	inline-size: var(--themor-countdown-icon-size, 1.15em);
+	block-size: var(--themor-countdown-icon-size, 1.15em);
+	color: var(--themor-countdown-icon, currentColor);
+}
+
+/* The digits keep their width as they tick. */
+.themor-countdown__time {
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.wp-block-themor-countdown.is-style-plain .themor-countdown {
+	padding: 0;
+	border-radius: 0;
+	background: none;
+	color: var(--themor-countdown-plain-color, inherit);
+}
+
+/* The time left in words, for screen readers only. */
+.themor-countdown__spoken {
+	position: absolute;
+	inline-size: 1px;
+	block-size: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}

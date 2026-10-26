@@ -1,0 +1,164 @@
+/**
+ * Copy code: the code in a box that selects whole, the button beside it (shown by the script),
+ * and a line under them. A theme restyles it with custom properties: the code's box
+ * (--themor-copy-code-bg, -color, -border, -radius, -padding, -size, -weight, -spacing, -font),
+ * the height the box and the button share (--themor-copy-code-height), the space between them
+ * (--themor-copy-code-gap), the button (--themor-copy-code-button-bg, -color, -border, -radius,
+ * and -hover-bg, -hover-color, -hover-border) and the line under them (--themor-copy-code-note-color,
+ * -note-size).
+ */
+
+/* The block is a box of its own, whatever a theme's alignment classes say (some float); left and
+   right are the start and end of the line. */
+.wp-block-themor-copy-code.alignleft,
+.wp-block-themor-copy-code.aligncenter,
+.wp-block-themor-copy-code.alignright {
+	float: none;
+}
+
+/* Not floated by a layout's rules either (a block theme's content, the editor). */
+:is(.is-layout-flow, .is-layout-constrained) > .wp-block-themor-copy-code:is(.alignleft, .alignright) {
+	float: none;
+}
+
+/* Where blocks keep to the content's width (a constrained layout, the editor's page), left and
+   right keep to it too, as the block's other alignments do. */
+:is(.is-layout-constrained, .block-editor-block-list__layout.is-root-container) > .wp-block-themor-copy-code:is(.alignleft, .alignright) {
+	max-inline-size: var(--wp--style--global--content-size, 100%);
+	margin-inline: auto;
+}
+
+.themor-copy-code {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	gap: var(--themor-copy-code-gap, 8px);
+}
+
+.wp-block-themor-copy-code.aligncenter .themor-copy-code {
+	justify-content: center;
+}
+
+.wp-block-themor-copy-code.alignright .themor-copy-code {
+	justify-content: flex-end;
+}
+
+.wp-block-themor-copy-code.aligncenter :is(.themor-copy-code__note, .themor-copy-code__status) {
+	text-align: center;
+}
+
+.wp-block-themor-copy-code.alignright :is(.themor-copy-code__note, .themor-copy-code__status) {
+	text-align: end;
+}
+
+/* The code: in the page's type, unless the theme asks for another (a theme's `code` look is set
+   aside); a click selects all of it. */
+.themor-copy-code .themor-copy-code__code {
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	min-block-size: var(--themor-copy-code-height, 44px);
+	max-inline-size: 100%;
+	margin: 0;
+	padding: var(--themor-copy-code-padding, 0.4em 1em);
+	border: var(--themor-copy-code-border, 1px dashed currentColor);
+	border-radius: var(--themor-copy-code-radius, 4px);
+	background: var(--themor-copy-code-bg, color-mix(in srgb, currentColor 6%, transparent));
+	color: var(--themor-copy-code-color, inherit);
+	font-family: var(--themor-copy-code-font, inherit);
+	font-size: var(--themor-copy-code-size, 1.125em);
+	font-weight: var(--themor-copy-code-weight, 700);
+	letter-spacing: var(--themor-copy-code-spacing, 0.08em);
+	line-height: 1.2;
+	overflow-wrap: anywhere;
+	-webkit-user-select: all;
+	user-select: all;
+}
+
+/* The button is a wp-element-button: the theme's button type, size and padding win over these. */
+:where(.themor-copy-code__button) {
+	box-sizing: border-box;
+	min-block-size: var(--themor-copy-code-height, 44px);
+	margin: 0;
+	padding: 0.4em 1em;
+	font: inherit;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Its colors, border and corners: an outline in the words' color unless the theme sets them. */
+.themor-copy-code .themor-copy-code__button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	border: var(--themor-copy-code-button-border, 1px solid currentColor);
+	border-radius: var(--themor-copy-code-button-radius, var(--themor-copy-code-radius, 4px));
+	background: var(--themor-copy-code-button-bg, transparent);
+	color: var(--themor-copy-code-button-color, inherit);
+	box-shadow: none;
+}
+
+.themor-copy-code .themor-copy-code__button:is(:hover, :focus-visible) {
+	border: var(--themor-copy-code-button-hover-border, var(--themor-copy-code-button-border, 1px solid currentColor));
+	background: var(--themor-copy-code-button-hover-bg, color-mix(in srgb, currentColor 10%, transparent));
+	color: var(--themor-copy-code-button-hover-color, var(--themor-copy-code-button-color, inherit));
+}
+
+.themor-copy-code .themor-copy-code__button:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+/* Hidden until the script shows it, whatever the theme's buttons' display. */
+.themor-copy-code .themor-copy-code__button[hidden] {
+	display: none;
+}
+
+.themor-copy-code__icon {
+	flex: none;
+	inline-size: 1.1em;
+	block-size: 1.1em;
+}
+
+.themor-copy-code__icon--done,
+.themor-copy-code__button.is-copied .themor-copy-code__icon--copy {
+	display: none;
+}
+
+.themor-copy-code__button.is-copied .themor-copy-code__icon--done {
+	display: block;
+}
+
+.themor-copy-code__note,
+.themor-copy-code__status.is-shown {
+	margin-block: 8px 0;
+	margin-inline: 0;
+	color: var(--themor-copy-code-note-color, inherit);
+	font-size: var(--themor-copy-code-note-size, 0.875em);
+}
+
+/* The live region: for screen readers only, but for how to copy by hand, which shows too. */
+.themor-copy-code__status:not(.is-shown) {
+	position: absolute;
+	inline-size: 1px;
+	block-size: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.themor-copy-code .themor-copy-code__button {
+		transition: none;
+	}
+
+	.themor-copy-code .themor-copy-code__button:active {
+		transform: none;
+	}
+}

@@ -1,0 +1,792 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"routines": {
+			"name": "Routines",
+			"description": "What goes where, and in which order."
+		},
+		"ingredients": {
+			"name": "Ingredients",
+			"description": "What’s in our bottles, and what it does."
+		},
+		"sun-care-guides": {
+			"name": "Sun care",
+			"description": "How much, how often, and which kind."
+		},
+		"makeup-guides": {
+			"name": "Makeup",
+			"description": "Shades, tints and how to wear them."
+		},
+		"dewmore-news": {
+			"name": "Dewmore",
+			"description": "How we make things, and why."
+		}
+	},
+	"taxonomies": {
+		"themor_series": {
+			"routine-basics": {
+				"name": "Routine basics",
+				"description": "From cleansing to sun cream, one step at a time."
+			}
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "skin"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "sale"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "offers"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "best-sellers"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "concerns"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "makeup"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "routine-teaser"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "why"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "refills"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "reviews"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "journal"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "join"
+					}
+				]
+			]
+		},
+		"routine": {
+			"title": "Build your routine",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "routine-page"
+					}
+				]
+			]
+		},
+		"journal": {
+			"title": "Journal",
+			"content": []
+		},
+		"compare": {
+			"title": "Compare",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "compare-page"
+					}
+				]
+			]
+		},
+		"wishlist": {
+			"title": "Wishlist",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "wishlist-page"
+					}
+				]
+			]
+		},
+		"help": {
+			"title": "Help and delivery",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "help-page"
+					}
+				]
+			]
+		},
+		"skin-types": {
+			"title": "Find your skin type",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "skin-types-page"
+					}
+				]
+			]
+		},
+		"shade-guide": {
+			"title": "Shade guide",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "shade-guide"
+					}
+				]
+			]
+		},
+		"about": {
+			"title": "About us",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "about-page"
+					}
+				]
+			]
+		},
+		"privacy": {
+			"title": "Privacy",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "privacy-page"
+					}
+				]
+			]
+		},
+		"terms": {
+			"title": "Terms",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "terms-page"
+					}
+				]
+			]
+		}
+	},
+	"posts": {
+		"cleansing-once-or-twice-a-day": {
+			"title": "Cleansing: once or twice a day?",
+			"category": "routines",
+			"image": "images/post-cleansing.jpg",
+			"days": 24,
+			"terms": {
+				"themor_series": [
+					"routine-basics"
+				]
+			},
+			"tags": [
+				"Cleansers",
+				"Routines"
+			],
+			"excerpt": "It depends on your skin, and on your sunscreen. Here’s how to tell.",
+			"content": [
+				[
+					"p",
+					"Washing your face twice a day suits most people, but not everyone. Dry and sensitive skin often does better with water alone in the morning and a proper cleanse at night."
+				],
+				[
+					"h2",
+					"Always at night"
+				],
+				[
+					"p",
+					"Sunscreen, makeup and the day’s oil need to come off before bed. If you wear SPF every day, cleanse every night, with a balm first if you wear makeup."
+				],
+				[
+					"h2",
+					"In the morning, it depends"
+				],
+				[
+					"ul",
+					[
+						"Oily or combination: a gentle gel cleanser.",
+						"Dry or sensitive: lukewarm water, or a cream cleanser if you used a mask overnight.",
+						"Normal: whichever feels better."
+					]
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-oat-milk-cleanser"
+					}
+				],
+				[
+					"h2",
+					"How to tell you’re overdoing it"
+				],
+				[
+					"p",
+					"Tight, squeaky skin after washing means your cleanser is too strong, or you’re washing too often. Your skin should feel comfortable straight after."
+				]
+			]
+		},
+		"how-to-layer-serums-without-pilling": {
+			"title": "How to layer serums without pilling",
+			"category": "routines",
+			"image": "images/post-serums.jpg",
+			"days": 17,
+			"sticky": true,
+			"terms": {
+				"themor_series": [
+					"routine-basics"
+				]
+			},
+			"tags": [
+				"Serums",
+				"Routines",
+				"Niacinamide"
+			],
+			"excerpt": "Thinnest first, a minute between each, and why two serums are nearly always enough.",
+			"content": [
+				[
+					"p",
+					"Pilling is the little rolls of product that form when you rub one layer over another before the first has settled. It isn’t the serum’s fault, and it doesn’t mean your skin is rejecting it. It almost always comes down to order, timing and amount."
+				],
+				[
+					"h2",
+					"Thinnest first"
+				],
+				[
+					"p",
+					"Go from the most watery texture to the thickest. A water serum such as hyaluronic acid goes on damp skin straight after cleansing, then a lighter treatment serum, then your moisturiser. Oils always go last: nothing water-based gets through them."
+				],
+				[
+					"ol",
+					[
+						"Water serum, on damp skin.",
+						"A treatment: niacinamide, vitamin C or retinal.",
+						"Moisturiser.",
+						"Oil at night, sun cream in the morning."
+					]
+				],
+				[
+					"h2",
+					"Give each one a minute"
+				],
+				[
+					"p",
+					"Press each layer in with flat hands instead of rubbing, then wait about a minute: long enough to brush your teeth. Your skin should feel barely tacky, not wet, before the next one goes on."
+				],
+				[
+					"h2",
+					"Two serums are usually enough"
+				],
+				[
+					"p",
+					"One for water and one for what bothers you most covers nearly everyone. If you want a third, use it at the other end of the day instead of stacking all three in one go."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-hyaluronic-water-serum"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-dew-drop-serum"
+					}
+				],
+				[
+					"h2",
+					"What not to mix"
+				],
+				[
+					"p",
+					"Keep retinal and acid tonics on different nights, and save vitamin C for the morning, under sun cream. Niacinamide and hyaluronic acid get on with everything."
+				]
+			]
+		},
+		"what-your-morning-and-night-routines-need": {
+			"title": "What your morning and night routines need",
+			"category": "routines",
+			"image": "images/post-routines.jpg",
+			"days": 10,
+			"terms": {
+				"themor_series": [
+					"routine-basics"
+				]
+			},
+			"tags": [
+				"Routines"
+			],
+			"excerpt": "Mornings protect, nights repair: which steps belong where, and which to skip.",
+			"content": [
+				[
+					"p",
+					"A routine doesn’t need ten steps. It needs the right three or four, in the right order, at the right time of day."
+				],
+				[
+					"h2",
+					"Mornings protect"
+				],
+				[
+					"ul",
+					[
+						"A gentle cleanse, or just water.",
+						"A serum for what bothers you most: vitamin C suits mornings.",
+						"A light moisturiser.",
+						"Sun cream, every day."
+					]
+				],
+				[
+					"h2",
+					"Nights repair"
+				],
+				[
+					"ul",
+					[
+						"Take off sun cream and makeup with a balm, then cleanse.",
+						"Retinal or an acid tonic, on separate nights.",
+						"A richer moisturiser.",
+						"A sleep mask or oil, two or three nights a week."
+					]
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-gentle-retinal-serum"
+					}
+				],
+				[
+					"h2",
+					"Build yours"
+				],
+				[
+					"p",
+					"Our routine builder lets you pick one product for each step, morning or night, and takes 15% off all four."
+				]
+			]
+		},
+		"how-much-sunscreen-is-enough": {
+			"title": "How much sunscreen is enough?",
+			"category": "sun-care-guides",
+			"image": "images/post-sunscreen.jpg",
+			"days": 3,
+			"terms": {
+				"themor_series": [
+					"routine-basics"
+				]
+			},
+			"tags": [
+				"Sun care"
+			],
+			"excerpt": "Two finger lengths for face and neck, and when to put more on.",
+			"content": [
+				[
+					"p",
+					"Most of us use about half the sun cream we need, which halves the protection on the label."
+				],
+				[
+					"h2",
+					"Two finger lengths"
+				],
+				[
+					"p",
+					"Squeeze a line along your index and middle fingers: that’s enough for your face and neck."
+				],
+				[
+					"h2",
+					"When to put more on"
+				],
+				[
+					"ul",
+					[
+						"Every two hours in the sun.",
+						"After swimming or sweating.",
+						"At lunchtime on long days outside."
+					]
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-mineral-spf-50"
+					}
+				],
+				[
+					"h2",
+					"Mineral or not?"
+				],
+				[
+					"p",
+					"Mineral sun creams use zinc oxide and suit sensitive skin. Ours is sheer, so it leaves no white cast."
+				]
+			]
+		},
+		"retinal-retinol-and-how-to-start-slowly": {
+			"title": "Retinal, retinol and how to start slowly",
+			"category": "ingredients",
+			"image": "images/post-retinal.jpg",
+			"days": 31,
+			"tags": [
+				"Retinal",
+				"Fine lines"
+			],
+			"excerpt": "What sets retinal apart, and how often to use it in the first month.",
+			"content": [
+				[
+					"p",
+					"Retinal is one step closer to what skin actually uses than retinol, so it works faster at a lower strength."
+				],
+				[
+					"h2",
+					"Start with two nights a week"
+				],
+				[
+					"p",
+					"Use a pea-size amount on dry skin after cleansing, two nights a week for the first month, then every other night."
+				],
+				[
+					"h2",
+					"What to leave out meanwhile"
+				],
+				[
+					"ul",
+					[
+						"Acid tonics, on the same night.",
+						"Scrubs and clay masks.",
+						"Nothing in the morning but sun cream."
+					]
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-gentle-retinal-serum"
+					}
+				]
+			]
+		},
+		"niacinamide-what-5-percent-actually-does": {
+			"title": "Niacinamide: what 5% actually does",
+			"category": "ingredients",
+			"image": "images/post-niacinamide.jpg",
+			"days": 38,
+			"tags": [
+				"Niacinamide",
+				"Serums"
+			],
+			"excerpt": "Why more isn’t better, and the skin it suits.",
+			"content": [
+				[
+					"p",
+					"Niacinamide is vitamin B3. At 5% it evens out redness and dark marks and keeps shine down, without the irritation some people get from 10% or more."
+				],
+				[
+					"h2",
+					"Who it suits"
+				],
+				[
+					"p",
+					"Oily, combination and normal skin get the most from it. Dry skin likes it too, under a rich cream."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-dew-drop-serum"
+					}
+				],
+				[
+					"h2",
+					"How long it takes"
+				],
+				[
+					"p",
+					"About four weeks for shine, and two to three months for dark marks."
+				]
+			]
+		},
+		"finding-your-shade-online": {
+			"title": "Finding your shade online",
+			"category": "makeup-guides",
+			"image": "images/post-shade.jpg",
+			"days": 45,
+			"tags": [
+				"Makeup",
+				"Shades"
+			],
+			"excerpt": "Depth, undertone, and the jawline test you can do at home.",
+			"content": [
+				[
+					"p",
+					"Choosing a base without trying it on is easier than it sounds: you need your depth, your undertone and good daylight."
+				],
+				[
+					"h2",
+					"Your depth"
+				],
+				[
+					"p",
+					"Fair, light, medium, tan or deep. Our shade guide groups the twelve shades by depth."
+				],
+				[
+					"h2",
+					"Your undertone"
+				],
+				[
+					"p",
+					"Look at the veins on your wrist in daylight: blue means cool, green means warm, both means neutral."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-dew-skin-tint"
+					}
+				]
+			]
+		},
+		"why-we-use-glass-and-how-refills-work": {
+			"title": "Why we use glass, and how refills work",
+			"category": "dewmore-news",
+			"image": "images/post-glass.jpg",
+			"days": 52,
+			"tags": [
+				"Refills"
+			],
+			"excerpt": "Our bottles are made to keep. Here is where the pouches go after you pour them.",
+			"content": [
+				[
+					"p",
+					"Glass keeps serums stable and can be used again and again. So we make bottles to keep, and refills to pour into them."
+				],
+				[
+					"h2",
+					"How refills work"
+				],
+				[
+					"ol",
+					[
+						"Rinse your empty bottle and let it dry.",
+						"Snip the pouch and pour.",
+						"Put the pouch in your home compost."
+					]
+				],
+				[
+					"p",
+					"Refill pouches cost 20% less than a new bottle."
+				]
+			]
+		},
+		"the-winter-routine-guide": {
+			"title": "The winter routine guide",
+			"category": "routines",
+			"image": "images/post-winter.jpg",
+			"days": 1,
+			"tags": [
+				"Routines",
+				"Dryness"
+			],
+			"excerpt": "Our full plan for cold months, step by step, for members.",
+			"meta": {
+				"_themor_page_restrict": "in"
+			},
+			"content": [
+				[
+					"p",
+					"Cold air outside and dry heat inside: winter takes water out of skin from both sides. Here’s our full plan, step by step."
+				],
+				[
+					"h2",
+					"Swap your cleanser"
+				],
+				[
+					"p",
+					"Move from a gel to a cream or balm cleanser, and use water alone in the morning."
+				],
+				[
+					"h2",
+					"Add a layer of water"
+				],
+				[
+					"p",
+					"A hyaluronic serum on damp skin, under a richer cream."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-ceramide-barrier-cream"
+					}
+				],
+				[
+					"h2",
+					"Seal it in"
+				],
+				[
+					"p",
+					"Two drops of squalane over your cream at night, and a sleep mask twice a week."
+				]
+			]
+		},
+		"cream-blush-on-dry-skin": {
+			"title": "Cream blush on dry skin",
+			"category": "makeup-guides",
+			"image": "images/post-blush.jpg",
+			"days": 60,
+			"tags": [
+				"Makeup"
+			],
+			"excerpt": "Tap, don’t rub, and set it with nothing.",
+			"content": [
+				[
+					"p",
+					"Cream blush suits dry skin better than powder: it melts in instead of catching on dry patches."
+				],
+				[
+					"h2",
+					"Tap, don’t rub"
+				],
+				[
+					"p",
+					"Tap a little onto the apples of your cheeks with your ring finger and blend upwards."
+				],
+				[
+					"pattern",
+					{
+						"slug": "offer-cream-blush"
+					}
+				]
+			]
+		}
+	},
+	"theme_posts": {
+		"themor_content_block": {
+			"dewmore-welcome-popup": {
+				"title": "Welcome popup",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "popup-welcome"
+						}
+					]
+				],
+				"meta": {
+					"_themor_content_block_type": "popup",
+					"_themor_content_block": {
+						"type": "popup",
+						"enabled": true,
+						"conditions": [
+							{
+								"type": "everywhere"
+							}
+						],
+						"devices": [
+							"desktop",
+							"tablet",
+							"mobile"
+						],
+						"popup_trigger": "time",
+						"popup_delay": 12,
+						"popup_again": "after",
+						"popup_again_days": 30,
+						"popup_again_done": 90,
+						"popup_close_action": "button",
+						"popup_close_selector": ".dewmore-popup-close",
+						"popup_size": "custom",
+						"popup_width": {
+							"size": 880,
+							"unit": "px"
+						},
+						"popup_position": "center",
+						"popup_animation": "zoom",
+						"popup_backdrop_color": "rgba(34, 26, 51, 0.42)",
+						"popup_radius": 32,
+						"popup_padding": {
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"unit": "px"
+						},
+						"popup_shadow_color": "rgba(34, 26, 51, 0.3)",
+						"popup_overflow": "hidden"
+					}
+				}
+			},
+			"dewmore-same-day": {
+				"title": "Same-day delivery check",
+				"content": [
+					[
+						"pattern",
+						{
+							"slug": "same-day"
+						}
+					]
+				],
+				"meta": {
+					"_themor_content_block_type": "hook",
+					"_themor_content_block": {
+						"type": "hook",
+						"enabled": true,
+						"location": "custom",
+						"custom_hook": "woocommerce_single_product_summary",
+						"priority": 39,
+						"conditions": [
+							{
+								"type": "post_type:product"
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

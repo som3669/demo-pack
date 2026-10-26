@@ -1,0 +1,56 @@
+{
+	"schema": 1,
+	"options": {
+		"yantra_pro_modules": [
+			"mega-menu",
+			"content-blocks",
+			"content-restriction"
+		],
+		"woocommerce_currency": "USD",
+		"woocommerce_currency_pos": "left",
+		"woocommerce_price_num_decimals": "2",
+		"woocommerce_manage_stock": "yes",
+		"woocommerce_enable_reviews": "yes",
+		"woocommerce_enable_review_rating": "yes"
+	},
+	"homepage": {
+		"front_page": "home",
+		"posts_page": "journal"
+	},
+	"demo_site": {
+		"options": {
+			"blogname": "Dewmore",
+			"blogdescription": "Calm, simple skincare for every skin type",
+			"woocommerce_coming_soon": "no",
+			"woocommerce_store_address": "1120 NW Couch Street",
+			"woocommerce_store_city": "Portland",
+			"woocommerce_store_postcode": "97209",
+			"woocommerce_default_country": "US:OR",
+			"woocommerce_review_rating_required": "yes"
+		},
+		"checkout": {
+			"payment_title": "Demo payment",
+			"payment_description": "This is a demo store: nothing is charged and no order is sent.",
+			"payment_instructions": "Thanks for trying the demo. Nothing was charged and nothing will be sent.",
+			"shipping": [
+				{
+					"method": "free_shipping",
+					"title": "Free standard delivery",
+					"requires": "either",
+					"min_amount": "40"
+				},
+				{
+					"method": "flat_rate",
+					"title": "Standard delivery",
+					"cost": "5"
+				},
+				{
+					"method": "flat_rate",
+					"title": "Next-day delivery",
+					"cost": "9"
+				}
+			]
+		},
+		"hide_sample_content": true
+	}
+}

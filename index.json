@@ -569,6 +569,79 @@
 			"shown_with": [
 				"yantra"
 			]
+		},
+		{
+			"id": "dewmore",
+			"theme": "yantra-pro",
+			"pro": true,
+			"title": "Dewmore skincare and cosmetics store",
+			"description": "A skincare and makeup store in lilac and white: pick your skin type once and every product says whether it suits you, on the home page, in the shop and on each product, with the choice kept in the header; a weekend serum sale with a countdown and a code to copy, best sellers in tabs, shop by concern, sheer makeup with its shades on each card, a routine builder that takes 15% off a product for each step, refills behind a price switch, reviews with the reviewer's skin type, a sign-up that shows its 15% code at once, and a free travel-size cleanser that joins the cart over $60; 41 products with sizes and twelve shades, a sold-out size back in eleven days, a mega menu by product, concern and skin type, compare, a wishlist, a ZIP check for same-day delivery, a welcome popup, a members-only article and a journal series. For Yantra Pro.",
+			"version": "1.0.0",
+			"path": "dewmore/pack.json",
+			"required_plugins": [
+				{
+					"slug": "woocommerce",
+					"name": "WooCommerce",
+					"file": "woocommerce/woocommerce.php",
+					"minimum_version": "9.0"
+				}
+			],
+			"requires": {
+				"wordpress": "6.5",
+				"woocommerce": "9.0"
+			},
+			"preview": "dewmore/preview.jpg",
+			"screens": [
+				{
+					"title": "Home",
+					"image": "dewmore/screens/home.jpg",
+					"page": "dewmore/site/index.html"
+				},
+				{
+					"title": "Serums",
+					"image": "dewmore/screens/shop.jpg",
+					"page": "dewmore/site/product-category/skincare/serums/index.html"
+				},
+				{
+					"title": "A serum",
+					"image": "dewmore/screens/product.jpg",
+					"page": "dewmore/site/product/dew-drop-serum/index.html"
+				},
+				{
+					"title": "Build your routine",
+					"image": "dewmore/screens/routine.jpg",
+					"page": "dewmore/site/routine/index.html"
+				},
+				{
+					"title": "Cart drawer",
+					"image": "dewmore/screens/drawer.jpg",
+					"page": "dewmore/site/product/oat-milk-cleanser/index.html"
+				},
+				{
+					"title": "Your skin type",
+					"image": "dewmore/screens/pick.jpg",
+					"page": "dewmore/site/index.html"
+				},
+				{
+					"title": "Compare",
+					"image": "dewmore/screens/compare.jpg",
+					"page": "dewmore/site/compare/index.html"
+				},
+				{
+					"title": "An article",
+					"image": "dewmore/screens/post.jpg",
+					"page": "dewmore/site/how-to-layer-serums-without-pilling/index.html"
+				}
+			],
+			"demo_url": "https://som3669.github.io/demo-pack/dewmore/site/index.html",
+			"categories": [
+				"Shop",
+				"Beauty"
+			],
+			"theme_name": "Yantra Pro",
+			"shown_with": [
+				"yantra"
+			]
 		}
 	]
 }

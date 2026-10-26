@@ -1,0 +1,2691 @@
+/*
+ * Themor's shop module: the cart drawer, the free shipping bar, quick view, the grid and list
+ * views, the filters drawer, "Load more", the sticky Add to cart bar, gallery layouts, the
+ * focused checkout, key specs on cards, the wishlist and compare. A theme restyles it through the
+ * custom properties below and those each part names.
+ */
+
+:root {
+	--themor-shop-bg: #fff;
+	--themor-shop-text: #1f2937;
+	--themor-shop-heading: #111827;
+	--themor-shop-muted: #6b7280;
+	--themor-shop-border: #e5e7eb;
+	--themor-shop-surface: #f8fafc;
+	--themor-shop-accent: #2563eb;
+	--themor-shop-on-accent: #fff;
+	--themor-shop-radius: 10px;
+	--themor-shop-shadow: 0 24px 60px -12px rgba(15, 23, 42, 0.28);
+	--themor-shop-drawer-width: min(420px, 92vw);
+	--themor-shop-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.themor-shop-icon {
+	display: block;
+	flex: none;
+}
+
+/* Drawers and windows: a modal <dialog> holding one panel. */
+html.themor-shop-locked {
+	overflow: hidden;
+}
+
+.themor-shop-dialog {
+	box-sizing: border-box;
+	max-width: none;
+	max-height: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: var(--themor-shop-text);
+}
+
+.themor-shop-dialog::backdrop {
+	background: rgba(15, 23, 42, 0.45);
+}
+
+.themor-shop-dialog__panel {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	height: 100%;
+	background: var(--themor-shop-bg);
+	box-shadow: var(--themor-shop-shadow);
+}
+
+.themor-shop-dialog__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1.1rem 1.25rem;
+	border-block-end: 1px solid var(--themor-shop-border);
+}
+
+.themor-shop-dialog__title {
+	margin: 0;
+	color: var(--themor-shop-heading);
+	font-size: 1.125rem;
+	line-height: 1.3;
+}
+
+.themor-shop-dialog__close {
+	display: inline-grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+.themor-shop-dialog__close:hover {
+	background: color-mix(in srgb, currentColor 8%, transparent);
+}
+
+.themor-shop-dialog__body {
+	flex: 1;
+	overflow-y: auto;
+	padding: 1.25rem;
+	overscroll-behavior: contain;
+}
+
+/* A drawer: full height at the side. */
+.themor-shop-dialog--drawer {
+	position: fixed;
+	inset-block: 0;
+	width: var(--themor-shop-drawer-width);
+	height: 100%;
+}
+
+.themor-shop-dialog--drawer.themor-shop-dialog--end {
+	inset-inline: auto 0;
+}
+
+.themor-shop-dialog--drawer.themor-shop-dialog--start {
+	inset-inline: 0 auto;
+}
+
+/* A window: in the middle. */
+.themor-shop-dialog--window {
+	width: min(880px, calc(100vw - 2rem));
+	max-height: calc(100vh - 2rem);
+	margin: auto;
+}
+
+/* A window's heading names it for screen readers; the product shows its own name. */
+.themor-shop-dialog--window .themor-shop-dialog__head {
+	position: absolute;
+	z-index: 1;
+	inset-block-start: 0.5rem;
+	inset-inline-end: 0.5rem;
+	padding: 0;
+	border: 0;
+}
+
+.themor-shop-dialog--window .themor-shop-dialog__title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.themor-shop-dialog--window .themor-shop-dialog__body {
+	padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.themor-shop-dialog--window .themor-shop-dialog__panel {
+	position: relative;
+	height: auto;
+	max-height: calc(100vh - 2rem);
+	border-radius: var(--themor-shop-radius);
+	overflow: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.themor-shop-dialog[open] .themor-shop-dialog__panel {
+		animation: themor-shop-in 0.32s var(--themor-shop-ease);
+	}
+
+	.themor-shop-dialog--drawer.themor-shop-dialog--end[open] .themor-shop-dialog__panel {
+		animation-name: themor-shop-from-end;
+	}
+
+	.themor-shop-dialog--drawer.themor-shop-dialog--start[open] .themor-shop-dialog__panel {
+		animation-name: themor-shop-from-start;
+	}
+}
+
+@keyframes themor-shop-in {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+}
+
+@keyframes themor-shop-from-end {
+	from {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes themor-shop-from-start {
+	from {
+		transform: translateX(-100%);
+	}
+}
+
+[dir="rtl"] .themor-shop-dialog--drawer.themor-shop-dialog--end[open] .themor-shop-dialog__panel {
+	animation-name: themor-shop-from-start;
+}
+
+[dir="rtl"] .themor-shop-dialog--drawer.themor-shop-dialog--start[open] .themor-shop-dialog__panel {
+	animation-name: themor-shop-from-end;
+}
+
+/* The cart drawer: WooCommerce's mini cart. */
+#themor-cart-drawer .widget_shopping_cart_content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Each item: its picture pinned at the side, its name (the link's text) and quantity beside it. */
+#themor-cart-drawer .woocommerce-mini-cart-item {
+	position: relative;
+	display: block;
+	min-height: 64px;
+	margin: 0;
+	padding-block: 0.9rem;
+	padding-inline: calc(64px + 0.9rem) 2rem;
+	border-block-end: 1px solid var(--themor-shop-border);
+	line-height: 1.4;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart-item a:not(.remove) {
+	display: block;
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart-item img {
+	position: absolute;
+	inset-block-start: 0.9rem;
+	inset-inline-start: 0;
+	float: none;
+	width: 64px;
+	height: 64px;
+	margin: 0;
+	border-radius: calc(var(--themor-shop-radius) * 0.6);
+	object-fit: cover;
+	background: var(--themor-shop-surface);
+}
+
+#themor-cart-drawer .woocommerce-mini-cart-item .quantity {
+	display: block;
+	margin-block-start: 0.25rem;
+	color: var(--themor-shop-muted);
+	font-size: 0.9em;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart-item dl.variation {
+	margin: 0.25rem 0 0;
+	color: var(--themor-shop-muted);
+	font-size: 0.85em;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart-item .remove {
+	position: absolute;
+	inset-block-start: 0.9rem;
+	inset-inline-end: 0;
+	display: grid;
+	place-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 999px;
+	color: var(--themor-shop-muted) !important;
+	font-size: 1.1rem;
+	line-height: 1;
+	text-decoration: none;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart-item .remove:hover {
+	background: color-mix(in srgb, currentColor 10%, transparent);
+	color: var(--themor-shop-heading) !important;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart__total {
+	display: flex;
+	justify-content: space-between;
+	margin: auto 0 0;
+	padding-block: 1.1rem 0.9rem;
+	color: var(--themor-shop-heading);
+}
+
+#themor-cart-drawer .woocommerce-mini-cart__buttons {
+	display: grid;
+	gap: 0.6rem;
+	margin: 0;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart__buttons .button {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+/* Products to add: between the items and the total, which the drawer keeps at the bottom.
+ * Other mini carts (a header's dropdown) leave them out. */
+.themor-upsells {
+	display: none;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart {
+	order: 1;
+}
+
+#themor-cart-drawer .themor-upsells {
+	display: block;
+	order: 2;
+	margin-block-start: 1.25rem;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart__total {
+	order: 3;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart__buttons {
+	order: 4;
+}
+
+.themor-upsells__title {
+	margin: 0 0 0.6rem;
+	color: var(--themor-shop-heading);
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+/* That any one of them takes the cart to free shipping. */
+.themor-upsells__note {
+	margin: -0.35rem 0 0.6rem;
+	color: var(--themor-shop-upsells-note, var(--themor-shop-free, #15803d));
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.themor-upsells__list {
+	display: grid;
+	gap: 0.6rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-upsells__item {
+	display: grid;
+	grid-template-columns: 48px minmax(0, 1fr) auto;
+	gap: 0.75rem;
+	align-items: center;
+	margin: 0;
+	padding: 0.5rem;
+	border-radius: calc(var(--themor-shop-radius) * 0.8);
+	background: var(--themor-shop-surface);
+}
+
+.themor-upsells__image img {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0;
+	border-radius: calc(var(--themor-shop-radius) * 0.5);
+	object-fit: cover;
+}
+
+.themor-upsells__name {
+	display: block;
+	overflow: hidden;
+	color: var(--themor-shop-heading);
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.3;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.themor-upsells__price {
+	display: block;
+	margin-block-start: 0.15rem;
+	color: var(--themor-shop-muted);
+	font-size: 0.8125rem;
+}
+
+#themor-cart-drawer .themor-upsells__add {
+	min-height: 0;
+	margin: 0;
+	padding: 0.4rem 0.8rem;
+	font-size: 0.8125rem;
+	line-height: 1.2;
+	white-space: nowrap;
+}
+
+#themor-cart-drawer .woocommerce-mini-cart__empty-message {
+	margin: 2rem 0;
+	color: var(--themor-shop-muted);
+	text-align: center;
+}
+
+/* The free shipping bar. */
+.themor-free-shipping {
+	margin-block-end: 1.1rem;
+	padding: 0.85rem 1rem;
+	border-radius: calc(var(--themor-shop-radius) * 0.8);
+	background: var(--themor-shop-surface);
+}
+
+.themor-free-shipping__text {
+	margin: 0 0 0.55rem;
+	font-size: 0.925rem;
+	line-height: 1.4;
+}
+
+.themor-free-shipping__track {
+	height: 6px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--themor-shop-accent) 16%, transparent);
+}
+
+.themor-free-shipping__fill {
+	display: block;
+	height: 100%;
+	border-radius: inherit;
+	background: var(--themor-shop-accent);
+	transition: width 0.5s var(--themor-shop-ease);
+}
+
+.themor-free-shipping--done .themor-free-shipping__fill {
+	background: #16a34a;
+}
+
+/* With a free gift: the two steps on the track, each marked where it is reached and named below
+   it; the gift's line in the cart says Free. */
+.themor-free-shipping--steps .themor-free-shipping__track {
+	position: relative;
+	height: 8px;
+	overflow: visible;
+}
+
+.themor-free-shipping__mark {
+	position: absolute;
+	top: 50%;
+	width: 14px;
+	height: 14px;
+	box-sizing: border-box;
+	margin-block-start: -7px;
+	margin-inline-start: -7px;
+	border: 3px solid var(--themor-shop-surface);
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--themor-shop-accent) 30%, var(--themor-shop-bg));
+}
+
+.themor-free-shipping__mark:last-of-type {
+	margin-inline-start: -14px;
+}
+
+.themor-free-shipping__mark.is-done {
+	background: var(--themor-shop-accent);
+}
+
+.themor-free-shipping__steps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 0.25rem 1rem;
+	margin: 0.6rem 0 0;
+	padding: 0;
+	list-style: none;
+	color: var(--themor-shop-muted);
+	font-size: 0.8125rem;
+	line-height: 1.35;
+}
+
+.themor-free-shipping__step.is-done {
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+}
+
+.themor-gift-free {
+	color: var(--themor-shop-gift, #15803d);
+	font-weight: 700;
+}
+
+.summary .themor-free-shipping {
+	margin-block: 1rem;
+}
+
+/* The shopper's pick: the marks on product cards and pages ("Suits combination skin"), the
+   header item, the window to pick in, and the switch on shop pages. Colors: --themor-pick-bg and
+   -color, and for a product that suits the pick --themor-pick-match-bg and -match-color. */
+.themor-pick {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	width: fit-content;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0.5rem 0 0.15rem;
+	padding: 0.2rem 0.65rem 0.2rem 0.55rem;
+	border-radius: 999px;
+	background: var(--themor-pick-bg, var(--themor-shop-surface));
+	color: var(--themor-pick-color, var(--themor-shop-muted));
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.themor-pick.is-match {
+	background: var(--themor-pick-match-bg, color-mix(in srgb, var(--themor-shop-accent) 12%, var(--themor-shop-bg)));
+	color: var(--themor-pick-match-color, var(--themor-shop-accent));
+}
+
+.themor-pick__icon {
+	flex: none;
+}
+
+.themor-pick--product {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	width: auto;
+	margin: 1.1rem 0;
+	padding: 0.95rem 1.1rem;
+	border-radius: calc(var(--themor-shop-radius) * 1.4);
+	font-size: 0.9375rem;
+	font-weight: 400;
+}
+
+.themor-pick--product .themor-pick__icon {
+	width: 20px;
+	height: 20px;
+	margin-block-start: 0.1rem;
+}
+
+.themor-pick--product .themor-pick__text {
+	margin: 0;
+	font-weight: 700;
+}
+
+.themor-pick__detail {
+	margin: 0.15rem 0 0;
+	font-size: 0.875rem;
+}
+
+.themor-pick--product.is-match .themor-pick__detail {
+	color: var(--themor-shop-text);
+}
+
+.themor-pick__change {
+	display: inline;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	font: inherit;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+.themor-pick-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-height: 44px;
+	margin: 0;
+	padding: 0 0.85rem 0 0.6rem;
+	border: 1.5px solid var(--themor-shop-border);
+	border-radius: 999px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+
+.themor-pick-item__icon {
+	flex: none;
+	color: var(--themor-shop-accent);
+}
+
+.themor-pick-item__text {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.1;
+	text-align: start;
+}
+
+.themor-pick-item__label {
+	color: var(--themor-shop-muted);
+	font-size: 0.6875rem;
+}
+
+.themor-pick-item__value {
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.themor-pick-window__text {
+	margin: 0 0 1rem;
+	color: var(--themor-shop-muted);
+}
+
+.themor-pick-window__choices {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-pick-choice {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0 1.1rem;
+	border: 1.5px solid var(--themor-shop-border);
+	border-radius: 999px;
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.themor-pick-choice:hover {
+	border-color: var(--themor-shop-heading);
+}
+
+.themor-pick-choice[aria-pressed="true"] {
+	border-color: var(--themor-shop-heading);
+	background: var(--themor-shop-heading);
+	color: var(--themor-shop-bg);
+}
+
+.themor-pick-window__clear {
+	margin: 1rem 0 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--themor-shop-muted);
+	font: inherit;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+.themor-pick-window__clear[hidden],
+.themor-pick-only[hidden] {
+	display: none;
+}
+
+.themor-pick-only {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	min-height: 44px;
+	margin: 0 1rem 1rem 0;
+	padding: 0 1rem 0 0.45rem;
+	border: 1.5px solid var(--themor-shop-border);
+	border-radius: 999px;
+	color: var(--themor-shop-heading);
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.themor-pick-only__track {
+	position: relative;
+	flex: none;
+	width: 40px;
+	height: 24px;
+	border-radius: 999px;
+	background: var(--themor-shop-border);
+	transition: background 0.2s;
+}
+
+.themor-pick-only__knob {
+	position: absolute;
+	top: 3px;
+	inset-inline-start: 3px;
+	width: 18px;
+	height: 18px;
+	border-radius: 999px;
+	background: #fff;
+	transition: inset-inline-start 0.2s;
+}
+
+.themor-pick-only[aria-checked="true"] .themor-pick-only__track {
+	background: var(--themor-shop-accent);
+}
+
+.themor-pick-only[aria-checked="true"] .themor-pick-only__knob {
+	inset-inline-start: 19px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.themor-pick-only__track,
+	.themor-pick-only__knob {
+		transition: none;
+	}
+}
+
+/* Quick view. */
+.woocommerce ul.products li.product .themor-quick-view-button,
+.themor-quick-view-button {
+	position: absolute;
+	z-index: 2;
+	inset-block-start: 0.75rem;
+	inset-inline-end: 0.75rem;
+	display: inline-grid;
+	place-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid var(--themor-shop-border);
+	border-radius: 999px;
+	background: var(--themor-shop-bg);
+	color: var(--themor-shop-heading);
+	box-shadow: 0 4px 14px -4px rgba(15, 23, 42, 0.25);
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(4px);
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+/* As strong as the rule above, so the button shows in WooCommerce's lists too. */
+.woocommerce ul.products li.product:hover .themor-quick-view-button,
+.woocommerce ul.products li.product:focus-within .themor-quick-view-button,
+.woocommerce ul.products li.product .themor-quick-view-button:focus-visible,
+li.product:hover .themor-quick-view-button,
+li.product:focus-within .themor-quick-view-button,
+.themor-quick-view-button:focus-visible {
+	opacity: 1;
+	transform: none;
+}
+
+@media (hover: none) {
+	.woocommerce ul.products li.product .themor-quick-view-button,
+	.themor-quick-view-button {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.themor-quick-view-button:hover {
+	background: var(--themor-shop-accent);
+	border-color: var(--themor-shop-accent);
+	color: var(--themor-shop-on-accent);
+}
+
+.themor-quick-view__product {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: clamp(1.25rem, 3vw, 2.25rem);
+	align-items: start;
+}
+
+.themor-quick-view__image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: var(--themor-shop-radius);
+	background: var(--themor-shop-surface);
+}
+
+.themor-quick-view__title {
+	margin: 0 0 0.5rem;
+	color: var(--themor-shop-heading);
+	font-size: 1.5rem;
+	line-height: 1.25;
+}
+
+.themor-quick-view__summary .price {
+	margin-block: 0.5rem 1rem;
+	font-size: 1.15rem;
+}
+
+.themor-quick-view__summary form.cart {
+	margin-block: 1.25rem;
+}
+
+/* The quantity and Add to cart side by side. */
+.themor-quick-view__summary form.cart:not(.variations_form),
+.themor-quick-view__summary .woocommerce-variation-add-to-cart {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.themor-quick-view__summary form.cart .quantity {
+	margin: 0 !important;
+}
+
+.themor-quick-view__more {
+	display: inline-block;
+	margin-block-start: 0.25rem;
+	font-weight: 600;
+}
+
+.themor-quick-view--loading {
+	min-height: 240px;
+	display: grid;
+	place-items: center;
+	color: var(--themor-shop-muted);
+}
+
+@media (max-width: 680px) {
+	.themor-quick-view__product {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+/* Grid and list views, and the Filter button. */
+.themor-shop-view {
+	display: inline-flex;
+	gap: 0.25rem;
+	float: inline-end;
+	margin-inline-start: 0.75rem;
+	margin-block-end: 1rem;
+	padding: 0.2rem;
+	border: 1px solid var(--themor-shop-border);
+	border-radius: 999px;
+}
+
+.themor-shop-view__button {
+	display: inline-grid;
+	place-items: center;
+	width: 2.1rem;
+	height: 2.1rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: var(--themor-shop-muted);
+	cursor: pointer;
+}
+
+.themor-shop-view__button[aria-pressed="true"] {
+	background: var(--themor-shop-accent);
+	color: var(--themor-shop-on-accent);
+}
+
+.themor-shop-filter-button {
+	display: inline-flex !important;
+	align-items: center;
+	gap: 0.45rem;
+	float: inline-start;
+	margin-block-end: 1rem !important;
+	margin-inline-end: 1rem !important;
+}
+
+.themor-product-excerpt {
+	display: none;
+	margin: 0.5rem 0 0.9rem;
+	color: var(--themor-shop-muted);
+	font-size: 0.925rem;
+	line-height: 1.55;
+}
+
+.woocommerce ul.products.themor-products--list {
+	grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.woocommerce ul.products.themor-products--list li.product {
+	display: grid !important;
+	grid-template-columns: minmax(120px, 30%) minmax(0, 1fr);
+	column-gap: clamp(1rem, 3vw, 2rem);
+	align-items: start;
+}
+
+.woocommerce ul.products.themor-products--list li.product > * {
+	grid-column: 2;
+}
+
+.woocommerce ul.products.themor-products--list li.product > .woocommerce-loop-product__link {
+	display: contents !important;
+}
+
+.woocommerce ul.products.themor-products--list li.product .woocommerce-loop-product__link img,
+.woocommerce ul.products.themor-products--list li.product > a > img {
+	grid-column: 1;
+	grid-row: 1 / span 6;
+	margin: 0 !important;
+}
+
+.woocommerce ul.products.themor-products--list li.product .onsale,
+.woocommerce ul.products.themor-products--list li.product .themor-quick-view-button {
+	grid-column: 1;
+}
+
+.woocommerce ul.products.themor-products--list .themor-product-excerpt {
+	display: block;
+}
+
+.woocommerce ul.products.themor-products--list li.product .button {
+	justify-self: start;
+	width: auto;
+}
+
+/* The filters drawer: the shop sidebar's widgets. */
+.themor-shop-filters .widget + .widget {
+	margin-block-start: 1.75rem;
+}
+
+/* "Load more". */
+.themor-shop-more {
+	display: flex;
+	justify-content: center;
+	margin-block: 2rem 0.5rem;
+}
+
+.themor-shop-more .button[aria-busy="true"] {
+	opacity: 0.6;
+	cursor: progress;
+}
+
+/* The sticky Add to cart bar. */
+.themor-sticky-cart {
+	position: fixed;
+	z-index: 90;
+	inset-inline: 0;
+	/* Above a mobile bar while one shows (its height, `--themor-mbar-offset`). */
+	inset-block-end: var(--themor-mbar-offset, 0px);
+	border-block-start: 1px solid var(--themor-shop-border);
+	background: var(--themor-shop-bg);
+	box-shadow: 0 -10px 30px -18px rgba(15, 23, 42, 0.35);
+	transform: translateY(110%);
+	transition: transform 0.35s var(--themor-shop-ease);
+}
+
+.themor-sticky-cart.is-shown {
+	transform: none;
+}
+
+.themor-sticky-cart__inner {
+	display: flex;
+	align-items: center;
+	gap: 0.9rem;
+	width: min(var(--themor-shop-content-width, 1200px), 100% - 2rem);
+	margin-inline: auto;
+	padding-block: 0.65rem;
+}
+
+.themor-sticky-cart__image img {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0;
+	border-radius: calc(var(--themor-shop-radius) * 0.6);
+	object-fit: cover;
+}
+
+.themor-sticky-cart__text {
+	flex: 1;
+	min-width: 0;
+}
+
+.themor-sticky-cart__title {
+	margin: 0;
+	overflow: hidden;
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+	line-height: 1.3;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.themor-sticky-cart__price {
+	margin: 0;
+	font-size: 0.925rem;
+}
+
+.themor-sticky-cart__button {
+	flex: none;
+	margin: 0 !important;
+}
+
+@media (max-width: 600px) {
+	.themor-sticky-cart__image {
+		display: none;
+	}
+}
+
+/* Gallery layouts. */
+.themor-gallery--left .woocommerce-product-gallery {
+	display: grid;
+	grid-template-columns: 76px minmax(0, 1fr);
+	gap: 0.75rem;
+	align-items: start;
+}
+
+.themor-gallery--left .woocommerce-product-gallery > .flex-viewport,
+.themor-gallery--left .woocommerce-product-gallery > .woocommerce-product-gallery__wrapper {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.themor-gallery--left .woocommerce-product-gallery .flex-control-thumbs {
+	grid-column: 1;
+	grid-row: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	margin: 0 !important;
+	padding: 0;
+}
+
+.themor-gallery--left .woocommerce-product-gallery .flex-control-thumbs li {
+	width: 100% !important;
+	margin: 0 !important;
+	float: none !important;
+}
+
+.themor-gallery--grid .woocommerce-product-gallery__wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.75rem;
+}
+
+.themor-gallery--grid .woocommerce-product-gallery__image:first-child {
+	grid-column: 1 / -1;
+}
+
+.themor-gallery--grid .woocommerce-product-gallery__image img {
+	border-radius: var(--themor-shop-radius);
+}
+
+/* Arrows on the image: round buttons at the sides of the main image (placed by the script). */
+.woocommerce-product-gallery .flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.woocommerce-product-gallery .flex-direction-nav a {
+	position: absolute;
+	z-index: 9;
+	inset-block-start: var(--themor-gallery-arrows-top, 50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	margin-block-start: -1.375rem;
+	overflow: hidden;
+	border-radius: 999px;
+	background: var(--themor-shop-bg);
+	box-shadow: var(--themor-shop-shadow);
+	color: var(--themor-shop-heading);
+	font-size: 0;
+	text-decoration: none;
+}
+
+.woocommerce-product-gallery .flex-direction-nav a::before {
+	content: "";
+	width: 0.6rem;
+	height: 0.6rem;
+	border: solid currentColor;
+	border-width: 0 0 2px 2px;
+}
+
+.woocommerce-product-gallery .flex-direction-nav .flex-prev {
+	left: calc(var(--themor-gallery-arrows-left, 0px) + 0.75rem);
+}
+
+.woocommerce-product-gallery .flex-direction-nav .flex-next {
+	right: calc(var(--themor-gallery-arrows-right, 0px) + 0.75rem);
+}
+
+.woocommerce-product-gallery .flex-direction-nav .flex-prev::before {
+	transform: translateX(2px) rotate(45deg);
+}
+
+.woocommerce-product-gallery .flex-direction-nav .flex-next::before {
+	transform: translateX(-2px) rotate(-135deg);
+}
+
+.woocommerce-product-gallery .flex-direction-nav .flex-disabled {
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* In a right-to-left language the slider moves the other way: Previous on the right. */
+[dir="rtl"] .woocommerce-product-gallery .flex-direction-nav .flex-prev {
+	right: calc(var(--themor-gallery-arrows-right, 0px) + 0.75rem);
+	left: auto;
+}
+
+[dir="rtl"] .woocommerce-product-gallery .flex-direction-nav .flex-next {
+	right: auto;
+	left: calc(var(--themor-gallery-arrows-left, 0px) + 0.75rem);
+}
+
+[dir="rtl"] .woocommerce-product-gallery .flex-direction-nav .flex-prev::before {
+	transform: translateX(-2px) rotate(-135deg);
+}
+
+[dir="rtl"] .woocommerce-product-gallery .flex-direction-nav .flex-next::before {
+	transform: translateX(2px) rotate(45deg);
+}
+
+/* The focused checkout's bar. */
+.themor-checkout-bar {
+	border-block-end: 1px solid var(--themor-shop-border);
+	background: var(--themor-shop-bg);
+}
+
+.themor-checkout-bar__inner {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+	gap: 1rem;
+	width: min(var(--themor-shop-content-width, 1200px), 100% - 2rem);
+	margin-inline: auto;
+	padding-block: 1rem;
+}
+
+.themor-checkout-bar__back,
+.themor-checkout-bar__secure {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0;
+	color: var(--themor-shop-muted);
+	font-size: 0.925rem;
+	text-decoration: none;
+}
+
+.themor-checkout-bar__secure {
+	justify-self: end;
+}
+
+.themor-checkout-bar__brand img {
+	display: block;
+	max-height: 44px;
+	width: auto;
+}
+
+.themor-checkout-bar__name {
+	color: var(--themor-shop-heading);
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	.themor-checkout-bar__back span,
+	.themor-checkout-bar__secure span {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+}
+
+/*
+ * Badges: "New" where the sale badge sits, below it when both show, and a product's own badge below
+ * those (the sale badge's color, when one is set, is printed with the settings). Each is
+ * --themor-badge-index steps down its corner. A theme moves them with --themor-shop-badge-top,
+ * -start and -step, and colors the own badges with --themor-shop-own and -on-own.
+ */
+.themor-badge {
+	position: absolute;
+	z-index: 9;
+	inset-block-start: calc(var(--themor-shop-badge-top, 0.75rem) + var(--themor-badge-index, 0) * var(--themor-shop-badge-step, 2rem));
+	inset-inline-start: var(--themor-shop-badge-start, 0.75rem);
+	padding: 0.3rem 0.7rem;
+	border-radius: 999px;
+	background: var(--themor-shop-new, var(--themor-shop-heading));
+	color: var(--themor-shop-bg);
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	pointer-events: none;
+}
+
+.themor-badge--below {
+	--themor-badge-index: 1;
+}
+
+.themor-badge--own {
+	background: var(--themor-shop-own, var(--themor-shop-accent));
+	color: var(--themor-shop-on-own, var(--themor-shop-on-accent));
+	letter-spacing: 0.01em;
+	text-transform: none;
+	white-space: nowrap;
+}
+
+.woocommerce div.product,
+.woocommerce ul.products li.product {
+	position: relative;
+}
+
+/* Buy now, beside Add to cart. */
+.woocommerce .themor-buy-now {
+	margin-inline-start: 0.5rem;
+}
+
+/* The low stock bar. */
+.themor-stock {
+	margin-block-end: 1rem;
+}
+
+.themor-stock .themor-stock__text {
+	margin-block-end: 0.4rem;
+}
+
+.themor-stock__bar {
+	height: 6px;
+	max-width: 22rem;
+	overflow: hidden;
+	border-radius: 999px;
+	background: var(--themor-shop-border);
+}
+
+.themor-stock__bar span {
+	display: block;
+	height: 100%;
+	border-radius: inherit;
+	background: var(--themor-shop-low, #dc2626);
+}
+
+/* On a product card, below the price. */
+.themor-stock--card {
+	margin-block: 0.35rem 0.75rem;
+}
+
+.themor-stock--card .themor-stock__text {
+	margin-block: 0 0.3rem;
+	color: var(--themor-shop-heading);
+	font-size: 0.8125rem;
+	font-weight: 600;
+}
+
+.themor-stock--card .themor-stock__bar {
+	height: 4px;
+	max-width: 10rem;
+}
+
+/* Taking bookings, a card with plenty of slots left. */
+.themor-stock--free .themor-stock__text {
+	color: var(--themor-shop-free, #15803d);
+}
+
+/* A variable product's colors on its card, below the price. */
+.themor-card-colors {
+	display: flex;
+	align-items: center;
+	margin-block: 0.4rem 0.6rem;
+}
+
+.themor-card-colors__dots {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--themor-card-colors-gap, 0.35rem);
+}
+
+.themor-card-colors__dot {
+	width: var(--themor-card-colors-size, 0.875rem);
+	height: var(--themor-card-colors-size, 0.875rem);
+	border-radius: 999px;
+	background: var(--themor-swatch, var(--themor-shop-surface)) center / cover no-repeat;
+	box-shadow: inset 0 0 0 1px var(--themor-card-colors-ring, rgb(0 0 0 / 0.16));
+}
+
+.themor-card-colors__more {
+	margin-inline-start: 0.15rem;
+	color: var(--themor-shop-muted);
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+/* Key specs on a product card, below its name: --themor-specs-bg, -color and -radius. */
+ul.themor-specs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.375rem;
+	margin: 0.45rem 0 0.55rem;
+	padding: 0;
+	list-style: none;
+}
+
+ul.themor-specs .themor-specs__item {
+	margin: 0;
+	padding: 0.25rem 0.55rem;
+	border-radius: var(--themor-specs-radius, 8px);
+	background: var(--themor-specs-bg, var(--themor-shop-surface));
+	color: var(--themor-specs-color, var(--themor-shop-heading));
+	font-size: 0.78125rem;
+	font-weight: 600;
+	line-height: 1.3;
+	list-style: none;
+}
+
+ul.themor-specs .themor-specs__item::before,
+ul.themor-specs .themor-specs__item::marker {
+	content: none;
+}
+
+/* A back-in-stock date on a sold-out product's card. */
+.themor-restock {
+	margin-block: 0.35rem 0.75rem;
+	color: var(--themor-shop-muted);
+	font-size: 0.8125rem;
+	font-weight: 600;
+}
+
+/* Catalog mode's button. */
+.themor-catalog-button {
+	margin-block: 1rem 1.5rem;
+}
+
+/* Urgency: the sale's countdown and the sold count. */
+.themor-urgency {
+	display: grid;
+	gap: 0.35rem;
+	margin-block: 0.5rem 1rem;
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.themor-urgency--card {
+	margin-block: 0.25rem 0.5rem;
+	font-size: 0.8rem;
+}
+
+.themor-urgency p {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35rem;
+	margin: 0;
+}
+
+.themor-urgency__ends {
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+}
+
+.themor-urgency__time {
+	padding: 0.05rem 0.45rem;
+	border-radius: 999px;
+	background: var(--themor-shop-surface);
+	font-variant-numeric: tabular-nums;
+}
+
+.themor-urgency__sold {
+	color: var(--themor-shop-text);
+}
+
+.themor-urgency__sold::before {
+	content: "";
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: var(--themor-shop-accent);
+}
+
+/* Back-in-stock alerts. */
+.themor-stock-alert {
+	display: grid;
+	gap: 0.5rem;
+	margin-block: 1rem 1.5rem;
+	padding: 1rem;
+	border: 1px solid var(--themor-shop-border);
+	border-radius: var(--themor-shop-radius);
+}
+
+.themor-stock-alert[hidden] {
+	display: none;
+}
+
+.themor-stock-alert p {
+	margin: 0;
+}
+
+.themor-stock-alert__title {
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+}
+
+.themor-stock-alert__row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.themor-stock-alert__row input {
+	flex: 1 1 12rem;
+	min-width: 0;
+}
+
+.themor-stock-alert__note {
+	color: var(--themor-shop-muted);
+	font-size: 0.8rem;
+}
+
+.themor-stock-alert__message:empty,
+.themor-stock-alert__trap {
+	display: none;
+}
+
+.themor-stock-alert.is-done .themor-stock-alert__row {
+	display: none;
+}
+
+/* The delivery estimate. */
+.themor-delivery {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin-block: 0.75rem 1rem;
+	padding: 0.65rem 0.85rem;
+	border-radius: var(--themor-shop-radius);
+	background: var(--themor-shop-surface);
+	color: var(--themor-shop-text);
+	font-size: 0.9rem;
+	line-height: 1.45;
+}
+
+.themor-delivery__icon {
+	flex: none;
+	margin-top: 0.05rem;
+	color: var(--themor-shop-accent);
+}
+
+.themor-delivery strong,
+.themor-delivery__time {
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Store hours: the bar while the store is closed, and the line in Add to cart's place. */
+.themor-closed {
+	background: var(--themor-closed-bg, var(--themor-shop-heading));
+	color: var(--themor-closed-color, var(--themor-shop-bg));
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.themor-closed[hidden] {
+	display: none;
+}
+
+.themor-closed__text {
+	max-width: var(--themor-site-width, 1200px);
+	margin: 0 auto;
+	padding: 0.6rem 1rem;
+	text-align: center;
+}
+
+.themor-closed__countdown:not(:empty) {
+	display: inline-block;
+	margin-inline-start: 0.35rem;
+	padding: 0.05rem 0.5rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.16);
+	font-variant-numeric: tabular-nums;
+}
+
+.themor-closed-line {
+	margin-block: 1rem 1.5rem;
+	padding: 0.75rem 1rem;
+	border-radius: var(--themor-shop-radius);
+	background: var(--themor-shop-surface);
+	color: var(--themor-shop-text);
+}
+
+/* While orders are taken: until when, on shop pages. */
+.themor-closed--open {
+	background: var(--themor-open-bg, var(--themor-shop-surface));
+	color: var(--themor-open-color, var(--themor-shop-heading));
+}
+
+/*
+ * The status line, "Open now · until 5:00 pm", with a dot (--themor-store-open, -closed). It takes
+ * the color and size of where it is placed.
+ */
+.themor-store-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+/* No margins of the browser's; a theme's spacing between blocks still applies. */
+:where(.themor-store-status, .themor-store-hours) {
+	margin: 0;
+}
+
+.themor-store-status a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	color: inherit;
+	text-decoration: none;
+}
+
+.themor-store-status a:hover .themor-store-status__text,
+.themor-store-status a:focus-visible .themor-store-status__text {
+	text-decoration: underline;
+}
+
+.themor-store-status__dot {
+	flex: none;
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 999px;
+	background: var(--themor-store-closed, #9ca3af);
+}
+
+.themor-store-status--open .themor-store-status__dot {
+	background: var(--themor-store-open, #16a34a);
+	box-shadow: 0 0 0 0.2em color-mix(in srgb, var(--themor-store-open, #16a34a) 25%, transparent);
+}
+
+/* The week's hours, and the coming days off: days on one side, hours on the other. */
+.themor-store-hours {
+	display: grid;
+	gap: 0.35em;
+	max-width: var(--themor-store-hours-width, 28rem);
+	font-variant-numeric: tabular-nums;
+}
+
+.themor-store-hours__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 0.25em 1.5em;
+}
+
+.themor-store-hours dt,
+.themor-store-hours dd {
+	margin: 0;
+}
+
+.themor-store-hours dt {
+	font-weight: 400;
+}
+
+.themor-store-hours dd {
+	font-weight: 600;
+	text-align: end;
+}
+
+.themor-store-hours__title {
+	margin-block: 1em 0.35em;
+	font-weight: 700;
+}
+
+/* Recently viewed. */
+.themor-viewed {
+	clear: both;
+	margin-block-start: 3rem;
+}
+
+.themor-viewed__title {
+	margin-block-end: 1.25rem;
+}
+
+.themor-viewed__image {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+/* Swatches: WooCommerce's dropdown stays in the form, out of sight, for its script. */
+.themor-swatches-wrap {
+	position: relative;
+}
+
+.themor-swatches-wrap select {
+	position: absolute;
+	width: 1px !important;
+	min-width: 0 !important;
+	height: 1px;
+	padding: 0 !important;
+	border: 0 !important;
+	overflow: hidden;
+	clip-path: inset(50%);
+	opacity: 0;
+	pointer-events: none;
+}
+
+.themor-swatches {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.themor-swatch {
+	position: relative;
+	display: inline-grid;
+	place-items: center;
+	min-width: 2.5rem;
+	height: 2.5rem;
+	margin: 0;
+	padding: 0 0.85rem;
+	border: 1px solid var(--themor-shop-border);
+	border-radius: calc(var(--themor-shop-radius) * 0.6);
+	background: var(--themor-shop-bg);
+	color: var(--themor-shop-heading);
+	font: inherit;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.themor-swatch--color,
+.themor-swatch--image {
+	width: 2.5rem;
+	padding: 0;
+	overflow: hidden;
+	background: var(--themor-swatch, var(--themor-shop-surface));
+}
+
+.themor-swatches--round .themor-swatch--color,
+.themor-swatches--round .themor-swatch--image {
+	border-radius: 999px;
+}
+
+.themor-swatch--image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.themor-swatch:hover {
+	border-color: var(--themor-shop-heading);
+}
+
+.themor-swatch[aria-checked="true"] {
+	border-color: var(--themor-shop-accent);
+	box-shadow: 0 0 0 2px var(--themor-shop-bg), 0 0 0 4px var(--themor-shop-accent);
+}
+
+.themor-swatch--label[aria-checked="true"] {
+	box-shadow: inset 0 0 0 1px var(--themor-shop-accent);
+}
+
+/* An option the other choices rule out: struck through, still a way to start again. */
+.themor-swatch.is-unavailable {
+	opacity: 0.45;
+}
+
+.themor-swatch.is-unavailable::after {
+	content: "";
+	position: absolute;
+	inset: 50% -2px auto;
+	border-block-start: 1px solid currentColor;
+	transform: rotate(-35deg);
+}
+
+/* What's left on swatches: a note below the name, a sold-out choice hatched and struck through. */
+.themor-swatches-wrap--stock .themor-swatch--label {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.1rem;
+	height: auto;
+	min-height: 2.5rem;
+	padding-block: 0.35rem;
+	line-height: 1.15;
+}
+
+.themor-swatch__note {
+	font-size: 0.72em;
+	font-weight: 600;
+	color: var(--themor-shop-muted, currentColor);
+}
+
+.themor-swatch__note:empty {
+	display: none;
+}
+
+.themor-swatch.is-low .themor-swatch__note {
+	color: var(--themor-swatch-low, #a33a00);
+}
+
+.themor-swatch.is-sold-out {
+	background-image: repeating-linear-gradient(135deg, var(--themor-swatch-hatch, rgba(128, 128, 128, 0.16)) 0 6px, transparent 6px 12px);
+	color: var(--themor-shop-muted, currentColor);
+}
+
+.themor-swatch.is-sold-out .themor-swatch__name {
+	text-decoration: line-through;
+}
+
+.themor-swatch.is-sold-out.themor-swatch--color::after,
+.themor-swatch.is-sold-out.themor-swatch--image::after {
+	content: "";
+	position: absolute;
+	inset: 50% -2px auto;
+	border-block-start: 1px solid currentColor;
+	transform: rotate(-35deg);
+}
+
+.themor-swatch[aria-disabled="true"] {
+	cursor: not-allowed;
+}
+
+.themor-swatch[aria-disabled="true"]:hover {
+	border-color: var(--themor-shop-border);
+}
+
+/* Quantity buttons. */
+.themor-qty {
+	display: inline-flex;
+	align-items: stretch;
+	border: 1px solid var(--themor-shop-border);
+	border-radius: calc(var(--themor-shop-radius) * 0.6);
+	background: var(--themor-shop-bg);
+}
+
+.themor-qty input.qty {
+	width: 3rem;
+	margin: 0;
+	border: 0;
+	background: transparent;
+	text-align: center;
+	-moz-appearance: textfield;
+}
+
+.themor-qty input.qty::-webkit-inner-spin-button,
+.themor-qty input.qty::-webkit-outer-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
+
+.themor-qty__button {
+	min-width: 2.5rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: var(--themor-shop-heading);
+	font-size: 1.1rem;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.themor-qty__button:hover {
+	background: var(--themor-shop-surface);
+}
+
+/* The sticky summary: the product as two columns, the summary held in the gallery's row. */
+@media (min-width: 900px) {
+	.themor-sticky-summary div.product {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 4%;
+		align-items: start;
+	}
+
+	.themor-sticky-summary div.product > * {
+		grid-column: 1 / -1;
+	}
+
+	.themor-sticky-summary div.product > .woocommerce-product-gallery,
+	.themor-sticky-summary div.product > div.images {
+		grid-column: 1;
+		float: none !important;
+		width: auto !important;
+	}
+
+	.themor-sticky-summary div.product > .summary {
+		position: sticky;
+		top: var(--themor-summary-top, calc(var(--wp-admin--admin-bar--height, 0px) + 1.5rem));
+		grid-column: 2;
+		float: none !important;
+		width: auto !important;
+	}
+}
+
+/* Accordion and sections in place of the tabs. */
+.themor-tabs {
+	clear: both;
+	margin-block: 2.5rem;
+}
+
+.themor-tabs--accordion .themor-tab {
+	border-block-end: 1px solid var(--themor-shop-border);
+}
+
+.themor-tabs--accordion .themor-tab:first-child {
+	border-block-start: 1px solid var(--themor-shop-border);
+}
+
+.themor-tabs--accordion .themor-tab__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 1.1rem;
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+	cursor: pointer;
+	list-style: none;
+}
+
+.themor-tabs--accordion .themor-tab__title::-webkit-details-marker {
+	display: none;
+}
+
+.themor-tabs--accordion .themor-tab__title::after {
+	content: "+";
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.themor-tabs--accordion .themor-tab[open] .themor-tab__title::after {
+	content: "−";
+}
+
+.themor-tabs--accordion .themor-tab__panel {
+	padding-block-end: 1.25rem;
+}
+
+.themor-tabs--sections .themor-tab + .themor-tab {
+	margin-block-start: 2.5rem;
+}
+
+.themor-tabs--sections .themor-tab__title {
+	margin-block-end: 1rem;
+}
+
+/* A product's video. */
+.woocommerce-product-gallery {
+	position: relative;
+}
+
+.themor-video-button {
+	position: absolute;
+	z-index: 9;
+	inset-block-end: 1rem;
+	inset-inline-start: 1rem;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0.55rem 0.95rem 0.55rem 0.65rem;
+	border: 0;
+	border-radius: 999px;
+	background: rgba(15, 23, 42, 0.82);
+	color: #fff;
+	font: inherit;
+	font-size: 0.875rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.themor-video-button__icon {
+	position: relative;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 999px;
+	background: #fff;
+}
+
+.themor-video-button__icon::after {
+	content: "";
+	position: absolute;
+	inset: 50% auto auto 50%;
+	margin: -5px 0 0 -3px;
+	border-style: solid;
+	border-width: 5px 0 5px 8px;
+	border-color: transparent transparent transparent rgba(15, 23, 42, 0.9);
+}
+
+.themor-video {
+	aspect-ratio: 16 / 9;
+	background: #000;
+}
+
+.themor-video iframe,
+.themor-video video {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+#themor-product-video .themor-shop-dialog__panel {
+	width: min(960px, 94vw);
+}
+
+/* The size guide. */
+.themor-size-guide {
+	margin-block: 0 1rem;
+}
+
+.themor-size-guide__button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--themor-shop-heading);
+	font: inherit;
+	font-size: 0.9rem;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+/* Frequently bought together. */
+.themor-together {
+	clear: both;
+	margin-block: 2.5rem;
+	padding: clamp(1.25rem, 3vw, 2rem);
+	border: 1px solid var(--themor-shop-border);
+	border-radius: var(--themor-shop-radius);
+}
+
+.themor-together__title {
+	margin-block: 0 1.25rem;
+	font-size: 1.25rem;
+}
+
+.themor-together__body {
+	display: grid;
+	gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.themor-together__body {
+		grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+		align-items: center;
+	}
+}
+
+.themor-together__pictures {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-together__picture {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0;
+}
+
+.themor-together__picture + .themor-together__picture::before {
+	content: "+";
+	color: var(--themor-shop-muted);
+	font-size: 1.25rem;
+}
+
+.themor-together__picture img {
+	display: block;
+	width: clamp(64px, 9vw, 104px);
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: calc(var(--themor-shop-radius) * 0.6);
+	object-fit: cover;
+}
+
+.themor-together__rows {
+	display: grid;
+	gap: 0.6rem;
+	margin: 0 0 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-together__row {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 0;
+	font-size: 0.925rem;
+}
+
+.themor-together__row label {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	cursor: pointer;
+}
+
+.themor-together span.themor-together__price.price {
+	color: var(--themor-shop-heading);
+	font-size: inherit;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.themor-together__total {
+	margin-block: 0 0.85rem;
+	color: var(--themor-shop-heading);
+}
+
+/* The wishlist. */
+.themor-wish {
+	display: inline-grid;
+	place-items: center;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--themor-shop-heading);
+	cursor: pointer;
+}
+
+.themor-wish[aria-pressed="true"] .themor-wish__heart {
+	fill: #e11d48;
+	stroke: #e11d48;
+}
+
+.woocommerce ul.products li.product .themor-wish--card {
+	position: absolute;
+	z-index: 9;
+	inset-block-start: 0.75rem;
+	inset-inline-end: 0.75rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 999px;
+	background: var(--themor-shop-bg);
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+}
+
+/* The sale badge sits where the heart goes in a list: one below the other. */
+.woocommerce ul.products li.product:has(.themor-wish--card) .onsale {
+	margin-block-start: 3rem;
+}
+
+/* Quick view, in the heart's corner too, sits beside the heart, lined up with its middle. */
+.woocommerce ul.products li.product:has(.themor-wish--card) .themor-quick-view-button {
+	inset-block-start: 0.625rem;
+	inset-inline-end: 3.4rem;
+}
+
+.themor-wish-row {
+	margin-block: 0 1rem;
+}
+
+.themor-wish--page {
+	display: inline-flex;
+	gap: 0.45rem;
+	font: inherit;
+	font-size: 0.9rem;
+}
+
+.themor-wish--page[aria-pressed="true"] .themor-wish__off,
+.themor-wish--page[aria-pressed="false"] .themor-wish__on {
+	display: none;
+}
+
+.themor-wish-link {
+	position: relative;
+	display: inline-grid;
+	place-items: center;
+	color: inherit;
+}
+
+.themor-wish-link__count {
+	position: absolute;
+	inset-block-start: -0.45rem;
+	inset-inline-end: -0.6rem;
+	min-width: 1.1rem;
+	height: 1.1rem;
+	padding: 0 0.25rem;
+	border-radius: 999px;
+	background: var(--themor-shop-accent);
+	color: var(--themor-shop-on-accent);
+	font-size: 0.7rem;
+	font-weight: 700;
+	line-height: 1.1rem;
+	text-align: center;
+}
+
+.themor-wishlist__item {
+	position: relative;
+}
+
+.woocommerce ul.products li.product .themor-wish--remove {
+	position: absolute;
+	inset-block-start: 0.5rem;
+	inset-inline-end: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 999px;
+	background: var(--themor-shop-bg);
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+	font-size: 1.25rem;
+	line-height: 1;
+}
+
+/* Compare: the tick on product cards, after Add to cart. */
+.themor-compare-check {
+	display: inline-flex;
+	align-items: center;
+	align-self: flex-start;
+	gap: 0.5rem;
+	min-height: 2.75rem;
+	margin: 0.25rem 0 0;
+	color: var(--themor-shop-heading);
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.2;
+	cursor: pointer;
+}
+
+.themor-compare-check input[type="checkbox"] {
+	flex: none;
+	width: 1.125rem;
+	height: 1.125rem;
+	margin: 0;
+	accent-color: var(--themor-shop-accent);
+	cursor: pointer;
+}
+
+/* "Add to compare" on a product's page, under the wishlist's row. */
+.themor-compare-row {
+	margin-block: 0 1rem;
+}
+
+.themor-wish-row:has(+ .themor-compare-row) {
+	margin-block-end: 0.5rem;
+}
+
+.themor-compare-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--themor-shop-heading);
+	font: inherit;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.themor-compare-toggle[aria-pressed="true"] {
+	color: var(--themor-shop-accent);
+}
+
+.themor-compare-toggle[aria-pressed="true"] .themor-compare-toggle__off,
+.themor-compare-toggle[aria-pressed="false"] .themor-compare-toggle__on {
+	display: none;
+}
+
+.themor-compare-toggle:focus-visible,
+.themor-compare-bar__clear:focus-visible,
+.themor-compare-bar__remove:focus-visible,
+.themor-compare__switch:focus-visible,
+.themor-compare__remove:focus-visible {
+	outline: 2px solid var(--themor-shop-accent);
+	outline-offset: 2px;
+}
+
+/* Without scripts nothing keeps the list, so the ticks and the button stay out of the way. */
+@media (scripting: none) {
+	.themor-compare-check,
+	.themor-compare-row {
+		display: none;
+	}
+}
+
+/* The header item: two arrows with the count. */
+.themor-compare-link {
+	position: relative;
+	display: inline-grid;
+	place-items: center;
+	color: inherit;
+}
+
+.themor-compare-link__count {
+	position: absolute;
+	inset-block-start: -0.45rem;
+	inset-inline-end: -0.6rem;
+	min-width: 1.1rem;
+	height: 1.1rem;
+	padding: 0 0.25rem;
+	border-radius: 999px;
+	background: var(--themor-shop-accent);
+	color: var(--themor-shop-on-accent);
+	font-size: 0.7rem;
+	font-weight: 700;
+	line-height: 1.1rem;
+	text-align: center;
+}
+
+.themor-compare-link__count[hidden] {
+	display: none;
+}
+
+/* The bar at the foot of the window: what is chosen, empty places for more, Clear and Compare now. */
+.themor-compare-bar {
+	position: fixed;
+	z-index: 89;
+	inset-inline: 0;
+	/* Above a mobile bar while one shows (its height, `--themor-mbar-offset`). */
+	inset-block-end: calc(var(--themor-mbar-offset, 0px) + 1rem);
+	box-sizing: border-box;
+	width: min(var(--themor-shop-content-width, 1200px), 100% - 2rem);
+	margin-inline: auto;
+	padding-block: 0.75rem;
+	padding-inline: 1.25rem 0.75rem;
+	border: 1px solid var(--themor-shop-border);
+	border-radius: var(--themor-compare-bar-radius, calc(var(--themor-shop-radius) * 2));
+	background: var(--themor-shop-bg);
+	box-shadow: var(--themor-shop-shadow);
+	color: var(--themor-shop-text);
+}
+
+.themor-compare-bar[hidden] {
+	display: none;
+}
+
+/* Above the sticky Add to cart bar while it shows. */
+body:has(.themor-sticky-cart.is-shown) .themor-compare-bar {
+	inset-block-end: calc(var(--themor-mbar-offset, 0px) + var(--themor-sticky-cart-height, 4.5rem) + 0.75rem);
+}
+
+/* The page keeps clear of it at its foot (its height, `--themor-compare-offset`, set by the script). */
+html.themor-compare-shown body {
+	padding-block-end: calc(var(--themor-mbar-offset, 0px) + var(--themor-compare-offset, 0px) + 1.5rem);
+}
+
+.themor-compare-bar__inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem 1.25rem;
+}
+
+.themor-compare-bar__title {
+	margin: 0;
+	color: var(--themor-shop-heading);
+	font-size: 1.0625rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.themor-compare-bar__slots {
+	display: flex;
+	flex: 1 1 auto;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-compare-bar__slot {
+	position: relative;
+	box-sizing: border-box;
+	width: var(--themor-compare-slot-size, 3.5rem);
+	height: var(--themor-compare-slot-size, 3.5rem);
+	margin: 0;
+	border-radius: calc(var(--themor-shop-radius) * 1.2);
+	background: var(--themor-shop-surface);
+}
+
+.themor-compare-bar__slot.is-empty {
+	border: 1.5px dashed var(--themor-compare-slot, color-mix(in srgb, var(--themor-shop-muted) 45%, transparent));
+	background: none;
+}
+
+.themor-compare-bar__product {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: inherit;
+}
+
+.themor-compare-bar__product img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	object-fit: cover;
+}
+
+.themor-compare-bar__remove {
+	position: absolute;
+	inset-block-start: -0.5rem;
+	inset-inline-end: -0.5rem;
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	border: 2px solid var(--themor-shop-bg);
+	border-radius: 999px;
+	background: var(--themor-shop-heading);
+	color: var(--themor-shop-bg);
+	cursor: pointer;
+}
+
+.themor-compare-bar__actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem 0.75rem;
+	margin-inline-start: auto;
+}
+
+.themor-compare-bar__clear {
+	min-height: 2.75rem;
+	margin: 0;
+	padding: 0 0.75rem;
+	border: 0;
+	background: none;
+	color: var(--themor-shop-heading);
+	font: inherit;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+.woocommerce .themor-compare-bar__go,
+.themor-compare-bar__go {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0;
+	text-decoration: none;
+}
+
+.themor-compare-bar__go .themor-shop-icon {
+	width: 18px;
+	height: 18px;
+}
+
+[dir="rtl"] .themor-compare-bar__go .themor-shop-icon {
+	transform: scaleX(-1);
+}
+
+/* A polite live region: out of sight while it has nothing to say. */
+.themor-compare-bar__status {
+	flex-basis: 100%;
+	margin: 0;
+	color: var(--themor-compare-note, var(--themor-shop-heading));
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.themor-compare-bar__status:empty {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+	.themor-compare-bar {
+		inset-block-end: calc(var(--themor-mbar-offset, 0px) + 0.5rem);
+		width: calc(100% - 1rem);
+		padding-inline: 0.85rem;
+	}
+
+	.themor-compare-bar__inner {
+		gap: 0.6rem 0.75rem;
+	}
+
+	.themor-compare-bar__slots {
+		gap: 0.5rem;
+	}
+
+	.themor-compare-bar__slot {
+		width: 2.75rem;
+		height: 2.75rem;
+	}
+
+	.themor-compare-bar__actions {
+		flex-basis: 100%;
+		justify-content: space-between;
+		margin-inline-start: 0;
+	}
+}
+
+/* The compare page: "Show only differences", then the table in a box that scrolls sideways. */
+.themor-compare__tools {
+	display: flex;
+	justify-content: flex-end;
+	margin-block-end: 1rem;
+}
+
+.themor-compare__switch {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+	min-height: 2.75rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--themor-shop-heading);
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.themor-compare__switch-track {
+	position: relative;
+	flex: none;
+	width: 3.25rem;
+	height: 1.875rem;
+	border-radius: 999px;
+	background: var(--themor-compare-switch, var(--themor-shop-border));
+	transition: background-color 0.2s ease;
+}
+
+.themor-compare__switch-track::after {
+	position: absolute;
+	inset-block-start: 0.1875rem;
+	inset-inline-start: 0.1875rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 999px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(15, 23, 42, 0.25);
+	content: "";
+	transition: transform 0.2s var(--themor-shop-ease);
+}
+
+.themor-compare__switch[aria-checked="true"] .themor-compare__switch-track {
+	background: var(--themor-compare-switch-on, var(--themor-shop-accent));
+}
+
+.themor-compare__switch[aria-checked="true"] .themor-compare__switch-track::after {
+	transform: translateX(1.375rem);
+}
+
+[dir="rtl"] .themor-compare__switch[aria-checked="true"] .themor-compare__switch-track::after {
+	transform: translateX(-1.375rem);
+}
+
+.themor-compare__scroll {
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	border: 1px solid var(--themor-shop-border);
+	border-radius: var(--themor-compare-radius, calc(var(--themor-shop-radius) * 2));
+	background: var(--themor-shop-bg);
+}
+
+.themor-compare__scroll:focus-visible {
+	outline: 2px solid var(--themor-shop-accent);
+	outline-offset: 2px;
+}
+
+.woocommerce table.themor-compare__table,
+table.themor-compare__table {
+	width: 100%;
+	min-width: calc(var(--themor-compare-label, 11rem) + 4 * var(--themor-compare-column, 13rem));
+	margin: 0;
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 0;
+	table-layout: fixed;
+	color: var(--themor-shop-text);
+}
+
+table.themor-compare__table :is(th, td) {
+	box-sizing: border-box;
+	padding: 1rem 1.25rem;
+	border: 0;
+	border-block-start: 1px solid var(--themor-shop-border);
+	border-inline-start: 1px solid var(--themor-shop-border);
+	background: var(--themor-shop-bg);
+	font-size: 0.9375rem;
+	text-align: start;
+	vertical-align: top;
+}
+
+table.themor-compare__table thead :is(th, td) {
+	border-block-start: 0;
+}
+
+table.themor-compare__table .themor-compare__actions td {
+	padding-block-start: 0;
+}
+
+/* The features' names stay in sight while the products scroll by. */
+table.themor-compare__table :is(.themor-compare__corner, th[scope="row"]) {
+	position: sticky;
+	z-index: 1;
+	inset-inline-start: 0;
+	width: var(--themor-compare-label, 11rem);
+	border-inline-start: 0;
+	background: var(--themor-compare-label-bg, var(--themor-shop-surface));
+	color: var(--themor-shop-heading);
+	font-weight: 700;
+}
+
+table.themor-compare__table tr[hidden] {
+	display: none;
+}
+
+.themor-compare__image {
+	display: block;
+	margin-block-end: 0.75rem;
+	overflow: hidden;
+	border-radius: var(--themor-shop-radius);
+	background: var(--themor-shop-surface);
+}
+
+.themor-compare__image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+.themor-compare__name {
+	display: block;
+	color: var(--themor-shop-heading);
+	font-size: 1.0625rem;
+	font-weight: 600;
+	line-height: 1.3;
+	text-decoration: none;
+}
+
+.themor-compare__name:hover {
+	text-decoration: underline;
+}
+
+.themor-compare__buy .price {
+	display: block;
+	margin-block-end: 0.75rem;
+	color: var(--themor-shop-heading);
+	font-weight: 600;
+}
+
+.woocommerce .themor-compare__buy .button,
+.themor-compare__buy .button {
+	display: inline-flex;
+	margin: 0 0 0.5rem;
+	text-decoration: none;
+}
+
+.themor-compare__remove {
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+	min-height: 2.25rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--themor-shop-muted);
+	font: inherit;
+	font-size: 0.875rem;
+	cursor: pointer;
+}
+
+.themor-compare__remove:hover {
+	color: var(--themor-shop-heading);
+}
+
+.themor-compare__remove .themor-shop-icon {
+	width: 16px;
+	height: 16px;
+}
+
+/* An empty column: a way to the shop. */
+table.themor-compare__table .themor-compare__slot {
+	vertical-align: middle;
+}
+
+.themor-compare__add {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6rem;
+	box-sizing: border-box;
+	min-height: 14rem;
+	border: 1.5px dashed var(--themor-compare-slot, color-mix(in srgb, var(--themor-shop-muted) 45%, transparent));
+	border-radius: var(--themor-shop-radius);
+	color: var(--themor-shop-heading);
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+}
+
+.themor-compare__add .themor-shop-icon {
+	box-sizing: content-box;
+	padding: 0.65rem;
+	border-radius: 999px;
+	background: var(--themor-shop-surface);
+}
+
+.themor-compare__add:focus-visible {
+	outline: 2px solid var(--themor-shop-accent);
+	outline-offset: 2px;
+}
+
+/* The best of a row. */
+table.themor-compare__table td.is-best {
+	background: var(--themor-compare-best-bg, color-mix(in srgb, var(--themor-shop-accent) 9%, var(--themor-shop-bg)));
+}
+
+.themor-compare__best {
+	display: block;
+	width: fit-content;
+	margin-block-start: 0.45rem;
+	padding: 0.15rem 0.6rem;
+	border-radius: 999px;
+	background: var(--themor-compare-best, var(--themor-shop-accent));
+	color: var(--themor-compare-on-best, var(--themor-shop-on-accent));
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+/* No list yet, or an empty one; with scripts, only once the script knows which. */
+.themor-compare__empty {
+	padding: clamp(1.5rem, 4vw, 2.5rem);
+	border: 1.5px dashed var(--themor-shop-border);
+	border-radius: var(--themor-compare-radius, calc(var(--themor-shop-radius) * 2));
+	text-align: center;
+}
+
+.themor-compare__empty p {
+	margin: 0 0 1rem;
+}
+
+.themor-compare__empty p:last-child {
+	margin-block-end: 0;
+}
+
+.themor-compare__empty[hidden] {
+	display: none;
+}
+
+@media (scripting: enabled) {
+	.themor-compare:not(.is-ready) .themor-compare__empty {
+		display: none;
+	}
+}
+
+.themor-compare__content[aria-busy="true"] {
+	opacity: 0.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.themor-compare__switch-track,
+	.themor-compare__switch-track::after {
+		transition: none;
+	}
+}
+
+@media (forced-colors: active) {
+	.themor-compare__switch-track {
+		border: 1px solid CanvasText;
+	}
+
+	.themor-compare__switch[aria-checked="true"] .themor-compare__switch-track {
+		background: Highlight;
+		forced-color-adjust: none;
+	}
+
+	.themor-compare__best {
+		border: 1px solid CanvasText;
+	}
+}
+
+/* Filtering without reloading: the products fade while the next ones come. */
+html.themor-shop-busy ul.products,
+html.themor-shop-busy .woocommerce-pagination {
+	opacity: 0.45;
+	pointer-events: none;
+	transition: opacity 0.2s;
+}

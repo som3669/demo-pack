@@ -1,0 +1,421 @@
+/*
+ * Bundle builder: the tabs (a block with more than one set), and each set: its steps, numbered,
+ * each a row of choices drawn as cards (a radio button each, its picture, name, line and price,
+ * a tick on the one picked), beside the summary (what is picked, the total before and after the
+ * saving, the button). On narrow screens the summary goes under the steps; on wide ones it stays
+ * in view beside them.
+ *
+ * A theme restyles it with custom properties, whose colors fall back to the shop module's
+ * (--themor-shop-*): --themor-bundle-space (between the parts), --themor-bundle-card-bg,
+ * -card-border, -card-radius, the card picked --themor-bundle-picked (its border and tick),
+ * --themor-bundle-number-bg and -number-color (the steps' numbers), --themor-bundle-summary-bg,
+ * --themor-bundle-summary-radius, --themor-bundle-saving (the saving's color), and the tabs'
+ * --themor-bundle-tabs-bg, -tab-color and -tab-on-bg.
+ */
+
+.themor-bundle {
+	display: flex;
+	flex-direction: column;
+	gap: var(--themor-bundle-space, 1.75rem);
+	min-inline-size: 0;
+}
+
+/* The tabs. */
+.themor-bundle__tabs {
+	display: inline-flex;
+	align-self: flex-start;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	padding: 0.3rem;
+	border-radius: 999px;
+	background: var(--themor-bundle-tabs-bg, var(--themor-shop-surface, #f8fafc));
+}
+
+.themor-bundle__tab {
+	display: inline-flex;
+	align-items: center;
+	min-block-size: 2.75rem;
+	margin: 0;
+	padding-block: 0;
+	padding-inline: 1.25rem;
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: var(--themor-bundle-tab-color, var(--themor-shop-muted, #6b7280));
+	font: inherit;
+	font-size: 0.9375rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.themor-bundle__tab[aria-selected="true"] {
+	background: var(--themor-bundle-tab-on-bg, var(--themor-shop-bg, #fff));
+	color: var(--themor-shop-heading, #111827);
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.themor-bundle__tab:focus-visible {
+	outline: 2px solid var(--themor-shop-accent, #2563eb);
+	outline-offset: 2px;
+}
+
+/* Without scripts every set shows, each under its name; with them, the tabs name them. */
+.themor-bundle__set[hidden] {
+	display: none;
+}
+
+.themor-bundle__set-name {
+	margin: 0 0 1rem;
+	font-size: 1.375rem;
+}
+
+.themor-bundle.is-tabbed .themor-bundle__set-name {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.themor-bundle__layout {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(18rem, 22rem);
+	gap: var(--themor-bundle-space, 1.75rem) calc(var(--themor-bundle-space, 1.75rem) * 1.4);
+	align-items: start;
+}
+
+@media (max-width: 900px) {
+	.themor-bundle__layout {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+/* The steps. */
+.themor-bundle__steps {
+	display: flex;
+	flex-direction: column;
+	gap: var(--themor-bundle-space, 1.75rem);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-bundle__fieldset {
+	min-inline-size: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.themor-bundle__legend {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem 0.75rem;
+	margin: 0 0 0.875rem;
+	padding: 0;
+	color: var(--themor-shop-heading, #111827);
+}
+
+.themor-bundle__number {
+	display: inline-flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 999px;
+	background: var(--themor-bundle-number-bg, var(--themor-shop-accent, #2563eb));
+	color: var(--themor-bundle-number-color, var(--themor-shop-on-accent, #fff));
+	font-weight: 800;
+}
+
+.themor-bundle__step-name {
+	font-size: 1.375rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.themor-bundle__hint {
+	color: var(--themor-shop-muted, #6b7280);
+	font-size: 0.9375rem;
+}
+
+.themor-bundle__choices {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+	gap: 0.875rem;
+}
+
+/* A choice: the whole card picks it; its radio button stays for the keyboard and screen readers. */
+.themor-bundle__choice {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding: 0.625rem 0.625rem 0.875rem;
+	border: 2px solid var(--themor-bundle-card-border, var(--themor-shop-border, #e5e7eb));
+	border-radius: var(--themor-bundle-card-radius, calc(var(--themor-shop-radius, 10px) * 2));
+	background: var(--themor-bundle-card-bg, var(--themor-shop-bg, #fff));
+	cursor: pointer;
+	transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.themor-bundle__choice:hover {
+	border-color: color-mix(in srgb, var(--themor-bundle-picked, var(--themor-shop-heading, #111827)) 45%, transparent);
+}
+
+.themor-bundle__choice.is-picked,
+.themor-bundle__choice:has(.themor-bundle__radio:checked) {
+	border-color: var(--themor-bundle-picked, var(--themor-shop-heading, #111827));
+	box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1);
+}
+
+.themor-bundle__radio {
+	position: absolute;
+	inset-block-start: 1rem;
+	inset-inline-start: 1rem;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	opacity: 0;
+}
+
+.themor-bundle__choice:has(.themor-bundle__radio:focus-visible) {
+	outline: 2px solid var(--themor-shop-accent, #2563eb);
+	outline-offset: 3px;
+}
+
+.themor-bundle__picture {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border-radius: calc(var(--themor-shop-radius, 10px) * 1.4);
+	background: var(--themor-shop-surface, #f8fafc);
+}
+
+.themor-bundle__picture img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	margin: 0;
+	object-fit: cover;
+}
+
+.themor-bundle__tick {
+	position: absolute;
+	inset-block-start: 0.6rem;
+	inset-inline-end: 0.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.875rem;
+	height: 1.875rem;
+	box-sizing: border-box;
+	border: 1.5px solid var(--themor-shop-border, #e5e7eb);
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.92);
+	color: transparent;
+}
+
+.themor-bundle__choice.is-picked .themor-bundle__tick,
+.themor-bundle__choice:has(.themor-bundle__radio:checked) .themor-bundle__tick {
+	border-color: var(--themor-bundle-picked, var(--themor-shop-heading, #111827));
+	background: var(--themor-bundle-picked, var(--themor-shop-heading, #111827));
+	color: #fff;
+}
+
+.themor-bundle__name {
+	margin-block-start: 0.35rem;
+	color: var(--themor-shop-heading, #111827);
+	font-size: 0.9375rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.themor-bundle__note {
+	color: var(--themor-shop-muted, #6b7280);
+	font-size: 0.8125rem;
+	line-height: 1.4;
+}
+
+.themor-bundle__choice .themor-pick {
+	margin: 0.15rem 0 0;
+}
+
+.themor-bundle__price {
+	margin-block-start: auto;
+	padding-block-start: 0.3rem;
+	color: var(--themor-shop-heading, #111827);
+	font-weight: 700;
+}
+
+.themor-bundle__price del {
+	margin-inline-end: 0.35em;
+	color: var(--themor-shop-muted, #6b7280);
+	font-weight: 500;
+}
+
+.themor-bundle__price ins {
+	text-decoration: none;
+}
+
+/* The summary. */
+.themor-bundle__summary {
+	position: sticky;
+	inset-block-start: calc(var(--themor-sticky-offset, 0px) + 1.5rem);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.5rem;
+	border-radius: var(--themor-bundle-summary-radius, calc(var(--themor-shop-radius, 10px) * 2.4));
+	background: var(--themor-bundle-summary-bg, var(--themor-shop-surface, #f8fafc));
+}
+
+@media (max-width: 900px) {
+	.themor-bundle__summary {
+		position: static;
+	}
+}
+
+.themor-bundle__title {
+	margin: 0;
+	font-size: 1.375rem;
+	line-height: 1.2;
+}
+
+.themor-bundle__picked {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themor-bundle__picked-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.5rem;
+	border-radius: calc(var(--themor-shop-radius, 10px) * 1.4);
+	background: var(--themor-shop-bg, #fff);
+	font-size: 0.875rem;
+	line-height: 1.3;
+}
+
+.themor-bundle__picked-image {
+	flex: none;
+	width: 3.25rem;
+	height: 3.25rem;
+	overflow: hidden;
+	border-radius: var(--themor-shop-radius, 10px);
+}
+
+.themor-bundle__picked-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	object-fit: cover;
+}
+
+.themor-bundle__picked-text {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	min-inline-size: 0;
+}
+
+.themor-bundle__picked-step {
+	color: var(--themor-shop-accent, #2563eb);
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.themor-bundle__picked-name {
+	color: var(--themor-shop-heading, #111827);
+	font-weight: 600;
+}
+
+.themor-bundle__picked-price {
+	flex: none;
+	color: var(--themor-shop-heading, #111827);
+	font-weight: 700;
+}
+
+.themor-bundle__totals {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0.4rem 0.75rem;
+	margin: 0;
+	font-size: 0.9375rem;
+}
+
+.themor-bundle__totals dt,
+.themor-bundle__totals dd {
+	margin: 0;
+}
+
+.themor-bundle__totals dd {
+	text-align: end;
+}
+
+.themor-bundle__saving-label,
+.themor-bundle__saving {
+	color: var(--themor-bundle-saving, var(--themor-shop-accent, #2563eb));
+	font-weight: 600;
+}
+
+.themor-bundle__total-label {
+	color: var(--themor-shop-heading, #111827);
+	font-weight: 700;
+}
+
+.themor-bundle__total {
+	color: var(--themor-shop-heading, #111827);
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.1;
+}
+
+.themor-bundle .themor-bundle__add {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-block-size: 3.25rem;
+	margin: 0;
+	font-weight: 700;
+}
+
+.themor-bundle .themor-bundle__add.loading {
+	opacity: 0.7;
+	cursor: progress;
+}
+
+.themor-bundle__note-line {
+	margin: 0;
+	color: var(--themor-shop-muted, #6b7280);
+	font-size: 0.8125rem;
+	line-height: 1.45;
+}
+
+.themor-bundle__status {
+	margin: 0;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.themor-bundle__status:empty {
+	display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.themor-bundle__choice {
+		transition: none;
+	}
+}

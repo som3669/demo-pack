@@ -1,0 +1,63 @@
+/**
+ * Price switch: two choices in a rounded track, the picked one raised. A theme restyles it with
+ * the custom properties: --themor-switch-track (the track), --themor-switch-picked (the picked
+ * choice's background), --themor-switch-color and --themor-switch-picked-color (their words).
+ */
+/* The block is a row the switch sits in, whatever a theme's alignment classes say (some float
+   or turn .aligncenter into a block of its own). */
+.wp-block-themor-price-switch,
+.wp-block-themor-price-switch.alignleft,
+.wp-block-themor-price-switch.aligncenter,
+.wp-block-themor-price-switch.alignright {
+	display: flex;
+	float: none;
+}
+
+.wp-block-themor-price-switch.aligncenter {
+	justify-content: center;
+}
+
+.wp-block-themor-price-switch.alignright {
+	justify-content: flex-end;
+}
+
+.themor-price-switch {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	padding: 4px;
+	border-radius: 999px;
+	background: var(--themor-switch-track, rgba(0, 0, 0, 0.06));
+}
+
+.themor-price-switch__choice {
+	min-height: 44px;
+	padding: 0 18px;
+	border: 0;
+	border-radius: inherit;
+	background: transparent;
+	color: var(--themor-switch-color, inherit);
+	font: inherit;
+	font-weight: 600;
+	line-height: 1.2;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.themor-price-switch__choice[aria-pressed="true"] {
+	background: var(--themor-switch-picked, #fff);
+	color: var(--themor-switch-picked-color, inherit);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.themor-price-switch__choice:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+.themor-price-switch__note {
+	font-weight: 500;
+	opacity: 0.85;
+}

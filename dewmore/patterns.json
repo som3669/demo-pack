@@ -1,0 +1,329 @@
+{
+	"schema": 1,
+	"patterns": {
+		"hero": {
+			"title": "Home: calm skincare for every skin type, with the new serum and its price",
+			"file": "patterns/hero.html",
+			"links": [
+				{
+					"text": "Shop skincare",
+					"product_cat": "skincare"
+				},
+				{
+					"text": "Find what suits your skin",
+					"page": "home",
+					"anchor": "skin"
+				}
+			]
+		},
+		"skin": {
+			"title": "Home: pick your skin type, and the skincare that suits it",
+			"file": "patterns/skin.html"
+		},
+		"sale": {
+			"title": "Home: the glow sale, a countdown to Sunday night and a code to copy",
+			"file": "patterns/sale.html",
+			"links": [
+				{
+					"text": "Shop serums",
+					"product_cat": "serums"
+				}
+			]
+		},
+		"offers": {
+			"title": "Home: the night shift set, and the new mineral sun cream",
+			"file": "patterns/offers.html",
+			"links": [
+				{
+					"text": "Shop the set",
+					"product": "night-shift-set"
+				},
+				{
+					"text": "Shop sun care",
+					"product_cat": "sun-care"
+				}
+			]
+		},
+		"best-sellers": {
+			"title": "Home: three steps morning and night, and the best sellers in tabs",
+			"file": "patterns/best-sellers.html",
+			"links": [
+				{
+					"text": "Build your routine",
+					"page": "routine"
+				}
+			]
+		},
+		"makeup": {
+			"title": "Home: sheer makeup, with each product's shades on its card",
+			"file": "patterns/makeup.html",
+			"links": [
+				{
+					"text": "Find your shade",
+					"page": "shade-guide"
+				}
+			]
+		},
+		"routine-teaser": {
+			"title": "Home: build your routine and save 15%, four steps in the order you use them",
+			"file": "patterns/routine-teaser.html",
+			"links": [
+				{
+					"text": "Build your routine",
+					"page": "routine"
+				}
+			]
+		},
+		"why": {
+			"title": "Home: made for skin that reacts, three promises beside a shelf of bottles",
+			"file": "patterns/why.html",
+			"links": [
+				{
+					"text": "How we make it",
+					"page": "about"
+				}
+			]
+		},
+		"refills": {
+			"title": "Home: keep the bottle and refill the rest, a price switch between bottles and refill pouches",
+			"file": "patterns/refills.html",
+			"links": [
+				{
+					"text": "See all refills",
+					"product_cat": "refills"
+				}
+			]
+		},
+		"journal": {
+			"title": "Home: the three newest journal articles",
+			"file": "patterns/journal.html",
+			"links": [
+				{
+					"text": "All articles",
+					"page": "journal"
+				}
+			]
+		},
+		"join": {
+			"title": "Home: join and take 15% off, a sign-up form that shows the code once you join",
+			"file": "patterns/join.html"
+		},
+		"routine-page": {
+			"title": "Build your routine: morning and night, one product for each step, 15% off together",
+			"file": "patterns/routine-page.html"
+		},
+		"compare-page": {
+			"title": "Compare: how it works, above the products chosen",
+			"file": "patterns/compare-page.html"
+		},
+		"wishlist-page": {
+			"title": "Wishlist: the products a shopper saved",
+			"file": "patterns/wishlist-page.html"
+		},
+		"help-page": {
+			"title": "Help and delivery: questions that open, a ZIP check for same-day delivery, and how to reach us",
+			"file": "patterns/help-page.html"
+		},
+		"same-day": {
+			"title": "Product pages: check a ZIP code for same-day delivery",
+			"file": "patterns/same-day.html"
+		},
+		"skin-types-page": {
+			"title": "Find your skin type: the five types, what each feels like, and a link to the skincare for it",
+			"file": "patterns/skin-types-page.html",
+			"links": [
+				{
+					"text": "Shop for dry skin",
+					"product_cat": "skincare",
+					"filter": {
+						"skin-type": "dry"
+					}
+				},
+				{
+					"text": "Shop for oily skin",
+					"product_cat": "skincare",
+					"filter": {
+						"skin-type": "oily"
+					}
+				},
+				{
+					"text": "Shop for combination skin",
+					"product_cat": "skincare",
+					"filter": {
+						"skin-type": "combination"
+					}
+				},
+				{
+					"text": "Shop for sensitive skin",
+					"product_cat": "skincare",
+					"filter": {
+						"skin-type": "sensitive"
+					}
+				},
+				{
+					"text": "Shop for normal skin",
+					"product_cat": "skincare",
+					"filter": {
+						"skin-type": "normal"
+					}
+				}
+			]
+		},
+		"shade-guide": {
+			"title": "Shade guide: the skin tint's twelve shades by skin depth",
+			"file": "patterns/shade-guide.html"
+		},
+		"about-page": {
+			"title": "About us: who makes Dewmore, and how",
+			"file": "patterns/about-page.html"
+		},
+		"privacy-page": {
+			"title": "Privacy: what a real store would say",
+			"file": "patterns/privacy-page.html"
+		},
+		"terms-page": {
+			"title": "Terms: the demo's small print",
+			"file": "patterns/terms-page.html"
+		},
+		"offer-hyaluronic-water-serum": {
+			"title": "Journal: Hyaluronic water serum, with its price",
+			"file": "patterns/offer-hyaluronic-water-serum.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "hyaluronic-water-serum"
+				}
+			]
+		},
+		"offer-dew-drop-serum": {
+			"title": "Journal: Dew Drop niacinamide serum, with its price",
+			"file": "patterns/offer-dew-drop-serum.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "dew-drop-serum"
+				}
+			]
+		},
+		"offer-oat-milk-cleanser": {
+			"title": "Journal: Oat milk cleanser, with its price",
+			"file": "patterns/offer-oat-milk-cleanser.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "oat-milk-cleanser"
+				}
+			]
+		},
+		"offer-mineral-spf-50": {
+			"title": "Journal: Mineral SPF 50, with its price",
+			"file": "patterns/offer-mineral-spf-50.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "mineral-spf-50"
+				}
+			]
+		},
+		"offer-gentle-retinal-serum": {
+			"title": "Journal: Gentle retinal serum, with its price",
+			"file": "patterns/offer-gentle-retinal-serum.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "gentle-retinal-serum"
+				}
+			]
+		},
+		"offer-dew-skin-tint": {
+			"title": "Journal: Dew skin tint, with its price",
+			"file": "patterns/offer-dew-skin-tint.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "dew-skin-tint"
+				}
+			]
+		},
+		"offer-ceramide-barrier-cream": {
+			"title": "Journal: Ceramide barrier cream, with its price",
+			"file": "patterns/offer-ceramide-barrier-cream.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "ceramide-barrier-cream"
+				}
+			]
+		},
+		"offer-cream-blush": {
+			"title": "Journal: Cream blush, with its price",
+			"file": "patterns/offer-cream-blush.html",
+			"links": [
+				{
+					"text": "See the details",
+					"product": "cream-blush"
+				}
+			]
+		},
+		"popup-welcome": {
+			"title": "Popup: take 15% off your first order, a sign-up form that shows the code once you join",
+			"file": "patterns/popup-welcome.html"
+		},
+		"footer-brand": {
+			"title": "Footer: the shop in a line, and how to reach it",
+			"file": "patterns/footer-brand.html"
+		},
+		"concerns": {
+			"title": "Home: shop by concern, six round pictures with their counts",
+			"file": "patterns/concerns.html",
+			"links": [
+				{
+					"text": "Dryness",
+					"product_tag": "dryness"
+				},
+				{
+					"text": "Breakouts",
+					"product_tag": "breakouts"
+				},
+				{
+					"text": "Dullness",
+					"product_tag": "dullness"
+				},
+				{
+					"text": "Redness",
+					"product_tag": "redness"
+				},
+				{
+					"text": "Fine lines",
+					"product_tag": "fine-lines"
+				},
+				{
+					"text": "Shine",
+					"product_tag": "shine"
+				},
+				{
+					"text": "Not sure which? Ask us",
+					"page": "help"
+				}
+			]
+		},
+		"reviews": {
+			"title": "Home: in their words, three reviews with the reviewer's skin type and what they bought",
+			"file": "patterns/reviews.html",
+			"links": [
+				{
+					"text": "Oat milk cleanser",
+					"product": "oat-milk-cleanser"
+				},
+				{
+					"text": "Dew Drop niacinamide serum",
+					"product": "dew-drop-serum"
+				},
+				{
+					"text": "Ceramide barrier cream",
+					"product": "ceramide-barrier-cream"
+				}
+			]
+		}
+	}
+}
