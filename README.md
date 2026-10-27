@@ -148,7 +148,7 @@ opens that demo straight away). These index fields fill the card and the demo's 
 | `pro` | `true` | A demo only the Pro theme has, such as Daybook. The importer shows a Pro badge at the top right of its card and of its preview. Leave it out for a free demo, even when the Pro theme lists its own copy of it (the Yantra business site). |
 | `shown_with` | list of theme slugs | Also list the demo for these themes, such as a free theme's Pro demos: `"theme": "yantra-pro", "shown_with": [ "yantra" ]`. There it shows "For Yantra Pro" and imports once that theme is active (Activate, or Get Yantra Pro). |
 | `theme_name` | text | The theme's name, for a site that doesn't have it installed. |
-| `upgrade_url` | URL | Where the theme the demo needs is had; the Get button links there. |
+| `upgrade_url` | URL | Where the theme the demo needs is had, such as the Pro theme's page. A demo shown with another theme (`shown_with`) can't be imported there: its side panel shows Upgrade (Get, for a theme that isn't Pro) linking here, or Activate when that theme is installed. Without it, Storefill 1.1.1 links to the active theme's Theme URI. |
 
 All text in a pack is plain text: Storefill strips any HTML from it. Pattern files are the one
 exception: block markup, cleaned the way WordPress cleans a post by an author without the
