@@ -2,12 +2,12 @@
 	"schema": 1,
 	"homepage": {
 		"front_page": "home",
-		"posts_page": "blog"
+		"posts_page": "journal"
 	},
 	"demo_site": {
 		"options": {
-			"blogname": "Yantra",
-			"blogdescription": "A calmer way to work"
+			"blogname": "Tilework",
+			"blogdescription": "Design and build studio"
 		},
 		"hide_sample_content": true
 	}

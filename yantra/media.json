@@ -1,0 +1,21 @@
+{
+	"schema": 1,
+	"images": {
+		"images/tilework-logo.png": "Tilework",
+		"images/studio-glass-photo.jpg": "A glass-walled meeting room with a wooden desk and two yellow chairs",
+		"images/studio-lights-photo.jpg": "A bright studio with pendant lights, a large screen and a camera on a tripod",
+		"images/orange-pod-photo.jpg": "A round meeting nook wrapped in orange slats, with a grey sofa inside",
+		"images/studio-benches-photo.jpg": "A bright workspace with wooden benches, colourful lockers and potted plants",
+		"images/desk-sun-photo.jpg": "A laptop on a wooden desk beside a potted plant in warm afternoon sun",
+		"images/work/halden-screens.jpg": "Two phones and a dashboard of the Halden banking app on a lilac background",
+		"images/work/mossgrove-screens.jpg": "The Mossgrove online store with mountains in its banner and four products",
+		"images/work/quillo-screens.jpg": "The Quillo notes app with a launch plan, a task list and comments",
+		"images/work/brisa-identity.jpg": "The Brisa coffee brand: a wordmark, a coffee bag, colours, type and a mug",
+		"images/work/tidal-screens.jpg": "The Tidal energy website in navy and yellow with a ring chart of solar power",
+		"images/work/parcel-pine-screens.jpg": "The Parcel & Pine booking site with a map of cabins and a booking card",
+		"images/posts/plan-photo.jpg": "Hands sketching a page layout in pencil beside a box of watercolours",
+		"images/posts/hourglass-photo.jpg": "A wooden hourglass with pink sand beside a pen holder on a desk",
+		"images/posts/pencils-photo.jpg": "Coloured pencils standing in a cup, seen from above",
+		"images/posts/stationery-photo.jpg": "Pencils, paper clips, a ruler and sticky notes scattered on a white desk"
+	}
+}

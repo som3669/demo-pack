@@ -1,0 +1,844 @@
+{
+	"schema": 1,
+	"post_categories": {
+		"work": {
+			"name": "Case studies",
+			"description": "Projects we have launched, with the numbers a year later."
+		},
+		"design": {
+			"name": "Design",
+			"description": "Interfaces, brands and the words on the page."
+		},
+		"engineering": {
+			"name": "Engineering",
+			"description": "How we build fast, accessible sites and apps."
+		},
+		"studio": {
+			"name": "Studio notes",
+			"description": "How we run projects and the studio."
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "home-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-clients"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-services"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-work"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-why"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "process"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-reviews"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "plans"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-journal",
+						"categories": [
+							"design",
+							"engineering",
+							"studio"
+						]
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta"
+					}
+				]
+			]
+		},
+		"work": {
+			"title": "Work",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "work-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "work-grid"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "home-reviews"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta"
+					}
+				]
+			]
+		},
+		"services": {
+			"title": "Services",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "services-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "services-list"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "process"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "plans"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "faq"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta"
+					}
+				]
+			]
+		},
+		"studio": {
+			"title": "Studio",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "studio-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "studio-values"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "studio-team"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "studio-jobs"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "cta"
+					}
+				]
+			]
+		},
+		"contact": {
+			"title": "Contact",
+			"template": "full-width",
+			"content": [
+				[
+					"pattern",
+					{
+						"slug": "contact-hero"
+					}
+				],
+				[
+					"pattern",
+					{
+						"slug": "faq"
+					}
+				]
+			]
+		},
+		"journal": {
+			"title": "Journal",
+			"content": []
+		},
+		"privacy": {
+			"title": "Privacy policy",
+			"content": [
+				[
+					"p",
+					"This is a sample privacy policy for the Tilework demo. Replace it with your own before you publish your site."
+				],
+				[
+					"h2",
+					"What we collect"
+				],
+				[
+					"p",
+					"When you write to us, we keep your name, your email address and what you sent, so we can answer and, if you become a client, run the project."
+				],
+				[
+					"h2",
+					"How we use it"
+				],
+				[
+					"p",
+					"Only to reply to you and to work with you. We never sell it or share it with anyone for their own use."
+				],
+				[
+					"h2",
+					"Your choices"
+				],
+				[
+					"p",
+					"Ask us at any time for a copy of what we hold about you, or to delete it."
+				]
+			]
+		},
+		"terms": {
+			"title": "Terms",
+			"content": [
+				[
+					"p",
+					"These are sample terms for the Tilework demo. Replace them with your own before you publish your site."
+				],
+				[
+					"h2",
+					"Quotes and payments"
+				],
+				[
+					"p",
+					"Every project has a fixed quote. We invoice a third at kickoff, a third at the design sign-off and a third at launch."
+				],
+				[
+					"h2",
+					"Who owns the work"
+				],
+				[
+					"p",
+					"Once the last invoice is paid, everything we made for you is yours: designs, code, content and accounts."
+				]
+			]
+		}
+	},
+	"posts": {
+		"halden-bank-for-freelancers": {
+			"title": "Halden: a bank account that budgets for you",
+			"excerpt": "A banking app for freelancers that sets money aside for tax and rent the moment an invoice is paid.",
+			"image": "images/work/halden-screens.jpg",
+			"days": 9,
+			"category": "work",
+			"tags": [
+				"Fintech",
+				"Mobile app"
+			],
+			"content": [
+				[
+					"p",
+					"Freelancers are paid on different days in different amounts, and most budgeting apps assume a salary. Halden asked us to design an account that copes with that."
+				],
+				[
+					"ul",
+					[
+						"Client: Halden, a bank for freelancers",
+						"Services: product design, iOS and Android, web dashboard",
+						"Timeline: 14 weeks to launch",
+						"Team: two designers, three engineers"
+					]
+				],
+				[
+					"h2",
+					"The brief"
+				],
+				[
+					"p",
+					"Halden had a banking licence and a waiting list of 8,000 freelancers, but no product. They needed an app that felt calm on a bad month and helped on a good one, ready for a launch date their investors had already announced."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ul",
+					[
+						"Interviewed 24 freelancers about how they handle irregular income",
+						"Designed pots that fill themselves by a share of every payment",
+						"Built the iOS, Android and web apps on one shared design system",
+						"Ran a beta with 400 people for four weeks before launch"
+					]
+				],
+				[
+					"h2",
+					"A year later"
+				],
+				[
+					"ul",
+					[
+						"41% more weekly active users than their previous budgeting app",
+						"Average tax pot covers 96% of the bill by January",
+						"4.8 stars from 3,100 ratings in the app stores"
+					]
+				],
+				[
+					"quote",
+					"Tilework felt like part of our team from the first week. The app shipped on the date they promised.",
+					"Ines Novak, Head of product, Halden"
+				]
+			]
+		},
+		"mossgrove-outdoor-store": {
+			"title": "Mossgrove: an outdoor store built for phones",
+			"excerpt": "Three out of four visits came from phones, but most sales came from laptops. We rebuilt the store around the thumb.",
+			"image": "images/work/mossgrove-screens.jpg",
+			"days": 23,
+			"category": "work",
+			"tags": [
+				"E-commerce",
+				"WordPress"
+			],
+			"content": [
+				[
+					"p",
+					"Mossgrove makes jackets, packs and boots for people who walk a long way. Their old store looked good on a laptop and fell apart on a phone."
+				],
+				[
+					"ul",
+					[
+						"Client: Mossgrove, outdoor clothing and kit",
+						"Services: e-commerce design, development, growth",
+						"Timeline: 10 weeks",
+						"Platform: WordPress and WooCommerce"
+					]
+				],
+				[
+					"h2",
+					"The brief"
+				],
+				[
+					"p",
+					"Visitors on phones were adding to the bag and leaving at checkout. Mossgrove wanted a store that sold as well on a phone on a train as on a desk at home, without moving off WordPress."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ul",
+					[
+						"Watched twelve customers shop on their own phones",
+						"Redesigned product pages around photos, sizes and stock left",
+						"Cut checkout from five steps to two, with wallets first",
+						"Made every page load in under two seconds on a slow connection"
+					]
+				],
+				[
+					"h2",
+					"A year later"
+				],
+				[
+					"ul",
+					[
+						"38% more of mobile visits end in an order",
+						"Average order up from €118 to €142",
+						"Returns for the wrong size down by a third, thanks to a fit guide"
+					]
+				],
+				[
+					"quote",
+					"They asked better questions about our customers than we did. The new store paid for itself in the first season.",
+					"Tom Marsh, Founder, Mossgrove"
+				]
+			]
+		},
+		"quillo-notes-for-teams": {
+			"title": "Quillo: notes a whole team can write in",
+			"excerpt": "A notes app for teams that had more sign-ups than users. We redesigned the first ten minutes.",
+			"image": "images/work/quillo-screens.jpg",
+			"days": 37,
+			"category": "work",
+			"tags": [
+				"SaaS",
+				"Onboarding"
+			],
+			"content": [
+				[
+					"p",
+					"Quillo had a loyal core of users and a leaky trial: most teams signed up, wrote one note and never came back."
+				],
+				[
+					"ul",
+					[
+						"Client: Quillo, notes and docs for teams",
+						"Services: product design, research, onboarding",
+						"Timeline: 8 weeks",
+						"Team: two designers, one writer"
+					]
+				],
+				[
+					"h2",
+					"The brief"
+				],
+				[
+					"p",
+					"The product was good once a whole team was in it. The problem was getting there. Quillo asked us to find out why trials stalled and to fix the first ten minutes."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ul",
+					[
+						"Studied 60 recorded trial sessions and interviewed 15 teams that left",
+						"Replaced the empty first page with templates for real meetings",
+						"Made inviting a teammate part of writing the first note",
+						"Wrote every empty state and message again, in plain words"
+					]
+				],
+				[
+					"h2",
+					"A year later"
+				],
+				[
+					"ul",
+					[
+						"2.4 times more trials turn into paid teams",
+						"Teams invite their second person within 6 minutes, not 3 days",
+						"Support questions in the first week halved"
+					]
+				],
+				[
+					"quote",
+					"We had been guessing for a year. Two weeks of research told us exactly what to fix.",
+					"Daniel Reyes, CEO, Quillo"
+				]
+			]
+		},
+		"brisa-coffee-brand": {
+			"title": "Brisa: a coffee brand from the coast",
+			"excerpt": "A name, a sun and a bag you can spot across a shop. The first roast sold out in nine days.",
+			"image": "images/work/brisa-identity.jpg",
+			"days": 52,
+			"category": "work",
+			"tags": [
+				"Brand",
+				"Packaging"
+			],
+			"content": [
+				[
+					"p",
+					"Two baristas were opening a roastery by the sea and wanted a brand that felt like a slow morning, not another black-and-gold coffee bag."
+				],
+				[
+					"ul",
+					[
+						"Client: Brisa, a coffee roaster",
+						"Services: naming, brand identity, packaging, website",
+						"Timeline: 7 weeks",
+						"Team: two brand designers, one engineer"
+					]
+				],
+				[
+					"h2",
+					"The brief"
+				],
+				[
+					"p",
+					"They had a building, a roaster and great coffee, but no name, no packaging and a launch in two months. The brand had to work on a bag, a cup, a van and a small online shop."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ul",
+					[
+						"Named the roastery Brisa, Portuguese for a sea breeze",
+						"Drew a wordmark and a rising sun that works at any size",
+						"Chose four colours from the coast: clay, sunrise, espresso and foam",
+						"Designed the bags, cups and a small online shop for subscriptions"
+					]
+				],
+				[
+					"h2",
+					"A year later"
+				],
+				[
+					"ul",
+					[
+						"The first roast of 600 bags sold out in nine days",
+						"320 coffee subscriptions in the first three months",
+						"Stocked in 14 cafés and shops within the year"
+					]
+				],
+				[
+					"quote",
+					"People pick the bag up before they know what is in it. That is exactly what we hoped for.",
+					"Marta Lopes, Co-founder, Brisa"
+				]
+			]
+		},
+		"tidal-energy-website": {
+			"title": "Tidal: solar power, explained in one page",
+			"excerpt": "Solar panels are complicated. Tidal’s new website makes the decision simple, and quote requests tripled.",
+			"image": "images/work/tidal-screens.jpg",
+			"days": 66,
+			"category": "work",
+			"tags": [
+				"Website",
+				"Energy"
+			],
+			"content": [
+				[
+					"p",
+					"Tidal installs solar panels and home batteries. Their website explained the technology well, and lost people before they asked for a price."
+				],
+				[
+					"ul",
+					[
+						"Client: Tidal, home solar and batteries",
+						"Services: website, brand refresh, growth",
+						"Timeline: 9 weeks",
+						"Platform: WordPress"
+					]
+				],
+				[
+					"h2",
+					"The brief"
+				],
+				[
+					"p",
+					"People wanted three answers: will it work on my roof, what will I save and how long does it take. The old site answered them on six different pages. Tidal asked for a site that answered them in one."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ul",
+					[
+						"Rewrote the site around the three questions people ask",
+						"Built a roof check that gives a saving in under a minute",
+						"Refreshed the brand with a sun-yellow and a calmer navy",
+						"Set up search pages for the 40 towns Tidal works in"
+					]
+				],
+				[
+					"h2",
+					"A year later"
+				],
+				[
+					"ul",
+					[
+						"Three times more quote requests each month",
+						"Organic visits up 212% in a year",
+						"Average time to a quote down from four days to one"
+					]
+				],
+				[
+					"quote",
+					"Clear prices, no surprises and a demo every other Friday. I have never enjoyed a website project before.",
+					"Sara Okoye, Marketing lead, Tidal"
+				]
+			]
+		},
+		"parcel-and-pine-cabin-booking": {
+			"title": "Parcel & Pine: cabins booked in three taps",
+			"excerpt": "A family business with 40 cabins and a booking form by email. Now people book on the map, in three taps.",
+			"image": "images/work/parcel-pine-screens.jpg",
+			"days": 81,
+			"category": "work",
+			"tags": [
+				"Booking",
+				"Product design"
+			],
+			"content": [
+				[
+					"p",
+					"Parcel & Pine rents forty cabins in the hills, many of them dog-friendly. Bookings came by email and phone, and every reply took a day."
+				],
+				[
+					"ul",
+					[
+						"Client: Parcel & Pine, cabin holidays",
+						"Services: product design, development",
+						"Timeline: 12 weeks",
+						"Team: one designer, two engineers"
+					]
+				],
+				[
+					"h2",
+					"The brief"
+				],
+				[
+					"p",
+					"The family wanted guests to see what was free and book it on the spot, without paying a big booking site a fifth of every stay."
+				],
+				[
+					"h2",
+					"What we did"
+				],
+				[
+					"ul",
+					[
+						"Designed a map that shows each cabin’s price for the dates you pick",
+						"Built booking and payment in three steps, with dogs as an option",
+						"Connected the calendar to the cleaners’ rota",
+						"Trained the family to run it all from WordPress"
+					]
+				],
+				[
+					"h2",
+					"A year later"
+				],
+				[
+					"ul",
+					[
+						"Direct bookings up 64% in the first season",
+						"€38,000 less in booking site fees in a year",
+						"Replies to booking emails down from 30 a day to 4"
+					]
+				],
+				[
+					"quote",
+					"We got our evenings back. Guests book while we sleep, and the cleaners always know where to go.",
+					"Huw Parry, Owner, Parcel & Pine"
+				]
+			]
+		},
+		"design-systems-small-teams-use": {
+			"title": "Design systems that small teams actually use",
+			"category": "design",
+			"days": 4,
+			"image": "images/posts/pencils-photo.jpg",
+			"excerpt": "A design system is not a big library. For a small team it is twelve parts, written down, that everyone reaches for first.",
+			"tags": [
+				"Design systems",
+				"Process"
+			],
+			"content": [
+				[
+					"p",
+					"Most design systems we inherit are big and abandoned: three hundred components, half of them used once. Small teams do better with less."
+				],
+				[
+					"h2",
+					"Start with the twelve parts you use every day"
+				],
+				[
+					"p",
+					"Buttons, links, inputs, cards, headings, a grid, colours, spacing, icons, alerts, a modal and a table. Get those right and most screens build themselves."
+				],
+				[
+					"h2",
+					"Write down when, not just how"
+				],
+				[
+					"p",
+					"Every part gets one sentence on when to use it and one on when not to. That sentence prevents more inconsistency than any token."
+				],
+				[
+					"ul",
+					[
+						"Name parts after what they do, not how they look.",
+						"Keep one source: the code, not a file next to it.",
+						"Review new parts once a month, together."
+					]
+				],
+				[
+					"h2",
+					"Measure what gets used"
+				],
+				[
+					"p",
+					"Count how often each part appears in your product. Anything used once is a candidate to delete, not to document."
+				]
+			]
+		},
+		"scope-a-website-in-one-week": {
+			"title": "How we scope a website in one week",
+			"category": "studio",
+			"days": 15,
+			"image": "images/posts/plan-photo.jpg",
+			"excerpt": "Five days, three workshops and one page at the end. Here is how we turn a brief into a fixed price.",
+			"tags": [
+				"Process",
+				"Pricing"
+			],
+			"content": [
+				[
+					"p",
+					"Clients ask how we can give a fixed price when the work is new. The answer is the first week: we spend it making sure we agree on what we are making."
+				],
+				[
+					"h2",
+					"Monday and Tuesday: listen"
+				],
+				[
+					"p",
+					"We meet the team, then talk to five customers. We leave with the visits that matter: who comes, what they came for and what they do next."
+				],
+				[
+					"h2",
+					"Wednesday: draw"
+				],
+				[
+					"p",
+					"We sketch the pages on paper with the team in the room. Arguments are cheap on paper."
+				],
+				[
+					"h2",
+					"Thursday and Friday: write it down"
+				],
+				[
+					"p",
+					"One page: the goal, the pages, what is in and what is out, the plan by week and the price. If it does not fit on one page, the project is too big for one round."
+				]
+			]
+		},
+		"ship-in-two-week-sprints": {
+			"title": "Why we show work every other Friday",
+			"category": "studio",
+			"days": 28,
+			"image": "images/posts/hourglass-photo.jpg",
+			"excerpt": "Two weeks is long enough to make something real and short enough that nobody drifts. Here is what happens in a demo.",
+			"tags": [
+				"Process"
+			],
+			"content": [
+				[
+					"p",
+					"Every second Friday, every client gets a demo of real, working things. Not slides. It is the habit that keeps our projects on time."
+				],
+				[
+					"h2",
+					"What a demo is"
+				],
+				[
+					"p",
+					"Thirty minutes. We show what changed, on a link the client can open on their own phone afterwards. Then we agree on the next two weeks."
+				],
+				[
+					"h2",
+					"Why two weeks"
+				],
+				[
+					"p",
+					"One week is too short to finish anything worth showing. Four weeks is long enough to go the wrong way for a month. Two is the right size for us."
+				],
+				[
+					"quote",
+					"The demo is the deadline. Everything else is a plan.",
+					"Joel Okafor, co-founder"
+				]
+			]
+		},
+		"fast-pages-without-a-rewrite": {
+			"title": "Fast pages without a rewrite: our checklist",
+			"category": "engineering",
+			"days": 44,
+			"image": "images/posts/stationery-photo.jpg",
+			"excerpt": "Most slow sites do not need a new stack. They need smaller images, fewer fonts and one less script.",
+			"tags": [
+				"Performance",
+				"WordPress"
+			],
+			"content": [
+				[
+					"p",
+					"When a client says their site is slow, they often expect us to suggest a rebuild. Usually an afternoon with this list does more."
+				],
+				[
+					"ol",
+					[
+						"Resize and compress images, and serve them in modern formats.",
+						"Load one font family in two weights, from your own server.",
+						"Remove scripts nobody can explain, one at a time.",
+						"Lazy-load anything below the first screen.",
+						"Cache pages, and check your host does too."
+					]
+				],
+				[
+					"h2",
+					"Measure on a real phone"
+				],
+				[
+					"p",
+					"Test on a mid-range phone over a slow connection, not on your desk. The difference is usually four times."
+				],
+				[
+					"h2",
+					"Keep it fast"
+				],
+				[
+					"p",
+					"Add a speed budget to every release: if a page gets slower, it does not ship until it is fixed."
+				]
+			]
+		}
+	}
+}

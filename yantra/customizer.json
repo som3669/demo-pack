@@ -1,61 +1,346 @@
 {
 	"schema": 1,
+	"css": "tilework.css",
 	"theme_mods": {
-		"custom_logo": { "image": "images/yantra-logo.png" },
+		"custom_logo": {
+			"image": "images/tilework-logo.png"
+		},
 		"yantra_logo_width": {
-			"desktop": { "size": 32, "unit": "px" },
-			"tablet": { "size": 30, "unit": "px" },
-			"mobile": { "size": 28, "unit": "px" }
+			"desktop": {
+				"size": 34,
+				"unit": "px"
+			},
+			"tablet": {
+				"size": 32,
+				"unit": "px"
+			},
+			"mobile": {
+				"size": 30,
+				"unit": "px"
+			}
+		},
+		"yantra_site_title_typography": {
+			"font-family": "Bricolage Grotesque",
+			"font-weight": "700",
+			"font-size": {
+				"desktop": {
+					"size": 22,
+					"unit": "px"
+				},
+				"mobile": {
+					"size": 20,
+					"unit": "px"
+				}
+			},
+			"letter-spacing": {
+				"desktop": {
+					"size": -0.03,
+					"unit": "em"
+				}
+			}
+		},
+		"yantra_color_palette": {
+			"id": "custom",
+			"name": "Tilework",
+			"colors": {
+				"yantra-color-1": "#5b4cf5",
+				"yantra-color-2": "#4535d6",
+				"yantra-color-3": "#0d0e12",
+				"yantra-color-4": "#3d4049",
+				"yantra-color-5": "#5f6370",
+				"yantra-color-6": "#e4e1da",
+				"yantra-color-7": "#f3f1ec",
+				"yantra-color-8": "#fbfaf7",
+				"yantra-color-9": "#ffffff"
+			}
+		},
+		"yantra_body_typography": {
+			"font-family": "Inter",
+			"font-weight": "400",
+			"font-style": "default",
+			"text-transform": "default",
+			"font-size": {
+				"desktop": {
+					"size": 17,
+					"unit": "px"
+				}
+			},
+			"line-height": {
+				"desktop": {
+					"size": 1.6,
+					"unit": "-"
+				}
+			}
+		},
+		"yantra_heading_typography": {
+			"font-family": "Bricolage Grotesque",
+			"font-weight": "700",
+			"font-style": "default",
+			"text-transform": "default",
+			"line-height": {
+				"desktop": {
+					"size": 1.08,
+					"unit": "-"
+				}
+			},
+			"letter-spacing": {
+				"desktop": {
+					"size": -0.03,
+					"unit": "em"
+				}
+			}
+		},
+		"yantra_menu_typography": {
+			"font-weight": "500",
+			"text-transform": "default",
+			"font-size": {
+				"desktop": {
+					"size": 15,
+					"unit": "px"
+				}
+			}
+		},
+		"yantra_button_background": "#0d0e12",
+		"yantra_button_background_hover": "#5b4cf5",
+		"yantra_button_text_color": "#ffffff",
+		"yantra_button_text_color_hover": "#ffffff",
+		"yantra_radius": {
+			"size": 14,
+			"unit": "px"
+		},
+		"yantra_box_radius": {
+			"size": 28,
+			"unit": "px"
+		},
+		"yantra_button_radius": {
+			"size": 100,
+			"unit": "px"
 		},
 		"yantra_header_builder": {
 			"desktop": {
-				"top": { "left": [], "center": [], "right": [] },
-				"main": { "left": [ "logo" ], "center": [], "right": [ "primary-menu", "search", "button" ] },
-				"bottom": { "left": [], "center": [], "right": [] }
+				"top": {
+					"left": [],
+					"center": [],
+					"right": []
+				},
+				"main": {
+					"left": [
+						"logo"
+					],
+					"center": [
+						"primary-menu"
+					],
+					"right": [
+						"button"
+					]
+				},
+				"bottom": {
+					"left": [],
+					"center": [],
+					"right": []
+				}
 			},
 			"mobile": {
-				"top": { "left": [], "center": [], "right": [] },
-				"main": { "left": [ "logo" ], "center": [], "right": [ "search", "toggle" ] },
-				"bottom": { "left": [], "center": [], "right": [] }
+				"top": {
+					"left": [],
+					"center": [],
+					"right": []
+				},
+				"main": {
+					"left": [
+						"logo"
+					],
+					"center": [],
+					"right": [
+						"toggle"
+					]
+				},
+				"bottom": {
+					"left": [],
+					"center": [],
+					"right": []
+				}
 			},
-			"offset": [ "mobile-menu", "button", "socials" ]
+			"offset": [
+				"mobile-menu",
+				"button",
+				"socials"
+			]
 		},
-		"yantra_header_button_text": "Get started",
-		"yantra_header_button_url": { "page_url": "pricing" },
-		"yantra_header_socials": [
-			{ "label": "X", "url": "https://example.com/yantra-on-x", "icon": "fa-brands fa-x-twitter", "network": "x" },
-			{ "label": "LinkedIn", "url": "https://example.com/yantra-on-linkedin", "icon": "fa-brands fa-linkedin", "network": "linkedin" },
-			{ "label": "YouTube", "url": "https://example.com/yantra-on-youtube", "icon": "fa-brands fa-youtube", "network": "youtube" },
-			{ "label": "Instagram", "url": "https://example.com/yantra-on-instagram", "icon": "fa-brands fa-instagram", "network": "instagram" }
-		],
-		"themor_sticky_header": true,
-		"themor_site_announce": true,
-		"themor_site_announce_text": "New: Click any part of your site to edit it.",
-		"themor_site_announce_label": "See what is new",
-		"themor_site_announce_url": { "post_url": "what-is-new-this-autumn" },
-		"themor_site_announce_close": true,
-		"themor_site_announce_bg": "#0f172a",
-		"themor_site_announce_color": "#e2e8f0",
-		"yantra_footer_builder": {
+		"yantra_header_main_height": {
 			"desktop": {
-				"top": { "top-1": [], "top-2": [], "top-3": [], "top-4": [], "top-5": [], "top-6": [] },
-				"main": { "main-1": [ "widget-1", "socials" ], "main-2": [ "widget-2" ], "main-3": [ "widget-3" ], "main-4": [ "widget-4" ], "main-5": [], "main-6": [] },
-				"bottom": { "bottom-1": [ "copyright" ], "bottom-2": [ "footer-menu" ], "bottom-3": [], "bottom-4": [], "bottom-5": [], "bottom-6": [] }
+				"size": 80,
+				"unit": "px"
+			},
+			"tablet": {
+				"size": 70,
+				"unit": "px"
+			},
+			"mobile": {
+				"size": 64,
+				"unit": "px"
 			}
 		},
-		"yantra_footer_socials": [
-			{ "label": "X", "url": "https://example.com/yantra-on-x", "icon": "fa-brands fa-x-twitter", "network": "x" },
-			{ "label": "LinkedIn", "url": "https://example.com/yantra-on-linkedin", "icon": "fa-brands fa-linkedin", "network": "linkedin" },
-			{ "label": "YouTube", "url": "https://example.com/yantra-on-youtube", "icon": "fa-brands fa-youtube", "network": "youtube" },
-			{ "label": "Instagram", "url": "https://example.com/yantra-on-instagram", "icon": "fa-brands fa-instagram", "network": "instagram" }
+		"yantra_header_button_text": "Start a project",
+		"yantra_header_button_url": {
+			"page_url": "contact"
+		},
+		"yantra_header_button_style": "solid",
+		"yantra_header_socials": [
+			{
+				"label": "Instagram",
+				"url": "https://example.com/tilework-on-instagram",
+				"icon": "fa-brands fa-instagram",
+				"network": "instagram"
+			},
+			{
+				"label": "LinkedIn",
+				"url": "https://example.com/tilework-on-linkedin",
+				"icon": "fa-brands fa-linkedin",
+				"network": "linkedin"
+			},
+			{
+				"label": "Dribbble",
+				"url": "https://example.com/tilework-on-dribbble",
+				"icon": "fa-brands fa-dribbble",
+				"network": "dribbble"
+			},
+			{
+				"label": "Behance",
+				"url": "https://example.com/tilework-on-behance",
+				"icon": "fa-brands fa-behance",
+				"network": "behance"
+			}
 		],
+		"themor_sticky_header": true,
+		"themor_sticky_header_shrink": true,
+		"themor_site_announce": true,
+		"themor_site_announce_text": "Now booking January projects: two spots left",
+		"themor_site_announce_label": "Start a project",
+		"themor_site_announce_url": {
+			"page_url": "contact"
+		},
+		"themor_site_announce_close": true,
+		"themor_site_announce_bg": "#0d0e12",
+		"themor_site_announce_color": "#f3f1ec",
 		"yantra_title_style": "banner",
+		"yantra_title_align": "start",
 		"yantra_breadcrumbs_position": "above",
 		"yantra_breadcrumbs_separator": "chevron",
-		"yantra_blog_elements": [ "image", "categories", "title", "meta", "excerpt", "read-more" ],
+		"yantra_blog_layout": "grid",
+		"yantra_blog_columns": "3",
+		"yantra_blog_elements": [
+			"image",
+			"categories",
+			"title",
+			"excerpt",
+			"meta"
+		],
+		"yantra_blog_meta": [
+			"date",
+			"reading-time"
+		],
 		"yantra_pagination_style": "load-more",
-		"yantra_post_footer_elements": [ "tags", "author-box", "navigation", "related" ],
+		"yantra_post_meta": [
+			"author",
+			"date",
+			"reading-time"
+		],
+		"yantra_post_footer_elements": [
+			"tags",
+			"navigation",
+			"related"
+		],
 		"themor_blog_progress": true,
-		"themor_blog_related_title": "Keep reading"
+		"themor_blog_related": true,
+		"themor_blog_related_title": "Keep reading",
+		"yantra_footer_builder": {
+			"desktop": {
+				"top": {
+					"top-1": [],
+					"top-2": [],
+					"top-3": [],
+					"top-4": [],
+					"top-5": [],
+					"top-6": []
+				},
+				"main": {
+					"main-1": [
+						"widget-1",
+						"socials"
+					],
+					"main-2": [
+						"widget-2"
+					],
+					"main-3": [
+						"widget-3"
+					],
+					"main-4": [
+						"widget-4"
+					],
+					"main-5": [],
+					"main-6": []
+				},
+				"bottom": {
+					"bottom-1": [
+						"copyright"
+					],
+					"bottom-2": [
+						"footer-menu"
+					],
+					"bottom-3": [],
+					"bottom-4": [],
+					"bottom-5": [],
+					"bottom-6": []
+				}
+			}
+		},
+		"yantra_footer_main_background": {
+			"background-color": "#f3f1ec",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_bottom_background": {
+			"background-color": "#f3f1ec",
+			"background-image": "",
+			"background-repeat": "no-repeat",
+			"background-position": "center center",
+			"background-size": "cover",
+			"background-attachment": "scroll"
+		},
+		"yantra_footer_main_color": "#3d4049",
+		"yantra_footer_bottom_color": "#5f6370",
+		"yantra_footer_main_border": false,
+		"yantra_footer_bottom_border": true,
+		"yantra_footer_copyright": "© {year} Tilework Studio, Lisbon",
+		"yantra_footer_socials": [
+			{
+				"label": "Instagram",
+				"url": "https://example.com/tilework-on-instagram",
+				"icon": "fa-brands fa-instagram",
+				"network": "instagram"
+			},
+			{
+				"label": "LinkedIn",
+				"url": "https://example.com/tilework-on-linkedin",
+				"icon": "fa-brands fa-linkedin",
+				"network": "linkedin"
+			},
+			{
+				"label": "Dribbble",
+				"url": "https://example.com/tilework-on-dribbble",
+				"icon": "fa-brands fa-dribbble",
+				"network": "dribbble"
+			},
+			{
+				"label": "Behance",
+				"url": "https://example.com/tilework-on-behance",
+				"icon": "fa-brands fa-behance",
+				"network": "behance"
+			}
+		]
 	}
 }

@@ -3,39 +3,93 @@
 	"sidebars": {
 		"footer-1": [
 			{
-				"title": "About Yantra",
+				"title": "Tilework",
 				"content": [
-					[ "p", "A calmer way to build a site: pages that stay clear, settings you can see change, and nothing in the way." ]
+					[
+						"p",
+						"A design and build studio in Lisbon. We make brands, websites and apps people love to use."
+					]
 				]
 			}
 		],
 		"footer-2": [
 			{
-				"title": "Company",
+				"title": "Studio",
 				"content": [
-					[ "links", [
-						{ "label": "About", "page": "about" },
-						{ "label": "Pricing", "page": "pricing" },
-						{ "label": "Blog", "page": "blog" },
-						{ "label": "Contact", "page": "contact" }
-					] ]
+					[
+						"links",
+						[
+							{
+								"label": "Work",
+								"page": "work"
+							},
+							{
+								"label": "Services",
+								"page": "services"
+							},
+							{
+								"label": "Studio",
+								"page": "studio"
+							},
+							{
+								"label": "Journal",
+								"page": "journal"
+							}
+						]
+					]
 				]
 			}
 		],
 		"footer-3": [
 			{
-				"title": "Recent posts",
+				"title": "Services",
 				"content": [
-					[ "posts", { "count": 3, "layout": "list", "category": [ "guides", "design", "stories", "news" ] } ]
+					[
+						"links",
+						[
+							{
+								"label": "Product design",
+								"page": "services",
+								"anchor": "product"
+							},
+							{
+								"label": "Brand identity",
+								"page": "services",
+								"anchor": "brand"
+							},
+							{
+								"label": "Websites",
+								"page": "services",
+								"anchor": "websites"
+							},
+							{
+								"label": "Care plans",
+								"page": "services",
+								"anchor": "care"
+							}
+						]
+					]
 				]
 			}
 		],
 		"footer-4": [
 			{
-				"title": "Get in touch",
+				"title": "Say hello",
 				"content": [
-					[ "lines", [ "hello@example.com", "+1 (555) 010-2030" ] ],
-					[ "lines", [ "123 Example Street, Springfield", "Monday to Friday, 9am to 5pm" ] ]
+					[
+						"lines",
+						[
+							"hello@tilework.example",
+							"+351 21 000 0140"
+						]
+					],
+					[
+						"lines",
+						[
+							"Rua das Flores 28, Lisbon",
+							"Monday to Thursday, 9:00 to 18:00"
+						]
+					]
 				]
 			}
 		]

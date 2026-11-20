@@ -35,30 +35,6 @@
 		],
 		"description": "A top-down view of sharpened colored pencils in a radial bundle, forming a bright starburst on a clean white background."
 	},
-	"images/posts/baguettes-photo.jpg": {
-		"licence": "CC0 1.0",
-		"creator": "Jackson Monichan",
-		"creator_page": "https://wordpress.org/photos/author/jackson23m/",
-		"source": "https://wordpress.org/photos/photo/7406a28fc9/",
-		"file": "https://pd.w.org/2026/06/7406a28fc94bcb986.38718954.jpg",
-		"original_size": [
-			3648,
-			2432
-		],
-		"description": "Many freshly baked golden-brown baguettes bread loaves dusted with flour rest on a metal cooling rack. It shows crisp crusts with diagonal scoring along the tops."
-	},
-	"images/posts/leaves-photo.jpg": {
-		"licence": "CC0 1.0",
-		"creator": "Topher",
-		"creator_page": "https://wordpress.org/photos/author/topher1kenobe/",
-		"source": "https://wordpress.org/photos/photo/758690ccb5/",
-		"file": "https://pd.w.org/2025/11/758690ccb56c67505.69654345.jpeg",
-		"original_size": [
-			5712,
-			3213
-		],
-		"description": "Autumn leaves evenly covering the ground in the entire picture.  Seen from about 4 feet, 1.2 meters, above the ground."
-	},
 	"images/posts/stationery-photo.jpg": {
 		"licence": "CC0 1.0",
 		"creator": "onikart",
@@ -70,5 +46,65 @@
 			3840
 		],
 		"description": "A colorful assortment of stationery items scattered on a white surface, including pencils, pens, paperclips, pushpins, erasers, rulers, a compass, a pencil sharpener, sticky notes, and a utility knife."
+	},
+	"images/studio-glass-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Rashed Hossain",
+		"creator_page": "https://wordpress.org/photos/author/wprashed/",
+		"source": "https://wordpress.org/photos/photo/8806a27c64/",
+		"file": "https://pd.w.org/2026/06/8806a27c647abab58.91039014.jpg",
+		"original_size": [
+			4284,
+			5712
+		],
+		"description": "Modern glass-walled office with a wooden desk, open laptop, two bright yellow chairs, and potted plants. Minimalist and vibrant ambiance."
+	},
+	"images/studio-benches-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "blorjo",
+		"creator_page": "https://wordpress.org/photos/author/blorjo/",
+		"source": "https://wordpress.org/photos/photo/9296aa8112/",
+		"file": "https://pd.w.org/2026/09/9296aa8112af09ca1.23256538.jpg",
+		"original_size": [
+			4080,
+			2296
+		],
+		"description": "Modern workspace with wooden benches, tables, colorful lockers, chairs, and potted plants."
+	},
+	"images/desk-sun-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "abhilashph",
+		"creator_page": "https://wordpress.org/photos/author/abhilashph/",
+		"source": "https://wordpress.org/photos/photo/17467bbfa4/",
+		"file": "https://pd.w.org/2025/02/17467bbfa42584fa9.57567362.jpg",
+		"original_size": [
+			3072,
+			4096
+		],
+		"description": "A laptop on a wooden desk with a potted plant in the foreground, bathed in warm sunlight from the side."
+	},
+	"images/orange-pod-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Rashed Hossain",
+		"creator_page": "https://wordpress.org/photos/author/wprashed/",
+		"source": "https://wordpress.org/photos/photo/1176a27f62/",
+		"file": "https://pd.w.org/2026/06/1176a27f622423fb1.84893224.jpg",
+		"original_size": [
+			3024,
+			4032
+		],
+		"description": "Cozy contemporary office nook with a circular white table and grey sofa, framed by stylish vertical orange wooden slats."
+	},
+	"images/studio-lights-photo.jpg": {
+		"licence": "CC0 1.0",
+		"creator": "Rashed Hossain",
+		"creator_page": "https://wordpress.org/photos/author/wprashed/",
+		"source": "https://wordpress.org/photos/photo/6369c7ef5a/",
+		"file": "https://pd.w.org/2026/03/6369c7ef5acaf830.21683262.jpg",
+		"original_size": [
+			2688,
+			4032
+		],
+		"description": "Minimalist workspace with a large screen, tripods, web design graphics, and pendant lights."
 	}
 }

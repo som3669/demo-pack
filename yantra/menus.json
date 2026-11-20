@@ -1,0 +1,54 @@
+{
+	"schema": 1,
+	"menus": [
+		{
+			"title": "Main menu",
+			"slug": "tilework-main-menu",
+			"location": [
+				"primary",
+				"mobile"
+			],
+			"items": [
+				{
+					"label": "Work",
+					"page": "work"
+				},
+				{
+					"label": "Services",
+					"page": "services"
+				},
+				{
+					"label": "Studio",
+					"page": "studio"
+				},
+				{
+					"label": "Journal",
+					"page": "journal"
+				},
+				{
+					"label": "Contact",
+					"page": "contact"
+				}
+			]
+		},
+		{
+			"title": "Footer menu",
+			"slug": "tilework-footer-menu",
+			"location": "footer",
+			"items": [
+				{
+					"label": "Privacy",
+					"page": "privacy"
+				},
+				{
+					"label": "Terms",
+					"page": "terms"
+				},
+				{
+					"label": "Contact",
+					"page": "contact"
+				}
+			]
+		}
+	]
+}

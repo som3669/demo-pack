@@ -1,0 +1,224 @@
+{
+	"schema": 1,
+	"patterns": {
+		"home-hero": {
+			"title": "Tilework hero in a bento grid",
+			"file": "patterns/home-hero.html",
+			"links": [
+				{
+					"text": "Start a project",
+					"page": "contact"
+				},
+				{
+					"text": "See our work",
+					"page": "work"
+				}
+			]
+		},
+		"home-clients": {
+			"title": "Tilework client names in a strip",
+			"file": "patterns/home-clients.html"
+		},
+		"home-services": {
+			"title": "Tilework services as a bento grid",
+			"file": "patterns/home-services.html",
+			"links": [
+				{
+					"text": "More on product design",
+					"page": "services",
+					"anchor": "product"
+				},
+				{
+					"text": "More on brand",
+					"page": "services",
+					"anchor": "brand"
+				},
+				{
+					"text": "More on websites",
+					"page": "services",
+					"anchor": "websites"
+				},
+				{
+					"text": "More on development",
+					"page": "services",
+					"anchor": "development"
+				},
+				{
+					"text": "More on growth",
+					"page": "services",
+					"anchor": "growth"
+				},
+				{
+					"text": "See care plans",
+					"page": "services",
+					"anchor": "care"
+				}
+			]
+		},
+		"home-work": {
+			"title": "Tilework selected work, four case studies",
+			"file": "patterns/home-work.html",
+			"links": [
+				{
+					"text": "Halden: a bank account that budgets for you",
+					"post": "halden-bank-for-freelancers"
+				},
+				{
+					"text": "Mossgrove: an outdoor store built for phones",
+					"post": "mossgrove-outdoor-store"
+				},
+				{
+					"text": "Brisa: a coffee brand from the coast",
+					"post": "brisa-coffee-brand"
+				},
+				{
+					"text": "Tidal: solar power, explained in one page",
+					"post": "tidal-energy-website"
+				},
+				{
+					"text": "All work",
+					"page": "work"
+				}
+			]
+		},
+		"home-why": {
+			"title": "Tilework why us, with a studio photo and figures",
+			"file": "patterns/home-why.html",
+			"links": [
+				{
+					"text": "Meet the studio",
+					"page": "studio"
+				}
+			]
+		},
+		"process": {
+			"title": "Tilework how we work, four steps",
+			"file": "patterns/process.html"
+		},
+		"home-reviews": {
+			"title": "Tilework client reviews",
+			"file": "patterns/home-reviews.html"
+		},
+		"plans": {
+			"title": "Tilework three ways to work together",
+			"file": "patterns/plans.html",
+			"links": [
+				{
+					"text": "Book a sprint",
+					"page": "contact"
+				},
+				{
+					"text": "Plan a launch",
+					"page": "contact"
+				},
+				{
+					"text": "Talk about a partnership",
+					"page": "contact"
+				}
+			]
+		},
+		"faq": {
+			"title": "Tilework questions and answers",
+			"file": "patterns/faq.html",
+			"links": [
+				{
+					"text": "Ask us anything",
+					"page": "contact"
+				}
+			]
+		},
+		"home-journal": {
+			"title": "Tilework latest from the journal",
+			"file": "patterns/home-journal.html",
+			"links": [
+				{
+					"text": "Read the journal",
+					"page": "journal"
+				}
+			]
+		},
+		"cta": {
+			"title": "Tilework closing call to action",
+			"file": "patterns/cta.html",
+			"links": [
+				{
+					"text": "Start a project",
+					"page": "contact"
+				}
+			]
+		},
+		"work-hero": {
+			"title": "Tilework work page heading",
+			"file": "patterns/work-hero.html"
+		},
+		"work-grid": {
+			"title": "Tilework all case studies",
+			"file": "patterns/work-grid.html",
+			"links": [
+				{
+					"text": "Halden: a bank account that budgets for you",
+					"post": "halden-bank-for-freelancers"
+				},
+				{
+					"text": "Mossgrove: an outdoor store built for phones",
+					"post": "mossgrove-outdoor-store"
+				},
+				{
+					"text": "Quillo: notes a whole team can write in",
+					"post": "quillo-notes-for-teams"
+				},
+				{
+					"text": "Brisa: a coffee brand from the coast",
+					"post": "brisa-coffee-brand"
+				},
+				{
+					"text": "Tidal: solar power, explained in one page",
+					"post": "tidal-energy-website"
+				},
+				{
+					"text": "Parcel & Pine: cabins booked in three taps",
+					"post": "parcel-and-pine-cabin-booking"
+				}
+			]
+		},
+		"services-hero": {
+			"title": "Tilework services page heading",
+			"file": "patterns/services-hero.html",
+			"links": [
+				{
+					"text": "Start a project",
+					"page": "contact"
+				},
+				{
+					"text": "See pricing",
+					"page": "services",
+					"anchor": "plans"
+				}
+			]
+		},
+		"services-list": {
+			"title": "Tilework services in detail",
+			"file": "patterns/services-list.html"
+		},
+		"studio-hero": {
+			"title": "Tilework studio heading with photos",
+			"file": "patterns/studio-hero.html"
+		},
+		"studio-values": {
+			"title": "Tilework how we work, five values",
+			"file": "patterns/studio-values.html"
+		},
+		"studio-team": {
+			"title": "Tilework the team",
+			"file": "patterns/studio-team.html"
+		},
+		"studio-jobs": {
+			"title": "Tilework open roles",
+			"file": "patterns/studio-jobs.html"
+		},
+		"contact-hero": {
+			"title": "Tilework contact in a bento grid",
+			"file": "patterns/contact-hero.html"
+		}
+	}
+}
