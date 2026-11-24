@@ -170,44 +170,55 @@
 		{
 			"id": "yantra-pro",
 			"theme": "yantra-pro",
-			"title": "Yantra business site",
-			"description": "A calm business site: a homepage built from its own patterns with features, figures, testimonials, plans, questions and the latest posts; About, Pricing and Contact pages; six posts in four categories with photos; a main and a footer menu, four footer widgets, an announcement bar, a sticky header, a logo and the Customizer settings to match. Its 15 patterns join the site's own patterns. For Yantra Pro.",
-			"version": "1.1.0",
-			"path": "yantra-pro/pack.json",
+			"title": "Tilework design studio",
+			"description": "A modern agency site in bento tiles: a homepage with case studies, services, process, reviews, plans, questions and the latest notes; Work, Services, Studio and Contact pages; six case studies and four journal posts with pictures; 20 patterns of its own, a main and a footer menu, four footer widgets, an announcement bar, a sticky header, a logo and the Customizer settings to match. Needs no plugin besides Storefill. The same demo as free Yantra's, for Yantra Pro.",
+			"version": "2.0.0",
+			"path": "yantra/pack.json",
 			"requires": {
 				"wordpress": "6.5"
 			},
-			"preview": "yantra-pro/preview.jpg",
+			"preview": "yantra/preview.jpg",
 			"screens": [
 				{
 					"title": "Home",
-					"image": "yantra-pro/screens/home.jpg",
-					"page": "yantra-pro/site/index.html"
+					"image": "yantra/screens/home.jpg",
+					"page": "yantra/site/index.html"
 				},
 				{
-					"title": "About",
-					"image": "yantra-pro/screens/about.jpg",
-					"page": "yantra-pro/site/about/index.html"
+					"title": "Work",
+					"image": "yantra/screens/work.jpg",
+					"page": "yantra/site/work/index.html"
 				},
 				{
-					"title": "Pricing",
-					"image": "yantra-pro/screens/pricing.jpg",
-					"page": "yantra-pro/site/pricing/index.html"
+					"title": "Services",
+					"image": "yantra/screens/services.jpg",
+					"page": "yantra/site/services/index.html"
+				},
+				{
+					"title": "Studio",
+					"image": "yantra/screens/studio.jpg",
+					"page": "yantra/site/studio/index.html"
 				},
 				{
 					"title": "Contact",
-					"image": "yantra-pro/screens/contact.jpg",
-					"page": "yantra-pro/site/contact/index.html"
+					"image": "yantra/screens/contact.jpg",
+					"page": "yantra/site/contact/index.html"
 				},
 				{
-					"title": "Blog",
-					"image": "yantra-pro/screens/blog.jpg",
-					"page": "yantra-pro/site/blog/index.html"
+					"title": "Case study",
+					"image": "yantra/screens/post.jpg",
+					"page": "yantra/site/halden-bank-for-freelancers/index.html"
+				},
+				{
+					"title": "Journal",
+					"image": "yantra/screens/journal.jpg",
+					"page": "yantra/site/journal/index.html"
 				}
 			],
-			"demo_url": "https://som3669.github.io/demo-pack/yantra-pro/site/index.html",
+			"demo_url": "https://som3669.github.io/demo-pack/yantra/site/index.html",
 			"categories": [
-				"Business"
+				"Business",
+				"Agency"
 			]
 		},
 		{
